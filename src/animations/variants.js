@@ -126,3 +126,52 @@ export const authItemVariants = {
     transition: { duration: 0.4, ease: "easeOut" }
   },
 };
+
+export const onboardingStepVariants = {
+  initial: (direction) => ({
+    opacity: 0,
+    x: direction > 0 ? 50 : -50,
+  }),
+  animate: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.4, ease: "easeOut" }
+  },
+  exit: (direction) => ({
+    opacity: 0,
+    x: direction < 0 ? 50 : -50,
+    transition: { duration: 0.3, ease: "easeIn" }
+  })
+};
+
+export const onboardingCardVariants = {
+  hover: { 
+    scale: 1.02,
+    boxShadow: "0px 10px 30px rgba(124, 58, 237, 0.1)",
+    transition: { duration: 0.2 }
+  },
+  tap: { scale: 0.98 }
+};
+
+export const profilingLoadingVariants = {
+  hidden: { opacity: 0, scale: 0.8 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: { duration: 0.5, ease: "easeOut" }
+  },
+  pulse: {
+    scale: [1, 1.05, 1],
+    opacity: [0.8, 1, 0.8],
+    transition: { duration: 2, repeat: Infinity, ease: "easeInOut" }
+  }
+};
+
+export const profilingResultVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut", staggerChildren: 0.15 }
+  }
+};

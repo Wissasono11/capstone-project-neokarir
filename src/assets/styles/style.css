@@ -25,9 +25,25 @@
   --color-strength-strong: #22C55E;
   --color-error: #EF4444;
   --color-error-light: #FEF2F2;
+  --color-success: #22C55E;
+  
+  --background-image-dashboard-background: linear-gradient(135deg, #4F46E5 0%, #4F46E5 14.29%, #4678E5 28.57%, #5047E6 42.86%, #4F46E5 57.14%, #4F46E5 71.43%, #5047E6 85.71%, #5047E6 100%);
   
   --animate-accordion-down: accordion-down 0.2s ease-out;
   --animate-accordion-up: accordion-up 0.2s ease-out;
+  --animate-pulse-glow: pulse-glow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 15px rgba(124, 58, 237, 0.3);
+  }
+  50% {
+    opacity: .7;
+    box-shadow: 0 0 30px rgba(124, 58, 237, 0.6);
+  }
 }
 
 html {

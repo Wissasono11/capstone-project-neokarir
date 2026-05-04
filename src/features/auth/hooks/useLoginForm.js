@@ -1,10 +1,14 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../../../contexts/AuthContext';
 
 export const useLoginForm = () => {
   const [form, setForm] = useState({ email: '', password: '' });
   const [remember, setRemember] = useState(false);
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const { login } = useAuth();
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { id, value } = e.target;
@@ -29,7 +33,7 @@ export const useLoginForm = () => {
     return newErrors;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const validationErrors = validate();
     if (Object.keys(validationErrors).length > 0) {
@@ -37,9 +41,23 @@ export const useLoginForm = () => {
       return;
     }
     setIsSubmitting(true);
-    // TODO: Connect to backend API
-    console.log('Login submitted:', { ...form, remember });
-    setTimeout(() => setIsSubmitting(false), 1500);
+    
+    // Mock API call delay
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    
+    // Check if it's the specific test user we want to send to onboarding
+    // For this mock, if email is 'new@test.com', we treat them as new
+    const isNew = form.email === 'new@test.com';
+    
+    login({ name: 'Franz Hermann', email: form.email }, isNew);
+    
+    if (isNew) {
+      navigate('/onboarding');
+    } else {
+      navigate('/dashboard');
+    }
+    
+    setIsSubmitting(false);
   };
 
   return {

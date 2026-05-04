@@ -13,7 +13,7 @@ const CTASection = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="bg-[#7C3AED] rounded-[2.5rem] px-6 md:px-12 py-12 md:py-16 relative overflow-hidden shadow-2xl group"
+          className="bg-dashboard-background rounded-[2.5rem] px-6 md:px-12 py-12 md:py-16 relative overflow-hidden shadow-2xl group"
         >
           
           <motion.div 
@@ -74,3 +74,4 @@ const CTASection = () => {
 };
 
 export default CTASection;
+  

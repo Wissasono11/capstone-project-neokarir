@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../../../contexts/AuthContext';
 
 export const useRegisterForm = () => {
   const [form, setForm] = useState({
@@ -10,6 +12,8 @@ export const useRegisterForm = () => {
   const [agreeTerms, setAgreeTerms] = useState(false);
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const { register } = useAuth();
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { id, value } = e.target;
@@ -59,7 +63,7 @@ export const useRegisterForm = () => {
     return newErrors;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const validationErrors = validate();
     if (Object.keys(validationErrors).length > 0) {
@@ -67,9 +71,14 @@ export const useRegisterForm = () => {
       return;
     }
     setIsSubmitting(true);
-    // TODO: Connect to backend API
-    console.log('Register submitted:', form);
-    setTimeout(() => setIsSubmitting(false), 1500);
+    
+    // Mock API call
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    
+    register({ name: form.fullName, email: form.email });
+    navigate('/onboarding');
+    
+    setIsSubmitting(false);
   };
 
   return {
