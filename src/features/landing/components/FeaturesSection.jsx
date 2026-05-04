@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Card from '../../../components/ui/Card';
-import { staggerContainerVariants as containerVariants, fadeInUpItemVariants as itemVariants } from '../../../animations/variants';
+import { staggerContainerVariants as containerVariants, fadeInUpItemVariants as itemVariants } from '../../../utils/animations';
 
 const FeaturesSection = () => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
-import { useAuth } from '../../contexts/AuthContext';
-import avatar from '../../assets/images/avatar.png';
+import { useAuth } from '../../../contexts/AuthContext';
+import avatar from '../../../assets/images/avatar.png';
 
 const DashboardNavbar = () => {
   const { user } = useAuth();

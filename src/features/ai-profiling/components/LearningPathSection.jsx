@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { PlayCircle, Clock, BookOpen, ChevronRight } from 'lucide-react';
-import { profilingResultVariants } from '../../../animations/variants';
+import { profilingResultVariants } from '../../../utils/animations';
 
 const LearningPathSection = ({ paths }) => {
   return (

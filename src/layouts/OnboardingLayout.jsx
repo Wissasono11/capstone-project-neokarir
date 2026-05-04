@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { navbarVariants } from '../animations/variants';
-import logo from '../assets/images/logo.png';
+import { navbarVariants } from '../utils/animations';
 
 const OnboardingLayout = ({ currentStep, totalSteps = 3, children }) => {
   return (

@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom'
 import Button from '../../../components/ui/Button';
-import { heroTextContainerVariants as textContainerVariants, heroTextItemVariants as textItemVariants, heroImageVariants as imageVariants } from '../../../animations/variants';
+import { heroTextContainerVariants as textContainerVariants, heroTextItemVariants as textItemVariants, heroImageVariants as imageVariants } from '../../../utils/animations';
 
 const HeroSection = () => {
   return (

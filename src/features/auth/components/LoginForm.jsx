@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Mail } from 'lucide-react';
-import { authStaggerVariants, authItemVariants } from '../../../animations/variants';
+import { authStaggerVariants, authItemVariants } from '../../../utils/animations';
 import { useLoginForm } from '../hooks/useLoginForm';
 import FormInput from '../../../components/ui/FormInput';
 import PasswordInput from '../../../components/ui/PasswordInput';

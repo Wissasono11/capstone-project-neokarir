@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { authFormVariants, navbarVariants } from '../animations/variants';
+import { authFormVariants, navbarVariants } from '../utils/animations';
 import logo from '../assets/images/logo.png';
 
 const AuthLayout = ({ title, subtitle, children }) => {

@@ -1,6 +1,6 @@
 import React from 'react';
-import Card from './Card';
-import Avatar from './Avatar';
+import Card from '../../../components/ui/Card';
+import Avatar from '../../../components/ui/Avatar';
 
 const TestimonialCard = ({ company, companyIcon, quote, name, role, avatar }) => {
   return (

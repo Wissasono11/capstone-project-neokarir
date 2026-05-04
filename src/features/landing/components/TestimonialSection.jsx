@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
-import TestimonialCard from '../../../components/ui/TestimonialCard';
+import TestimonialCard from './TestimonialCard';
 import { motion } from 'framer-motion';
-import { testimonialHeaderVariants, testimonialSliderVariants } from '../../../animations/variants';
+import { testimonialHeaderVariants, testimonialSliderVariants } from '../../../utils/animations';
 
 const TestimonialSection = () => {
   const sliderRef = useRef(null);

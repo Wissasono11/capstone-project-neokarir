@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Search, X, CheckCircle, FileText, Briefcase, GraduationCap, MapPin, Sparkles } from 'lucide-react';
-import { onboardingStepVariants } from '../../../animations/variants';
+import { onboardingStepVariants } from '../../../utils/animations';
 import Button from '../../../components/ui/Button';
 
 const SUGGESTED_ADDITIONAL = ['Problem Solving', 'Communication', 'Teamwork', 'Leadership', 'Time Management', 'Critical Thinking', 'Project Management'];

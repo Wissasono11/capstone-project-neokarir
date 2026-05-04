@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { onboardingStepVariants } from '../../../animations/variants';
+import { onboardingStepVariants } from '../../../utils/animations';
 import Button from '../../../components/ui/Button';
 import CVUploadZone from './CVUploadZone';
 import ManualInputForm from './ManualInputForm';

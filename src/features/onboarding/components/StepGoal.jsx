@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { GraduationCap, ArrowRightLeft, TrendingUp, CheckCircle2 } from 'lucide-react';
-import { onboardingStepVariants, onboardingCardVariants } from '../../../animations/variants';
+import { onboardingStepVariants, onboardingCardVariants } from '../../../utils/animations';
 import Button from '../../../components/ui/Button';
 
 const StepGoal = ({ careerGoal, setCareerGoal, nextStep }) => {

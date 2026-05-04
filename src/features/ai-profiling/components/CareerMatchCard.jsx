@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Building, Banknote } from 'lucide-react';
-import { profilingResultVariants } from '../../../animations/variants';
+import { MapPin, Banknote } from 'lucide-react';
+import { profilingResultVariants } from '../../../utils/animations';
 
 const CareerMatchCard = ({ career }) => {
   return (
@@ -12,7 +12,6 @@ const CareerMatchCard = ({ career }) => {
       <div className="flex justify-between items-start mb-4">
         <div className="flex gap-4">
           <div className="w-12 h-12 rounded-xl bg-bg-secondary p-2 flex items-center justify-center shrink-0 border border-border">
-            {/* Fallback to initials if image fails, but here we just use img */}
             <img src={career.icon} alt={career.company} className="w-full h-full object-contain mix-blend-multiply" onError={(e) => {
               e.target.style.display = 'none';
               e.target.parentElement.innerHTML = `<span class="font-bold text-primary">${career.company.charAt(0)}</span>`;

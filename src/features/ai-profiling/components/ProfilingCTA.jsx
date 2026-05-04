@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
-import { profilingResultVariants } from '../../../animations/variants';
+import { profilingResultVariants } from '../../../utils/animations';
 import Button from '../../../components/ui/Button';
 
 const ProfilingCTA = () => {

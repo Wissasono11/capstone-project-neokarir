@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import { Sparkles, ArrowRight, ScanFace, CheckCircle2 } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { ctaContainerVariants, floatAnimation, floatAnimationDelayed } from '../../../animations/variants';
+import { ctaContainerVariants, floatAnimation, floatAnimationDelayed } from '../../../utils/animations';
 
 const CTASection = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Feather } from 'lucide-react';
-import { profilingResultVariants } from '../../../animations/variants';
+import { profilingResultVariants } from '../../../utils/animations';
 
 const ProfilingHero = ({ score }) => {
   return (

@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Sparkles } from 'lucide-react';
 import { useAIProfiling } from '../features/ai-profiling/hooks/useAIProfiling';
-import { profilingLoadingVariants, staggerContainerVariants } from '../animations/variants';
+import { profilingLoadingVariants, staggerContainerVariants } from '../utils/animations';
 import ProfilingHero from '../features/ai-profiling/components/ProfilingHero';
 import CareerMatchCard from '../features/ai-profiling/components/CareerMatchCard';
 import SkillGapAnalysis from '../features/ai-profiling/components/SkillGapAnalysis';

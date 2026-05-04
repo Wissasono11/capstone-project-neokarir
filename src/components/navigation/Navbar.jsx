@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import Button from '../ui/Button';
-import { navbarVariants } from '../../animations/variants';
+import { navbarVariants } from '../../utils/animations';
 import { useScrollDetection } from '../../hooks/useScrollDetection';
 import { useMobileMenu } from '../../hooks/useMobileMenu';
 
@@ -101,4 +101,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

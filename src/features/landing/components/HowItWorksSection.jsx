@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Target, Rocket, UploadCloud, CheckCircle2 } from 'lucide-react';
-import { staggerContainerVariants as containerVariants, fadeInUpItemVariants as itemVariants } from '../../../animations/variants';
+import { staggerContainerVariants as containerVariants, fadeInUpItemVariants as itemVariants } from '../../../utils/animations';
 
 const HowItWorksSection = () => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { trustBarVariants } from '../../../animations/variants';
+import { trustBarVariants } from '../../../utils/animations';
 
 const TrustBar = () => {
   const companies = [

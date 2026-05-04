@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { 
   Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer 
 } from 'recharts';
-import { profilingResultVariants } from '../../../animations/variants';
+import { profilingResultVariants } from '../../../utils/animations';
 
 const SkillGapAnalysis = ({ data, overallScore }) => {
   return (
