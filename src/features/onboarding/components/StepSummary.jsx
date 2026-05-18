@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Search, X, CheckCircle, FileText, Briefcase, GraduationCap, MapPin, Sparkles } from 'lucide-react';
 import { onboardingStepVariants } from '../../../utils/animations';
 import Button from '../../../components/ui/Button';
+import CVDataCard from './CVDataCard';
 
 const SUGGESTED_ADDITIONAL = ['Problem Solving', 'Communication', 'Teamwork', 'Leadership', 'Time Management', 'Critical Thinking', 'Project Management'];
 
@@ -11,6 +12,8 @@ const StepSummary = ({
   inputMethod,
   cvFile,
   manualData,
+  cvData,
+  updateCvData,
   additionalSkills,
   addSkill,
   removeSkill,
@@ -116,6 +119,10 @@ const StepSummary = ({
               )}
             </div>
           </div>
+
+          {inputMethod === 'upload' && (
+            <CVDataCard cvData={cvData} updateCvData={updateCvData} />
+          )}
 
           <div className="bg-white rounded-2xl border border-border p-6 shadow-sm">
             <div className="flex justify-between items-center mb-4">

@@ -19,11 +19,25 @@ export const useOnboardingForm = () => {
   
   const [additionalSkills, setAdditionalSkills] = useState([]);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isAnalyzing, setIsAnalyzing] = useState(false);
+  
+  const [cvData, setCvData] = useState({
+    fullName: 'Bayu Wicaksono',
+    targetDomain: 'Software Development',
+    targetRole: 'Frontend Developer',
+    skills: ['React', 'JavaScript', 'Tailwind CSS', 'Node.js']
+  });
   
   const { completeOnboarding } = useAuth();
   const navigate = useNavigate();
 
-  const nextStep = () => {
+  const nextStep = async () => {
+    if (currentStep === 2 && inputMethod === 'upload') {
+      setIsAnalyzing(true);
+      // Simulate AI analysis delay
+      await new Promise(resolve => setTimeout(resolve, 2500));
+      setIsAnalyzing(false);
+    }
     if (currentStep < 3) setCurrentStep(prev => prev + 1);
   };
 
@@ -37,6 +51,10 @@ export const useOnboardingForm = () => {
 
   const updateManualData = (field, value) => {
     setManualData(prev => ({ ...prev, [field]: value }));
+  };
+
+  const updateCvData = (field, value) => {
+    setCvData(prev => ({ ...prev, [field]: value }));
   };
 
   const addSkill = (skill) => {
@@ -55,16 +73,21 @@ export const useOnboardingForm = () => {
     // Mock processing delay
     await new Promise(resolve => setTimeout(resolve, 800));
     
-    // Combine manual data tech stack and additional skills
-    const combinedSkills = Array.from(new Set([...manualData.techStack, ...additionalSkills]));
+    // Combine manual data tech stack, cv skills and additional skills
+    const combinedSkills = Array.from(new Set([
+      ...manualData.techStack, 
+      ...(inputMethod === 'upload' ? cvData.skills : []),
+      ...additionalSkills
+    ]));
     
     // Profile data to save
     const profileData = {
       careerGoal,
       inputMethod,
+      fullName: inputMethod === 'upload' ? cvData.fullName : 'User',
       skills: combinedSkills,
-      domain: manualData.domain,
-      role: manualData.role || (careerGoal === 'first-job' ? 'Junior Developer' : 'Developer'),
+      domain: inputMethod === 'upload' ? cvData.targetDomain : manualData.domain,
+      role: inputMethod === 'upload' ? cvData.targetRole : (manualData.role || (careerGoal === 'first-job' ? 'Junior Developer' : 'Developer')),
       experience: manualData.experience || 'Fresh Graduate',
       education: manualData.education || 'Bachelor Degree',
       location: manualData.location || 'Yogyakarta, Indonesia',
@@ -88,10 +111,13 @@ export const useOnboardingForm = () => {
     setCvFile,
     manualData,
     updateManualData,
+    cvData,
+    updateCvData,
     additionalSkills,
     addSkill,
     removeSkill,
     isSubmitting,
+    isAnalyzing,
     submitOnboarding
   };
 };

@@ -62,7 +62,7 @@ const ProblemSection = () => {
           </motion.div>
 
           {/* Card 4 (Bottom Left - Primary Color Text Card) */}
-          <motion.div variants={itemVariants} className="md:col-span-2 md:row-span-1 bg-[#7C3AED] rounded-[24px] p-8 lg:p-10 flex flex-col justify-center relative overflow-hidden group">
+          <motion.div variants={itemVariants} className="md:col-span-2 md:row-span-1 bg-primary rounded-[24px] p-8 lg:p-10 flex flex-col justify-center relative overflow-hidden group">
             <div className="absolute -right-16 -bottom-16 w-80 h-80 bg-white/10 rounded-full blur-3xl group-hover:bg-white/20 transition-colors duration-500"></div>
             <div className="relative z-10 flex flex-col h-full justify-center gap-4 max-w-lg">
               <h3 className="text-2xl lg:text-3xl font-bold text-white leading-tight">
