@@ -1,43 +1,19 @@
-import React, { useState } from 'react';
 import { User, Target, Briefcase, Code, Edit2, Check, X, Plus } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useCVDataCard } from '../hooks/useCVDataCard';
 
 const CVDataCard = ({ cvData, updateCvData }) => {
-  const [isEditing, setIsEditing] = useState(false);
-  const [editedData, setEditedData] = useState(cvData);
-  const [newSkill, setNewSkill] = useState('');
-
-  const handleToggleEdit = () => {
-    if (isEditing) {
-      setEditedData(cvData);
-    }
-    setIsEditing(!isEditing);
-  };
-
-  const handleSave = () => {
-    updateCvData('fullName', editedData.fullName);
-    updateCvData('targetDomain', editedData.targetDomain);
-    updateCvData('targetRole', editedData.targetRole);
-    updateCvData('skills', editedData.skills);
-    setIsEditing(false);
-  };
-
-  const handleAddSkill = () => {
-    if (newSkill.trim() && !editedData.skills.includes(newSkill.trim())) {
-      setEditedData({
-        ...editedData,
-        skills: [...editedData.skills, newSkill.trim()]
-      });
-      setNewSkill('');
-    }
-  };
-
-  const handleRemoveSkill = (skillToRemove) => {
-    setEditedData({
-      ...editedData,
-      skills: editedData.skills.filter(skill => skill !== skillToRemove)
-    });
-  };
+  const {
+    isEditing,
+    editedData,
+    newSkill,
+    setNewSkill,
+    setEditedData,
+    handleToggleEdit,
+    handleSave,
+    handleAddSkill,
+    handleRemoveSkill
+  } = useCVDataCard(cvData, updateCvData);
 
   return (
     <div className="bg-white rounded-2xl border border-border p-6 shadow-sm overflow-hidden relative">
@@ -123,7 +99,7 @@ const CVDataCard = ({ cvData, updateCvData }) => {
           
           <div className="flex flex-wrap gap-2 pl-6">
             <AnimatePresence>
-              {(isEditing ? editedData.skills : cvData.skills).map((skill, index) => (
+              {(isEditing ? editedData.skills : cvData.skills).map((skill) => (
                 <motion.span
                   key={skill}
                   initial={{ opacity: 0, scale: 0.8 }}

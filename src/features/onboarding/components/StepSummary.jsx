@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Search, X, CheckCircle, FileText, Briefcase, GraduationCap, MapPin, Sparkles } from 'lucide-react';
 import { onboardingStepVariants } from '../../../utils/animations';
 import Button from '../../../components/ui/Button';
 import CVDataCard from './CVDataCard';
+import { useStepSummary } from '../hooks/useStepSummary';
 
 const SUGGESTED_ADDITIONAL = ['Problem Solving', 'Communication', 'Teamwork', 'Leadership', 'Time Management', 'Critical Thinking', 'Project Management'];
 
@@ -21,28 +21,13 @@ const StepSummary = ({
   submitOnboarding,
   isSubmitting
 }) => {
-  const [skillInput, setSkillInput] = useState('');
-
-  const handleAddSkill = (skill) => {
-    addSkill(skill);
-    setSkillInput('');
-  };
-
-  const handleSkillKeyDown = (e) => {
-    if (e.key === 'Enter' && skillInput.trim()) {
-      e.preventDefault();
-      handleAddSkill(skillInput.trim());
-    }
-  };
-
-  const getGoalText = (goal) => {
-    switch(goal) {
-      case 'first-job': return 'Finding First Job';
-      case 'career-switch': return 'Career Switch';
-      case 'upskill': return 'Upskilling';
-      default: return goal;
-    }
-  };
+  const {
+    skillInput,
+    setSkillInput,
+    handleAddSkill,
+    handleSkillKeyDown,
+    getGoalText
+  } = useStepSummary(addSkill);
 
   return (
     <motion.div

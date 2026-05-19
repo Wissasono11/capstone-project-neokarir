@@ -1,65 +1,22 @@
-import React, { useState } from 'react';
 import { Search, X } from 'lucide-react';
 import FormInput from '../../../components/ui/FormInput';
-
-const IT_DOMAINS = [
-  'Data Science & Artificial Intelligence',
-  'Mobile Development',
-  'Cyber Security',
-  'Cloud & DevOps',
-  'UI/UX Design',
-  'Quality Assurance (QA) & Testing',
-  'Web Development'
-];
-
-const ROLES_BY_DOMAIN = {
-  'Data Science & Artificial Intelligence': ['Data Analyst', 'Data Scientist', 'Machine Learning Engineer', 'AI Engineer'],
-  'Web Development': ['Frontend Developer', 'Backend Developer', 'Fullstack Developer'],
-  'default': ['Junior Specialist', 'Specialist', 'Senior Specialist', 'Lead']
-};
-
-const SUGGESTED_SKILLS = ['Python', 'SQL', 'Pandas', 'TensorFlow', 'Scikit-Learn', 'Tableau', 'R', 'PyTorch', 'Hadoop', 'Spark', 'Git', 'GitHub', 'Docker', 'Agile/Scrum', 'JIRA', 'Trello', 'React', 'Node.js', 'Figma'];
-
-const EXPERIENCE_LEVELS = [
-  'None (Fresh Graduate / Student)',
-  '< 1 year',
-  '1 - 3 years',
-  '3 - 5 years',
-  '> 5 years'
-];
-
-const EDUCATION_LEVELS = [
-  'High School / Vocational',
-  'Associate Degree (D3)',
-  'Bachelor\'s Degree (S1)',
-  'Master\'s Degree (S2)',
-  'Doctorate (S3)'
-];
+import { useManualInputForm } from '../hooks/useManualInputForm';
+import {
+  IT_DOMAINS,
+  SUGGESTED_SKILLS,
+  EXPERIENCE_LEVELS,
+  EDUCATION_LEVELS
+} from '../data/onboardingData';
 
 const ManualInputForm = ({ manualData, updateManualData }) => {
-  const [skillInput, setSkillInput] = useState('');
-
-  const availableRoles = manualData.domain && ROLES_BY_DOMAIN[manualData.domain] 
-    ? ROLES_BY_DOMAIN[manualData.domain] 
-    : ROLES_BY_DOMAIN.default;
-
-  const handleAddSkill = (skill) => {
-    if (manualData.techStack.length < 10 && !manualData.techStack.includes(skill)) {
-      updateManualData('techStack', [...manualData.techStack, skill]);
-      setSkillInput('');
-    }
-  };
-
-  const handleRemoveSkill = (skillToRemove) => {
-    updateManualData('techStack', manualData.techStack.filter(s => s !== skillToRemove));
-  };
-
-  const handleSkillKeyDown = (e) => {
-    if (e.key === 'Enter' && skillInput.trim()) {
-      e.preventDefault();
-      handleAddSkill(skillInput.trim());
-    }
-  };
+  const {
+    skillInput,
+    setSkillInput,
+    availableRoles,
+    handleAddSkill,
+    handleRemoveSkill,
+    handleSkillKeyDown
+  } = useManualInputForm(manualData, updateManualData);
 
   return (
     <div className="w-full bg-white rounded-2xl border border-border shadow-sm p-8 space-y-8">
@@ -77,8 +34,8 @@ const ManualInputForm = ({ manualData, updateManualData }) => {
               }}
               className={`
                 text-left px-5 py-3.5 rounded-xl border transition-all text-sm font-medium
-                ${manualData.domain === domain 
-                  ? 'border-primary bg-primary/10 text-primary' 
+                ${manualData.domain === domain
+                  ? 'border-primary bg-primary/10 text-primary'
                   : 'border-border text-secondary-text hover:border-primary/40'
                 }
               `}
@@ -101,8 +58,8 @@ const ManualInputForm = ({ manualData, updateManualData }) => {
                 onClick={() => updateManualData('role', role)}
                 className={`
                   px-5 py-2.5 rounded-full border transition-all text-sm font-medium
-                  ${manualData.role === role 
-                    ? 'bg-primary text-white border-primary shadow-sm' 
+                  ${manualData.role === role
+                    ? 'bg-primary text-white border-primary shadow-sm'
                     : 'bg-white border-border text-secondary-text hover:border-primary/40'
                   }
                 `}
@@ -122,7 +79,7 @@ const ManualInputForm = ({ manualData, updateManualData }) => {
             {manualData.techStack.length}/10
           </span>
         </div>
-        
+
         <div className="relative mb-4">
           <div className="absolute left-4 top-1/2 -translate-y-1/2 text-secondary-text pointer-events-none">
             <Search size={18} />
