@@ -60,7 +60,7 @@ const DashboardSidebar = ({ isOpen, onClose }) => {
 
         {/* Logo Area */}
         <div className="h-[80px] flex items-center px-6 border-b border-border/60">
-          <Link to="/" className={`flex items-center gap-1 w-full ${isCollapsed ? 'lg:justify-center' : ''}`}>
+          <Link to="/dashboard" className={`flex items-center gap-1 w-full ${isCollapsed ? 'lg:justify-center' : ''}`}>
             <div className="flex items-center justify-center p-1 rounded-full shrink-0">
               <img
                 src={logo}
