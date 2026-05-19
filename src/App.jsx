@@ -12,6 +12,7 @@ import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import OnboardingPage from './pages/OnboardingPage';
 import AICareerProfilingPage from './pages/AICareerProfilingPage';
 import DashboardPage from './pages/DashboardPage';
+import CVAnalyzerPage from './pages/CVAnalyzerPage';
 
 function App() {
   return (
@@ -25,13 +26,14 @@ function App() {
           <Route path="/terms" element={<TermsOfServicePage />} />
           <Route path="/privacy" element={<PrivacyPolicyPage />} />
 
-          {/* Debugging Routes - Unprotected for now */}
+          {/* Debugging Routes */}
           <Route path="/onboarding" element={<OnboardingPage />} />
           <Route path="/ai-career-profiling" element={<AICareerProfilingPage />} />
 
-          {/* Protected Routes - For authenticated users who completed onboarding */}
+          {/* Protected Routes */}
           <Route element={<ProtectedRoute />}>
             <Route path="/dashboard" element={<DashboardPage />} />
+            <Route path="/dashboard/cv-analyzer" element={<CVAnalyzerPage />} />
           </Route>
         </Routes>
       </BrowserRouter>
