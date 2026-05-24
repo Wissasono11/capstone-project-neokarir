@@ -40,8 +40,8 @@ const CVExtractedEntities = ({ entities }) => {
                   </div>
 
                   {/* NER tag badge */}
-                  <span className="text-2xs font-extrabold text-secondary-text bg-border/60 px-2 py-0.5 rounded-md uppercase">
-                    NER: {sec.tag}
+                  <span className="text-caption font-extrabold text-secondary-text bg-border/60 px-2 py-0.5 rounded-md">
+                    Ner: {sec.tag.charAt(0).toUpperCase() + sec.tag.slice(1).toLowerCase()}
                   </span>
                 </div>
 

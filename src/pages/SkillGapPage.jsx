@@ -50,7 +50,7 @@ const SkillGapPage = () => {
           {/* Main Header */}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div>
-              <h1 className="text-2xl md:text-heading font-bold text-primary-text mb-1 tracking-tight">
+              <h1 className="text-title md:text-heading font-bold text-primary-text mb-1 tracking-tight">
                 Skill Gap Analysis
               </h1>
               <p className="text-body-sm font-medium text-secondary-text">
@@ -61,7 +61,7 @@ const SkillGapPage = () => {
             <div className="flex items-center gap-3">
               <button 
                 onClick={() => navigate('/onboarding')}
-                className="px-4 py-2 bg-indigo-600 text-white rounded-lg font-medium text-sm hover:bg-indigo-700 transition-colors flex items-center gap-2"
+                className="px-4 py-2 bg-indigo-600 text-white rounded-lg font-medium text-body-sm hover:bg-indigo-700 transition-colors flex items-center gap-2"
               >
                 <RefreshCw className="w-4 h-4" />
                 Update Skill
@@ -79,6 +79,7 @@ const SkillGapPage = () => {
               <RadarChartComp 
                 data={radarData} 
                 overallScore={heroData?.overallReadiness || 0} 
+                showViewDetails={false}
               />
             </div>
             

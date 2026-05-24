@@ -6,21 +6,21 @@ const CVImprovementTips = ({ tips = [] }) => {
     switch (priority.toLowerCase()) {
       case 'high':
         return {
-          label: 'HIGH PRIORITY',
+          label: 'High Priority',
           badgeClass: 'bg-rose-50 text-rose-700 border-rose-200',
           dotColor: 'bg-rose-500',
           iconColor: 'text-rose-500'
         };
       case 'medium':
         return {
-          label: 'MED PRIORITY',
+          label: 'Medium Priority',
           badgeClass: 'bg-amber-50 text-amber-700 border-amber-200',
           dotColor: 'bg-amber-500',
           iconColor: 'text-amber-500'
         };
       default:
         return {
-          label: 'LOW PRIORITY',
+          label: 'Low Priority',
           badgeClass: 'bg-indigo-50 text-indigo-700 border-indigo-200',
           dotColor: 'bg-indigo-500',
           iconColor: 'text-indigo-500'
@@ -60,7 +60,7 @@ const CVImprovementTips = ({ tips = [] }) => {
 
               {/* Priority badge */}
               <div className="flex items-center shrink-0 self-start sm:self-center gap-2">
-                <span className={`inline-flex px-3 py-1 rounded-full text-2xs font-extrabold border uppercase tracking-wider ${cfg.badgeClass}`}>
+                <span className={`inline-flex px-3 py-1 rounded-full text-caption font-extrabold border ${cfg.badgeClass}`}>
                   {cfg.label}
                 </span>
               </div>

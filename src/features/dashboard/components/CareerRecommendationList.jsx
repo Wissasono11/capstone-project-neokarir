@@ -1,32 +1,34 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { ChevronRight } from 'lucide-react';
 
 const CareerRecommendationList = ({ recommendations }) => {
+  const navigate = useNavigate();
   return (
     <div className="bg-white rounded-3xl border border-border p-4 md:p-8 shadow-sm h-full flex flex-col">
       <div className="flex justify-between items-center mb-6">
         <h3 className="text-body md:text-subtitle font-bold text-primary-text">Top Career Recommendation</h3>
-        <button className="text-xs md:text-sm font-bold text-primary hover:text-primary/80 transition-colors shrink-0">
+        <button onClick={() => navigate('/dashboard/recommendations')} className="text-caption md:text-body-sm font-bold text-primary hover:text-primary/80 transition-colors shrink-0 cursor-pointer">
           See All
         </button>
       </div>
 
       <div className="flex-1 flex flex-col gap-3 md:gap-4">
         {recommendations.map((rec) => (
-          <div 
-            key={rec.id} 
+          <div
+            key={rec.id}
             className="flex items-center justify-between p-3 md:p-4 rounded-2xl border border-border hover:border-primary/40 hover:bg-bg-secondary/20 transition-all duration-300 cursor-pointer group"
           >
             <div className="flex items-center gap-3 md:gap-4 min-w-0">
               <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl border border-border/50 bg-white shadow-sm flex items-center justify-center overflow-hidden shrink-0">
                 <img src={rec.icon} alt={rec.company} className="w-6 h-6 md:w-8 md:h-8 object-contain" onError={(e) => {
                   e.target.style.display = 'none';
-                  e.target.parentElement.innerHTML = `<span class="font-bold text-primary text-sm">${rec.company.charAt(0)}</span>`;
+                  e.target.parentElement.innerHTML = `<span class="font-bold text-primary text-body-sm">${rec.company.charAt(0)}</span>`;
                 }} />
               </div>
-              
+
               <div className="min-w-0">
-                <h4 className="font-bold text-sm md:text-base text-primary-text group-hover:text-primary transition-colors mb-0.5 truncate">
+                <h4 className="font-bold text-body-sm md:text-body text-primary-text group-hover:text-primary transition-colors mb-0.5 truncate">
                   {rec.title}
                 </h4>
                 <div className="text-caption font-medium text-secondary-text truncate">

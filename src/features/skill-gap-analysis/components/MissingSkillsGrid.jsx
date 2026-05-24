@@ -12,8 +12,8 @@ const MissingSkillsGrid = ({ skillsData }) => {
           <Lightbulb className="w-5 h-5" />
         </div>
         <div>
-          <h3 className="text-xl font-bold text-slate-800">Detail Skill yang Perlu Dipelajari</h3>
-          <p className="text-slate-500 text-xs mt-0.5">Analisis mendalam mengenai kemampuan yang paling dibutuhkan untuk target role kamu</p>
+          <h3 className="text-subtitle font-bold text-slate-800">Detail Skill yang Perlu Dipelajari</h3>
+          <p className="text-slate-500 text-caption mt-0.5">Analisis mendalam mengenai kemampuan yang paling dibutuhkan untuk target role kamu</p>
         </div>
       </div>
 

@@ -24,7 +24,7 @@ const LearningPathSection = ({ paths }) => {
               <div>
                 <div className="flex items-center gap-2 mb-1">
                   <h4 className="font-bold text-primary-text">{path.title}</h4>
-                  <span className={`text-2xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wider ${
+                  <span className={`text-caption font-bold px-2 py-0.5 rounded-full ${
                     path.tag === 'High Priority' ? 'bg-red-100 text-red-700' : 'bg-orange-100 text-orange-700'
                   }`}>
                     {path.tag}

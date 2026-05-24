@@ -135,7 +135,7 @@ const MessageItem = ({ sender, text, timestamp }) => {
         </div>
 
         {/* Timestamp */}
-        <span className="text-[10px] text-secondary-text/70 mt-1 font-semibold px-1">
+        <span className="text-caption text-secondary-text/70 mt-1 font-semibold px-1">
           {timestamp}
         </span>
       </div>

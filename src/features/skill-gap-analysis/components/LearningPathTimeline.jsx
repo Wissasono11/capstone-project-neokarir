@@ -7,8 +7,8 @@ const LearningPathTimeline = ({ pathData, completedCourses = [], onToggleCourse 
   return (
     <div className="mt-8 bg-white rounded-3xl border border-slate-100 p-6 sm:p-8 shadow-sm">
       <div className="mb-8">
-        <h3 className="text-xl font-bold text-slate-800">Jalur Pembelajaran Rekomendasi</h3>
-        <p className="text-slate-500 mt-1 text-xs">Langkah demi langkah untuk menutupi skill gap dan mencapai target role.</p>
+        <h3 className="text-subtitle font-bold text-slate-800">Jalur Pembelajaran Rekomendasi</h3>
+        <p className="text-slate-500 mt-1 text-caption">Langkah demi langkah untuk menutupi skill gap dan mencapai target role.</p>
       </div>
 
       <div className="relative border-l-2 border-indigo-100 ml-4 md:ml-6 space-y-10">
@@ -34,7 +34,7 @@ const LearningPathTimeline = ({ pathData, completedCourses = [], onToggleCourse 
                   title="Tandai sebagai selesai"
                   className="absolute -left-[17px] top-1 bg-white border-4 border-indigo-100 w-8 h-8 rounded-full flex items-center justify-center shadow-sm cursor-pointer hover:border-indigo-400 group/btn transition-all duration-200 z-10"
                 >
-                  <span className="text-xs font-extrabold text-indigo-600 group-hover/btn:hidden">{index + 1}</span>
+                  <span className="text-caption font-extrabold text-indigo-600 group-hover/btn:hidden">{index + 1}</span>
                   <Check className="w-3.5 h-3.5 text-indigo-400 hidden group-hover/btn:block stroke-[3px]" />
                 </button>
               )}
@@ -50,23 +50,23 @@ const LearningPathTimeline = ({ pathData, completedCourses = [], onToggleCourse 
                   <div className="flex-1">
                     <div className="flex items-center gap-2 mb-2">
                       {isCompleted ? (
-                        <span className="px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-50 text-emerald-700 border border-emerald-100 flex items-center gap-1">
+                        <span className="px-2 py-0.5 rounded text-caption font-bold bg-emerald-50 text-emerald-700 border border-emerald-100 flex items-center gap-1">
                           <CheckCircle2 className="w-3.5 h-3.5" /> Selesai
                         </span>
                       ) : (
-                        <span className={`px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider ${
+                        <span className={`px-2 py-0.5 rounded text-caption font-bold ${
                           isHighPriority ? 'bg-rose-50 text-rose-700 border border-rose-100' : 'bg-blue-50 text-blue-700 border border-blue-100'
                         }`}>
                           Prioritas {course.prioritas}
                         </span>
                       )}
-                      <span className="text-xs font-medium text-slate-300">•</span>
-                      <span className="text-xs font-extrabold text-indigo-600 uppercase tracking-wider">
+                      <span className="text-caption font-medium text-slate-300">•</span>
+                      <span className="text-caption font-extrabold text-indigo-600">
                         {course.platform}
                       </span>
                     </div>
                     
-                    <h4 className={`text-base font-bold mb-2 transition-colors ${
+                    <h4 className={`text-body font-bold mb-2 transition-colors ${
                       isCompleted 
                         ? 'text-slate-400 line-through' 
                         : 'text-slate-800 group-hover:text-indigo-600'
@@ -74,13 +74,13 @@ const LearningPathTimeline = ({ pathData, completedCourses = [], onToggleCourse 
                       {course.judul}
                     </h4>
                     
-                    <p className={`text-xs leading-relaxed mb-4 ${
+                    <p className={`text-caption leading-relaxed mb-4 ${
                       isCompleted ? 'text-slate-400' : 'text-slate-500'
                     }`}>
                       {course.deskripsi}
                     </p>
 
-                    <div className="flex flex-col sm:flex-row sm:items-center gap-4 text-xs font-semibold">
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-4 text-caption font-semibold">
                       <div className="flex items-center gap-1.5 text-slate-500">
                         <span className="text-slate-400">Skill Target:</span>
                         <span className={`px-2 py-0.5 rounded font-bold ${
@@ -99,7 +99,7 @@ const LearningPathTimeline = ({ pathData, completedCourses = [], onToggleCourse 
                               const hasSkill = ownedMockSkills.includes(req);
                               
                               return (
-                                <span key={idx} className="flex items-center gap-1 text-2xs">
+                                <span key={idx} className="flex items-center gap-1 text-caption">
                                   {hasSkill ? (
                                     <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500" />
                                   ) : (
@@ -117,7 +117,7 @@ const LearningPathTimeline = ({ pathData, completedCourses = [], onToggleCourse 
 
                   {/* CTA Right */}
                   <div className="flex flex-row lg:flex-col items-center lg:items-end justify-between mt-4 lg:mt-0 pt-4 lg:pt-0 border-t lg:border-t-0 border-slate-50">
-                    <div className="text-xs font-extrabold text-slate-600 mb-0 lg:mb-4 flex items-center gap-1">
+                    <div className="text-caption font-extrabold text-slate-600 mb-0 lg:mb-4 flex items-center gap-1">
                       ⏱ {course.durasi}
                     </div>
                     
@@ -125,7 +125,7 @@ const LearningPathTimeline = ({ pathData, completedCourses = [], onToggleCourse 
                       href={course.link} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className={`inline-flex items-center gap-2 px-4 py-2 rounded-xl font-bold text-xs transition-all focus:ring-4 ${
+                      className={`inline-flex items-center gap-2 px-4 py-2 rounded-xl font-bold text-body-sm transition-all focus:ring-4 ${
                         isCompleted 
                           ? 'bg-slate-100 text-slate-400 hover:bg-slate-200 focus:ring-slate-50' 
                           : 'bg-indigo-600 text-white hover:bg-indigo-700 focus:ring-indigo-100'

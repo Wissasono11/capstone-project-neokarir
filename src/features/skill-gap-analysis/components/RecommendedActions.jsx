@@ -12,7 +12,7 @@ const RecommendedActions = ({ actionsData }) => {
 
   return (
     <div className="space-y-4">
-      <h3 className="text-xl font-bold text-slate-800">Aksi yang Direkomendasikan</h3>
+      <h3 className="text-subtitle font-bold text-slate-800">Aksi yang Direkomendasikan</h3>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {actionsData.map((action, index) => {
@@ -35,11 +35,11 @@ const RecommendedActions = ({ actionsData }) => {
               <div>
                 <div className="flex items-center gap-2 mb-3">
                   {iconMap[action.type] || <AlertCircle className="w-5 h-5" />}
-                  <span className={`px-2.5 py-0.5 rounded-lg text-xs font-extrabold uppercase tracking-wide ${badgeStyle}`}>
+                  <span className={`px-2.5 py-0.5 rounded-lg text-caption font-extrabold uppercase tracking-wide ${badgeStyle}`}>
                     {action.title}
                   </span>
                 </div>
-                <p className="text-sm font-medium leading-relaxed">
+                <p className="text-body-sm font-medium leading-relaxed">
                   {action.description}
                 </p>
               </div>

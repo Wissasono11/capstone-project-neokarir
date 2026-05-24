@@ -30,7 +30,7 @@ const ChatFeedHeader = ({
           </h2>
           <div className="flex items-center gap-1.5 mt-0.5">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 block"></span>
-            <span className="text-[10px] md:text-[11px] font-semibold text-white/90">Co-pilot • Active</span>
+            <span className="text-caption font-semibold text-white/90">Co-pilot • Active</span>
           </div>
         </div>
       </div>

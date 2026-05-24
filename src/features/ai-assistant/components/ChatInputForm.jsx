@@ -55,7 +55,7 @@ const ChatInputForm = ({
           
           {/* Tooltip */}
           {showEnhanceTooltip && inputText.trim() && (
-            <div className="absolute bottom-full right-16 mb-2 w-48 bg-slate-800 text-white text-[11px] font-semibold p-2 rounded-lg shadow-lg z-50">
+            <div className="absolute bottom-full right-16 mb-2 w-48 bg-slate-800 text-white text-caption font-semibold p-2 rounded-lg shadow-lg z-50">
               💡 Klik untuk memperkaya prompt secara otomatis!
             </div>
           )}
@@ -78,7 +78,7 @@ const ChatInputForm = ({
       </form>
 
       {/* Disclaimer */}
-      <p className="text-[10px] text-center text-secondary-text/70 mt-3 font-semibold select-none">
+      <p className="text-caption text-center text-secondary-text/70 mt-3 font-semibold select-none">
         NeoKarir AI dapat membuat kesalahan. Harap pertimbangkan untuk memverifikasi data penting.
       </p>
     </div>

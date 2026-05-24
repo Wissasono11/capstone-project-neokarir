@@ -26,7 +26,7 @@ const DashboardPage = () => {
         <h2 className="text-title md:text-heading font-bold text-primary-text mb-1">
           Good Morning {user?.name?.split(' ')[0] || 'Franz'}!
         </h2>
-        <p className="text-body-sm md:text-body-md font-medium text-secondary-text">
+        <p className="text-body-sm md:text-body font-medium text-secondary-text">
           Berikut adalah progres karir dan kesiapan industri kamu hari ini.
         </p>
       </div>

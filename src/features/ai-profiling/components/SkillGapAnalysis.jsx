@@ -13,9 +13,6 @@ const SkillGapAnalysis = ({ data, overallScore }) => {
     >
       <div className="flex justify-between items-center mb-6">
         <h3 className="text-xl font-bold text-primary-text">Skill Gap Analysis</h3>
-        <button className="text-sm font-medium text-primary hover:text-primary/80 transition-colors">
-          View Details
-        </button>
       </div>
 
       <div className="flex-1 w-full min-h-[250px] relative">

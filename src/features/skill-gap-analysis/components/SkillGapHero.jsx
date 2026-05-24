@@ -73,14 +73,14 @@ const SkillGapHero = ({ data }) => {
           {/* Central Score Text */}
           <div className="absolute flex flex-col items-center justify-center">
             <div className="flex items-baseline justify-center">
-              <span className="text-4xl font-extrabold text-slate-800 leading-none">{overallReadiness}</span>
-              <span className="text-xl font-bold text-slate-400 ml-0.5">%</span>
+              <span className="text-heading-xl font-extrabold text-slate-800 leading-none">{overallReadiness}</span>
+              <span className="text-subtitle font-bold text-slate-400 ml-0.5">%</span>
             </div>
-            <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider mt-1">Kesiapan</span>
+            <span className="text-caption font-semibold text-slate-400 uppercase tracking-wider mt-1">Kesiapan</span>
           </div>
         </div>
         
-        <span className={`mt-3 px-3 py-1 rounded-full text-xs font-bold border ${badgeClass}`}>
+        <span className={`mt-3 px-3 py-1 rounded-full text-caption font-bold border ${badgeClass}`}>
           {readinessLevel}
         </span>
       </div>
@@ -88,12 +88,12 @@ const SkillGapHero = ({ data }) => {
       {/* Info Details Area */}
       <div className="flex-1 w-full">
         <div className="flex flex-wrap items-center gap-2 mb-2">
-          <span className="px-3 py-1 bg-slate-100 text-slate-600 rounded-lg text-xs font-bold uppercase tracking-wider">
+          <span className="px-3 py-1 bg-slate-100 text-slate-600 rounded-lg text-caption font-bold uppercase tracking-wider">
             {targetDomain}
           </span>
         </div>
         
-        <h2 className="text-2xl font-bold text-slate-800 mb-4 flex items-center gap-2">
+        <h2 className="text-title font-bold text-slate-800 mb-4 flex items-center gap-2">
           Target Karir: <span className="text-indigo-600 font-extrabold">{targetRole}</span>
         </h2>
 
@@ -104,11 +104,11 @@ const SkillGapHero = ({ data }) => {
               <Target className="w-5 h-5" />
             </div>
             <div>
-              <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Kecocokan Skill</p>
-              <p className="text-base font-bold text-slate-700 mt-0.5">
+              <p className="text-caption font-semibold text-slate-400 uppercase tracking-wider">Kecocokan Skill</p>
+              <p className="text-body font-bold text-slate-700 mt-0.5">
                 {matchedSkillsCount}/{totalRequiredSkills} Skill Dimiliki
               </p>
-              <p className="text-xs text-slate-500 mt-1">
+              <p className="text-caption text-slate-500 mt-1">
                 {missingSkillsCount} skill lagi perlu dipelajari
               </p>
             </div>
@@ -120,11 +120,11 @@ const SkillGapHero = ({ data }) => {
               <GraduationCap className="w-5 h-5" />
             </div>
             <div>
-              <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Pendidikan Minimal</p>
-              <p className="text-base font-bold text-slate-700 mt-0.5">
+              <p className="text-caption font-semibold text-slate-400 uppercase tracking-wider">Pendidikan Minimal</p>
+              <p className="text-body font-bold text-slate-700 mt-0.5">
                 {educationMatch.required}
               </p>
-              <span className={`inline-flex items-center gap-1 text-2xs font-bold mt-1 ${
+              <span className={`inline-flex items-center gap-1 text-caption font-bold mt-1 ${
                 educationMatch.hasGap ? 'text-amber-600' : 'text-emerald-600'
               }`}>
                 {educationMatch.hasGap ? <AlertTriangle className="w-3.5 h-3.5" /> : <CheckCircle2 className="w-3.5 h-3.5" />}
@@ -139,11 +139,11 @@ const SkillGapHero = ({ data }) => {
               <Briefcase className="w-5 h-5" />
             </div>
             <div>
-              <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Pengalaman Kerja</p>
-              <p className="text-base font-bold text-slate-700 mt-0.5">
+              <p className="text-caption font-semibold text-slate-400 uppercase tracking-wider">Pengalaman Kerja</p>
+              <p className="text-body font-bold text-slate-700 mt-0.5">
                 Dibutuhkan: {experienceGap.required}
               </p>
-              <span className={`inline-flex items-center gap-1 text-2xs font-bold mt-1 ${
+              <span className={`inline-flex items-center gap-1 text-caption font-bold mt-1 ${
                 experienceGap.hasGap ? 'text-amber-600' : 'text-emerald-600'
               }`}>
                 {experienceGap.hasGap ? <AlertTriangle className="w-3.5 h-3.5" /> : <CheckCircle2 className="w-3.5 h-3.5" />}

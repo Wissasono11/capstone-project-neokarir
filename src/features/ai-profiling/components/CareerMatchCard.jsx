@@ -30,7 +30,7 @@ const CareerMatchCard = ({ career }) => {
           <div className="w-12 h-12 rounded-full flex items-center justify-center bg-accent-purple-light text-accent-purple font-bold border-4 border-white shadow-sm ring-1 ring-border/50">
             {career.matchScore}%
           </div>
-          <span className="text-2xs font-semibold text-secondary-text uppercase tracking-wider mt-1">Match</span>
+          <span className="text-caption font-semibold text-secondary-text uppercase tracking-wider mt-1">Match</span>
         </div>
       </div>
       
@@ -38,7 +38,7 @@ const CareerMatchCard = ({ career }) => {
       {career.requiredSkills && career.requiredSkills.length > 0 && (
         <div className="flex flex-wrap gap-1.5 mt-3 pt-3 border-t border-border/40">
           {career.requiredSkills.map((skill, idx) => (
-            <span key={idx} className="px-2 py-0.5 rounded bg-bg-secondary text-primary font-bold text-2xs uppercase tracking-wider">
+            <span key={idx} className="px-2 py-0.5 rounded bg-bg-secondary text-primary font-bold text-caption">
               {skill}
             </span>
           ))}
