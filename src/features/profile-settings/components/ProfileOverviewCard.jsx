@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Camera, MapPin, Mail, Briefcase } from 'lucide-react';
+import { Camera, Mail, Briefcase } from 'lucide-react';
 import Card from '../../../components/ui/Card';
 import Button from '../../../components/ui/Button';
 import avatar from '../../../assets/images/avatar.png';
@@ -71,10 +71,7 @@ const ProfileOverviewCard = ({ user, onEditProfile }) => {
                   <Mail size={14} className="shrink-0" />
                   {user?.email || 'hello@example.com'}
                 </span>
-                <span className="flex items-center gap-1.5 text-body-sm text-secondary-text">
-                  <MapPin size={14} className="shrink-0" />
-                  {user?.location || 'Yogyakarta, Indonesia'}
-                </span>
+
               </div>
 
               {/* Status Badge */}

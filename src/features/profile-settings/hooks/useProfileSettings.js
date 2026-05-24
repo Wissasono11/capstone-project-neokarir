@@ -12,12 +12,10 @@ export const useProfileSettings = () => {
   // === Active Tab ===
   const [activeTab, setActiveTab] = useState('personal');
 
-  // === Personal Info State ===
   const [personalInfo, setPersonalInfo] = useState({
     fullName: user?.name || 'Franz Hermann',
     email: user?.email || 'hello@example.com',
     phone: '+62 812-3456-7890',
-    location: user?.location || 'Yogyakarta, Indonesia',
     bio: 'Passionate developer focused on building impactful web applications with modern technologies.',
     dateOfBirth: '1999-06-15',
     gender: 'male',

@@ -3,7 +3,7 @@ import { Save, CheckCircle, Loader2 } from 'lucide-react';
 import Card from '../../../components/ui/Card';
 import FormInput from '../../../components/ui/FormInput';
 import Button from '../../../components/ui/Button';
-import { User, Mail, Phone, MapPin, Calendar } from 'lucide-react';
+import { User, Mail, Phone, Calendar } from 'lucide-react';
 
 const PersonalInfoTab = ({ personalInfo, updatePersonalInfo, onSave, isSaving, saveSuccess }) => {
   return (
@@ -52,14 +52,7 @@ const PersonalInfoTab = ({ personalInfo, updatePersonalInfo, onSave, isSaving, s
             onChange={(e) => updatePersonalInfo('phone', e.target.value)}
           />
 
-          <FormInput
-            label="Lokasi"
-            id="profile-location"
-            placeholder="Kota, Negara"
-            icon={MapPin}
-            value={personalInfo.location}
-            onChange={(e) => updatePersonalInfo('location', e.target.value)}
-          />
+
 
           {/* Bio textarea — spans full width */}
           <div className="md:col-span-2 flex flex-col gap-1.5">

@@ -23,8 +23,7 @@ const StepDataCV = ({
     manualData.role && 
     manualData.techStack.length > 0 &&
     manualData.experience &&
-    manualData.education &&
-    manualData.location;
+    manualData.education;
 
   const isValid = isUploadValid || isManualValid;
 

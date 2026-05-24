@@ -13,8 +13,7 @@ export const useOnboardingForm = () => {
     role: '',
     techStack: [],
     experience: '',
-    education: '',
-    location: ''
+    education: ''
   });
   
   const [additionalSkills, setAdditionalSkills] = useState([]);
@@ -90,7 +89,6 @@ export const useOnboardingForm = () => {
       role: inputMethod === 'upload' ? cvData.targetRole : (manualData.role || (careerGoal === 'first-job' ? 'Junior Developer' : 'Developer')),
       experience: manualData.experience || 'Fresh Graduate',
       education: manualData.education || 'Bachelor Degree',
-      location: manualData.location || 'Yogyakarta, Indonesia',
       status: 'Open to Work'
     };
     

@@ -1,4 +1,4 @@
-import { Target, Award, FileText, MessageSquareMore } from 'lucide-react';
+import { Target, Award, FileText, MessageSquareMore, Settings } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Icon as Iconify } from '@iconify/react';
 
@@ -9,6 +9,7 @@ const QuickLinks = () => {
     { id: 'cv-analyzer', label: 'CV Analyzer', icon: FileText, path: '/dashboard/cv-analyzer', color: 'text-orange-500', bg: 'bg-orange-50' },
     { id: 'jobs-market', label: 'Jobs Market', icon: "mingcute:presentation-1-line", path: '/dashboard/jobs-market', color: 'text-green-500', bg: 'bg-green-50' },
     { id: 'ai-assistant', label: 'AI Assistant', icon: MessageSquareMore, path: '/dashboard/ai-assistant', color: 'text-pink-500', bg: 'bg-pink-50' },
+    { id: 'settings', label: 'Profile & Settings', icon: Settings, path: '/dashboard/settings', color: 'text-indigo-500', bg: 'bg-indigo-50' },
   ];
 
   return (
