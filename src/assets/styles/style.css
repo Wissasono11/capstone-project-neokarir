@@ -42,8 +42,10 @@
   --animate-accordion-down: accordion-down 0.2s ease-out;
   --animate-accordion-up: accordion-up 0.2s ease-out;
   --animate-pulse-glow: pulse-glow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-fade-in: fadeIn 0.3s ease-out;
 
 }
+
 
 @keyframes pulse-glow {
   0%, 100% {
@@ -55,6 +57,18 @@
     box-shadow: 0 0 30px rgba(124, 58, 237, 0.6);
   }
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 html {
   scroll-behavior: smooth;

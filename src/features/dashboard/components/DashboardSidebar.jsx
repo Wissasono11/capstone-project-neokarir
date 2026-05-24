@@ -23,7 +23,7 @@ const SIDEBAR_ITEMS = [
 ];
 
 const BOTTOM_ITEMS = [
-  { id: 'settings', label: 'Profile & Settings', icon: Settings, path: '/settings' },
+  { id: 'settings', label: 'Profile & Settings', icon: Settings, path: '/dashboard/settings' },
   { id: 'support', label: 'Support', icon: HelpCircle, path: '/support' },
 ];
 
@@ -124,17 +124,22 @@ const DashboardSidebar = ({ isOpen, onClose, isCollapsed, onToggleCollapse }) =>
         <div className="p-4 border-t border-border/60 space-y-2">
           {BOTTOM_ITEMS.map((item) => {
             const Icon = item.icon;
+            const isActive = location.pathname === item.path;
             return (
               <Link
                 key={item.id}
                 to={item.path}
                 onClick={() => { if (window.innerWidth < 1024) onClose(); }}
                 title={isCollapsed ? item.label : undefined}
-                className={`flex items-center rounded-xl transition-all duration-200 font-medium text-secondary-text hover:bg-canvas-white hover:text-primary-text
+                className={`flex items-center rounded-xl transition-all duration-200 font-medium
                   ${isCollapsed ? 'lg:justify-center p-3' : 'gap-3 px-4 py-3'}
+                  ${isActive
+                    ? 'bg-primary-light text-primary'
+                    : 'text-secondary-text hover:bg-canvas-white hover:text-primary-text'
+                  }
                 `}
               >
-                <Icon size={20} />
+                <Icon size={20} className={isActive ? 'text-primary' : 'text-secondary-text'} />
                 {(!isCollapsed || (isOpen && window.innerWidth < 1024)) && <span className="text-body-sm truncate">{item.label}</span>}
               </Link>
             );
