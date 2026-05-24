@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkles, Briefcase, FileText, Compass } from 'lucide-react';
+import { Sparkles, FileText, Compass, BriefcaseBusiness } from 'lucide-react';
 
 const SUGGESTIONS = [
   {
@@ -12,7 +12,7 @@ const SUGGESTIONS = [
     id: 's-2',
     label: 'Cari loker Frontend',
     query: 'Tampilkan lowongan Frontend Developer',
-    icon: Briefcase,
+    icon: BriefcaseBusiness,
   },
   {
     id: 's-3',

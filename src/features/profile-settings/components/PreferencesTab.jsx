@@ -3,9 +3,6 @@ import { Save, CheckCircle, Loader2, Bell, Globe, Palette, Sun, Moon, Monitor } 
 import Card from '../../../components/ui/Card';
 import Button from '../../../components/ui/Button';
 
-/**
- * Toggle switch reusable — dipakai untuk notification preferences
- */
 const ToggleRow = ({ label, description, checked, onChange }) => (
   <div className="flex items-center justify-between py-3">
     <div className="pr-4">
@@ -36,9 +33,6 @@ const ToggleRow = ({ label, description, checked, onChange }) => (
   </div>
 );
 
-/**
- * Theme option card — selectable radio-like cards
- */
 const ThemeOption = ({ icon: Icon, label, value, selected, onChange }) => (
   <button
     onClick={() => onChange(value)}
@@ -71,45 +65,6 @@ const PreferencesTab = ({ preferences, updatePreferences, onSave, isSaving, save
       aria-labelledby="tab-preferences"
       className="space-y-6 animate-fade-in"
     >
-      {/* Notification Preferences */}
-      <Card className="!p-6 md:!p-8">
-        <div className="flex items-center gap-2 mb-1">
-          <Bell size={20} className="text-primary" />
-          <h3 className="text-body-lg font-bold text-primary-text">
-            Notifikasi
-          </h3>
-        </div>
-        <p className="text-body-sm text-secondary-text mb-4">
-          Atur jenis notifikasi yang ingin kamu terima.
-        </p>
-
-        <div className="divide-y divide-border/50">
-          <ToggleRow
-            label="Notifikasi Email"
-            description="Terima update karier dan rekomendasi lewat email"
-            checked={preferences.emailNotifications}
-            onChange={() => updatePreferences('emailNotifications', !preferences.emailNotifications)}
-          />
-          <ToggleRow
-            label="Push Notification"
-            description="Dapatkan notifikasi langsung di browser"
-            checked={preferences.pushNotifications}
-            onChange={() => updatePreferences('pushNotifications', !preferences.pushNotifications)}
-          />
-          <ToggleRow
-            label="Laporan Mingguan"
-            description="Ringkasan progres skill dan karier setiap minggu"
-            checked={preferences.weeklyReport}
-            onChange={() => updatePreferences('weeklyReport', !preferences.weeklyReport)}
-          />
-          <ToggleRow
-            label="Alert Lowongan Kerja"
-            description="Notifikasi saat ada lowongan yang cocok dengan profilmu"
-            checked={preferences.jobAlerts}
-            onChange={() => updatePreferences('jobAlerts', !preferences.jobAlerts)}
-          />
-        </div>
-      </Card>
 
       {/* Language Selection */}
       <Card className="!p-6 md:!p-8">

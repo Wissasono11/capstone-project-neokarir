@@ -52,31 +52,6 @@ const PersonalInfoTab = ({ personalInfo, updatePersonalInfo, onSave, isSaving, s
             onChange={(e) => updatePersonalInfo('phone', e.target.value)}
           />
 
-
-
-          {/* Bio textarea — spans full width */}
-          <div className="md:col-span-2 flex flex-col gap-1.5">
-            <label
-              htmlFor="profile-bio"
-              className="text-sm font-semibold text-primary-text"
-            >
-              Bio / Tentang
-            </label>
-            <textarea
-              id="profile-bio"
-              rows={4}
-              placeholder="Ceritakan sedikit tentang diri kamu..."
-              value={personalInfo.bio}
-              onChange={(e) => updatePersonalInfo('bio', e.target.value)}
-              className="
-                w-full rounded-xl border bg-white px-4 py-3 text-sm text-primary-text
-                placeholder:text-secondary-text/60
-                transition-all duration-200 outline-none resize-none
-                border-border hover:border-primary/30 focus:border-primary focus:ring-2 focus:ring-primary/10
-              "
-            />
-          </div>
-
           <FormInput
             label="Tanggal Lahir"
             id="profile-dob"

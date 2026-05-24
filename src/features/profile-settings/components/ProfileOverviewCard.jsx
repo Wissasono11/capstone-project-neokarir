@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Camera, Mail, Briefcase } from 'lucide-react';
+import { Camera, Mail, BriefcaseBusiness } from 'lucide-react';
 import Card from '../../../components/ui/Card';
 import Button from '../../../components/ui/Button';
 import avatar from '../../../assets/images/avatar.png';
@@ -64,7 +64,7 @@ const ProfileOverviewCard = ({ user, onEditProfile }) => {
               </h2>
               <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mt-1.5">
                 <span className="flex items-center gap-1.5 text-body-sm text-secondary-text">
-                  <Briefcase size={14} className="shrink-0" />
+                  <BriefcaseBusiness size={14} className="shrink-0" />
                   {user?.role || 'Full Stack Developer'}
                 </span>
                 <span className="flex items-center gap-1.5 text-body-sm text-secondary-text">

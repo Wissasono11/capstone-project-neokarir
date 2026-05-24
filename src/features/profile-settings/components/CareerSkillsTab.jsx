@@ -1,17 +1,20 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { X, Plus, Sparkles, GraduationCap, Loader2 } from 'lucide-react';
+import React from 'react';
+import { X, Plus, BrainCog, Loader2 } from 'lucide-react';
 import Card from '../../../components/ui/Card';
 import FormInput from '../../../components/ui/FormInput';
 import Button from '../../../components/ui/Button';
-import Badge from '../../../components/ui/Badge';
-import { Briefcase, Target } from 'lucide-react';
+import { BriefcaseBusiness, Target } from 'lucide-react';
 
-const CareerSkillsTab = ({ careerInfo, updateCareerInfo, addSkill, removeSkill, onSave, isSaving, saveSuccess }) => {
-  const navigate = useNavigate();
-  const [newSkill, setNewSkill] = useState('');
-  const [isReprocessing, setIsReprocessing] = useState(false);
-
+const CareerSkillsTab = ({
+  careerInfo,
+  updateCareerInfo,
+  addSkill,
+  removeSkill,
+  newSkill,
+  setNewSkill,
+  isReprocessing,
+  handleReprocess
+}) => {
   const handleAddSkill = () => {
     if (newSkill.trim()) {
       addSkill(newSkill.trim());
@@ -24,18 +27,6 @@ const CareerSkillsTab = ({ careerInfo, updateCareerInfo, addSkill, removeSkill, 
       e.preventDefault();
       handleAddSkill();
     }
-  };
-
-  /**
-   * Mengarahkan user kembali ke halaman onboarding untuk mengunggah CV baru
-   * dan memproses ulang rekomendasi karier dengan AI.
-   */
-  const handleReprocess = async () => {
-    setIsReprocessing(true);
-    // Simulasi inisialisasi AI profiling engine
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    setIsReprocessing(false);
-    navigate('/onboarding');
   };
 
   return (
@@ -59,7 +50,7 @@ const CareerSkillsTab = ({ careerInfo, updateCareerInfo, addSkill, removeSkill, 
             label="Posisi Saat Ini"
             id="career-current-role"
             placeholder="e.g. Full Stack Developer"
-            icon={Briefcase}
+            icon={BriefcaseBusiness}
             value={careerInfo.currentRole}
             onChange={(e) => updateCareerInfo('currentRole', e.target.value)}
           />
@@ -163,40 +154,11 @@ const CareerSkillsTab = ({ careerInfo, updateCareerInfo, addSkill, removeSkill, 
         </div>
       </Card>
 
-      {/* Education Section */}
-      <Card className="!p-6 md:!p-8">
-        <h3 className="text-body-lg font-bold text-primary-text mb-1">
-          Riwayat Pendidikan
-        </h3>
-        <p className="text-body-sm text-secondary-text mb-4">
-          Informasi pendidikan membantu AI memahami latar belakang kamu.
-        </p>
-
-        <div className="space-y-4">
-          {careerInfo.education.map((edu) => (
-            <div
-              key={edu.id}
-              className="flex items-start gap-4 p-4 rounded-xl bg-canvas-white border border-border/50"
-            >
-              <div className="w-10 h-10 rounded-xl bg-primary-light flex items-center justify-center shrink-0">
-                <GraduationCap size={20} className="text-primary" />
-              </div>
-              <div className="min-w-0">
-                <h4 className="text-body-sm font-bold text-primary-text">{edu.institution}</h4>
-                <p className="text-caption text-secondary-text">{edu.degree}</p>
-                <p className="text-caption text-secondary-text/70">{edu.year}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </Card>
-
-      {/* Reprocess with AI button — sesuai userflow */}
+      {/* Reprocess with AI button */}
       <Card className="!p-6 md:!p-8 border-primary/20">
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div>
             <h3 className="text-body-lg font-bold text-primary-text flex items-center gap-2">
-              <Sparkles size={20} className="text-primary" />
               Proses Ulang Data dengan AI
             </h3>
             <p className="text-body-sm text-secondary-text mt-1">
@@ -216,7 +178,7 @@ const CareerSkillsTab = ({ careerInfo, updateCareerInfo, addSkill, removeSkill, 
               </>
             ) : (
               <>
-                <Sparkles size={16} className="mr-2" />
+                <BrainCog size={16} className="mr-2" />
                 Reprocess with AI
               </>
             )}

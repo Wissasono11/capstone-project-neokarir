@@ -12,10 +12,10 @@ const MessageItem = ({ sender, text, timestamp }) => {
     const lines = rawText.split('\n');
     
     return lines.map((line, lineIndex) => {
-      // 1. Check for bullet list item: starts with '- ' or '* '
+      // Check for bullet list item: starts with '- ' or '* '
       const isBullet = line.trim().startsWith('- ') || line.trim().startsWith('* ');
       
-      // 2. Check for numbered list item: starts with '1. ', '2. ', etc.
+      // Check for numbered list item: starts with '1. ', '2. ', etc.
       const isNumbered = /^\d+\.\s/.test(line.trim());
       
       let cleanLine = line;

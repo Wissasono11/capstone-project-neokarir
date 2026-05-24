@@ -181,7 +181,7 @@ export const getSimulatedResponse = (text, userProfile, activeRecommendations = 
 
   switch (intent) {
     case INTENTS.SALAM:
-      return `Halo **${name}**! 👋 Saya adalah AI Career Assistant kamu di NeoKarir.\n\nSaya bisa membantu kamu dalam hal:\n1. 🗺️ **Roadmap Belajar:** Panduan belajar terstruktur untuk berbagai peran IT.\n2. 🔍 **Cari Lowongan:** Menampilkan daftar lowongan kerja terbaru di database.\n3. 📊 **Analisis Skill:** Mengevaluasi kesiapan profil kamu terhadap karir target.\n4. 📝 **Tips Rekrutmen:** Tips membuat CV ATS Friendly, portofolio, dan wawancara.\n\nAda yang ingin kamu tanyakan hari ini?`;
+      return `Halo **${name}**! 👋 Saya adalah Neobots.\n\nSaya bisa membantu kamu dalam hal:\n1. 🗺️ **Roadmap Belajar:** Panduan belajar terstruktur untuk berbagai peran IT.\n2. 🔍 **Cari Lowongan:** Menampilkan daftar lowongan kerja terbaru di database.\n3. 📊 **Analisis Skill:** Mengevaluasi kesiapan profil kamu terhadap karir target.\n4. 📝 **Tips Rekrutmen:** Tips membuat CV ATS Friendly, portofolio, dan wawancara.\n\nAda yang ingin kamu tanyakan hari ini?`;
       
     case INTENTS.ROADMAP: {
       let roleKey = 'frontend';

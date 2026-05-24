@@ -53,7 +53,7 @@ const ConversationsSidebar = ({
       <div className="p-4 flex items-center justify-between select-none">
         <div className="flex items-center gap-2.5 text-slate-800">
           <Sparkles className="w-5.5 h-5.5 text-primary shrink-0 animate-pulse" />
-          <span className="font-bold text-body-sm tracking-tight text-slate-800">AI Assistant</span>
+          <span className="font-bold text-body-sm tracking-tight text-slate-800">Neobots</span>
         </div>
         <button 
           type="button"

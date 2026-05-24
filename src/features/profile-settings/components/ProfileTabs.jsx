@@ -1,11 +1,11 @@
 import React from 'react';
-import { User, Briefcase, Shield, SlidersHorizontal } from 'lucide-react';
+import { User, BriefcaseBusiness, ShieldCheck, Settings2 } from 'lucide-react';
 
 const TABS = [
   { id: 'personal', label: 'Personal Info', icon: User },
-  { id: 'career', label: 'Career & Skills', icon: Briefcase },
-  { id: 'security', label: 'Account Security', icon: Shield },
-  { id: 'preferences', label: 'Preferences', icon: SlidersHorizontal },
+  { id: 'career', label: 'Career & Skills', icon: BriefcaseBusiness },
+  { id: 'security', label: 'Account Security', icon: ShieldCheck },
+  { id: 'preferences', label: 'Preferences', icon: Settings2 },
 ];
 
 const ProfileTabs = ({ activeTab, onTabChange }) => {

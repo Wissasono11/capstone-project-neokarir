@@ -20,6 +20,10 @@ const ProfileSettingsPage = () => {
     updateCareerInfo,
     addSkill,
     removeSkill,
+    newSkill,
+    setNewSkill,
+    isReprocessing,
+    handleReprocess,
     security,
     updateSecurity,
     removeSession,
@@ -35,10 +39,6 @@ const ProfileSettingsPage = () => {
     { label: 'Profile & Settings', icon: Settings },
   ];
 
-  /**
-   * Render konten tab aktif berdasarkan state `activeTab`.
-   * Menggunakan pattern conditional rendering untuk efisiensi.
-   */
   const renderTabContent = () => {
     switch (activeTab) {
       case 'personal':
@@ -58,9 +58,10 @@ const ProfileSettingsPage = () => {
             updateCareerInfo={updateCareerInfo}
             addSkill={addSkill}
             removeSkill={removeSkill}
-            onSave={handleSave}
-            isSaving={isSaving}
-            saveSuccess={saveSuccess}
+            newSkill={newSkill}
+            setNewSkill={setNewSkill}
+            isReprocessing={isReprocessing}
+            handleReprocess={handleReprocess}
           />
         );
       case 'security':

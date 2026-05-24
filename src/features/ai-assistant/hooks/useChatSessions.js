@@ -1,6 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
 
-// Helper to generate a default initial session object
 const createDefaultSessionObj = (id, name) => {
   return {
     id,
@@ -9,7 +8,7 @@ const createDefaultSessionObj = (id, name) => {
       {
         id: `greet-${Date.now()}`,
         sender: 'bot',
-        text: `Hi ${name}! 👋 Saya AI Career Assistant kamu. Saya dapat membantu kamu dengan panduan karir, saran pengembangan skill, tips pencarian lowongan kerja, serta optimasi CV. Bagaimana saya bisa membantumu hari ini?`,
+        text: `Hi ${name}! 👋 Saya Neobots. Saya dapat membantu kamu dengan panduan karir, saran pengembangan skill, tips pencarian lowongan kerja, serta optimasi CV. Bagaimana saya bisa membantumu hari ini?`,
         timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
       }
     ],
