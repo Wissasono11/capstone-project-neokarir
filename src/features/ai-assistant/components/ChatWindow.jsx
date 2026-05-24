@@ -17,7 +17,8 @@ const ChatWindow = () => {
     enhancePrompt,
     createNewSession,
     selectSession,
-    deleteSession
+    deleteSession,
+    renameSession
   } = useAIAssistant();
 
   const {
@@ -59,6 +60,7 @@ const ChatWindow = () => {
         activeSessionId={activeSessionId}
         selectSession={selectSession}
         deleteSession={deleteSession}
+        renameSession={renameSession}
       />
 
       {/* Mobile Drawer Overlay */}

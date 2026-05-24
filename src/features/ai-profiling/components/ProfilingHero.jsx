@@ -43,8 +43,8 @@ const ProfilingHero = ({ score }) => {
               />
             </svg>
             <div className="text-center">
-              <span className="text-4xl md:text-5xl font-bold">{score}%</span>
-              <span className="block text-white/70 text-sm font-medium mt-1">Match Score</span>
+              <span className="text-heading-xl md:text-heading-xl font-bold">{score}%</span>
+              <span className="block text-white/70 text-body-sm font-medium mt-1">Match Score</span>
             </div>
           </div>
         </div>

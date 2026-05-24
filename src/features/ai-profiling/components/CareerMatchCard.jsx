@@ -27,7 +27,7 @@ const CareerMatchCard = ({ career }) => {
         </div>
         
         <div className="flex flex-col items-end">
-          <div className="w-12 h-12 rounded-full flex items-center justify-center bg-accent-purple-light text-accent-purple font-bold border-4 border-white shadow-sm ring-1 ring-border/50">
+          <div className="w-12 h-12 rounded-full flex items-center justify-center bg-accent-purple-light text-accent-purple font-bold text-body-sm border-4 border-white shadow-sm ring-1 ring-border/50">
             {career.matchScore}%
           </div>
           <span className="text-caption font-semibold text-secondary-text uppercase tracking-wider mt-1">Match</span>

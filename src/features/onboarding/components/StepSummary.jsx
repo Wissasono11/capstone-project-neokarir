@@ -84,9 +84,9 @@ const StepSummary = ({
                   <div className="flex items-start gap-3">
                     <div className="mt-0.5 text-primary"><MapPin size={20} /></div>
                     <div>
-                      <p className="text-sm text-secondary-text font-medium">Location & Domain</p>
+                      <p className="text-sm text-secondary-text font-medium">Domain</p>
                       <p className="text-primary-text font-semibold">
-                        {manualData.location} &bull; <span className="font-normal">{manualData.domain}</span>
+                        {manualData.domain}
                       </p>
                     </div>
                   </div>

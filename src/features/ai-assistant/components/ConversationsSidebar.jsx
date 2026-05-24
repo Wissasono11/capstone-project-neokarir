@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { 
   Sparkles, 
   PanelLeftClose, 
   SquarePen, 
   Search, 
   X, 
-  MessageSquare, 
-  Trash2 
+  Trash2,
+  MoreVertical,
+  Pencil
 } from 'lucide-react';
 
 const ConversationsSidebar = ({
@@ -18,8 +19,28 @@ const ConversationsSidebar = ({
   filteredSessions,
   activeSessionId,
   selectSession,
-  deleteSession
+  deleteSession,
+  renameSession
 }) => {
+  const [activeDropdownId, setActiveDropdownId] = useState(null);
+  const [editingSessionId, setEditingSessionId] = useState(null);
+  const [editTitle, setEditTitle] = useState('');
+
+  const handleSaveRename = (id) => {
+    if (editTitle.trim()) {
+      renameSession(id, editTitle.trim());
+    }
+    setEditingSessionId(null);
+  };
+
+  const handleKeyDownRename = (e, id) => {
+    if (e.key === 'Enter') {
+      handleSaveRename(id);
+    } else if (e.key === 'Escape') {
+      setEditingSessionId(null);
+    }
+  };
+
   return (
     <div 
       className={`absolute md:static inset-y-0 left-0 z-30 bg-white flex flex-col transition-all duration-300 ${
@@ -88,31 +109,90 @@ const ConversationsSidebar = ({
         ) : (
           filteredSessions.map((session) => {
             const isActive = session.id === activeSessionId;
+            const isEditing = session.id === editingSessionId;
             return (
               <div
                 key={session.id}
-                onClick={() => selectSession(session.id)}
+                onClick={() => !isEditing && selectSession(session.id)}
                 className={`group relative flex items-center justify-between px-3 py-3 rounded-xl cursor-pointer transition-all duration-150 ${
                   isActive 
                     ? 'bg-primary-light/45 text-primary font-bold' 
                     : 'text-slate-600 hover:bg-slate-50 hover:text-slate-800'
                 }`}
               >
-                <div className="flex items-center gap-2.5 min-w-0 pr-6">
-                  <MessageSquare className={`w-4.5 h-4.5 shrink-0 ${isActive ? 'text-primary' : 'text-slate-400'}`} />
-                  <span className="text-body-sm font-semibold truncate leading-tight">
-                    {session.title}
-                  </span>
+                <div className="flex items-center gap-2.5 min-w-0 pr-6 flex-1">
+                  {isEditing ? (
+                    <input
+                      type="text"
+                      value={editTitle}
+                      onChange={(e) => setEditTitle(e.target.value)}
+                      onBlur={() => handleSaveRename(session.id)}
+                      onKeyDown={(e) => handleKeyDownRename(e, session.id)}
+                      className="w-full bg-transparent border-none text-body-sm font-bold text-primary outline-none focus:ring-0 p-0"
+                      autoFocus
+                      onClick={(e) => e.stopPropagation()}
+                    />
+                  ) : (
+                    <span className="text-body-sm font-semibold truncate leading-tight">
+                      {session.title}
+                    </span>
+                  )}
                 </div>
 
-                {/* Delete Session Button (Visible on hover) */}
-                <button
-                  onClick={(e) => deleteSession(session.id, e)}
-                  className="absolute right-2 p-1.5 rounded-lg text-slate-400 hover:text-rose-500 hover:bg-rose-50 opacity-0 group-hover:opacity-100 transition-all duration-200 shrink-0 cursor-pointer"
-                  title="Hapus Obrolan"
-                >
-                  <Trash2 className="w-3.5 h-3.5" />
-                </button>
+                {/* Dropdown Menu Trigger */}
+                {!isEditing && (
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      e.preventDefault();
+                      setActiveDropdownId(activeDropdownId === session.id ? null : session.id);
+                    }}
+                    className={`p-1 rounded-lg text-slate-400 hover:text-slate-600 hover:bg-slate-100 opacity-0 group-hover:opacity-100 ${
+                      activeDropdownId === session.id ? 'opacity-100 bg-slate-100 text-slate-600' : ''
+                    } transition-all duration-200 shrink-0 cursor-pointer`}
+                    title="Pilihan"
+                  >
+                    <MoreVertical className="w-3.5 h-3.5" />
+                  </button>
+                )}
+
+                {/* Dropdown Menu Card */}
+                {activeDropdownId === session.id && (
+                  <>
+                    <div 
+                      className="fixed inset-0 z-30" 
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setActiveDropdownId(null);
+                      }}
+                    />
+                    <div className="absolute right-2 top-10 w-36 bg-white border border-slate-200/85 rounded-xl shadow-lg py-1 z-40 text-left">
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setEditingSessionId(session.id);
+                          setEditTitle(session.title);
+                          setActiveDropdownId(null);
+                        }}
+                        className="w-full flex items-center gap-2 px-3 py-2 text-body-sm font-semibold text-slate-700 hover:bg-slate-50 transition-colors cursor-pointer"
+                      >
+                        <Pencil className="w-3.5 h-3.5 text-slate-400" />
+                        <span>Ganti nama</span>
+                      </button>
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          deleteSession(session.id, e);
+                          setActiveDropdownId(null);
+                        }}
+                        className="w-full flex items-center gap-2 px-3 py-2 text-body-sm font-bold text-rose-600 hover:bg-rose-50/50 transition-colors cursor-pointer"
+                      >
+                        <Trash2 className="w-3.5 h-3.5 text-rose-500" />
+                        <span>Hapus</span>
+                      </button>
+                    </div>
+                  </>
+                )}
               </div>
             );
           })

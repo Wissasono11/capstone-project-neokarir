@@ -179,16 +179,7 @@ const ManualInputForm = ({ manualData, updateManualData }) => {
         </div>
       </div>
 
-      {/* 6. Location */}
-      <div className="pt-2">
-        <FormInput
-          label="6. Where are you currently located? (City, Province)"
-          id="location"
-          placeholder="e.g., Jakarta, Indonesia"
-          value={manualData.location}
-          onChange={(e) => updateManualData('location', e.target.value)}
-        />
-      </div>
+
 
     </div>
   );

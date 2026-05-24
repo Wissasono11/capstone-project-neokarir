@@ -17,6 +17,7 @@ export const useAIAssistant = () => {
     createNewSession,
     selectSession,
     deleteSession,
+    renameSession,
     updateSessionMessages,
     clearSessionMessages
   } = useChatSessions(user);
@@ -112,6 +113,7 @@ export const useAIAssistant = () => {
     clearChat: clearActiveSession,
     createNewSession,
     selectSession,
-    deleteSession
+    deleteSession,
+    renameSession
   };
 };

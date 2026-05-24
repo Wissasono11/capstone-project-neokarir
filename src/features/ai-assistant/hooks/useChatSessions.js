@@ -133,6 +133,21 @@ export const useChatSessions = (user) => {
     saveAllSessions(updated);
   }, [sessions, user]);
 
+  // Rename a chat session
+  const renameSession = useCallback((id, newTitle) => {
+    if (!newTitle.trim()) return;
+    const updated = sessions.map(session => {
+      if (session.id === id) {
+        return {
+          ...session,
+          title: newTitle
+        };
+      }
+      return session;
+    });
+    saveAllSessions(updated);
+  }, [sessions]);
+
   const activeSession = sessions.find(s => s.id === activeSessionId) || null;
   const messages = activeSession ? activeSession.messages : [];
 
@@ -144,6 +159,7 @@ export const useChatSessions = (user) => {
     createNewSession,
     selectSession,
     deleteSession,
+    renameSession,
     updateSessionMessages,
     clearSessionMessages
   };
