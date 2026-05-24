@@ -1,6 +1,6 @@
 import { useAuth } from '../../../contexts/AuthContext';
 import { useAIProfiling } from '../../ai-profiling/hooks/useAIProfiling';
-import { useCareerRecommendations } from '../../carrer-recommendation/hooks/useCareerRecommendations';
+import { useCareerRecommendations } from '../../career-recommendation/hooks/useCareerRecommendations';
 import { useDashboardRecommendations } from './useDashboardRecommendations';
 import { useDashboardCompatibility } from './useDashboardCompatibility';
 import { useDashboardTips } from './useDashboardTips';

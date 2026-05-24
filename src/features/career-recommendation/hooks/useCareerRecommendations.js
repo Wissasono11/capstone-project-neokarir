@@ -55,7 +55,7 @@ export const useCareerRecommendations = () => {
   const sortedRecommendations = [...filteredRecommendations].sort((a, b) => b.matchScore - a.matchScore);
 
   // Find active job detail
-  const activeJob = recommendations.find(rec => rec.job_id === activeJobId) || sortedRecommendations[0] || null;
+  const activeJob = recommendations.find(rec => rec.job_id === activeJobId) || null;
 
   // Domain categories list for filters
   const domains = ['All', ...new Set(MASTER_JOBS.map(job => job.job_domain))];

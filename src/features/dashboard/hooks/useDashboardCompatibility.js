@@ -1,5 +1,5 @@
 import { useAuth } from '../../../contexts/AuthContext';
-import { useCareerRecommendations } from '../../carrer-recommendation/hooks/useCareerRecommendations';
+import { useCareerRecommendations } from '../../career-recommendation/hooks/useCareerRecommendations';
 
 export const useDashboardCompatibility = () => {
   const { user } = useAuth();

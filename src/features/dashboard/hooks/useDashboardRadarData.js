@@ -1,4 +1,4 @@
-import { useCareerRecommendations } from '../../carrer-recommendation/hooks/useCareerRecommendations';
+import { useCareerRecommendations } from '../../career-recommendation/hooks/useCareerRecommendations';
 
 export const useDashboardRadarData = (matchedJob) => {
   if (!matchedJob) return [];

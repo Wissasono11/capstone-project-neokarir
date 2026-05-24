@@ -79,7 +79,7 @@ const ChatInputForm = ({
 
       {/* Disclaimer */}
       <p className="text-caption text-center text-secondary-text/70 mt-3 font-semibold select-none">
-        NeoKarir AI dapat membuat kesalahan. Harap pertimbangkan untuk memverifikasi data penting.
+        Neobots dapat membuat kesalahan. Harap pertimbangkan untuk memverifikasi data penting.
       </p>
     </div>
   );

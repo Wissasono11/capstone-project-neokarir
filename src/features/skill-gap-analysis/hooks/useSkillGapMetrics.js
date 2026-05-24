@@ -1,4 +1,7 @@
+import { useCareerRecommendations } from "../../career-recommendation/hooks/useCareerRecommendations";
+
 export const useSkillGapMetrics = (targetJob, user) => {
+  const { completedCourses } = useCareerRecommendations();
   if (!targetJob) {
     return {
       heroData: null,

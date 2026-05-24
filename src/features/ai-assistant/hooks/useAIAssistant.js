@@ -1,6 +1,6 @@
 import { useState, useCallback } from 'react';
 import { useAuth } from '../../../contexts/AuthContext';
-import { useCareerRecommendations } from '../../carrer-recommendation/hooks/useCareerRecommendations';
+import { useCareerRecommendations } from '../../career-recommendation/hooks/useCareerRecommendations';
 import { getSimulatedResponse } from '../data/knowledgeBase';
 import { useChatSessions } from './useChatSessions';
 
@@ -8,7 +8,6 @@ export const useAIAssistant = () => {
   const { user } = useAuth();
   const { recommendations } = useCareerRecommendations();
   
-  // Delegate all session state management to useChatSessions
   const {
     sessions,
     activeSessionId,

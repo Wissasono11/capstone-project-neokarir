@@ -1,4 +1,3 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ChevronRight } from 'lucide-react';
 
@@ -17,6 +16,7 @@ const CareerRecommendationList = ({ recommendations }) => {
         {recommendations.map((rec) => (
           <div
             key={rec.id}
+            onClick={() => navigate(`/dashboard/recommendations/${rec.id}`)}
             className="flex items-center justify-between p-3 md:p-4 rounded-2xl border border-border hover:border-primary/40 hover:bg-bg-secondary/20 transition-all duration-300 cursor-pointer group"
           >
             <div className="flex items-center gap-3 md:gap-4 min-w-0">

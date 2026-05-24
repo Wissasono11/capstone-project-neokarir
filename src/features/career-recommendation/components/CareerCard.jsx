@@ -1,4 +1,4 @@
-import { CheckCircle2, AlertCircle, ChevronRight, Award, GraduationCap, Briefcase } from 'lucide-react';
+import { CheckCircle2, AlertCircle, ChevronRight, Award, GraduationCap, BriefcaseBusiness } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const CareerCard = ({ job, isActive, onClick }) => {
@@ -66,7 +66,7 @@ const CareerCard = ({ job, isActive, onClick }) => {
       {/* Requirement Specs */} 
       <div className="flex items-center gap-4 text-caption font-bold text-slate-600 mb-4 px-1">
         <div className="flex items-center gap-1.5">
-          <Briefcase className="w-4 h-4 text-slate-400 shrink-0" />
+          <BriefcaseBusiness className="w-4 h-4 text-slate-400 shrink-0" />
           <span>{job.min_experience}</span>
         </div>
         <div className="flex items-center gap-1.5">

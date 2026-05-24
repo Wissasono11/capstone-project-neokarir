@@ -37,7 +37,7 @@ const SkillGapHero = ({ data }) => {
 
   return (
     <div className="bg-white rounded-3xl border border-slate-100 p-6 md:p-8 shadow-sm flex flex-col md:flex-row items-center gap-8">
-      
+
       {/* Circular Progress Area */}
       <div className="flex flex-col items-center justify-center shrink-0">
         <div className="relative flex items-center justify-center">
@@ -69,7 +69,7 @@ const SkillGapHero = ({ data }) => {
               className="transition-all duration-1000 ease-out"
             />
           </svg>
-          
+
           {/* Central Score Text */}
           <div className="absolute flex flex-col items-center justify-center">
             <div className="flex items-baseline justify-center">
@@ -79,7 +79,7 @@ const SkillGapHero = ({ data }) => {
             <span className="text-caption font-semibold text-slate-400 uppercase tracking-wider mt-1">Kesiapan</span>
           </div>
         </div>
-        
+
         <span className={`mt-3 px-3 py-1 rounded-full text-caption font-bold border ${badgeClass}`}>
           {readinessLevel}
         </span>
@@ -92,7 +92,7 @@ const SkillGapHero = ({ data }) => {
             {targetDomain}
           </span>
         </div>
-        
+
         <h2 className="text-title font-bold text-slate-800 mb-4 flex items-center gap-2">
           Target Karir: <span className="text-indigo-600 font-extrabold">{targetRole}</span>
         </h2>
@@ -124,9 +124,8 @@ const SkillGapHero = ({ data }) => {
               <p className="text-body font-bold text-slate-700 mt-0.5">
                 {educationMatch.required}
               </p>
-              <span className={`inline-flex items-center gap-1 text-caption font-bold mt-1 ${
-                educationMatch.hasGap ? 'text-amber-600' : 'text-emerald-600'
-              }`}>
+              <span className={`inline-flex items-center gap-1 text-caption font-bold mt-1 ${educationMatch.hasGap ? 'text-amber-600' : 'text-emerald-600'
+                }`}>
                 {educationMatch.hasGap ? <AlertTriangle className="w-3.5 h-3.5" /> : <CheckCircle2 className="w-3.5 h-3.5" />}
                 {educationMatch.hasGap ? `Gap pendidikan: Kamu ${educationMatch.current}` : 'Sesuai dengan kualifikasi'}
               </span>
@@ -143,12 +142,11 @@ const SkillGapHero = ({ data }) => {
               <p className="text-body font-bold text-slate-700 mt-0.5">
                 Dibutuhkan: {experienceGap.required}
               </p>
-              <span className={`inline-flex items-center gap-1 text-caption font-bold mt-1 ${
-                experienceGap.hasGap ? 'text-amber-600' : 'text-emerald-600'
-              }`}>
+              <span className={`inline-flex items-center gap-1 text-caption font-bold mt-1 ${experienceGap.hasGap ? 'text-amber-600' : 'text-emerald-600'
+                }`}>
                 {experienceGap.hasGap ? <AlertTriangle className="w-3.5 h-3.5" /> : <CheckCircle2 className="w-3.5 h-3.5" />}
-                {experienceGap.hasGap 
-                  ? `Ada gap: Pengalaman kamu saat ini adalah ${experienceGap.current}` 
+                {experienceGap.hasGap
+                  ? `Ada gap: Pengalaman kamu saat ini adalah ${experienceGap.current}`
                   : 'Memenuhi kualifikasi pengalaman kerja'
                 }
               </span>

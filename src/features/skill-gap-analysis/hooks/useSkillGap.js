@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useCareerRecommendations } from '../../carrer-recommendation/hooks/useCareerRecommendations';
+import { useCareerRecommendations } from '../../career-recommendation/hooks/useCareerRecommendations';
 import { useSkillGapMetrics } from './useSkillGapMetrics';
 import { useSkillGapRecommendations } from './useSkillGapRecommendations';
 

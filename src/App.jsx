@@ -15,6 +15,7 @@ import DashboardPage from './pages/DashboardPage';
 import CVAnalyzerPage from './pages/CVAnalyzerPage';
 import SkillGapPage from './pages/SkillGapPage';
 import CareerRecommendationPage from './pages/CareerRecommendationPage';
+import CareerRecommendationDetailPage from './pages/CareerRecommendationDetailPage';
 import AIAssistantPage from './pages/AIAssistantPage';
 import ProfileSettingsPage from './pages/ProfileSettingsPage';
 
@@ -40,6 +41,7 @@ function App() {
             <Route path="/dashboard/cv-analyzer" element={<CVAnalyzerPage />} />
             <Route path="/dashboard/skill-gap" element={<SkillGapPage />} />
             <Route path="/dashboard/recommendations" element={<CareerRecommendationPage />} />
+            <Route path="/dashboard/recommendations/:id" element={<CareerRecommendationDetailPage />} />
             <Route path="/dashboard/ai-assistant" element={<AIAssistantPage />} />
             <Route path="/dashboard/settings" element={<ProfileSettingsPage />} />
           </Route>

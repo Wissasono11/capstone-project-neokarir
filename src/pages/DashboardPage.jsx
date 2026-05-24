@@ -9,7 +9,7 @@ import QuickLinks from '../features/dashboard/components/QuickLinks';
 import { useDashboardData } from '../features/dashboard/hooks/useDashboardData';
 import avatar from '../assets/images/avatar.png';
 
-const DashboardPage = () => { 
+const DashboardPage = () => {
   const {
     user,
     results,

@@ -1,5 +1,5 @@
 import { BookOpen, TrendingUp, CheckCircle2 } from 'lucide-react';
-import { useCareerRecommendations } from '../../carrer-recommendation/hooks/useCareerRecommendations';
+import { useCareerRecommendations } from '../../career-recommendation/hooks/useCareerRecommendations';
 
 export const useDashboardTips = (matchedJob) => {
   const { completedCourses } = useCareerRecommendations();
