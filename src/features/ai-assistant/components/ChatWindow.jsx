@@ -72,7 +72,7 @@ const ChatWindow = () => {
       )}
 
       {/* Main Chat Feed Area */}
-      <div className="flex-1 flex flex-col bg-[#F8FAFC] relative z-10">
+      <div className="flex-1 flex flex-col bg-[#F8FAFC] relative z-10 min-w-0">
         
         {/* Chat Feed Header */}
         <ChatFeedHeader

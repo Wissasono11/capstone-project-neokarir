@@ -77,6 +77,16 @@ body {
   transform: translateY(1px);
 }
 
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 .text-caption { font-size: var(--font-size-caption); }
 .text-body-sm { font-size: var(--font-size-body-sm); }
 .text-body { font-size: var(--font-size-body); }

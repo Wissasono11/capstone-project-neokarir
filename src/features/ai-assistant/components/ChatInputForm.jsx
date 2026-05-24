@@ -33,7 +33,7 @@ const ChatInputForm = ({
           onChange={(e) => setInputText(e.target.value)}
           onKeyDown={handleKeyPress}
           placeholder="Tulis respon atau ajukan pertanyaan karir baru..."
-          className="flex-1 py-2.5 pl-4 pr-12 bg-transparent text-body-sm font-semibold text-primary-text placeholder-secondary-text/70 outline-none"
+          className="flex-1 min-w-0 py-2.5 pl-4 pr-12 bg-transparent text-body-sm font-semibold text-primary-text placeholder-secondary-text/70 outline-none"
         />
 
         {/* Enhance Prompt Button (Skill: enhance-prompt) */}
