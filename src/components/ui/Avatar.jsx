@@ -8,7 +8,7 @@ const Avatar = ({ src, alt, fallback, size = 'md', className = '', ...props }) =
   };
 
   return (
-    <div 
+    <div
       className={`relative inline-flex items-center justify-center overflow-hidden rounded-full bg-bg-secondary border-2 border-white ${sizes[size]} ${className}`}
       {...props}
     >

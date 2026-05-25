@@ -1,8 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import Button from '../../../components/ui/Button';
 import { heroTextContainerVariants as textContainerVariants, heroTextItemVariants as textItemVariants, heroImageVariants as imageVariants } from '../../../utils/animations';
+import heroImg from '../../../assets/images/hero-section.webp';
 
 const HeroSection = () => {
   return (
@@ -60,10 +61,12 @@ const HeroSection = () => {
             className="relative rounded-4xl overflow-hidden aspect-4/3 shadow-[0_8px_30px_rgb(0,0,0,0.06)]"
           >
             <img
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1740&auto=format&fit=crop"
+              src={heroImg}
               alt="Professional team collaborating"
               className="w-full h-full object-cover"
               fetchpriority="high"
+              width="600"
+              height="450"
             />
           </div>
 

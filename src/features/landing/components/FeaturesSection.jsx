@@ -7,7 +7,7 @@ const FeaturesSection = () => {
   return (
     <section id="features" className="py-24 bg-background border-t border-border">
       <div className="max-w-[1280px] mx-auto px-6">
-        <motion.div 
+        <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -20,7 +20,7 @@ const FeaturesSection = () => {
           </p>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           className="grid grid-cols-1 md:grid-cols-3 gap-8"
           variants={containerVariants}
           initial="hidden"

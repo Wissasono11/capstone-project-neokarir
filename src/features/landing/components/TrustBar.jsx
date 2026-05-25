@@ -4,7 +4,6 @@ import { trustBarVariants } from '../../../utils/animations';
 
 const TrustBar = () => {
   const companies = [
-    { name: 'Stripe', logo: 'https://upload.wikimedia.org/wikipedia/commons/b/ba/Stripe_Logo%2C_revised_2016.svg' },
     {
       name: 'Microsoft', logo: (
         <svg xmlns="http://www.w3.org/2000/svg" width="164" height="48" viewBox="0 0 164 48" fill="none" className="h-6 md:h-8 w-auto">

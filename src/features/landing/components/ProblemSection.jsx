@@ -1,12 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { staggerContainerVariants as containerVariants, fadeInUpItemVariants as itemVariants } from '../../../utils/animations';
+import card1Img from '../../../assets/images/card-1-ps.webp';
+import card3Img from '../../../assets/images/card-3-ps.webp';
+import card5Img from '../../../assets/images/card-5-ps.webp';
 
 const ProblemSection = () => {
   return (
     <section id="solutions" className="py-24 bg-background">
       <div className="max-w-[1280px] mx-auto px-6">
-        <motion.div 
+        <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -19,7 +22,7 @@ const ProblemSection = () => {
           </p>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-6 min-h-[600px]"
           variants={containerVariants}
           initial="hidden"
@@ -29,10 +32,12 @@ const ProblemSection = () => {
           {/* Card 1 */}
           <motion.div variants={itemVariants} className="md:col-span-2 md:row-span-1 relative rounded-[24px] overflow-hidden group">
             <img
-              src="https://images.unsplash.com/photo-1613324996029-f6190a17838f?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src={card1Img}
               alt="Information overload and confusing charts"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               loading="lazy"
+              width="600"
+              height="280"
             />
             <div className="absolute inset-0 bg-linear-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           </motion.div>
@@ -53,10 +58,12 @@ const ProblemSection = () => {
           {/* Card 3 (Right Tall - Image) */}
           <motion.div variants={itemVariants} className="md:col-span-1 md:row-span-2 relative rounded-[24px] overflow-hidden group">
             <img
-              src="https://plus.unsplash.com/premium_photo-1669627111607-fd97efe8866c?q=80&w=772&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dauto=format&fit=crop"
+              src={card3Img}
               alt="Looking up at corporate buildings"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               loading="lazy"
+              width="300"
+              height="580"
             />
             <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-60"></div>
           </motion.div>
@@ -77,10 +84,12 @@ const ProblemSection = () => {
           {/* Card 5 (Bottom Middle - Small Image) */}
           <motion.div variants={itemVariants} className="md:col-span-1 md:row-span-1 relative rounded-[24px] overflow-hidden group">
             <img
-              src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=928&auto=format&fit=crop"
+              src={card5Img}
               alt="Messy desk with papers and coffee"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               loading="lazy"
+              width="300"
+              height="280"
             />
             <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-500"></div>
           </motion.div>

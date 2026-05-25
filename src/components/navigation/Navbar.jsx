@@ -43,7 +43,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Toggle Button */}
         <div className="md:hidden flex items-center">
-          <button 
+          <button
             onClick={toggleMenu}
             className="p-2 text-primary-text hover:text-primary focus:outline-none"
             aria-label="Toggle menu"
@@ -51,17 +51,17 @@ const Navbar = () => {
             <motion.div
               className="w-6 h-5 flex flex-col justify-between relative"
             >
-              <motion.span 
+              <motion.span
                 className="w-full h-0.5 bg-current rounded-full origin-center"
                 animate={isOpen ? { rotate: 45, y: 9 } : { rotate: 0, y: 0 }}
                 transition={{ duration: 0.3, ease: 'easeInOut' }}
               />
-              <motion.span 
+              <motion.span
                 className="w-full h-0.5 bg-current rounded-full"
                 animate={isOpen ? { opacity: 0 } : { opacity: 1 }}
                 transition={{ duration: 0.3, ease: 'easeInOut' }}
               />
-              <motion.span 
+              <motion.span
                 className="w-full h-0.5 bg-current rounded-full origin-center"
                 animate={isOpen ? { rotate: -45, y: -9 } : { rotate: 0, y: 0 }}
                 transition={{ duration: 0.3, ease: 'easeInOut' }}
