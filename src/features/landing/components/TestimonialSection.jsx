@@ -36,7 +36,7 @@ const TestimonialSection = () => {
           </defs>
         </svg>
       ),
-      quote: "Thank you very much, now I'm become an important person in this company. This website is very good and very helpful in providing tips on finding a job and working. I am very happy now.",
+      quote: "Terima kasih banyak, sekarang saya menjadi orang penting di perusahaan ini. Situs web ini sangat bagus dan sangat membantu dalam meningkatkan kekurangan CV dan rekomendasi karir yang sesuai dengan profile saya. Saya sangat senang sekarang.",
       name: "Hermina Worlder",
       role: "Software Engineer",
       avatar: "https://i.pravatar.cc/150?img=47"
@@ -48,7 +48,7 @@ const TestimonialSection = () => {
           <path d="M14.5349 0L0 9.4186L10.1163 17.5581L24.6512 8.48837L14.5349 0ZM0 25.4651L14.5349 35L24.6512 26.5116L10.1163 17.5581L0 25.4651ZM24.6512 26.5116L34.8837 35L49.3023 25.5814L39.3023 17.5581L24.6512 26.5116ZM49.3023 9.4186L34.8837 0L24.6512 8.48837L39.3023 17.5581L49.3023 9.4186ZM24.7674 28.3721L14.5349 36.8605L10.2326 33.9535V37.2093L24.7674 45.9302L39.3023 37.2093V33.9535L34.8837 36.8605L24.7674 28.3721Z" fill="#0056FE" />
         </svg>
       ),
-      quote: "This website has good quality so far that I have enjoyed from the start I was looking for a job until now I am in a good position in the company. Keep evolving with the time.",
+      quote: "Situs web ini memiliki kualitas yang baik saya sudah menikmatinya sejak awal saat saya sedang mencari pekerjaan hingga kini saya menduduki posisi yang baik di perusahaan ini. Teruslah berkembang seiring berjalannya waktu.",
       name: "Devhan Kapoor",
       role: "Senior Data Scientist",
       avatar: "https://i.pravatar.cc/150?img=11"
@@ -62,7 +62,7 @@ const TestimonialSection = () => {
           <path d="M26.4143 20.4248L24.2526 26.855C24.2526 26.855 22.3587 25.8442 20.037 25.8442C16.6335 25.8442 16.4622 27.9801 16.4622 28.5183C16.4622 31.4552 24.1177 32.5804 24.1177 39.4594C24.1177 44.8716 20.685 48.3566 16.0566 48.3566C10.5025 48.3566 7.66211 44.8999 7.66211 44.8999L9.14926 39.9863C9.14926 39.9863 12.0689 42.4929 14.5325 42.4929C16.1423 42.4929 16.7971 41.2255 16.7971 40.2994C16.7971 36.4685 10.5165 36.2976 10.5165 30.0028C10.5165 24.7047 14.3193 19.5776 21.9954 19.5776C24.9532 19.5776 26.4143 20.4248 26.4143 20.4248Z" fill="white" />
         </svg>
       ),
-      quote: "NeoKarir's skill gap analysis is highly accurate. I now know exactly what to learn for a promotion. The CV analyzer gave me great insights as well.",
+      quote: "Skill Gap Analysis dari NeoKarir sangat akurat. Sekarang saya tahu persis apa yang harus saya pelajari untuk mendapatkan promosi. Alat analisis CV-nya juga memberi saya wawasan yang sangat berguna.",
       name: "Sarah Jenkins",
       role: "Product Manager",
       avatar: "https://i.pravatar.cc/150?img=5"
@@ -88,7 +88,7 @@ const TestimonialSection = () => {
           </defs>
         </svg>
       ),
-      quote: "The learning roadmap really helped me transition from backend to fullstack in just 3 months! Unbelievable experience with their curated courses.",
+      quote: "Peta jalan pembelajaran ini benar-benar membantu saya beralih dari backend ke fullstack hanya dalam waktu 3 bulan! Pengalaman yang luar biasa dengan kursus-kursus pilihan mereka.",
       name: "Budi Santoso",
       role: "Fullstack Dev",
       avatar: "https://i.pravatar.cc/150?img=33"
@@ -117,7 +117,7 @@ const TestimonialSection = () => {
           </defs>
         </svg>
       ),
-      quote: "The CV Analyzer helped me get an interview at my dream company. Highly recommended for any freshgraduate or professionals who want to switch or to build-up their careers.",
+      quote: "CV Analyzer membantu saya mendapatkan wawancara di perusahaan impian saya. Sangat direkomendasikan bagi lulusan baru maupun profesional yang ingin pindah pekerjaan atau mengembangkan karier mereka.",
       name: "Anita Wijaya",
       role: "Junior Backend Dev",
       avatar: "https://i.pravatar.cc/150?img=41"
@@ -128,7 +128,7 @@ const TestimonialSection = () => {
     <section id="testimonials" className="py-24 bg-bg-secondary border-t border-border overflow-hidden">
       <div className="max-w-[1280px] mx-auto px-6">
 
-        <motion.div 
+        <motion.div
           variants={testimonialHeaderVariants}
           initial="hidden"
           whileInView="visible"
@@ -136,9 +136,9 @@ const TestimonialSection = () => {
           className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6"
         >
           <div>
-            <p className="text-secondary-text mb-2 text-lg">Our Testimonials</p>
+            <p className="text-secondary-text mb-2 text-lg">Testimoni Kami</p>
             <h2 className="text-3xl md:text-5xl font-bold text-primary-text tracking-tight">
-              We makes our <span className="text-primary">clients happy</span>
+              Kami membuat <span className="text-primary">klien senang</span>
             </h2>
           </div>
           <div className="flex gap-4">

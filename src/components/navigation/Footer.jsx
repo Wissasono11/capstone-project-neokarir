@@ -10,26 +10,26 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-1">
             <div className="text-2xl font-bold text-primary tracking-tight mb-4">NeoKarir</div>
             <p className="text-sm text-secondary-text leading-relaxed">
-              Your Future Career, Woven by AI. Discover hidden potential and achieve your dream role with data-driven guidance.
+              Karier Masa Depan Anda, Dibentuk oleh AI. Temukan potensi tersembunyi Anda dan raih posisi impian Anda dengan panduan berbasis data.
             </p>
           </div>
 
           {/* Links Columns */}
           <div>
-            <h4 className="text-sm font-semibold text-primary-text uppercase tracking-widest mb-6">Main Menu</h4>
+            <h4 className="text-sm font-semibold text-primary-text uppercase tracking-widest mb-6">Menu Utama</h4>
             <ul className="space-y-4">
-              <li><a href="#home" className="text-sm text-secondary-text hover:text-primary transition-colors">Home</a></li>
-              <li><a href="#works" className="text-sm text-secondary-text hover:text-primary transition-colors">How It Works</a></li>
-              <li><a href="#features" className="text-sm text-secondary-text hover:text-primary transition-colors">Features</a></li>
-              <li><a href="#testimonials" className="text-sm text-secondary-text hover:text-primary transition-colors">Testimonials</a></li>
+              <li><a href="#home" className="text-sm text-secondary-text hover:text-primary transition-colors">Beranda</a></li>
+              <li><a href="#works" className="text-sm text-secondary-text hover:text-primary transition-colors">Cara Kerja</a></li>
+              <li><a href="#features" className="text-sm text-secondary-text hover:text-primary transition-colors">Fitur</a></li>
+              <li><a href="#testimonials" className="text-sm text-secondary-text hover:text-primary transition-colors">Testimoni</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold text-primary-text uppercase tracking-widest mb-6">Company</h4>
+            <h4 className="text-sm font-semibold text-primary-text uppercase tracking-widest mb-6">Tentang</h4>
             <ul className="space-y-4">
-              <li><a href="#about" className="text-sm text-secondary-text hover:text-primary transition-colors">About Us</a></li>
-              <li><a href="#careers" className="text-sm text-secondary-text hover:text-primary transition-colors">Careers</a></li>
+              <li><a href="#about" className="text-sm text-secondary-text hover:text-primary transition-colors">Tentang</a></li>
+              <li><a href="#careers" className="text-sm text-secondary-text hover:text-primary transition-colors">Karier</a></li>
               <li><a href="#blog" className="text-sm text-secondary-text hover:text-primary transition-colors">Blog</a></li>
             </ul>
           </div>
@@ -37,8 +37,8 @@ const Footer = () => {
           <div>
             <h4 className="text-sm font-semibold text-primary-text uppercase tracking-widest mb-6">Legal</h4>
             <ul className="space-y-4">
-              <li><Link to="/privacy" className="text-sm text-secondary-text hover:text-primary transition-colors">Privacy Policy</Link></li>
-              <li><Link to="/terms" className="text-sm text-secondary-text hover:text-primary transition-colors">Terms of Service</Link></li>
+              <li><Link to="/privacy" className="text-sm text-secondary-text hover:text-primary transition-colors">Kebijakan Privasi</Link></li>
+              <li><Link to="/terms" className="text-sm text-secondary-text hover:text-primary transition-colors">Syarat Layanan</Link></li>
             </ul>
           </div>
         </div>

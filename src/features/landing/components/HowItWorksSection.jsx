@@ -9,17 +9,17 @@ const HowItWorksSection = () => {
       <div className="max-w-[1280px] mx-auto px-6">
         {/* Section Header */}
         <motion.div
-          className="text-center mb-16 max-w-2xl mx-auto"
+          className="text-center mb-16 max-w-4xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5, ease: "easeOut" }}
         >
           <p className="text-secondary-text font-medium tracking-wide mb-4 uppercase text-sm">
-            How it works?
+            Bagaimana cara kerjanya?
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-primary-text mb-6 tracking-tight">
-            Just these <span className="text-primary">easy steps</span> to build your career with us
+            Hanya beberapa <span className="text-primary">langkah mudah</span> untuk membangun karir impianmu
           </h2>
         </motion.div>
 
@@ -35,9 +35,9 @@ const HowItWorksSection = () => {
           <motion.div variants={itemVariants} className="bg-[#F5F7FF] rounded-4xl p-8 pb-0 md:p-12 md:pb-0 flex flex-col relative overflow-hidden group hover:shadow-lg transition-shadow duration-300">
             <div className="mb-8 relative z-10">
               <div className="text-xl font-bold text-primary-text mb-2">01.</div>
-              <h3 className="text-2xl md:text-3xl font-bold text-primary-text mb-4">Discover Your Starting Point</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-primary-text mb-4">Kenali Titik Awalmu</h3>
               <p className="text-secondary-text leading-relaxed max-w-md">
-                Upload your CV or fill in your profile manually. Our Smart AI will instantly extract your skills, experience, and interests in seconds.
+                Upload CV atau isi profil secara manual. AI Cerdas kami akan mengekstrak keahlian, pengalaman, dan minatmu dalam hitungan detik.
               </p>
             </div>
 
@@ -46,17 +46,17 @@ const HowItWorksSection = () => {
               <div className="w-[280px] h-[340px] bg-white rounded-t-4xl shadow-xl border-x-8 border-t-8 border-gray-900 p-4 relative translate-y-8 group-hover:translate-y-4 transition-transform duration-500">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-5 bg-gray-900 rounded-b-xl"></div>
                 <div className="pt-6">
-                  <h4 className="font-semibold text-lg text-primary-text mb-1">Upload Profile</h4>
-                  <p className="text-xs text-secondary-text mb-4">Let AI analyze your background.</p>
+                  <h4 className="font-semibold text-lg text-primary-text mb-1">Unggah Profil</h4>
+                  <p className="text-xs text-secondary-text mb-4">AI akan menganalisis latar belakangmu.</p>
 
                   <div className="w-full h-32 border-2 border-dashed border-indigo-200 rounded-xl bg-indigo-50/50 flex flex-col items-center justify-center mb-4">
                     <UploadCloud className="w-8 h-8 text-primary mb-2" />
-                    <span className="text-xs font-medium text-primary">Upload your CV</span>
+                    <span className="text-xs font-medium text-primary">Unggah CV-mu</span>
                   </div>
 
                   <div className="space-y-3">
                     <div className="h-10 bg-gray-50 rounded-lg flex items-center px-3 border border-gray-100">
-                      <span className="text-xs text-gray-400">Manual Entry...</span>
+                      <span className="text-xs text-gray-400">Isi Manual...</span>
                     </div>
                   </div>
                 </div>
@@ -74,9 +74,9 @@ const HowItWorksSection = () => {
             <motion.div variants={itemVariants} className="bg-[#F0FDF4] rounded-4xl p-8 md:p-10 flex flex-col md:flex-row relative overflow-hidden group hover:shadow-lg transition-shadow duration-300 flex-1">
               <div className="relative z-10 md:w-3/5 pr-4 mb-6 md:mb-0">
                 <div className="text-xl font-bold text-primary-text mb-2">02.</div>
-                <h3 className="text-2xl font-bold text-primary-text mb-3">Map Your Skill Gaps</h3>
+                <h3 className="text-2xl font-bold text-primary-text mb-3">Temukan Kekurangan Skill-mu</h3>
                 <p className="text-secondary-text text-sm md:text-base leading-relaxed">
-                  AI compares your profile with real-time job market trends. See your Job Match Score and know what skills you need to improve through an interactive Radar Chart.
+                  AI membandingkan profilmu dengan tren pasar kerja terkini. Lihat Skor Kecocokan Pekerjaan (Job Match Score) dan ketahui skill apa yang perlu ditingkatkan melalui Radar Chart.
                 </p>
               </div>
 
@@ -88,8 +88,8 @@ const HowItWorksSection = () => {
                       <Target className="w-4 h-4 text-emerald-600" />
                     </div>
                     <div>
-                      <div className="text-sm font-semibold text-gray-900">Match Score</div>
-                      <div className="text-xs text-emerald-600 font-medium">High Potential</div>
+                      <div className="text-sm font-semibold text-gray-900">Skor Kecocokan Pekerjaan</div>
+                      <div className="text-xs text-emerald-600 font-medium">Potensi Tinggi</div>
                     </div>
                   </div>
                   <div className="relative w-24 h-24 mx-auto mb-2">
@@ -107,9 +107,9 @@ const HowItWorksSection = () => {
             <motion.div variants={itemVariants} className="bg-[#FAF5FF] rounded-4xl p-8 md:p-10 flex flex-col md:flex-row relative overflow-hidden group hover:shadow-lg transition-shadow duration-300 flex-1">
               <div className="relative z-10 md:w-3/5 pr-4 mb-6 md:mb-0">
                 <div className="text-xl font-bold text-primary-text mb-2">03.</div>
-                <h3 className="text-2xl font-bold text-primary-text mb-3">Start Your Career Journey</h3>
+                <h3 className="text-2xl font-bold text-primary-text mb-3">Mulai Perjalanan Karirmu</h3>
                 <p className="text-secondary-text text-sm md:text-base leading-relaxed">
-                  Get a personalized step-by-step learning roadmap. Learn the right skills, optimize your CV, and become the most sought-after candidate in the industry!
+                  Dapatkan roadmap pembelajaran personal yang terstruktur. Pelajari skill yang tepat, optimalkan CV-mu, dan jadilah kandidat paling diincar di industri!
                 </p>
               </div>
 

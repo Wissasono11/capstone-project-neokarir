@@ -14,9 +14,9 @@ const FeaturesSection = () => {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5, ease: "easeOut" }}
         >
-          <h2 className="text-3xl md:text-5xl font-bold text-primary-text mb-4">What service NeoKarir offer?</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-primary-text mb-4">Apa yang Kami Tawarkan?</h2>
           <p className="text-lg text-secondary-text max-w-3xl mx-auto leading-relaxed">
-            We use advanced AI to map your potential and provide actionable guidance, not just generic advice.
+            Kami menggunakan AI canggih untuk memetakan potensi Anda dan memberikan panduan yang dapat ditindaklanjuti, bukan hanya saran umum.
           </p>
         </motion.div>
 
@@ -37,7 +37,7 @@ const FeaturesSection = () => {
               </div>
               <h3 className="text-xl font-bold text-primary-text mb-3">AI Profiling</h3>
               <p className="text-sm text-secondary-text leading-relaxed mb-8 grow">
-                Deep analysis of your experience and skills to discover the ideal career match you might not realize.
+                Analisis mendalam pengalaman dan keterampilan Anda untuk menemukan kecocokan karier ideal yang mungkin tidak Anda sadari.
               </p>
             </Card>
           </motion.div>
@@ -54,7 +54,7 @@ const FeaturesSection = () => {
               </div>
               <h3 className="text-xl font-bold text-primary-text mb-3">Skill Gap Analysis</h3>
               <p className="text-sm text-secondary-text leading-relaxed mb-8 grow">
-                Identify the exact skills the market needs today and see what you need to learn to reach your dream role.
+                Identifikasi keterampilan yang dibutuhkan pasar saat ini dan lihat apa yang perlu Anda pelajari untuk mencapai peran impian Anda.
               </p>
             </Card>
           </motion.div>
@@ -73,7 +73,7 @@ const FeaturesSection = () => {
               </div>
               <h3 className="text-xl font-bold text-primary-text mb-3">Smart CV Analyzer</h3>
               <p className="text-sm text-secondary-text leading-relaxed mb-8 grow">
-                Get instant AI-powered feedback to optimize your CV to pass ATS systems and attract recruiters' attention.
+                Dapatkan umpan balik instan berbasis AI untuk mengoptimalkan CV Anda agar lolos sistem ATS dan menarik perhatian perekrut.
               </p>
             </Card>
           </motion.div>
@@ -88,7 +88,7 @@ const FeaturesSection = () => {
               </div>
               <h3 className="text-xl font-bold text-primary-text mb-3">Interactive Dashboard</h3>
               <p className="text-sm text-secondary-text leading-relaxed mb-8 grow">
-                Experience a centralized hub where you can track your skill progression, monitor applications, and visualize career growth.
+              Pusat kendali utama di mana Anda dapat melacak kemajuan keterampilan, dan memvisualisasikan pertumbuhan karier.
               </p>
             </Card>
           </motion.div>
@@ -103,7 +103,7 @@ const FeaturesSection = () => {
               </div>
               <h3 className="text-xl font-bold text-primary-text mb-3">Jobs Market</h3>
               <p className="text-sm text-secondary-text leading-relaxed mb-8 grow">
-                Browse highly curated job opportunities that perfectly align with your verified skills and Job Match Score.
+              Jelajahi peluang kerja pilihan yang sangat sesuai dengan keterampilan terverifikasi dan Job Match Score Anda.
               </p>
             </Card>
           </motion.div>
@@ -118,7 +118,7 @@ const FeaturesSection = () => {
               </div>
               <h3 className="text-xl font-bold text-primary-text mb-3">24/7 AI Career Assistant</h3>
               <p className="text-sm text-secondary-text leading-relaxed mb-8 grow">
-                Interact with our intelligent assistant anytime to get interview prep advice, resume feedback, and personalized strategies.
+                Interaksi dengan asisten cerdas kami kapan saja untuk mendapatkan saran umpan balik resume, dan strategi yang dipersonalisasi.
               </p>
             </Card>
           </motion.div>

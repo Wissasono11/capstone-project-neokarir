@@ -16,9 +16,9 @@ const ProblemSection = () => {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5, ease: "easeOut" }}
         >
-          <h2 className="text-3xl md:text-5xl font-bold text-primary-text mb-4 tracking-tight">Why do you need NeoKarir?</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-primary-text mb-4 tracking-tight">Mengapa Anda Membutuhkan NeoKarir?</h2>
           <p className="text-lg text-secondary-text max-w-3xl mx-auto leading-relaxed">
-            The gap between talent and industry needs is widening. We are here to eliminate the guesswork and confusion in planning your career.
+            Gap antara ketersediaan talenta dan kebutuhan industri semakin besar. Kami hadir untuk menghilangkan ketidakpastian dan kebingungan dalam merencanakan karier Anda.
           </p>
         </motion.div>
 
@@ -47,10 +47,10 @@ const ProblemSection = () => {
             <div className="absolute top-0 right-0 w-32 h-32 bg-gray-700/30 rounded-bl-full -mr-10 -mt-10 transition-transform duration-500 group-hover:scale-110"></div>
             <div className="relative z-10 flex flex-col h-full justify-between gap-4">
               <h3 className="text-xl lg:text-2xl font-bold text-white leading-snug">
-                The Rigid Recruitment System <span className="block text-gray-400 text-lg mt-1 font-medium">(The ATS Wall)</span>
+                Sistem Rekrutmen yang Kaku <span className="block text-gray-400 text-lg mt-1 font-medium">(Tembok ATS)</span>
               </h3>
               <p className="text-sm lg:text-base text-gray-300 leading-relaxed">
-                Millions of great talents are rejected by automated systems (ATS) before their CVs are ever read by a human. Our Smart AI analyzes and uncovers hidden criteria so your profile is always relevant.
+                Banyak talenta hebat ditolak oleh sistem otomatis (ATS) sebelum CV mereka dibaca oleh manusia. AI Cerdas kami menganalisis dan mengungkap kriteria tersembunyi sehingga profil Anda selalu relevan.
               </p>
             </div>
           </motion.div>
@@ -70,13 +70,12 @@ const ProblemSection = () => {
 
           {/* Card 4 (Bottom Left - Primary Color Text Card) */}
           <motion.div variants={itemVariants} className="md:col-span-2 md:row-span-1 bg-primary rounded-[24px] p-8 lg:p-10 flex flex-col justify-center relative overflow-hidden group">
-            <div className="absolute -right-16 -bottom-16 w-80 h-80 bg-white/10 rounded-full blur-3xl group-hover:bg-white/20 transition-colors duration-500"></div>
             <div className="relative z-10 flex flex-col h-full justify-center gap-4 max-w-lg">
               <h3 className="text-2xl lg:text-3xl font-bold text-white leading-tight">
-                Trapped in Learning Overload
+                Terjebak Banjir Informasi
               </h3>
               <p className="text-base lg:text-lg text-indigo-100 leading-relaxed">
-                Too many bootcamps, courses, and tutorials often just waste time and money without clear direction. We cut through the noise with a 100% personalized visual roadmap focusing only on the skills you actually need.
+                Terlalu banyak bootcamp, kursus, dan tutorial yang seringkali hanya membuang waktu dan uang tanpa arah yang jelas. Kami memotong kebisingan dengan roadmap visual 100% yang dipersonalisasi dengan fokus hanya pada keterampilan yang benar-benar Anda butuhkan.
               </p>
             </div>
           </motion.div>

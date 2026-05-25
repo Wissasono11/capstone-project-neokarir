@@ -35,15 +35,15 @@ const CTASection = () => {
 
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm mb-6 text-white/90 text-sm font-medium shadow-sm">
               <ScanFace className="w-4 h-4 text-purple-200" />
-              <span>Smart AI Analysis Ready</span>
+              <span>Smart AI Analysis Siap</span>
             </div>
 
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 tracking-tight leading-tight">
-              Stop Guessing Your Career Path.
+              Stop Menebak-Nebak Jalur Karier Anda.
             </h2>
 
-            <p className="text-base md:text-lg text-gray-200 mb-8 leading-relaxed max-w-2xl mx-auto font-light">
-              Let AI map the fastest route to your dream job. Just enter your email to get started, and let our system do the rest.
+            <p className="text-base md:text-lg text-gray-200 mb-8 leading-relaxed max-w-3xl mx-auto font-light">
+              Biarkan AI memetakan jalur tercepat menuju pekerjaan impian Anda. Cukup masukkan alamat email Anda untuk memulai, dan biarkan sistem kami yang mengurus sisanya.
             </p>
 
             <form
@@ -52,20 +52,15 @@ const CTASection = () => {
             >
               <input
                 type="email"
-                placeholder="Enter your email..."
+                placeholder="Masukkan Alamat Email Anda..."
                 className="flex-1 bg-transparent border-none outline-none px-4 py-3 text-white placeholder:text-gray-300/80 text-lg focus:ring-0"
                 required
               />
               <Link to="/register" className="bg-white text-[#5B21B6] hover:bg-gray-50 font-bold px-8 py-4 rounded-xl flex items-center justify-center gap-2 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.25)] hover:shadow-[0_0_30px_rgba(255,255,255,0.4)] hover:-translate-y-0.5 shrink-0">
-                Analyze My Profile
+                Analisis Profile Saya
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </form>
-
-            <p className="text-purple-200/60 text-sm mt-6 flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4" /> 100% Free. No credit card required.
-            </p>
-
           </div>
         </motion.div>
       </div>

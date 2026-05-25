@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Menu, X } from 'lucide-react';
 import Button from '../ui/Button';
 import { navbarVariants } from '../../utils/animations';
 import { useScrollDetection } from '../../hooks/useScrollDetection';
@@ -27,17 +28,17 @@ const Navbar = () => {
 
         {/* Navigation Links (Desktop) */}
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#home" className="text-body font-medium text-primary-text hover:text-primary transition-colors">Home</a>
-          <a href="#works" className="text-body font-medium text-primary-text hover:text-primary transition-colors">How It Works</a>
-          <a href="#features" className="text-body font-medium text-primary-text hover:text-primary transition-colors">Features</a>
-          <a href="#testimonials" className="text-body font-medium text-primary-text hover:text-primary transition-colors">Testimonials</a>
+          <a href="#home" className="text-body font-medium text-primary-text hover:text-primary transition-colors">Beranda</a>
+          <a href="#works" className="text-body font-medium text-primary-text hover:text-primary transition-colors">Cara Kerja</a>
+          <a href="#features" className="text-body font-medium text-primary-text hover:text-primary transition-colors">Fitur</a>
+          <a href="#testimonials" className="text-body font-medium text-primary-text hover:text-primary transition-colors">Testimoni</a>
         </div>
 
         {/* Actions (Desktop) */}
         <div className="hidden md:flex items-center space-x-2">
-          <Link to="/register" className="text-body py-2.5 px-5 rounded-[10px] font-medium text-primary-text hover:text-primary hover:bg-primary/10 transition-colors">Sign Up</Link>
+          <Link to="/register" className="text-body py-2.5 px-5 rounded-[10px] font-medium text-primary-text hover:text-primary hover:bg-primary/10 transition-colors">Daftar</Link>
           <Link to="/login">
-            <Button variant="primary" className="py-2.5 px-5">Login</Button>
+            <Button variant="primary" className="py-2.5 px-5">Masuk</Button>
           </Link>
         </div>
 
@@ -45,28 +46,20 @@ const Navbar = () => {
         <div className="md:hidden flex items-center">
           <button
             onClick={toggleMenu}
-            className="p-2 text-primary-text hover:text-primary focus:outline-none"
+            className="p-2 text-primary-text hover:text-primary focus:outline-none flex items-center justify-center w-10 h-10"
             aria-label="Toggle menu"
           >
-            <motion.div
-              className="w-6 h-5 flex flex-col justify-between relative"
-            >
-              <motion.span
-                className="w-full h-0.5 bg-current rounded-full origin-center"
-                animate={isOpen ? { rotate: 45, y: 9 } : { rotate: 0, y: 0 }}
-                transition={{ duration: 0.3, ease: 'easeInOut' }}
-              />
-              <motion.span
-                className="w-full h-0.5 bg-current rounded-full"
-                animate={isOpen ? { opacity: 0 } : { opacity: 1 }}
-                transition={{ duration: 0.3, ease: 'easeInOut' }}
-              />
-              <motion.span
-                className="w-full h-0.5 bg-current rounded-full origin-center"
-                animate={isOpen ? { rotate: -45, y: -9 } : { rotate: 0, y: 0 }}
-                transition={{ duration: 0.3, ease: 'easeInOut' }}
-              />
-            </motion.div>
+            <AnimatePresence mode="wait" initial={false}>
+              <motion.div
+                key={isOpen ? 'open' : 'closed'}
+                initial={{ rotate: -90, opacity: 0, scale: 0.8 }}
+                animate={{ rotate: 0, opacity: 1, scale: 1 }}
+                exit={{ rotate: 90, opacity: 0, scale: 0.8 }}
+                transition={{ duration: 0.15, ease: 'easeInOut' }}
+              >
+                {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              </motion.div>
+            </AnimatePresence>
           </button>
         </div>
       </div>
@@ -82,14 +75,14 @@ const Navbar = () => {
             className="md:hidden overflow-hidden bg-white/95 backdrop-blur-md border-t border-gray-100 shadow-lg absolute top-full left-0 w-full"
           >
             <div className="px-6 py-4 flex flex-col space-y-2">
-              <a href="#home" onClick={closeMenu} className="text-body font-medium text-primary-text hover:text-primary transition-colors py-2 block">Home</a>
-              <a href="#works" onClick={closeMenu} className="text-body font-medium text-primary-text hover:text-primary transition-colors py-2 block">How It Works</a>
-              <a href="#features" onClick={closeMenu} className="text-body font-medium text-primary-text hover:text-primary transition-colors py-2 block">Features</a>
-              <a href="#testimonials" onClick={closeMenu} className="text-body font-medium text-primary-text hover:text-primary transition-colors py-2 block">Testimonials</a>
+              <a href="#home" onClick={closeMenu} className="text-body font-medium text-primary-text hover:text-primary transition-colors py-2 block">Beranda</a>
+              <a href="#works" onClick={closeMenu} className="text-body font-medium text-primary-text hover:text-primary transition-colors py-2 block">Cara Kerja</a>
+              <a href="#features" onClick={closeMenu} className="text-body font-medium text-primary-text hover:text-primary transition-colors py-2 block">Fitur</a>
+              <a href="#testimonials" onClick={closeMenu} className="text-body font-medium text-primary-text hover:text-primary transition-colors py-2 block">Testimoni</a>
               <div className="flex flex-col space-y-3 pt-4 border-t border-gray-100 mt-2">
-                <Link to="/register" onClick={closeMenu} className="text-center py-2.5 px-5 rounded-[10px] font-medium text-primary-text hover:text-primary hover:bg-primary/10 transition-colors border border-gray-200">Sign Up</Link>
+                <Link to="/register" onClick={closeMenu} className="text-center py-2.5 px-5 rounded-[10px] font-medium text-primary-text hover:text-primary hover:bg-primary/10 transition-colors border border-gray-200">Daftar</Link>
                 <Link to="/login" onClick={closeMenu} className="w-full">
-                  <Button variant="primary" className="w-full justify-center">Login</Button>
+                  <Button variant="primary" className="w-full justify-center">Masuk</Button>
                 </Link>
               </div>
             </div>
