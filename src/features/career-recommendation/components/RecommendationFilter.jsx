@@ -1,4 +1,4 @@
-import { Search, SlidersHorizontal } from 'lucide-react';
+import { Search, Settings2 } from 'lucide-react';
 
 const RecommendationFilter = ({
   searchQuery,
@@ -28,7 +28,7 @@ const RecommendationFilter = ({
         {/* Match filters */}
         <div className="flex items-center gap-2 overflow-x-auto pb-1 md:pb-0 scrollbar-hide">
           <span className="text-caption font-bold text-slate-500 flex items-center gap-1 shrink-0 mr-1 tracking-wider">
-            <SlidersHorizontal className="w-3.5 h-3.5 text-indigo-600" /> Match Level:
+            <Settings2 className="w-3.5 h-3.5 text-indigo-600" /> Match Level:
           </span>
           {[
             { id: 'all', label: 'Semua' },
