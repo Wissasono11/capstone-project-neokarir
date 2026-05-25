@@ -17,42 +17,42 @@ const AICareerProfilingPage = () => {
       <div className="min-h-screen bg-canvas-white flex flex-col items-center justify-center p-4 relative overflow-hidden">
         {/* Decorative background */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent-purple-light/30 rounded-full blur-3xl" />
-        
-        <motion.div 
+
+        <motion.div
           variants={profilingLoadingVariants}
           initial="hidden"
           animate="visible"
           className="relative z-10 flex flex-col items-center max-w-md w-full text-center"
         >
-          <motion.div 
+          <motion.div
             variants={profilingLoadingVariants}
             animate="pulse"
             className="w-32 h-32 rounded-full bg-white shadow-xl flex items-center justify-center mb-8 relative border border-border"
           >
             {/* Circular Progress */}
-            <svg className="absolute inset-0 w-full h-full transform -rotate-90">
+            <svg className="absolute inset-0 w-full h-full transform -rotate-90" viewBox="0 0 100 100">
               <circle
-                cx="50%"
-                cy="50%"
-                r="48%"
+                cx="50"
+                cy="50"
+                r="44"
                 className="stroke-bg-secondary"
                 strokeWidth="4"
                 fill="none"
               />
               <circle
-                cx="50%"
-                cy="50%"
-                r="48%"
+                cx="50"
+                cy="50"
+                r="44"
                 className="stroke-primary transition-all duration-300 ease-out"
                 strokeWidth="4"
                 fill="none"
-                strokeDasharray={`${progress * 3.01} 400`} 
+                strokeDasharray={`${(progress / 100) * 276.46} 276.46`}
                 strokeLinecap="round"
               />
             </svg>
-            <BrainCircuit size={48} className="text-accent-purple animate-pulse" />
+            <BrainCircuit size={48} className="text-accent-purple animate-pulse relative z-10" />
           </motion.div>
-          
+
           <h2 className="text-2xl font-bold text-primary-text mb-3">{processingStatus}</h2>
           <p className="text-secondary-text font-medium">Please wait while our AI models analyze your unique career profile.</p>
         </motion.div>
@@ -81,7 +81,7 @@ const AICareerProfilingPage = () => {
 
           {/* Main Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-            
+
             {/* Left Column: Matches */}
             <div className="lg:col-span-7 space-y-6">
               <div>
@@ -100,7 +100,7 @@ const AICareerProfilingPage = () => {
             <div className="lg:col-span-5 h-[500px] lg:h-auto">
               <SkillGapAnalysis data={results.skillGap} overallScore={results.overallScore} />
             </div>
-            
+
           </div>
 
           {/* CTA Section */}

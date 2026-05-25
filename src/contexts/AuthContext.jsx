@@ -32,10 +32,11 @@ export const AuthProvider = ({ children }) => {
           setUser({
             name: 'Franz Hermann',
             email: 'hello@example.com',
-            role: 'Full Stack Developer',
+            role: 'Fullstack Engineer',
             location: 'Yogyakarta, Indonesia',
             status: 'Open to Work',
-            level: 'Fresh Graduate'
+            experience: 'Belum ada (Fresh Graduate / Sedang belajar)',
+            education: 'S1'
           });
         }
         
@@ -51,7 +52,13 @@ export const AuthProvider = ({ children }) => {
   const login = (userData, isNew = false) => {
     setIsAuthenticated(true);
     setIsNewUser(isNew);
-    setUser(userData || { name: 'Franz Hermann', email: 'test@test.com' });
+    setUser(userData || { 
+      name: 'Franz Hermann', 
+      email: 'test@test.com',
+      role: 'Fullstack Engineer',
+      experience: 'Belum ada (Fresh Graduate / Sedang belajar)',
+      education: 'S1'
+    });
     
     localStorage.setItem('neokarir_auth_token', 'mock_token_123');
     if (userData) {

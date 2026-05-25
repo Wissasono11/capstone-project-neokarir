@@ -63,7 +63,7 @@ const DashboardPage = () => {
       {/* Middle Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 md:gap-6 mb-6">
         <div className="lg:col-span-5 h-[300px] md:h-[440px]">
-          <RadarChartComp data={radarData} overallScore={overallReadiness || results.overallScore} />
+          <RadarChartComp data={radarData} overallScore={compatibilityScore} />
         </div>
         <div className="lg:col-span-7">
           <CareerRecommendationList recommendations={topRecommendations} />

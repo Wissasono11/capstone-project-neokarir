@@ -7,7 +7,7 @@ export const useDashboardRadarData = (matchedJob) => {
     const isMatched = matchedJob.matchedSkills.includes(skill);
     return {
       subject: skill,
-      A: isMatched ? 95 : 45,
+      A: isMatched ? 90 : 50,
       fullMark: 100
     };
   });

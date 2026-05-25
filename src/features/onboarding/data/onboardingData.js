@@ -10,7 +10,12 @@ export const IT_DOMAINS = [
 
 export const ROLES_BY_DOMAIN = {
   'Data Science & Artificial Intelligence': ['Data Analyst', 'Data Scientist', 'Machine Learning Engineer', 'AI Engineer'],
-  'Web Development': ['Frontend Developer', 'Backend Developer', 'Fullstack Developer'],
+  'Mobile Development': ['Android Developer', 'iOS Developer', 'Flutter Engineer'],
+  'Cyber Security': ['Penetration Tester', 'Security Analyst', 'DevSecOps'],
+  'Cloud & DevOps': ['Cloud Engineer', 'DevOps Engineer', 'SRE'],
+  'UI/UX Design': ['UI Designer', 'UX Researcher', 'Product Designer'],
+  'Quality Assurance (QA) & Testing': ['Manual QA', 'Automation QA', 'SDET'],
+  'Web Development': ['Frontend Engineer', 'Backend Engineer', 'Fullstack Engineer'],
   'default': ['Junior Specialist', 'Specialist', 'Senior Specialist', 'Lead']
 };
 
@@ -21,17 +26,16 @@ export const SUGGESTED_SKILLS = [
 ];
 
 export const EXPERIENCE_LEVELS = [
-  'None (Fresh Graduate / Student)',
-  '< 1 year',
-  '1 - 3 years',
-  '3 - 5 years',
-  '> 5 years'
+  'Belum ada (Fresh Graduate / Sedang belajar)',
+  '< 1 Tahun (Termasuk Magang/Internship)',
+  '1 - 3 Tahun (Junior)',
+  '3 Tahun (Mid / Senior)'
 ];
 
 export const EDUCATION_LEVELS = [
-  'High School / Vocational',
-  'Associate Degree (D3)',
-  'Bachelor\'s Degree (S1)',
-  'Master\'s Degree (S2)',
-  'Doctorate (S3)'
+  'SMA / SMK',
+  'D3 / D4',
+  'S1',
+  'S2 / S3',
+  'Sertifikasi Profesional / Bootcamp'
 ];

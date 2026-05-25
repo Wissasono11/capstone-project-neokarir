@@ -6,7 +6,7 @@ export const mockResults = {
   // Extracted NER entities 
   entities: {
     skills: ['Python', 'SQL', 'Machine Learning', 'TensorFlow', 'Data Visualization', 'ReactJS', 'NodeJS', 'CSS', 'Git'],
-    roles: ['Data Scientist', 'ML Engineer Intern', 'Frontend Developer'],
+    roles: ['Data Scientist', 'ML Engineer Intern', 'Frontend Engineer'],
     education: ['S1 Informatika - Universitas Indonesia', 'IPK 3.8'],
     certifications: ['AWS Certified Cloud Practitioner', 'Coding Camp 2026 by DBS Foundation', 'Belajar Machine Learning untuk Pemula'],
     companies: ['PT Maju Mundur', 'Tokopedia', 'Dicoding Indonesia'],

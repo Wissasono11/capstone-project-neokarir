@@ -22,8 +22,8 @@ export const useOnboardingForm = () => {
   
   const [cvData, setCvData] = useState({
     fullName: 'Bayu Wicaksono',
-    targetDomain: 'Software Development',
-    targetRole: 'Frontend Developer',
+    targetDomain: 'Web Development',
+    targetRole: 'Frontend Engineer',
     skills: ['React', 'JavaScript', 'Tailwind CSS', 'Node.js']
   });
   
@@ -86,9 +86,9 @@ export const useOnboardingForm = () => {
       fullName: inputMethod === 'upload' ? cvData.fullName : 'User',
       skills: combinedSkills,
       domain: inputMethod === 'upload' ? cvData.targetDomain : manualData.domain,
-      role: inputMethod === 'upload' ? cvData.targetRole : (manualData.role || (careerGoal === 'first-job' ? 'Junior Developer' : 'Developer')),
-      experience: manualData.experience || 'Fresh Graduate',
-      education: manualData.education || 'Bachelor Degree',
+      role: inputMethod === 'upload' ? cvData.targetRole : (manualData.role || (careerGoal === 'first-job' ? 'Junior Engineer' : 'Engineer')),
+      experience: manualData.experience || 'Belum ada (Fresh Graduate / Sedang belajar)',
+      education: manualData.education || 'S1',
       status: 'Open to Work'
     };
     

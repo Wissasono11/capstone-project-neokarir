@@ -1,11 +1,16 @@
 import { useState, useEffect } from 'react';
 import { useAuth } from '../../../contexts/AuthContext';
+import { useCareerRecommendations } from '../../career-recommendation/hooks/useCareerRecommendations';
+import { useSkillGap } from '../../skill-gap-analysis/hooks/useSkillGap';
 
 export const useAIProfiling = () => {
   const { user } = useAuth();
   const [isProcessing, setIsProcessing] = useState(true);
   const [progress, setProgress] = useState(0);
   const [processingStatus, setProcessingStatus] = useState('Reading data profile...');
+
+  const { recommendations, overallReadiness } = useCareerRecommendations();
+  const { radarData, learningPath, heroData } = useSkillGap();
 
   useEffect(() => {
     // Mock processing sequence
@@ -28,57 +33,29 @@ export const useAIProfiling = () => {
     return () => clearInterval(interval);
   }, []);
 
-  // Mock results based on user data
+  // Map recommendations to the topCareers format (limit to max 2 items)
+  const topCareers = recommendations.slice(0, 2).map(rec => ({
+    id: rec.job_id,
+    title: rec.job_title,
+    company: rec.company,
+    matchScore: rec.matchScore,
+    icon: rec.logo,
+    requiredSkills: rec.required_skills
+  }));
+
+  // Map learningPath to the correct format for LearningPathSection (limit to max 2 items)
+  const mappedLearningPath = learningPath.slice(0, 2).map(course => ({
+    title: course.judul,
+    platform: course.platform,
+    duration: course.durasi,
+    tag: course.prioritas === 'Tinggi' ? 'High Priority' : 'Medium Priority'
+  }));
+
   const results = {
-    overallScore: 81,
-    topCareers: [
-      {
-        id: 1,
-        title: 'Junior Frontend Developer',
-        company: 'Gojek',
-        matchScore: 92,
-        icon: 'https://logo.clearbit.com/gojek.com',
-        requiredSkills: ['React', 'CSS/Tailwind', 'JavaScript', 'Problem Solving']
-      },
-      {
-        id: 2,
-        title: 'IT Support',
-        company: 'Kopi Kenangan',
-        matchScore: 87,
-        icon: 'https://logo.clearbit.com/kopikenangan.com',
-        requiredSkills: ['Troubleshooting', 'Networking', 'Linux', 'Communication']
-      },
-      {
-        id: 3,
-        title: 'Junior Backend Developer',
-        company: 'Shopee',
-        matchScore: 91,
-        icon: 'https://logo.clearbit.com/shopee.co.id',
-        requiredSkills: ['Golang', 'Docker', 'SQL', 'Git']
-      }
-    ],
-    skillGap: [
-      { subject: 'Problem Solving', A: 90, fullMark: 100 },
-      { subject: 'React', A: 85, fullMark: 100 },
-      { subject: 'Golang', A: 65, fullMark: 100 },
-      { subject: 'Communication', A: 80, fullMark: 100 },
-      { subject: 'Laravel', A: 70, fullMark: 100 },
-      { subject: 'Docker', A: 60, fullMark: 100 },
-    ],
-    learningPath: [
-      {
-        title: 'Docker for Beginners',
-        platform: 'Coursera',
-        duration: '2 Weeks',
-        tag: 'High Priority'
-      },
-      {
-        title: 'Advanced Golang Microservices',
-        platform: 'Udemy',
-        duration: '4 Weeks',
-        tag: 'Medium Priority'
-      }
-    ]
+    overallScore: heroData?.overallReadiness || overallReadiness || 81,
+    topCareers,
+    skillGap: radarData,
+    learningPath: mappedLearningPath
   };
 
   return {

@@ -1,11 +1,11 @@
 export const heroData = {
   overallReadiness: 81,
-  targetRole: "Full Stack Developer",
-  targetDomain: "Software Engineering",
+  targetRole: "Fullstack Engineer",
+  targetDomain: "Web Development",
   matchedSkillsCount: 4,
   totalRequiredSkills: 6,
   missingSkillsCount: 2,
-  experienceGap: { current: "Fresh Graduate", required: "1 - 2 Tahun", hasGap: true },
+  experienceGap: { current: "Belum ada (Fresh Graduate / Sedang belajar)", required: "1 - 2 Tahun", hasGap: true },
   educationMatch: { current: "S1/D4", required: "S1/D4", hasGap: false },
   readinessLevel: "Hampir Siap"
 };
@@ -33,7 +33,7 @@ export const recommendedActions = [
     type: "critical",
     title: "Gap Kritis",
     color: "red",
-    description: "Fokus tingkatkan skill Golang & Docker untuk memenuhi standar industri Full Stack Developer."
+    description: "Fokus tingkatkan skill Golang & Docker untuk memenuhi standar industri Fullstack Engineer."
   },
   {
     type: "improvement",
@@ -64,7 +64,7 @@ export const missingSkillCards = [
     gap: 20,
     priority: "Tinggi",
     description: "Platform containerization untuk memastikan aplikasi berjalan konsisten di semua environment.",
-    alasan: "Standard DevOps yang wajib dikuasai oleh Full Stack Developer modern.",
+    alasan: "Standard DevOps yang wajib dikuasai oleh Fullstack Engineer modern.",
     relatedSkills: ["Golang", "Laravel"],
     waktuBelajar: "4 - 6 Minggu"
   }

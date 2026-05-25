@@ -22,17 +22,17 @@ const LearningPathSection = ({ paths }) => {
                 <PlayCircle size={24} />
               </div>
               <div>
-                <div className="flex items-center gap-2 mb-1">
-                  <h4 className="font-bold text-primary-text">{path.title}</h4>
-                  <span className={`text-caption font-bold px-2 py-0.5 rounded-full ${
+                <div className="flex flex-wrap items-center gap-2 mb-2">
+                  <h4 className="font-bold text-primary-text text-body-sm md:text-body leading-snug">{path.title}</h4>
+                  <span className={`text-caption font-bold px-2.5 py-0.5 rounded-full shrink-0 self-start ${
                     path.tag === 'High Priority' ? 'bg-red-100 text-red-700' : 'bg-orange-100 text-orange-700'
                   }`}>
                     {path.tag}
                   </span>
                 </div>
-                <div className="flex items-center gap-3 text-sm text-secondary-text font-medium">
-                  <span className="flex items-center gap-1.5"><BookOpen size={14} /> {path.platform}</span>
-                  <span className="flex items-center gap-1.5"><Clock size={14} /> {path.duration}</span>
+                <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-caption md:text-body-sm text-secondary-text font-medium">
+                  <span className="flex items-center gap-1.5"><BookOpen size={13} /> {path.platform}</span>
+                  <span className="flex items-center gap-1.5"><Clock size={13} /> {path.duration}</span>
                 </div>
               </div>
             </div>

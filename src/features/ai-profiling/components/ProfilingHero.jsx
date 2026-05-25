@@ -28,23 +28,33 @@ const ProfilingHero = ({ score }) => {
         </div>
         
         <div className="shrink-0 flex flex-col items-center justify-center">
-          <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-white/20 flex items-center justify-center">
+          <div className="relative w-36 h-36 md:w-40 md:h-40 flex items-center justify-center">
             {/* SVG Circle Progress */}
-            <svg className="absolute inset-0 w-full h-full transform -rotate-90">
+            <svg className="absolute inset-0 w-full h-full transform -rotate-90" viewBox="0 0 100 100">
+              {/* Background Track Circle */}
               <circle
-                cx="50%"
-                cy="50%"
-                r="46%"
-                className="stroke-white"
-                strokeWidth="8"
+                cx="50"
+                cy="50"
+                r="42"
+                stroke="rgba(255, 255, 255, 0.2)"
+                strokeWidth="6"
                 fill="none"
-                strokeDasharray={`${score * 2.89} 300`} // Approximation for 46% radius
+              />
+              {/* Foreground Score Circle */}
+              <circle
+                cx="50"
+                cy="50"
+                r="42"
+                className="stroke-white"
+                strokeWidth="6"
+                fill="none"
+                strokeDasharray={`${(score / 100) * 263.89} 263.89`}
                 strokeLinecap="round"
               />
             </svg>
-            <div className="text-center">
-              <span className="text-heading-xl md:text-heading-xl font-bold">{score}%</span>
-              <span className="block text-white/70 text-body-sm font-medium mt-1">Match Score</span>
+            <div className="text-center z-10 px-2">
+              <span className="text-heading-lg md:text-heading-xl font-bold leading-none">{score}%</span>
+              <span className="block text-white/70 text-caption md:text-body-sm font-medium mt-1">Match Score</span>
             </div>
           </div>
         </div>
