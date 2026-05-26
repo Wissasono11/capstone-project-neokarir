@@ -17,7 +17,7 @@ Berikut adalah beberapa fitur utama yang telah dikembangkan di platform NeoKarir
    * Manajemen sesi login terintegrasi melalui *Auth Context*.
 
 3. **🎯 Onboarding & AI Career Profiling**
-   * **Onboarding**: Alur pengenalan dan penyambutan bagi pengguna baru.
+   * **Onboarding**: Alur pengenalan dan penyambutan bagi pengguna baru dengan pilihan pengisian data secara manual atau otomatis melalui **ekstraksi dokumen CV oleh AI**. 
    * **AI Career Profiling**: Penilaian kepribadian, minat, dan bakat bertenaga AI untuk memetakan arah karir masa depan.
 
 4. **📊 Dashboard Utama**
@@ -39,6 +39,8 @@ Berikut adalah beberapa fitur utama yang telah dikembangkan di platform NeoKarir
 9. **⚙️ Pengaturan Profil (Settings)**
    * Manajemen profil pengguna termasuk pembaruan data diri dan preferensi karir.
 
+10. **📈 Job Market (Pasar Kerja)**
+    * Halaman yang menampilkan perbandingan tren pasar kerja antar domain, tren pertumbuhan jabatan, tingkat gaji rata-rata, dan prediksi tren di masa depan.
 ---
 
 ## 📁 Struktur Folder
