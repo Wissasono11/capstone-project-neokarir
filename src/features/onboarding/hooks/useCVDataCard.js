@@ -17,23 +17,30 @@ export const useCVDataCard = (cvData, updateCvData) => {
     updateCvData('targetDomain', editedData.targetDomain);
     updateCvData('targetRole', editedData.targetRole);
     updateCvData('skills', editedData.skills);
+    updateCvData('techStack', editedData.techStack || editedData.skills);
+    updateCvData('experience', editedData.experience);
+    updateCvData('education', editedData.education);
     setIsEditing(false);
   };
 
   const handleAddSkill = () => {
     if (newSkill.trim() && !editedData.skills.includes(newSkill.trim())) {
+      const updatedSkills = [...editedData.skills, newSkill.trim()];
       setEditedData({
         ...editedData,
-        skills: [...editedData.skills, newSkill.trim()]
+        skills: updatedSkills,
+        techStack: updatedSkills
       });
       setNewSkill('');
     }
   };
 
   const handleRemoveSkill = (skillToRemove) => {
+    const updatedSkills = editedData.skills.filter(skill => skill !== skillToRemove);
     setEditedData({
       ...editedData,
-      skills: editedData.skills.filter(skill => skill !== skillToRemove)
+      skills: updatedSkills,
+      techStack: updatedSkills
     });
   };
 

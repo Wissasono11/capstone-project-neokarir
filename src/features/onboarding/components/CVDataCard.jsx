@@ -1,6 +1,7 @@
-import { User, Target, BriefcaseBusiness, Code, Edit2, Save, X, Plus } from 'lucide-react';
+import { User, Target, BriefcaseBusiness, Code, Edit2, Save, X, Plus, GraduationCap } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useCVDataCard } from '../hooks/useCVDataCard';
+import { EXPERIENCE_LEVELS, EDUCATION_LEVELS } from '../data/onboardingData';
 
 const CVDataCard = ({ cvData, updateCvData }) => {
   const {
@@ -90,11 +91,53 @@ const CVDataCard = ({ cvData, updateCvData }) => {
           </div>
         </div>
 
+        {/* Experience & Education Fields */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="space-y-1.5">
+            <div className="flex items-center gap-2 text-secondary-text">
+              <BriefcaseBusiness size={16} />
+              <span className="text-xs font-semibold tracking-wider">Pengalaman Kerja</span>
+            </div>
+            {isEditing ? (
+              <select
+                value={editedData.experience || EXPERIENCE_LEVELS[0]}
+                onChange={(e) => setEditedData({ ...editedData, experience: e.target.value })}
+                className="w-full px-3 pr-10 py-2 rounded-xl border border-border focus:border-primary focus:ring-2 focus:ring-primary/10 outline-none transition-all text-primary-text font-medium bg-white truncate"
+              >
+                {EXPERIENCE_LEVELS.map(level => (
+                  <option key={level} value={level}>{level}</option>
+                ))}
+              </select>
+            ) : (
+              <p className="text-primary-text font-semibold pl-6">{cvData.experience || 'Belum ada (Fresh Graduate / Sedang belajar)'}</p>
+            )}
+          </div>
+          <div className="space-y-1.5">
+            <div className="flex items-center gap-2 text-secondary-text">
+              <GraduationCap size={16} />
+              <span className="text-xs font-semibold tracking-wider">Pendidikan Terakhir</span>
+            </div>
+            {isEditing ? (
+              <select
+                value={editedData.education || EDUCATION_LEVELS[2]}
+                onChange={(e) => setEditedData({ ...editedData, education: e.target.value })}
+                className="w-full px-3 pr-10 py-2 rounded-xl border border-border focus:border-primary focus:ring-2 focus:ring-primary/10 outline-none transition-all text-primary-text font-medium bg-white truncate"
+              >
+                {EDUCATION_LEVELS.map(level => (
+                  <option key={level} value={level}>{level}</option>
+                ))}
+              </select>
+            ) : (
+              <p className="text-primary-text font-semibold pl-6">{cvData.education || 'S1'}</p>
+            )}
+          </div>
+        </div>
+
         {/* Skills Field */}
         <div className="space-y-3">
           <div className="flex items-center gap-2 text-secondary-text">
             <Code size={16} />
-            <span className="text-xs font-semibold tracking-wider">Skill Terdeteksi</span>
+            <span className="text-xs font-semibold tracking-wider">Tech Stacks Terdeteksi</span>
           </div>
           
           <div className="flex flex-wrap gap-2 pl-6">

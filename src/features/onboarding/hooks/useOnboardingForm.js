@@ -24,7 +24,10 @@ export const useOnboardingForm = () => {
     fullName: 'Bayu Wicaksono',
     targetDomain: 'Web Development',
     targetRole: 'Frontend Engineer',
-    skills: ['React', 'JavaScript', 'Tailwind CSS', 'Node.js']
+    skills: ['React', 'JavaScript', 'Tailwind CSS', 'Node.js'],
+    techStack: ['React', 'JavaScript', 'Tailwind CSS', 'Node.js'],
+    experience: '< 1 Tahun (Termasuk Magang/Internship)',
+    education: 'S1'
   });
   
   const { completeOnboarding } = useAuth();
@@ -75,7 +78,7 @@ export const useOnboardingForm = () => {
     // Combine manual data tech stack, cv skills and additional skills
     const combinedSkills = Array.from(new Set([
       ...manualData.techStack, 
-      ...(inputMethod === 'upload' ? cvData.skills : []),
+      ...(inputMethod === 'upload' ? (cvData.techStack || cvData.skills) : []),
       ...additionalSkills
     ]));
     
@@ -87,8 +90,8 @@ export const useOnboardingForm = () => {
       skills: combinedSkills,
       domain: inputMethod === 'upload' ? cvData.targetDomain : manualData.domain,
       role: inputMethod === 'upload' ? cvData.targetRole : (manualData.role || (careerGoal === 'first-job' ? 'Junior Engineer' : 'Engineer')),
-      experience: manualData.experience || 'Belum ada (Fresh Graduate / Sedang belajar)',
-      education: manualData.education || 'S1',
+      experience: inputMethod === 'upload' ? (cvData.experience || 'Belum ada (Fresh Graduate / Sedang belajar)') : (manualData.experience || 'Belum ada (Fresh Graduate / Sedang belajar)'),
+      education: inputMethod === 'upload' ? (cvData.education || 'S1') : (manualData.education || 'S1'),
       status: 'Open to Work'
     };
     
