@@ -163,7 +163,7 @@ async def generate_chatbot_response(user_id: str, message: str) -> dict:
     try:
         llm_client = get_llm_client()
         response = await llm_client.chat.completions.create(
-            model="llama-3.1-8b-instant", # Model Groq yang super cepat
+            model="llama-3.3-70b-versatile",
             messages=[
                 {"role": "system", "content": final_prompt},
                 {"role": "user", "content": message}
