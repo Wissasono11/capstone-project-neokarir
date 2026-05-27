@@ -3,16 +3,6 @@ export const mockResults = {
   overallRating: 'weak', 
   summary: "CV Anda memiliki struktur yang sangat baik dengan kecocokan skill teknis yang kuat untuk bidang Data Science & Web Development. Namun, beberapa detail pencapaian kuantitatif masih dapat ditingkatkan agar lebih memikat recruiter dan sistem ATS.",
   
-  // Extracted NER entities 
-  entities: {
-    skills: ['Python', 'SQL', 'Machine Learning', 'TensorFlow', 'Data Visualization', 'ReactJS', 'NodeJS', 'CSS', 'Git'],
-    roles: ['Data Scientist', 'ML Engineer Intern', 'Frontend Engineer'],
-    education: ['S1 Informatika - Universitas Indonesia', 'IPK 3.8'],
-    certifications: ['AWS Certified Cloud Practitioner', 'Coding Camp 2026 by DBS Foundation', 'Belajar Machine Learning untuk Pemula'],
-    companies: ['PT Maju Mundur', 'Tokopedia', 'Dicoding Indonesia'],
-    experience: ['2 tahun', 'Jan 2022 - Des 2024']
-  },
-  
   strengths: [
     'Tech stack modern & relevan dengan kebutuhan industri saat ini (Python, SQL, ReactJS).',
     'Memiliki sertifikasi terakreditasi tingkat nasional & global.',
@@ -36,8 +26,8 @@ export const mockResults = {
 export const steps = [
   'Mengunggah berkas CV Anda...',
   'Mengekstrak teks dokumen (PDF/DOCX)...',
-  'Melakukan analisis Named Entity Recognition (NER)...',
-  'Mendeteksi entitas (SKILL, ROLE, EDU, CERT, COMP, EXP)...',
+  'Menganalisis konten dan struktur CV...',
+  'Mengidentifikasi kecocokan skill & kualifikasi...',
   'Menghitung ATS score & menyusun rekomendasi peningkatan...'
 ];
 

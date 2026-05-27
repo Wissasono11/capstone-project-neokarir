@@ -1,5 +1,5 @@
 import React from 'react';
-import { Save, CheckCircle, Loader2, Bell, Globe, Palette, Sun, Moon, Monitor } from 'lucide-react';
+import { Save, CheckCircle, Loader2, Bell, Globe, Palette, Sun, Moon, Monitor, ChevronDown } from 'lucide-react';
 import Card from '../../../components/ui/Card';
 import Button from '../../../components/ui/Button';
 
@@ -78,55 +78,23 @@ const PreferencesTab = ({ preferences, updatePreferences, onSave, isSaving, save
           Pilih bahasa tampilan untuk platform NeoKarir.
         </p>
 
-        <select
-          id="pref-language"
-          value={preferences.language}
-          onChange={(e) => updatePreferences('language', e.target.value)}
-          className="
-            w-full max-w-xs rounded-xl border bg-white px-4 py-3 text-sm text-primary-text
-            transition-all duration-200 outline-none appearance-none cursor-pointer
-            border-border hover:border-primary/30 focus:border-primary focus:ring-2 focus:ring-primary/10
-          "
-        >
-          <option value="id">🇮🇩 Bahasa Indonesia</option>
-          <option value="en">🇬🇧 English</option>
-        </select>
-      </Card>
-
-      {/* Theme Preference */}
-      <Card className="!p-6 md:!p-8">
-        <div className="flex items-center gap-2 mb-1">
-          <Palette size={20} className="text-primary" />
-          <h3 className="text-body-lg font-bold text-primary-text">
-            Tema Tampilan
-          </h3>
-        </div>
-        <p className="text-body-sm text-secondary-text mb-4">
-          Sesuaikan tampilan platform dengan preferensi kamu.
-        </p>
-
-        <div className="flex gap-3">
-          <ThemeOption
-            icon={Sun}
-            label="Light"
-            value="light"
-            selected={preferences.theme === 'light'}
-            onChange={(val) => updatePreferences('theme', val)}
-          />
-          <ThemeOption
-            icon={Moon}
-            label="Dark"
-            value="dark"
-            selected={preferences.theme === 'dark'}
-            onChange={(val) => updatePreferences('theme', val)}
-          />
-          <ThemeOption
-            icon={Monitor}
-            label="System"
-            value="system"
-            selected={preferences.theme === 'system'}
-            onChange={(val) => updatePreferences('theme', val)}
-          />
+        <div className="relative w-full max-w-xs">
+          <select
+            id="pref-language"
+            value={preferences.language}
+            onChange={(e) => updatePreferences('language', e.target.value)}
+            className="
+              w-full rounded-xl border bg-white pl-4 pr-10 py-3 text-sm text-primary-text
+              transition-all duration-200 outline-none appearance-none cursor-pointer
+              border-border hover:border-primary/30 focus:border-primary focus:ring-2 focus:ring-primary/10
+            "
+          >
+            <option value="id">🇮🇩 Bahasa Indonesia</option>
+            <option value="en">🇬🇧 English</option>
+          </select>
+          <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3 text-secondary-text">
+            <ChevronDown size={18} />
+          </div>
         </div>
       </Card>
 

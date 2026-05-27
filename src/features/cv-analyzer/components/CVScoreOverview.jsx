@@ -89,10 +89,6 @@ const CVScoreOverview = ({ score, summary }) => {
         {/* Dynamic highlights footer */}
         <div className="border-t border-border/60 pt-4 mt-4 flex flex-wrap gap-4 text-xs font-semibold text-secondary-text">
           <div className="flex items-center gap-1.5">
-            <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 shrink-0"></span>
-            <span>NER Extraction OK</span>
-          </div>
-          <div className="flex items-center gap-1.5">
             <span className="w-2.5 h-2.5 rounded-full bg-indigo-500 shrink-0"></span>
             <span>ATS Friendly Format</span>
           </div>

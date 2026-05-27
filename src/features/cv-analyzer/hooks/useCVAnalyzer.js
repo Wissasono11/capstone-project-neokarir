@@ -46,11 +46,11 @@ export const useCVAnalyzer = () => {
       setCurrentStep(1);
       await new Promise((resolve) => setTimeout(resolve, 1200));
 
-      // 3. NER Analysis
+      // 3. Content Analysis
       setCurrentStep(2);
       await new Promise((resolve) => setTimeout(resolve, 1500));
 
-      // 4. Entity Tagging
+      // 4. Competency Matching
       setCurrentStep(3);
       await new Promise((resolve) => setTimeout(resolve, 1200));
 

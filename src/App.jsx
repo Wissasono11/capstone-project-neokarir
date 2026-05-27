@@ -23,6 +23,7 @@ const CareerRecommendationDetailPage = lazy(() => import('./pages/CareerRecommen
 const AIAssistantPage = lazy(() => import('./pages/AIAssistantPage'));
 const ProfileSettingsPage = lazy(() => import('./pages/ProfileSettingsPage'));
 const JobsMarketPage = lazy(() => import('./pages/JobsMarketPage'));
+const SupportPage = lazy(() => import('./pages/SupportPage'));
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
               <Route path="/dashboard/recommendations/:id" element={<CareerRecommendationDetailPage />} />
               <Route path="/dashboard/ai-assistant" element={<AIAssistantPage />} />
               <Route path="/dashboard/jobs-market" element={<JobsMarketPage />} />
+              <Route path="/dashboard/support" element={<SupportPage />} />
               <Route path="/dashboard/settings" element={<ProfileSettingsPage />} />
             </Route>
           </Routes>

@@ -24,7 +24,7 @@ const SIDEBAR_ITEMS = [
 
 const BOTTOM_ITEMS = [
   { id: 'settings', label: 'Profile & Settings', icon: Settings, path: '/dashboard/settings' },
-  { id: 'support', label: 'Support', icon: HelpCircle, path: '/support' },
+  { id: 'support', label: 'Support', icon: HelpCircle, path: '/dashboard/support' },
 ];
 
 const DashboardSidebar = ({ isOpen, onClose, isCollapsed, onToggleCollapse }) => {

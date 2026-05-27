@@ -1,0 +1,87 @@
+import React from 'react';
+import { HelpCircle } from 'lucide-react';
+
+import DashboardLayout from '../layouts/DashboardLayout';
+import Breadcrumb from '../components/ui/Breadcrumb';
+
+import { useSupport } from '../features/support/hooks/useSupport';
+
+import SupportHero from '../features/support/components/SupportHero';
+import SupportTabs from '../features/support/components/SupportTabs';
+import FAQSection from '../features/support/components/FAQSection';
+import UsageGuideSection from '../features/support/components/UsageGuideSection';
+import ContactFormSection from '../features/support/components/ContactFormSection';
+
+const SupportPage = () => {
+  const {
+    activeTab,
+    setActiveTab,
+    expandedFAQ,
+    toggleFAQ,
+    searchQuery,
+    setSearchQuery,
+    contactForm,
+    handleInputChange,
+    formErrors,
+    isSubmitting,
+    submitSuccess,
+    handleSubmit
+  } = useSupport();
+
+  const breadcrumbItems = [
+    { label: 'Support', path: '/dashboard/support', icon: HelpCircle }
+  ];
+
+  const renderTabContent = () => {
+    switch (activeTab) {
+      case 'faq':
+        return (
+          <FAQSection
+            searchQuery={searchQuery}
+            setSearchQuery={setSearchQuery}
+            expandedFAQ={expandedFAQ}
+            toggleFAQ={toggleFAQ}
+          />
+        );
+      case 'guide':
+        return <UsageGuideSection />;
+      case 'contact':
+        return (
+          <ContactFormSection
+            contactForm={contactForm}
+            handleInputChange={handleInputChange}
+            formErrors={formErrors}
+            isSubmitting={isSubmitting}
+            submitSuccess={submitSuccess}
+            handleSubmit={handleSubmit}
+          />
+        );
+      default:
+        return null;
+    }
+  };
+
+  return (
+    <DashboardLayout>
+      {/* Breadcrumb */}
+      <div className="mb-6">
+        <Breadcrumb items={breadcrumbItems} />
+      </div>
+
+      <div className="space-y-6 pb-12">
+        {/* Hero */}
+        <SupportHero searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+
+        {/* Tabs */}
+        <SupportTabs activeTab={activeTab} setActiveTab={setActiveTab} />
+
+        {/* Tab Content */}
+        <div className="animate-fade-in">
+          {renderTabContent()}
+        </div>
+      </div>
+    </DashboardLayout>
+  );
+};
+
+export default SupportPage;

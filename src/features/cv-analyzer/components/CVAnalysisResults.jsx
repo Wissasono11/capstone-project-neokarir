@@ -1,7 +1,6 @@
 import React from 'react';
 import { RefreshCcw, Download } from 'lucide-react';
 import CVScoreOverview from './CVScoreOverview';
-import CVExtractedEntities from './CVExtractedEntities';
 import CVStrengthsWeaknesses from './CVStrengthsWeaknesses';
 import CVImprovementTips from './CVImprovementTips';
 import Button from '../../../components/ui/Button';
@@ -34,9 +33,6 @@ const CVAnalysisResults = ({ results, onReset }) => {
         rating={results.overallRating} 
         summary={results.summary} 
       />
-
-      {/* Extracted Entities (NER focus matching questionnaire criteria) */}
-      <CVExtractedEntities entities={results.entities} />
 
       {/* Strengths & Weaknesses comparison side-by-side */}
       <CVStrengthsWeaknesses 
