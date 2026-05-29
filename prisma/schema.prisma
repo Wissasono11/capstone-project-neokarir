@@ -1,0 +1,337 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["partialIndexes"]
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id                String            @id @db.Uuid
+  email             String            @unique
+  role              String            @default("user")
+  full_name         String?
+  avatar_url        String?
+  phone             String?
+  location          String?
+  raw_user_meta     Json
+  app_metadata      Json
+  user_metadata     Json
+  last_sign_in_at   DateTime?
+  created_at        DateTime          @default(now())
+  updated_at        DateTime          @default(now())
+  password_hash     String?           @db.VarChar(255)
+  gender            String?
+  chats             Chat[]
+  cv_analysis       cv_analysis[]
+  cv                Cv?
+  job_matches       JobMatch[]
+  learning_roadmaps LearningRoadmap[]
+  profile           Profile?
+  recommendations   Recommendation[]
+  skill_gap         skill_gap?
+  user_skills       user_skills[]
+
+  @@index([role])
+  @@index([email])
+  @@map("users")
+}
+
+model Profile {
+  user_id           String   @id @db.Uuid
+  full_name         String?
+  headline          String?
+  bio               String?
+  summary           String?
+  current_role      String?
+  target_role       String?
+  years_experience  Decimal? @db.Decimal(4, 1)
+  location          String?
+  phone             String?
+  email             String?
+  website_url       String?
+  linkedin_url      String?
+  github_url        String?
+  portfolio_url     String?
+  avatar_url        String?
+  education_level   String?
+  employment_status String?
+  work_mode         String?
+  availability      String?
+  resume_url        String?
+  skills_summary    String?
+  profile_data      Json
+  created_at        DateTime @default(now())
+  updated_at        DateTime @default(now())
+  gender            String?
+  user              User     @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@index([current_role])
+  @@map("profiles")
+}
+
+model Cv {
+  user_id             String        @id @db.Uuid
+  file_name           String?
+  file_path           String?
+  mime_type           String?
+  size                BigInt?
+  storage_bucket      String?
+  storage_object_path String?
+  file_url            String?
+  parsed_text         String?
+  summary             String?
+  cv_data             Json
+  created_at          DateTime      @default(now())
+  updated_at          DateTime      @default(now())
+  cv_analysis         cv_analysis[]
+  user                User          @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@map("cvs")
+}
+
+model Chat {
+  id              String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  user_id         String    @db.Uuid
+  title           String    @default("New Chat")
+  summary         String?
+  messages        Json
+  chat_data       Json
+  last_message_at DateTime?
+  created_at      DateTime  @default(now())
+  updated_at      DateTime  @default(now())
+  user            User      @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@index([user_id, updated_at(sort: Desc)])
+  @@map("chats")
+}
+
+model Recommendation {
+  id                  String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  user_id             String   @db.Uuid
+  job_id              String?  @db.Uuid
+  recommendation_type String   @default("job")
+  title               String
+  description         String?
+  reason              String?
+  score               Decimal  @default(0) @db.Decimal(5, 2)
+  matched_skills      String[] @default([])
+  missing_skills      String[] @default([])
+  metadata            Json
+  created_at          DateTime @default(now())
+  updated_at          DateTime @default(now())
+  job                 Job?     @relation(fields: [job_id], references: [id])
+  user                User     @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@index([user_id, created_at(sort: Desc)])
+  @@map("recommendations")
+}
+
+model MarketTrend {
+  id              String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  title           String
+  company_name    String?
+  company_url     String?
+  location        String?
+  category        String?
+  trend_date      DateTime
+  job_count       Int      @default(0)
+  growth_rate     Decimal? @db.Decimal(6, 2)
+  avg_salary      Decimal? @db.Decimal(14, 2)
+  salary_currency String   @default("IDR")
+  description     String?
+  market_data     Json
+  created_at      DateTime @default(now())
+  updated_at      DateTime @default(now())
+
+  @@index([trend_date])
+  @@index([category])
+  @@map("market")
+}
+
+model LearningRoadmap {
+  id            String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  user_id       String   @db.Uuid
+  title         String
+  target_role   String?
+  current_level String?
+  status        String   @default("draft")
+  roadmap       Json
+  roadmap_data  Json
+  created_at    DateTime @default(now())
+  updated_at    DateTime @default(now())
+  user          User     @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@index([user_id])
+  @@map("learning_roadmaps")
+}
+
+model Job {
+  id               String           @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  source           String?
+  external_id      String?
+  title            String
+  company_name     String?
+  company_url      String?
+  location         String?
+  remote_type      String?
+  employment_type  String?
+  experience_level String?
+  salary_min       Decimal?         @db.Decimal(14, 2)
+  salary_max       Decimal?         @db.Decimal(14, 2)
+  salary_currency  String           @default("IDR")
+  description      String?
+  requirements     String?
+  responsibilities String?
+  tags             String[]         @default([])
+  url              String?
+  posted_at        DateTime?
+  expires_at       DateTime?
+  is_active        Boolean          @default(true)
+  job_data         Json
+  created_at       DateTime         @default(now())
+  updated_at       DateTime         @default(now())
+  job_matches      JobMatch[]
+  job_skills       JobSkill[]
+  recommendations  Recommendation[]
+  skill_gap        skill_gap[]
+
+  @@unique([source, external_id], map: "jobs_source_external_id_uq", where: raw("((source IS NOT NULL) AND (external_id IS NOT NULL))"))
+  @@index([title])
+  @@index([company_name])
+  @@index([location])
+  @@index([is_active])
+  @@map("jobs")
+}
+
+model Skill {
+  id          String        @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  name        String        @unique
+  slug        String?       @unique
+  category    String?
+  description String?
+  source      String?
+  is_active   Boolean       @default(true)
+  metadata    Json
+  created_at  DateTime      @default(now())
+  updated_at  DateTime      @default(now())
+  job_skills  JobSkill[]
+  user_skills user_skills[]
+
+  @@index([category])
+  @@map("skills")
+}
+
+model JobSkill {
+  job_id      String   @db.Uuid
+  skill_id    String   @db.Uuid
+  importance  Int      @default(1)
+  is_required Boolean  @default(true)
+  notes       String?
+  created_at  DateTime @default(now())
+  job         Job      @relation(fields: [job_id], references: [id], onDelete: Cascade)
+  skill       Skill    @relation(fields: [skill_id], references: [id], onDelete: Cascade)
+
+  @@id([job_id, skill_id])
+  @@index([skill_id])
+  @@map("job_skills")
+}
+
+model JobMatch {
+  id             String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  user_id        String   @db.Uuid
+  job_id         String?  @db.Uuid
+  match_score    Decimal  @default(0) @db.Decimal(5, 2)
+  matched_skills String[] @default([])
+  missing_skills String[] @default([])
+  explanation    String?
+  analysis       Json
+  created_at     DateTime @default(now())
+  updated_at     DateTime @default(now())
+  job            Job?     @relation(fields: [job_id], references: [id])
+  user           User     @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@index([user_id])
+  @@map("job_match")
+}
+
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+model cv_analysis {
+  id          String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  cv_id       String   @db.Uuid
+  user_id     String   @db.Uuid
+  score       Decimal  @default(0) @db.Decimal(5, 2)
+  strengths   String[] @default([])
+  weaknesses  String[] @default([])
+  suggestions String[] @default([])
+  analysis    Json     @default("{}")
+  created_at  DateTime @default(now()) @db.Timestamptz(6)
+  cvs         Cv       @relation(fields: [cv_id], references: [user_id], onDelete: Cascade, onUpdate: NoAction)
+  users       User     @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@index([cv_id])
+  @@index([user_id])
+}
+
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+model embeddings {
+  id           String                @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  entity_type  String
+  entity_id    String                @db.Uuid
+  content      String
+  content_hash String?
+  model        String?
+  chunk_index  Int                   @default(0)
+  embedding    Unsupported("vector")
+  metadata     Json                  @default("{}")
+  created_at   DateTime              @default(now()) @db.Timestamptz(6)
+
+  @@unique([entity_type, entity_id, chunk_index])
+  @@index([content_hash])
+  @@index([entity_type, entity_id], map: "embeddings_entity_idx")
+  @@index([embedding], map: "embeddings_vector_idx")
+}
+
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+model skill_gap {
+  id                 String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  user_id            String   @unique(map: "skill_gap_user_id_null_job_idx", where: raw("(job_id IS NULL)")) @db.Uuid
+  job_id             String?  @db.Uuid
+  target_role        String?
+  gap_score          Decimal  @default(0) @db.Decimal(5, 2)
+  matched_skills     String[] @default([])
+  missing_skills     String[] @default([])
+  recommended_skills String[] @default([])
+  analysis           Json     @default("{}")
+  created_at         DateTime @default(now()) @db.Timestamptz(6)
+  updated_at         DateTime @default(now()) @db.Timestamptz(6)
+  owned_skills       Json?
+  target_domain      String?
+  analysis_result    Json?
+  match_score        Decimal? @db.Decimal
+  jobs               Job?     @relation(fields: [job_id], references: [id], onUpdate: NoAction)
+  users              User     @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@unique([user_id, job_id])
+  @@index([user_id])
+}
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+model user_skills {
+  user_id           String   @db.Uuid
+  skill_id          String   @db.Uuid
+  proficiency_level Int      @default(1) @db.SmallInt
+  years_experience  Decimal? @db.Decimal(4, 1)
+  is_primary        Boolean  @default(false)
+  source            String?
+  notes             String?
+  created_at        DateTime @default(now()) @db.Timestamptz(6)
+  updated_at        DateTime @default(now()) @db.Timestamptz(6)
+  skills            Skill    @relation(fields: [skill_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  users             User     @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@id([user_id, skill_id])
+  @@index([skill_id])
+}
