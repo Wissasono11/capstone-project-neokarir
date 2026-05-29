@@ -1,10 +1,13 @@
 import { useState } from 'react';
+import { authService } from '../api/authService';
+import { useToast } from '../../../contexts/ToastContext';
 
 export const useForgotPasswordForm = () => {
   const [email, setEmail] = useState('');
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const { success, error } = useToast();
 
   const handleChange = (e) => {
     setEmail(e.target.value);
@@ -32,11 +35,15 @@ export const useForgotPasswordForm = () => {
     }
     setIsSubmitting(true);
 
-    // Mock API call - akan diganti dengan real API call nanti
-    await new Promise(resolve => setTimeout(resolve, 1500));
-
-    setIsSuccess(true);
-    setIsSubmitting(false);
+    try {
+      const response = await authService.forgotPassword(email);
+      success(response.message || 'Link pemulihan kata sandi telah dikirim.');
+      setIsSuccess(true);
+    } catch (err) {
+      error(err.message || 'Gagal mengirim email pemulihan. Silakan coba kembali.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleReset = () => {

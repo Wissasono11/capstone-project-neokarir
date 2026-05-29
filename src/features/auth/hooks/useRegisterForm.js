@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../../contexts/AuthContext';
+import { authService } from '../api/authService';
+import { useToast } from '../../../contexts/ToastContext';
 
 export const useRegisterForm = () => {
   const [form, setForm] = useState({
@@ -13,6 +15,7 @@ export const useRegisterForm = () => {
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { register } = useAuth();
+  const { success, error } = useToast();
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -72,13 +75,21 @@ export const useRegisterForm = () => {
     }
     setIsSubmitting(true);
     
-    // Mock API call
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    register({ name: form.fullName, email: form.email });
-    navigate('/onboarding');
-    
-    setIsSubmitting(false);
+    try {
+      const response = await authService.register(form.fullName, form.email, form.password);
+      
+      register(response.user);
+      
+      // Store token
+      localStorage.setItem('neokarir_auth_token', response.token);
+      
+      success('Registrasi berhasil! Silakan lengkapi profil onboarding Anda.');
+      navigate('/onboarding');
+    } catch (err) {
+      error(err.message || 'Registrasi gagal. Silakan coba kembali.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return {

@@ -1,5 +1,7 @@
 import { useState, useCallback } from 'react';
-import { mockResults, steps } from '../data/cvAnalyzerConstants';
+import { steps } from '../data/cvAnalyzerConstants';
+import { cvAnalyzerService } from '../api/cvAnalyzerService';
+import { useToast } from '../../../contexts/ToastContext';
 
 export const useCVAnalyzer = () => {
   const [file, setFile] = useState(null);
@@ -7,6 +9,7 @@ export const useCVAnalyzer = () => {
   const [currentStep, setCurrentStep] = useState(0);
   const [error, setError] = useState(null);
   const [results, setResults] = useState(null);
+  const { success: toastSuccess, error: toastError } = useToast();
 
   const uploadCV = useCallback(async (selectedFile) => {
     if (!selectedFile) return;
@@ -36,35 +39,37 @@ export const useCVAnalyzer = () => {
     setStatus('uploading');
     setCurrentStep(0);
 
-    // Simulate multi-stage processing
     try {
-      // 1. Uploading
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-      setStatus('processing');
-      
-      // 2. Extracting text
-      setCurrentStep(1);
-      await new Promise((resolve) => setTimeout(resolve, 1200));
+      const response = await cvAnalyzerService.uploadAndAnalyze(selectedFile, (progress, statusMessage) => {
+        // Map progress to steps
+        if (progress <= 20) {
+          setStatus('uploading');
+          setCurrentStep(0);
+        } else if (progress <= 40) {
+          setStatus('processing');
+          setCurrentStep(1);
+        } else if (progress <= 60) {
+          setStatus('processing');
+          setCurrentStep(2);
+        } else if (progress <= 80) {
+          setStatus('processing');
+          setCurrentStep(3);
+        } else {
+          setStatus('processing');
+          setCurrentStep(4);
+        }
+      });
 
-      // 3. Content Analysis
-      setCurrentStep(2);
-      await new Promise((resolve) => setTimeout(resolve, 1500));
-
-      // 4. Competency Matching
-      setCurrentStep(3);
-      await new Promise((resolve) => setTimeout(resolve, 1200));
-
-      // 5. Compiling
-      setCurrentStep(4);
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-
-      setResults(mockResults);
+      setResults(response.results);
       setStatus('done');
+      toastSuccess('CV Anda berhasil dianalisis!');
     } catch (err) {
-      setError('Terjadi kesalahan saat menganalisis CV. Silakan coba kembali.');
+      const errMsg = err.message || 'Terjadi kesalahan saat menganalisis CV. Silakan coba kembali.';
+      setError(errMsg);
       setStatus('error');
+      toastError(errMsg);
     }
-  }, []);
+  }, [toastSuccess, toastError]);
 
   const resetAnalysis = useCallback(() => {
     setFile(null);

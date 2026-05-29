@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, FileText } from 'lucide-react';
 import DashboardLayout from '../layouts/DashboardLayout';
 import Breadcrumb from '../components/ui/Breadcrumb';
-import LoadingSpinner from '../components/ui/LoadingSpinner';
+import CVAnalyzerSkeleton from '../features/cv-analyzer/components/CVAnalyzerSkeleton';
 import CVUploadZone from '../features/cv-analyzer/components/CVUploadZone';
 import CVFeatureCards from '../features/cv-analyzer/components/CVFeatureCards';
 import CVProcessing from '../features/cv-analyzer/components/CVProcessing';
@@ -46,9 +46,7 @@ const CVAnalyzerPage = () => {
         <div className="mb-6">
           <Breadcrumb items={breadcrumbItems} />
         </div>
-        <div className="flex items-center justify-center h-96">
-          <LoadingSpinner size="lg" label="Mempersiapkan CV Analyzer..." />
-        </div>
+        <CVAnalyzerSkeleton />
       </DashboardLayout>
     );
   }

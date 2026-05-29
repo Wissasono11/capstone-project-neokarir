@@ -86,6 +86,14 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
+  const updateProfile = (profileData) => {
+    if (profileData) {
+      const updatedUser = { ...user, ...profileData };
+      setUser(updatedUser);
+      localStorage.setItem('neokarir_user_profile', JSON.stringify(updatedUser));
+    }
+  };
+
   const resetOnboarding = () => {
     setIsNewUser(true);
     localStorage.removeItem('neokarir_onboarding_completed');
@@ -109,7 +117,8 @@ export const AuthProvider = ({ children }) => {
     register,
     logout,
     completeOnboarding,
-    resetOnboarding
+    resetOnboarding,
+    updateProfile
   };
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

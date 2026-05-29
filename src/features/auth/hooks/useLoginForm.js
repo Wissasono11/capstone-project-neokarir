@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../../contexts/AuthContext';
+import { authService } from '../api/authService';
+import { useToast } from '../../../contexts/ToastContext';
 
 export const useLoginForm = () => {
   const [form, setForm] = useState({ email: '', password: '' });
@@ -8,6 +10,7 @@ export const useLoginForm = () => {
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { login } = useAuth();
+  const { success, error } = useToast();
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -42,22 +45,26 @@ export const useLoginForm = () => {
     }
     setIsSubmitting(true);
     
-    // Mock API call delay
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    // Check if it's the specific test user we want to send to onboarding
-    // For this mock, if email is 'new@test.com', we treat them as new
-    const isNew = form.email === 'new@test.com';
-    
-    login({ name: 'Franz Hermann', email: form.email }, isNew);
-    
-    if (isNew) {
-      navigate('/onboarding');
-    } else {
-      navigate('/dashboard');
+    try {
+      const response = await authService.login(form.email, form.password);
+      
+      login(response.user, response.isNew);
+      
+      // Store token
+      localStorage.setItem('neokarir_auth_token', response.token);
+      
+      success(`Selamat datang kembali, ${response.user.name}!`);
+      
+      if (response.isNew) {
+        navigate('/onboarding');
+      } else {
+        navigate('/dashboard');
+      }
+    } catch (err) {
+      error(err.message || 'Gagal masuk. Silakan periksa kembali email dan password Anda.');
+    } finally {
+      setIsSubmitting(false);
     }
-    
-    setIsSubmitting(false);
   };
 
   return {

@@ -4,7 +4,7 @@ import { Target, RefreshCw } from 'lucide-react';
 
 import DashboardLayout from '../layouts/DashboardLayout';
 import Breadcrumb from '../components/ui/Breadcrumb';
-import LoadingSpinner from '../components/ui/LoadingSpinner';
+import SkillGapSkeleton from '../features/skill-gap-analysis/components/SkillGapSkeleton';
 import { useSkillGap } from '../features/skill-gap-analysis/hooks/useSkillGap';
 
 // Components
@@ -41,9 +41,7 @@ const SkillGapPage = () => {
       </div>
 
       {isLoading ? (
-        <div className="flex items-center justify-center h-96">
-          <LoadingSpinner size="lg" label="Menganalisis kesenjangan skill..." />
-        </div>
+        <SkillGapSkeleton />
       ) : (
         <div className="space-y-6">
           

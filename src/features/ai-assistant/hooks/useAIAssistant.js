@@ -1,12 +1,14 @@
 import { useState, useCallback } from 'react';
 import { useAuth } from '../../../contexts/AuthContext';
 import { useCareerRecommendations } from '../../career-recommendation/hooks/useCareerRecommendations';
-import { getSimulatedResponse } from '../data/knowledgeBase';
 import { useChatSessions } from './useChatSessions';
+import { aiAssistantService } from '../api/aiAssistantService';
+import { useToast } from '../../../contexts/ToastContext';
 
 export const useAIAssistant = () => {
   const { user } = useAuth();
   const { recommendations } = useCareerRecommendations();
+  const { error: toastError } = useToast();
   
   const {
     sessions,
@@ -39,26 +41,33 @@ export const useAIAssistant = () => {
     const updatedMessages = [...messages, userMsg];
     updateSessionMessages(activeSessionId, updatedMessages, text);
     
-    // Simulate bot typing indicator
-    setIsTyping(true);
+    // 2. Fetch AI response via service
+    try {
+      const response = await aiAssistantService.sendMessage(text, user, recommendations);
+      const botMsg = {
+        id: `msg-${Date.now()}-bot`,
+        sender: 'bot',
+        text: response.text || response.message || 'Maaf, saya tidak dapat memahami permintaan Anda.',
+        timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+      };
 
-    // Dynamic typing delay
-    await new Promise((resolve) => setTimeout(resolve, 800 + Math.random() * 400));
-
-    // 2. Fetch RAG simulated response
-    const botResponseText = getSimulatedResponse(text, user, recommendations);
-    const botMsg = {
-      id: `msg-${Date.now()}-bot`,
-      sender: 'bot',
-      text: botResponseText,
-      timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
-    };
-
-    // 3. Append bot response
-    const finalMessages = [...updatedMessages, botMsg];
-    updateSessionMessages(activeSessionId, finalMessages);
-    setIsTyping(false);
-  }, [activeSessionId, messages, user, recommendations, updateSessionMessages]);
+      // 3. Append bot response
+      const finalMessages = [...updatedMessages, botMsg];
+      updateSessionMessages(activeSessionId, finalMessages);
+    } catch (err) {
+      toastError('Gagal mendapatkan respon dari AI Assistant.');
+      const botMsg = {
+        id: `msg-${Date.now()}-bot`,
+        sender: 'bot',
+        text: 'Maaf, koneksi dengan asisten AI terputus. Silakan coba kembali nanti.',
+        timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+      };
+      const finalMessages = [...updatedMessages, botMsg];
+      updateSessionMessages(activeSessionId, finalMessages);
+    } finally {
+      setIsTyping(false);
+    }
+  }, [activeSessionId, messages, user, recommendations, updateSessionMessages, toastError]);
 
   // Enhance a simple user input prompt into a rich structured prompt
   const enhancePrompt = useCallback((text) => {

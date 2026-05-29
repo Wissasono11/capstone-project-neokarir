@@ -1,5 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
+import { authService } from '../api/authService';
+import { useToast } from '../../../contexts/ToastContext';
 
 export const useResetPasswordForm = () => {
   const [form, setForm] = useState({ password: '', confirmPassword: '' });
@@ -8,6 +10,7 @@ export const useResetPasswordForm = () => {
   const [isSuccess, setIsSuccess] = useState(false);
   const [tokenValid, setTokenValid] = useState(null); // null = loading, true/false = result
   const [countdown, setCountdown] = useState(5);
+  const { success, error } = useToast();
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const token = searchParams.get('token');
@@ -79,11 +82,15 @@ export const useResetPasswordForm = () => {
     }
     setIsSubmitting(true);
 
-    // Mock API call - akan diganti dengan real API call nanti
-    await new Promise(resolve => setTimeout(resolve, 1500));
-
-    setIsSuccess(true);
-    setIsSubmitting(false);
+    try {
+      const response = await authService.resetPassword(token, form.password);
+      success(response.message || 'Kata sandi berhasil diperbarui. Mengalihkan ke halaman login...');
+      setIsSuccess(true);
+    } catch (err) {
+      error(err.message || 'Gagal memperbarui kata sandi. Silakan coba kembali.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return {

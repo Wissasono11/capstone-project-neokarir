@@ -52,11 +52,36 @@ const JobMarketChart = ({ predictions, selectedDomain, loading }) => {
 
   if (loading) {
     return (
-      <div className="bg-pure-surface rounded-[24px] border border-border shadow-sm p-6 h-[460px] flex flex-col items-center justify-center gap-3">
-        <div className="w-10 h-10 border-4 border-indigo-200 border-t-indigo-600 rounded-full animate-spin"></div>
-        <p className="text-body-sm font-semibold text-secondary-text animate-pulse">
-          Menganalisis tren data dengan AI NeoKarir...
-        </p>
+      <div className="bg-pure-surface rounded-[24px] border border-border shadow-sm p-6 flex flex-col gap-4">
+        <div>
+          <div className="h-5 w-80 rounded-lg" style={{ background: 'linear-gradient(90deg, #F1F5F9 25%, #E8EDF3 37%, #F1F5F9 63%)', backgroundSize: '200% 100%', animation: 'shimmer 1.8s ease-in-out infinite' }} />
+          <div className="h-3.5 w-96 rounded-md mt-2" style={{ background: 'linear-gradient(90deg, #F1F5F9 25%, #E8EDF3 37%, #F1F5F9 63%)', backgroundSize: '200% 100%', animation: 'shimmer 1.8s ease-in-out infinite', animationDelay: '100ms' }} />
+        </div>
+        <div className="w-full h-[360px] md:h-[400px] flex items-end gap-2 px-4 pt-8">
+          {Array.from({ length: 9 }).map((_, i) => (
+            <div key={i} className="flex-1 flex flex-col items-center justify-end h-full gap-2">
+              <div
+                className="w-full rounded-t-lg"
+                style={{
+                  height: `${25 + Math.sin(i * 0.7) * 30 + 20}%`,
+                  background: 'linear-gradient(90deg, #F1F5F9 25%, #E8EDF3 37%, #F1F5F9 63%)',
+                  backgroundSize: '200% 100%',
+                  animation: 'shimmer 1.8s ease-in-out infinite',
+                  animationDelay: `${i * 60}ms`
+                }}
+              />
+              <div
+                className="w-4/5 h-2.5 rounded"
+                style={{
+                  background: 'linear-gradient(90deg, #F1F5F9 25%, #E8EDF3 37%, #F1F5F9 63%)',
+                  backgroundSize: '200% 100%',
+                  animation: 'shimmer 1.8s ease-in-out infinite',
+                  animationDelay: `${i * 60 + 30}ms`
+                }}
+              />
+            </div>
+          ))}
+        </div>
       </div>
     );
   }

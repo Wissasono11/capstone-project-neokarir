@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { useAuth } from '../../../contexts/AuthContext';
 import { useAIProfiling } from '../../ai-profiling/hooks/useAIProfiling';
 import { useCareerRecommendations } from '../../career-recommendation/hooks/useCareerRecommendations';
@@ -16,6 +17,13 @@ export const useDashboardData = () => {
   const dynamicTips = useDashboardTips(matchedJob);
   const radarData = useDashboardRadarData(matchedJob);
 
+  // Simulated loading state — will be replaced with real API loading when backend is ready
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    const timer = setTimeout(() => setIsLoading(false), 600);
+    return () => clearTimeout(timer);
+  }, []);
+
   return {
     user,
     results,
@@ -23,6 +31,8 @@ export const useDashboardData = () => {
     topRecommendations,
     compatibilityScore,
     dynamicTips,
-    radarData
+    radarData,
+    isLoading
   };
 };
+

@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
-import { MOCK_DOMAINS, generateMockPredictions } from '../utils/mockDataGenerator';
+import { jobsMarketService } from '../api/jobsMarketService';
+import { useToast } from '../../../contexts/ToastContext';
 
 export const useJobMarketForecast = () => {
   const [domains, setDomains] = useState([]);
@@ -11,87 +12,48 @@ export const useJobMarketForecast = () => {
   const [loading, setLoading] = useState(false);
   const [isSimulated, setIsSimulated] = useState(false);
   const [error, setError] = useState(null);
-
-  const API_BASE_URL = 'http://localhost:8000';
+  const { error: toastError } = useToast();
 
   // 1. Load domain options
   const fetchDomains = useCallback(async () => {
     try {
-      const response = await fetch(`${API_BASE_URL}/api/trend/domains`);
-      if (!response.ok) throw new Error('API server error when fetching domains');
-      const data = await response.json();
+      const data = await jobsMarketService.getDomains();
       if (data.status === 'success' && data.domains) {
         setDomains(data.domains);
+        setIsSimulated(!!data.isFallback);
         return true;
       }
       return false;
     } catch (err) {
-      console.warn("Backend API offline / CORS issue. Switching domains to simulated mode.", err);
-      setDomains(MOCK_DOMAINS);
-      setIsSimulated(true);
+      setError('Gagal mengambil data domain pasar kerja.');
+      toastError('Gagal mengambil data domain pasar kerja.');
       return false;
     }
-  }, []);
+  }, [toastError]);
 
   // 2. Load forecast predictions
   const fetchForecast = useCallback(async (currentDomain, currentMonths) => {
     setLoading(true);
     setError(null);
-    const domainParam = currentDomain === 'all' ? null : currentDomain;
     
     try {
-      const response = await fetch(`${API_BASE_URL}/api/trend/forecast`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          n_months: currentMonths,
-          domain: domainParam
-        })
-      });
-
-      if (!response.ok) throw new Error('API server error when fetching predictions');
-      const data = await response.json();
+      const data = await jobsMarketService.getForecast(currentDomain, currentMonths);
 
       if (data.status === 'success') {
         setPredictions(data.predictions);
         setTopDomain(data.top_domain || 'Data Science & AI');
         setGeneratedAt(data.generated_at || new Date().toISOString());
-        setIsSimulated(false);
+        setIsSimulated(!!data.isSimulated);
       } else {
         throw new Error('API returned unsuccessful status');
       }
     } catch (err) {
-      console.warn(`Backend API offline or CORS error. Loading simulated forecast for domain=${currentDomain}, months=${currentMonths}.`, err);
-      
-      // Artificial short loading delay to simulate AI inference speed
-      await new Promise(resolve => setTimeout(resolve, 500));
-      
-      const mockPred = generateMockPredictions(currentMonths, domainParam);
-      setPredictions(mockPred);
-      
-      // Calculate top domain from mock
-      if (domainParam) {
-        setTopDomain(domainParam);
-      } else {
-        // Find the domain with highest value in first month
-        const firstMonth = mockPred[0] || {};
-        let highestVal = 0;
-        let highestDom = 'Data Science & AI';
-        Object.keys(firstMonth).forEach(dom => {
-          if (firstMonth[dom] > highestVal) {
-            highestVal = firstMonth[dom];
-            highestDom = dom;
-          }
-        });
-        setTopDomain(highestDom);
-      }
-      
-      setGeneratedAt(new Date().toISOString());
-      setIsSimulated(true);
+      setError('Gagal memproses prediksi tren pasar kerja.');
+      toastError('Gagal memproses prediksi tren pasar kerja.');
     } finally {
       setLoading(false);
     }
-  }, []);
+  }, [toastError]);
 
   // Initialize domains
   useEffect(() => {

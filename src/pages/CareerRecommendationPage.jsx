@@ -4,7 +4,7 @@ import { Award, AlertCircle } from 'lucide-react';
 // Layout & UI
 import DashboardLayout from '../layouts/DashboardLayout';
 import Breadcrumb from '../components/ui/Breadcrumb';
-import LoadingSpinner from '../components/ui/LoadingSpinner';
+import CareerRecommendationSkeleton from '../features/career-recommendation/components/CareerRecommendationSkeleton';
 
 // Custom Hooks & Data
 import { useCareerRecommendations } from '../features/career-recommendation/hooks/useCareerRecommendations';
@@ -47,11 +47,9 @@ const CareerRecommendationPage = () => {
       </div>
 
       {isLoading ? (
-        <div className="flex items-center justify-center h-96">
-          <LoadingSpinner size="lg" label="Menganalisis profil dan merumuskan rekomendasi karir..." />
-        </div>
+        <CareerRecommendationSkeleton />
       ) : (
-        <div className="space-y-6">
+        <div className="space-y-6 animate-fade-in">
           
           {/* Header and Stats */}
           <RecommendationHeader overallReadiness={overallReadiness} />
