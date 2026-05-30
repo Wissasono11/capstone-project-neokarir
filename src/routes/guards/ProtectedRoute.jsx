@@ -15,7 +15,7 @@ const ProtectedRoute = () => {
     return <Navigate to="/login" state={{ from: location }} replace />;
   }
 
-  if (isNewUser) {
+  if (isNewUser && !location.state?.fromOnboarding) {
     return <Navigate to="/onboarding" replace />;
   }
 

@@ -26,7 +26,7 @@ export const useCareerSkills = (initialUser) => {
 
   const updateCareerInfo = useCallback(async (field, value) => {
     setCareerInfo(prev => ({ ...prev, [field]: value }));
-    
+
     // Sync update to global context & mock api call
     if (field === 'currentRole') {
       updateProfile({ role: value });

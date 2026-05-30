@@ -4,7 +4,7 @@ import { Award } from 'lucide-react';
 // Layout & UI
 import DashboardLayout from '../layouts/DashboardLayout';
 import Breadcrumb from '../components/ui/Breadcrumb';
-import LoadingSpinner from '../components/ui/LoadingSpinner';
+import CareerRecommendationDetailSkeleton from '../features/career-recommendation/components/CareerRecommendationDetailSkeleton';
 
 // Custom Hooks & Data
 import { useCareerRecommendations } from '../features/career-recommendation/hooks/useCareerRecommendations';
@@ -50,9 +50,7 @@ const CareerRecommendationDetailPage = () => {
       </div>
 
       {isLoading ? (
-        <div className="flex items-center justify-center h-96">
-          <LoadingSpinner size="lg" label="Memuat detail rekomendasi karir..." />
-        </div>
+        <CareerRecommendationDetailSkeleton />
       ) : !job ? (
         <div className="bg-white rounded-2xl border border-slate-100 p-12 text-center space-y-4 max-w-md mx-auto">
           <div className="w-12 h-12 rounded-full bg-rose-50 text-rose-500 flex items-center justify-center mx-auto">
@@ -70,7 +68,7 @@ const CareerRecommendationDetailPage = () => {
           </button>
         </div>
       ) : (
-        <div className="space-y-6">
+        <div className="space-y-6 animate-fade-in">
           {/* Hero Job Banner */}
           <CareerDetailHero job={job} />
 
