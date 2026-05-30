@@ -40,6 +40,10 @@ export const AuthProvider = ({ children }) => {
           });
         }
         
+        if (onboardingCompleted) {
+          localStorage.setItem('neokarir_has_completed_onboarding_once', 'true');
+        }
+        
         // If they have a token but haven't completed onboarding, they are a new user
         setIsNewUser(!onboardingCompleted);
       }
@@ -67,6 +71,7 @@ export const AuthProvider = ({ children }) => {
     
     if (!isNew) {
       localStorage.setItem('neokarir_onboarding_completed', 'true');
+      localStorage.setItem('neokarir_has_completed_onboarding_once', 'true');
     }
   };
 
@@ -78,6 +83,7 @@ export const AuthProvider = ({ children }) => {
   const completeOnboarding = (profileData) => {
     setIsNewUser(false);
     localStorage.setItem('neokarir_onboarding_completed', 'true');
+    localStorage.setItem('neokarir_has_completed_onboarding_once', 'true');
     
     if (profileData) {
       const updatedUser = { ...user, ...profileData };
@@ -106,6 +112,7 @@ export const AuthProvider = ({ children }) => {
     localStorage.removeItem('neokarir_auth_token');
     localStorage.removeItem('neokarir_user_profile');
     localStorage.removeItem('neokarir_onboarding_completed');
+    localStorage.removeItem('neokarir_has_completed_onboarding_once');
   };
 
   const value = {

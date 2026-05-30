@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { HelpCircle } from 'lucide-react';
 
 import DashboardLayout from '../layouts/DashboardLayout';
 import Breadcrumb from '../components/ui/Breadcrumb';
+import SupportSkeleton from '../features/support/components/SupportSkeleton';
 
 import { useSupport } from '../features/support/hooks/useSupport';
 
@@ -13,6 +14,15 @@ import UsageGuideSection from '../features/support/components/UsageGuideSection'
 import ContactFormSection from '../features/support/components/ContactFormSection';
 
 const SupportPage = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 600);
+    return () => clearTimeout(timer);
+  }, []);
+
   const {
     activeTab,
     setActiveTab,
@@ -68,18 +78,22 @@ const SupportPage = () => {
         <Breadcrumb items={breadcrumbItems} />
       </div>
 
-      <div className="space-y-6 pb-12">
-        {/* Hero */}
-        <SupportHero searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+      {isLoading ? (
+        <SupportSkeleton />
+      ) : (
+        <div className="space-y-6 pb-12 animate-fade-in">
+          {/* Hero */}
+          <SupportHero searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
 
-        {/* Tabs */}
-        <SupportTabs activeTab={activeTab} setActiveTab={setActiveTab} />
+          {/* Tabs */}
+          <SupportTabs activeTab={activeTab} setActiveTab={setActiveTab} />
 
-        {/* Tab Content */}
-        <div className="animate-fade-in">
-          {renderTabContent()}
+          {/* Tab Content */}
+          <div>
+            {renderTabContent()}
+          </div>
         </div>
-      </div>
+      )}
     </DashboardLayout>
   );
 };

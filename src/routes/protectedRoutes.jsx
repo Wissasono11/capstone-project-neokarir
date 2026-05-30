@@ -2,7 +2,6 @@ import React, { lazy } from 'react';
 
 // Lazy loaded page components
 const DashboardPage = lazy(() => import('../pages/DashboardPage'));
-const AICareerProfilingPage = lazy(() => import('../pages/AICareerProfilingPage'));
 const CVAnalyzerPage = lazy(() => import('../pages/CVAnalyzerPage'));
 const SkillGapPage = lazy(() => import('../pages/SkillGapPage'));
 const CareerRecommendationPage = lazy(() => import('../pages/CareerRecommendationPage'));
@@ -14,7 +13,6 @@ const ProfileSettingsPage = lazy(() => import('../pages/ProfileSettingsPage'));
 
 export const protectedRoutes = [
   { path: '/dashboard', element: <DashboardPage /> },
-  { path: '/ai-career-profiling', element: <AICareerProfilingPage /> },
   { path: '/dashboard/cv-analyzer', element: <CVAnalyzerPage /> },
   { path: '/dashboard/skill-gap', element: <SkillGapPage /> },
   { path: '/dashboard/recommendations', element: <CareerRecommendationPage /> },

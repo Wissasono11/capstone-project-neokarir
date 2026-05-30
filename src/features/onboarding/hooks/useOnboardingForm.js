@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { replace, useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../../../contexts/AuthContext';
 
 export const useOnboardingForm = () => {
@@ -7,7 +7,7 @@ export const useOnboardingForm = () => {
   const [careerGoal, setCareerGoal] = useState('');
   const [inputMethod, setInputMethod] = useState('upload'); // 'upload' | 'manual'
   const [cvFile, setCvFile] = useState(null);
-  
+
   const [manualData, setManualData] = useState({
     domain: '',
     role: '',
@@ -15,11 +15,11 @@ export const useOnboardingForm = () => {
     experience: '',
     education: ''
   });
-  
+
   const [additionalSkills, setAdditionalSkills] = useState([]);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
-  
+
   const [cvData, setCvData] = useState({
     fullName: 'Bayu Wicaksono',
     targetDomain: 'Web Development',
@@ -29,9 +29,12 @@ export const useOnboardingForm = () => {
     experience: '< 1 Tahun (Termasuk Magang/Internship)',
     education: 'S1'
   });
-  
-  const { completeOnboarding } = useAuth();
+
+  const { completeOnboarding, updateProfile } = useAuth();
   const navigate = useNavigate();
+  const location = useLocation();
+  const hasCompletedOnce = localStorage.getItem('neokarir_has_completed_onboarding_once') === 'true';
+  const isReprocessingFlow = hasCompletedOnce || location.state?.reprocess === true;
 
   const nextStep = async () => {
     if (currentStep === 2 && inputMethod === 'upload') {
@@ -46,7 +49,7 @@ export const useOnboardingForm = () => {
   const prevStep = () => {
     if (currentStep > 1) setCurrentStep(prev => prev - 1);
   };
-  
+
   const goToStep = (step) => {
     setCurrentStep(step);
   };
@@ -71,17 +74,17 @@ export const useOnboardingForm = () => {
 
   const submitOnboarding = async () => {
     setIsSubmitting(true);
-    
+
     // Mock processing delay
     await new Promise(resolve => setTimeout(resolve, 800));
-    
+
     // Combine manual data tech stack, cv skills and additional skills
     const combinedSkills = Array.from(new Set([
-      ...manualData.techStack, 
+      ...manualData.techStack,
       ...(inputMethod === 'upload' ? (cvData.techStack || cvData.skills) : []),
       ...additionalSkills
     ]));
-    
+
     // Profile data to save
     const profileData = {
       careerGoal,
@@ -94,9 +97,14 @@ export const useOnboardingForm = () => {
       education: inputMethod === 'upload' ? (cvData.education || 'S1') : (manualData.education || 'S1'),
       status: 'Open to Work'
     };
-    
-    completeOnboarding(profileData);
-    navigate('/ai-career-profiling');
+
+    if (isReprocessingFlow) {
+      completeOnboarding(profileData);
+      navigate('/dashboard', { replace: true });
+    } else {
+      updateProfile(profileData);
+      navigate('/ai-career-profiling', { replace: true });
+    }
   };
 
   return {

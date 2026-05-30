@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Settings } from 'lucide-react';
 import DashboardLayout from '../layouts/DashboardLayout';
 import Breadcrumb from '../components/ui/Breadcrumb';
@@ -8,9 +8,19 @@ import PersonalInfoTab from '../features/profile-settings/components/PersonalInf
 import CareerSkillsTab from '../features/profile-settings/components/CareerSkillsTab';
 import AccountSecurityTab from '../features/profile-settings/components/AccountSecurityTab';
 import PreferencesTab from '../features/profile-settings/components/PreferencesTab';
+import ProfileSettingsSkeleton from '../features/profile-settings/components/ProfileSettingsSkeleton';
 import { useProfileSettings } from '../features/profile-settings/hooks/useProfileSettings';
 
 const ProfileSettingsPage = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 600);
+    return () => clearTimeout(timer);
+  }, []);
+
   const {
     activeTab,
     setActiveTab,
@@ -101,33 +111,39 @@ const ProfileSettingsPage = () => {
       {/* Breadcrumb */}
       <Breadcrumb items={breadcrumbItems} className="mb-6" />
 
-      {/* Page Header */}
-      <div className="mb-6 md:mb-8">
-        <h1 className="text-title md:text-heading font-bold text-primary-text mb-1">
-          Profile & Settings
-        </h1>
-        <p className="text-body-sm md:text-body font-medium text-secondary-text">
-          Kelola informasi profil, karir, keamanan, dan preferensi akun kamu.
-        </p>
-      </div>
+      {isLoading ? (
+        <ProfileSettingsSkeleton />
+      ) : (
+        <div className="animate-fade-in">
+          {/* Page Header */}
+          <div className="mb-6 md:mb-8">
+            <h1 className="text-title md:text-heading font-bold text-primary-text mb-1">
+              Profile & Settings
+            </h1>
+            <p className="text-body-sm md:text-body font-medium text-secondary-text">
+              Kelola informasi profil, karir, keamanan, dan preferensi akun kamu.
+            </p>
+          </div>
 
-      {/* Profile Overview Card */}
-      <div className="mb-6">
-        <ProfileOverviewCard
-          user={user}
-          onEditProfile={() => setActiveTab('personal')}
-        />
-      </div>
+          {/* Profile Overview Card */}
+          <div className="mb-6">
+            <ProfileOverviewCard
+              user={user}
+              onEditProfile={() => setActiveTab('personal')}
+            />
+          </div>
 
-      {/* Tab Navigation */}
-      <div className="mb-6">
-        <ProfileTabs activeTab={activeTab} onTabChange={setActiveTab} />
-      </div>
+          {/* Tab Navigation */}
+          <div className="mb-6">
+            <ProfileTabs activeTab={activeTab} onTabChange={setActiveTab} />
+          </div>
 
-      {/* Tab Content */}
-      <div className="pb-10">
-        {renderTabContent()}
-      </div>
+          {/* Tab Content */}
+          <div className="pb-10">
+            {renderTabContent()}
+          </div>
+        </div>
+      )}
     </DashboardLayout>
   );
 };

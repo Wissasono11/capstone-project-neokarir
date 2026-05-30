@@ -29,14 +29,14 @@ export const useProfileSettings = () => {
     openModal,
     closeModal
   } = useCareerSkills(user);
-  
+
   const { security, updateSecurity, removeSession } = useAccountSecurity();
   const { preferences, updatePreferences } = usePreferences();
 
   const handleSave = useCallback(async () => {
     setIsSaving(true);
     setSaveSuccess(false);
-    
+
     try {
       if (activeTab === 'personal') {
         const result = await profileService.updatePersonalInfo(personalInfo);
@@ -61,7 +61,7 @@ export const useProfileSettings = () => {
         await profileService.updatePreferences(preferences);
         toastSuccess('Preferensi akun berhasil diperbarui!');
       }
-      
+
       setSaveSuccess(true);
       setTimeout(() => setSaveSuccess(false), 3000);
     } catch (err) {
