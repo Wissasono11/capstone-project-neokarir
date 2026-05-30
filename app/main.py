@@ -1,30 +1,11 @@
-from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
-from typing import Dict, List, Optional
-
+from fastapi import FastAPI
 from app.schemas import UserProfilePayload, ProfileScorePayload, SkillGapPayload
 from app.services.recommendation import get_full_recommendation
 from app.services.scoring import calculate_profile_score
 from app.services.skill_gap import calculate_radar_data, generate_recommended_actions
 from app.services.roadmap import get_job_specific_roadmap
-from app.services.timeseries.predict import forecast, DOMAINS
 
 app = FastAPI(title="NeoKarir - AI Recommendation API")
-
-
-# ─── Schema timeseries ────────────────────────────────────────────────────────
-
-class MonthRecord(BaseModel):
-    date: str
-    demand: Dict[str, float]
-
-class ForecastRequest(BaseModel):
-    history : Optional[List[MonthRecord]] = None  # None = otomatis dari CSV
-    n_months: int = 3
-    domain  : Optional[str] = None
-
-
-# ─── Endpoint lama (tidak diubah) ────────────────────────────────────────────
 
 @app.get("/")
 def home():
@@ -55,6 +36,11 @@ def fetch_skill_gap(payload: SkillGapPayload):
     # Hitung gap ringkasan
     gap_summary = {item["category"]: item["gap"] for item in radar_data}
     actions = generate_recommended_actions(gap_summary)
+    if not radar_chart_data:
+        return {"status": "error", "message": "Data role belum tersedia untuk dikalkulasi."}
+    
+    gap_results = {item["category"]: item["gap"] for item in radar_chart_data}
+    recommended_actions = generate_recommended_actions(gap_results)
     
     return {
         "status": "success",
@@ -67,50 +53,11 @@ def fetch_skill_gap(payload: SkillGapPayload):
 @app.get("/api/roadmap/job-sync/{job_id}")
 def fetch_roadmap_sync(job_id: str):
     result = get_job_specific_roadmap(job_id)
+    
     if not result:
         return {"status": "error", "message": "ID Lowongan tidak ditemukan."}
-    return {"status": "success", "data": result}
-
-
-# ─── Endpoint timeseries ──────────────────────────────────────────────────────
-
-@app.get("/api/trend/domains")
-def fetch_trend_domains():
-    """List semua domain IT yang tersedia."""
-    return {"status": "success", "domains": DOMAINS, "total": len(DOMAINS)}
-
-
-@app.post("/api/trend/forecast")
-def fetch_trend_forecast(req: ForecastRequest):
-    """
-    Prediksi demand job IT N bulan ke depan.
-
-    - Kirim body KOSONG ({}) → otomatis pakai 12 bulan terakhir dari CSV
-    - Atau kirim history manual jika punya data dari database sendiri
-    """
-    try:
-        history_raw = None
-        if req.history:
-            history_raw = [
-                {"date": r.date, "demand": dict(r.demand)}
-                for r in req.history
-            ]
-
-        result = forecast(
-            history  = history_raw,
-            n_months = req.n_months,
-            domain   = req.domain,
-        )
-        return {
-            "status"        : "success",
-            "n_months"      : req.n_months,
-            "predictions"   : result["predictions"],
-            "top_domain"    : result["top_domain"],
-            "generated_at"  : result["generated_at"],
-            "history_source": result["history_source"],
-        }
-
-    except ValueError as e:
-        raise HTTPException(status_code=422, detail=str(e))
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Model error: {str(e)}")
+        
+    return {
+        "status": "success",
+        "data": result
+    }
