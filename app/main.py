@@ -45,20 +45,22 @@ def fetch_profile_score(payload: ProfileScorePayload):
 
 @app.post("/api/profile/skill-gap")
 def fetch_skill_gap(payload: SkillGapPayload):
-    radar_chart_data = calculate_radar_data(
+    
+    radar_data = calculate_radar_data(
         target_domain=payload.target_domain,
         target_role=payload.target_role,
-        user_skills=payload.owned_skills
+        user_skills=payload.owned_skills # Ini harus berisi list gabungan
     )
-    if not radar_chart_data:
-        return {"status": "error", "message": "Data role belum tersedia untuk dikalkulasi."}
-    gap_results = {item["category"]: item["gap"] for item in radar_chart_data}
-    recommended_actions = generate_recommended_actions(gap_results)
+    
+    # Hitung gap ringkasan
+    gap_summary = {item["category"]: item["gap"] for item in radar_data}
+    actions = generate_recommended_actions(gap_summary)
+    
     return {
         "status": "success",
         "data": {
-            "radar_chart_data": radar_chart_data,
-            "recommended_actions": recommended_actions
+            "radar_chart": radar_data,
+            "recommendations": actions
         }
     }
 

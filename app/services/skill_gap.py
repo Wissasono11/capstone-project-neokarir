@@ -26,32 +26,29 @@ def get_skills_list(skills_data):
 # --- LOGIKA RADAR CHART ---
 def calculate_radar_data(target_domain, target_role, user_skills):
     domain_taxonomy = skill_taxonomy.get(target_domain, {})
+    # Filter job dengan case insensitive
     jobs_filtered = df_jobs[df_jobs['job_title'].str.contains(target_role, case=False, na=False)]
     total_jobs = len(jobs_filtered)
     
     radar_data = []
     if total_jobs == 0: return radar_data
+
+    # NORMALISASI: Ubah semua skill user ke lowercase agar cocok dengan taxonomy
+    user_skills_set = {str(s).lower().strip() for s in user_skills}
         
     for category, category_skills in domain_taxonomy.items():
-        jobs_requiring_category = 0
-        total_skills_demanded_in_category = 0
-        
-        for _, row in jobs_filtered.iterrows():
-            # Menggunakan fungsi baru di baris ini
-            job_skills = set(get_skills_list(row['required_skills']))
-            intersection = job_skills.intersection(set(category_skills))
-            
-            if len(intersection) > 0:
-                jobs_requiring_category += 1
-                total_skills_demanded_in_category += len(intersection)
-                
-        required_percentage = (jobs_requiring_category / total_jobs) * 100 if total_jobs > 0 else 0
-        avg_skills_needed = (total_skills_demanded_in_category / jobs_requiring_category) if jobs_requiring_category > 0 else 1
+        # Ambil rata-rata jumlah skill yang dibutuhkan di kategori ini dari dataset
+        relevant_jobs_skills = jobs_filtered['required_skills'].apply(
+            lambda x: len(set([s.lower() for s in x]).intersection(set([s.lower() for s in category_skills])))
+        )
+        avg_skills_needed = relevant_jobs_skills.mean() if not relevant_jobs_skills.empty else 1
         avg_skills_needed = max(1, math.ceil(avg_skills_needed))
         
-        user_skills_set = set(user_skills)
-        user_skills_in_category = len(user_skills_set.intersection(set(category_skills)))
+        # Hitung skill user yang cocok (Case Insensitive)
+        cat_skills_lower = {s.lower() for s in category_skills}
+        user_skills_in_category = len(user_skills_set.intersection(cat_skills_lower))
         
+        required_percentage = 80 # Standar industri
         fulfillment_ratio = user_skills_in_category / avg_skills_needed
         current_percentage = min(100, required_percentage * fulfillment_ratio)
         gap = current_percentage - required_percentage
