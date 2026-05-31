@@ -14,7 +14,7 @@ export const useCareerSkills = (initialUser) => {
     targetRole: initialUser?.target_role || initialUser?.profile_data?.target_role || '',
     experienceLevel: initialUser?.experience || initialUser?.profile_data?.user_experience || 'Fresh Graduate',
     skills: [],
-    education: [],
+    education: initialUser?.education || initialUser?.profile_data?.user_education || 'S1',
   });
 
   useEffect(() => {
@@ -28,7 +28,7 @@ export const useCareerSkills = (initialUser) => {
         targetRole: initialUser.target_role || initialUser.profile_data?.target_role || '',
         experienceLevel: initialUser.experience || initialUser.profile_data?.user_experience || 'Fresh Graduate',
         skills: dbSkills,
-        education: initialUser.profile_data?.education || prev.education,
+        education: initialUser.education || initialUser.profile_data?.user_education || 'S1',
       }));
     }
   }, [initialUser]);
@@ -44,12 +44,14 @@ export const useCareerSkills = (initialUser) => {
       targetRole: info.targetRole,
       experienceLevel: info.experienceLevel,
       skills: info.skills,
+      education: info.education,
     });
     updateProfile({
       role: info.currentRole,
       current_role: info.currentRole,
       target_role: info.targetRole,
       experience: info.experienceLevel,
+      education: info.education,
     });
   }, [careerInfo, updateProfile]);
 

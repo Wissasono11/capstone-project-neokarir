@@ -21,10 +21,12 @@ export const profileService = {
             years_experience: 2,
             avatar_url: null,
             skills_summary: 'React, Node.js, Express, PostgreSQL',
+            education_level: 'S1',
             profile_data: {
               owned_skills: ['React', 'Node.js', 'Express', 'PostgreSQL'],
               date_of_birth: '1995-05-15',
               user_experience: '1-3 tahun',
+              user_education: 'S1',
             }
           }
         }
@@ -98,6 +100,11 @@ export const profileService = {
       else if (careerData.experienceLevel === '> 5 tahun') years = 6.0;
       else if (careerData.experienceLevel === 'Belum ada pengalaman') years = 0.0;
       payload.years_experience = years;
+    }
+    if (careerData.education !== undefined) {
+      payload.education_level = careerData.education;
+      payload.profile_data = payload.profile_data || {};
+      payload.profile_data.user_education = careerData.education;
     }
     if (careerData.skills !== undefined) {
       payload.skills_summary = careerData.skills.join(', ');

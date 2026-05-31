@@ -5,6 +5,7 @@ import Card from '../../../components/ui/Card';
 import FormInput from '../../../components/ui/FormInput';
 import Button from '../../../components/ui/Button';
 import { BriefcaseBusiness, Target } from 'lucide-react';
+import { EDUCATION_LEVELS } from '../../onboarding/data/onboardingData';
 
 const CareerSkillsTab = ({
   careerInfo,
@@ -72,7 +73,7 @@ const CareerSkillsTab = ({
           />
 
           {/* Experience Level select */}
-          <div className="flex flex-col gap-1.5 md:col-span-2">
+          <div className="flex flex-col gap-1.5">
             <label
               htmlFor="career-experience"
               className="text-sm font-semibold text-primary-text"
@@ -94,6 +95,32 @@ const CareerSkillsTab = ({
               <option value="Mid-Level (3-5 tahun)">Mid-Level (3-5 tahun)</option>
               <option value="Senior (5+ tahun)">Senior (5+ tahun)</option>
               <option value="Lead / Manager">Lead / Manager</option>
+            </select>
+          </div>
+
+          {/* Education Level select */}
+          <div className="flex flex-col gap-1.5">
+            <label
+              htmlFor="career-education"
+              className="text-sm font-semibold text-primary-text"
+            >
+              Pendidikan Terakhir
+            </label>
+            <select
+              id="career-education"
+              value={careerInfo.education || 'S1'}
+              onChange={(e) => updateCareerInfo('education', e.target.value)}
+              className="
+                w-full rounded-xl border bg-white px-4 py-3 text-sm text-primary-text
+                transition-all duration-200 outline-none appearance-none cursor-pointer
+                border-border hover:border-primary/30 focus:border-primary focus:ring-2 focus:ring-primary/10
+              "
+            >
+              {EDUCATION_LEVELS.map((level) => (
+                <option key={level} value={level}>
+                  {level}
+                </option>
+              ))}
             </select>
           </div>
         </div>
