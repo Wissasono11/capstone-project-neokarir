@@ -1,0 +1,26 @@
+{
+  "model_name": "IT_Trend_CNN_BiLSTM_Attention",
+  "seq_len": 12,
+  "n_features": 9,
+  "domains": [
+    "Cyber Security",
+    "Data Analytics",
+    "Data Engineering",
+    "Data Science & AI",
+    "DevOps & Cloud",
+    "Product Management",
+    "Software Development",
+    "UI/UX Design",
+    "Web Development"
+  ],
+  "transform": "log1p + MinMaxScaler (fit on full data)",
+  "split": "stratified (every 5th seq \u2192 test, 4th \u2192 val)",
+  "mape": 9.378,
+  "acc_mape5": 21.48,
+  "cv_rmse": 0.106786,
+  "mean_r2": -0.960542,
+  "mae_norm": 0.067424,
+  "date_min": "2010-01-31",
+  "date_max": "2026-12-31",
+  "created_at": "2026-05-24T16:01:59.216272"
+}
