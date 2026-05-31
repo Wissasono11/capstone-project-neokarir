@@ -3,6 +3,7 @@ import {
   BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer,
   AreaChart, Area
 } from 'recharts';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const DOMAIN_COLORS = {
   "Cyber Security": "#3B82F6",      // Blue
@@ -16,7 +17,7 @@ const DOMAIN_COLORS = {
   "Web Development": "#14B8A6"      // Teal
 };
 
-const CustomTooltip = ({ active, payload, label }) => {
+const CustomTooltip = ({ active, payload, label, vacanciesUnit }) => {
   if (active && payload && payload.length) {
     return (
       <div className="bg-[#18181B] text-white p-3.5 rounded-xl border border-white/10 shadow-xl text-caption font-jakarta">
@@ -28,7 +29,7 @@ const CustomTooltip = ({ active, payload, label }) => {
             <div key={idx} className="flex items-center gap-2.5">
               <div className="w-3 h-3 rounded-full" style={{ backgroundColor: color }} />
               <span className="font-semibold text-white/70">{item.name}:</span>
-              <span className="font-bold text-white text-body-sm">{Math.round(item.value)} lowongan</span>
+              <span className="font-bold text-white text-body-sm">{Math.round(item.value)} {vacanciesUnit}</span>
             </div>
           );
         })}
@@ -39,6 +40,7 @@ const CustomTooltip = ({ active, payload, label }) => {
 };
 
 const JobMarketChart = ({ predictions, selectedDomain, loading }) => {
+  const { t } = useLanguage();
   const [isMobile, setIsMobile] = React.useState(false);
 
   React.useEffect(() => {
@@ -90,7 +92,7 @@ const JobMarketChart = ({ predictions, selectedDomain, loading }) => {
     return (
       <div className="bg-pure-surface rounded-[24px] border border-border shadow-sm p-6 h-[460px] flex items-center justify-center">
         <p className="text-body-sm font-semibold text-secondary-text">
-          Tidak ada data yang tersedia untuk divisualisasikan.
+          {t.jobsMarket.noDataAvailable}
         </p>
       </div>
     );
@@ -110,7 +112,7 @@ const JobMarketChart = ({ predictions, selectedDomain, loading }) => {
       .sort((a, b) => b['Estimasi Demand'] - a['Estimasi Demand']); // Sort for neat bar ranking
   } else {
     chartData = predictions.map((pred, index) => ({
-      name: `Bulan +${index + 1}`,
+      name: t.jobsMarket.monthPlus(index + 1),
       'Estimasi Demand': pred[selectedDomain] || 0
     }));
   }
@@ -120,13 +122,13 @@ const JobMarketChart = ({ predictions, selectedDomain, loading }) => {
       <div>
         <h3 className="text-body-lg font-bold text-primary-text mb-1">
           {isComparisonMode 
-            ? 'Perbandingan Kebutuhan Lowongan IT (Bulan Depan)' 
-            : `Proyeksi Tren Demand: ${selectedDomain}`}
+            ? t.jobsMarket.comparisonTitle 
+            : t.jobsMarket.projectionTitle(selectedDomain)}
         </h3>
         <p className="text-caption font-medium text-secondary-text">
           {isComparisonMode 
-            ? 'Membandingkan tingkat demand lowongan IT antar-domain pada bulan pertama proyeksi.'
-            : `Menampilkan pertumbuhan estimasi jumlah lowongan kerja ${selectedDomain} dalam beberapa bulan ke depan.`}
+            ? t.jobsMarket.comparisonDesc
+            : t.jobsMarket.projectionDesc(selectedDomain)}
         </p>
       </div>
 
@@ -159,7 +161,7 @@ const JobMarketChart = ({ predictions, selectedDomain, loading }) => {
                   axisLine={false}
                   width={110}
                 />
-                <Tooltip content={<CustomTooltip />} cursor={{ fill: '#F8FAFC', radius: 4 }} />
+                <Tooltip content={<CustomTooltip vacanciesUnit={t.jobsMarket.vacanciesUnit} />} cursor={{ fill: '#F8FAFC', radius: 4 }} />
                 <Legend 
                   verticalAlign="top" 
                   height={32} 
@@ -169,7 +171,7 @@ const JobMarketChart = ({ predictions, selectedDomain, loading }) => {
                 />
                 <Bar 
                   dataKey="Estimasi Demand" 
-                  name="Estimasi Jumlah Lowongan"
+                  name={t.jobsMarket.estDemand}
                   radius={[0, 4, 4, 0]} 
                   barSize={16}
                 >
@@ -205,7 +207,7 @@ const JobMarketChart = ({ predictions, selectedDomain, loading }) => {
                   tickLine={false}
                   axisLine={false}
                 />
-                <Tooltip content={<CustomTooltip />} cursor={{ fill: '#F8FAFC', radius: 8 }} />
+                <Tooltip content={<CustomTooltip vacanciesUnit={t.jobsMarket.vacanciesUnit} />} cursor={{ fill: '#F8FAFC', radius: 8 }} />
                 <Legend 
                   verticalAlign="top" 
                   height={36} 
@@ -215,7 +217,7 @@ const JobMarketChart = ({ predictions, selectedDomain, loading }) => {
                 />
                 <Bar 
                   dataKey="Estimasi Demand" 
-                  name="Estimasi Jumlah Lowongan"
+                  name={t.jobsMarket.estDemand}
                   radius={[8, 8, 0, 0]} 
                   barSize={32}
                 >
@@ -253,7 +255,7 @@ const JobMarketChart = ({ predictions, selectedDomain, loading }) => {
                 tickLine={false}
                 axisLine={false}
               />
-              <Tooltip content={<CustomTooltip />} />
+              <Tooltip content={<CustomTooltip vacanciesUnit={t.jobsMarket.vacanciesUnit} />} />
               <Legend 
                 verticalAlign="top" 
                 height={36} 
@@ -264,7 +266,7 @@ const JobMarketChart = ({ predictions, selectedDomain, loading }) => {
               <Area 
                 type="monotone" 
                 dataKey="Estimasi Demand" 
-                name="Estimasi Jumlah Lowongan"
+                name={t.jobsMarket.estDemand}
                 stroke="#4F46E5" 
                 strokeWidth={3} 
                 fillOpacity={1} 

@@ -1,7 +1,10 @@
 import React from 'react';
 import { CheckCircle2, AlertOctagon } from 'lucide-react';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const CVStrengthsWeaknesses = ({ strengths = [], weaknesses = [] }) => {
+  const { t } = useLanguage();
+
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full mb-8">
       {/* Strengths Card */}
@@ -11,8 +14,8 @@ const CVStrengthsWeaknesses = ({ strengths = [], weaknesses = [] }) => {
             <CheckCircle2 className="w-5 h-5" />
           </div>
           <div>
-            <h4 className="text-base font-bold text-primary-text leading-none mb-1">Kekuatan Utama CV</h4>
-            <p className="text-xs font-semibold text-secondary-text">Poin positif yang paling disukai rekruter</p>
+            <h4 className="text-base font-bold text-primary-text leading-none mb-1">{t.cvAnalyzer.strengthsTitle}</h4>
+            <p className="text-xs font-semibold text-secondary-text">{t.cvAnalyzer.strengthsDesc}</p>
           </div>
         </div>
 
@@ -37,8 +40,8 @@ const CVStrengthsWeaknesses = ({ strengths = [], weaknesses = [] }) => {
             <AlertOctagon className="w-5 h-5" />
           </div>
           <div>
-            <h4 className="text-base font-bold text-primary-text leading-none mb-1">Celah Kekurangan</h4>
-            <p className="text-xs font-semibold text-secondary-text">Area krusial yang dapat menghambat verifikasi</p>
+            <h4 className="text-base font-bold text-primary-text leading-none mb-1">{t.cvAnalyzer.weaknessesTitle}</h4>
+            <p className="text-xs font-semibold text-secondary-text">{t.cvAnalyzer.weaknessesDesc}</p>
           </div>
         </div>
 

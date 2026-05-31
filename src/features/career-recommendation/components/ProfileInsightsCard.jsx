@@ -1,11 +1,15 @@
+import { useLanguage } from '../../../contexts/LanguageContext';
+
 const ProfileInsightsCard = ({ job }) => {
+  const { t } = useLanguage();
+
   if (!job) return null;
 
   return (
     <div className="bg-slate-50 border border-slate-100 rounded-2xl p-5 text-slate-700">
-      <h4 className="text-body-sm font-bold text-slate-800 mb-2">Mengapa Anda cocok?</h4>
+      <h4 className="text-body-sm font-bold text-slate-800 mb-2">{t.career.whyMatchTitle}</h4>
       <p className="text-caption text-slate-600 font-medium leading-relaxed mb-4">
-        Berdasarkan kecocokan latar belakang Anda, Anda memiliki kecocokan tinggi pada aspek persyaratan utama pekerjaan ini. Silakan selesaikan roadmap pembelajaran di samping untuk menutupi skill gap yang tersisa.
+        {t.career.whyMatchDesc}
       </p>
       <div className="flex flex-wrap gap-1.5">
         {job.matchedSkills.map((skill, idx) => (

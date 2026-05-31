@@ -1,7 +1,10 @@
 import React from 'react';
 import { AlertCircle, AlertTriangle, CheckCircle2, Award } from 'lucide-react';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const RecommendedActions = ({ actionsData }) => {
+  const { t } = useLanguage();
+  
   const normalizedData = React.useMemo(() => {
     if (!actionsData) return [];
     if (Array.isArray(actionsData)) return actionsData;
@@ -10,26 +13,26 @@ const RecommendedActions = ({ actionsData }) => {
     if (actionsData.critical_gap || actionsData.critical) {
       actions.push({
         type: 'critical',
-        title: 'Gap Kritis',
+        title: t.skillGap.criticalGap,
         description: actionsData.critical_gap || actionsData.critical
       });
     }
     if (actionsData.needs_improvement || actionsData.improvement || actionsData.improvements) {
       actions.push({
         type: 'improvement',
-        title: 'Butuh Peningkatan',
+        title: t.skillGap.needsImprovement,
         description: actionsData.needs_improvement || actionsData.improvements || actionsData.improvement
       });
     }
     if (actionsData.strengths || actionsData.strength) {
       actions.push({
         type: 'strength',
-        title: 'Keunggulan',
+        title: t.skillGap.strengthsTitle,
         description: actionsData.strengths || actionsData.strength
       });
     }
     return actions;
-  }, [actionsData]);
+  }, [actionsData, t]);
 
   const isEmpty = normalizedData.length === 0;
 
@@ -41,12 +44,12 @@ const RecommendedActions = ({ actionsData }) => {
 
   return (
     <div className="space-y-4">
-      <h3 className="text-subtitle font-bold text-slate-800">Aksi yang Direkomendasikan</h3>
+      <h3 className="text-subtitle font-bold text-slate-800">{t.skillGap.recommendedActions}</h3>
       
       {isEmpty ? (
         <div className="p-6 bg-emerald-50/30 border border-emerald-100 rounded-2xl flex items-center justify-center gap-3 text-emerald-800 font-medium text-body-sm">
           <Award className="w-5 h-5 text-emerald-600 shrink-0" />
-          <span>Luar biasa! Skill Anda sudah sepenuhnya selaras dengan kualifikasi industri untuk target peran ini.</span>
+          <span>{t.skillGap.skillsAlignedSuccess}</span>
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

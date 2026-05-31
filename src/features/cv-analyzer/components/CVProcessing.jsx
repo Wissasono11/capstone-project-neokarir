@@ -1,8 +1,11 @@
 import React from 'react';
 import { CheckCircle2, Circle, Loader2 } from 'lucide-react';
 import LoadingSpinner from '../../../components/ui/LoadingSpinner';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const CVProcessing = ({ currentStep, steps, fileName }) => {
+  const { t } = useLanguage();
+
   return (
     <div className="w-full bg-white rounded-[32px] border border-border p-8 md:p-12 shadow-sm flex flex-col items-center justify-center">
       {/* Animated Spinner Icon */}
@@ -12,10 +15,10 @@ const CVProcessing = ({ currentStep, steps, fileName }) => {
 
       {/* Headline */}
       <h3 className="text-xl md:text-2xl font-bold text-primary-text mb-2 text-center">
-        Sedang Menganalisis CV Anda
+        {t.cvAnalyzer.processingTitle}
       </h3>
       <p className="text-body-sm font-medium text-secondary-text mb-10 text-center max-w-md">
-        Berkas: <span className="text-primary font-bold">{fileName}</span>. AI kami sedang mengekstrak dan mengevaluasi isi CV Anda.
+        {t.cvAnalyzer.fileLabel}: <span className="text-primary font-bold">{fileName}</span>. {t.cvAnalyzer.processingDesc}
       </p>
 
       {/* Progress Steps List */}
@@ -56,7 +59,7 @@ const CVProcessing = ({ currentStep, steps, fileName }) => {
                     : 'text-secondary-text'
                 }
               `}>
-                {step}
+                {t.cvAnalyzer.steps[index] || step}
               </span>
             </div>
           );

@@ -10,9 +10,11 @@ import AccountSecurityTab from '../features/profile-settings/components/AccountS
 import PreferencesTab from '../features/profile-settings/components/PreferencesTab';
 import ProfileSettingsSkeleton from '../features/profile-settings/components/ProfileSettingsSkeleton';
 import { useProfileSettings } from '../features/profile-settings/hooks/useProfileSettings';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const ProfileSettingsPage = () => {
   const [isLoading, setIsLoading] = useState(true);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -51,7 +53,7 @@ const ProfileSettingsPage = () => {
   } = useProfileSettings();
 
   const breadcrumbItems = [
-    { label: 'Profile & Settings', icon: Settings },
+    { label: t.profile.title, icon: Settings },
   ];
 
   const renderTabContent = () => {
@@ -123,10 +125,10 @@ const ProfileSettingsPage = () => {
           {/* Page Header */}
           <div className="mb-6 md:mb-8">
             <h1 className="text-title md:text-heading font-bold text-primary-text mb-1">
-              Profile & Settings
+              {t.profile.title}
             </h1>
             <p className="text-body-sm md:text-body font-medium text-secondary-text">
-              Kelola informasi profil, karir, keamanan, dan preferensi akun kamu.
+              {t.profile.subtitle}
             </p>
           </div>
 

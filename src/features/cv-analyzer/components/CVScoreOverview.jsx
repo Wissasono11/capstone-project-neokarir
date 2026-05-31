@@ -1,8 +1,10 @@
 import React from 'react';
 import { Award, Star } from 'lucide-react';
 import { getColorScheme } from '../data/cvAnalyzerConstants';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const CVScoreOverview = ({ score, summary }) => {
+  const { t } = useLanguage();
   const scheme = getColorScheme(score);
 
   // SVG parameters
@@ -67,7 +69,7 @@ const CVScoreOverview = ({ score, summary }) => {
           <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
             <h4 className="text-base font-bold text-primary-text flex items-center gap-2">
               <Award className="w-5 h-5 text-primary" />
-              Hasil Analisis Kecocokan CV
+              {t.cvAnalyzer.matchResultTitle}
             </h4>
 
             {/* Stars Review */}
@@ -90,11 +92,11 @@ const CVScoreOverview = ({ score, summary }) => {
         <div className="border-t border-border/60 pt-4 mt-4 flex flex-wrap gap-4 text-xs font-semibold text-secondary-text">
           <div className="flex items-center gap-1.5">
             <span className="w-2.5 h-2.5 rounded-full bg-indigo-500 shrink-0"></span>
-            <span>ATS Friendly Format</span>
+            <span>{t.cvAnalyzer.atsFriendly}</span>
           </div>
           <div className="flex items-center gap-1.5">
             <span className="w-2.5 h-2.5 rounded-full bg-amber-500 shrink-0"></span>
-            <span>Optimasi Keyword Dianjurkan</span>
+            <span>{t.cvAnalyzer.keywordOptimization}</span>
           </div>
         </div>
       </div>

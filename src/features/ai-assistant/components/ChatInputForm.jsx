@@ -2,12 +2,14 @@ import React from 'react';
 import { Send, Wand2 } from 'lucide-react';
 import ChatSuggestions from './ChatSuggestions';
 import { useChatInput } from '../hooks/useChatInput';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const ChatInputForm = ({
   sendMessage,
   enhancePrompt,
   setIsHistoryOpen
 }) => {
+  const { t } = useLanguage();
   const {
     inputText,
     setInputText,
@@ -32,7 +34,7 @@ const ChatInputForm = ({
           value={inputText}
           onChange={(e) => setInputText(e.target.value)}
           onKeyDown={handleKeyPress}
-          placeholder="Tulis respon atau ajukan pertanyaan karir baru..."
+          placeholder={t.aiAssistant.placeholder}
           className="flex-1 min-w-0 py-2.5 pl-4 pr-12 bg-transparent text-body-sm font-semibold text-primary-text placeholder-secondary-text/70 outline-none"
         />
 
@@ -48,15 +50,15 @@ const ChatInputForm = ({
               ? 'text-primary hover:bg-primary-light hover:text-primary'
               : 'text-secondary-text/30 cursor-not-allowed'
           } ${enhancedSuccessfully ? 'scale-110 text-emerald-500 hover:text-emerald-500 bg-emerald-50' : ''}`}
-          title="Optimize & Enhance Prompt"
-          aria-label="Optimize & Enhance Prompt"
+          title={t.aiAssistant.enhancePrompt}
+          aria-label={t.aiAssistant.enhancePrompt}
         >
           <Wand2 className={`w-4.5 h-4.5 ${enhancedSuccessfully ? 'animate-spin' : ''}`} />
           
           {/* Tooltip */}
           {showEnhanceTooltip && inputText.trim() && (
             <div className="absolute bottom-full right-16 mb-2 w-48 bg-slate-800 text-white text-caption font-semibold p-2 rounded-lg shadow-lg z-50">
-              💡 Klik untuk memperkaya prompt secara otomatis!
+              {t.aiAssistant.enhanceTooltip}
             </div>
           )}
         </button>
@@ -70,8 +72,8 @@ const ChatInputForm = ({
               ? 'bg-primary text-white hover:bg-indigo-700 active:scale-95 shadow-sm'
               : 'bg-slate-100 text-secondary-text/30 cursor-not-allowed'
           }`}
-          title="Kirim Pesan"
-          aria-label="Kirim Pesan"
+          title={t.aiAssistant.send}
+          aria-label={t.aiAssistant.send}
         >
           <Send className="w-4 h-4" />
         </button>
@@ -79,7 +81,7 @@ const ChatInputForm = ({
 
       {/* Disclaimer */}
       <p className="text-caption text-center text-secondary-text/70 mt-3 font-semibold select-none">
-        Neobots dapat membuat kesalahan. Harap pertimbangkan untuk memverifikasi data penting.
+        {t.aiAssistant.disclaimer}
       </p>
     </div>
   );

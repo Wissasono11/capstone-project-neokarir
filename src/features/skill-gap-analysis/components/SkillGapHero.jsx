@@ -1,7 +1,9 @@
 import React from 'react';
 import { Target, CheckCircle2, AlertTriangle, Briefcase, GraduationCap } from 'lucide-react';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const SkillGapHero = ({ data }) => {
+  const { t } = useLanguage();
   if (!data) return null;
 
   const {
@@ -76,7 +78,7 @@ const SkillGapHero = ({ data }) => {
               <span className="text-heading-xl font-extrabold text-slate-800 leading-none">{overallReadiness}</span>
               <span className="text-subtitle font-bold text-slate-400 ml-0.5">%</span>
             </div>
-            <span className="text-caption font-semibold text-slate-400 uppercase tracking-wider mt-1">Kesiapan</span>
+            <span className="text-caption font-semibold text-slate-400 uppercase tracking-wider mt-1">{t.skillGap.readiness}</span>
           </div>
         </div>
 
@@ -94,7 +96,7 @@ const SkillGapHero = ({ data }) => {
         </div>
 
         <h2 className="text-title font-bold text-slate-800 mb-4 flex items-center gap-2">
-          Target Karir: <span className="text-indigo-600 font-extrabold">{targetRole}</span>
+          {t.skillGap.targetCareer} <span className="text-indigo-600 font-extrabold">{targetRole}</span>
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -104,12 +106,12 @@ const SkillGapHero = ({ data }) => {
               <Target className="w-5 h-5" />
             </div>
             <div>
-              <p className="text-caption font-semibold text-slate-400 uppercase tracking-wider">Kecocokan Skill</p>
+              <p className="text-caption font-semibold text-slate-400 uppercase tracking-wider">{t.skillGap.skillsMatch}</p>
               <p className="text-body font-bold text-slate-700 mt-0.5">
-                {matchedSkillsCount}/{totalRequiredSkills} Skill Dimiliki
+                {t.skillGap.skillsOwnedCount(matchedSkillsCount, totalRequiredSkills)}
               </p>
               <p className="text-caption text-slate-500 mt-1">
-                {missingSkillsCount} skill lagi perlu dipelajari
+                {t.skillGap.skillsNeededCount(missingSkillsCount)}
               </p>
             </div>
           </div>
@@ -120,14 +122,14 @@ const SkillGapHero = ({ data }) => {
               <GraduationCap className="w-5 h-5" />
             </div>
             <div>
-              <p className="text-caption font-semibold text-slate-400 uppercase tracking-wider">Pendidikan Minimal</p>
+              <p className="text-caption font-semibold text-slate-400 uppercase tracking-wider">{t.skillGap.minEducation}</p>
               <p className="text-body font-bold text-slate-700 mt-0.5">
                 {educationMatch.required}
               </p>
               <span className={`inline-flex items-center gap-1 text-caption font-bold mt-1 ${educationMatch.hasGap && educationMatch.required !== 'Tidak Ditentukan' && educationMatch.required !== 'N/A' ? 'text-amber-600' : 'text-emerald-600'
                 }`}>
                 {educationMatch.hasGap && educationMatch.required !== 'Tidak Ditentukan' && educationMatch.required !== 'N/A' ? <AlertTriangle className="w-3.5 h-3.5" /> : <CheckCircle2 className="w-3.5 h-3.5" />}
-                {educationMatch.hasGap && educationMatch.required !== 'Tidak Ditentukan' && educationMatch.required !== 'N/A' ? `Gap pendidikan: Kamu ${educationMatch.current}` : 'Sesuai dengan kualifikasi'}
+                {educationMatch.hasGap && educationMatch.required !== 'Tidak Ditentukan' && educationMatch.required !== 'N/A' ? t.skillGap.educationMatchGap(educationMatch.current) : t.skillGap.educationMatchSuccess}
               </span>
             </div>
           </div>
@@ -138,16 +140,16 @@ const SkillGapHero = ({ data }) => {
               <Briefcase className="w-5 h-5" />
             </div>
             <div>
-              <p className="text-caption font-semibold text-slate-400 uppercase tracking-wider">Pengalaman Kerja</p>
+              <p className="text-caption font-semibold text-slate-400 uppercase tracking-wider">{t.skillGap.workExperience}</p>
               <p className="text-body font-bold text-slate-700 mt-0.5">
-                Dibutuhkan: {experienceGap.required}
+                {t.skillGap.experienceRequired(experienceGap.required)}
               </p>
               <span className={`inline-flex items-center gap-1 text-caption font-bold mt-1 ${experienceGap.hasGap && experienceGap.required !== 'Tidak Ditentukan' && experienceGap.required !== 'N/A' ? 'text-amber-600' : 'text-emerald-600'
                 }`}>
                 {experienceGap.hasGap && experienceGap.required !== 'Tidak Ditentukan' && experienceGap.required !== 'N/A' ? <AlertTriangle className="w-3.5 h-3.5" /> : <CheckCircle2 className="w-3.5 h-3.5" />}
                 {experienceGap.hasGap && experienceGap.required !== 'Tidak Ditentukan' && experienceGap.required !== 'N/A'
-                  ? `Ada gap: Pengalaman kamu saat ini adalah ${experienceGap.current}`
-                  : 'Memenuhi kualifikasi pengalaman kerja'
+                  ? t.skillGap.experienceMatchGap(experienceGap.current)
+                  : t.skillGap.experienceMatchSuccess
                 }
               </span>
             </div>

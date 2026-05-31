@@ -6,6 +6,7 @@ import Breadcrumb from '../components/ui/Breadcrumb';
 import SupportSkeleton from '../features/support/components/SupportSkeleton';
 
 import { useSupport } from '../features/support/hooks/useSupport';
+import { useLanguage } from '../contexts/LanguageContext';
 
 import SupportHero from '../features/support/components/SupportHero';
 import SupportTabs from '../features/support/components/SupportTabs';
@@ -14,6 +15,7 @@ import UsageGuideSection from '../features/support/components/UsageGuideSection'
 import ContactFormSection from '../features/support/components/ContactFormSection';
 
 const SupportPage = () => {
+  const { t } = useLanguage();
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -39,7 +41,7 @@ const SupportPage = () => {
   } = useSupport();
 
   const breadcrumbItems = [
-    { label: 'Support', path: '/dashboard/support', icon: HelpCircle }
+    { label: t.common.support, path: '/dashboard/support', icon: HelpCircle }
   ];
 
   const renderTabContent = () => {

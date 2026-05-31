@@ -3,9 +3,11 @@ import { Camera, Mail, BriefcaseBusiness } from 'lucide-react';
 import Card from '../../../components/ui/Card';
 import Button from '../../../components/ui/Button';
 import avatar from '../../../assets/images/avatar.png';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const ProfileOverviewCard = ({ user, onEditProfile, onAvatarUpload, isUploadingAvatar }) => {
   const fileInputRef = useRef(null);
+  const { t } = useLanguage();
 
   const handleAvatarClick = () => {
     if (isUploadingAvatar) return;
@@ -44,7 +46,7 @@ const ProfileOverviewCard = ({ user, onEditProfile, onAvatarUpload, isUploadingA
             onClick={handleAvatarClick}
             disabled={isUploadingAvatar}
             className="absolute inset-0 rounded-full bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center cursor-pointer disabled:cursor-not-allowed"
-            aria-label="Upload foto profil"
+            aria-label={t.profile.uploadAvatarLabel}
           >
             {!isUploadingAvatar && (
               <Camera
@@ -88,7 +90,7 @@ const ProfileOverviewCard = ({ user, onEditProfile, onAvatarUpload, isUploadingA
               <div className="mt-3">
                 <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-caption font-semibold bg-emerald-50 text-emerald-600 border border-emerald-200">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                  {user?.status || 'Open to Work'}
+                  {user?.status || t.profile.openToWork}
                 </span>
               </div>
             </div>
@@ -99,7 +101,7 @@ const ProfileOverviewCard = ({ user, onEditProfile, onAvatarUpload, isUploadingA
               className="shrink-0 self-start"
               onClick={onEditProfile}
             >
-              Edit Profile
+              {t.profile.editProfile}
             </Button>
           </div>
         </div>

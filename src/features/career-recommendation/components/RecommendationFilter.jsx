@@ -1,4 +1,5 @@
 import { Search, Settings2 } from 'lucide-react';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const RecommendationFilter = ({
   searchQuery,
@@ -9,6 +10,8 @@ const RecommendationFilter = ({
   setSelectedMatchFilter,
   domains
 }) => {
+  const { t } = useLanguage();
+
   return (
     <div className="bg-white rounded-2xl border border-slate-100 p-5 shadow-sm space-y-4">
       {/* Search and Quick Match Filters */}
@@ -20,7 +23,7 @@ const RecommendationFilter = ({
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Cari karir, perusahaan, atau skill..."
+            placeholder={t.career.searchPlaceholder}
             className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-200 focus:border-indigo-600 focus:ring-1 focus:ring-indigo-600/10 outline-none text-body-sm font-medium transition-all"
           />
         </div>
@@ -31,10 +34,10 @@ const RecommendationFilter = ({
             <Settings2 className="w-3.5 h-3.5 text-indigo-600" /> Match Level:
           </span>
           {[
-            { id: 'all', label: 'Semua' },
-            { id: 'high', label: 'Tinggi (≥80%)' },
-            { id: 'medium', label: 'Sedang (50-79%)' },
-            { id: 'low', label: 'Rendah (<50%)' }
+            { id: 'all', label: t.career.matchAll },
+            { id: 'high', label: t.career.levelHigh },
+            { id: 'medium', label: t.career.levelMedium },
+            { id: 'low', label: t.career.levelLow }
           ].map(opt => (
             <button
               key={opt.id}
@@ -66,7 +69,7 @@ const RecommendationFilter = ({
                 }
               `}
             >
-              {dom === 'All' ? 'Semua Bidang' : dom}
+              {dom === 'All' ? t.career.allDomains : dom}
             </button>
           ))}
         </div>

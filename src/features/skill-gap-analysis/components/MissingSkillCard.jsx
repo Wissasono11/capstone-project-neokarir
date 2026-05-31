@@ -1,7 +1,9 @@
 import React from 'react';
 import { BookOpen, Clock, AlertCircle, Sparkles, Check } from 'lucide-react';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const MissingSkillCard = ({ skillData }) => {
+  const { t } = useLanguage();
   if (!skillData) return null;
 
   const {
@@ -17,6 +19,11 @@ const MissingSkillCard = ({ skillData }) => {
   } = skillData;
 
   const isHighPriority = priority === "Tinggi";
+  const priorityText = priority === "Tinggi" 
+    ? t.skillGap.priorityHigh 
+    : priority === "Sedang" 
+      ? t.skillGap.priorityMedium 
+      : t.skillGap.priorityLow;
 
   return (
     <div className={`rounded-2xl border p-6 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between group ${
@@ -40,7 +47,7 @@ const MissingSkillCard = ({ skillData }) => {
               }`}>{skill}</h4>
               {category && (
                 <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block mt-0.5">
-                  Kategori: {category}
+                  {t.skillGap.categoryLabel(category)}
                 </span>
               )}
             </div>
@@ -48,7 +55,7 @@ const MissingSkillCard = ({ skillData }) => {
           
           {isCompleted ? (
             <span className="px-2 py-0.5 rounded text-caption font-bold bg-emerald-50 text-emerald-700 border border-emerald-100 flex items-center gap-1">
-              <Check className="w-3.5 h-3.5 stroke-[3px]" /> Terpenuhi
+              <Check className="w-3.5 h-3.5 stroke-[3px]" /> {t.skillGap.fulfilled}
             </span>
           ) : (
             <span className={`px-2 py-0.5 rounded text-caption font-bold ${
@@ -56,7 +63,7 @@ const MissingSkillCard = ({ skillData }) => {
                 ? 'bg-rose-50 text-rose-700 border border-rose-100' 
                 : 'bg-amber-50 text-amber-700 border border-amber-100'
             }`}>
-              {priority}
+              {priorityText}
             </span>
           )}
         </div>
@@ -64,7 +71,7 @@ const MissingSkillCard = ({ skillData }) => {
         {/* Gap & Est Time */}
         <div className="space-y-2 mb-4">
           <div className="flex items-center justify-between text-caption font-semibold text-slate-500">
-            <span>Gap Kekurangan</span>
+            <span>{t.skillGap.gapShortage}</span>
             <span className={`font-extrabold transition-colors duration-300 ${isCompleted ? 'text-emerald-600' : 'text-rose-600'}`}>
               {isCompleted ? '0%' : `${gap}%`}
             </span>
@@ -90,7 +97,7 @@ const MissingSkillCard = ({ skillData }) => {
           }`}>
             <AlertCircle className={`w-4 h-4 shrink-0 mt-0.5 ${isCompleted ? 'text-emerald-500' : 'text-amber-500'}`} />
             <div>
-              <span className={`font-extrabold block mb-0.5 ${isCompleted ? 'text-slate-500' : 'text-slate-700'}`}>Mengapa Penting?</span>
+              <span className={`font-extrabold block mb-0.5 ${isCompleted ? 'text-slate-500' : 'text-slate-700'}`}>{t.skillGap.whyImportant}</span>
               <span className={isCompleted ? 'text-slate-400' : 'text-slate-500'}>{alasan}</span>
             </div>
           </div>
@@ -103,13 +110,13 @@ const MissingSkillCard = ({ skillData }) => {
         <div className="flex items-center justify-between text-caption text-slate-400 font-semibold mb-3">
           <div className="flex items-center gap-1">
             <Clock className="w-3.5 h-3.5 text-slate-400" />
-            <span>Est. Belajar: <strong>{waktuBelajar}</strong></span>
+            <span>{t.skillGap.estLearningTime(waktuBelajar)}</span>
           </div>
         </div>
         
         {relatedSkills && relatedSkills.length > 0 && (
           <div className="flex flex-wrap gap-1.5 items-center">
-            <span className="text-caption text-slate-400 font-bold mr-1">Terkait:</span>
+            <span className="text-caption text-slate-400 font-bold mr-1">{t.skillGap.related}</span>
             {relatedSkills.map((rel, idx) => (
               <span key={idx} className={`px-2 py-0.5 rounded-md text-caption font-semibold ${
                 isCompleted 

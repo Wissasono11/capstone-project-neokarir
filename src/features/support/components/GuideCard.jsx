@@ -2,8 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronRight } from 'lucide-react';
 import { Icon as Iconify } from '@iconify/react';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const GuideCard = ({ title, description, icon: Icon, path, color, bg }) => {
+  const { t } = useLanguage();
+
   return (
     <div className="bg-white rounded-3xl border border-border p-6 shadow-sm flex flex-col justify-between group hover:border-primary/40 hover:shadow-md transition-all duration-300">
       <div>
@@ -27,7 +30,7 @@ const GuideCard = ({ title, description, icon: Icon, path, color, bg }) => {
         to={path}
         className="inline-flex items-center gap-1.5 text-body-sm font-bold text-primary hover:text-indigo-700 transition-colors cursor-pointer group/link"
       >
-        <span>Pelajari Fitur</span>
+        <span>{t.support.learnFeature}</span>
         <ChevronRight size={16} className="transition-transform group-hover/link:translate-x-1" />
       </Link>
     </div>

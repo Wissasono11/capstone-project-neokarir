@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 /**
  * useSupport — Custom hook untuk mengelola state halaman Support.
@@ -6,6 +7,7 @@ import { useState } from 'react';
  * konsisten dengan pola hook lain di codebase (useDashboardData, useSkillGap, dll).
  */
 export const useSupport = () => {
+  const { t } = useLanguage();
   const [activeTab, setActiveTab] = useState('faq');
   const [expandedFAQ, setExpandedFAQ] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
@@ -43,22 +45,22 @@ export const useSupport = () => {
     const errors = {};
 
     if (!contactForm.name.trim()) {
-      errors.name = 'Nama lengkap wajib diisi';
+      errors.name = t.support.errorNameRequired;
     }
 
     if (!contactForm.email.trim()) {
-      errors.email = 'Alamat email wajib diisi';
+      errors.email = t.support.errorEmailRequired;
     } else {
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!emailRegex.test(contactForm.email)) {
-        errors.email = 'Format email tidak valid';
+        errors.email = t.support.errorEmailInvalid;
       }
     }
 
     if (!contactForm.message.trim()) {
-      errors.message = 'Pesan wajib diisi';
+      errors.message = t.support.errorMessageRequired;
     } else if (contactForm.message.trim().length < 10) {
-      errors.message = 'Pesan minimal 10 karakter';
+      errors.message = t.support.errorMessageMin;
     }
 
     setFormErrors(errors);

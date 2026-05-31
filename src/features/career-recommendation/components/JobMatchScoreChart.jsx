@@ -1,29 +1,32 @@
 import { Award, BriefcaseBusiness, GraduationCap, CheckCircle } from 'lucide-react';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const JobMatchScoreChart = ({ job }) => {
+  const { t } = useLanguage();
+
   if (!job) return null;
 
   const { matchScore, matchBreakdown } = job;
 
   let strokeColor = '#4F46E5'; 
   let scoreClass = 'text-indigo-600';
-  let badgeText = 'Kecocokan Sangat Tinggi';
+  let badgeText = t.career.matchVeryHigh;
   let badgeClass = 'bg-indigo-50 text-indigo-700 border-indigo-100';
 
   if (matchScore < 50) {
     strokeColor = '#EF4444'; 
     scoreClass = 'text-rose-600';
-    badgeText = 'Kecocokan Rendah';
+    badgeText = t.career.matchLow;
     badgeClass = 'bg-rose-50 text-rose-700 border-rose-100';
   } else if (matchScore < 80) {
     strokeColor = '#F59E0B'; 
     scoreClass = 'text-amber-500';
-    badgeText = 'Kecocokan Sedang';
+    badgeText = t.career.matchMedium;
     badgeClass = 'bg-amber-50 text-amber-700 border-amber-100';
   } else if (matchScore >= 90) {
     strokeColor = '#10B981'; 
     scoreClass = 'text-emerald-600';
-    badgeText = 'Kandidat Ideal';
+    badgeText = t.career.matchIdeal;
     badgeClass = 'bg-emerald-50 text-emerald-700 border-emerald-100';
   }
 
@@ -36,7 +39,7 @@ const JobMatchScoreChart = ({ job }) => {
   return (
     <div className="bg-white rounded-2xl border border-slate-100 p-5 shadow-sm">
       <div className="flex justify-between items-center mb-5 border-b border-slate-50 pb-3">
-        <h3 className="text-body font-bold text-slate-800">Analisis Match Score</h3>
+        <h3 className="text-body font-bold text-slate-800">{t.career.matchAnalysis}</h3>
         <span className={`px-2.5 py-0.5 rounded text-caption font-extrabold border ${badgeClass} tracking-wider`}>
           {badgeText}
         </span>
@@ -110,7 +113,7 @@ const JobMatchScoreChart = ({ job }) => {
             <div className="flex justify-between items-center text-caption font-bold">
               <span className="text-slate-600 flex items-center gap-1.5">
                 <BriefcaseBusiness className="w-3.5 h-3.5 text-slate-500 shrink-0" />
-                Pengalaman Kerja
+                {t.career.workExperience}
               </span>
               <span className="text-slate-700">{matchBreakdown.experience}%</span>
             </div>
@@ -127,7 +130,7 @@ const JobMatchScoreChart = ({ job }) => {
             <div className="flex justify-between items-center text-caption font-bold">
               <span className="text-slate-600 flex items-center gap-1.5">
                 <GraduationCap className="w-3.5 h-3.5 text-slate-500 shrink-0" />
-                Pendidikan Formal
+                {t.career.formalEducation}
               </span>
               <span className="text-slate-700">{matchBreakdown.education}%</span>
             </div>

@@ -1,7 +1,8 @@
 import React from 'react';
-import { Save, CheckCircle, Loader2, Bell, Globe, Palette, Sun, Moon, Monitor, ChevronDown } from 'lucide-react';
+import { Save, CheckCircle, Loader2, Globe, ChevronDown } from 'lucide-react';
 import Card from '../../../components/ui/Card';
 import Button from '../../../components/ui/Button';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const ToggleRow = ({ label, description, checked, onChange }) => (
   <div className="flex items-center justify-between py-3">
@@ -58,6 +59,8 @@ const ThemeOption = ({ icon: Icon, label, value, selected, onChange }) => (
 );
 
 const PreferencesTab = ({ preferences, updatePreferences, onSave, isSaving, saveSuccess }) => {
+  const { t } = useLanguage();
+
   return (
     <div
       role="tabpanel"
@@ -71,11 +74,11 @@ const PreferencesTab = ({ preferences, updatePreferences, onSave, isSaving, save
         <div className="flex items-center gap-2 mb-1">
           <Globe size={20} className="text-primary" />
           <h3 className="text-body-lg font-bold text-primary-text">
-            Bahasa
+            {t.profile.language}
           </h3>
         </div>
         <p className="text-body-sm text-secondary-text mb-4">
-          Pilih bahasa tampilan untuk platform NeoKarir.
+          {t.profile.languageDesc}
         </p>
 
         <div className="relative w-full max-w-xs">
@@ -108,23 +111,23 @@ const PreferencesTab = ({ preferences, updatePreferences, onSave, isSaving, save
           {isSaving ? (
             <>
               <Loader2 size={16} className="animate-spin mr-2" />
-              Menyimpan...
+              {t.profile.savingPreferences}
             </>
           ) : saveSuccess ? (
             <>
               <CheckCircle size={16} className="mr-2" />
-              Tersimpan!
+              {t.profile.saved}
             </>
           ) : (
             <>
               <Save size={16} className="mr-2" />
-              Simpan Preferensi
+              {t.profile.savePreferences}
             </>
           )}
         </Button>
         {saveSuccess && (
           <span className="text-caption text-success font-medium animate-fade-in">
-            Preferensi berhasil disimpan
+            {t.profile.saveSuccess}
           </span>
         )}
       </div>

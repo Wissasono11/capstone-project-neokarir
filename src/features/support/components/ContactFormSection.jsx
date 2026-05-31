@@ -1,6 +1,7 @@
 import React from 'react';
 import ContactInfoCard from './ContactInfoCard';
 import { Send, CheckCircle2, AlertCircle } from 'lucide-react';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const ContactFormSection = ({
   contactForm,
@@ -10,14 +11,16 @@ const ContactFormSection = ({
   submitSuccess,
   handleSubmit
 }) => {
+  const { t } = useLanguage();
+
   return (
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
       {/* Contact Form Card */}
       <div className="lg:col-span-7 bg-white rounded-3xl border border-border p-6 md:p-8 shadow-sm flex flex-col justify-between">
         <div className="space-y-5">
           <div>
-            <h2 className="text-body-lg md:text-subtitle font-bold text-primary-text mb-1">Hubungi Layanan Dukungan</h2>
-            <p className="text-body-sm text-secondary-text">Kirimkan pesan Anda secara langsung. Tim kami akan segera menindaklanjutinya.</p>
+            <h2 className="text-body-lg md:text-subtitle font-bold text-primary-text mb-1">{t.support.contactTitle}</h2>
+            <p className="text-body-sm text-secondary-text">{t.support.contactSubtitle}</p>
           </div>
 
           {/* Success Banner */}
@@ -25,9 +28,9 @@ const ContactFormSection = ({
             <div className="flex items-start gap-3 p-4 bg-emerald-50 border border-emerald-200 text-emerald-800 rounded-2xl animate-fade-in">
               <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
               <div>
-                <p className="text-body-sm font-bold">Pesan Berhasil Terkirim!</p>
+                <p className="text-body-sm font-bold">{t.support.contactSuccessTitle}</p>
                 <p className="text-caption text-emerald-700/90 leading-tight">
-                  Terima kasih atas laporan Anda. Salinan tiket dukungan telah dikirim ke alamat email Anda.
+                  {t.support.contactSuccessDesc}
                 </p>
               </div>
             </div>
@@ -37,7 +40,7 @@ const ContactFormSection = ({
             {/* Name */}
             <div className="space-y-1.5">
               <label htmlFor="support-name" className="text-caption font-bold text-secondary-text tracking-wider">
-                Nama Lengkap
+                {t.support.nameLabel}
               </label>
               <input
                 type="text"
@@ -46,7 +49,7 @@ const ContactFormSection = ({
                 value={contactForm.name}
                 onChange={handleInputChange}
                 disabled={isSubmitting}
-                placeholder="Masukkan nama lengkap Anda"
+                placeholder={t.support.placeholderName}
                 className={`w-full px-4 py-3 bg-canvas-white border rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary/30 transition-all text-body-sm text-primary-text placeholder-secondary-text/50 ${
                   formErrors.name ? 'border-error focus:ring-error/30' : 'border-border'
                 }`}
@@ -61,7 +64,7 @@ const ContactFormSection = ({
             {/* Email */}
             <div className="space-y-1.5">
               <label htmlFor="support-email" className="text-caption font-bold text-secondary-text tracking-wider">
-                Alamat Email
+                {t.support.emailLabel}
               </label>
               <input
                 type="email"
@@ -85,7 +88,7 @@ const ContactFormSection = ({
             {/* Category */}
             <div className="space-y-1.5">
               <label htmlFor="support-category" className="text-caption font-bold text-secondary-text tracking-wider">
-                Kategori Masalah
+                {t.support.categoryLabel}
               </label>
               <select
                 id="support-category"
@@ -95,17 +98,17 @@ const ContactFormSection = ({
                 disabled={isSubmitting}
                 className="w-full px-4 py-3 bg-canvas-white border border-border rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary/30 transition-all text-body-sm text-primary-text cursor-pointer appearance-none"
               >
-                <option value="question">Pertanyaan Umum</option>
-                <option value="bug">Masalah Teknis & Bug</option>
-                <option value="feature">Usulan Fitur Baru</option>
-                <option value="other">Kategori Lainnya</option>
+                <option value="question">{t.support.categoryGeneral}</option>
+                <option value="bug">{t.support.categoryBug}</option>
+                <option value="feature">{t.support.categoryFeature}</option>
+                <option value="other">{t.support.categoryOther}</option>
               </select>
             </div>
 
             {/* Message */}
             <div className="space-y-1.5">
               <label htmlFor="support-message" className="text-caption font-bold text-secondary-text tracking-wider">
-                Deskripsi Detail
+                {t.support.messageDescLabel}
               </label>
               <textarea
                 id="support-message"
@@ -114,7 +117,7 @@ const ContactFormSection = ({
                 onChange={handleInputChange}
                 disabled={isSubmitting}
                 rows={4}
-                placeholder="Tuliskan pesan Anda secara detail di sini..."
+                placeholder={t.support.placeholderMessage}
                 className={`w-full px-4 py-3 bg-canvas-white border rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary/30 transition-all text-body-sm text-primary-text placeholder-secondary-text/50 resize-none ${
                   formErrors.message ? 'border-error focus:ring-error/30' : 'border-border'
                 }`}
@@ -139,12 +142,12 @@ const ContactFormSection = ({
               {isSubmitting ? (
                 <>
                   <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
-                  <span>Mengirimkan Pesan...</span>
+                  <span>{t.support.sendingBtn}</span>
                 </>
               ) : (
                 <>
                   <Send size={16} />
-                  <span>Kirim Pesan Dukungan</span>
+                  <span>{t.support.sendBtn}</span>
                 </>
               )}
             </button>
@@ -161,3 +164,4 @@ const ContactFormSection = ({
 };
 
 export default ContactFormSection;
+

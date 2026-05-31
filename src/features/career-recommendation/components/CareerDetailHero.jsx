@@ -1,6 +1,9 @@
 import { BriefcaseBusiness, GraduationCap } from 'lucide-react';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const CareerDetailHero = ({ job }) => {
+  const { t } = useLanguage();
+
   if (!job) return null;
 
   return (
@@ -35,14 +38,14 @@ const CareerDetailHero = ({ job }) => {
         <div className="flex-1 md:flex-initial flex items-center gap-2 bg-slate-50 border border-slate-100 px-4 py-2 rounded-xl text-slate-600">
           <BriefcaseBusiness className="w-4 h-4 text-slate-400 shrink-0" />
           <div>
-            <div className="text-slate-400 text-caption font-bold tracking-wider">Pengalaman</div>
+            <div className="text-slate-400 text-caption font-bold tracking-wider">{t.career.experience}</div>
             <div className="text-body-sm font-bold">{job.min_experience}</div>
           </div>
         </div>
         <div className="flex-1 md:flex-initial flex items-center gap-2 bg-slate-50 border border-slate-100 px-4 py-2 rounded-xl text-slate-600">
           <GraduationCap className="w-4 h-4 text-slate-400 shrink-0" />
           <div>
-            <div className="text-slate-400 text-caption font-bold tracking-wider">Pendidikan</div>
+            <div className="text-slate-400 text-caption font-bold tracking-wider">{t.career.educationTitle}</div>
             <div className="text-body-sm font-bold">{job.min_education}</div>
           </div>
         </div>

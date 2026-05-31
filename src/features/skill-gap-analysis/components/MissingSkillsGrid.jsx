@@ -1,8 +1,10 @@
 import React from 'react';
 import MissingSkillCard from './MissingSkillCard';
 import { Lightbulb } from 'lucide-react';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const MissingSkillsGrid = ({ skillsData }) => {
+  const { t } = useLanguage();
   if (!skillsData || skillsData.length === 0) return null;
 
   return (
@@ -12,8 +14,8 @@ const MissingSkillsGrid = ({ skillsData }) => {
           <Lightbulb className="w-5 h-5" />
         </div>
         <div>
-          <h3 className="text-subtitle font-bold text-slate-800">Detail Skill yang Perlu Dipelajari</h3>
-          <p className="text-slate-500 text-caption mt-0.5">Analisis mendalam mengenai kemampuan yang paling dibutuhkan untuk target role kamu</p>
+          <h3 className="text-subtitle font-bold text-slate-800">{t.skillGap.missingSkillsDetail}</h3>
+          <p className="text-slate-500 text-caption mt-0.5">{t.skillGap.missingSkillsDetailDesc}</p>
         </div>
       </div>
 

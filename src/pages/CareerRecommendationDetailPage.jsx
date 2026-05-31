@@ -1,5 +1,6 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import { Award } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 // Layout & UI
 import DashboardLayout from '../layouts/DashboardLayout';
@@ -18,6 +19,7 @@ import ProfileInsightsCard from '../features/career-recommendation/components/Pr
 const CareerRecommendationDetailPage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
+  const { t } = useLanguage();
 
   const {
     isLoading,
@@ -30,7 +32,7 @@ const CareerRecommendationDetailPage = () => {
   const job = recommendations.find(rec => rec.job_id === id);
 
   const breadcrumbItems = [
-    { label: 'Career Recommendation', path: '/dashboard/recommendations', icon: Award },
+    { label: t.sidebar.recommendation, path: '/dashboard/recommendations', icon: Award },
     { label: job ? job.job_title : 'Detail', path: `/dashboard/recommendations/${id}`}
   ];
 
@@ -56,15 +58,15 @@ const CareerRecommendationDetailPage = () => {
           <div className="w-12 h-12 rounded-full bg-rose-50 text-rose-500 flex items-center justify-center mx-auto">
             <Award className="w-6 h-6" />
           </div>
-          <h3 className="text-body font-bold text-slate-800">Pekerjaan Tidak Ditemukan</h3>
+          <h3 className="text-body font-bold text-slate-800">{t.career.jobNotFound}</h3>
           <p className="text-caption text-slate-500">
-            Rekomendasi karir dengan ID tersebut tidak ditemukan dalam sistem Anda.
+            {t.career.jobNotFoundDesc}
           </p>
           <button
             onClick={handleBackClick}
             className="w-full py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white text-body-sm font-extrabold rounded-xl transition-all shadow-xs cursor-pointer"
           >
-            Kembali ke Halaman Rekomendasi
+            {t.career.backToRecommendations}
           </button>
         </div>
       ) : (

@@ -1,27 +1,29 @@
 import React from 'react';
 import { Sparkles, CheckCircle2, AlertTriangle, ShieldCheck } from 'lucide-react';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const CVFeatureCards = () => {
+  const { t } = useLanguage();
   const cards = [
     {
-      title: 'ATS Optimization',
-      description: 'Dapatkan wawasan mendalam tentang kecocokan kata kunci dan standar keterbacaan sistem ATS.',
+      title: t.cvAnalyzer.featureCards.atsTitle,
+      description: t.cvAnalyzer.featureCards.atsDesc,
       icon: ShieldCheck,
       iconColor: 'text-[#4F46E5]',
       bgColor: 'bg-[#EEF2FF]',
       borderColor: 'border-[#4F46E5]/10'
     },
     {
-      title: 'Strengths Analysis',
-      description: 'Temukan poin-poin terkuat dalam CV Anda yang paling dicari oleh recruiter profesional.',
+      title: t.cvAnalyzer.featureCards.strengthsTitle,
+      description: t.cvAnalyzer.featureCards.strengthsDesc,
       icon: CheckCircle2,
       iconColor: 'text-[#059669]',
       bgColor: 'bg-[#ECFDF5]',
       borderColor: 'border-[#059669]/10'
     },
     {
-      title: 'Improvement Tips',
-      description: 'Dapatkan rekomendasi personal langkah demi langkah untuk menyempurnakan struktur CV Anda.',
+      title: t.cvAnalyzer.featureCards.tipsTitle,
+      description: t.cvAnalyzer.featureCards.tipsDesc,
       icon: AlertTriangle,
       iconColor: 'text-[#D97706]',
       bgColor: 'bg-[#FFFBEB]',

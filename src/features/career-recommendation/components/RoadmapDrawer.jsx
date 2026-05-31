@@ -1,6 +1,9 @@
 import { X, PlayCircle, Check, ExternalLink, Clock, BookOpen } from 'lucide-react';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const RoadmapDrawer = ({ job, completedCourses, toggleCourse, onClose }) => {
+  const { t } = useLanguage();
+
   if (!job) return null;
 
   const jobCourses = job.courses || [];
@@ -16,10 +19,10 @@ const RoadmapDrawer = ({ job, completedCourses, toggleCourse, onClose }) => {
         <div>
           <h3 className="text-body font-bold text-slate-800 flex items-center gap-2">
             <BookOpen className="w-4.5 h-4.5 text-indigo-600" />
-            Jalur Pembelajaran Rekomendasi
+            {t.career.learningPathTitle}
           </h3>
           <p className="text-caption font-semibold text-slate-400 mt-0.5 tracking-wider">
-            Langkah untuk menutupi skill gap {job.job_title}
+            {t.career.learningPathDesc(job.job_title)}
           </p>
         </div>
         {onClose && (
@@ -35,9 +38,9 @@ const RoadmapDrawer = ({ job, completedCourses, toggleCourse, onClose }) => {
       {/* Progress Indicator */}
       <div className="bg-indigo-50/40 border border-indigo-100/50 rounded-xl p-4 mb-6">
         <div className="flex justify-between items-center mb-1.5">
-          <span className="text-caption font-bold text-slate-700">Progres Belajar Anda</span>
+          <span className="text-caption font-bold text-slate-700">{t.career.myProgress}</span>
           <span className="text-caption font-extrabold text-indigo-600">
-            {completedJobCourses.length} / {jobCourses.length} Selesai ({completionPercentage}%)
+            {t.career.progressFinished(completedJobCourses.length, jobCourses.length, completionPercentage)}
           </span>
         </div>
         <div className="w-full h-1.5 bg-slate-200/50 rounded-full overflow-hidden">
@@ -47,7 +50,7 @@ const RoadmapDrawer = ({ job, completedCourses, toggleCourse, onClose }) => {
           />
         </div>
         <p className="text-caption text-slate-400 font-semibold mt-2.5">
-          💡 Tips: Centang angka urutan untuk menandai course selesai dan perbarui match score secara dinamis!
+          {t.career.progressTips}
         </p>
       </div>
 
@@ -56,7 +59,7 @@ const RoadmapDrawer = ({ job, completedCourses, toggleCourse, onClose }) => {
         {jobCourses.length === 0 ? (
           <div className="text-center py-6">
             <p className="text-caption text-slate-400 font-medium">
-              Tidak ada data roadmap pembelajaran untuk pekerjaan ini.
+              {t.career.noRoadmap}
             </p>
           </div>
         ) : (
@@ -71,7 +74,7 @@ const RoadmapDrawer = ({ job, completedCourses, toggleCourse, onClose }) => {
                 {isCompleted ? (
                   <button 
                     onClick={() => toggleCourse(course.id)}
-                    title="Tandai belum selesai"
+                    title={t.career.markUncompleted}
                     className="absolute -left-[35px] top-0.5 bg-emerald-600 border-4 border-emerald-100 w-6.5 h-6.5 rounded-full flex items-center justify-center shadow-sm cursor-pointer hover:bg-emerald-700 transition-all duration-200 z-10"
                   >
                     <Check className="w-3 h-3 text-white stroke-[3px]" />
@@ -79,7 +82,7 @@ const RoadmapDrawer = ({ job, completedCourses, toggleCourse, onClose }) => {
                 ) : (
                   <button 
                     onClick={() => toggleCourse(course.id)}
-                    title="Tandai sebagai selesai"
+                    title={t.career.markCompleted}
                     className="absolute -left-[35px] top-0.5 bg-white border-4 border-indigo-100 w-6.5 h-6.5 rounded-full flex items-center justify-center shadow-sm cursor-pointer hover:border-indigo-400 group/btn transition-all duration-200 z-10"
                   >
                     <span className="text-caption font-extrabold text-indigo-600 group-hover/btn:hidden">{index + 1}</span>
@@ -105,7 +108,7 @@ const RoadmapDrawer = ({ job, completedCourses, toggleCourse, onClose }) => {
                     </span>
                     {isHighPriority && (
                       <span className="ml-auto text-caption font-bold text-rose-600 bg-rose-50 px-1.5 py-0.5 rounded border border-rose-100">
-                        Penting
+                        {t.career.highPriorityBadge}
                       </span>
                     )}
                   </div>
@@ -140,7 +143,7 @@ const RoadmapDrawer = ({ job, completedCourses, toggleCourse, onClose }) => {
                       `}
                     >
                       <PlayCircle className="w-3 h-3" />
-                      {isCompleted ? 'Pelajari Lagi' : 'Mulai Kursus'}
+                      {isCompleted ? t.career.learnAgain : t.career.startCourse}
                       <ExternalLink className="w-2.5 h-2.5" />
                     </a>
                   </div>

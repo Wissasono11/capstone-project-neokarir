@@ -1,8 +1,10 @@
 import React from 'react';
 import { UploadCloud, FileText, AlertCircle } from 'lucide-react';
 import { useCVUpload } from '../hooks/useCVUpload';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const CVUploadZone = ({ onFileSelected, error }) => {
+  const { t } = useLanguage();
   const {
     isDragActive,
     fileInputRef,
@@ -44,16 +46,16 @@ const CVUploadZone = ({ onFileSelected, error }) => {
 
         {/* Prompt */}
         <h3 className="text-lg md:text-xl font-bold text-primary-text mb-2">
-          Drag & Drop CV Anda Disini
+          {t.cvAnalyzer.uploadTitle}
         </h3>
         <p className="text-sm md:text-body font-medium text-secondary-text mb-6">
-          Atau <span className="text-primary hover:underline font-bold">klik untuk browse file</span>
+          {t.cvAnalyzer.uploadSubtitlePrefix}<span className="text-primary hover:underline font-bold">{t.cvAnalyzer.uploadSubtitleLink}</span>
         </p>
 
         {/* Allowed Specs */}
         <div className="flex items-center gap-2 text-xs font-semibold text-secondary-text bg-bg-secondary/40 px-4 py-2 rounded-full border border-border/40">
           <FileText className="w-3.5 h-3.5" />
-          <span>Format yang didukung: PDF, DOC, DOCX (Max 5MB)</span>
+          <span>{t.cvAnalyzer.uploadFormats}</span>
         </div>
       </div>
 

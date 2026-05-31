@@ -13,6 +13,8 @@ import {
 } from 'lucide-react';
 import { Icon as Iconify } from '@iconify/react';
 
+import { useLanguage } from '../../../contexts/LanguageContext';
+
 const SIDEBAR_ITEMS = [
   { id: 'overview', label: 'My Overview', icon: 'si:dashboard-customize-duotone', path: '/dashboard' },
   { id: 'skill-gap', label: 'Skill Gap Analysis', icon: Target, path: '/dashboard/skill-gap' },
@@ -27,8 +29,20 @@ const BOTTOM_ITEMS = [
   { id: 'support', label: 'Support', icon: HelpCircle, path: '/dashboard/support' },
 ];
 
+const KEY_MAP = {
+  'overview': 'overview',
+  'skill-gap': 'skillGap',
+  'recommendation': 'recommendation',
+  'cv-analyzer': 'cvAnalyzer',
+  'jobs-market': 'jobsMarket',
+  'ai-assistant': 'aiAssistant',
+  'settings': 'settings',
+  'support': 'support'
+};
+
 const DashboardSidebar = ({ isOpen, onClose, isCollapsed, onToggleCollapse }) => {
   const location = useLocation();
+  const { t } = useLanguage();
 
   return (
     <>
@@ -84,13 +98,14 @@ const DashboardSidebar = ({ isOpen, onClose, isCollapsed, onToggleCollapse }) =>
           {SIDEBAR_ITEMS.map((item) => {
             const isActive = location.pathname === item.path || (item.path === '/dashboard' && location.pathname.startsWith('/dashboard') && location.pathname.length === 10);
             const Icon = item.icon;
+            const label = t.sidebar[KEY_MAP[item.id]] || item.label;
 
             return (
               <Link
                 key={item.id}
                 to={item.path}
                 onClick={() => { if (window.innerWidth < 1024) onClose(); }}
-                title={isCollapsed ? item.label : undefined}
+                title={isCollapsed ? label : undefined}
                 className={`flex items-center rounded-full transition-all duration-200 font-medium
                   ${isCollapsed ? 'lg:justify-center p-4' : 'gap-3 px-4 py-4'}
                   ${isActive
@@ -113,7 +128,7 @@ const DashboardSidebar = ({ isOpen, onClose, isCollapsed, onToggleCollapse }) =>
                 )}
 
                 {(!isCollapsed || (isOpen && window.innerWidth < 1024)) && (
-                  <span className="text-body-sm truncate">{item.label}</span>
+                  <span className="text-body-sm truncate">{label}</span>
                 )}
               </Link>
             );
@@ -125,12 +140,13 @@ const DashboardSidebar = ({ isOpen, onClose, isCollapsed, onToggleCollapse }) =>
           {BOTTOM_ITEMS.map((item) => {
             const Icon = item.icon;
             const isActive = location.pathname === item.path;
+            const label = t.sidebar[KEY_MAP[item.id]] || item.label;
             return (
               <Link
                 key={item.id}
                 to={item.path}
                 onClick={() => { if (window.innerWidth < 1024) onClose(); }}
-                title={isCollapsed ? item.label : undefined}
+                title={isCollapsed ? label : undefined}
                 className={`flex items-center rounded-xl transition-all duration-200 font-medium
                   ${isCollapsed ? 'lg:justify-center p-3' : 'gap-3 px-4 py-3'}
                   ${isActive
@@ -140,7 +156,7 @@ const DashboardSidebar = ({ isOpen, onClose, isCollapsed, onToggleCollapse }) =>
                 `}
               >
                 <Icon size={20} className={isActive ? 'text-primary' : 'text-secondary-text'} />
-                {(!isCollapsed || (isOpen && window.innerWidth < 1024)) && <span className="text-body-sm truncate">{item.label}</span>}
+                {(!isCollapsed || (isOpen && window.innerWidth < 1024)) && <span className="text-body-sm truncate">{label}</span>}
               </Link>
             );
           })}
