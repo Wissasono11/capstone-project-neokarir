@@ -4,8 +4,24 @@ const RecommendationRepository = require('../repositories/recommendation.reposit
 const RecommendationService = require('./recommendation.service');
 const { callAI2 } = require('../utils/aiClient');
 
-const getByUserId = async (userId, accessToken) => {
-	return SkillgapRepository.getByUserId(userId, accessToken);
+const getByUserId = async (userId, accessToken, jobId = null) => {
+	const record = await SkillgapRepository.getByUserId(userId, accessToken, jobId);
+	if (!record) return null;
+
+	let learningRoadmap = null;
+	if (record.job_id) {
+		try {
+			const roadmapData = await RecommendationService.getRoadmap(record.job_id);
+			learningRoadmap = roadmapData.courses || [];
+		} catch (err) {
+			console.error(`Failed to fetch roadmap from AI-2 for jobId ${record.job_id}:`, err);
+		}
+	}
+
+	return {
+		...record,
+		learning_roadmap: learningRoadmap
+	};
 };
 
 const analyze = async (userId, payload, accessToken) => {
@@ -30,6 +46,11 @@ const analyze = async (userId, payload, accessToken) => {
 			owned_skills = [];
 		}
 	}
+
+	const user_experience = profile.profile_data?.user_experience || 
+                            (profile.years_experience !== null ? `${profile.years_experience} Tahun` : 'Belum ada pengalaman');
+	const user_education = profile.profile_data?.user_education || profile.education_level || 'Tidak Disebutkan';
+	const current_role = profile.current_role || 'Fresh Graduate';
 	
 	// 1. Call AI-2 to get radar data & recommended actions
 	let aiResult;
@@ -38,6 +59,9 @@ const analyze = async (userId, payload, accessToken) => {
 			target_domain,
 			target_role,
 			owned_skills,
+			user_experience,
+			user_education,
+			current_role,
 		});
 	} catch (error) {
 		console.error('Error calling AI-2 skill-gap API:', error);
@@ -61,32 +85,82 @@ const analyze = async (userId, payload, accessToken) => {
 					critical_gap: 'Focus on Programming & DevOps skills.',
 					needs_improvement: 'Enhance Database expertise.',
 					strengths: 'Your core skills are solid.'
-				}
+				},
+				match_score: 50,
+				matched_skills: [],
+				missing_skills: [],
+				required_skills: [],
+				min_education: 'Tidak Ditentukan',
+				min_experience: 'Tidak Ditentukan',
+				job_id: null
 			}
 		};
 	}
 	
-	// 2. Match with recommendations to get matched_skills, missing_skills, match_score, job_id
-	let recommendations = await RecommendationRepository.listByUserId(userId, accessToken);
-	if (!recommendations || recommendations.length === 0) {
-		try {
-			recommendations = await RecommendationService.generate(userId, accessToken);
-		} catch (err) {
-			console.error('Failed to generate recommendations during skill gap analysis:', err);
-			recommendations = [];
+	let matched_skills = aiResult.data.matched_skills || [];
+	let missing_skills = aiResult.data.missing_skills || [];
+	let match_score = aiResult.data.match_score !== undefined ? aiResult.data.match_score : 0;
+	let job_id = aiResult.data.job_id || null;
+	let min_education = aiResult.data.min_education || aiResult.data.education_match?.required || 'Tidak Ditentukan';
+	let min_experience = aiResult.data.min_experience || aiResult.data.experience_match?.required || 'Tidak Ditentukan';
+	let required_skills = aiResult.data.required_skills || [];
+
+	if (match_score === 0 && matched_skills.length === 0) {
+		// Fallback to recommendation-matching logic if AI response doesn't provide them
+		let recommendations = await RecommendationRepository.listByUserId(userId, accessToken);
+		if (!recommendations || recommendations.length === 0) {
+			try {
+				recommendations = await RecommendationService.generate(userId, accessToken);
+			} catch (err) {
+				console.error('Failed to generate recommendations during skill gap analysis:', err);
+				recommendations = [];
+			}
 		}
+
+		let targetJob = recommendations.find(
+			rec => rec.title.toLowerCase() === target_role.toLowerCase()
+		);
+
+		if (!targetJob) {
+			targetJob = recommendations.find(
+				rec => rec.title.toLowerCase().includes(target_role.toLowerCase()) ||
+				       target_role.toLowerCase().includes(rec.title.toLowerCase())
+			);
+		}
+
+		if (!targetJob) {
+			const targetTokens = target_role.toLowerCase().split(/[\s&,/()_-]+/).filter(t => t.length > 1);
+			let bestScore = 0;
+			let bestRec = null;
+
+			for (const rec of recommendations) {
+				const recTokens = rec.title.toLowerCase().split(/[\s&,/()_-]+/).filter(t => t.length > 1);
+				const intersection = recTokens.filter(t => targetTokens.includes(t));
+				const score = intersection.length / Math.max(targetTokens.length, 1);
+				if (score > bestScore) {
+					bestScore = score;
+					bestRec = rec;
+				}
+			}
+
+			if (bestScore > 0) {
+				targetJob = bestRec;
+			}
+		}
+
+		if (!targetJob) {
+			targetJob = recommendations[0];
+		}
+
+		matched_skills = targetJob ? targetJob.matched_skills : [];
+		missing_skills = targetJob ? targetJob.missing_skills : [];
+		match_score = targetJob ? targetJob.score : 0;
+		job_id = targetJob ? targetJob.job_id : null;
+
+		min_education = targetJob?.metadata?.min_education || profile.profile_data?.user_education || 'Tidak Ditentukan';
+		min_experience = targetJob?.metadata?.min_experience || profile.profile_data?.user_experience || 'Tidak Ditentukan';
+		required_skills = targetJob?.metadata?.required_skills || [];
 	}
-
-	const targetJob = recommendations.find(
-		rec => rec.title.toLowerCase() === target_role.toLowerCase()
-	) || recommendations.find(
-		rec => rec.title.toLowerCase().includes(target_role.toLowerCase())
-	) || recommendations[0];
-
-	const matched_skills = targetJob ? targetJob.matched_skills : [];
-	const missing_skills = targetJob ? targetJob.missing_skills : [];
-	const match_score = targetJob ? targetJob.score : 0;
-	const job_id = targetJob ? targetJob.job_id : null;
 
 	// 3. Upsert into DB
 	const upsertPayload = {
@@ -96,12 +170,49 @@ const analyze = async (userId, payload, accessToken) => {
 		matched_skills,
 		missing_skills,
 		match_score,
-		analysis_result: aiResult.data,
+		analysis_result: {
+			...aiResult.data,
+			min_education,
+			min_experience,
+			required_skills
+		},
 	};
 
 	const savedRecord = await SkillgapRepository.upsertByUserId(userId, upsertPayload, accessToken, job_id);
 
-	return savedRecord;
+	let learningRoadmap = null;
+	if (aiResult.data.learning_roadmap && Array.isArray(aiResult.data.learning_roadmap)) {
+		const flatCourses = [];
+		aiResult.data.learning_roadmap.forEach((level) => {
+			if (Array.isArray(level.items)) {
+				level.items.forEach((item, idx) => {
+					flatCourses.push({
+						id: `${level.level_key}-${idx}`,
+						skill: item.skill,
+						judul: item.judul_materi,
+						platform: item.provider,
+						link: item.link,
+						durasi: level.level_label.includes('1-2') ? '4-8 Minggu' : 'Tergantung progres',
+						prioritas: item.is_required_by_company ? 'Tinggi' : 'Sedang',
+						deskripsi: `Pelajari fundamental dan praktik untuk menguasai ${item.skill} melalui ${item.provider}.`
+					});
+				});
+			}
+		});
+		learningRoadmap = flatCourses;
+	} else if (job_id) {
+		try {
+			const roadmapData = await RecommendationService.getRoadmap(job_id);
+			learningRoadmap = roadmapData.courses || [];
+		} catch (err) {
+			console.error(`Failed to fetch roadmap from AI-2 for jobId ${job_id}:`, err);
+		}
+	}
+
+	return {
+		...savedRecord,
+		learning_roadmap: learningRoadmap
+	};
 };
 
 module.exports = {

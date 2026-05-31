@@ -63,11 +63,21 @@ const generate = async (userId, accessToken) => {
 	const ownedSkillsSet = new Set(ownedSkills.map(s => s.toLowerCase()));
 
 	// Build records for inserting
-	const records = recommendations.map(rec => {
+	const records = await Promise.all(recommendations.map(async (rec) => {
 		const isJobValid = rec.job_id && isValidUuid(rec.job_id) && existingJobIdsSet.has(rec.job_id);
 		const reqSkills = rec.required_skills || [];
 		const matched_skills = reqSkills.filter(s => ownedSkillsSet.has(s.toLowerCase()));
 		const missing_skills = reqSkills.filter(s => !ownedSkillsSet.has(s.toLowerCase()));
+
+		let courses = [];
+		if (isJobValid) {
+			try {
+				const roadmapData = await getRoadmap(rec.job_id);
+				courses = roadmapData.courses || [];
+			} catch (err) {
+				console.error(`Failed to fetch roadmap during recommendation generation for jobId ${rec.job_id}:`, err);
+			}
+		}
 
 		return {
 			user_id: userId,
@@ -79,9 +89,12 @@ const generate = async (userId, accessToken) => {
 			score: rec.match_score || 0,
 			matched_skills,
 			missing_skills,
-			metadata: rec,
+			metadata: {
+				...rec,
+				courses
+			},
 		};
-	});
+	}));
 
 	const saved = await RecommendationRepository.bulkCreate(records, accessToken);
 	return saved;

@@ -8,7 +8,8 @@ const analyzeSkillGap = asyncHandler(async (req, res) => {
 });
 
 const getMySkillGap = asyncHandler(async (req, res) => {
-	let result = await SkillgapService.getByUserId(req.user.id, req.accessToken);
+	const jobId = req.query.jobId || null;
+	let result = await SkillgapService.getByUserId(req.user.id, req.accessToken, jobId);
 	
 	const hasValidAnalysis = result && result.analysis_result && Object.keys(result.analysis_result).length > 0;
 	

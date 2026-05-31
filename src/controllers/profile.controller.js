@@ -17,8 +17,14 @@ const getMyScore = asyncHandler(async (req, res) => {
 	return ApiResponse.success(res, result, 'OK');
 });
 
+const uploadAvatar = asyncHandler(async (req, res) => {
+	const result = await ProfileService.uploadAvatarByUserId(req.user.id, req.file, req.accessToken);
+	return ApiResponse.success(res, result, 'Avatar uploaded successfully');
+});
+
 module.exports = {
 	getMyProfile,
 	upsertMyProfile,
 	getMyScore,
+	uploadAvatar,
 };

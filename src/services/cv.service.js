@@ -89,7 +89,25 @@ const normalizeExperienceYears = (experienceLabel) => {
 };
 
 const getByUserId = async (userId, accessToken) => {
-	return CvRepository.getByUserId(userId, accessToken);
+	const cv = await CvRepository.getByUserId(userId, accessToken);
+	if (!cv) return null;
+
+	try {
+		const latestAnalysis = await CvRepository.getLatestAnalysis(userId, accessToken);
+		if (latestAnalysis) {
+			cv.cv_data = {
+				...(cv.cv_data || {}),
+				...(latestAnalysis.analysis || {}),
+				atsScore: Number(latestAnalysis.score || cv.cv_data?.atsScore || 0),
+				strengths: latestAnalysis.strengths || cv.cv_data?.strengths || [],
+				weaknesses: latestAnalysis.weaknesses || cv.cv_data?.weaknesses || [],
+				improvementTips: (latestAnalysis.analysis?.improvementTips) || (cv.cv_data?.improvementTips) || []
+			};
+		}
+	} catch (err) {
+		console.error('Failed to fetch latest cv_analysis:', err);
+	}
+	return cv;
 };
 
 const upsertByUserId = async (userId, payload, accessToken) => {
@@ -153,10 +171,53 @@ const smartAnalyze = async (userId, file, accessToken) => {
 		formData.append('file', fileBlob, file.originalname);
 
 		const aiResult = await callAI1Multipart('/api/v1/cv-analyzer/analyze', formData);
-		const cvPayload = buildCvAnalysisPayload(storageRecord, aiResult);
+		
+		if (!aiResult || aiResult.status !== 'success' || !aiResult.data) {
+			throw new AppError(ERROR_CODES.AI_SERVICE_ERROR, 'Failed to analyze CV with AI engine', 502);
+		}
+
+		const overview = aiResult.data.overview || {};
+		const entities = aiResult.data.entities || {};
+
+		const improvementTips = (overview.recommendations || []).map((rec) => ({
+			priority: rec.priority || 'medium',
+			text: rec.advice || rec.text || '',
+		}));
+
+		const score = overview.ats_score || 0;
+		let overallRating = 'weak';
+		if (score >= 85) overallRating = 'excellent';
+		else if (score >= 70) overallRating = 'good';
+		else if (score >= 50) overallRating = 'fair';
+
+		const results = {
+			atsScore: score,
+			overallRating,
+			summary: overview.match_analysis_text || '',
+			strengths: overview.strengths || [],
+			weaknesses: overview.weaknesses || [],
+			improvementTips,
+			entities,
+		};
+
+		const cvPayload = {
+			...storageRecord,
+			parsed_text: overview.match_analysis_text || '',
+			summary: overview.match_analysis_text || '',
+			cv_data: results,
+		};
 		await CvRepository.upsertByUserId(userId, cvPayload, accessToken);
 
-		return aiResult;
+		const cvAnalysisPayload = {
+			score: score,
+			strengths: overview.strengths || [],
+			weaknesses: overview.weaknesses || [],
+			suggestions: improvementTips.map(t => t.text),
+			analysis: results,
+		};
+		await CvRepository.saveAnalysis(userId, cvAnalysisPayload, accessToken);
+
+		return { results };
 	} finally {
 		cleanupUploadedFile(file);
 	}

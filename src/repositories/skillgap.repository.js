@@ -10,8 +10,6 @@ const getByUserId = async (userId, accessToken, jobId = null) => {
 	
 	if (jobId) {
 		query = query.eq('job_id', jobId);
-	} else {
-		query = query.is('job_id', null);
 	}
 
 	const { data, error } = await query.order('updated_at', { ascending: false }).limit(1).maybeSingle();

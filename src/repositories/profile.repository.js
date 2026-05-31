@@ -70,8 +70,8 @@ const getByUserId = async (userId, accessToken) => {
 const upsertByUserId = async (userId, payload, accessToken) => {
 	const supabase = getSupabaseClient(accessToken);
 	
-	// First, get existing profile_data to merge (so we don't lose fields like onboarding_completed)
-	const { data: existing } = await supabase.from(TABLE).select('profile_data').eq('user_id', userId).maybeSingle();
+	// First, get existing profile to merge
+	const { data: existing } = await supabase.from(TABLE).select('*').eq('user_id', userId).maybeSingle();
 	
 	const newRecord = splitProfilePayload(payload);
 	
@@ -83,9 +83,22 @@ const upsertByUserId = async (userId, payload, accessToken) => {
 		};
 	}
 	
+	let email = newRecord.email || existing?.email;
+	let full_name = newRecord.full_name || existing?.full_name;
+
+	if (!existing) {
+		const { data: userRecord } = await supabase.from('users').select('email, full_name').eq('id', userId).maybeSingle();
+		if (userRecord) {
+			if (!email) email = userRecord.email;
+			if (!full_name) full_name = userRecord.full_name;
+		}
+	}
+	
 	const record = {
 		user_id: userId,
 		...newRecord,
+		email,
+		full_name,
 	};
 	
 	const { data, error } = await supabase

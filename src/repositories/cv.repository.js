@@ -90,8 +90,52 @@ const attachFile = async (userId, file, accessToken) => {
   return upsertByUserId(userId, file, accessToken);
 };
 
+const saveAnalysis = async (userId, payload, accessToken) => {
+  const supabase = getSupabaseClient(accessToken);
+  
+  const record = {
+    user_id: userId,
+    cv_id: userId,
+    score: payload.score || 0,
+    strengths: payload.strengths || [],
+    weaknesses: payload.weaknesses || [],
+    suggestions: payload.suggestions || [],
+    analysis: payload.analysis || {},
+    created_at: new Date().toISOString()
+  };
+
+  const { data, error } = await supabase
+    .from('cv_analysis')
+    .insert(record)
+    .select('*')
+    .maybeSingle();
+
+  if (error) {
+    throw new AppError(ERROR_CODES.DATABASE_ERROR, error.message, 500, error);
+  }
+  return data;
+};
+
+const getLatestAnalysis = async (userId, accessToken) => {
+  const supabase = getSupabaseClient(accessToken);
+  const { data, error } = await supabase
+    .from('cv_analysis')
+    .select('*')
+    .eq('user_id', userId)
+    .order('created_at', { ascending: false })
+    .limit(1)
+    .maybeSingle();
+
+  if (error) {
+    throw new AppError(ERROR_CODES.DATABASE_ERROR, error.message, 500, error);
+  }
+  return data;
+};
+
 module.exports = {
   getByUserId,
   upsertByUserId,
   attachFile,
+  saveAnalysis,
+  getLatestAnalysis,
 };
