@@ -1,7 +1,9 @@
 import { CheckCircle2, AlertCircle, ChevronRight, Award, GraduationCap, BriefcaseBusiness } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const CareerCard = ({ job, isActive, onClick }) => {
+  const { t } = useLanguage();
   let scoreClass = 'text-indigo-600 bg-indigo-50/50 border-indigo-100';
   let barColor = 'bg-indigo-600';
   if (job.matchScore < 50) {
@@ -79,7 +81,7 @@ const CareerCard = ({ job, isActive, onClick }) => {
       <div className="pt-3 border-t border-slate-100">
         <div className="flex justify-between items-center mb-1.5">
           <span className="text-caption font-bold text-slate-500">
-            Kesesuaian Skill
+            {t.dashboard.categorySkill}
           </span>
           <span className="text-caption font-extrabold text-indigo-600">
             {job.matchedSkills.length} / {job.required_skills.length} Skill

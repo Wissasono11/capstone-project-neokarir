@@ -1,19 +1,21 @@
 import React from 'react';
 import { TrendingDown, TrendingUp } from 'lucide-react';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const SkillBreakdownList = ({ breakdownData }) => {
+  const { t } = useLanguage();
   const isEmpty = !breakdownData || breakdownData.length === 0;
 
   return (
     <div className="bg-white rounded-3xl border border-slate-100 p-4 md:p-6 shadow-sm h-full flex flex-col">
       <div className="mb-4 shrink-0">
-        <h3 className="text-body-lg font-bold text-slate-800">Rincian Skill</h3>
-        <p className="text-slate-500 text-caption mt-0.5">Perbandingan persentase skill yang dimiliki vs standar kebutuhan role target</p>
+        <h3 className="text-body-lg font-bold text-slate-800">{t.skillGap.skillBreakdown}</h3>
+        <p className="text-slate-500 text-caption mt-0.5">{t.skillGap.skillBreakdownDesc}</p>
       </div>
 
       {isEmpty ? (
         <div className="flex-1 flex flex-col items-center justify-center text-center p-6 text-slate-400 bg-slate-50/50 rounded-2xl border border-dashed border-slate-200">
-          <p className="text-body-sm font-medium">Tidak ada data rincian skill yang tersedia.</p>
+          <p className="text-body-sm font-medium">{t.skillGap.noSkillBreakdown}</p>
         </div>
       ) : (
         <div className="flex-1 overflow-y-auto space-y-4 pr-1 scrollbar-thin">
@@ -52,14 +54,14 @@ const SkillBreakdownList = ({ breakdownData }) => {
                   <div 
                     className="absolute top-0 h-full w-0.5 bg-slate-400 z-10"
                     style={{ left: `${Math.min(100, Math.max(0, item.required))}%` }}
-                    title={`Required: ${item.required}%`}
+                    title={t.skillGap.requiredScore(item.required)}
                   />
                 </div>
 
                 {/* Info Bottom */}
                 <div className="flex items-center justify-between text-caption font-bold text-slate-400">
-                  <span>Milikmu: <strong className="text-slate-600">{item.current}%</strong></span>
-                  <span>Dibutuhkan: <strong className="text-slate-600">{item.required}%</strong></span>
+                  <span>{t.skillGap.yoursLabel} <strong className="text-slate-600">{item.current}%</strong></span>
+                  <span>{t.skillGap.requiredLabel} <strong className="text-slate-600">{item.required}%</strong></span>
                 </div>
 
               </div>

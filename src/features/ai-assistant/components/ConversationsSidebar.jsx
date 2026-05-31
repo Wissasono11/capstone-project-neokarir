@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import { 
-  Sparkles, 
-  PanelLeftClose, 
-  SquarePen, 
-  Search, 
-  X, 
-  Trash2,
-  MoreVertical,
-  Pencil
+   Sparkles, 
+   PanelLeftClose, 
+   SquarePen, 
+   Search, 
+   X, 
+   Trash2,
+   MoreVertical,
+   Pencil
 } from 'lucide-react';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const ConversationsSidebar = ({
   isHistoryOpen,
@@ -25,6 +26,7 @@ const ConversationsSidebar = ({
   const [activeDropdownId, setActiveDropdownId] = useState(null);
   const [editingSessionId, setEditingSessionId] = useState(null);
   const [editTitle, setEditTitle] = useState('');
+  const { t } = useLanguage();
 
   const handleSaveRename = (id) => {
     if (editTitle.trim()) {
@@ -59,7 +61,7 @@ const ConversationsSidebar = ({
           type="button"
           onClick={() => setIsHistoryOpen(false)}
           className="p-1.5 rounded-lg hover:bg-slate-100 text-slate-400 hover:text-slate-600 transition-colors cursor-pointer"
-          title="Sembunyikan Riwayat"
+          title={t.aiAssistant.hideHistory}
         >
           <PanelLeftClose className="w-4.5 h-4.5" />
         </button>
@@ -72,7 +74,7 @@ const ConversationsSidebar = ({
           className="w-full flex items-center justify-start gap-3 py-3 px-5 rounded-full bg-slate-100/90 hover:bg-slate-200/80 text-slate-700 font-bold text-body-sm transition-all duration-200 cursor-pointer active:scale-[0.97]"
         >
           <SquarePen className="w-4.5 h-4.5 text-slate-500" />
-          <span>Percakapan baru</span>
+          <span>{t.aiAssistant.newChat}</span>
         </button>
       </div>
 
@@ -82,7 +84,7 @@ const ConversationsSidebar = ({
           <Search className="w-4 h-4 text-slate-400 shrink-0" />
           <input 
             type="text" 
-            placeholder="Telusuri percakapan" 
+            placeholder={t.aiAssistant.searchSessions} 
             value={searchSessionQuery}
             onChange={(e) => setSearchSessionQuery(e.target.value)}
             className="w-full bg-transparent border-none text-body-sm font-semibold text-slate-700 placeholder-slate-400 outline-none"
@@ -97,14 +99,14 @@ const ConversationsSidebar = ({
 
       {/* Section Header: Riwayat */}
       <div className="px-5 py-1 mb-1 text-caption font-semibold text-slate-400 tracking-wider select-none">
-        Riwayat
+        {t.aiAssistant.history}
       </div>
 
       {/* Sessions List */}
       <div className="flex-1 overflow-y-auto px-2 pb-4 space-y-1 scrollbar-hide">
         {filteredSessions.length === 0 ? (
           <div className="text-center py-6 text-body-sm font-medium text-slate-400">
-            Tidak ada obrolan ditemukan
+            {t.aiAssistant.noChats}
           </div>
         ) : (
           filteredSessions.map((session) => {
@@ -150,7 +152,7 @@ const ConversationsSidebar = ({
                     className={`p-1 rounded-lg text-slate-400 hover:text-slate-600 hover:bg-slate-100 opacity-0 group-hover:opacity-100 ${
                       activeDropdownId === session.id ? 'opacity-100 bg-slate-100 text-slate-600' : ''
                     } transition-all duration-200 shrink-0 cursor-pointer`}
-                    title="Pilihan"
+                    title={t.aiAssistant.options}
                   >
                     <MoreVertical className="w-3.5 h-3.5" />
                   </button>
@@ -177,7 +179,7 @@ const ConversationsSidebar = ({
                         className="w-full flex items-center gap-2 px-3 py-2 text-body-sm font-semibold text-slate-700 hover:bg-slate-50 transition-colors cursor-pointer"
                       >
                         <Pencil className="w-3.5 h-3.5 text-slate-400" />
-                        <span>Ganti nama</span>
+                        <span>{t.aiAssistant.rename}</span>
                       </button>
                       <button
                         onClick={(e) => {
@@ -188,7 +190,7 @@ const ConversationsSidebar = ({
                         className="w-full flex items-center gap-2 px-3 py-2 text-body-sm font-bold text-rose-600 hover:bg-rose-50/50 transition-colors cursor-pointer"
                       >
                         <Trash2 className="w-3.5 h-3.5 text-rose-500" />
-                        <span>Hapus</span>
+                        <span>{t.aiAssistant.delete}</span>
                       </button>
                     </div>
                   </>

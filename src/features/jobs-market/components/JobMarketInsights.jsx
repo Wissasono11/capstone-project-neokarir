@@ -1,8 +1,10 @@
 import React from 'react';
 import { Award, CheckCircle, TrendingUp } from 'lucide-react';
 import { DOMAIN_INSIGHTS } from '../utils/insightsData';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const JobMarketInsights = ({ selectedDomain, predictions }) => {
+  const { t, language } = useLanguage();
   const isComparisonMode = selectedDomain === 'all';
 
   if (isComparisonMode) {
@@ -12,7 +14,9 @@ const JobMarketInsights = ({ selectedDomain, predictions }) => {
       .map(key => ({
         name: key,
         value: firstMonth[key],
-        growth: DOMAIN_INSIGHTS[key]?.growth || 'Tinggi'
+        growth: language === 'en' 
+          ? (DOMAIN_INSIGHTS[key]?.growthEn || 'High') 
+          : (DOMAIN_INSIGHTS[key]?.growthId || 'Tinggi')
       }))
       .sort((a, b) => b.value - a.value);
 
@@ -20,10 +24,10 @@ const JobMarketInsights = ({ selectedDomain, predictions }) => {
       <div className="bg-pure-surface rounded-[24px] border border-border shadow-sm p-6 space-y-6">
         <div>
           <h3 className="text-body-lg font-bold text-primary-text mb-1">
-            Peringkat Kebutuhan Domain Kerja IT
+            {t.jobsMarket.rankingTitle}
           </h3>
           <p className="text-caption font-medium text-secondary-text">
-            Urutan bidang keahlian IT berdasarkan estimasi lowongan aktif bulan depan.
+            {t.jobsMarket.rankingDesc}
           </p>
         </div>
 
@@ -36,12 +40,12 @@ const JobMarketInsights = ({ selectedDomain, predictions }) => {
                 </span>
                 <div>
                   <h4 className="text-body-sm font-bold text-primary-text">{dom.name}</h4>
-                  <p className="text-caption text-secondary-text">Rating Pertumbuhan: <span className="font-semibold text-indigo-600">{dom.growth}</span></p>
+                  <p className="text-caption text-secondary-text">{t.jobsMarket.growthRating}<span className="font-semibold text-indigo-600">{dom.growth}</span></p>
                 </div>
               </div>
               <div className="text-right">
                 <span className="text-body-sm font-bold text-primary-text block">{Math.round(dom.value)}</span>
-                <span className="text-[10px] font-semibold text-secondary-text uppercase">Lowongan</span>
+                <span className="text-[10px] font-semibold text-secondary-text uppercase">{t.jobsMarket.vacanciesUpperUnit}</span>
               </div>
             </div>
           ))}
@@ -51,11 +55,15 @@ const JobMarketInsights = ({ selectedDomain, predictions }) => {
   }
 
   const insight = DOMAIN_INSIGHTS[selectedDomain] || {
-    outlook: "Permintaan domain ini diproyeksikan tumbuh stabil.",
+    outlookId: "Permintaan domain ini diproyeksikan tumbuh stabil.",
+    outlookEn: "Demand for this domain is projected to grow stably.",
     skills: ["Analisis Industri", "Keahlian Teknis Terkait", "Sertifikasi Profesional"],
     roles: ["Junior Specialist", "Mid Professional", "Lead Consultant"],
-    growth: "Stabil"
+    growthId: "Stabil",
+    growthEn: "Stable"
   };
+
+  const outlookText = language === 'en' ? insight.outlookEn : insight.outlookId;
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
@@ -64,21 +72,21 @@ const JobMarketInsights = ({ selectedDomain, predictions }) => {
         <div>
           <h3 className="text-body-lg font-bold text-primary-text mb-1 flex items-center gap-2">
             <TrendingUp className="w-5 h-5 text-indigo-600" />
-            <span>Prospek Pasar Kerja ({selectedDomain})</span>
+            <span>{t.jobsMarket.outlookTitle(selectedDomain)}</span>
           </h3>
           <p className="text-caption font-medium text-secondary-text">
-            Analisis prospek pertumbuhan karir dan tantangan di masa depan.
+            {t.jobsMarket.outlookDesc}
           </p>
         </div>
 
         <div className="p-4 bg-indigo-50/50 border border-indigo-100/60 rounded-2xl text-body-sm font-medium text-primary-text leading-relaxed">
-          {insight.outlook}
+          {outlookText}
         </div>
 
         <div className="space-y-3">
           <h4 className="text-body-sm font-bold text-primary-text flex items-center gap-2">
             <Award className="w-4 h-4 text-indigo-600" />
-            <span>Peran Kerja Paling Dibutuhkan:</span>
+            <span>{t.jobsMarket.rolesTitle}</span>
           </h4>
           <div className="flex flex-wrap gap-2">
             {insight.roles.map((role, idx) => (
@@ -98,10 +106,10 @@ const JobMarketInsights = ({ selectedDomain, predictions }) => {
         <div>
           <h3 className="text-body-lg font-bold text-primary-text mb-1 flex items-center gap-2">
             <CheckCircle className="w-5 h-5 text-emerald-600" />
-            <span>Skill Penunjang Utama</span>
+            <span>{t.jobsMarket.skillsTitle}</span>
           </h3>
           <p className="text-caption font-medium text-secondary-text">
-            Rekomendasi kompetensi yang wajib dikuasai untuk bersaing.
+            {t.jobsMarket.skillsDesc}
           </p>
         </div>
 

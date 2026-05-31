@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { Award, AlertCircle } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 // Layout & UI
 import DashboardLayout from '../layouts/DashboardLayout';
@@ -17,6 +18,7 @@ import AIAdvisorInsight from '../features/career-recommendation/components/AIAdv
 
 const CareerRecommendationPage = () => {
   const navigate = useNavigate();
+  const { t } = useLanguage();
   const {
     isLoading,
     recommendations,
@@ -32,7 +34,7 @@ const CareerRecommendationPage = () => {
   } = useCareerRecommendations();
 
   const breadcrumbItems = [
-    { label: 'Career Recommendation', path: '/dashboard/recommendations', icon: Award }
+    { label: t.sidebar.recommendation, path: '/dashboard/recommendations', icon: Award }
   ];
 
   const handleCardClick = (jobId) => {
@@ -74,16 +76,16 @@ const CareerRecommendationPage = () => {
               <div className="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center mx-auto text-slate-400">
                 <AlertCircle className="w-6 h-6" />
               </div>
-              <h3 className="text-body-sm font-bold text-slate-800">Tidak Ada Rekomendasi</h3>
+              <h3 className="text-body-sm font-bold text-slate-800">{t.career.noRecommendations}</h3>
               <p className="text-caption text-slate-500 max-w-sm mx-auto">
-                Kami tidak menemukan karir yang sesuai dengan filter pencarian Anda. Silakan ubah filter.
+                {t.career.noRecommendationsDesc}
               </p>
             </div>
           ) : (
             <div className="space-y-4">
               <div className="flex justify-between items-center px-1 mb-1">
                 <span className="text-caption font-bold text-slate-400 uppercase tracking-wider">
-                  Menampilkan {recommendations.length} Rekomendasi Karir
+                  {t.career.showingRecommendations(recommendations.length)}
                 </span>
               </div>
               

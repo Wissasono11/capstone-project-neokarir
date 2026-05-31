@@ -1,11 +1,14 @@
 import React from 'react';
 import { PanelLeftOpen, Bot } from 'lucide-react';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const ChatFeedHeader = ({
   isHistoryOpen,
   setIsHistoryOpen,
   activeSessionTitle
 }) => {
+  const { t } = useLanguage();
+
   return (
     <div className="bg-primary px-5 py-4 flex items-center justify-between text-white select-none">
       <div className="flex items-center gap-3">
@@ -14,7 +17,7 @@ const ChatFeedHeader = ({
             type="button"
             onClick={() => setIsHistoryOpen(true)}
             className="p-2 rounded-xl hover:bg-white/10 text-white transition-colors cursor-pointer shrink-0"
-            title="Tampilkan Riwayat"
+            title={t.aiAssistant.history}
           >
             <PanelLeftOpen className="w-5 h-5" />
           </button>
@@ -30,7 +33,7 @@ const ChatFeedHeader = ({
           </h2>
           <div className="flex items-center gap-1.5 mt-0.5">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 block"></span>
-            <span className="text-caption font-semibold text-white/90">Co-pilot • Active</span>
+            <span className="text-caption font-semibold text-white/90">{t.aiAssistant.headerSubtitle}</span>
           </div>
         </div>
       </div>

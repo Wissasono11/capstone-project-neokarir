@@ -6,6 +6,7 @@ import FormInput from '../../../components/ui/FormInput';
 import Button from '../../../components/ui/Button';
 import { BriefcaseBusiness, Target } from 'lucide-react';
 import { EDUCATION_LEVELS } from '../../onboarding/data/onboardingData';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const CareerSkillsTab = ({
   careerInfo,
@@ -23,6 +24,8 @@ const CareerSkillsTab = ({
   isSaving,
   saveSuccess
 }) => {
+  const { t } = useLanguage();
+
   const handleAddSkill = () => {
     if (newSkill.trim()) {
       addSkill(newSkill.trim());
@@ -47,15 +50,15 @@ const CareerSkillsTab = ({
       {/* Career Information */}
       <Card className="!p-6 md:!p-8">
         <h3 className="text-body-lg font-bold text-primary-text mb-1">
-          Informasi Karier
+          {t.profile.careerInfoTitle}
         </h3>
         <p className="text-body-sm text-secondary-text mb-6">
-          Data ini digunakan AI untuk memberikan rekomendasi karier yang paling relevan.
+          {t.profile.careerInfoDesc}
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           <FormInput
-            label="Posisi Saat Ini"
+            label={t.profile.currentRole}
             id="career-current-role"
             placeholder="e.g. Full Stack Developer"
             icon={BriefcaseBusiness}
@@ -64,7 +67,7 @@ const CareerSkillsTab = ({
           />
 
           <FormInput
-            label="Target Posisi"
+            label={t.profile.targetRole}
             id="career-target-role"
             placeholder="e.g. Senior Full Stack Developer"
             icon={Target}
@@ -78,7 +81,7 @@ const CareerSkillsTab = ({
               htmlFor="career-experience"
               className="text-sm font-semibold text-primary-text"
             >
-              Level Pengalaman
+              {t.profile.experienceLevel}
             </label>
             <select
               id="career-experience"
@@ -90,11 +93,11 @@ const CareerSkillsTab = ({
                 border-border hover:border-primary/30 focus:border-primary focus:ring-2 focus:ring-primary/10
               "
             >
-              <option value="Fresh Graduate">Fresh Graduate</option>
-              <option value="Junior (1-2 tahun)">Junior (1-2 tahun)</option>
-              <option value="Mid-Level (3-5 tahun)">Mid-Level (3-5 tahun)</option>
-              <option value="Senior (5+ tahun)">Senior (5+ tahun)</option>
-              <option value="Lead / Manager">Lead / Manager</option>
+              <option value="Fresh Graduate">{t.profile.expFresh}</option>
+              <option value="Junior (1-2 tahun)">{t.profile.expJunior}</option>
+              <option value="Mid-Level (3-5 tahun)">{t.profile.expMid}</option>
+              <option value="Senior (5+ tahun)">{t.profile.expSenior}</option>
+              <option value="Lead / Manager">{t.profile.expLead}</option>
             </select>
           </div>
 
@@ -104,7 +107,7 @@ const CareerSkillsTab = ({
               htmlFor="career-education"
               className="text-sm font-semibold text-primary-text"
             >
-              Pendidikan Terakhir
+              {t.profile.education}
             </label>
             <select
               id="career-education"
@@ -137,12 +140,12 @@ const CareerSkillsTab = ({
           {isSaving ? (
             <>
               <Loader2 size={16} className="animate-spin mr-2" />
-              Menyimpan...
+              {t.common.saving}
             </>
           ) : saveSuccess ? (
-            '✓ Tersimpan'
+            t.profile.savedStatus
           ) : (
-            'Simpan Informasi Karir'
+            t.profile.saveCareerInfo
           )}
         </Button>
       </div>
@@ -150,10 +153,10 @@ const CareerSkillsTab = ({
       {/* Skills Section */}
       <Card className="!p-6 md:!p-8">
         <h3 className="text-body-lg font-bold text-primary-text mb-1">
-          Keahlian (Skills)
+          {t.profile.skills}
         </h3>
         <p className="text-body-sm text-secondary-text mb-4">
-          Tambah atau hapus skill untuk meningkatkan akurasi analisis gap.
+          {t.profile.skillsDesc}
         </p>
 
         {/* Skill chips */}
@@ -171,7 +174,7 @@ const CareerSkillsTab = ({
               <button
                 onClick={() => removeSkill(skill)}
                 className="p-0.5 rounded-full hover:bg-primary/10 transition-colors"
-                aria-label={`Hapus skill ${skill}`}
+                aria-label={t.profile.deleteSkillLabel(skill)}
               >
                 <X size={12} className="text-primary/60 group-hover:text-primary" />
               </button>
@@ -185,7 +188,7 @@ const CareerSkillsTab = ({
             <input
               type="text"
               id="career-new-skill"
-              placeholder="Tambah skill baru..."
+              placeholder={t.profile.skillsPlaceholder}
               value={newSkill}
               onChange={(e) => setNewSkill(e.target.value)}
               onKeyDown={handleKeyPress}
@@ -204,7 +207,7 @@ const CareerSkillsTab = ({
             className="shrink-0"
           >
             <Plus size={16} className="mr-1" />
-            Tambah
+            {t.profile.addSkill}
           </Button>
         </div>
       </Card>
@@ -214,10 +217,10 @@ const CareerSkillsTab = ({
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div>
             <h3 className="text-body-lg font-bold text-primary-text flex items-center gap-2">
-              Proses Ulang Data dengan AI
+              {t.profile.reprocessTitle}
             </h3>
             <p className="text-body-sm text-secondary-text mt-1">
-              Update profil karier kamu berdasarkan data terbaru menggunakan AI Career Profiling.
+              {t.profile.reprocessDesc}
             </p>
           </div>
           <Button
@@ -229,12 +232,12 @@ const CareerSkillsTab = ({
             {isReprocessing ? (
               <>
                 <Loader2 size={16} className="animate-spin mr-2" />
-                Memproses...
+                {t.profile.reprocessing}
               </>
             ) : (
               <>
                 <BrainCog size={16} className="mr-2" />
-                Proses Ulang dengan AI
+                {t.profile.reprocessBtn}
               </>
             )}
           </Button>
@@ -266,10 +269,10 @@ const CareerSkillsTab = ({
                   <AlertTriangle size={24} />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  Proses Ulang dari Awal?
+                  {t.profile.reprocessModalTitle}
                 </h3>
                 <p className="text-sm text-gray-500 mb-6">
-                  Anda akan diarahkan kembali ke halaman Onboarding. Profil dan data saat ini akan disesuaikan kembali berdasarkan input terbaru Anda. Apakah Anda yakin?
+                  {t.profile.reprocessModalDesc}
                 </p>
                 <div className="flex gap-3 w-full">
                   <Button
@@ -278,7 +281,7 @@ const CareerSkillsTab = ({
                     className="flex-1 justify-center"
                     disabled={isReprocessing}
                   >
-                    Batal
+                    {t.common.cancel}
                   </Button>
                   <Button
                     variant="primary"
@@ -289,10 +292,10 @@ const CareerSkillsTab = ({
                     {isReprocessing ? (
                       <>
                         <Loader2 size={16} className="animate-spin mr-2" />
-                        Memproses...
+                        {t.profile.reprocessing}
                       </>
                     ) : (
-                      'Ya, Proses Ulang'
+                      t.profile.reprocessModalConfirm
                     )}
                   </Button>
                 </div>

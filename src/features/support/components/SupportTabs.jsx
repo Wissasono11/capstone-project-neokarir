@@ -1,11 +1,14 @@
 import React from 'react';
 import { HelpCircle, BookOpen, MessageSquare } from 'lucide-react';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const SupportTabs = ({ activeTab, setActiveTab }) => {
+  const { t } = useLanguage();
+  
   const tabs = [
-    { id: 'faq', label: 'FAQ & Tanya Jawab', icon: HelpCircle },
-    { id: 'guide', label: 'Panduan Penggunaan', icon: BookOpen },
-    { id: 'contact', label: 'Hubungi Support', icon: MessageSquare },
+    { id: 'faq', label: t.support.faqTitle, icon: HelpCircle },
+    { id: 'guide', label: t.support.guideTitle, icon: BookOpen },
+    { id: 'contact', label: t.support.contactTitle, icon: MessageSquare },
   ];
 
   return (

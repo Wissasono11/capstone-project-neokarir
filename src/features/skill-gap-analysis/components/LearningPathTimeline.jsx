@@ -1,22 +1,24 @@
 import React from 'react';
 import { ExternalLink, CheckCircle2, AlertCircle, PlayCircle, Check } from 'lucide-react';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const LearningPathTimeline = ({ pathData, completedCourses = [], onToggleCourse, ownedSkills = [] }) => {
+  const { t } = useLanguage();
   const isEmpty = !pathData || pathData.length === 0;
 
   return (
     <div className="mt-8 bg-white rounded-3xl border border-slate-100 p-6 sm:p-8 shadow-sm">
       <div className="mb-8">
-        <h3 className="text-subtitle font-bold text-slate-800">Jalur Pembelajaran Rekomendasi</h3>
-        <p className="text-slate-500 mt-1 text-caption">Langkah demi langkah untuk menutupi skill gap dan mencapai target role.</p>
+        <h3 className="text-subtitle font-bold text-slate-800">{t.career.learningPathTitle}</h3>
+        <p className="text-slate-500 mt-1 text-caption">{t.skillGap.learningPathSubtitle}</p>
       </div>
 
       {isEmpty ? (
         <div className="p-8 bg-slate-50/50 rounded-2xl border border-dashed border-slate-200 text-center flex flex-col items-center justify-center">
           <AlertCircle className="w-10 h-10 text-slate-400 mb-3" />
-          <p className="text-body-sm font-semibold text-slate-600 mb-1">Jalur pembelajaran belum tersedia</p>
+          <p className="text-body-sm font-semibold text-slate-600 mb-1">{t.skillGap.learningPathUnavailable}</p>
           <p className="text-caption text-slate-400 max-w-sm">
-            Pastikan target karir dan skill kamu terisi lengkap di profil untuk memformulasikan jalur belajar terbaik.
+            {t.skillGap.learningPathUnavailableDesc}
           </p>
         </div>
       ) : (
@@ -24,6 +26,11 @@ const LearningPathTimeline = ({ pathData, completedCourses = [], onToggleCourse,
           {pathData.map((course, index) => {
             const isHighPriority = course.prioritas === "Tinggi";
             const isCompleted = completedCourses.includes(course.id);
+            const priorityVal = course.prioritas === "Tinggi" 
+              ? t.skillGap.priorityHigh 
+              : course.prioritas === "Sedang" 
+                ? t.skillGap.priorityMedium 
+                : t.skillGap.priorityLow;
             
             return (
               <div key={course.id} className="relative pl-8 md:pl-10">
@@ -32,7 +39,7 @@ const LearningPathTimeline = ({ pathData, completedCourses = [], onToggleCourse,
                 {isCompleted ? (
                   <button 
                     onClick={() => onToggleCourse && onToggleCourse(course.id)}
-                    title="Tandai belum selesai"
+                    title={t.career.markUncompleted}
                     className="absolute -left-[17px] top-1 bg-emerald-600 border-4 border-emerald-100 w-8 h-8 rounded-full flex items-center justify-center shadow-sm cursor-pointer hover:bg-emerald-700 transition-all duration-200 z-10"
                   >
                     <Check className="w-3.5 h-3.5 text-white stroke-[3px]" />
@@ -40,7 +47,7 @@ const LearningPathTimeline = ({ pathData, completedCourses = [], onToggleCourse,
                 ) : (
                   <button 
                     onClick={() => onToggleCourse && onToggleCourse(course.id)}
-                    title="Tandai sebagai selesai"
+                    title={t.career.markCompleted}
                     className="absolute -left-[17px] top-1 bg-white border-4 border-indigo-100 w-8 h-8 rounded-full flex items-center justify-center shadow-sm cursor-pointer hover:border-indigo-400 group/btn transition-all duration-200 z-10"
                   >
                     <span className="text-caption font-extrabold text-indigo-600 group-hover/btn:hidden">{index + 1}</span>
@@ -60,13 +67,13 @@ const LearningPathTimeline = ({ pathData, completedCourses = [], onToggleCourse,
                       <div className="flex items-center gap-2 mb-2">
                         {isCompleted ? (
                           <span className="px-2 py-0.5 rounded text-caption font-bold bg-emerald-50 text-emerald-700 border border-emerald-100 flex items-center gap-1">
-                            <CheckCircle2 className="w-3.5 h-3.5" /> Selesai
+                            <CheckCircle2 className="w-3.5 h-3.5" /> {t.skillGap.doneLabel}
                           </span>
                         ) : (
                           <span className={`px-2 py-0.5 rounded text-caption font-bold ${
                             isHighPriority ? 'bg-rose-50 text-rose-700 border border-rose-100' : 'bg-blue-50 text-blue-700 border border-blue-100'
                           }`}>
-                            Prioritas {course.prioritas}
+                            {t.skillGap.priorityLabel(priorityVal)}
                           </span>
                         )}
                         <span className="text-caption font-medium text-slate-300">•</span>
@@ -91,7 +98,7 @@ const LearningPathTimeline = ({ pathData, completedCourses = [], onToggleCourse,
 
                       <div className="flex flex-col sm:flex-row sm:items-center gap-4 text-caption font-semibold">
                         <div className="flex items-center gap-1.5 text-slate-500">
-                          <span className="text-slate-400">Skill Target:</span>
+                          <span className="text-slate-400">{t.skillGap.targetSkill}</span>
                           <span className={`px-2 py-0.5 rounded font-bold ${
                             isCompleted ? 'bg-slate-50 text-slate-400' : 'bg-slate-100 text-slate-600'
                           }`}>
@@ -101,7 +108,7 @@ const LearningPathTimeline = ({ pathData, completedCourses = [], onToggleCourse,
                         
                         {course.prasyarat && course.prasyarat.length > 0 && (
                           <div className="flex items-center gap-1.5 text-slate-500">
-                            <span className="text-slate-400">Prasyarat:</span>
+                            <span className="text-slate-400">{t.skillGap.prerequisite}</span>
                             <div className="flex items-center gap-2">
                               {course.prasyarat.map((req, idx) => {
                                 const ownedMockSkills = ownedSkills && ownedSkills.length > 0 ? ownedSkills : ["Problem Solving", "React", "Communication", "Laravel"];
@@ -141,7 +148,7 @@ const LearningPathTimeline = ({ pathData, completedCourses = [], onToggleCourse,
                         }`}
                       >
                         <PlayCircle className="w-4 h-4" />
-                        {isCompleted ? 'Pelajari Lagi' : 'Mulai Kursus'}
+                        {isCompleted ? t.career.learnAgain : t.career.startCourse}
                         <ExternalLink className="w-3.5 h-3.5 opacity-80" />
                       </a>
                     </div>

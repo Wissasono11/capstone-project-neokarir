@@ -1,8 +1,10 @@
 import React from 'react';
 import { useExtractedEntities } from '../hooks/useExtractedEntities';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const CVExtractedEntities = ({ entities }) => {
   const sections = useExtractedEntities(entities);
+  const { t } = useLanguage();
 
   if (!entities) return null;
 
@@ -11,10 +13,10 @@ const CVExtractedEntities = ({ entities }) => {
       {/* Title */}
       <div className="mb-6">
         <h3 className="text-lg md:text-xl font-bold text-primary-text mb-1">
-          Ekstraksi Informasi NER (Named Entity Recognition)
+          {t.cvAnalyzer.nerTitle}
         </h3>
         <p className="text-xs md:text-sm font-medium text-secondary-text">
-          Sistem kecerdasan buatan kami berhasil memetakan teks CV Anda menjadi 13 tag sequence BIO berikut:
+          {t.cvAnalyzer.nerDesc}
         </p>
       </div>
 
@@ -63,7 +65,7 @@ const CVExtractedEntities = ({ entities }) => {
                   ))
                 ) : (
                   <span className="text-xs font-semibold text-secondary-text italic bg-canvas-white px-3 py-1.5 rounded-xl border border-border/40">
-                    Tidak ditemukan data
+                    {t.cvAnalyzer.noDataFound}
                   </span>
                 )}
               </div>

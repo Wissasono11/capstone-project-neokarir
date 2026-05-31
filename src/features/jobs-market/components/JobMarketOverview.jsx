@@ -1,8 +1,11 @@
 import React from 'react';
 import { Sparkles, CalendarDays, BarChart2, TrendingUp, Info } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const JobMarketOverview = ({ predictions, selectedDomain, topDomain, generatedAt, isSimulated }) => {
+  const { t, language } = useLanguage();
+  
   // Helper to calculate statistics
   const getStats = () => {
     if (!predictions || predictions.length === 0) {
@@ -88,7 +91,8 @@ const JobMarketOverview = ({ predictions, selectedDomain, topDomain, generatedAt
     if (!isoStr) return '-';
     try {
       const date = new Date(isoStr);
-      return date.toLocaleDateString('id-ID', {
+      const locale = language === 'en' ? 'en-US' : 'id-ID';
+      return date.toLocaleDateString(locale, {
         day: 'numeric',
         month: 'long',
         year: 'numeric',
@@ -117,20 +121,20 @@ const JobMarketOverview = ({ predictions, selectedDomain, topDomain, generatedAt
             <Sparkles className="w-6 h-6 text-primary" />
           </div>
           <span className="text-caption text-secondary-text font-medium bg-canvas-white px-2.5 py-1 rounded-full border border-border/40">
-            Estimasi Terbesar
+            {t.jobsMarket.maxEstimation}
           </span>
         </div>
         <div>
           <h4 className="text-body-sm font-semibold text-secondary-text mb-1 uppercase tracking-wider">
-            {selectedDomain === 'all' ? 'Top Trending Domain' : 'Estimasi Bulan Terakhir'}
+            {selectedDomain === 'all' ? t.jobsMarket.topTrending : t.jobsMarket.lastMonthEstimation}
           </h4>
           <h2 className="text-title font-bold text-primary-text mb-2 truncate">
             {stats.topDemandDomain}
           </h2>
-          <p className="text-caption font-medium text-secondary-text flex items-center gap-1.5">
+          <p className="text-caption font-medium text-secondary-text flex items-center gap-1.5 flex-wrap">
             <TrendingUp className="w-3.5 h-3.5 text-emerald-500" />
-            <span className="text-emerald-600 font-bold">{stats.topDemandValue} lowongan</span>
-            estimasi kebutuhan kerja.
+            <span className="text-emerald-600 font-bold">{t.jobsMarket.activeVacancies(stats.topDemandValue)}</span>
+            <span>{t.jobsMarket.jobEstimateSuffix}</span>
           </p>
         </div>
       </motion.div>
@@ -145,18 +149,18 @@ const JobMarketOverview = ({ predictions, selectedDomain, topDomain, generatedAt
             <BarChart2 className="w-6 h-6 text-emerald-600" />
           </div>
           <span className="text-caption text-emerald-700 font-semibold bg-emerald-50/60 px-2.5 py-1 rounded-full border border-emerald-100">
-            Prediksi Positif
+            {t.jobsMarket.positivePrediction}
           </span>
         </div>
         <div>
           <h4 className="text-body-sm font-semibold text-secondary-text mb-1 uppercase tracking-wider">
-            {selectedDomain === 'all' ? 'Rata-Rata Pertumbuhan' : `Pertumbuhan (${predictions.length} Bulan)`}
+            {selectedDomain === 'all' ? t.jobsMarket.averageGrowth : t.jobsMarket.growthTitle(predictions.length)}
           </h4>
           <h2 className="text-title font-bold text-primary-text mb-2">
             {stats.averageGrowth}
           </h2>
           <p className="text-caption font-medium text-secondary-text flex items-center gap-1">
-            Proyeksi demand pasar kerja IT menunjukkan tren akumulasi naik.
+            {t.jobsMarket.growthFooter}
           </p>
         </div>
       </motion.div>
@@ -171,12 +175,12 @@ const JobMarketOverview = ({ predictions, selectedDomain, topDomain, generatedAt
             <CalendarDays className="w-6 h-6 text-slate-600" />
           </div>
           <span className="text-caption text-secondary-text font-medium bg-canvas-white px-2.5 py-1 rounded-full border border-border/40">
-            Sumber Data AI
+            {t.jobsMarket.dataSource}
           </span>
         </div>
         <div>
           <h4 className="text-body-sm font-semibold text-secondary-text mb-1 uppercase tracking-wider">
-            Terakhir Diperbarui
+            {t.jobsMarket.lastUpdated}
           </h4>
           <h2 className="text-body font-bold text-primary-text mb-2 line-clamp-1">
             {formattedDate(generatedAt)}
@@ -185,8 +189,8 @@ const JobMarketOverview = ({ predictions, selectedDomain, topDomain, generatedAt
             <Info className="w-3.5 h-3.5 text-indigo-500 shrink-0" />
             <span>
               {isSimulated 
-                ? 'Menggunakan Data Simulasi Cerdas NeoKarir.'
-                : 'Terkoneksi ke Database Real-time AI NeoKarir.'}
+                ? t.jobsMarket.simulatedDataDesc
+                : t.jobsMarket.realtimeDataDesc}
             </span>
           </div>
         </div>

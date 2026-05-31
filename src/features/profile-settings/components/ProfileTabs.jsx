@@ -1,20 +1,23 @@
 import React from 'react';
 import { User, BriefcaseBusiness, ShieldCheck, Settings2 } from 'lucide-react';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const TABS = [
-  { id: 'personal', label: 'Informasi Pribadi', icon: User },
-  { id: 'career', label: 'Karier & Skills', icon: BriefcaseBusiness },
-  { id: 'security', label: 'Keamanan Akun', icon: ShieldCheck },
-  { id: 'preferences', label: 'Preferensi', icon: Settings2 },
+  { id: 'personal', labelKey: 'personalInfo', icon: User },
+  { id: 'career', labelKey: 'careerSkills', icon: BriefcaseBusiness },
+  { id: 'security', labelKey: 'security', icon: ShieldCheck },
+  { id: 'preferences', labelKey: 'preferences', icon: Settings2 },
 ];
 
 const ProfileTabs = ({ activeTab, onTabChange }) => {
+  const { t } = useLanguage();
   return (
     <div className="border-b border-border overflow-x-auto scrollbar-hide">
       <nav className="flex gap-1 min-w-max" role="tablist" aria-label="Profile settings tabs">
         {TABS.map((tab) => {
           const Icon = tab.icon;
           const isActive = activeTab === tab.id;
+          const label = t.profile[tab.labelKey];
 
           return (
             <button
@@ -34,7 +37,7 @@ const ProfileTabs = ({ activeTab, onTabChange }) => {
               `}
             >
               <Icon size={16} className="shrink-0" />
-              {tab.label}
+              {label}
             </button>
           );
         })}

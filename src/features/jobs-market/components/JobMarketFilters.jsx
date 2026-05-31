@@ -1,5 +1,6 @@
 import React from 'react';
 import { Briefcase, Calendar } from 'lucide-react';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const JobMarketFilters = ({ 
   domains, 
@@ -8,10 +9,11 @@ const JobMarketFilters = ({
   nMonths, 
   setNMonths 
 }) => {
+  const { t } = useLanguage();
   const MONTHS_OPTIONS = [
-    { value: 3, label: '3 Bulan' },
-    { value: 6, label: '6 Bulan' },
-    { value: 12, label: '12 Bulan' }
+    { value: 3, label: t.jobsMarket.threeMonths },
+    { value: 6, label: t.jobsMarket.sixMonths },
+    { value: 12, label: t.jobsMarket.twelveMonths }
   ];
 
   return (
@@ -20,7 +22,7 @@ const JobMarketFilters = ({
       <div className="flex-1 space-y-2">
         <label htmlFor="domain-select" className="text-body-sm font-bold text-primary-text flex items-center gap-2">
           <Briefcase className="w-4 h-4 text-primary" />
-          <span>Domain Pekerjaan IT:</span>
+          <span>{t.jobsMarket.domainLabel}</span>
         </label>
         <div className="relative">
           <select
@@ -29,7 +31,7 @@ const JobMarketFilters = ({
             onChange={(e) => setSelectedDomain(e.target.value)}
             className="w-full pl-4 pr-10 py-3 bg-canvas-white border border-border rounded-xl font-medium text-body-sm text-primary-text focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all duration-200 cursor-pointer appearance-none"
           >
-            <option value="all">Semua Domain (Perbandingan Demand)</option>
+            <option value="all">{t.jobsMarket.allDomainsCompare}</option>
             {domains.map((dom) => (
               <option key={dom} value={dom}>
                 {dom}
@@ -49,7 +51,7 @@ const JobMarketFilters = ({
       <div className="space-y-2 shrink-0">
         <label className="text-body-sm font-bold text-primary-text flex items-center gap-2">
           <Calendar className="w-4 h-4 text-primary" />
-          <span>Rentang Waktu Prediksi:</span>
+          <span>{t.jobsMarket.timeRangeLabel}</span>
         </label>
         <div className="flex p-1 bg-canvas-white border border-border rounded-xl">
           {MONTHS_OPTIONS.map((opt) => {

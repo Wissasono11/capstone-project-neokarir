@@ -4,6 +4,7 @@ import { Icon as Iconify } from '@iconify/react';
 import { Link } from 'react-router-dom';
 import { useNavbarDropdown } from '../hooks/useNavbarDropdown';
 import avatar from '../../../assets/images/avatar.png';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const DashboardNavbar = ({ onMenuClick }) => {
   const {
@@ -14,6 +15,7 @@ const DashboardNavbar = ({ onMenuClick }) => {
     closeDropdown,
     handleLogout
   } = useNavbarDropdown();
+  const { t } = useLanguage();
 
   return (
     <header className="h-[80px] bg-white border-b border-border/60 shrink-0 relative z-10">
@@ -29,7 +31,7 @@ const DashboardNavbar = ({ onMenuClick }) => {
             </button>
 
             {/* Title */}
-            <h1 className="text-subtitle md:text-title font-bold text-primary-text tracking-tight">Dashboard</h1>
+            <h1 className="text-subtitle md:text-title font-bold text-primary-text tracking-tight">{t.common.dashboard}</h1>
           </div>
 
           <div className="flex items-center gap-3 md:gap-4 relative" ref={dropdownRef}>
@@ -41,7 +43,7 @@ const DashboardNavbar = ({ onMenuClick }) => {
               aria-haspopup="true"
             >
               <div className="text-right hidden sm:block">
-                <p className="text-body-sm font-medium text-secondary-text leading-tight">Halo!👋</p>
+                <p className="text-body-sm font-medium text-secondary-text leading-tight">{t.navbar.greeting}</p>
                 <p className="text-body-sm font-bold text-primary-text leading-tight mt-0.5 group-hover:text-primary transition-colors">
                   {user?.name || 'Franz Hermann'}
                 </p>
@@ -81,7 +83,7 @@ const DashboardNavbar = ({ onMenuClick }) => {
                     role="menuitem"
                   >
                     <Iconify icon="si:dashboard-customize-duotone" size={20} className="shrink-0" />
-                    My Overview
+                    {t.navbar.overview}
                   </Link>
 
                   <Link
@@ -91,7 +93,7 @@ const DashboardNavbar = ({ onMenuClick }) => {
                     role="menuitem"
                   >
                     <Settings size={16} />
-                    Profile & Settings
+                    {t.navbar.settings}
                   </Link>
                 </div>
 
@@ -105,7 +107,7 @@ const DashboardNavbar = ({ onMenuClick }) => {
                     role="menuitem"
                   >
                     <LogOut size={16} />
-                    Keluar
+                    {t.navbar.logout}
                   </button>
                 </div>
               </div>

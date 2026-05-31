@@ -1,7 +1,10 @@
 import { BrainCircuit } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const AIAdvisorInsight = ({ user }) => {
+  const { t } = useLanguage();
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 5 }}
@@ -14,11 +17,14 @@ const AIAdvisorInsight = ({ user }) => {
         </div>
         <div className="min-w-0">
           <h4 className="text-body-sm font-bold text-indigo-900 mb-1">
-            NeoAI Career Advisor Insight
+            {t.career.advisorInsightTitle}
           </h4>
           <p className="text-caption text-slate-600 font-medium leading-relaxed">
-            Berdasarkan profil onboarding Anda ({user?.education || 'S1/D4'}, {user?.experience || 'Fresh Graduate'}) dengan focus bidang <strong>{user?.domain || 'Software Development'}</strong>, 
-            pekerjaan teratas kami rekomendasikan di bawah ini. Selesaikan course pada *Roadmap* untuk langsung melengkapi skill gap Anda dan meningkatkan persentase kecocokan kerja!
+            {t.career.advisorInsight(
+              user?.education || 'S1/D4', 
+              user?.experience || 'Fresh Graduate', 
+              user?.domain || 'Software Development'
+            )}
           </p>
         </div>
       </div>

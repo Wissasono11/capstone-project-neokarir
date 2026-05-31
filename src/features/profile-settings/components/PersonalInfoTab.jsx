@@ -4,8 +4,10 @@ import Card from '../../../components/ui/Card';
 import FormInput from '../../../components/ui/FormInput';
 import Button from '../../../components/ui/Button';
 import { User, Mail, Phone, Calendar } from 'lucide-react';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const PersonalInfoTab = ({ personalInfo, updatePersonalInfo, onSave, isSaving, saveSuccess }) => {
+  const { t } = useLanguage();
   return (
     <div
       role="tabpanel"
@@ -15,25 +17,25 @@ const PersonalInfoTab = ({ personalInfo, updatePersonalInfo, onSave, isSaving, s
     >
       <Card className="!p-6 md:!p-8">
         <h3 className="text-body-lg font-bold text-primary-text mb-1">
-          Informasi Pribadi
+          {t.profile.personalInfo}
         </h3>
         <p className="text-body-sm text-secondary-text mb-6">
-          Lengkapi data diri untuk meningkatkan akurasi rekomendasi karir AI.
+          {t.profile.personalInfoSub}
         </p>
 
         {/* Two-column form layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           <FormInput
-            label="Nama Lengkap"
+            label={t.profile.fullName}
             id="profile-fullname"
-            placeholder="Masukkan nama lengkap"
+            placeholder={t.profile.fullNamePlaceholder}
             icon={User}
             value={personalInfo.fullName}
             onChange={(e) => updatePersonalInfo('fullName', e.target.value)}
           />
 
           <FormInput
-            label="Email"
+            label={t.profile.email}
             id="profile-email"
             type="email"
             placeholder="email@example.com"
@@ -43,7 +45,7 @@ const PersonalInfoTab = ({ personalInfo, updatePersonalInfo, onSave, isSaving, s
           />
 
           <FormInput
-            label="Nomor Telepon"
+            label={t.profile.phone}
             id="profile-phone"
             type="tel"
             placeholder="+62 812-xxxx-xxxx"
@@ -53,7 +55,7 @@ const PersonalInfoTab = ({ personalInfo, updatePersonalInfo, onSave, isSaving, s
           />
 
           <FormInput
-            label="Tanggal Lahir"
+            label={t.profile.dateOfBirth}
             id="profile-dob"
             type="date"
             icon={Calendar}
@@ -67,7 +69,7 @@ const PersonalInfoTab = ({ personalInfo, updatePersonalInfo, onSave, isSaving, s
               htmlFor="profile-gender"
               className="text-sm font-semibold text-primary-text"
             >
-              Jenis Kelamin
+              {t.profile.gender}
             </label>
             <select
               id="profile-gender"
@@ -79,10 +81,10 @@ const PersonalInfoTab = ({ personalInfo, updatePersonalInfo, onSave, isSaving, s
                 border-border hover:border-primary/30 focus:border-primary focus:ring-2 focus:ring-primary/10
               "
             >
-              <option value="male">Laki-laki</option>
-              <option value="female">Perempuan</option>
-              <option value="other">Lainnya</option>
-              <option value="prefer-not-to-say">Tidak ingin menjawab</option>
+              <option value="male">{t.profile.genderMale}</option>
+              <option value="female">{t.profile.genderFemale}</option>
+              <option value="other">{t.profile.genderOther}</option>
+              <option value="prefer-not-to-say">{t.profile.genderPreferNotToSay}</option>
             </select>
           </div>
         </div>
@@ -97,23 +99,23 @@ const PersonalInfoTab = ({ personalInfo, updatePersonalInfo, onSave, isSaving, s
             {isSaving ? (
               <>
                 <Loader2 size={16} className="animate-spin mr-2" />
-                Menyimpan...
+                {t.common.saving}
               </>
             ) : saveSuccess ? (
               <>
                 <CheckCircle size={16} className="mr-2" />
-                Tersimpan!
+                {t.common.saved}
               </>
             ) : (
               <>
                 <Save size={16} className="mr-2" />
-                Simpan Perubahan
+                {t.profile.saveChanges}
               </>
             )}
           </Button>
           {saveSuccess && (
             <span className="text-caption text-success font-medium animate-fade-in">
-              Perubahan berhasil disimpan
+              {t.profile.personalSaveSuccess}
             </span>
           )}
         </div>

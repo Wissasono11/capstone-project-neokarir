@@ -1,10 +1,13 @@
 import React from 'react';
 import { MessageSquareMore } from 'lucide-react';
 import Breadcrumb from '../../../components/ui/Breadcrumb';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const AIAssistantHero = () => {
+  const { t } = useLanguage();
+
   const breadcrumbItems = [
-    { label: 'AI Assistant', path: '/dashboard/ai-assistant', icon: MessageSquareMore }
+    { label: t.sidebar.aiAssistant, path: '/dashboard/ai-assistant', icon: MessageSquareMore }
   ];
 
   return (
@@ -16,10 +19,10 @@ const AIAssistantHero = () => {
       <div className="flex items-center gap-4">
         <div>
           <h1 className="text-heading md:text-heading font-bold text-primary-text mb-1 tracking-tight flex items-center gap-2">
-            AI Career Assistant
+            {t.aiAssistant.heroTitle}
           </h1>
           <p className="text-body-sm font-medium text-secondary-text">
-            Dapatkan panduan karir personal yang didukung oleh kecerdasan buatan
+            {t.aiAssistant.heroDesc}
           </p>
         </div>
       </div>

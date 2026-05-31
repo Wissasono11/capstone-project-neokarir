@@ -1,7 +1,10 @@
 import React from 'react';
-import { AlertCircle, ArrowUpRight, HelpCircle } from 'lucide-react';
+import { AlertCircle } from 'lucide-react';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const CVImprovementTips = ({ tips = [] }) => {
+  const { t } = useLanguage();
+
   const getPriorityConfig = (priority) => {
     switch (priority.toLowerCase()) {
       case 'high':
@@ -36,8 +39,8 @@ const CVImprovementTips = ({ tips = [] }) => {
           <AlertCircle className="w-5 h-5" />
         </div>
         <div>
-          <h4 className="text-base font-bold text-primary-text leading-none mb-1">Rekomendasi Perbaikan Tambahan</h4>
-          <p className="text-xs font-semibold text-secondary-text">Tindakan nyata untuk mendongkrak skor kelolosan CV Anda</p>
+          <h4 className="text-base font-bold text-primary-text leading-none mb-1">{t.cvAnalyzer.improvementTipsTitle}</h4>
+          <p className="text-xs font-semibold text-secondary-text">{t.cvAnalyzer.improvementTipsDesc}</p>
         </div>
       </div>
 

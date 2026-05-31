@@ -1,13 +1,13 @@
 import axios from 'axios';
 
 // Base URL for the main backend API
-export const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+export const API_BASE_URL = import.meta.env.VITE_API_URL;
 
 // Base URL for the AI model service (Recommendations, Skill Gap, Market)
-export const AI_BASE_URL = import.meta.env.VITE_AI_URL || 'http://localhost:8001';
+export const AI_BASE_URL = import.meta.env.VITE_AI_URL;
 
 // Base URL for the AI-1 model service (Chatbot)
-export const AI1_BASE_URL = import.meta.env.VITE_AI1_URL || 'http://localhost:8000';
+export const AI1_BASE_URL = import.meta.env.VITE_AI1_URL;
 
 // Global flag to toggle mock data (handy for working without running backend)
 export const USE_MOCK = import.meta.env.VITE_USE_MOCK === 'true';
