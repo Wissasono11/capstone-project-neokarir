@@ -1,14 +1,27 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 
 export const usePersonalInfo = (initialUser) => {
   const [personalInfo, setPersonalInfo] = useState({
-    fullName: initialUser?.name || 'Franz Hermann',
-    email: initialUser?.email || 'hello@example.com',
-    phone: '+62 812-3456-7890',
-    bio: 'Passionate developer focused on building impactful web applications with modern technologies.',
-    dateOfBirth: '1999-06-15',
-    gender: 'male',
+    fullName: initialUser?.name || '',
+    email: initialUser?.email || '',
+    phone: initialUser?.phone || '',
+    bio: initialUser?.bio || '',
+    dateOfBirth: initialUser?.profile_data?.date_of_birth || '',
+    gender: initialUser?.gender || 'male',
   });
+
+  useEffect(() => {
+    if (initialUser) {
+      setPersonalInfo({
+        fullName: initialUser.name || '',
+        email: initialUser.email || '',
+        phone: initialUser.phone || '',
+        bio: initialUser.bio || '',
+        dateOfBirth: initialUser.profile_data?.date_of_birth || '',
+        gender: initialUser.gender || 'male',
+      });
+    }
+  }, [initialUser]);
 
   const updatePersonalInfo = useCallback((field, value) => {
     setPersonalInfo(prev => ({ ...prev, [field]: value }));

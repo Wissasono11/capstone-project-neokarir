@@ -9,8 +9,27 @@ export const useAIProfiling = () => {
   const [progress, setProgress] = useState(0);
   const [processingStatus, setProcessingStatus] = useState('Membaca data profile...');
 
-  const { recommendations, overallReadiness } = useCareerRecommendations();
+  const { recommendations, overallReadiness: defaultOverallReadiness } = useCareerRecommendations();
   const { radarData, learningPath, heroData } = useSkillGap();
+  const [profileScore, setProfileScore] = useState(null);
+
+  useEffect(() => {
+    const fetchProfileScore = async () => {
+      try {
+        const { default: api } = await import('../../../config/api');
+        const response = await api.get('/profile/me/score');
+        if (response.data && response.data.score !== undefined) {
+           setProfileScore(response.data.score);
+        }
+      } catch (err) {
+        console.warn("Failed to fetch profile score", err);
+      }
+    };
+    
+    if (user) {
+      fetchProfileScore();
+    }
+  }, [user]);
 
   useEffect(() => {
     // Mock processing sequence
@@ -52,7 +71,7 @@ export const useAIProfiling = () => {
   }));
 
   const results = {
-    overallScore: heroData?.overallReadiness || overallReadiness || 81,
+    overallScore: profileScore !== null ? profileScore : (heroData?.overallReadiness || defaultOverallReadiness || 81),
     topCareers,
     skillGap: radarData,
     learningPath: mappedLearningPath

@@ -23,29 +23,69 @@ export const useChatSessions = (user) => {
   // Initialize sessions from localStorage on mount
   useEffect(() => {
     const name = user?.name?.split(' ')[0] || 'Franz';
-    const savedSessions = localStorage.getItem('neokarir_chat_sessions');
-    const savedActiveId = localStorage.getItem('neokarir_active_session_id');
-
-    if (savedSessions) {
+    const fetchSessions = async () => {
       try {
-        const parsed = JSON.parse(savedSessions);
-        if (parsed && parsed.length > 0) {
-          setSessions(parsed);
-          const activeExists = parsed.some(s => s.id === savedActiveId);
-          setActiveSessionId(activeExists ? savedActiveId : parsed[0].id);
-        } else {
+        const { aiAssistantService } = await import('../api/aiAssistantService');
+        const apiSessions = await aiAssistantService.listSessions();
+        if (apiSessions && apiSessions.length > 0) {
+          const formatted = apiSessions.map(s => ({
+            id: s.id,
+            title: s.title || 'Obrolan',
+            messages: s.messages || [],
+            createdAt: s.created_at ? new Date(s.created_at).getTime() : Date.now()
+          }));
+          setSessions(formatted);
+          setActiveSessionId(formatted[0].id);
+          localStorage.setItem('neokarir_chat_sessions', JSON.stringify(formatted));
+          localStorage.setItem('neokarir_active_session_id', formatted[0].id);
+          return;
+        }
+      } catch (err) {
+        console.warn("Failed to fetch API sessions, falling back to local.", err);
+      }
+      
+      // Local fallback
+      const savedSessions = localStorage.getItem('neokarir_chat_sessions');
+      const savedActiveId = localStorage.getItem('neokarir_active_session_id');
+
+      if (savedSessions) {
+        try {
+          const parsed = JSON.parse(savedSessions);
+          if (parsed && parsed.length > 0) {
+            setSessions(parsed);
+            const activeExists = parsed.some(s => s.id === savedActiveId);
+            setActiveSessionId(activeExists ? savedActiveId : parsed[0].id);
+          } else {
+            setupInitialDefaultSession(name);
+          }
+        } catch (e) {
           setupInitialDefaultSession(name);
         }
-      } catch (e) {
-        console.error("Error parsing chat sessions:", e);
+      } else {
         setupInitialDefaultSession(name);
       }
-    } else {
-      setupInitialDefaultSession(name);
-    }
+    };
+    
+    fetchSessions();
   }, [user]);
 
-  const setupInitialDefaultSession = (name) => {
+  const setupInitialDefaultSession = async (name) => {
+    try {
+      const { aiAssistantService } = await import('../api/aiAssistantService');
+      const newSess = await aiAssistantService.createSession({ title: 'Obrolan Baru' });
+      if (newSess) {
+        const defaultId = newSess.id;
+        const initialSession = createDefaultSessionObj(defaultId, name);
+        setSessions([initialSession]);
+        setActiveSessionId(defaultId);
+        localStorage.setItem('neokarir_chat_sessions', JSON.stringify([initialSession]));
+        localStorage.setItem('neokarir_active_session_id', defaultId);
+        return;
+      }
+    } catch (e) {
+      console.warn("Failed to create session on API", e);
+    }
+    
     const defaultId = `session-${Date.now()}`;
     const initialSession = createDefaultSessionObj(defaultId, name);
     setSessions([initialSession]);
@@ -61,9 +101,16 @@ export const useChatSessions = (user) => {
   };
 
   // Create a new empty chat session
-  const createNewSession = useCallback(() => {
+  const createNewSession = useCallback(async () => {
     const name = user?.name?.split(' ')[0] || 'Franz';
-    const newId = `session-${Date.now()}`;
+    let newId = `session-${Date.now()}`;
+    
+    try {
+      const { aiAssistantService } = await import('../api/aiAssistantService');
+      const newSess = await aiAssistantService.createSession({ title: 'Obrolan Baru' });
+      if (newSess) newId = newSess.id;
+    } catch (e) {}
+    
     const newSession = createDefaultSessionObj(newId, name);
     
     const updated = [newSession, ...sessions];
@@ -147,6 +194,33 @@ export const useChatSessions = (user) => {
     saveAllSessions(updated);
   }, [sessions]);
 
+  // Convert local/offline session ID to a real backend session UUID
+  const convertLocalSessionToBackendSession = useCallback(async (localId, title) => {
+    try {
+      const { aiAssistantService } = await import('../api/aiAssistantService');
+      const newSess = await aiAssistantService.createSession({ title: title || 'Obrolan Baru' });
+      if (newSess) {
+        const updated = sessions.map(s => {
+          if (s.id === localId) {
+            return {
+              ...s,
+              id: newSess.id,
+              title: newSess.title || s.title
+            };
+          }
+          return s;
+        });
+        saveAllSessions(updated);
+        setActiveSessionId(newSess.id);
+        localStorage.setItem('neokarir_active_session_id', newSess.id);
+        return newSess.id;
+      }
+    } catch (e) {
+      console.warn("Failed to convert local session to API session", e);
+    }
+    return localId;
+  }, [sessions]);
+
   const activeSession = sessions.find(s => s.id === activeSessionId) || null;
   const messages = activeSession ? activeSession.messages : [];
 
@@ -160,7 +234,8 @@ export const useChatSessions = (user) => {
     deleteSession,
     renameSession,
     updateSessionMessages,
-    clearSessionMessages
+    clearSessionMessages,
+    convertLocalSessionToBackendSession
   };
 };
 export default useChatSessions;

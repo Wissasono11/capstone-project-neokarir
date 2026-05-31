@@ -1,4 +1,4 @@
-import { AI_BASE_URL, USE_MOCK } from '../../../config/api';
+import api, { AI_BASE_URL, USE_MOCK } from '../../../config/api';
 import { MOCK_DOMAINS, generateMockPredictions } from '../utils/mockDataGenerator';
 
 /**
@@ -15,10 +15,8 @@ export const jobsMarketService = {
     }
 
     try {
-      const response = await fetch(`${AI_BASE_URL}/api/trend/domains`);
-      if (!response.ok) throw new Error('API server returned error');
-      const data = await response.json();
-      return data;
+      const response = await api.get('/market/trend/domains');
+      return response.data || response;
     } catch (error) {
       console.warn('Failed to fetch real domains, falling back to mock.', error);
       return {
@@ -46,19 +44,14 @@ export const jobsMarketService = {
     }
 
     try {
-      const response = await fetch(`${AI_BASE_URL}/api/trend/forecast`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          n_months: nMonths,
-          domain: domainParam,
-        }),
+      const response = await api.post('/market/trend/forecast', {
+        n_months: nMonths,
+        domain: domainParam,
       });
 
-      if (!response.ok) throw new Error('API server returned error');
-      const data = await response.json();
+      const parsedData = response.data || response;
       return {
-        ...data,
+        ...parsedData,
         isSimulated: false,
       };
     } catch (error) {

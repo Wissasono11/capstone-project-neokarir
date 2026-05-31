@@ -12,6 +12,14 @@ import { useDashboardData } from '../features/dashboard/hooks/useDashboardData';
 import avatar from '../assets/images/avatar.png';
 
 const DashboardPage = () => {
+  const getGreeting = () => {
+    const hour = new Date().getHours();
+    if (hour < 12) return 'Selamat Pagi';
+    if (hour < 15) return 'Selamat Siang';
+    if (hour < 18) return 'Selamat Sore';
+    return 'Selamat Malam';
+  };
+
   const {
     user,
     results,
@@ -31,7 +39,7 @@ const DashboardPage = () => {
         <div className="animate-fade-in">
           <div className="mb-6 md:mb-8">
             <h2 className="text-title md:text-heading font-bold text-primary-text mb-1">
-              Selamat Pagi {user?.name?.split(' ')[0] || 'Franz'}!
+              {getGreeting()} {user?.name?.split(' ')[0] || 'Franz'}!
             </h2>
             <p className="text-body-sm md:text-body font-medium text-secondary-text">
               Berikut adalah progres karir dan kesiapan industri kamu hari ini.
@@ -41,7 +49,7 @@ const DashboardPage = () => {
           {/* Stat Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-8">
             {/* Personal Card */}
-            <StatCard icon={avatar} title="Personal" iconBgColor="bg-yellow-100" iconColor="text-yellow-600">
+            <StatCard icon={user?.avatar_url || avatar} title="Personal" iconBgColor="bg-yellow-100" iconColor="text-yellow-600">
               <div>
                 <h4 className="text-body md:text-subtitle font-bold text-primary-text mb-1 truncate">{user?.name || 'Franz Hermann'}</h4>
                 <p className="text-caption md:text-body-sm font-medium text-secondary-text mb-4 truncate">{user?.role || 'Full Stack Developer'}</p>

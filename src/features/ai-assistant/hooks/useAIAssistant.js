@@ -20,7 +20,8 @@ export const useAIAssistant = () => {
     deleteSession,
     renameSession,
     updateSessionMessages,
-    clearSessionMessages
+    clearSessionMessages,
+    convertLocalSessionToBackendSession
   } = useChatSessions(user);
 
   const [isTyping, setIsTyping] = useState(false);
@@ -28,6 +29,16 @@ export const useAIAssistant = () => {
   // Send a message in the active session
   const sendMessage = useCallback(async (text) => {
     if (!text.trim() || !activeSessionId) return;
+
+    setIsTyping(true);
+
+    const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+    let targetSessionId = activeSessionId;
+    
+    // If the active session is a local offline fallback, convert it first
+    if (!uuidRegex.test(targetSessionId)) {
+      targetSessionId = await convertLocalSessionToBackendSession(activeSessionId, text);
+    }
 
     const timestamp = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
     const userMsg = {
@@ -39,11 +50,11 @@ export const useAIAssistant = () => {
 
     // 1. Add user message and request auto-rename title if applicable
     const updatedMessages = [...messages, userMsg];
-    updateSessionMessages(activeSessionId, updatedMessages, text);
+    updateSessionMessages(targetSessionId, updatedMessages, text);
     
     // 2. Fetch AI response via service
     try {
-      const response = await aiAssistantService.sendMessage(text, user, recommendations);
+      const response = await aiAssistantService.sendMessage(targetSessionId, text);
       const botMsg = {
         id: `msg-${Date.now()}-bot`,
         sender: 'bot',
@@ -53,7 +64,7 @@ export const useAIAssistant = () => {
 
       // 3. Append bot response
       const finalMessages = [...updatedMessages, botMsg];
-      updateSessionMessages(activeSessionId, finalMessages);
+      updateSessionMessages(targetSessionId, finalMessages);
     } catch (err) {
       toastError('Gagal mendapatkan respon dari AI Assistant.');
       const botMsg = {
@@ -63,11 +74,11 @@ export const useAIAssistant = () => {
         timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
       };
       const finalMessages = [...updatedMessages, botMsg];
-      updateSessionMessages(activeSessionId, finalMessages);
+      updateSessionMessages(targetSessionId, finalMessages);
     } finally {
       setIsTyping(false);
     }
-  }, [activeSessionId, messages, user, recommendations, updateSessionMessages, toastError]);
+  }, [activeSessionId, messages, updateSessionMessages, toastError, convertLocalSessionToBackendSession]);
 
   // Enhance a simple user input prompt into a rich structured prompt
   const enhancePrompt = useCallback((text) => {

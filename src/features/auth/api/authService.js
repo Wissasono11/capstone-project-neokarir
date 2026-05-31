@@ -18,7 +18,7 @@ export const authService = {
       const isNew = email === 'new@test.com';
       return {
         success: true,
-        token: 'mock_jwt_token_neokarir_123',
+        session: { access_token: 'mock_jwt_token_neokarir_123' },
         user: {
           name: 'Franz Hermann',
           email,
@@ -41,7 +41,7 @@ export const authService = {
       await new Promise((resolve) => setTimeout(resolve, 1000));
       return {
         success: true,
-        token: 'mock_jwt_token_neokarir_123',
+        session: { access_token: 'mock_jwt_token_neokarir_123' },
         user: {
           name,
           email,
@@ -55,7 +55,11 @@ export const authService = {
       };
     }
 
-    return api.post('/auth/register', { name, email, password });
+    return api.post('/auth/register', { 
+      email, 
+      password, 
+      profile: { full_name: name } 
+    });
   },
 
   forgotPassword: async (email) => {
@@ -80,5 +84,25 @@ export const authService = {
     }
 
     return api.post('/auth/reset-password', { token, password: newPassword });
+  },
+
+  me: async () => {
+    if (USE_MOCK) {
+      await new Promise((resolve) => setTimeout(resolve, 800));
+      return {
+        success: true,
+        user: {
+          name: 'Franz Hermann',
+          email: 'hello@example.com',
+          role: 'Fullstack Engineer',
+          location: 'Yogyakarta, Indonesia',
+          status: 'Open to Work',
+          experience: 'Belum ada (Fresh Graduate / Sedang belajar)',
+          education: 'S1',
+        },
+      };
+    }
+
+    return api.get('/auth/me');
   },
 };

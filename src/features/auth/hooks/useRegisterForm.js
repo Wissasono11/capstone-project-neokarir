@@ -78,15 +78,16 @@ export const useRegisterForm = () => {
     try {
       const response = await authService.register(form.fullName, form.email, form.password);
       
-      register(response.user);
+      const responseData = response.data || response;
+      const user = responseData.user;
+      const token = responseData.session?.access_token;
       
-      // Store token
-      localStorage.setItem('neokarir_auth_token', response.token);
+      register(user, token);
       
       success('Registrasi berhasil! Silakan lengkapi profil onboarding Anda.');
       navigate('/onboarding');
     } catch (err) {
-      error(err.message || 'Registrasi gagal. Silakan coba kembali.');
+      error(err.response?.data?.message || err.message || 'Registrasi gagal. Silakan coba kembali.');
     } finally {
       setIsSubmitting(false);
     }

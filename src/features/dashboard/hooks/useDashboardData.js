@@ -5,29 +5,27 @@ import { useCareerRecommendations } from '../../career-recommendation/hooks/useC
 import { useDashboardRecommendations } from './useDashboardRecommendations';
 import { useDashboardCompatibility } from './useDashboardCompatibility';
 import { useDashboardTips } from './useDashboardTips';
-import { useDashboardRadarData } from './useDashboardRadarData';
+import { useSkillGap } from '../../skill-gap-analysis/hooks/useSkillGap';
 
 export const useDashboardData = () => {
   const { user } = useAuth();
   const { results } = useAIProfiling(); 
-  const { overallReadiness } = useCareerRecommendations();
+  const { overallReadiness, isLoading: careerLoading } = useCareerRecommendations();
 
   const topRecommendations = useDashboardRecommendations();
-  const { compatibilityScore, matchedJob } = useDashboardCompatibility();
+  const { compatibilityScore: defaultCompatibility, matchedJob } = useDashboardCompatibility();
   const dynamicTips = useDashboardTips(matchedJob);
-  const radarData = useDashboardRadarData(matchedJob);
+  
+  const { radarData, heroData, isLoading: skillGapLoading } = useSkillGap();
+  
+  const compatibilityScore = heroData?.overallReadiness || defaultCompatibility;
 
-  // Simulated loading state — will be replaced with real API loading when backend is ready
-  const [isLoading, setIsLoading] = useState(true);
-  useEffect(() => {
-    const timer = setTimeout(() => setIsLoading(false), 600);
-    return () => clearTimeout(timer);
-  }, []);
+  const isLoading = careerLoading || skillGapLoading;
 
   return {
     user,
     results,
-    overallReadiness,
+    overallReadiness: heroData?.overallReadiness || overallReadiness,
     topRecommendations,
     compatibilityScore,
     dynamicTips,

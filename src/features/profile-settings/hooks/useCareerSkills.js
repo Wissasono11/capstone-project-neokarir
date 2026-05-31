@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../../contexts/AuthContext';
 import { profileService } from '../api/profileService';
@@ -10,32 +10,48 @@ export const useCareerSkills = (initialUser) => {
   const [isReprocessing, setIsReprocessing] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [careerInfo, setCareerInfo] = useState({
-    currentRole: initialUser?.role || 'Full Stack Developer',
-    targetRole: 'Senior Full Stack Developer',
-    experienceLevel: initialUser?.experience || 'Fresh Graduate',
-    skills: ['React.js', 'Node.js', 'TypeScript', 'Tailwind CSS', 'PostgreSQL', 'Git', 'REST API'],
-    education: [
-      {
-        id: 1,
-        institution: 'Universitas Gadjah Mada',
-        degree: 'S1 Informatika',
-        year: '2022 - 2026',
-      },
-    ],
+    currentRole: initialUser?.current_role || initialUser?.role || '',
+    targetRole: initialUser?.target_role || initialUser?.profile_data?.target_role || '',
+    experienceLevel: initialUser?.experience || initialUser?.profile_data?.user_experience || 'Fresh Graduate',
+    skills: [],
+    education: [],
   });
 
-  const updateCareerInfo = useCallback(async (field, value) => {
-    setCareerInfo(prev => ({ ...prev, [field]: value }));
-
-    // Sync update to global context & mock api call
-    if (field === 'currentRole') {
-      updateProfile({ role: value });
-      profileService.updateCareerInfo({ currentRole: value });
-    } else if (field === 'experienceLevel') {
-      updateProfile({ experience: value });
-      profileService.updateCareerInfo({ experienceLevel: value });
+  useEffect(() => {
+    if (initialUser) {
+      const dbSkills = initialUser.profile_data?.owned_skills || 
+        (initialUser.skills_summary ? initialUser.skills_summary.split(',').map(s => s.trim()).filter(Boolean) : []);
+      
+      setCareerInfo(prev => ({
+        ...prev,
+        currentRole: initialUser.current_role || initialUser.role || '',
+        targetRole: initialUser.target_role || initialUser.profile_data?.target_role || '',
+        experienceLevel: initialUser.experience || initialUser.profile_data?.user_experience || 'Fresh Graduate',
+        skills: dbSkills,
+        education: initialUser.profile_data?.education || prev.education,
+      }));
     }
-  }, [updateProfile]);
+  }, [initialUser]);
+
+  const updateCareerInfo = useCallback((field, value) => {
+    setCareerInfo(prev => ({ ...prev, [field]: value }));
+  }, []);
+
+  const saveCareerInfo = useCallback(async (currentCareerInfo) => {
+    const info = currentCareerInfo || careerInfo;
+    await profileService.updateCareerInfo({
+      currentRole: info.currentRole,
+      targetRole: info.targetRole,
+      experienceLevel: info.experienceLevel,
+      skills: info.skills,
+    });
+    updateProfile({
+      role: info.currentRole,
+      current_role: info.currentRole,
+      target_role: info.targetRole,
+      experience: info.experienceLevel,
+    });
+  }, [careerInfo, updateProfile]);
 
   const addSkill = useCallback(async (skill) => {
     if (skill && !careerInfo.skills.includes(skill)) {
@@ -44,7 +60,6 @@ export const useCareerSkills = (initialUser) => {
         ...prev,
         skills: updatedSkills,
       }));
-      // Persist to mock backend
       profileService.updateCareerInfo({ skills: updatedSkills });
     }
   }, [careerInfo.skills]);
@@ -55,7 +70,6 @@ export const useCareerSkills = (initialUser) => {
       ...prev,
       skills: updatedSkills,
     }));
-    // Persist to mock backend
     profileService.updateCareerInfo({ skills: updatedSkills });
   }, [careerInfo.skills]);
 
@@ -74,6 +88,7 @@ export const useCareerSkills = (initialUser) => {
   return {
     careerInfo,
     updateCareerInfo,
+    saveCareerInfo,
     addSkill,
     removeSkill,
     newSkill,

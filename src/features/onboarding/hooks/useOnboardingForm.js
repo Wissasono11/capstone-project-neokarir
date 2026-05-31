@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import { replace, useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../../../contexts/AuthContext';
+import { cvAnalyzerService } from '../../cv-analyzer/api/cvAnalyzerService';
+import { profileService } from '../../profile-settings/api/profileService';
+import { useToast } from '../../../contexts/ToastContext';
 
 export const useOnboardingForm = () => {
   const [currentStep, setCurrentStep] = useState(1);
@@ -29,21 +32,43 @@ export const useOnboardingForm = () => {
     experience: '< 1 Tahun (Termasuk Magang/Internship)',
     education: 'S1'
   });
-
-  const { completeOnboarding, updateProfile } = useAuth();
+  const { user, completeOnboarding, refreshUserProfile } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
+  const { error, success } = useToast();
   const hasCompletedOnce = localStorage.getItem('neokarir_has_completed_onboarding_once') === 'true';
   const isReprocessingFlow = hasCompletedOnce || location.state?.reprocess === true;
 
   const nextStep = async () => {
     if (currentStep === 2 && inputMethod === 'upload') {
+      if (!cvFile) {
+        error("Silakan unggah CV terlebih dahulu");
+        return;
+      }
       setIsAnalyzing(true);
-      // Simulate AI analysis delay
-      await new Promise(resolve => setTimeout(resolve, 2500));
-      setIsAnalyzing(false);
+      try {
+        const response = await cvAnalyzerService.uploadAndAnalyze(cvFile, () => {});
+        const data = response.data || response.results || response || {};
+        const profileData = data.profile || data.profile_data || data || {};
+        
+        setCvData({
+          fullName: profileData.user_name || profileData.full_name || data.full_name || '',
+          targetDomain: profileData.target_domain || data.target_domain || '',
+          targetRole: profileData.target_role || data.target_role || '',
+          skills: profileData.owned_skills || [],
+          techStack: profileData.owned_skills || [],
+          experience: profileData.user_experience || '',
+          education: profileData.user_education || ''
+        });
+        setCurrentStep(prev => prev + 1);
+      } catch (err) {
+        error(err.response?.data?.message || err.message || "Gagal memproses CV");
+      } finally {
+        setIsAnalyzing(false);
+      }
+    } else {
+      if (currentStep < 3) setCurrentStep(prev => prev + 1);
     }
-    if (currentStep < 3) setCurrentStep(prev => prev + 1);
   };
 
   const prevStep = () => {
@@ -74,36 +99,75 @@ export const useOnboardingForm = () => {
 
   const submitOnboarding = async () => {
     setIsSubmitting(true);
+    try {
+      // Combine manual data tech stack, cv skills and additional skills
+      const combinedSkills = Array.from(new Set([
+        ...manualData.techStack, 
+        ...(inputMethod === 'upload' ? (cvData.techStack || cvData.skills) : []),
+        ...additionalSkills
+      ])).filter(Boolean);
+      
+      const domain = inputMethod === 'upload' ? cvData.targetDomain : manualData.domain;
+      const targetRole = inputMethod === 'upload' ? cvData.targetRole : (manualData.role || (careerGoal === 'first-job' ? 'Junior Engineer' : 'Engineer'));
+      const experience = inputMethod === 'upload' ? (cvData.experience || 'Belum ada') : (manualData.experience || 'Belum ada');
+      const education = inputMethod === 'upload' ? (cvData.education || 'S1') : (manualData.education || 'S1');
+      const fullName = inputMethod === 'upload'
+        ? (cvData.fullName || user?.name || user?.user_metadata?.full_name || '')
+        : (user?.name || user?.user_metadata?.full_name || '');
+      
+      // current_role: for new users, use target_role as starting point
+      const currentRole = targetRole;
 
-    // Mock processing delay
-    await new Promise(resolve => setTimeout(resolve, 800));
-
-    // Combine manual data tech stack, cv skills and additional skills
-    const combinedSkills = Array.from(new Set([
-      ...manualData.techStack,
-      ...(inputMethod === 'upload' ? (cvData.techStack || cvData.skills) : []),
-      ...additionalSkills
-    ]));
-
-    // Profile data to save
-    const profileData = {
-      careerGoal,
-      inputMethod,
-      fullName: inputMethod === 'upload' ? cvData.fullName : 'User',
-      skills: combinedSkills,
-      domain: inputMethod === 'upload' ? cvData.targetDomain : manualData.domain,
-      role: inputMethod === 'upload' ? cvData.targetRole : (manualData.role || (careerGoal === 'first-job' ? 'Junior Engineer' : 'Engineer')),
-      experience: inputMethod === 'upload' ? (cvData.experience || 'Belum ada (Fresh Graduate / Sedang belajar)') : (manualData.experience || 'Belum ada (Fresh Graduate / Sedang belajar)'),
-      education: inputMethod === 'upload' ? (cvData.education || 'S1') : (manualData.education || 'S1'),
-      status: 'Open to Work'
-    };
-
-    if (isReprocessingFlow) {
-      completeOnboarding(profileData);
-      navigate('/dashboard', { replace: true });
-    } else {
-      updateProfile(profileData);
-      navigate('/ai-career-profiling', { replace: true });
+      // Profile data to save
+      const profileData = {
+        full_name: fullName || undefined,
+        current_role: currentRole,
+        target_role: targetRole,
+        target_domain: domain,
+        education_level: education,
+        skills_summary: combinedSkills.join(', '),
+        profile_data: {
+          career_goal: careerGoal,
+          input_method: inputMethod,
+          owned_skills: combinedSkills,
+          user_experience: experience,
+          user_education: education,
+          target_domain: domain,
+          target_role: targetRole,
+          status: 'Open to Work'
+        }
+      };
+      
+      // Update backend with the full profile
+      await profileService.updateProfile(profileData);
+      
+      // Update frontend state
+      completeOnboarding({
+        name: fullName || 'User',
+        role: currentRole,
+        current_role: currentRole,
+        target_role: targetRole,
+        target_domain: domain,
+        experience,
+        education,
+        skills_summary: combinedSkills.join(', '),
+        profile_data: profileData.profile_data
+      });
+      
+      // Sync auth user context with DB profile
+      await refreshUserProfile();
+      
+      success("Profil berhasil disimpan!");
+      
+      if (isReprocessingFlow) {
+        navigate('/dashboard', { replace: true });
+      } else {
+        navigate('/ai-career-profiling', { replace: true });
+      }
+    } catch (err) {
+      error(err.response?.data?.message || err.message || "Gagal menyimpan profil");
+    } finally {
+      setIsSubmitting(false);
     }
   };
 

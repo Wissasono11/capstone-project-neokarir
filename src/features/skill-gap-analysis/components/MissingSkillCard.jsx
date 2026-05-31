@@ -7,6 +7,7 @@ const MissingSkillCard = ({ skillData }) => {
   const {
     skill,
     gap,
+    category,
     priority,
     description,
     alasan,
@@ -33,9 +34,16 @@ const MissingSkillCard = ({ skillData }) => {
             }`}>
               <Sparkles className="w-4 h-4" />
             </div>
-            <h4 className={`text-body font-bold transition-colors ${
-              isCompleted ? 'text-slate-400 line-through' : 'text-slate-800'
-            }`}>{skill}</h4>
+            <div>
+              <h4 className={`text-body font-bold transition-colors ${
+                isCompleted ? 'text-slate-400 line-through' : 'text-slate-800'
+              }`}>{skill}</h4>
+              {category && (
+                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block mt-0.5">
+                  Kategori: {category}
+                </span>
+              )}
+            </div>
           </div>
           
           {isCompleted ? (

@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { steps } from '../data/cvAnalyzerConstants';
 import { cvAnalyzerService } from '../api/cvAnalyzerService';
 import { useToast } from '../../../contexts/ToastContext';
@@ -10,6 +10,31 @@ export const useCVAnalyzer = () => {
   const [error, setError] = useState(null);
   const [results, setResults] = useState(null);
   const { success: toastSuccess, error: toastError } = useToast();
+
+  // Fetch latest CV analysis on mount
+  useEffect(() => {
+    const loadLatest = async () => {
+      try {
+        setStatus('processing');
+        setCurrentStep(4);
+        const response = await cvAnalyzerService.getLatestAnalysis();
+        
+        if (response && (response.results || (response.cv && response.cv.cv_data && response.cv.cv_data.atsScore))) {
+          const resultsData = response.results || response.cv.cv_data;
+          setResults(resultsData);
+          if (response.cv && response.cv.file_name) {
+            setFile({ name: response.cv.file_name });
+          }
+          setStatus('done');
+        } else {
+          setStatus('idle');
+        }
+      } catch (err) {
+        setStatus('idle');
+      }
+    };
+    loadLatest();
+  }, []);
 
   const uploadCV = useCallback(async (selectedFile) => {
     if (!selectedFile) return;
@@ -40,7 +65,7 @@ export const useCVAnalyzer = () => {
     setCurrentStep(0);
 
     try {
-      const response = await cvAnalyzerService.uploadAndAnalyze(selectedFile, (progress, statusMessage) => {
+      const response = await cvAnalyzerService.uploadAndSmartAnalyze(selectedFile, (progress, statusMessage) => {
         // Map progress to steps
         if (progress <= 20) {
           setStatus('uploading');

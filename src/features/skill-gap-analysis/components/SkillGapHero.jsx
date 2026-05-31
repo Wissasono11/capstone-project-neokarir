@@ -116,7 +116,7 @@ const SkillGapHero = ({ data }) => {
 
           {/* Education Match */}
           <div className="flex items-start gap-3 p-3 bg-slate-50/50 rounded-xl border border-slate-100/50">
-            <div className={`p-2 rounded-lg ${educationMatch.hasGap ? 'bg-amber-50 text-amber-600' : 'bg-emerald-50 text-emerald-600'}`}>
+            <div className={`p-2 rounded-lg ${educationMatch.hasGap && educationMatch.required !== 'Tidak Ditentukan' && educationMatch.required !== 'N/A' ? 'bg-amber-50 text-amber-600' : 'bg-emerald-50 text-emerald-600'}`}>
               <GraduationCap className="w-5 h-5" />
             </div>
             <div>
@@ -124,17 +124,17 @@ const SkillGapHero = ({ data }) => {
               <p className="text-body font-bold text-slate-700 mt-0.5">
                 {educationMatch.required}
               </p>
-              <span className={`inline-flex items-center gap-1 text-caption font-bold mt-1 ${educationMatch.hasGap ? 'text-amber-600' : 'text-emerald-600'
+              <span className={`inline-flex items-center gap-1 text-caption font-bold mt-1 ${educationMatch.hasGap && educationMatch.required !== 'Tidak Ditentukan' && educationMatch.required !== 'N/A' ? 'text-amber-600' : 'text-emerald-600'
                 }`}>
-                {educationMatch.hasGap ? <AlertTriangle className="w-3.5 h-3.5" /> : <CheckCircle2 className="w-3.5 h-3.5" />}
-                {educationMatch.hasGap ? `Gap pendidikan: Kamu ${educationMatch.current}` : 'Sesuai dengan kualifikasi'}
+                {educationMatch.hasGap && educationMatch.required !== 'Tidak Ditentukan' && educationMatch.required !== 'N/A' ? <AlertTriangle className="w-3.5 h-3.5" /> : <CheckCircle2 className="w-3.5 h-3.5" />}
+                {educationMatch.hasGap && educationMatch.required !== 'Tidak Ditentukan' && educationMatch.required !== 'N/A' ? `Gap pendidikan: Kamu ${educationMatch.current}` : 'Sesuai dengan kualifikasi'}
               </span>
             </div>
           </div>
 
           {/* Experience Match */}
           <div className="flex items-start gap-3 p-3 bg-slate-50/50 rounded-xl border border-slate-100/50 sm:col-span-2">
-            <div className={`p-2 rounded-lg ${experienceGap.hasGap ? 'bg-amber-50 text-amber-600' : 'bg-emerald-50 text-emerald-600'}`}>
+            <div className={`p-2 rounded-lg ${experienceGap.hasGap && experienceGap.required !== 'Tidak Ditentukan' && experienceGap.required !== 'N/A' ? 'bg-amber-50 text-amber-600' : 'bg-emerald-50 text-emerald-600'}`}>
               <Briefcase className="w-5 h-5" />
             </div>
             <div>
@@ -142,10 +142,10 @@ const SkillGapHero = ({ data }) => {
               <p className="text-body font-bold text-slate-700 mt-0.5">
                 Dibutuhkan: {experienceGap.required}
               </p>
-              <span className={`inline-flex items-center gap-1 text-caption font-bold mt-1 ${experienceGap.hasGap ? 'text-amber-600' : 'text-emerald-600'
+              <span className={`inline-flex items-center gap-1 text-caption font-bold mt-1 ${experienceGap.hasGap && experienceGap.required !== 'Tidak Ditentukan' && experienceGap.required !== 'N/A' ? 'text-amber-600' : 'text-emerald-600'
                 }`}>
-                {experienceGap.hasGap ? <AlertTriangle className="w-3.5 h-3.5" /> : <CheckCircle2 className="w-3.5 h-3.5" />}
-                {experienceGap.hasGap
+                {experienceGap.hasGap && experienceGap.required !== 'Tidak Ditentukan' && experienceGap.required !== 'N/A' ? <AlertTriangle className="w-3.5 h-3.5" /> : <CheckCircle2 className="w-3.5 h-3.5" />}
+                {experienceGap.hasGap && experienceGap.required !== 'Tidak Ditentukan' && experienceGap.required !== 'N/A'
                   ? `Ada gap: Pengalaman kamu saat ini adalah ${experienceGap.current}`
                   : 'Memenuhi kualifikasi pengalaman kerja'
                 }

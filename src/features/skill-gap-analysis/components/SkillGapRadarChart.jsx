@@ -1,35 +1,24 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import { 
   Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer, Legend, Tooltip
 } from 'recharts';
 
-const RadarChartComp = ({ data, overallScore, showViewDetails = true }) => {
-  const navigate = useNavigate();
-
+const SkillGapRadarChart = ({ data, overallScore }) => {
   return (
     <div className="bg-white rounded-3xl border border-border p-4 md:p-8 shadow-sm h-full flex flex-col">
       <div className="flex justify-between items-center mb-1">
-        <h3 className="text-body md:text-subtitle font-bold text-primary-text">Skill Gap Analysis</h3>
-        {showViewDetails && (
-          <button 
-            onClick={() => navigate('/dashboard/skill-gap')}
-            className="text-caption md:text-body-sm font-bold text-primary hover:text-primary/80 transition-colors cursor-pointer"
-          >
-            Lihat Detail
-          </button>
-        )}
+        <h3 className="text-body md:text-subtitle font-bold text-slate-800">Perbandingan Skill Anda vs. Kebutuhan Industri</h3>
       </div>
 
-      <div className="flex-1 w-full min-h-[180px] relative mt-2 md:mt-4">
+      <div className="flex-1 w-full min-h-0 relative mt-2 md:mt-4">
         <ResponsiveContainer width="100%" height="100%">
-          <RadarChart cx="50%" cy="50%" outerRadius="65%" data={data}>
+          <RadarChart cx="50%" cy="50%" outerRadius="70%" data={data}>
             <PolarGrid stroke="#E2E8F0" />
             <PolarAngleAxis 
               dataKey="subject" 
-              tick={{ fill: '#64748B', fontSize: 8, fontWeight: 500 }} 
+              tick={{ fill: '#475569', fontSize: 10, fontWeight: 600 }} 
             />
-            <PolarRadiusAxis angle={30} domain={[0, 100]} tick={false} axisLine={false} />
+            <PolarRadiusAxis angle={30} domain={[0, 100]} stroke="#CBD5E1" tick={{ fontSize: 9 }} />
             <Tooltip 
               contentStyle={{ borderRadius: '12px', border: '1px solid #E2E8F0', boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)' }}
               formatter={(value, name) => [value + '%', name === 'A' ? 'Skill Anda' : 'Kebutuhan Target']}
@@ -37,9 +26,9 @@ const RadarChartComp = ({ data, overallScore, showViewDetails = true }) => {
             <Radar 
               name="Skill Anda" 
               dataKey="A" 
-              stroke="#4F46E5" 
+              stroke="#6366F1" 
               strokeWidth={2}
-              fill="#4F46E5" 
+              fill="#6366F1" 
               fillOpacity={0.15} 
               isAnimationActive={true}
             />
@@ -56,18 +45,27 @@ const RadarChartComp = ({ data, overallScore, showViewDetails = true }) => {
             <Legend 
               verticalAlign="bottom" 
               height={36} 
-              wrapperStyle={{ fontSize: '10px', fontWeight: 600, paddingTop: '10px' }} 
+              wrapperStyle={{ fontSize: '11px', fontWeight: 600, paddingTop: '10px' }} 
             />
           </RadarChart>
         </ResponsiveContainer>
       </div>
 
-      <div className="mt-1 text-center pb-1">
-        <div className="text-body-lg md:text-title font-bold text-primary-text">{overallScore}%</div>
-        <p className="text-caption font-medium text-secondary-text mt-0.5">Keselurahan Match Score</p>
+      <div className="mt-4 text-center border-t border-slate-100 pt-4 flex justify-around items-center">
+        <div>
+          <div className="text-xl md:text-2xl font-black text-indigo-600">{overallScore}%</div>
+          <p className="text-caption font-bold text-slate-400 uppercase tracking-wide mt-0.5">Match Score</p>
+        </div>
+        <div className="h-8 w-px bg-slate-200" />
+        <div>
+          <div className="text-caption md:text-body-sm font-semibold text-slate-600">
+            {overallScore >= 90 ? "Sangat Siap" : overallScore >= 70 ? "Hampir Siap" : "Perlu Belajar"}
+          </div>
+          <p className="text-caption font-bold text-slate-400 uppercase tracking-wide mt-0.5">Status Kesiapan</p>
+        </div>
       </div>
     </div>
   );
 };
 
-export default RadarChartComp;
+export default SkillGapRadarChart;

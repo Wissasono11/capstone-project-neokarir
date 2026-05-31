@@ -2,10 +2,11 @@ import { useState, useEffect } from 'react';
 import { useAuth } from '../../../contexts/AuthContext';
 import { MASTER_JOBS } from '../data/recommendationData';
 import { useCompletedCourses } from './useCompletedCourses';
-import { useCareerMatchCalculator } from './useCareerMatchCalculator';
 
 export const useCareerRecommendations = () => {
   const { user } = useAuth();
+  
+  const [recommendations, setRecommendations] = useState([]);
   
   // 1. Manage checklist courses via custom hook
   const { completedCourses, toggleCourse } = useCompletedCourses(user?.email);
@@ -16,16 +17,25 @@ export const useCareerRecommendations = () => {
   const [activeJobId, setActiveJobId] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
 
-  // Loading spinner delay
+  // Fetch recommendations from API
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 600);
-    return () => clearTimeout(timer);
-  }, []);
-
-  // 2. Manage match calculation logic via custom hook
-  const { recommendations } = useCareerMatchCalculator(user, completedCourses);
+    const fetchRecs = async () => {
+      setIsLoading(true);
+      try {
+        const { careerService } = await import('../api/careerService');
+        const data = await careerService.getRecommendations();
+        setRecommendations(data || []);
+      } catch (error) {
+        console.error("Failed to load recommendations", error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+    
+    if (user) {
+      fetchRecs();
+    }
+  }, [user]);
 
   // 3. Filter recommendations based on search query, domain, and match filter
   const filteredRecommendations = recommendations.filter(rec => {
@@ -33,7 +43,7 @@ export const useCareerRecommendations = () => {
     const matchesSearch = searchQuery === '' || 
       rec.job_title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       rec.company.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      rec.required_skills.some(skill => skill.toLowerCase().includes(searchQuery.toLowerCase()));
+      (Array.isArray(rec.required_skills) && rec.required_skills.some(skill => skill.toLowerCase().includes(searchQuery.toLowerCase())));
 
     // Domain filter
     const matchesDomain = selectedDomain === 'All' || rec.job_domain === selectedDomain;
@@ -58,7 +68,7 @@ export const useCareerRecommendations = () => {
   const activeJob = recommendations.find(rec => rec.job_id === activeJobId) || null;
 
   // Domain categories list for filters
-  const domains = ['All', ...new Set(MASTER_JOBS.map(job => job.job_domain))];
+  const domains = ['All', ...new Set(recommendations.map(job => job.job_domain).filter(Boolean))];
 
   // Calculate overall readiness (average of top 3 recommended match scores)
   const topThreeScores = sortedRecommendations.slice(0, 3).map(r => r.matchScore);

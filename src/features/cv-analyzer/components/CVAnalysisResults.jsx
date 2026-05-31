@@ -3,6 +3,7 @@ import { RefreshCcw, Download } from 'lucide-react';
 import CVScoreOverview from './CVScoreOverview';
 import CVStrengthsWeaknesses from './CVStrengthsWeaknesses';
 import CVImprovementTips from './CVImprovementTips';
+import CVExtractedEntities from './CVExtractedEntities';
 import Button from '../../../components/ui/Button';
 
 const CVAnalysisResults = ({ results, onReset }) => {
@@ -42,6 +43,9 @@ const CVAnalysisResults = ({ results, onReset }) => {
 
       {/* Actionable improvement suggestions */}
       <CVImprovementTips tips={results.improvementTips} />
+
+      {/* Extracted NER Entities */}
+      <CVExtractedEntities entities={results.entities} />
 
       {/* Footer controls */}
       <div className="flex items-center justify-center gap-4 pt-6 pb-12 border-t border-border/60">

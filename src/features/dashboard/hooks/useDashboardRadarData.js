@@ -3,8 +3,11 @@ import { useCareerRecommendations } from '../../career-recommendation/hooks/useC
 export const useDashboardRadarData = (matchedJob) => {
   if (!matchedJob) return [];
 
-  return matchedJob.required_skills.map(skill => {
-    const isMatched = matchedJob.matchedSkills.includes(skill);
+  const requiredSkills = matchedJob.required_skills || [];
+  const matchedSkills = matchedJob.matched_skills || matchedJob.matchedSkills || [];
+
+  return requiredSkills.map(skill => {
+    const isMatched = matchedSkills.includes(skill);
     return {
       subject: skill,
       A: isMatched ? 90 : 50,

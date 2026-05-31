@@ -46,6 +46,8 @@ const ProfileSettingsPage = () => {
     saveSuccess,
     handleSave,
     user,
+    handleAvatarUpload,
+    isUploadingAvatar,
   } = useProfileSettings();
 
   const breadcrumbItems = [
@@ -78,6 +80,9 @@ const ProfileSettingsPage = () => {
             isModalOpen={isModalOpen}
             openModal={openModal}
             closeModal={closeModal}
+            onSave={handleSave}
+            isSaving={isSaving}
+            saveSuccess={saveSuccess}
           />
         );
       case 'security':
@@ -130,6 +135,8 @@ const ProfileSettingsPage = () => {
             <ProfileOverviewCard
               user={user}
               onEditProfile={() => setActiveTab('personal')}
+              onAvatarUpload={handleAvatarUpload}
+              isUploadingAvatar={isUploadingAvatar}
             />
           </div>
 

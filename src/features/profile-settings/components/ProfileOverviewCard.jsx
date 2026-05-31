@@ -4,29 +4,36 @@ import Card from '../../../components/ui/Card';
 import Button from '../../../components/ui/Button';
 import avatar from '../../../assets/images/avatar.png';
 
-const ProfileOverviewCard = ({ user, onEditProfile }) => {
+const ProfileOverviewCard = ({ user, onEditProfile, onAvatarUpload, isUploadingAvatar }) => {
   const fileInputRef = useRef(null);
 
   const handleAvatarClick = () => {
+    if (isUploadingAvatar) return;
     fileInputRef.current?.click();
   };
 
   const handleFileChange = (e) => {
     const file = e.target.files?.[0];
-    if (file) {
-      // TODO: Integrate with backend upload API
-      console.log('File selected:', file.name);
+    if (file && onAvatarUpload) {
+      onAvatarUpload(file);
     }
   };
+
+  const avatarSrc = user?.avatar_url || avatar;
 
   return (
     <Card className="!p-6 md:!p-8">
       <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
         {/* Avatar dengan camera overlay */}
         <div className="relative group shrink-0">
-          <div className="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden bg-bg-secondary border-4 border-white shadow-md">
+          <div className="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden bg-bg-secondary border-4 border-white shadow-md relative">
+            {isUploadingAvatar && (
+              <div className="absolute inset-0 bg-black/50 flex items-center justify-center z-10">
+                <span className="w-5 h-5 border-2 border-t-transparent border-white rounded-full animate-spin" />
+              </div>
+            )}
             <img
-              src={avatar}
+              src={avatarSrc}
               alt={user?.name || 'User Avatar'}
               className="w-full h-full object-cover"
               loading="lazy"
@@ -35,13 +42,16 @@ const ProfileOverviewCard = ({ user, onEditProfile }) => {
           {/* Camera overlay untuk upload foto */}
           <button
             onClick={handleAvatarClick}
-            className="absolute inset-0 rounded-full bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center cursor-pointer"
+            disabled={isUploadingAvatar}
+            className="absolute inset-0 rounded-full bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center cursor-pointer disabled:cursor-not-allowed"
             aria-label="Upload foto profil"
           >
-            <Camera
-              size={20}
-              className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-            />
+            {!isUploadingAvatar && (
+              <Camera
+                size={20}
+                className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              />
+            )}
           </button>
           <input
             ref={fileInputRef}

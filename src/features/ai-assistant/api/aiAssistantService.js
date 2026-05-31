@@ -6,12 +6,28 @@ import { getSimulatedResponse } from '../data/knowledgeBase';
  * Handles sending messages to the AI assistant backend, with RAG simulation support.
  */
 export const aiAssistantService = {
-  sendMessage: async (text, user, recommendations) => {
+  listSessions: async () => {
+    if (USE_MOCK) {
+      return [];
+    }
+    const response = await api.get('/chat');
+    return response.data?.chats || [];
+  },
+
+  createSession: async (payload) => {
+    if (USE_MOCK) {
+      return { id: `session-${Date.now()}`, title: 'Obrolan Baru', messages: [] };
+    }
+    const response = await api.post('/chat', payload);
+    return response.data?.chat || null;
+  },
+
+  sendMessage: async (chatId, text) => {
     if (USE_MOCK) {
       // Simulate network / AI generation latency
       await new Promise((resolve) => setTimeout(resolve, 800 + Math.random() * 500));
       
-      const responseText = getSimulatedResponse(text, user, recommendations);
+      const responseText = getSimulatedResponse(text, {}, []);
       return {
         success: true,
         text: responseText,
@@ -19,17 +35,20 @@ export const aiAssistantService = {
     }
 
     // Call actual backend chatbot endpoint
-    // Assuming backend returns { text: "..." }
-    const response = await api.post('/ai/chat', {
+    const response = await api.post(`/chat/${chatId}/messages`, {
       message: text,
-      user_context: {
-        role: user?.role,
-        skills: user?.skills,
-        experience: user?.experience,
-      },
-      recommendations,
     });
     
-    return response;
+    // The backend returns updated chat in response.data.chat.
+    // The last message in chat.messages is the bot response.
+    const updatedChat = response.data?.chat;
+    const messages = updatedChat?.messages || [];
+    const botMsg = messages.length > 0 ? messages[messages.length - 1] : { text: "No response" };
+    
+    return {
+      success: true,
+      text: botMsg.text,
+      chat: updatedChat
+    };
   },
 };

@@ -48,20 +48,36 @@ export const useLoginForm = () => {
     try {
       const response = await authService.login(form.email, form.password);
       
-      login(response.user, response.isNew);
+      const responseData = response.data || response;
+      const user = responseData.user;
+      const token = responseData.session?.access_token;
       
-      // Store token
-      localStorage.setItem('neokarir_auth_token', response.token);
+      // Determine if user has completed onboarding by checking profile
+      let isNew = true;
+      try {
+        const { default: api } = await import('../../../config/api');
+        const profileRes = await api.get('/profile/me', {
+          headers: { Authorization: `Bearer ${token}` }
+        });
+        const profile = profileRes.data?.profile;
+        if (profile && profile.target_role) {
+          isNew = false;
+        }
+      } catch (e) {
+        console.warn("Could not fetch profile during login, assuming new user", e);
+      }
       
-      success(`Selamat datang kembali, ${response.user.name}!`);
+      await login(user, token, isNew);
       
-      if (response.isNew) {
+      success(`Selamat datang kembali, ${user.user_metadata?.full_name || user.name || 'User'}!`);
+      
+      if (isNew) {
         navigate('/onboarding');
       } else {
         navigate('/dashboard');
       }
     } catch (err) {
-      error(err.message || 'Gagal masuk. Silakan periksa kembali email dan password Anda.');
+      error(err.response?.data?.message || err.message || 'Gagal masuk. Silakan periksa kembali email dan password Anda.');
     } finally {
       setIsSubmitting(false);
     }

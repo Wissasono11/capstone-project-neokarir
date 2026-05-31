@@ -17,7 +17,10 @@ const CareerSkillsTab = ({
   handleReprocess,
   isModalOpen,
   openModal,
-  closeModal
+  closeModal,
+  onSave,
+  isSaving,
+  saveSuccess
 }) => {
   const handleAddSkill = () => {
     if (newSkill.trim()) {
@@ -95,6 +98,27 @@ const CareerSkillsTab = ({
           </div>
         </div>
       </Card>
+
+      {/* Save career info button */}
+      <div className="flex justify-end">
+        <Button
+          variant="primary"
+          onClick={onSave}
+          disabled={isSaving}
+          id="save-career-btn"
+        >
+          {isSaving ? (
+            <>
+              <Loader2 size={16} className="animate-spin mr-2" />
+              Menyimpan...
+            </>
+          ) : saveSuccess ? (
+            '✓ Tersimpan'
+          ) : (
+            'Simpan Informasi Karir'
+          )}
+        </Button>
+      </div>
 
       {/* Skills Section */}
       <Card className="!p-6 md:!p-8">
