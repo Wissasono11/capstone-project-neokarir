@@ -1,0 +1,6861 @@
+Data	B-ROLE
+Scientist	I-ROLE
+di	O
+Tokopedia	B-COMP
+menggunakan	O
+Python	B-SKILL
+dan	O
+Machine	B-SKILL
+Learning	I-SKILL
+
+Data	B-ROLE
+Scientist	I-ROLE
+•	O
+Tokopedia	B-COMP
+•	O
+Python	B-SKILL
+•	O
+Machine	B-SKILL
+Learning	I-SKILL
+
+Backend	B-ROLE
+Developer	I-ROLE
+di	O
+Gojek	B-COMP
+menguasai	O
+Node.js	B-SKILL
+dan	O
+REST	B-SKILL
+API	I-SKILL
+
+Backend	B-ROLE
+Developer	I-ROLE
+•	O
+Gojek	B-COMP
+•	O
+Node.js	B-SKILL
+•	O
+REST	B-SKILL
+API	I-SKILL
+
+Frontend	B-ROLE
+Developer	I-ROLE
+lulusan	O
+Universitas	B-EDU
+Indonesia	I-EDU
+menggunakan	O
+React	B-SKILL
+JS	I-SKILL
+
+Frontend	B-ROLE
+Developer	I-ROLE
+•	O
+Universitas	B-EDU
+Indonesia	I-EDU
+•	O
+React	B-SKILL
+JS	I-SKILL
+
+Cloud	B-ROLE
+Engineer	I-ROLE
+di	O
+Traveloka	B-COMP
+mengelola	O
+Amazon	B-SKILL
+Web	I-SKILL
+Services	I-SKILL
+
+Cloud	B-ROLE
+Engineer	I-ROLE
+•	O
+Traveloka	B-COMP
+•	O
+Amazon	B-SKILL
+Web	I-SKILL
+Services	I-SKILL
+
+UI	B-ROLE
+UX	I-ROLE
+Designer	I-ROLE
+memiliki	O
+sertifikasi	O
+Google	B-CERT
+UX	I-CERT
+Design	I-CERT
+
+UI	B-ROLE
+UX	I-ROLE
+Designer	I-ROLE
+•	O
+Google	B-CERT
+UX	I-CERT
+Design	I-CERT
+
+Data	B-ROLE
+Engineer	I-ROLE
+di	O
+Bukalapak	B-COMP
+menggunakan	O
+Apache	B-SKILL
+Spark	I-SKILL
+untuk	O
+ETL	B-SKILL
+
+Data	B-ROLE
+Engineer	I-ROLE
+•	O
+Bukalapak	B-COMP
+•	O
+Apache	B-SKILL
+Spark	I-SKILL
+•	O
+ETL	B-SKILL
+
+Mobile	B-ROLE
+Developer	I-ROLE
+mengembangkan	O
+Android	B-SKILL
+Studio	I-SKILL
+dan	O
+Flutter	B-SKILL
+
+Mobile	B-ROLE
+Developer	I-ROLE
+•	O
+Android	B-SKILL
+Studio	I-SKILL
+•	O
+Flutter	B-SKILL
+
+DevOps	B-ROLE
+Engineer	I-ROLE
+menggunakan	O
+Docker	B-SKILL
+dan	O
+Kubernetes	B-SKILL
+di	O
+Shopee	B-COMP
+
+DevOps	B-ROLE
+Engineer	I-ROLE
+•	O
+Docker	B-SKILL
+•	O
+Kubernetes	B-SKILL
+•	O
+Shopee	B-COMP
+
+Machine	B-SKILL
+Learning	I-SKILL
+Engineer	B-ROLE
+membangun	O
+model	O
+di	O
+Xendit	B-COMP
+
+Machine	B-SKILL
+Learning	I-SKILL
+•	O
+Engineer	B-ROLE
+•	O
+Xendit	B-COMP
+
+Cyber	B-ROLE
+Security	I-ROLE
+Analyst	I-ROLE
+memiliki	O
+sertifikasi	O
+Certified	B-CERT
+Ethical	I-CERT
+Hacker	I-CERT
+
+Cyber	B-ROLE
+Security	I-ROLE
+Analyst	I-ROLE
+•	O
+Certified	B-CERT
+Ethical	I-CERT
+Hacker	I-CERT
+
+Software	B-ROLE
+Engineer	I-ROLE
+lulusan	O
+S1	B-EDU
+Teknik	I-EDU
+Informatika	I-EDU
+
+Software	B-ROLE
+Engineer	I-ROLE
+•	O
+S1	B-EDU
+Teknik	I-EDU
+Informatika	I-EDU
+
+QA	B-ROLE
+Engineer	I-ROLE
+menggunakan	O
+Selenium	B-SKILL
+untuk	O
+automation	O
+testing	O
+
+QA	B-ROLE
+Engineer	I-ROLE
+•	O
+Selenium	B-SKILL
+
+Business	B-ROLE
+Analyst	I-ROLE
+di	O
+Bank	B-COMP
+Mandiri	I-COMP
+menguasai	O
+Microsoft	B-SKILL
+Excel	I-SKILL
+
+Business	B-ROLE
+Analyst	I-ROLE
+•	O
+Bank	B-COMP
+Mandiri	I-COMP
+•	O
+Microsoft	B-SKILL
+Excel	I-SKILL
+
+Project	B-ROLE
+Manager	I-ROLE
+memiliki	O
+soft	O
+skill	O
+Leadership	B-SKILL
+
+Project	B-ROLE
+Manager	I-ROLE
+•	O
+Leadership	B-SKILL
+
+AI	B-ROLE
+Engineer	I-ROLE
+menggunakan	O
+TensorFlow	B-SKILL
+dan	O
+PyTorch	B-SKILL
+
+AI	B-ROLE
+Engineer	I-ROLE
+•	O
+TensorFlow	B-SKILL
+•	O
+PyTorch	B-SKILL
+
+Database	B-ROLE
+Administrator	I-ROLE
+mengelola	O
+PostgreSQL	B-SKILL
+di	O
+Telkom	B-COMP
+Indonesia	I-COMP
+
+Database	B-ROLE
+Administrator	I-ROLE
+•	O
+PostgreSQL	B-SKILL
+•	O
+Telkom	B-COMP
+Indonesia	I-COMP
+
+Network	B-ROLE
+Engineer	I-ROLE
+memiliki	O
+sertifikasi	O
+Cisco	B-CERT
+CCNA	I-CERT
+
+Network	B-ROLE
+Engineer	I-ROLE
+•	O
+Cisco	B-CERT
+CCNA	I-CERT
+
+Mahasiswa	O
+S1	B-EDU
+Sistem	I-EDU
+Informasi	I-EDU
+mempelajari	O
+Data	B-SKILL
+Visualization	I-SKILL
+
+S1	B-EDU
+Sistem	I-EDU
+Informasi	I-EDU
+•	O
+Data	B-SKILL
+Visualization	I-SKILL
+
+Product	B-ROLE
+Manager	I-ROLE
+di	O
+Ruangguru	B-COMP
+memiliki	O
+Communication	B-SKILL
+Skill	I-SKILL
+
+Product	B-ROLE
+Manager	I-ROLE
+•	O
+Ruangguru	B-COMP
+•	O
+Communication	B-SKILL
+Skill	I-SKILL
+
+Fullstack	B-ROLE
+Developer	I-ROLE
+menggunakan	O
+Next.js	B-SKILL
+dan	O
+MongoDB	B-SKILL
+
+Fullstack	B-ROLE
+Developer	I-ROLE
+•	O
+Next.js	B-SKILL
+•	O
+MongoDB	B-SKILL
+
+Data	B-ROLE
+Analyst	I-ROLE
+menggunakan	O
+Power	B-SKILL
+BI	I-SKILL
+di	O
+BCA	B-COMP
+
+Data	B-ROLE
+Analyst	I-ROLE
+•	O
+Power	B-SKILL
+BI	I-SKILL
+•	O
+BCA	B-COMP
+
+Software	B-ROLE
+Tester	I-ROLE
+menguasai	O
+Manual	B-SKILL
+Testing	I-SKILL
+
+Software	B-ROLE
+Tester	I-ROLE
+•	O
+Manual	B-SKILL
+Testing	I-SKILL
+
+Cloud	B-ROLE
+Architect	I-ROLE
+memiliki	O
+AWS	B-CERT
+Certified	I-CERT
+Solutions	I-CERT
+Architect	I-CERT
+
+Cloud	B-ROLE
+Architect	I-ROLE
+•	O
+AWS	B-CERT
+Certified	I-CERT
+Solutions	I-CERT
+Architect	I-CERT
+
+Frontend	B-ROLE
+Engineer	I-ROLE
+menggunakan	O
+Tailwind	B-SKILL
+CSS	I-SKILL
+
+Frontend	B-ROLE
+Engineer	I-ROLE
+•	O
+Tailwind	B-SKILL
+CSS	I-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Gadjah	I-EDU
+Mada	I-EDU
+mengikuti	O
+Coding	B-CERT
+Camp	I-CERT
+DBS	I-CERT
+
+Universitas	B-EDU
+Gadjah	I-EDU
+Mada	I-EDU
+•	O
+Coding	B-CERT
+Camp	I-CERT
+DBS	I-CERT
+
+Game	B-ROLE
+Developer	I-ROLE
+menggunakan	O
+Unity	B-SKILL
+dan	O
+CSharp	B-SKILL
+
+Game	B-ROLE
+Developer	I-ROLE
+•	O
+Unity	B-SKILL
+•	O
+CSharp	B-SKILL
+
+HR	B-ROLE
+Specialist	I-ROLE
+memiliki	O
+Interpersonal	B-SKILL
+Skill	I-SKILL
+
+HR	B-ROLE
+Specialist	I-ROLE
+•	O
+Interpersonal	B-SKILL
+Skill	I-SKILL
+
+System	B-ROLE
+Analyst	I-ROLE
+di	O
+Pertamina	B-COMP
+menggunakan	O
+SQL	B-SKILL
+
+System	B-ROLE
+Analyst	I-ROLE
+•	O
+Pertamina	B-COMP
+•	O
+SQL	B-SKILL
+
+Research	B-ROLE
+Assistant	I-ROLE
+lulusan	O
+S2	B-EDU
+Ilmu	I-EDU
+Komputer	I-EDU
+
+Research	B-ROLE
+Assistant	I-ROLE
+•	O
+S2	B-EDU
+Ilmu	I-EDU
+Komputer	I-EDU
+
+DevOps	B-ROLE
+Specialist	I-ROLE
+menggunakan	O
+GitLab	B-SKILL
+CI	I-SKILL
+CD	I-SKILL
+
+DevOps	B-ROLE
+Specialist	I-ROLE
+•	O
+GitLab	B-SKILL
+CI	I-SKILL
+CD	I-SKILL
+
+Digital	B-ROLE
+Marketing	I-ROLE
+Specialist	I-ROLE
+menguasai	O
+SEO	B-SKILL
+
+Digital	B-ROLE
+Marketing	I-ROLE
+Specialist	I-ROLE
+•	O
+SEO	B-SKILL
+
+Blockchain	B-ROLE
+Developer	I-ROLE
+menggunakan	O
+Solidity	B-SKILL
+
+Blockchain	B-ROLE
+Developer	I-ROLE
+•	O
+Solidity	B-SKILL
+
+Mahasiswa	O
+D3	B-EDU
+Teknik	I-EDU
+Komputer	I-EDU
+mengikuti	O
+Bangkit	B-CERT
+Academy	I-CERT
+
+D3	B-EDU
+Teknik	I-EDU
+Komputer	I-EDU
+•	O
+Bangkit	B-CERT
+Academy	I-CERT
+
+Data	B-ROLE
+Scientist	I-ROLE
+menguasai	O
+Natural	B-SKILL
+Language	I-SKILL
+Processing	I-SKILL
+
+Data	B-ROLE
+Scientist	I-ROLE
+•	O
+Natural	B-SKILL
+Language	I-SKILL
+Processing	I-SKILL
+
+IT	B-ROLE
+Support	I-ROLE
+memiliki	O
+Problem	B-SKILL
+Solving	I-SKILL
+
+IT	B-ROLE
+Support	I-ROLE
+•	O
+Problem	B-SKILL
+Solving	I-SKILL
+
+Scrum	B-ROLE
+Master	I-ROLE
+memiliki	O
+sertifikasi	O
+Professional	B-CERT
+Scrum	I-CERT
+Master	I-CERT
+
+Scrum	B-ROLE
+Master	I-ROLE
+•	O
+Professional	B-CERT
+Scrum	I-CERT
+Master	I-CERT
+
+Cloud	B-ROLE
+Engineer	I-ROLE
+menggunakan	O
+Google	B-SKILL
+Cloud	I-SKILL
+Platform	I-SKILL
+
+Cloud	B-ROLE
+Engineer	I-ROLE
+•	O
+Google	B-SKILL
+Cloud	I-SKILL
+Platform	I-SKILL
+
+Security	B-ROLE
+Engineer	I-ROLE
+menggunakan	O
+Wireshark	B-SKILL
+
+Security	B-ROLE
+Engineer	I-ROLE
+•	O
+Wireshark	B-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Brawijaya	I-EDU
+mempelajari	O
+Computer	B-SKILL
+Vision	I-SKILL
+
+Universitas	B-EDU
+Brawijaya	I-EDU
+•	O
+Computer	B-SKILL
+Vision	I-SKILL
+
+Backend	B-ROLE
+Engineer	I-ROLE
+menggunakan	O
+Redis	B-SKILL
+dan	O
+Express.js	B-SKILL
+
+Backend	B-ROLE
+Engineer	I-ROLE
+•	O
+Redis	B-SKILL
+•	O
+Express.js	B-SKILL
+
+AI	B-ROLE
+Researcher	I-ROLE
+di	O
+OpenAI	B-COMP
+menggunakan	O
+Deep	B-SKILL
+Learning	I-SKILL
+
+AI	B-ROLE
+Researcher	I-ROLE
+•	O
+OpenAI	B-COMP
+•	O
+Deep	B-SKILL
+Learning	I-SKILL
+
+Technical	B-ROLE
+Writer	I-ROLE
+memiliki	O
+Communication	B-SKILL
+Skill	I-SKILL
+
+Technical	B-ROLE
+Writer	I-ROLE
+•	O
+Communication	B-SKILL
+Skill	I-SKILL
+
+Frontend	B-ROLE
+Developer	I-ROLE
+menggunakan	O
+Vue.js	B-SKILL
+
+Frontend	B-ROLE
+Developer	I-ROLE
+•	O
+Vue.js	B-SKILL
+
+Data	B-ROLE
+Engineer	I-ROLE
+mengelola	O
+BigQuery	B-SKILL
+di	O
+SeaBank	B-COMP
+
+Data	B-ROLE
+Engineer	I-ROLE
+•	O
+BigQuery	B-SKILL
+•	O
+SeaBank	B-COMP
+
+Mahasiswa	O
+S1	B-EDU
+Data	I-EDU
+Science	I-EDU
+mengikuti	O
+Dicoding	B-CERT
+Machine	I-CERT
+Learning	I-CERT
+
+S1	B-EDU
+Data	I-EDU
+Science	I-EDU
+•	O
+Dicoding	B-CERT
+Machine	I-CERT
+Learning	I-CERT
+
+Software	B-ROLE
+Architect	I-ROLE
+menggunakan	O
+Microservices	B-SKILL
+Architecture	I-SKILL
+
+Software	B-ROLE
+Architect	I-ROLE
+•	O
+Microservices	B-SKILL
+Architecture	I-SKILL
+
+ML	B-ROLE
+Engineer	I-ROLE
+menggunakan	O
+Scikit	B-SKILL
+Learn	I-SKILL
+
+ML	B-ROLE
+Engineer	I-ROLE
+•	O
+Scikit	B-SKILL
+Learn	I-SKILL
+
+Cyber	B-ROLE
+Security	I-ROLE
+Engineer	I-ROLE
+menggunakan	O
+Penetration	B-SKILL
+Testing	I-SKILL
+
+Cyber	B-ROLE
+Security	I-ROLE
+Engineer	I-ROLE
+•	O
+Penetration	B-SKILL
+Testing	I-SKILL
+
+Cloud	B-ROLE
+Consultant	I-ROLE
+memiliki	O
+Google	B-CERT
+Associate	I-CERT
+Cloud	I-CERT
+Engineer	I-CERT
+
+Cloud	B-ROLE
+Consultant	I-ROLE
+•	O
+Google	B-CERT
+Associate	I-CERT
+Cloud	I-CERT
+Engineer	I-CERT
+
+QA	B-ROLE
+Analyst	I-ROLE
+menggunakan	O
+JMeter	B-SKILL
+
+QA	B-ROLE
+Analyst	I-ROLE
+•	O
+JMeter	B-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Padjadjaran	I-EDU
+menguasai	O
+Public	B-SKILL
+Speaking	I-SKILL
+
+Universitas	B-EDU
+Padjadjaran	I-EDU
+•	O
+Public	B-SKILL
+Speaking	I-SKILL
+
+Business	B-ROLE
+Intelligence	I-ROLE
+Developer	I-ROLE
+menggunakan	O
+Tableau	B-SKILL
+
+Business	B-ROLE
+Intelligence	I-ROLE
+Developer	I-ROLE
+•	O
+Tableau	B-SKILL
+
+Android	B-ROLE
+Developer	I-ROLE
+menggunakan	O
+Kotlin	B-SKILL
+
+Android	B-ROLE
+Developer	I-ROLE
+•	O
+Kotlin	B-SKILL
+
+iOS	B-ROLE
+Developer	I-ROLE
+menggunakan	O
+SwiftUI	B-SKILL
+
+iOS	B-ROLE
+Developer	I-ROLE
+•	O
+SwiftUI	B-SKILL
+
+Project	B-ROLE
+Coordinator	I-ROLE
+memiliki	O
+Team	B-SKILL
+Management	I-SKILL
+
+Project	B-ROLE
+Coordinator	I-ROLE
+•	O
+Team	B-SKILL
+Management	I-SKILL
+
+Data	B-ROLE
+Analyst	I-ROLE
+menggunakan	O
+Looker	B-SKILL
+Studio	I-SKILL
+
+Data	B-ROLE
+Analyst	I-ROLE
+•	O
+Looker	B-SKILL
+Studio	I-SKILL
+
+Software	B-ROLE
+Developer	I-ROLE
+menggunakan	O
+Laravel	B-SKILL
+
+Software	B-ROLE
+Developer	I-ROLE
+•	O
+Laravel	B-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Teknik	I-EDU
+Elektro	I-EDU
+mengikuti	O
+Oracle	B-CERT
+Database	I-CERT
+Certification	I-CERT
+
+S1	B-EDU
+Teknik	I-EDU
+Elektro	I-EDU
+•	O
+Oracle	B-CERT
+Database	I-CERT
+Certification	I-CERT
+
+Cloud	B-ROLE
+Administrator	I-ROLE
+menggunakan	O
+Terraform	B-SKILL
+
+Cloud	B-ROLE
+Administrator	I-ROLE
+•	O
+Terraform	B-SKILL
+
+Data	B-ROLE
+Scientist	I-ROLE
+menggunakan	O
+Pandas	B-SKILL
+dan	O
+NumPy	B-SKILL
+
+Data	B-ROLE
+Scientist	I-ROLE
+•	O
+Pandas	B-SKILL
+•	O
+NumPy	B-SKILL
+
+Machine	B-ROLE
+Learning	I-ROLE
+Engineer	I-ROLE
+menggunakan	O
+XGBoost	B-SKILL
+
+Machine	B-ROLE
+Learning	I-ROLE
+Engineer	I-ROLE
+•	O
+XGBoost	B-SKILL
+
+Backend	B-ROLE
+Developer	I-ROLE
+menggunakan	O
+Spring	B-SKILL
+Boot	I-SKILL
+
+Backend	B-ROLE
+Developer	I-ROLE
+•	O
+Spring	B-SKILL
+Boot	I-SKILL
+
+Frontend	B-ROLE
+Engineer	I-ROLE
+menggunakan	O
+Angular	B-SKILL
+
+Frontend	B-ROLE
+Engineer	I-ROLE
+•	O
+Angular	B-SKILL
+
+Security	B-ROLE
+Consultant	I-ROLE
+memiliki	O
+Critical	B-SKILL
+Thinking	I-SKILL
+
+Security	B-ROLE
+Consultant	I-ROLE
+•	O
+Critical	B-SKILL
+Thinking	I-SKILL
+
+Research	B-ROLE
+Scientist	I-ROLE
+menggunakan	O
+Computer	B-SKILL
+Vision	I-SKILL
+
+Research	B-ROLE
+Scientist	I-ROLE
+•	O
+Computer	B-SKILL
+Vision	I-SKILL
+
+Mahasiswa	O
+Institut	B-EDU
+Teknologi	I-EDU
+Bandung	I-EDU
+mengikuti	O
+Google	B-CERT
+Data	I-CERT
+Analytics	I-CERT
+
+Institut	B-EDU
+Teknologi	I-EDU
+Bandung	I-EDU
+•	O
+Google	B-CERT
+Data	I-CERT
+Analytics	I-CERT
+
+DevOps	B-ROLE
+Engineer	I-ROLE
+menggunakan	O
+Ansible	B-SKILL
+
+DevOps	B-ROLE
+Engineer	I-ROLE
+•	O
+Ansible	B-SKILL
+
+Software	B-ROLE
+Engineer	I-ROLE
+menggunakan	O
+Java	B-SKILL
+
+Software	B-ROLE
+Engineer	I-ROLE
+•	O
+Java	B-SKILL
+
+Technical	B-ROLE
+Support	I-ROLE
+memiliki	O
+Time	B-SKILL
+Management	I-SKILL
+
+Technical	B-ROLE
+Support	I-ROLE
+•	O
+Time	B-SKILL
+Management	I-SKILL
+
+AI	B-ROLE
+Engineer	I-ROLE
+menggunakan	O
+OpenCV	B-SKILL
+
+AI	B-ROLE
+Engineer	I-ROLE
+•	O
+OpenCV	B-SKILL
+
+Backend	B-ROLE
+Programmer	I-ROLE
+menggunakan	O
+MySQL	B-SKILL
+
+Backend	B-ROLE
+Programmer	I-ROLE
+•	O
+MySQL	B-SKILL
+
+Cloud	B-ROLE
+Engineer	I-ROLE
+menggunakan	O
+Linux	B-SKILL
+
+Cloud	B-ROLE
+Engineer	I-ROLE
+•	O
+Linux	B-SKILL
+
+Frontend	B-ROLE
+Programmer	I-ROLE
+menggunakan	O
+Bootstrap	B-SKILL
+
+Frontend	B-ROLE
+Programmer	I-ROLE
+•	O
+Bootstrap	B-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Airlangga	I-EDU
+mengikuti	O
+AWS	B-CERT
+Cloud	I-CERT
+Practitioner	I-CERT
+
+Universitas	B-EDU
+Airlangga	I-EDU
+•	O
+AWS	B-CERT
+Cloud	I-CERT
+Practitioner	I-CERT
+
+System	B-ROLE
+Administrator	I-ROLE
+menggunakan	O
+VMware	B-SKILL
+
+System	B-ROLE
+Administrator	I-ROLE
+•	O
+VMware	B-SKILL
+
+Data	B-ROLE
+Engineer	I-ROLE
+menggunakan	O
+Airflow	B-SKILL
+
+Data	B-ROLE
+Engineer	I-ROLE
+•	O
+Airflow	B-SKILL
+
+Business	B-ROLE
+Analyst	I-ROLE
+memiliki	O
+Analytical	B-SKILL
+Thinking	I-SKILL
+
+Business	B-ROLE
+Analyst	I-ROLE
+•	O
+Analytical	B-SKILL
+Thinking	I-SKILL
+
+Software	B-ROLE
+Developer	I-ROLE
+menggunakan	O
+PHP	B-SKILL
+
+Software	B-ROLE
+Developer	I-ROLE
+•	O
+PHP	B-SKILL
+
+Machine	B-ROLE
+Learning	I-ROLE
+Researcher	I-ROLE
+menggunakan	O
+Reinforcement	B-SKILL
+Learning	I-SKILL
+
+Machine	B-ROLE
+Learning	I-ROLE
+Researcher	I-ROLE
+•	O
+Reinforcement	B-SKILL
+Learning	I-SKILL
+
+QA	B-ROLE
+Tester	I-ROLE
+menggunakan	O
+Cypress	B-SKILL
+
+QA	B-ROLE
+Tester	I-ROLE
+•	O
+Cypress	B-SKILL
+
+Cyber	B-ROLE
+Security	I-ROLE
+Specialist	I-ROLE
+menggunakan	O
+Metasploit	B-SKILL
+
+Cyber	B-ROLE
+Security	I-ROLE
+Specialist	I-ROLE
+•	O
+Metasploit	B-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Ilmu	I-EDU
+Komputer	I-EDU
+mengikuti	O
+IBM	B-CERT
+Data	I-CERT
+Science	I-CERT
+
+S1	B-EDU
+Ilmu	I-EDU
+Komputer	I-EDU
+•	O
+IBM	B-CERT
+Data	I-CERT
+Science	I-CERT
+
+Software	B-ROLE
+Consultant	I-ROLE
+memiliki	O
+Negotiation	B-SKILL
+Skill	I-SKILL
+
+Software	B-ROLE
+Consultant	I-ROLE
+•	O
+Negotiation	B-SKILL
+Skill	I-SKILL
+
+Cloud	B-ROLE
+Specialist	I-ROLE
+menggunakan	O
+Azure	B-SKILL
+
+Cloud	B-ROLE
+Specialist	I-ROLE
+•	O
+Azure	B-SKILL
+
+Mobile	B-ROLE
+Engineer	I-ROLE
+menggunakan	O
+React	B-SKILL
+Native	I-SKILL
+
+Mobile	B-ROLE
+Engineer	I-ROLE
+•	O
+React	B-SKILL
+Native	I-SKILL
+
+Data	B-ROLE
+Visualization	I-ROLE
+Specialist	I-ROLE
+menggunakan	O
+Matplotlib	B-SKILL
+
+Data	B-ROLE
+Visualization	I-ROLE
+Specialist	I-ROLE
+•	O
+Matplotlib	B-SKILL
+
+Backend	B-ROLE
+Engineer	I-ROLE
+menggunakan	O
+GraphQL	B-SKILL
+
+Backend	B-ROLE
+Engineer	I-ROLE
+•	O
+GraphQL	B-SKILL
+
+Frontend	B-ROLE
+Developer	I-ROLE
+menggunakan	O
+Figma	B-SKILL
+
+Frontend	B-ROLE
+Developer	I-ROLE
+•	O
+Figma	B-SKILL
+
+Cloud	B-ROLE
+Architect	I-ROLE
+menggunakan	O
+Load	B-SKILL
+Balancer	I-SKILL
+
+Cloud	B-ROLE
+Architect	I-ROLE
+•	O
+Load	B-SKILL
+Balancer	I-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Diponegoro	I-EDU
+mengikuti	O
+Alibaba	B-CERT
+Cloud	I-CERT
+Certification	I-CERT
+
+Universitas	B-EDU
+Diponegoro	I-EDU
+•	O
+Alibaba	B-CERT
+Cloud	I-CERT
+Certification	I-CERT
+
+DevOps	B-ROLE
+Engineer	I-ROLE
+menggunakan	O
+Jenkins	B-SKILL
+
+DevOps	B-ROLE
+Engineer	I-ROLE
+•	O
+Jenkins	B-SKILL
+
+AI	B-ROLE
+Developer	I-ROLE
+menggunakan	O
+Large	B-SKILL
+Language	I-SKILL
+Model	I-SKILL
+
+AI	B-ROLE
+Developer	I-ROLE
+•	O
+Large	B-SKILL
+Language	I-SKILL
+Model	I-SKILL
+
+Software	B-ROLE
+Engineer	I-ROLE
+memiliki	O
+Adaptability	B-SKILL
+
+Software	B-ROLE
+Engineer	I-ROLE
+•	O
+Adaptability	B-SKILL
+
+Network	B-ROLE
+Administrator	I-ROLE
+menggunakan	O
+MikroTik	B-SKILL
+
+Network	B-ROLE
+Administrator	I-ROLE
+•	O
+MikroTik	B-SKILL
+
+Machine	B-ROLE
+Learning	I-ROLE
+Engineer	I-ROLE
+menggunakan	O
+Keras	B-SKILL
+
+Machine	B-ROLE
+Learning	I-ROLE
+Engineer	I-ROLE
+•	O
+Keras	B-SKILL
+
+Data	B-ROLE
+Analyst	I-ROLE
+menggunakan	O
+Microsoft	B-SKILL
+Power	I-SKILL
+BI	I-SKILL
+
+Data	B-ROLE
+Analyst	I-ROLE
+•	O
+Microsoft	B-SKILL
+Power	I-SKILL
+BI	I-SKILL
+
+Security	B-ROLE
+Engineer	I-ROLE
+menggunakan	O
+Burp	B-SKILL
+Suite	I-SKILL
+
+Security	B-ROLE
+Engineer	I-ROLE
+•	O
+Burp	B-SKILL
+Suite	I-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Informatika	I-EDU
+mengikuti	O
+TensorFlow	B-CERT
+Developer	I-CERT
+Certificate	I-CERT
+
+S1	B-EDU
+Informatika	I-EDU
+•	O
+TensorFlow	B-CERT
+Developer	I-CERT
+Certificate	I-CERT
+
+Fullstack	B-ROLE
+Engineer	I-ROLE
+menggunakan	O
+TypeScript	B-SKILL
+
+Fullstack	B-ROLE
+Engineer	I-ROLE
+•	O
+TypeScript	B-SKILL
+
+Business	B-ROLE
+Consultant	I-ROLE
+memiliki	O
+Presentation	B-SKILL
+Skill	I-SKILL
+
+Business	B-ROLE
+Consultant	I-ROLE
+•	O
+Presentation	B-SKILL
+Skill	I-SKILL
+
+Cloud	B-ROLE
+Engineer	I-ROLE
+menggunakan	O
+OpenStack	B-SKILL
+
+Cloud	B-ROLE
+Engineer	I-ROLE
+•	O
+OpenStack	B-SKILL
+
+Backend	B-ROLE
+Developer	I-ROLE
+menggunakan	O
+RabbitMQ	B-SKILL
+
+Backend	B-ROLE
+Developer	I-ROLE
+•	O
+RabbitMQ	B-SKILL
+
+Frontend	B-ROLE
+Engineer	I-ROLE
+menggunakan	O
+Redux	B-SKILL
+
+Frontend	B-ROLE
+Engineer	I-ROLE
+•	O
+Redux	B-SKILL
+
+Data	B-ROLE
+Scientist	I-ROLE
+menggunakan	O
+Seaborn	B-SKILL
+
+Data	B-ROLE
+Scientist	I-ROLE
+•	O
+Seaborn	B-SKILL
+
+QA	B-ROLE
+Engineer	I-ROLE
+menggunakan	O
+Postman	B-SKILL
+
+QA	B-ROLE
+Engineer	I-ROLE
+•	O
+Postman	B-SKILL
+
+Cloud	B-ROLE
+Engineer	I-ROLE
+menggunakan	O
+DigitalOcean	B-SKILL
+
+Cloud	B-ROLE
+Engineer	I-ROLE
+•	O
+DigitalOcean	B-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Telkom	I-EDU
+mengikuti	O
+Microsoft	B-CERT
+Azure	I-CERT
+Fundamentals	I-CERT
+
+Universitas	B-EDU
+Telkom	I-EDU
+•	O
+Microsoft	B-CERT
+Azure	I-CERT
+Fundamentals	I-CERT
+
+Software	B-ROLE
+Engineer	I-ROLE
+menggunakan	O
+Git	B-SKILL
+
+Software	B-ROLE
+Engineer	I-ROLE
+•	O
+Git	B-SKILL
+
+Data	B-ROLE
+Engineer	I-ROLE
+menggunakan	O
+Snowflake	B-SKILL
+
+Data	B-ROLE
+Engineer	I-ROLE
+•	O
+Snowflake	B-SKILL
+
+AI	B-ROLE
+Specialist	I-ROLE
+menggunakan	O
+Prompt	B-SKILL
+Engineering	I-SKILL
+
+AI	B-ROLE
+Specialist	I-ROLE
+•	O
+Prompt	B-SKILL
+Engineering	I-SKILL
+
+Cyber	B-ROLE
+Security	I-ROLE
+Engineer	I-ROLE
+menggunakan	O
+SIEM	B-SKILL
+
+Cyber	B-ROLE
+Security	I-ROLE
+Engineer	I-ROLE
+•	O
+SIEM	B-SKILL
+
+Frontend	B-ROLE
+Developer	I-ROLE
+menggunakan	O
+SASS	B-SKILL
+
+Frontend	B-ROLE
+Developer	I-ROLE
+•	O
+SASS	B-SKILL
+
+Backend	B-ROLE
+Engineer	I-ROLE
+menggunakan	O
+FastAPI	B-SKILL
+
+Backend	B-ROLE
+Engineer	I-ROLE
+•	O
+FastAPI	B-SKILL
+
+
+Senior	B-ROLE
+Data	I-ROLE
+Engineer	I-ROLE
+membangun	O
+pipeline	O
+streaming	O
+menggunakan	O
+Apache	B-SKILL
+Kafka	I-SKILL
+
+Senior	B-ROLE
+Data	I-ROLE
+Engineer	I-ROLE
+•	O
+Apache	B-SKILL
+Kafka	I-SKILL
+
+Seorang	O
+Frontend	B-ROLE
+Architect	I-ROLE
+merancang	O
+interface	O
+modern	O
+memakai	O
+Material	B-SKILL
+UI	I-SKILL
+
+Frontend	B-ROLE
+Architect	I-ROLE
+•	O
+Material	B-SKILL
+UI	I-SKILL
+
+Lulusan	O
+Universitas	B-EDU
+Sebelas	I-EDU
+Maret	I-EDU
+aktif	O
+mengembangkan	O
+aplikasi	O
+berbasis	O
+Flutter	B-SKILL
+
+Universitas	B-EDU
+Sebelas	I-EDU
+Maret	I-EDU
+•	O
+Flutter	B-SKILL
+
+Technical	B-ROLE
+Recruiter	I-ROLE
+di	O
+AstraZeneca	B-COMP
+menilai	O
+kemampuan	O
+Critical	B-SKILL
+Thinking	I-SKILL
+kandidat	O
+
+Technical	B-ROLE
+Recruiter	I-ROLE
+•	O
+AstraZeneca	B-COMP
+•	O
+Critical	B-SKILL
+Thinking	I-SKILL
+
+Peserta	O
+Google	B-CERT
+Career	I-CERT
+Certificates	I-CERT
+mempelajari	O
+teknologi	O
+Cloud	B-SKILL
+Computing	I-SKILL
+modern	O
+
+Google	B-CERT
+Career	I-CERT
+Certificates	I-CERT
+•	O
+Cloud	B-SKILL
+Computing	I-SKILL
+
+Seorang	O
+DevSecOps	B-ROLE
+Engineer	I-ROLE
+mengotomatiskan	O
+proses	O
+deployment	O
+menggunakan	O
+Terraform	B-SKILL
+Cloud	I-SKILL
+
+DevSecOps	B-ROLE
+Engineer	I-ROLE
+•	O
+Terraform	B-SKILL
+Cloud	I-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Teknologi	I-EDU
+Informasi	I-EDU
+sedang	O
+mempelajari	O
+Artificial	B-SKILL
+Intelligence	I-SKILL
+lanjutan	O
+
+S1	B-EDU
+Teknologi	I-EDU
+Informasi	I-EDU
+•	O
+Artificial	B-SKILL
+Intelligence	I-SKILL
+
+Research	B-ROLE
+Engineer	I-ROLE
+pada	O
+NVIDIA	B-COMP
+mengembangkan	O
+algoritma	O
+Computer	B-SKILL
+Vision	I-SKILL
+real-time	O
+
+Research	B-ROLE
+Engineer	I-ROLE
+•	O
+NVIDIA	B-COMP
+•	O
+Computer	B-SKILL
+Vision	I-SKILL
+
+Mobile	B-ROLE
+Application	I-ROLE
+Developer	I-ROLE
+memperbaiki	O
+performa	O
+aplikasi	O
+menggunakan	O
+Flutter	B-SKILL
+Bloc	I-SKILL
+
+Mobile	B-ROLE
+Application	I-ROLE
+Developer	I-ROLE
+•	O
+Flutter	B-SKILL
+Bloc	I-SKILL
+
+Peserta	O
+AWS	B-CERT
+Academy	I-CERT
+berhasil	O
+membangun	O
+arsitektur	O
+serverless	O
+menggunakan	O
+Lambda	B-SKILL
+
+AWS	B-CERT
+Academy	I-CERT
+•	O
+Lambda	B-SKILL
+
+System	B-ROLE
+Reliability	I-ROLE
+Engineer	I-ROLE
+memantau	O
+infrastruktur	O
+cloud	O
+memakai	O
+Grafana	B-SKILL
+dan	O
+Prometheus	B-SKILL
+
+System	B-ROLE
+Reliability	I-ROLE
+Engineer	I-ROLE
+•	O
+Grafana	B-SKILL
+•	O
+Prometheus	B-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Negeri	I-EDU
+Malang	I-EDU
+aktif	O
+mengikuti	O
+program	O
+Deep	B-SKILL
+Learning	I-SKILL
+
+Universitas	B-EDU
+Negeri	I-EDU
+Malang	I-EDU
+•	O
+Deep	B-SKILL
+Learning	I-SKILL
+
+Cloud	B-ROLE
+Migration	I-ROLE
+Specialist	I-ROLE
+membantu	O
+perusahaan	O
+beralih	O
+ke	O
+Google	B-SKILL
+Kubernetes	I-SKILL
+Engine	I-SKILL
+
+Cloud	B-ROLE
+Migration	I-ROLE
+Specialist	I-ROLE
+•	O
+Google	B-SKILL
+Kubernetes	I-SKILL
+Engine	I-SKILL
+
+Peserta	O
+Oracle	B-CERT
+Java	I-CERT
+Foundations	I-CERT
+mengembangkan	O
+layanan	O
+backend	O
+menggunakan	O
+Spring	B-SKILL
+Framework	I-SKILL
+
+Oracle	B-CERT
+Java	I-CERT
+Foundations	I-CERT
+•	O
+Spring	B-SKILL
+Framework	I-SKILL
+
+Business	B-ROLE
+Process	I-ROLE
+Analyst	I-ROLE
+mengoptimalkan	O
+alur	O
+kerja	O
+menggunakan	O
+Business	B-SKILL
+Analysis	I-SKILL
+
+Business	B-ROLE
+Process	I-ROLE
+Analyst	I-ROLE
+•	O
+Business	B-SKILL
+Analysis	I-SKILL
+
+Cyber	B-ROLE
+Threat	I-ROLE
+Hunter	I-ROLE
+menganalisis	O
+aktivitas	O
+berbahaya	O
+menggunakan	O
+Threat	B-SKILL
+Intelligence	I-SKILL
+
+Cyber	B-ROLE
+Threat	I-ROLE
+Hunter	I-ROLE
+•	O
+Threat	B-SKILL
+Intelligence	I-SKILL
+
+Lulusan	O
+Institut	B-EDU
+Teknologi	I-EDU
+Sepuluh	I-EDU
+Nopember	I-EDU
+menguasai	O
+Distributed	B-SKILL
+Systems	I-SKILL
+
+Institut	B-EDU
+Teknologi	I-EDU
+Sepuluh	I-EDU
+Nopember	I-EDU
+•	O
+Distributed	B-SKILL
+Systems	I-SKILL
+
+AI	B-ROLE
+Product	I-ROLE
+Manager	I-ROLE
+mengelola	O
+fitur	O
+chatbot	O
+berbasis	O
+Natural	B-SKILL
+Language	I-SKILL
+Understanding	I-SKILL
+
+AI	B-ROLE
+Product	I-ROLE
+Manager	I-ROLE
+•	O
+Natural	B-SKILL
+Language	I-SKILL
+Understanding	I-SKILL
+
+Peserta	O
+Meta	B-CERT
+Frontend	I-CERT
+Developer	I-CERT
+mengembangkan	O
+website	O
+interaktif	O
+menggunakan	O
+React	B-SKILL
+Hooks	I-SKILL
+
+Meta	B-CERT
+Frontend	I-CERT
+Developer	I-CERT
+•	O
+React	B-SKILL
+Hooks	I-SKILL
+
+Backend	B-ROLE
+API	I-ROLE
+Engineer	I-ROLE
+mengintegrasikan	O
+layanan	O
+pembayaran	O
+menggunakan	O
+GraphQL	B-SKILL
+Subscriptions	I-SKILL
+
+Backend	B-ROLE
+API	I-ROLE
+Engineer	I-ROLE
+•	O
+GraphQL	B-SKILL
+Subscriptions	I-SKILL
+
+Prompt	B-SKILL
+Engineering	I-SKILL
+Specialist	B-ROLE
+mengembangkan	O
+chatbot	O
+untuk	O
+Tokopedia	B-COMP
+
+Prompt	B-SKILL
+Engineering	I-SKILL
+•	O
+Specialist	B-ROLE
+•	O
+Tokopedia	B-COMP
+
+Cloud	B-ROLE
+Solutions	I-ROLE
+Architect	I-ROLE
+menggunakan	O
+Microsoft	B-SKILL
+Azure	I-SKILL
+untuk	O
+deployment	O
+
+Cloud	B-ROLE
+Solutions	I-ROLE
+Architect	I-ROLE
+•	O
+Microsoft	B-SKILL
+Azure	I-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Teknik	I-EDU
+Komputer	I-EDU
+mengikuti	O
+program	O
+AWS	B-CERT
+Academy	I-CERT
+
+S1	B-EDU
+Teknik	I-EDU
+Komputer	I-EDU
+•	O
+AWS	B-CERT
+Academy	I-CERT
+
+Data	B-ROLE
+Analytics	I-ROLE
+Consultant	I-ROLE
+menguasai	O
+Business	B-SKILL
+Intelligence	I-SKILL
+modern	O
+
+Data	B-ROLE
+Analytics	I-ROLE
+Consultant	I-ROLE
+•	O
+Business	B-SKILL
+Intelligence	I-SKILL
+
+Backend	B-ROLE
+Services	I-ROLE
+Engineer	I-ROLE
+mengembangkan	O
+API	O
+menggunakan	O
+FastAPI	B-SKILL
+
+Backend	B-ROLE
+Services	I-ROLE
+Engineer	I-ROLE
+•	O
+FastAPI	B-SKILL
+
+Frontend	B-ROLE
+Application	I-ROLE
+Developer	I-ROLE
+membuat	O
+dashboard	O
+menggunakan	O
+Chart.js	B-SKILL
+
+Frontend	B-ROLE
+Application	I-ROLE
+Developer	I-ROLE
+•	O
+Chart.js	B-SKILL
+
+Cyber	B-ROLE
+Security	I-ROLE
+Researcher	I-ROLE
+menganalisis	O
+malware	O
+menggunakan	O
+Reverse	B-SKILL
+Engineering	I-SKILL
+
+Cyber	B-ROLE
+Security	I-ROLE
+Researcher	I-ROLE
+•	O
+Reverse	B-SKILL
+Engineering	I-SKILL
+
+Peserta	O
+Google	B-CERT
+Machine	I-CERT
+Learning	I-CERT
+Bootcamp	I-CERT
+mempelajari	O
+TensorFlow	B-SKILL
+
+Google	B-CERT
+Machine	I-CERT
+Learning	I-CERT
+Bootcamp	I-CERT
+•	O
+TensorFlow	B-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Negeri	I-EDU
+Yogyakarta	I-EDU
+aktif	O
+mengembangkan	O
+Computer	B-SKILL
+Vision	I-SKILL
+
+Universitas	B-EDU
+Negeri	I-EDU
+Yogyakarta	I-EDU
+•	O
+Computer	B-SKILL
+Vision	I-SKILL
+
+DevOps	B-ROLE
+Automation	I-ROLE
+Specialist	I-ROLE
+menggunakan	O
+GitHub	B-SKILL
+Actions	I-SKILL
+
+DevOps	B-ROLE
+Automation	I-ROLE
+Specialist	I-ROLE
+•	O
+GitHub	B-SKILL
+Actions	I-SKILL
+
+AI	B-ROLE
+Engineer	I-ROLE
+membangun	O
+sistem	O
+menggunakan	O
+Large	B-SKILL
+Language	I-SKILL
+Model	I-SKILL
+
+AI	B-ROLE
+Engineer	I-ROLE
+•	O
+Large	B-SKILL
+Language	I-SKILL
+Model	I-SKILL
+
+Software	B-ROLE
+Project	I-ROLE
+Manager	I-ROLE
+memiliki	O
+Leadership	B-SKILL
+Skill	I-SKILL
+yang	O
+baik	O
+
+Software	B-ROLE
+Project	I-ROLE
+Manager	I-ROLE
+•	O
+Leadership	B-SKILL
+Skill	I-SKILL
+
+Cloud	B-ROLE
+Network	I-ROLE
+Engineer	I-ROLE
+mengelola	O
+infrastruktur	O
+menggunakan	O
+Cisco	B-SKILL
+Packet	I-SKILL
+Tracer	I-SKILL
+
+Cloud	B-ROLE
+Network	I-ROLE
+Engineer	I-ROLE
+•	O
+Cisco	B-SKILL
+Packet	I-SKILL
+Tracer	I-SKILL
+
+Peserta	O
+Dicoding	B-CERT
+Frontend	I-CERT
+Developer	I-CERT
+membangun	O
+website	O
+menggunakan	O
+Next.js	B-SKILL
+
+Dicoding	B-CERT
+Frontend	I-CERT
+Developer	I-CERT
+•	O
+Next.js	B-SKILL
+
+Data	B-ROLE
+Science	I-ROLE
+Mentor	I-ROLE
+mengajarkan	O
+Machine	B-SKILL
+Learning	I-SKILL
+kepada	O
+mahasiswa	O
+
+Data	B-ROLE
+Science	I-ROLE
+Mentor	I-ROLE
+•	O
+Machine	B-SKILL
+Learning	I-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Kecerdasan	I-EDU
+Buatan	I-EDU
+mengembangkan	O
+sistem	O
+berbasis	O
+Deep	B-SKILL
+Learning	I-SKILL
+
+S1	B-EDU
+Kecerdasan	I-EDU
+Buatan	I-EDU
+•	O
+Deep	B-SKILL
+Learning	I-SKILL
+
+Mobile	B-ROLE
+Software	I-ROLE
+Engineer	I-ROLE
+menggunakan	O
+React	B-SKILL
+Native	I-SKILL
+untuk	O
+proyek	O
+
+Mobile	B-ROLE
+Software	I-ROLE
+Engineer	I-ROLE
+•	O
+React	B-SKILL
+Native	I-SKILL
+
+Backend	B-ROLE
+Platform	I-ROLE
+Engineer	I-ROLE
+mengelola	O
+database	O
+menggunakan	O
+PostgreSQL	B-SKILL
+
+Backend	B-ROLE
+Platform	I-ROLE
+Engineer	I-ROLE
+•	O
+PostgreSQL	B-SKILL
+
+Peserta	O
+Microsoft	B-CERT
+Learn	I-CERT
+Student	I-CERT
+Ambassador	I-CERT
+mempelajari	O
+Cloud	B-SKILL
+Computing	I-SKILL
+
+Microsoft	B-CERT
+Learn	I-CERT
+Student	I-CERT
+Ambassador	I-CERT
+•	O
+Cloud	B-SKILL
+Computing	I-SKILL
+
+Security	B-ROLE
+Infrastructure	I-ROLE
+Engineer	I-ROLE
+menerapkan	O
+Zero	B-SKILL
+Trust	I-SKILL
+Architecture	I-SKILL
+
+Security	B-ROLE
+Infrastructure	I-ROLE
+Engineer	I-ROLE
+•	O
+Zero	B-SKILL
+Trust	I-SKILL
+Architecture	I-SKILL
+
+Mahasiswa	O
+Institut	B-EDU
+Teknologi	I-EDU
+Kalimantan	I-EDU
+menguasai	O
+Internet	B-SKILL
+Security	I-SKILL
+
+Institut	B-EDU
+Teknologi	I-EDU
+Kalimantan	I-EDU
+•	O
+Internet	B-SKILL
+Security	I-SKILL
+
+Cloud	B-ROLE
+DevOps	I-ROLE
+Consultant	I-ROLE
+mengotomatisasi	O
+deployment	O
+menggunakan	O
+Ansible	B-SKILL
+
+Cloud	B-ROLE
+DevOps	I-ROLE
+Consultant	I-ROLE
+•	O
+Ansible	B-SKILL
+
+AI	B-ROLE
+Research	I-ROLE
+Scientist	I-ROLE
+mengembangkan	O
+algoritma	O
+Natural	B-SKILL
+Language	I-SKILL
+Processing	I-SKILL
+
+AI	B-ROLE
+Research	I-ROLE
+Scientist	I-ROLE
+•	O
+Natural	B-SKILL
+Language	I-SKILL
+Processing	I-SKILL
+
+Frontend	B-ROLE
+UI	I-ROLE
+Engineer	I-ROLE
+menggunakan	O
+Tailwind	B-SKILL
+CSS	I-SKILL
+untuk	O
+styling	O
+
+Frontend	B-ROLE
+UI	I-ROLE
+Engineer	I-ROLE
+•	O
+Tailwind	B-SKILL
+CSS	I-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Sistem	I-EDU
+Informasi	I-EDU
+mengikuti	O
+Alibaba	B-CERT
+Cloud	I-CERT
+Program	I-CERT
+
+S1	B-EDU
+Sistem	I-EDU
+Informasi	I-EDU
+•	O
+Alibaba	B-CERT
+Cloud	I-CERT
+Program	I-CERT
+
+Data	B-ROLE
+Warehouse	I-ROLE
+Architect	I-ROLE
+mendesain	O
+pipeline	O
+menggunakan	O
+Apache	B-SKILL
+Airflow	I-SKILL
+
+Data	B-ROLE
+Warehouse	I-ROLE
+Architect	I-ROLE
+•	O
+Apache	B-SKILL
+Airflow	I-SKILL
+
+Software	B-ROLE
+Requirements	I-ROLE
+Analyst	I-ROLE
+memiliki	O
+Communication	B-SKILL
+Skill	I-SKILL
+tinggi	O
+
+Software	B-ROLE
+Requirements	I-ROLE
+Analyst	I-ROLE
+•	O
+Communication	B-SKILL
+Skill	I-SKILL
+
+Machine	B-ROLE
+Learning	I-ROLE
+Developer	I-ROLE
+menggunakan	O
+Scikit	B-SKILL
+Learn	I-SKILL
+untuk	O
+klasifikasi	O
+
+Machine	B-ROLE
+Learning	I-ROLE
+Developer	I-ROLE
+•	O
+Scikit	B-SKILL
+Learn	I-SKILL
+
+Cyber	B-ROLE
+Forensics	I-ROLE
+Analyst	I-ROLE
+melakukan	O
+investigasi	O
+menggunakan	O
+Digital	B-SKILL
+Forensics	I-SKILL
+
+Cyber	B-ROLE
+Forensics	I-ROLE
+Analyst	I-ROLE
+•	O
+Digital	B-SKILL
+Forensics	I-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Syiah	I-EDU
+Kuala	I-EDU
+mempelajari	O
+Cloud	B-SKILL
+Architecture	I-SKILL
+
+Universitas	B-EDU
+Syiah	I-EDU
+Kuala	I-EDU
+•	O
+Cloud	B-SKILL
+Architecture	I-SKILL
+
+Backend	B-ROLE
+Infrastructure	I-ROLE
+Developer	I-ROLE
+menggunakan	O
+RabbitMQ	B-SKILL
+untuk	O
+message	O
+queue	O
+
+Backend	B-ROLE
+Infrastructure	I-ROLE
+Developer	I-ROLE
+•	O
+RabbitMQ	B-SKILL
+
+Peserta	O
+IBM	B-CERT
+SkillsBuild	I-CERT
+Cybersecurity	I-CERT
+mempelajari	O
+Network	B-SKILL
+Defense	I-SKILL
+
+IBM	B-CERT
+SkillsBuild	I-CERT
+Cybersecurity	I-CERT
+•	O
+Network	B-SKILL
+Defense	I-SKILL
+
+Cloud	B-ROLE
+Operations	I-ROLE
+Engineer	I-ROLE
+menggunakan	O
+Linux	B-SKILL
+Administration	I-SKILL
+untuk	O
+server	O
+
+Cloud	B-ROLE
+Operations	I-ROLE
+Engineer	I-ROLE
+•	O
+Linux	B-SKILL
+Administration	I-SKILL
+
+Frontend	B-ROLE
+Web	I-ROLE
+Designer	I-ROLE
+menggunakan	O
+Figma	B-SKILL
+untuk	O
+prototyping	O
+
+Frontend	B-ROLE
+Web	I-ROLE
+Designer	I-ROLE
+•	O
+Figma	B-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Teknik	I-EDU
+Industri	I-EDU
+mengembangkan	O
+Business	B-SKILL
+Analytics	I-SKILL
+
+S1	B-EDU
+Teknik	I-EDU
+Industri	I-EDU
+•	O
+Business	B-SKILL
+Analytics	I-SKILL
+
+AI	B-ROLE
+Prompt	I-ROLE
+Engineer	I-ROLE
+mengoptimalkan	O
+prompt	O
+menggunakan	O
+Prompt	B-SKILL
+Engineering	I-SKILL
+
+AI	B-ROLE
+Prompt	I-ROLE
+Engineer	I-ROLE
+•	O
+Prompt	B-SKILL
+Engineering	I-SKILL
+
+Software	B-ROLE
+Deployment	I-ROLE
+Engineer	I-ROLE
+mengelola	O
+container	O
+menggunakan	O
+Docker	B-SKILL
+Compose	I-SKILL
+
+Software	B-ROLE
+Deployment	I-ROLE
+Engineer	I-ROLE
+•	O
+Docker	B-SKILL
+Compose	I-SKILL
+
+Data	B-ROLE
+Visualization	I-ROLE
+Analyst	I-ROLE
+membuat	O
+dashboard	O
+menggunakan	O
+Tableau	B-SKILL
+
+Data	B-ROLE
+Visualization	I-ROLE
+Analyst	I-ROLE
+•	O
+Tableau	B-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Tanjungpura	I-EDU
+mempelajari	O
+Human	B-SKILL
+Computer	I-SKILL
+Interaction	I-SKILL
+
+Universitas	B-EDU
+Tanjungpura	I-EDU
+•	O
+Human	B-SKILL
+Computer	I-SKILL
+Interaction	I-SKILL
+
+Cyber	B-ROLE
+Defense	I-ROLE
+Specialist	I-ROLE
+menggunakan	O
+Security	B-SKILL
+Information	I-SKILL
+Event	I-SKILL
+Management	I-SKILL
+
+Cyber	B-ROLE
+Defense	I-ROLE
+Specialist	I-ROLE
+•	O
+Security	B-SKILL
+Information	I-SKILL
+Event	I-SKILL
+Management	I-SKILL
+
+Cloud	B-ROLE
+Infrastructure	I-ROLE
+Architect	I-ROLE
+mengimplementasikan	O
+Virtual	B-SKILL
+Private	I-SKILL
+Cloud	I-SKILL
+
+Cloud	B-ROLE
+Infrastructure	I-ROLE
+Architect	I-ROLE
+•	O
+Virtual	B-SKILL
+Private	I-SKILL
+Cloud	I-SKILL
+
+Peserta	O
+Oracle	B-CERT
+Cloud	I-CERT
+Infrastructure	I-CERT
+mempelajari	O
+Cloud	B-SKILL
+Monitoring	I-SKILL
+
+Oracle	B-CERT
+Cloud	I-CERT
+Infrastructure	I-CERT
+•	O
+Cloud	B-SKILL
+Monitoring	I-SKILL
+
+Machine	B-ROLE
+Learning	I-ROLE
+Consultant	I-ROLE
+mengembangkan	O
+sistem	O
+menggunakan	O
+Predictive	B-SKILL
+Analytics	I-SKILL
+
+Machine	B-ROLE
+Learning	I-ROLE
+Consultant	I-ROLE
+•	O
+Predictive	B-SKILL
+Analytics	I-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Teknik	I-EDU
+Perangkat	I-EDU
+Lunak	I-EDU
+menguasai	O
+Software	B-SKILL
+Architecture	I-SKILL
+
+S1	B-EDU
+Teknik	I-EDU
+Perangkat	I-EDU
+Lunak	I-EDU
+•	O
+Software	B-SKILL
+Architecture	I-SKILL
+
+Backend	B-ROLE
+Microservices	I-ROLE
+Engineer	I-ROLE
+menggunakan	O
+Spring	B-SKILL
+Cloud	I-SKILL
+untuk	O
+deployment	O
+
+Backend	B-ROLE
+Microservices	I-ROLE
+Engineer	I-ROLE
+•	O
+Spring	B-SKILL
+Cloud	I-SKILL
+
+Frontend	B-ROLE
+Interactive	I-ROLE
+Designer	I-ROLE
+membuat	O
+animasi	O
+menggunakan	O
+Framer	B-SKILL
+Motion	I-SKILL
+
+Frontend	B-ROLE
+Interactive	I-ROLE
+Designer	I-ROLE
+•	O
+Framer	B-SKILL
+Motion	I-SKILL
+
+Peserta	O
+Meta	B-CERT
+Android	I-CERT
+Developer	I-CERT
+mengembangkan	O
+aplikasi	O
+menggunakan	O
+Kotlin	B-SKILL
+
+Meta	B-CERT
+Android	I-CERT
+Developer	I-CERT
+•	O
+Kotlin	B-SKILL
+
+Data	B-ROLE
+Engineering	I-ROLE
+Lead	I-ROLE
+mengatur	O
+pipeline	O
+menggunakan	O
+Databricks	B-SKILL
+
+Data	B-ROLE
+Engineering	I-ROLE
+Lead	I-ROLE
+•	O
+Databricks	B-SKILL
+
+Cyber	B-ROLE
+Intelligence	I-ROLE
+Analyst	I-ROLE
+menganalisis	O
+threat	O
+menggunakan	O
+Threat	B-SKILL
+Modeling	I-SKILL
+
+Cyber	B-ROLE
+Intelligence	I-ROLE
+Analyst	I-ROLE
+•	O
+Threat	B-SKILL
+Modeling	I-SKILL
+
+Mahasiswa	O
+Institut	B-EDU
+Teknologi	I-EDU
+Nasional	I-EDU
+mempelajari	O
+Embedded	B-SKILL
+Programming	I-SKILL
+
+Institut	B-EDU
+Teknologi	I-EDU
+Nasional	I-EDU
+•	O
+Embedded	B-SKILL
+Programming	I-SKILL
+
+Cloud	B-ROLE
+Resource	I-ROLE
+Manager	I-ROLE
+mengoptimalkan	O
+biaya	O
+menggunakan	O
+Cost	B-SKILL
+Optimization	I-SKILL
+
+Cloud	B-ROLE
+Resource	I-ROLE
+Manager	I-ROLE
+•	O
+Cost	B-SKILL
+Optimization	I-SKILL
+
+Software	B-ROLE
+Testing	I-ROLE
+Engineer	I-ROLE
+membuat	O
+automation	O
+menggunakan	O
+Playwright	B-SKILL
+
+Software	B-ROLE
+Testing	I-ROLE
+Engineer	I-ROLE
+•	O
+Playwright	B-SKILL
+
+AI	B-ROLE
+Machine	I-ROLE
+Engineer	I-ROLE
+menggunakan	O
+Transfer	B-SKILL
+Learning	I-SKILL
+untuk	O
+training	O
+
+AI	B-ROLE
+Machine	I-ROLE
+Engineer	I-ROLE
+•	O
+Transfer	B-SKILL
+Learning	I-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Jambi	I-EDU
+mengembangkan	O
+sistem	O
+berbasis	O
+Data	B-SKILL
+Engineering	I-SKILL
+
+Universitas	B-EDU
+Jambi	I-EDU
+•	O
+Data	B-SKILL
+Engineering	I-SKILL
+
+Backend	B-ROLE
+Cloud	I-ROLE
+Architect	I-ROLE
+mengembangkan	O
+server	O
+menggunakan	O
+Serverless	B-SKILL
+Framework	I-SKILL
+
+Backend	B-ROLE
+Cloud	I-ROLE
+Architect	I-ROLE
+•	O
+Serverless	B-SKILL
+Framework	I-SKILL
+
+Peserta	O
+Google	B-CERT
+UX	I-CERT
+Design	I-CERT
+mengembangkan	O
+desain	O
+menggunakan	O
+User	B-SKILL
+Research	I-SKILL
+
+Google	B-CERT
+UX	I-CERT
+Design	I-CERT
+•	O
+User	B-SKILL
+Research	I-SKILL
+
+DevOps	B-ROLE
+Release	I-ROLE
+Manager	I-ROLE
+mengatur	O
+pipeline	O
+menggunakan	O
+Continuous	B-SKILL
+Delivery	I-SKILL
+
+DevOps	B-ROLE
+Release	I-ROLE
+Manager	I-ROLE
+•	O
+Continuous	B-SKILL
+Delivery	I-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Teknik	I-EDU
+Telekomunikasi	I-EDU
+menguasai	O
+Network	B-SKILL
+Automation	I-SKILL
+
+S1	B-EDU
+Teknik	I-EDU
+Telekomunikasi	I-EDU
+•	O
+Network	B-SKILL
+Automation	I-SKILL
+
+Cloud	B-ROLE
+System	I-ROLE
+Administrator	I-ROLE
+mengelola	O
+server	O
+menggunakan	O
+OpenStack	B-SKILL
+
+Cloud	B-ROLE
+System	I-ROLE
+Administrator	I-ROLE
+•	O
+OpenStack	B-SKILL
+
+Data	B-ROLE
+Science	I-ROLE
+Researcher	I-ROLE
+mengembangkan	O
+algoritma	O
+menggunakan	O
+Feature	B-SKILL
+Engineering	I-SKILL
+
+Data	B-ROLE
+Science	I-ROLE
+Researcher	I-ROLE
+•	O
+Feature	B-SKILL
+Engineering	I-SKILL
+
+Frontend	B-ROLE
+Performance	I-ROLE
+Engineer	I-ROLE
+mengoptimalkan	O
+website	O
+menggunakan	O
+Web	B-SKILL
+Optimization	I-SKILL
+
+Frontend	B-ROLE
+Performance	I-ROLE
+Engineer	I-ROLE
+•	O
+Web	B-SKILL
+Optimization	I-SKILL
+
+AI	B-ROLE
+Automation	I-ROLE
+Engineer	I-ROLE
+mengembangkan	O
+workflow	O
+menggunakan	O
+LangChain	B-SKILL
+
+AI	B-ROLE
+Automation	I-ROLE
+Engineer	I-ROLE
+•	O
+LangChain	B-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Teknik	I-EDU
+Robotika	I-EDU
+mempelajari	O
+Autonomous	B-SKILL
+Systems	I-SKILL
+
+S1	B-EDU
+Teknik	I-EDU
+Robotika	I-EDU
+•	O
+Autonomous	B-SKILL
+Systems	I-SKILL
+
+Backend	B-ROLE
+Application	I-ROLE
+Engineer	I-ROLE
+mengintegrasikan	O
+layanan	O
+menggunakan	O
+RESTful	B-SKILL
+API	I-SKILL
+
+Backend	B-ROLE
+Application	I-ROLE
+Engineer	I-ROLE
+•	O
+RESTful	B-SKILL
+API	I-SKILL
+
+Peserta	O
+AWS	B-CERT
+Cloud	I-CERT
+Quest	I-CERT
+menggunakan	O
+CloudFormation	B-SKILL
+untuk	O
+deployment	O
+
+AWS	B-CERT
+Cloud	I-CERT
+Quest	I-CERT
+•	O
+CloudFormation	B-SKILL
+
+Cyber	B-ROLE
+Risk	I-ROLE
+Consultant	I-ROLE
+melakukan	O
+audit	O
+menggunakan	O
+Risk	B-SKILL
+Assessment	I-SKILL
+
+Cyber	B-ROLE
+Risk	I-ROLE
+Consultant	I-ROLE
+•	O
+Risk	B-SKILL
+Assessment	I-SKILL
+
+Frontend	B-ROLE
+Creative	I-ROLE
+Developer	I-ROLE
+membangun	O
+interface	O
+menggunakan	O
+Vue	B-SKILL
+Framework	I-SKILL
+
+Frontend	B-ROLE
+Creative	I-ROLE
+Developer	I-ROLE
+•	O
+Vue	B-SKILL
+Framework	I-SKILL
+
+Data	B-ROLE
+Pipeline	I-ROLE
+Engineer	I-ROLE
+mengelola	O
+streaming	O
+menggunakan	O
+Apache	B-SKILL
+Flink	I-SKILL
+
+Data	B-ROLE
+Pipeline	I-ROLE
+Engineer	I-ROLE
+•	O
+Apache	B-SKILL
+Flink	I-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Mataram	I-EDU
+mempelajari	O
+Cloud	B-SKILL
+Computing	I-SKILL
+modern	O
+
+Universitas	B-EDU
+Mataram	I-EDU
+•	O
+Cloud	B-SKILL
+Computing	I-SKILL
+
+Cloud	B-ROLE
+Infrastructure	I-ROLE
+Consultant	I-ROLE
+membantu	O
+migrasi	O
+menggunakan	O
+Hybrid	B-SKILL
+Cloud	I-SKILL
+
+Cloud	B-ROLE
+Infrastructure	I-ROLE
+Consultant	I-ROLE
+•	O
+Hybrid	B-SKILL
+Cloud	I-SKILL
+
+Peserta	O
+Google	B-CERT
+Cloud	I-CERT
+Skillboost	I-CERT
+mengembangkan	O
+arsitektur	O
+menggunakan	O
+Kubernetes	B-SKILL
+
+Google	B-CERT
+Cloud	I-CERT
+Skillboost	I-CERT
+•	O
+Kubernetes	B-SKILL
+
+Machine	B-ROLE
+Learning	I-ROLE
+Architect	I-ROLE
+mengembangkan	O
+model	O
+menggunakan	O
+Gradient	B-SKILL
+Boosting	I-SKILL
+
+Machine	B-ROLE
+Learning	I-ROLE
+Architect	I-ROLE
+•	O
+Gradient	B-SKILL
+Boosting	I-SKILL
+
+Software	B-ROLE
+Engineering	I-ROLE
+Mentor	I-ROLE
+mengajarkan	O
+Object	B-SKILL
+Oriented	I-SKILL
+Programming	I-SKILL
+
+Software	B-ROLE
+Engineering	I-ROLE
+Mentor	I-ROLE
+•	O
+Object	B-SKILL
+Oriented	I-SKILL
+Programming	I-SKILL
+
+Mahasiswa	O
+Institut	B-EDU
+Teknologi	I-EDU
+Del	I-EDU
+mengembangkan	O
+proyek	O
+berbasis	O
+IoT	B-SKILL
+
+Institut	B-EDU
+Teknologi	I-EDU
+Del	I-EDU
+•	O
+IoT	B-SKILL
+
+Backend	B-ROLE
+Database	I-ROLE
+Engineer	I-ROLE
+mengoptimalkan	O
+query	O
+menggunakan	O
+Database	B-SKILL
+Indexing	I-SKILL
+
+Backend	B-ROLE
+Database	I-ROLE
+Engineer	I-ROLE
+•	O
+Database	B-SKILL
+Indexing	I-SKILL
+
+Cyber	B-ROLE
+Threat	I-ROLE
+Analyst	I-ROLE
+menganalisis	O
+serangan	O
+menggunakan	O
+Incident	B-SKILL
+Response	I-SKILL
+
+Cyber	B-ROLE
+Threat	I-ROLE
+Analyst	I-ROLE
+•	O
+Incident	B-SKILL
+Response	I-SKILL
+
+Cloud	B-ROLE
+Kubernetes	I-ROLE
+Engineer	I-ROLE
+mengelola	O
+container	O
+menggunakan	O
+Helm	B-SKILL
+Chart	I-SKILL
+
+Cloud	B-ROLE
+Kubernetes	I-ROLE
+Engineer	I-ROLE
+•	O
+Helm	B-SKILL
+Chart	I-SKILL
+
+Peserta	O
+IBM	B-CERT
+Data	I-CERT
+Engineering	I-CERT
+mengembangkan	O
+pipeline	O
+menggunakan	O
+ETL	B-SKILL
+
+IBM	B-CERT
+Data	I-CERT
+Engineering	I-CERT
+•	O
+ETL	B-SKILL
+
+AI	B-ROLE
+Vision	I-ROLE
+Engineer	I-ROLE
+mengembangkan	O
+deteksi	O
+wajah	O
+menggunakan	O
+OpenCV	B-SKILL
+
+AI	B-ROLE
+Vision	I-ROLE
+Engineer	I-ROLE
+•	O
+OpenCV	B-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Sistem	I-EDU
+Cerdas	I-EDU
+mempelajari	O
+Neural	B-SKILL
+Networks	I-SKILL
+
+S1	B-EDU
+Sistem	I-EDU
+Cerdas	I-EDU
+•	O
+Neural	B-SKILL
+Networks	I-SKILL
+
+Frontend	B-ROLE
+Web	I-ROLE
+Architect	I-ROLE
+mengembangkan	O
+SPA	O
+menggunakan	O
+React	B-SKILL
+Router	I-SKILL
+
+Frontend	B-ROLE
+Web	I-ROLE
+Architect	I-ROLE
+•	O
+React	B-SKILL
+Router	I-SKILL
+
+Software	B-ROLE
+Integration	I-ROLE
+Consultant	I-ROLE
+menghubungkan	O
+layanan	O
+menggunakan	O
+API	B-SKILL
+Gateway	I-SKILL
+
+Software	B-ROLE
+Integration	I-ROLE
+Consultant	I-ROLE
+•	O
+API	B-SKILL
+Gateway	I-SKILL
+
+Peserta	O
+Meta	B-CERT
+Frontend	I-CERT
+Engineering	I-CERT
+mengembangkan	O
+website	O
+menggunakan	O
+Responsive	B-SKILL
+Design	I-SKILL
+
+Meta	B-CERT
+Frontend	I-CERT
+Engineering	I-CERT
+•	O
+Responsive	B-SKILL
+Design	I-SKILL
+
+Data	B-ROLE
+Business	I-ROLE
+Analyst	I-ROLE
+menganalisis	O
+penjualan	O
+menggunakan	O
+Data	B-SKILL
+Visualization	I-SKILL
+
+Data	B-ROLE
+Business	I-ROLE
+Analyst	I-ROLE
+•	O
+Data	B-SKILL
+Visualization	I-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Trunojoyo	I-EDU
+mengembangkan	O
+sistem	O
+berbasis	O
+Cloud	B-SKILL
+Security	I-SKILL
+
+Universitas	B-EDU
+Trunojoyo	I-EDU
+•	O
+Cloud	B-SKILL
+Security	I-SKILL
+
+Backend	B-ROLE
+Distributed	I-ROLE
+Engineer	I-ROLE
+membangun	O
+arsitektur	O
+menggunakan	O
+Distributed	B-SKILL
+Systems	I-SKILL
+
+Backend	B-ROLE
+Distributed	I-ROLE
+Engineer	I-ROLE
+•	O
+Distributed	B-SKILL
+Systems	I-SKILL
+
+Cyber	B-ROLE
+Digital	I-ROLE
+Investigator	I-ROLE
+menganalisis	O
+bukti	O
+menggunakan	O
+Digital	B-SKILL
+Investigation	I-SKILL
+
+Cyber	B-ROLE
+Digital	I-ROLE
+Investigator	I-ROLE
+•	O
+Digital	B-SKILL
+Investigation	I-SKILL
+
+Cloud	B-ROLE
+Monitoring	I-ROLE
+Engineer	I-ROLE
+mengamati	O
+server	O
+menggunakan	O
+Prometheus	B-SKILL
+
+Cloud	B-ROLE
+Monitoring	I-ROLE
+Engineer	I-ROLE
+•	O
+Prometheus	B-SKILL
+
+Peserta	O
+Oracle	B-CERT
+Database	I-CERT
+Administrator	I-CERT
+mengelola	O
+database	O
+menggunakan	O
+SQL	B-SKILL
+Optimization	I-SKILL
+
+Oracle	B-CERT
+Database	I-CERT
+Administrator	I-CERT
+•	O
+SQL	B-SKILL
+Optimization	I-SKILL
+
+Machine	B-ROLE
+Learning	I-ROLE
+Scientist	I-ROLE
+mengembangkan	O
+algoritma	O
+menggunakan	O
+Model	B-SKILL
+Evaluation	I-SKILL
+
+Machine	B-ROLE
+Learning	I-ROLE
+Scientist	I-ROLE
+•	O
+Model	B-SKILL
+Evaluation	I-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Bengkulu	I-EDU
+mempelajari	O
+Data	B-SKILL
+Mining	I-SKILL
+modern	O
+
+Universitas	B-EDU
+Bengkulu	I-EDU
+•	O
+Data	B-SKILL
+Mining	I-SKILL
+
+Frontend	B-ROLE
+Interactive	I-ROLE
+Architect	I-ROLE
+membangun	O
+animasi	O
+menggunakan	O
+GSAP	B-SKILL
+
+Frontend	B-ROLE
+Interactive	I-ROLE
+Architect	I-ROLE
+•	O
+GSAP	B-SKILL
+
+Software	B-ROLE
+Application	I-ROLE
+Consultant	I-ROLE
+mengoptimalkan	O
+sistem	O
+menggunakan	O
+Software	B-SKILL
+Refactoring	I-SKILL
+
+Software	B-ROLE
+Application	I-ROLE
+Consultant	I-ROLE
+•	O
+Software	B-SKILL
+Refactoring	I-SKILL
+
+Peserta	O
+Google	B-CERT
+Cybersecurity	I-CERT
+Professional	I-CERT
+mengembangkan	O
+sistem	O
+menggunakan	O
+Security	B-SKILL
+Hardening	I-SKILL
+
+Google	B-CERT
+Cybersecurity	I-CERT
+Professional	I-CERT
+•	O
+Security	B-SKILL
+Hardening	I-SKILL
+
+Data	B-ROLE
+Governance	I-ROLE
+Engineer	I-ROLE
+mengatur	O
+kualitas	O
+data	O
+menggunakan	O
+Data	B-SKILL
+Catalog	I-SKILL
+
+Data	B-ROLE
+Governance	I-ROLE
+Engineer	I-ROLE
+•	O
+Data	B-SKILL
+Catalog	I-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Teknik	I-EDU
+Mekatronika	I-EDU
+mengembangkan	O
+robot	O
+menggunakan	O
+Embedded	B-SKILL
+Systems	I-SKILL
+
+S1	B-EDU
+Teknik	I-EDU
+Mekatronika	I-EDU
+•	O
+Embedded	B-SKILL
+Systems	I-SKILL
+
+Backend	B-ROLE
+Software	I-ROLE
+Architect	I-ROLE
+merancang	O
+layanan	O
+menggunakan	O
+Clean	B-SKILL
+Architecture	I-SKILL
+
+Backend	B-ROLE
+Software	I-ROLE
+Architect	I-ROLE
+•	O
+Clean	B-SKILL
+Architecture	I-SKILL
+
+Cyber	B-ROLE
+Penetration	I-ROLE
+Tester	I-ROLE
+melakukan	O
+pengujian	O
+menggunakan	O
+Web	B-SKILL
+Exploitation	I-SKILL
+
+Cyber	B-ROLE
+Penetration	I-ROLE
+Tester	I-ROLE
+•	O
+Web	B-SKILL
+Exploitation	I-SKILL
+
+Cloud	B-ROLE
+Automation	I-ROLE
+Architect	I-ROLE
+mengembangkan	O
+pipeline	O
+menggunakan	O
+Infrastructure	B-SKILL
+Automation	I-SKILL
+
+Cloud	B-ROLE
+Automation	I-ROLE
+Architect	I-ROLE
+•	O
+Infrastructure	B-SKILL
+Automation	I-SKILL
+
+Peserta	O
+AWS	B-CERT
+Solutions	I-CERT
+Architect	I-CERT
+mengelola	O
+server	O
+menggunakan	O
+Cloud	B-SKILL
+Architecture	I-SKILL
+
+AWS	B-CERT
+Solutions	I-CERT
+Architect	I-CERT
+•	O
+Cloud	B-SKILL
+Architecture	I-SKILL
+
+AI	B-ROLE
+Research	I-ROLE
+Engineer	I-ROLE
+mengembangkan	O
+chatbot	O
+menggunakan	O
+Retrieval	B-SKILL
+Augmented	I-SKILL
+Generation	I-SKILL
+
+AI	B-ROLE
+Research	I-ROLE
+Engineer	I-ROLE
+•	O
+Retrieval	B-SKILL
+Augmented	I-SKILL
+Generation	I-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Riau	I-EDU
+mengembangkan	O
+aplikasi	O
+menggunakan	O
+Mobile	B-SKILL
+Development	I-SKILL
+
+Universitas	B-EDU
+Riau	I-EDU
+•	O
+Mobile	B-SKILL
+Development	I-SKILL
+
+Frontend	B-ROLE
+Product	I-ROLE
+Designer	I-ROLE
+melakukan	O
+riset	O
+menggunakan	O
+User	B-SKILL
+Journey	I-SKILL
+Mapping	I-SKILL
+
+Frontend	B-ROLE
+Product	I-ROLE
+Designer	I-ROLE
+•	O
+User	B-SKILL
+Journey	I-SKILL
+Mapping	I-SKILL
+
+Software	B-ROLE
+Delivery	I-ROLE
+Architect	I-ROLE
+mengatur	O
+rilis	O
+menggunakan	O
+Continuous	B-SKILL
+Deployment	I-SKILL
+
+Software	B-ROLE
+Delivery	I-ROLE
+Architect	I-ROLE
+•	O
+Continuous	B-SKILL
+Deployment	I-SKILL
+
+Peserta	O
+Dicoding	B-CERT
+Machine	I-CERT
+Learning	I-CERT
+mengembangkan	O
+model	O
+menggunakan	O
+Regression	B-SKILL
+Analysis	I-SKILL
+
+Dicoding	B-CERT
+Machine	I-CERT
+Learning	I-CERT
+•	O
+Regression	B-SKILL
+Analysis	I-SKILL
+
+Data	B-ROLE
+Analytics	I-ROLE
+Manager	I-ROLE
+mengelola	O
+dashboard	O
+menggunakan	O
+Looker	B-SKILL
+Studio	I-SKILL
+
+Data	B-ROLE
+Analytics	I-ROLE
+Manager	I-ROLE
+•	O
+Looker	B-SKILL
+Studio	I-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Teknologi	I-EDU
+Pangan	I-EDU
+mempelajari	O
+Business	B-SKILL
+Intelligence	I-SKILL
+
+S1	B-EDU
+Teknologi	I-EDU
+Pangan	I-EDU
+•	O
+Business	B-SKILL
+Intelligence	I-SKILL
+
+Backend	B-ROLE
+Cloud	I-ROLE
+Specialist	I-ROLE
+mengembangkan	O
+layanan	O
+menggunakan	O
+Cloud	B-SKILL
+Functions	I-SKILL
+
+Backend	B-ROLE
+Cloud	I-ROLE
+Specialist	I-ROLE
+•	O
+Cloud	B-SKILL
+Functions	I-SKILL
+
+Cyber	B-ROLE
+Security	I-ROLE
+Architect	I-ROLE
+mengembangkan	O
+strategi	O
+menggunakan	O
+Security	B-SKILL
+Framework	I-SKILL
+
+Cyber	B-ROLE
+Security	I-ROLE
+Architect	I-ROLE
+•	O
+Security	B-SKILL
+Framework	I-SKILL
+
+Cloud	B-ROLE
+Platform	I-ROLE
+Consultant	I-ROLE
+mengelola	O
+resource	O
+menggunakan	O
+Cloud	B-SKILL
+Governance	I-SKILL
+
+Cloud	B-ROLE
+Platform	I-ROLE
+Consultant	I-ROLE
+•	O
+Cloud	B-SKILL
+Governance	I-SKILL
+
+Peserta	O
+Alibaba	B-CERT
+Cloud	I-CERT
+Developer	I-CERT
+mengembangkan	O
+layanan	O
+menggunakan	O
+Container	B-SKILL
+Service	I-SKILL
+
+Alibaba	B-CERT
+Cloud	I-CERT
+Developer	I-CERT
+•	O
+Container	B-SKILL
+Service	I-SKILL
+
+Machine	B-ROLE
+Learning	I-ROLE
+Developer	I-ROLE
+menggunakan	O
+Decision	B-SKILL
+Trees	I-SKILL
+untuk	O
+prediksi	O
+
+Machine	B-ROLE
+Learning	I-ROLE
+Developer	I-ROLE
+•	O
+Decision	B-SKILL
+Trees	I-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Khairun	I-EDU
+mengembangkan	O
+sistem	O
+menggunakan	O
+Network	B-SKILL
+Security	I-SKILL
+
+Universitas	B-EDU
+Khairun	I-EDU
+•	O
+Network	B-SKILL
+Security	I-SKILL
+
+Frontend	B-ROLE
+Motion	I-ROLE
+Designer	I-ROLE
+membuat	O
+animasi	O
+menggunakan	O
+Motion	B-SKILL
+Graphics	I-SKILL
+
+Frontend	B-ROLE
+Motion	I-ROLE
+Designer	I-ROLE
+•	O
+Motion	B-SKILL
+Graphics	I-SKILL
+
+Software	B-ROLE
+Testing	I-ROLE
+Consultant	I-ROLE
+mengembangkan	O
+pengujian	O
+menggunakan	O
+Performance	B-SKILL
+Testing	I-SKILL
+
+Software	B-ROLE
+Testing	I-ROLE
+Consultant	I-ROLE
+•	O
+Performance	B-SKILL
+Testing	I-SKILL
+
+Peserta	O
+Microsoft	B-CERT
+Azure	I-CERT
+Administrator	I-CERT
+mengelola	O
+resource	O
+menggunakan	O
+Cloud	B-SKILL
+Monitoring	I-SKILL
+
+Microsoft	B-CERT
+Azure	I-CERT
+Administrator	I-CERT
+•	O
+Cloud	B-SKILL
+Monitoring	I-SKILL
+
+Data	B-ROLE
+Platform	I-ROLE
+Architect	I-ROLE
+merancang	O
+arsitektur	O
+menggunakan	O
+Data	B-SKILL
+Lakehouse	I-SKILL
+
+Data	B-ROLE
+Platform	I-ROLE
+Architect	I-ROLE
+•	O
+Data	B-SKILL
+Lakehouse	I-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Teknik	I-EDU
+Sipil	I-EDU
+mempelajari	O
+Project	B-SKILL
+Management	I-SKILL
+
+S1	B-EDU
+Teknik	I-EDU
+Sipil	I-EDU
+•	O
+Project	B-SKILL
+Management	I-SKILL
+
+Backend	B-ROLE
+API	I-ROLE
+Consultant	I-ROLE
+mengembangkan	O
+endpoint	O
+menggunakan	O
+OpenAPI	B-SKILL
+Specification	I-SKILL
+
+Backend	B-ROLE
+API	I-ROLE
+Consultant	I-ROLE
+•	O
+OpenAPI	B-SKILL
+Specification	I-SKILL
+
+Cyber	B-ROLE
+Compliance	I-ROLE
+Analyst	I-ROLE
+memastikan	O
+standar	O
+menggunakan	O
+Compliance	B-SKILL
+Management	I-SKILL
+
+Cyber	B-ROLE
+Compliance	I-ROLE
+Analyst	I-ROLE
+•	O
+Compliance	B-SKILL
+Management	I-SKILL
+
+Cloud	B-ROLE
+Engineering	I-ROLE
+Manager	I-ROLE
+mengatur	O
+tim	O
+menggunakan	O
+Cloud	B-SKILL
+Operations	I-SKILL
+
+Cloud	B-ROLE
+Engineering	I-ROLE
+Manager	I-ROLE
+•	O
+Cloud	B-SKILL
+Operations	I-SKILL
+
+Peserta	O
+Coursera	B-CERT
+Deep	I-CERT
+Learning	I-CERT
+mengembangkan	O
+algoritma	O
+menggunakan	O
+Computer	B-SKILL
+Vision	I-SKILL
+
+Coursera	B-CERT
+Deep	I-CERT
+Learning	I-CERT
+•	O
+Computer	B-SKILL
+Vision	I-SKILL
+
+AI	B-ROLE
+Data	I-ROLE
+Engineer	I-ROLE
+mengelola	O
+pipeline	O
+menggunakan	O
+Feature	B-SKILL
+Store	I-SKILL
+
+AI	B-ROLE
+Data	I-ROLE
+Engineer	I-ROLE
+•	O
+Feature	B-SKILL
+Store	I-SKILL
+
+Mahasiswa	O
+Institut	B-EDU
+Teknologi	I-EDU
+Garut	I-EDU
+mengembangkan	O
+aplikasi	O
+menggunakan	O
+Web	B-SKILL
+Development	I-SKILL
+
+Institut	B-EDU
+Teknologi	I-EDU
+Garut	I-EDU
+•	O
+Web	B-SKILL
+Development	I-SKILL
+
+Frontend	B-ROLE
+Accessibility	I-ROLE
+Engineer	I-ROLE
+meningkatkan	O
+aksesibilitas	O
+menggunakan	O
+Accessibility	B-SKILL
+Testing	I-SKILL
+
+Frontend	B-ROLE
+Accessibility	I-ROLE
+Engineer	I-ROLE
+•	O
+Accessibility	B-SKILL
+Testing	I-SKILL
+
+Software	B-ROLE
+Platform	I-ROLE
+Engineer	I-ROLE
+mengembangkan	O
+service	O
+menggunakan	O
+Event	B-SKILL
+Streaming	I-SKILL
+
+Software	B-ROLE
+Platform	I-ROLE
+Engineer	I-ROLE
+•	O
+Event	B-SKILL
+Streaming	I-SKILL
+
+Peserta	O
+Google	B-CERT
+IT	I-CERT
+Automation	I-CERT
+mengembangkan	O
+workflow	O
+menggunakan	O
+Task	B-SKILL
+Automation	I-SKILL
+
+Google	B-CERT
+IT	I-CERT
+Automation	I-CERT
+•	O
+Task	B-SKILL
+Automation	I-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Indonesia	I-EDU
+mengikuti	O
+Google	B-CERT
+Data	I-CERT
+Analytics	I-CERT
+Program	I-CERT
+
+Universitas	B-EDU
+Indonesia	I-EDU
+•	O
+Google	B-CERT
+Data	I-CERT
+Analytics	I-CERT
+Program	I-CERT
+
+Backend	B-ROLE
+Developer	I-ROLE
+di	O
+Tokopedia	B-COMP
+menggunakan	O
+Node.js	B-SKILL
+
+Backend	B-ROLE
+Developer	I-ROLE
+•	O
+Tokopedia	B-COMP
+•	O
+Node.js	B-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Teknik	I-EDU
+Informatika	I-EDU
+mengikuti	O
+AWS	B-CERT
+Cloud	I-CERT
+Practitioner	I-CERT
+
+S1	B-EDU
+Teknik	I-EDU
+Informatika	I-EDU
+•	O
+AWS	B-CERT
+Cloud	I-CERT
+Practitioner	I-CERT
+
+Data	B-ROLE
+Engineer	I-ROLE
+di	O
+Gojek	B-COMP
+menggunakan	O
+Apache	B-SKILL
+Spark	I-SKILL
+
+Data	B-ROLE
+Engineer	I-ROLE
+•	O
+Gojek	B-COMP
+•	O
+Apache	B-SKILL
+Spark	I-SKILL
+
+Lulusan	O
+Institut	B-EDU
+Teknologi	I-EDU
+Bandung	I-EDU
+mengikuti	O
+Oracle	B-CERT
+Java	I-CERT
+Certification	I-CERT
+
+Institut	B-EDU
+Teknologi	I-EDU
+Bandung	I-EDU
+•	O
+Oracle	B-CERT
+Java	I-CERT
+Certification	I-CERT
+
+Frontend	B-ROLE
+Engineer	I-ROLE
+di	O
+Shopee	B-COMP
+menggunakan	O
+React	B-SKILL
+JS	I-SKILL
+
+Frontend	B-ROLE
+Engineer	I-ROLE
+•	O
+Shopee	B-COMP
+•	O
+React	B-SKILL
+JS	I-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Gadjah	I-EDU
+Mada	I-EDU
+mengikuti	O
+Microsoft	B-CERT
+Azure	I-CERT
+Fundamentals	I-CERT
+
+Universitas	B-EDU
+Gadjah	I-EDU
+Mada	I-EDU
+•	O
+Microsoft	B-CERT
+Azure	I-CERT
+Fundamentals	I-CERT
+
+Cloud	B-ROLE
+Engineer	I-ROLE
+di	O
+Traveloka	B-COMP
+menggunakan	O
+Docker	B-SKILL
+
+Cloud	B-ROLE
+Engineer	I-ROLE
+•	O
+Traveloka	B-COMP
+•	O
+Docker	B-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Sistem	I-EDU
+Informasi	I-EDU
+mengikuti	O
+Cisco	B-CERT
+CCNA	I-CERT
+Program	I-CERT
+
+S1	B-EDU
+Sistem	I-EDU
+Informasi	I-EDU
+•	O
+Cisco	B-CERT
+CCNA	I-CERT
+Program	I-CERT
+
+Machine	B-ROLE
+Learning	I-ROLE
+Engineer	I-ROLE
+di	O
+Xendit	B-COMP
+menggunakan	O
+TensorFlow	B-SKILL
+
+Machine	B-ROLE
+Learning	I-ROLE
+Engineer	I-ROLE
+•	O
+Xendit	B-COMP
+•	O
+TensorFlow	B-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Brawijaya	I-EDU
+mengikuti	O
+Google	B-CERT
+UX	I-CERT
+Design	I-CERT
+Course	I-CERT
+
+Universitas	B-EDU
+Brawijaya	I-EDU
+•	O
+Google	B-CERT
+UX	I-CERT
+Design	I-CERT
+Course	I-CERT
+
+Cyber	B-ROLE
+Security	I-ROLE
+Analyst	I-ROLE
+di	O
+Telkom	B-COMP
+Indonesia	I-COMP
+menggunakan	O
+Wireshark	B-SKILL
+
+Cyber	B-ROLE
+Security	I-ROLE
+Analyst	I-ROLE
+•	O
+Telkom	B-COMP
+Indonesia	I-COMP
+•	O
+Wireshark	B-SKILL
+
+Lulusan	O
+S1	B-EDU
+Ilmu	I-EDU
+Komputer	I-EDU
+mengikuti	O
+IBM	B-CERT
+Data	I-CERT
+Science	I-CERT
+
+Backend	B-ROLE
+Engineer	I-ROLE
+di	O
+Bukalapak	B-COMP
+menggunakan	O
+Redis	B-SKILL
+
+Backend	B-ROLE
+Engineer	I-ROLE
+•	O
+Bukalapak	B-COMP
+•	O
+Redis	B-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Airlangga	I-EDU
+mengikuti	O
+Alibaba	B-CERT
+Cloud	I-CERT
+Associate	I-CERT
+
+Universitas	B-EDU
+Airlangga	I-EDU
+•	O
+Alibaba	B-CERT
+Cloud	I-CERT
+Associate	I-CERT
+
+Software	B-ROLE
+Engineer	I-ROLE
+di	O
+Ruangguru	B-COMP
+menggunakan	O
+Java	B-SKILL
+
+Software	B-ROLE
+Engineer	I-ROLE
+•	O
+Ruangguru	B-COMP
+•	O
+Java	B-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Data	I-EDU
+Science	I-EDU
+mengikuti	O
+TensorFlow	B-CERT
+Developer	I-CERT
+Certificate	I-CERT
+
+S1	B-EDU
+Data	I-EDU
+Science	I-EDU
+•	O
+TensorFlow	B-CERT
+Developer	I-CERT
+Certificate	I-CERT
+
+Frontend	B-ROLE
+Developer	I-ROLE
+di	O
+Blibli	B-COMP
+menggunakan	O
+Vue.js	B-SKILL
+
+Frontend	B-ROLE
+Developer	I-ROLE
+•	O
+Blibli	B-COMP
+•	O
+Vue.js	B-SKILL
+
+Mahasiswa	O
+Institut	B-EDU
+Teknologi	I-EDU
+Sepuluh	I-EDU
+Nopember	I-EDU
+mengikuti	O
+Meta	B-CERT
+Frontend	I-CERT
+Developer	I-CERT
+
+Institut	B-EDU
+Teknologi	I-EDU
+Sepuluh	I-EDU
+Nopember	I-EDU
+•	O
+Meta	B-CERT
+Frontend	I-CERT
+Developer	I-CERT
+
+Cloud	B-ROLE
+Architect	I-ROLE
+di	O
+SeaBank	B-COMP
+menggunakan	O
+Kubernetes	B-SKILL
+
+Cloud	B-ROLE
+Architect	I-ROLE
+•	O
+SeaBank	B-COMP
+•	O
+Kubernetes	B-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Diponegoro	I-EDU
+mengikuti	O
+AWS	B-CERT
+Machine	I-CERT
+Learning	I-CERT
+Specialty	I-CERT
+
+Universitas	B-EDU
+Diponegoro	I-EDU
+•	O
+AWS	B-CERT
+Machine	I-CERT
+Learning	I-CERT
+Specialty	I-CERT
+
+DevOps	B-ROLE
+Engineer	I-ROLE
+di	O
+OVO	B-COMP
+menggunakan	O
+Terraform	B-SKILL
+
+DevOps	B-ROLE
+Engineer	I-ROLE
+•	O
+OVO	B-COMP
+•	O
+Terraform	B-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Teknik	I-EDU
+Komputer	I-EDU
+mengikuti	O
+Dicoding	B-CERT
+Machine	I-CERT
+Learning	I-CERT
+
+S1	B-EDU
+Teknik	I-EDU
+Komputer	I-EDU
+•	O
+Dicoding	B-CERT
+Machine	I-CERT
+Learning	I-CERT
+
+Data	B-ROLE
+Analyst	I-ROLE
+di	O
+Bank	B-COMP
+Mandiri	I-COMP
+menggunakan	O
+Power	B-SKILL
+BI	I-SKILL
+
+Data	B-ROLE
+Analyst	I-ROLE
+•	O
+Bank	B-COMP
+Mandiri	I-COMP
+•	O
+Power	B-SKILL
+BI	I-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Padjadjaran	I-EDU
+mengikuti	O
+Google	B-CERT
+Project	I-CERT
+Management	I-CERT
+
+Universitas	B-EDU
+Padjadjaran	I-EDU
+•	O
+Google	B-CERT
+Project	I-CERT
+Management	I-CERT
+
+AI	B-ROLE
+Engineer	I-ROLE
+di	O
+OpenAI	B-COMP
+menggunakan	O
+PyTorch	B-SKILL
+
+AI	B-ROLE
+Engineer	I-ROLE
+•	O
+OpenAI	B-COMP
+•	O
+PyTorch	B-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Teknik	I-EDU
+Elektro	I-EDU
+mengikuti	O
+Oracle	B-CERT
+Database	I-CERT
+Associate	I-CERT
+
+S1	B-EDU
+Teknik	I-EDU
+Elektro	I-EDU
+•	O
+Oracle	B-CERT
+Database	I-CERT
+Associate	I-CERT
+
+Backend	B-ROLE
+Developer	I-ROLE
+di	O
+Kredivo	B-COMP
+menggunakan	O
+FastAPI	B-SKILL
+
+Backend	B-ROLE
+Developer	I-ROLE
+•	O
+Kredivo	B-COMP
+•	O
+FastAPI	B-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Negeri	I-EDU
+Malang	I-EDU
+mengikuti	O
+Red	B-CERT
+Hat	I-CERT
+System	I-CERT
+Administration	I-CERT
+
+Universitas	B-EDU
+Negeri	I-EDU
+Malang	I-EDU
+•	O
+Red	B-CERT
+Hat	I-CERT
+System	I-CERT
+Administration	I-CERT
+
+Software	B-ROLE
+Architect	I-ROLE
+di	O
+BCA	B-COMP
+menggunakan	O
+Microservices	B-SKILL
+
+Software	B-ROLE
+Architect	I-ROLE
+•	O
+BCA	B-COMP
+•	O
+Microservices	B-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Rekayasa	I-EDU
+Perangkat	I-EDU
+Lunak	I-EDU
+mengikuti	O
+Google	B-CERT
+Cloud	I-CERT
+Engineer	I-CERT
+
+S1	B-EDU
+Rekayasa	I-EDU
+Perangkat	I-EDU
+Lunak	I-EDU
+•	O
+Google	B-CERT
+Cloud	I-CERT
+Engineer	I-CERT
+
+Machine	B-ROLE
+Learning	I-ROLE
+Researcher	I-ROLE
+di	O
+NVIDIA	B-COMP
+menggunakan	O
+Keras	B-SKILL
+
+Machine	B-ROLE
+Learning	I-ROLE
+Researcher	I-ROLE
+•	O
+NVIDIA	B-COMP
+•	O
+Keras	B-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Sriwijaya	I-EDU
+mengikuti	O
+Coursera	B-CERT
+Deep	I-CERT
+Learning	I-CERT
+
+Universitas	B-EDU
+Sriwijaya	I-EDU
+•	O
+Coursera	B-CERT
+Deep	I-CERT
+Learning	I-CERT
+
+Cloud	B-ROLE
+Consultant	I-ROLE
+di	O
+Accenture	B-COMP
+menggunakan	O
+Linux	B-SKILL
+
+Cloud	B-ROLE
+Consultant	I-ROLE
+•	O
+Accenture	B-COMP
+•	O
+Linux	B-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Kecerdasan	I-EDU
+Buatan	I-EDU
+mengikuti	O
+IBM	B-CERT
+Cybersecurity	I-CERT
+Program	I-CERT
+
+S1	B-EDU
+Kecerdasan	I-EDU
+Buatan	I-EDU
+•	O
+IBM	B-CERT
+Cybersecurity	I-CERT
+Program	I-CERT
+
+Frontend	B-ROLE
+Engineer	I-ROLE
+di	O
+Lazada	B-COMP
+menggunakan	O
+Tailwind	B-SKILL
+CSS	I-SKILL
+
+Frontend	B-ROLE
+Engineer	I-ROLE
+•	O
+Lazada	B-COMP
+•	O
+Tailwind	B-SKILL
+CSS	I-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Andalas	I-EDU
+mengikuti	O
+AWS	B-CERT
+Academy	I-CERT
+Cloud	I-CERT
+
+Universitas	B-EDU
+Andalas	I-EDU
+•	O
+AWS	B-CERT
+Academy	I-CERT
+Cloud	I-CERT
+
+Cyber	B-ROLE
+Security	I-ROLE
+Engineer	I-ROLE
+di	O
+Pertamina	B-COMP
+menggunakan	O
+Burp	B-SKILL
+Suite	I-SKILL
+
+Cyber	B-ROLE
+Security	I-ROLE
+Engineer	I-ROLE
+•	O
+Pertamina	B-COMP
+•	O
+Burp	B-SKILL
+Suite	I-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Teknologi	I-EDU
+Informasi	I-EDU
+mengikuti	O
+Meta	B-CERT
+Android	I-CERT
+Developer	I-CERT
+
+S1	B-EDU
+Teknologi	I-EDU
+Informasi	I-EDU
+•	O
+Meta	B-CERT
+Android	I-CERT
+Developer	I-CERT
+
+Backend	B-ROLE
+Services	I-ROLE
+Engineer	I-ROLE
+di	O
+DANA	B-COMP
+menggunakan	O
+GraphQL	B-SKILL
+
+Backend	B-ROLE
+Services	I-ROLE
+Engineer	I-ROLE
+•	O
+DANA	B-COMP
+•	O
+GraphQL	B-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Jember	I-EDU
+mengikuti	O
+Google	B-CERT
+IT	I-CERT
+Support	I-CERT
+
+Universitas	B-EDU
+Jember	I-EDU
+•	O
+Google	B-CERT
+IT	I-CERT
+Support	I-CERT
+
+AI	B-ROLE
+Researcher	I-ROLE
+di	O
+DeepMind	B-COMP
+menggunakan	O
+Transformer	B-SKILL
+Models	I-SKILL
+
+AI	B-ROLE
+Researcher	I-ROLE
+•	O
+DeepMind	B-COMP
+•	O
+Transformer	B-SKILL
+Models	I-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Informatika	I-EDU
+mengikuti	O
+Alibaba	B-CERT
+Cloud	I-CERT
+Professional	I-CERT
+
+S1	B-EDU
+Informatika	I-EDU
+•	O
+Alibaba	B-CERT
+Cloud	I-CERT
+Professional	I-CERT
+
+Cloud	B-ROLE
+Engineer	I-ROLE
+di	O
+Astra	B-COMP
+International	I-COMP
+menggunakan	O
+OpenStack	B-SKILL
+
+Cloud	B-ROLE
+Engineer	I-ROLE
+•	O
+Astra	B-COMP
+International	I-COMP
+•	O
+OpenStack	B-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Hasanuddin	I-EDU
+mengikuti	O
+Microsoft	B-CERT
+Security	I-CERT
+Fundamentals	I-CERT
+
+Universitas	B-EDU
+Hasanuddin	I-EDU
+•	O
+Microsoft	B-CERT
+Security	I-CERT
+Fundamentals	I-CERT
+
+Data	B-ROLE
+Scientist	I-ROLE
+di	O
+Grab	B-COMP
+menggunakan	O
+Pandas	B-SKILL
+
+Data	B-ROLE
+Scientist	I-ROLE
+•	O
+Grab	B-COMP
+•	O
+Pandas	B-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Sistem	I-EDU
+Komputer	I-EDU
+mengikuti	O
+Cisco	B-CERT
+Networking	I-CERT
+Essentials	I-CERT
+
+S1	B-EDU
+Sistem	I-EDU
+Komputer	I-EDU
+•	O
+Cisco	B-CERT
+Networking	I-CERT
+Essentials	I-CERT
+
+Mahasiswa	O
+Universitas	B-EDU
+Mercu	I-EDU
+Buana	I-EDU
+mengikuti	O
+Google	B-CERT
+Cloud	I-CERT
+Training	I-CERT
+
+Universitas	B-EDU
+Mercu	I-EDU
+Buana	I-EDU
+•	O
+Google	B-CERT
+Cloud	I-CERT
+Training	I-CERT
+
+Backend	B-ROLE
+Engineer	I-ROLE
+di	O
+Tokopedia	B-COMP
+menggunakan	O
+Redis	B-SKILL
+Cluster	I-SKILL
+
+Backend	B-ROLE
+Engineer	I-ROLE
+•	O
+Tokopedia	B-COMP
+•	O
+Redis	B-SKILL
+Cluster	I-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Teknik	I-EDU
+Industri	I-EDU
+mengikuti	O
+AWS	B-CERT
+Academy	I-CERT
+Program	I-CERT
+
+S1	B-EDU
+Teknik	I-EDU
+Industri	I-EDU
+•	O
+AWS	B-CERT
+Academy	I-CERT
+Program	I-CERT
+
+Cloud	B-ROLE
+Engineer	I-ROLE
+di	O
+Traveloka	B-COMP
+menggunakan	O
+Terraform	B-SKILL
+
+Cloud	B-ROLE
+Engineer	I-ROLE
+•	O
+Traveloka	B-COMP
+•	O
+Terraform	B-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Telkom	I-EDU
+mengikuti	O
+Meta	B-CERT
+Frontend	I-CERT
+Developer	I-CERT
+
+Universitas	B-EDU
+Telkom	I-EDU
+•	O
+Meta	B-CERT
+Frontend	I-CERT
+Developer	I-CERT
+
+Frontend	B-ROLE
+Developer	I-ROLE
+di	O
+Shopee	B-COMP
+menggunakan	O
+React	B-SKILL
+Hooks	I-SKILL
+
+Frontend	B-ROLE
+Developer	I-ROLE
+•	O
+Shopee	B-COMP
+•	O
+React	B-SKILL
+Hooks	I-SKILL
+
+Cyber	B-ROLE
+Security	I-ROLE
+Engineer	I-ROLE
+di	O
+Pertamina	B-COMP
+menggunakan	O
+Penetration	B-SKILL
+Testing	I-SKILL
+
+Cyber	B-ROLE
+Security	I-ROLE
+Engineer	I-ROLE
+•	O
+Pertamina	B-COMP
+•	O
+Penetration	B-SKILL
+Testing	I-SKILL
+
+Mahasiswa	O
+Institut	B-EDU
+Teknologi	I-EDU
+Bandung	I-EDU
+mengikuti	O
+Oracle	B-CERT
+Java	I-CERT
+Associate	I-CERT
+
+Institut	B-EDU
+Teknologi	I-EDU
+Bandung	I-EDU
+•	O
+Oracle	B-CERT
+Java	I-CERT
+Associate	I-CERT
+
+Data	B-ROLE
+Engineer	I-ROLE
+di	O
+Bukalapak	B-COMP
+menggunakan	O
+Apache	B-SKILL
+Kafka	I-SKILL
+
+Data	B-ROLE
+Engineer	I-ROLE
+•	O
+Bukalapak	B-COMP
+•	O
+Apache	B-SKILL
+Kafka	I-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Bina	I-EDU
+Nusantara	I-EDU
+mengikuti	O
+IBM	B-CERT
+Cybersecurity	I-CERT
+Course	I-CERT
+
+Universitas	B-EDU
+Bina	I-EDU
+Nusantara	I-EDU
+•	O
+IBM	B-CERT
+Cybersecurity	I-CERT
+Course	I-CERT
+
+Cloud	B-ROLE
+Architect	I-ROLE
+di	O
+Xendit	B-COMP
+menggunakan	O
+Kubernetes	B-SKILL
+
+Cloud	B-ROLE
+Architect	I-ROLE
+•	O
+Xendit	B-COMP
+•	O
+Kubernetes	B-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Ilmu	I-EDU
+Komputer	I-EDU
+mengikuti	O
+Google	B-CERT
+UX	I-CERT
+Course	I-CERT
+
+S1	B-EDU
+Ilmu	I-EDU
+Komputer	I-EDU
+•	O
+Google	B-CERT
+UX	I-CERT
+Course	I-CERT
+
+Machine	B-ROLE
+Learning	I-ROLE
+Engineer	I-ROLE
+di	O
+OpenAI	B-COMP
+menggunakan	O
+PyTorch	B-SKILL
+
+Machine	B-ROLE
+Learning	I-ROLE
+Engineer	I-ROLE
+•	O
+OpenAI	B-COMP
+•	O
+PyTorch	B-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Diponegoro	I-EDU
+mengikuti	O
+Cisco	B-CERT
+CCNA	I-CERT
+Certification	I-CERT
+
+Universitas	B-EDU
+Diponegoro	I-EDU
+•	O
+Cisco	B-CERT
+CCNA	I-CERT
+Certification	I-CERT
+
+Backend	B-ROLE
+Developer	I-ROLE
+di	O
+DANA	B-COMP
+menggunakan	O
+FastAPI	B-SKILL
+
+Backend	B-ROLE
+Developer	I-ROLE
+•	O
+DANA	B-COMP
+•	O
+FastAPI	B-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Teknik	I-EDU
+Komputer	I-EDU
+mengikuti	O
+Alibaba	B-CERT
+Cloud	I-CERT
+Engineer	I-CERT
+
+S1	B-EDU
+Teknik	I-EDU
+Komputer	I-EDU
+•	O
+Alibaba	B-CERT
+Cloud	I-CERT
+Engineer	I-CERT
+
+Software	B-ROLE
+Engineer	I-ROLE
+di	O
+OVO	B-COMP
+menggunakan	O
+Microservices	B-SKILL
+
+Software	B-ROLE
+Engineer	I-ROLE
+•	O
+OVO	B-COMP
+•	O
+Microservices	B-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Andalas	I-EDU
+mengikuti	O
+Microsoft	B-CERT
+Azure	I-CERT
+Fundamentals	I-CERT
+
+Universitas	B-EDU
+Andalas	I-EDU
+•	O
+Microsoft	B-CERT
+Azure	I-CERT
+Fundamentals	I-CERT
+
+Frontend	B-ROLE
+Engineer	I-ROLE
+di	O
+Blibli	B-COMP
+menggunakan	O
+Vue.js	B-SKILL
+
+Frontend	B-ROLE
+Engineer	I-ROLE
+•	O
+Blibli	B-COMP
+•	O
+Vue.js	B-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Teknik	I-EDU
+Elektro	I-EDU
+mengikuti	O
+Google	B-CERT
+Data	I-CERT
+Analytics	I-CERT
+
+S1	B-EDU
+Teknik	I-EDU
+Elektro	I-EDU
+•	O
+Google	B-CERT
+Data	I-CERT
+Analytics	I-CERT
+
+Mahasiswa	O
+Universitas	B-EDU
+Padjadjaran	I-EDU
+mengikuti	O
+AWS	B-CERT
+Cloud	I-CERT
+Practitioner	I-CERT
+
+Universitas	B-EDU
+Padjadjaran	I-EDU
+•	O
+AWS	B-CERT
+Cloud	I-CERT
+Practitioner	I-CERT
+
+Mahasiswa	O
+S1	B-EDU
+Kecerdasan	I-EDU
+Buatan	I-EDU
+mengikuti	O
+Coursera	B-CERT
+Deep	I-CERT
+Learning	I-CERT
+
+S1	B-EDU
+Kecerdasan	I-EDU
+Buatan	I-EDU
+•	O
+Coursera	B-CERT
+Deep	I-CERT
+Learning	I-CERT
+
+Mahasiswa	O
+Universitas	B-EDU
+Sriwijaya	I-EDU
+mengikuti	O
+Meta	B-CERT
+Android	I-CERT
+Developer	I-CERT
+
+Universitas	B-EDU
+Sriwijaya	I-EDU
+•	O
+Meta	B-CERT
+Android	I-CERT
+Developer	I-CERT
+
+Backend	B-ROLE
+Services	I-ROLE
+Engineer	I-ROLE
+di	O
+SeaBank	B-COMP
+menggunakan	O
+GraphQL	B-SKILL
+
+Backend	B-ROLE
+Services	I-ROLE
+Engineer	I-ROLE
+•	O
+SeaBank	B-COMP
+•	O
+GraphQL	B-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Sistem	I-EDU
+Informasi	I-EDU
+mengikuti	O
+IBM	B-CERT
+Data	I-CERT
+Science	I-CERT
+
+S1	B-EDU
+Sistem	I-EDU
+Informasi	I-EDU
+•	O
+IBM	B-CERT
+Data	I-CERT
+Science	I-CERT
+
+Machine	B-ROLE
+Learning	I-ROLE
+Scientist	I-ROLE
+di	O
+NVIDIA	B-COMP
+menggunakan	O
+Keras	B-SKILL
+
+Machine	B-ROLE
+Learning	I-ROLE
+Scientist	I-ROLE
+•	O
+NVIDIA	B-COMP
+•	O
+Keras	B-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Airlangga	I-EDU
+mengikuti	O
+Google	B-CERT
+Project	I-CERT
+Management	I-CERT
+
+Universitas	B-EDU
+Airlangga	I-EDU
+•	O
+Google	B-CERT
+Project	I-CERT
+Management	I-CERT
+
+Data	B-ROLE
+Scientist	I-ROLE
+di	O
+Grab	B-COMP
+menggunakan	O
+Scikit	B-SKILL
+Learn	I-SKILL
+
+Data	B-ROLE
+Scientist	I-ROLE
+•	O
+Grab	B-COMP
+•	O
+Scikit	B-SKILL
+Learn	I-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Teknologi	I-EDU
+Informasi	I-EDU
+mengikuti	O
+Red	B-CERT
+Hat	I-CERT
+Administration	I-CERT
+
+S1	B-EDU
+Teknologi	I-EDU
+Informasi	I-EDU
+•	O
+Red	B-CERT
+Hat	I-CERT
+Administration	I-CERT
+
+Frontend	B-ROLE
+UI	I-ROLE
+Designer	I-ROLE
+di	O
+Ruangguru	B-COMP
+menggunakan	O
+Figma	B-SKILL
+
+Frontend	B-ROLE
+UI	I-ROLE
+Designer	I-ROLE
+•	O
+Ruangguru	B-COMP
+•	O
+Figma	B-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Jember	I-EDU
+mengikuti	O
+TensorFlow	B-CERT
+Developer	I-CERT
+Program	I-CERT
+
+Universitas	B-EDU
+Jember	I-EDU
+•	O
+TensorFlow	B-CERT
+Developer	I-CERT
+Program	I-CERT
+
+Cloud	B-ROLE
+DevOps	I-ROLE
+Engineer	I-ROLE
+di	O
+Astra	B-COMP
+International	I-COMP
+menggunakan	O
+Docker	B-SKILL
+Compose	I-SKILL
+
+Cloud	B-ROLE
+DevOps	I-ROLE
+Engineer	I-ROLE
+•	O
+Astra	B-COMP
+International	I-COMP
+•	O
+Docker	B-SKILL
+Compose	I-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Informatika	I-EDU
+mengikuti	O
+Microsoft	B-CERT
+Security	I-CERT
+Fundamentals	I-CERT
+
+S1	B-EDU
+Informatika	I-EDU
+•	O
+Microsoft	B-CERT
+Security	I-CERT
+Fundamentals	I-CERT
+
+Backend	B-ROLE
+Platform	I-ROLE
+Engineer	I-ROLE
+di	O
+Kredivo	B-COMP
+menggunakan	O
+RabbitMQ	B-SKILL
+
+Backend	B-ROLE
+Platform	I-ROLE
+Engineer	I-ROLE
+•	O
+Kredivo	B-COMP
+•	O
+RabbitMQ	B-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Hasanuddin	I-EDU
+mengikuti	O
+Google	B-CERT
+IT	I-CERT
+Automation	I-CERT
+
+Universitas	B-EDU
+Hasanuddin	I-EDU
+•	O
+Google	B-CERT
+IT	I-CERT
+Automation	I-CERT
+
+Cyber	B-ROLE
+Threat	I-ROLE
+Analyst	I-ROLE
+di	O
+Bank	B-COMP
+Mandiri	I-COMP
+menggunakan	O
+Threat	B-SKILL
+Modeling	I-SKILL
+
+Cyber	B-ROLE
+Threat	I-ROLE
+Analyst	I-ROLE
+•	O
+Bank	B-COMP
+Mandiri	I-COMP
+•	O
+Threat	B-SKILL
+Modeling	I-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Rekayasa	I-EDU
+Perangkat	I-EDU
+Lunak	I-EDU
+mengikuti	O
+Oracle	B-CERT
+Database	I-CERT
+Professional	I-CERT
+
+S1	B-EDU
+Rekayasa	I-EDU
+Perangkat	I-EDU
+Lunak	I-EDU
+•	O
+Oracle	B-CERT
+Database	I-CERT
+Professional	I-CERT
+
+Mahasiswa	O
+Universitas	B-EDU
+Negeri	I-EDU
+Surabaya	I-EDU
+mengikuti	O
+Google	B-CERT
+Cybersecurity	I-CERT
+Training	I-CERT
+
+Universitas	B-EDU
+Negeri	I-EDU
+Surabaya	I-EDU
+•	O
+Google	B-CERT
+Cybersecurity	I-CERT
+Training	I-CERT
+
+Backend	B-ROLE
+API	I-ROLE
+Engineer	I-ROLE
+di	O
+Gojek	B-COMP
+menggunakan	O
+Express.js	B-SKILL
+
+Backend	B-ROLE
+API	I-ROLE
+Engineer	I-ROLE
+•	O
+Gojek	B-COMP
+•	O
+Express.js	B-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Teknik	I-EDU
+Biomedis	I-EDU
+mengikuti	O
+AWS	B-CERT
+Machine	I-CERT
+Learning	I-CERT
+
+S1	B-EDU
+Teknik	I-EDU
+Biomedis	I-EDU
+•	O
+AWS	B-CERT
+Machine	I-CERT
+Learning	I-CERT
+
+Cloud	B-ROLE
+Operations	I-ROLE
+Engineer	I-ROLE
+di	O
+Shopee	B-COMP
+menggunakan	O
+Prometheus	B-SKILL
+
+Cloud	B-ROLE
+Operations	I-ROLE
+Engineer	I-ROLE
+•	O
+Shopee	B-COMP
+•	O
+Prometheus	B-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Pendidikan	I-EDU
+Indonesia	I-EDU
+mengikuti	O
+Meta	B-CERT
+React	I-CERT
+Developer	I-CERT
+
+Universitas	B-EDU
+Pendidikan	I-EDU
+Indonesia	I-EDU
+•	O
+Meta	B-CERT
+React	I-CERT
+Developer	I-CERT
+
+Frontend	B-ROLE
+Interactive	I-ROLE
+Designer	I-ROLE
+di	O
+Tokopedia	B-COMP
+menggunakan	O
+Framer	B-SKILL
+Motion	I-SKILL
+
+Frontend	B-ROLE
+Interactive	I-ROLE
+Designer	I-ROLE
+•	O
+Tokopedia	B-COMP
+•	O
+Framer	B-SKILL
+Motion	I-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Teknik	I-EDU
+Fisika	I-EDU
+mengikuti	O
+TensorFlow	B-CERT
+Deep	I-CERT
+Learning	I-CERT
+
+S1	B-EDU
+Teknik	I-EDU
+Fisika	I-EDU
+•	O
+TensorFlow	B-CERT
+Deep	I-CERT
+Learning	I-CERT
+
+Cyber	B-ROLE
+Incident	I-ROLE
+Responder	I-ROLE
+di	O
+Pertamina	B-COMP
+menggunakan	O
+Malware	B-SKILL
+Analysis	I-SKILL
+
+Cyber	B-ROLE
+Incident	I-ROLE
+Responder	I-ROLE
+•	O
+Pertamina	B-COMP
+•	O
+Malware	B-SKILL
+Analysis	I-SKILL
+
+Mahasiswa	O
+Institut	B-EDU
+Teknologi	I-EDU
+Nasional	I-EDU
+mengikuti	O
+IBM	B-CERT
+Cloud	I-CERT
+Computing	I-CERT
+
+Institut	B-EDU
+Teknologi	I-EDU
+Nasional	I-EDU
+•	O
+IBM	B-CERT
+Cloud	I-CERT
+Computing	I-CERT
+
+Data	B-ROLE
+Pipeline	I-ROLE
+Engineer	I-ROLE
+di	O
+Bukalapak	B-COMP
+menggunakan	O
+Apache	B-SKILL
+Airflow	I-SKILL
+
+Data	B-ROLE
+Pipeline	I-ROLE
+Engineer	I-ROLE
+•	O
+Bukalapak	B-COMP
+•	O
+Apache	B-SKILL
+Airflow	I-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Trisakti	I-EDU
+mengikuti	O
+Oracle	B-CERT
+Java	I-CERT
+Foundations	I-CERT
+
+Universitas	B-EDU
+Trisakti	I-EDU
+•	O
+Oracle	B-CERT
+Java	I-CERT
+Foundations	I-CERT
+
+Cloud	B-ROLE
+Platform	I-ROLE
+Engineer	I-ROLE
+di	O
+Traveloka	B-COMP
+menggunakan	O
+Helm	B-SKILL
+Chart	I-SKILL
+
+Cloud	B-ROLE
+Platform	I-ROLE
+Engineer	I-ROLE
+•	O
+Traveloka	B-COMP
+•	O
+Helm	B-SKILL
+Chart	I-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Sains	I-EDU
+Data	I-EDU
+mengikuti	O
+Microsoft	B-CERT
+Azure	I-CERT
+Administrator	I-CERT
+
+S1	B-EDU
+Sains	I-EDU
+Data	I-EDU
+•	O
+Microsoft	B-CERT
+Azure	I-CERT
+Administrator	I-CERT
+
+Machine	B-ROLE
+Learning	I-ROLE
+Researcher	I-ROLE
+di	O
+OpenAI	B-COMP
+menggunakan	O
+Transfer	B-SKILL
+Learning	I-SKILL
+
+Machine	B-ROLE
+Learning	I-ROLE
+Researcher	I-ROLE
+•	O
+OpenAI	B-COMP
+•	O
+Transfer	B-SKILL
+Learning	I-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Gunadarma	I-EDU
+mengikuti	O
+Cisco	B-CERT
+Networking	I-CERT
+Course	I-CERT
+
+Universitas	B-EDU
+Gunadarma	I-EDU
+•	O
+Cisco	B-CERT
+Networking	I-CERT
+Course	I-CERT
+
+Backend	B-ROLE
+Systems	I-ROLE
+Architect	I-ROLE
+di	O
+SeaBank	B-COMP
+menggunakan	O
+Clean	B-SKILL
+Architecture	I-SKILL
+
+Backend	B-ROLE
+Systems	I-ROLE
+Architect	I-ROLE
+•	O
+SeaBank	B-COMP
+•	O
+Clean	B-SKILL
+Architecture	I-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Teknik	I-EDU
+Mesin	I-EDU
+mengikuti	O
+Google	B-CERT
+Cloud	I-CERT
+Engineer	I-CERT
+
+S1	B-EDU
+Teknik	I-EDU
+Mesin	I-EDU
+•	O
+Google	B-CERT
+Cloud	I-CERT
+Engineer	I-CERT
+
+Frontend	B-ROLE
+Creative	I-ROLE
+Engineer	I-ROLE
+di	O
+Blibli	B-COMP
+menggunakan	O
+Tailwind	B-SKILL
+CSS	I-SKILL
+
+Frontend	B-ROLE
+Creative	I-ROLE
+Engineer	I-ROLE
+•	O
+Blibli	B-COMP
+•	O
+Tailwind	B-SKILL
+CSS	I-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Tadulako	I-EDU
+mengikuti	O
+Meta	B-CERT
+Mobile	I-CERT
+Development	I-CERT
+
+Universitas	B-EDU
+Tadulako	I-EDU
+•	O
+Meta	B-CERT
+Mobile	I-CERT
+Development	I-CERT
+
+Cyber	B-ROLE
+Security	I-ROLE
+Architect	I-ROLE
+di	O
+Telkom	B-COMP
+Indonesia	I-COMP
+menggunakan	O
+Zero	B-SKILL
+Trust	I-SKILL
+
+Cyber	B-ROLE
+Security	I-ROLE
+Architect	I-ROLE
+•	O
+Telkom	B-COMP
+Indonesia	I-COMP
+•	O
+Zero	B-SKILL
+Trust	I-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Teknik	I-EDU
+Lingkungan	I-EDU
+mengikuti	O
+AWS	B-CERT
+Cloud	I-CERT
+Security	I-CERT
+
+S1	B-EDU
+Teknik	I-EDU
+Lingkungan	I-EDU
+•	O
+AWS	B-CERT
+Cloud	I-CERT
+Security	I-CERT
+
+Data	B-ROLE
+Analytics	I-ROLE
+Engineer	I-ROLE
+di	O
+Bank	B-COMP
+Central	I-COMP
+Asia	I-COMP
+menggunakan	O
+Looker	B-SKILL
+Studio	I-SKILL
+
+Data	B-ROLE
+Analytics	I-ROLE
+Engineer	I-ROLE
+•	O
+Bank	B-COMP
+Central	I-COMP
+Asia	I-COMP
+•	O
+Looker	B-SKILL
+Studio	I-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Pasundan	I-EDU
+mengikuti	O
+Google	B-CERT
+Project	I-CERT
+Planning	I-CERT
+
+Universitas	B-EDU
+Pasundan	I-EDU
+•	O
+Google	B-CERT
+Project	I-CERT
+Planning	I-CERT
+
+Cloud	B-ROLE
+Migration	I-ROLE
+Consultant	I-ROLE
+di	O
+Accenture	B-COMP
+menggunakan	O
+Hybrid	B-SKILL
+Cloud	I-SKILL
+
+Cloud	B-ROLE
+Migration	I-ROLE
+Consultant	I-ROLE
+•	O
+Accenture	B-COMP
+•	O
+Hybrid	B-SKILL
+Cloud	I-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Teknik	I-EDU
+Kimia	I-EDU
+mengikuti	O
+Alibaba	B-CERT
+Cloud	I-CERT
+Professional	I-CERT
+
+S1	B-EDU
+Teknik	I-EDU
+Kimia	I-EDU
+•	O
+Alibaba	B-CERT
+Cloud	I-CERT
+Professional	I-CERT
+
+AI	B-ROLE
+Prompt	I-ROLE
+Engineer	I-ROLE
+di	O
+DeepMind	B-COMP
+menggunakan	O
+Prompt	B-SKILL
+Engineering	I-SKILL
+
+AI	B-ROLE
+Prompt	I-ROLE
+Engineer	I-ROLE
+•	O
+DeepMind	B-COMP
+•	O
+Prompt	B-SKILL
+Engineering	I-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Pancasila	I-EDU
+mengikuti	O
+IBM	B-CERT
+Artificial	I-CERT
+Intelligence	I-CERT
+
+Universitas	B-EDU
+Pancasila	I-EDU
+•	O
+IBM	B-CERT
+Artificial	I-CERT
+Intelligence	I-CERT
+
+Backend	B-ROLE
+Microservices	I-ROLE
+Developer	I-ROLE
+di	O
+OVO	B-COMP
+menggunakan	O
+Spring	B-SKILL
+Boot	I-SKILL
+
+Backend	B-ROLE
+Microservices	I-ROLE
+Developer	I-ROLE
+•	O
+OVO	B-COMP
+•	O
+Spring	B-SKILL
+Boot	I-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Matematika	I-EDU
+Komputasi	I-EDU
+mengikuti	O
+Coursera	B-CERT
+Data	I-CERT
+Analytics	I-CERT
+
+S1	B-EDU
+Matematika	I-EDU
+Komputasi	I-EDU
+•	O
+Coursera	B-CERT
+Data	I-CERT
+Analytics	I-CERT
+
+Frontend	B-ROLE
+Accessibility	I-ROLE
+Engineer	I-ROLE
+di	O
+Ruangguru	B-COMP
+menggunakan	O
+Accessibility	B-SKILL
+Testing	I-SKILL
+
+Frontend	B-ROLE
+Accessibility	I-ROLE
+Engineer	I-ROLE
+•	O
+Ruangguru	B-COMP
+•	O
+Accessibility	B-SKILL
+Testing	I-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Bengkulu	I-EDU
+mengikuti	O
+TensorFlow	B-CERT
+Machine	I-CERT
+Learning	I-CERT
+
+Universitas	B-EDU
+Bengkulu	I-EDU
+•	O
+TensorFlow	B-CERT
+Machine	I-CERT
+Learning	I-CERT
+
+Cloud	B-ROLE
+Security	I-ROLE
+Engineer	I-ROLE
+di	O
+AstraZeneca	B-COMP
+menggunakan	O
+Cloud	B-SKILL
+Hardening	I-SKILL
+
+Cloud	B-ROLE
+Security	I-ROLE
+Engineer	I-ROLE
+•	O
+AstraZeneca	B-COMP
+•	O
+Cloud	B-SKILL
+Hardening	I-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Teknik	I-EDU
+Industri	I-EDU
+mengikuti	O
+Google	B-CERT
+IT	I-CERT
+Automation	I-CERT
+
+S1	B-EDU
+Teknik	I-EDU
+Industri	I-EDU
+•	O
+Google	B-CERT
+IT	I-CERT
+Automation	I-CERT
+
+Machine	B-ROLE
+Vision	I-ROLE
+Engineer	I-ROLE
+di	O
+NVIDIA	B-COMP
+menggunakan	O
+Object	B-SKILL
+Detection	I-SKILL
+
+Machine	B-ROLE
+Vision	I-ROLE
+Engineer	I-ROLE
+•	O
+NVIDIA	B-COMP
+•	O
+Object	B-SKILL
+Detection	I-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Jenderal	I-EDU
+Soedirman	I-EDU
+mengikuti	O
+AWS	B-CERT
+Developer	I-CERT
+Associate	I-CERT
+
+Universitas	B-EDU
+Jenderal	I-EDU
+Soedirman	I-EDU
+•	O
+AWS	B-CERT
+Developer	I-CERT
+Associate	I-CERT
+
+Cyber	B-ROLE
+Risk	I-ROLE
+Specialist	I-ROLE
+di	O
+Bank	B-COMP
+Mandiri	I-COMP
+menggunakan	O
+Risk	B-SKILL
+Assessment	I-SKILL
+
+Cyber	B-ROLE
+Risk	I-ROLE
+Specialist	I-ROLE
+•	O
+Bank	B-COMP
+Mandiri	I-COMP
+•	O
+Risk	B-SKILL
+Assessment	I-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Statistika	I-EDU
+mengikuti	O
+Oracle	B-CERT
+Cloud	I-CERT
+Infrastructure	I-CERT
+
+S1	B-EDU
+Statistika	I-EDU
+•	O
+Oracle	B-CERT
+Cloud	I-CERT
+Infrastructure	I-CERT
+
+Backend	B-ROLE
+Distributed	I-ROLE
+Engineer	I-ROLE
+di	O
+DANA	B-COMP
+menggunakan	O
+Message	B-SKILL
+Broker	I-SKILL
+
+Backend	B-ROLE
+Distributed	I-ROLE
+Engineer	I-ROLE
+•	O
+DANA	B-COMP
+•	O
+Message	B-SKILL
+Broker	I-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Lampung	I-EDU
+mengikuti	O
+Microsoft	B-CERT
+Cloud	I-CERT
+Training	I-CERT
+
+Universitas	B-EDU
+Lampung	I-EDU
+•	O
+Microsoft	B-CERT
+Cloud	I-CERT
+Training	I-CERT
+
+AI	B-ROLE
+Solutions	I-ROLE
+Architect	I-ROLE
+di	O
+OpenAI	B-COMP
+menggunakan	O
+Vector	B-SKILL
+Database	I-SKILL
+
+AI	B-ROLE
+Solutions	I-ROLE
+Architect	I-ROLE
+•	O
+OpenAI	B-COMP
+•	O
+Vector	B-SKILL
+Database	I-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Teknologi	I-EDU
+Pendidikan	I-EDU
+mengikuti	O
+Google	B-CERT
+Data	I-CERT
+Visualization	I-CERT
+
+S1	B-EDU
+Teknologi	I-EDU
+Pendidikan	I-EDU
+•	O
+Google	B-CERT
+Data	I-CERT
+Visualization	I-CERT
+
+Frontend	B-ROLE
+Performance	I-ROLE
+Developer	I-ROLE
+di	O
+Kredivo	B-COMP
+menggunakan	O
+Web	B-SKILL
+Optimization	I-SKILL
+
+Frontend	B-ROLE
+Performance	I-ROLE
+Developer	I-ROLE
+•	O
+Kredivo	B-COMP
+•	O
+Web	B-SKILL
+Optimization	I-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Khairun	I-EDU
+mengikuti	O
+Meta	B-CERT
+Frontend	I-CERT
+Engineering	I-CERT
+
+Universitas	B-EDU
+Khairun	I-EDU
+•	O
+Meta	B-CERT
+Frontend	I-CERT
+Engineering	I-CERT
+
+Cloud	B-ROLE
+Infrastructure	I-ROLE
+Architect	I-ROLE
+di	O
+Traveloka	B-COMP
+menggunakan	O
+Infrastructure	B-SKILL
+Automation	I-SKILL
+
+Cloud	B-ROLE
+Infrastructure	I-ROLE
+Architect	I-ROLE
+•	O
+Traveloka	B-COMP
+•	O
+Infrastructure	B-SKILL
+Automation	I-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Sistem	I-EDU
+Komputer	I-EDU
+mengikuti	O
+IBM	B-CERT
+Cybersecurity	I-CERT
+Essentials	I-CERT
+
+S1	B-EDU
+Sistem	I-EDU
+Komputer	I-EDU
+•	O
+IBM	B-CERT
+Cybersecurity	I-CERT
+Essentials	I-CERT
+
+Data	B-ROLE
+Governance	I-ROLE
+Consultant	I-ROLE
+di	O
+Grab	B-COMP
+menggunakan	O
+Data	B-SKILL
+Catalog	I-SKILL
+
+Data	B-ROLE
+Governance	I-ROLE
+Consultant	I-ROLE
+•	O
+Grab	B-COMP
+•	O
+Data	B-SKILL
+Catalog	I-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Mulawarman	I-EDU
+mengikuti	O
+Alibaba	B-CERT
+Cloud	I-CERT
+Computing	I-CERT
+
+Universitas	B-EDU
+Mulawarman	I-EDU
+•	O
+Alibaba	B-CERT
+Cloud	I-CERT
+Computing	I-CERT
+
+Cyber	B-ROLE
+Threat	I-ROLE
+Hunter	I-ROLE
+di	O
+Telkomsel	B-COMP
+menggunakan	O
+Threat	B-SKILL
+Intelligence	I-SKILL
+
+Cyber	B-ROLE
+Threat	I-ROLE
+Hunter	I-ROLE
+•	O
+Telkomsel	B-COMP
+•	O
+Threat	B-SKILL
+Intelligence	I-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Teknik	I-EDU
+Telekomunikasi	I-EDU
+mengikuti	O
+Google	B-CERT
+Cloud	I-CERT
+Operations	I-CERT
+
+S1	B-EDU
+Teknik	I-EDU
+Telekomunikasi	I-EDU
+•	O
+Google	B-CERT
+Cloud	I-CERT
+Operations	I-CERT
+
+Backend	B-ROLE
+Cloud	I-ROLE
+Engineer	I-ROLE
+di	O
+Xendit	B-COMP
+menggunakan	O
+Cloud	B-SKILL
+Functions	I-SKILL
+
+Backend	B-ROLE
+Cloud	I-ROLE
+Engineer	I-ROLE
+•	O
+Xendit	B-COMP
+•	O
+Cloud	B-SKILL
+Functions	I-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Mercu	I-EDU
+Buana	I-EDU
+mengikuti	O
+AWS	B-CERT
+Cloud	I-CERT
+Academy	I-CERT
+
+Universitas	B-EDU
+Mercu	I-EDU
+Buana	I-EDU
+•	O
+AWS	B-CERT
+Cloud	I-CERT
+Academy	I-CERT
+
+Peraih	O
+sertifikat	O
+Google	B-CERT
+Data	I-CERT
+Engineer	I-CERT
+berasal	O
+dari	O
+Universitas	B-EDU
+Merdeka	I-EDU
+Malang	I-EDU
+
+Google	B-CERT
+Data	I-CERT
+Engineer	I-CERT
+•	O
+Universitas	B-EDU
+Merdeka	I-EDU
+Malang	I-EDU
+
+Tokopedia	B-COMP
+merekrut	O
+seorang	O
+Backend	B-ROLE
+Reliability	I-ROLE
+Engineer	I-ROLE
+yang	O
+memahami	O
+Database	B-SKILL
+Sharding	I-SKILL
+
+Tokopedia	B-COMP
+•	O
+Backend	B-ROLE
+Reliability	I-ROLE
+Engineer	I-ROLE
+•	O
+Database	B-SKILL
+Sharding	I-SKILL
+
+Kemampuan	O
+Natural	B-SKILL
+Language	I-SKILL
+Processing	I-SKILL
+dipelajari	O
+oleh	O
+mahasiswa	O
+S1	B-EDU
+Artificial	I-EDU
+Intelligence	I-EDU
+
+Natural	B-SKILL
+Language	I-SKILL
+Processing	I-SKILL
+•	O
+S1	B-EDU
+Artificial	I-EDU
+Intelligence	I-EDU
+
+Lulusan	O
+Universitas	B-EDU
+Islam	I-EDU
+Indonesia	I-EDU
+menyelesaikan	O
+program	O
+AWS	B-CERT
+DevOps	I-CERT
+Engineering	I-CERT
+
+Universitas	B-EDU
+Islam	I-EDU
+Indonesia	I-EDU
+•	O
+AWS	B-CERT
+DevOps	I-CERT
+Engineering	I-CERT
+
+Pengembang	O
+aplikasi	O
+mobile	O
+di	O
+Shopee	B-COMP
+berposisi	O
+sebagai	O
+Flutter	B-SKILL
+Developer	B-ROLE
+
+Shopee	B-COMP
+•	O
+Flutter	B-SKILL
+•	O
+Developer	B-ROLE
+
+Oracle	B-CERT
+Cloud	I-CERT
+Training	I-CERT
+diikuti	O
+oleh	O
+mahasiswa	O
+Institut	B-EDU
+Teknologi	I-EDU
+Sumatera	I-EDU
+
+Oracle	B-CERT
+Cloud	I-CERT
+Training	I-CERT
+•	O
+Institut	B-EDU
+Teknologi	I-EDU
+Sumatera	I-EDU
+
+Kubernetes	B-SKILL
+digunakan	O
+oleh	O
+Cloud	B-ROLE
+Infrastructure	I-ROLE
+Lead	I-ROLE
+di	O
+Traveloka	B-COMP
+
+Kubernetes	B-SKILL
+•	O
+Cloud	B-ROLE
+Infrastructure	I-ROLE
+Lead	I-ROLE
+•	O
+Traveloka	B-COMP
+
+Seorang	O
+mahasiswa	O
+S1	B-EDU
+Teknik	I-EDU
+Geomatika	I-EDU
+mempelajari	O
+Computer	B-SKILL
+Vision	I-SKILL
+
+S1	B-EDU
+Teknik	I-EDU
+Geomatika	I-EDU
+•	O
+Computer	B-SKILL
+Vision	I-SKILL
+
+Bank	B-COMP
+Syariah	I-COMP
+Indonesia	I-COMP
+mempekerjakan	O
+Cyber	B-ROLE
+Defense	I-ROLE
+Analyst	I-ROLE
+berpengalaman	O
+
+Bank	B-COMP
+Syariah	I-COMP
+Indonesia	I-COMP
+•	O
+Cyber	B-ROLE
+Defense	I-ROLE
+Analyst	I-ROLE
+
+Google	B-CERT
+Cybersecurity	I-CERT
+Course	I-CERT
+membantu	O
+lulusan	O
+Universitas	B-EDU
+Udayana	I-EDU
+mempelajari	O
+Threat	B-SKILL
+Modeling	I-SKILL
+
+Google	B-CERT
+Cybersecurity	I-CERT
+Course	I-CERT
+•	O
+Universitas	B-EDU
+Udayana	I-EDU
+•	O
+Threat	B-SKILL
+Modeling	I-SKILL
+
+Kemampuan	O
+Data	B-SKILL
+Visualization	I-SKILL
+digunakan	O
+oleh	O
+Business	B-ROLE
+Intelligence	I-ROLE
+Developer	I-ROLE
+di	O
+Grab	B-COMP
+
+Data	B-SKILL
+Visualization	I-SKILL
+•	O
+Business	B-ROLE
+Intelligence	I-ROLE
+Developer	I-ROLE
+•	O
+Grab	B-COMP
+
+Mahasiswa	O
+Universitas	B-EDU
+Tarumanegara	I-EDU
+berhasil	O
+menyelesaikan	O
+Meta	B-CERT
+Frontend	I-CERT
+Bootcamp	I-CERT
+
+Universitas	B-EDU
+Tarumanegara	I-EDU
+•	O
+Meta	B-CERT
+Frontend	I-CERT
+Bootcamp	I-CERT
+
+Backend	B-ROLE
+API	I-ROLE
+Specialist	I-ROLE
+di	O
+Kredivo	B-COMP
+memanfaatkan	O
+GraphQL	B-SKILL
+Subscriptions	I-SKILL
+
+Backend	B-ROLE
+API	I-ROLE
+Specialist	I-ROLE
+•	O
+Kredivo	B-COMP
+•	O
+GraphQL	B-SKILL
+Subscriptions	I-SKILL
+
+Peserta	O
+AWS	B-CERT
+Solutions	I-CERT
+Architect	I-CERT
+merupakan	O
+mahasiswa	O
+S1	B-EDU
+Informatika	I-EDU
+
+AWS	B-CERT
+Solutions	I-CERT
+Architect	I-CERT
+•	O
+S1	B-EDU
+Informatika	I-EDU
+
+Ruangguru	B-COMP
+membutuhkan	O
+Frontend	B-ROLE
+Motion	I-ROLE
+Designer	I-ROLE
+yang	O
+menguasai	O
+Motion	B-SKILL
+Graphics	I-SKILL
+
+Ruangguru	B-COMP
+•	O
+Frontend	B-ROLE
+Motion	I-ROLE
+Designer	I-ROLE
+•	O
+Motion	B-SKILL
+Graphics	I-SKILL
+
+Mahasiswa	O
+Institut	B-EDU
+Teknologi	I-EDU
+Kalimantan	I-EDU
+aktif	O
+mempelajari	O
+Cloud	B-SKILL
+Automation	I-SKILL
+
+Institut	B-EDU
+Teknologi	I-EDU
+Kalimantan	I-EDU
+•	O
+Cloud	B-SKILL
+Automation	I-SKILL
+
+TensorFlow	B-CERT
+Developer	I-CERT
+Program	I-CERT
+diikuti	O
+oleh	O
+peneliti	O
+Machine	B-ROLE
+Learning	I-ROLE
+Engineer	I-ROLE
+
+TensorFlow	B-CERT
+Developer	I-CERT
+Program	I-CERT
+•	O
+Machine	B-ROLE
+Learning	I-ROLE
+Engineer	I-ROLE
+
+OpenAI	B-COMP
+mengembangkan	O
+tim	O
+AI	B-ROLE
+Research	I-ROLE
+Lead	I-ROLE
+dengan	O
+keahlian	O
+Transformer	B-SKILL
+Models	I-SKILL
+
+OpenAI	B-COMP
+•	O
+AI	B-ROLE
+Research	I-ROLE
+Lead	I-ROLE
+•	O
+Transformer	B-SKILL
+Models	I-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Teknik	I-EDU
+Perkapalan	I-EDU
+tertarik	O
+mempelajari	O
+Business	B-SKILL
+Analytics	I-SKILL
+
+S1	B-EDU
+Teknik	I-EDU
+Perkapalan	I-EDU
+•	O
+Business	B-SKILL
+Analytics	I-SKILL
+
+Cisco	B-CERT
+Networking	I-CERT
+Program	I-CERT
+diperoleh	O
+oleh	O
+lulusan	O
+Universitas	B-EDU
+Negeri	I-EDU
+Makassar	I-EDU
+
+Cisco	B-CERT
+Networking	I-CERT
+Program	I-CERT
+•	O
+Universitas	B-EDU
+Negeri	I-EDU
+Makassar	I-EDU
+
+Cloud	B-ROLE
+Migration	I-ROLE
+Manager	I-ROLE
+di	O
+Accenture	B-COMP
+mengimplementasikan	O
+Hybrid	B-SKILL
+Cloud	I-SKILL
+
+Cloud	B-ROLE
+Migration	I-ROLE
+Manager	I-ROLE
+•	O
+Accenture	B-COMP
+•	O
+Hybrid	B-SKILL
+Cloud	I-SKILL
+
+Kemampuan	O
+Web	B-SKILL
+Optimization	I-SKILL
+dibutuhkan	O
+oleh	O
+Frontend	B-ROLE
+Performance	I-ROLE
+Architect	I-ROLE
+
+Web	B-SKILL
+Optimization	I-SKILL
+•	O
+Frontend	B-ROLE
+Performance	I-ROLE
+Architect	I-ROLE
+
+Mahasiswa	O
+Universitas	B-EDU
+Mulia	I-EDU
+mengikuti	O
+program	O
+IBM	B-CERT
+Cloud	I-CERT
+Foundations	I-CERT
+
+Universitas	B-EDU
+Mulia	I-EDU
+•	O
+IBM	B-CERT
+Cloud	I-CERT
+Foundations	I-CERT
+
+DANA	B-COMP
+mengembangkan	O
+layanan	O
+menggunakan	O
+Backend	B-ROLE
+Microservices	I-ROLE
+Engineer	I-ROLE
+
+DANA	B-COMP
+•	O
+Backend	B-ROLE
+Microservices	I-ROLE
+Engineer	I-ROLE
+
+Seorang	O
+mahasiswa	O
+S1	B-EDU
+Teknik	I-EDU
+Sipil	I-EDU
+belajar	O
+Project	B-SKILL
+Management	I-SKILL
+
+Google	B-CERT
+IT	I-CERT
+Support	I-CERT
+diselesaikan	O
+oleh	O
+lulusan	O
+Universitas	B-EDU
+Atma	I-EDU
+Jaya	I-EDU
+
+Google	B-CERT
+IT	I-CERT
+Support	I-CERT
+•	O
+Universitas	B-EDU
+Atma	I-EDU
+Jaya	I-EDU
+
+SeaBank	B-COMP
+membutuhkan	O
+Cloud	B-ROLE
+DevOps	I-ROLE
+Architect	I-ROLE
+yang	O
+memahami	O
+Infrastructure	B-SKILL
+Automation	I-SKILL
+
+SeaBank	B-COMP
+•	O
+Cloud	B-ROLE
+DevOps	I-ROLE
+Architect	I-ROLE
+•	O
+Infrastructure	B-SKILL
+Automation	I-SKILL
+
+Mahasiswa	O
+Institut	B-EDU
+Sains	I-EDU
+Teknologi	I-EDU
+Akprind	I-EDU
+mempelajari	O
+Secure	B-SKILL
+Coding	I-SKILL
+
+Institut	B-EDU
+Sains	I-EDU
+Teknologi	I-EDU
+Akprind	I-EDU
+•	O
+Secure	B-SKILL
+Coding	I-SKILL
+
+Alibaba	B-CERT
+Cloud	I-CERT
+Professional	I-CERT
+diikuti	O
+oleh	O
+mahasiswa	O
+S1	B-EDU
+Teknik	I-EDU
+Elektro	I-EDU
+
+Alibaba	B-CERT
+Cloud	I-CERT
+Professional	I-CERT
+•	O
+S1	B-EDU
+Teknik	I-EDU
+Elektro	I-EDU
+
+Tokopedia	B-COMP
+menggunakan	O
+Frontend	B-ROLE
+Accessibility	I-ROLE
+Engineer	I-ROLE
+untuk	O
+meningkatkan	O
+Accessibility	B-SKILL
+Testing	I-SKILL
+
+Tokopedia	B-COMP
+•	O
+Frontend	B-ROLE
+Accessibility	I-ROLE
+Engineer	I-ROLE
+•	O
+Accessibility	B-SKILL
+Testing	I-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Mataram	I-EDU
+aktif	O
+mengembangkan	O
+Data	B-SKILL
+Engineering	I-SKILL
+
+Universitas	B-EDU
+Mataram	I-EDU
+•	O
+Data	B-SKILL
+Engineering	I-SKILL
+
+Backend	B-ROLE
+Cloud	I-ROLE
+Consultant	I-ROLE
+di	O
+Traveloka	B-COMP
+mengimplementasikan	O
+Serverless	B-SKILL
+Framework	I-SKILL
+
+Backend	B-ROLE
+Cloud	I-ROLE
+Consultant	I-ROLE
+•	O
+Traveloka	B-COMP
+•	O
+Serverless	B-SKILL
+Framework	I-SKILL
+
+Meta	B-CERT
+Android	I-CERT
+Course	I-CERT
+membantu	O
+mahasiswa	O
+Universitas	B-EDU
+Borneo	I-EDU
+Tarakan	I-EDU
+
+Meta	B-CERT
+Android	I-CERT
+Course	I-CERT
+•	O
+Universitas	B-EDU
+Borneo	I-EDU
+Tarakan	I-EDU
+
+Grab	B-COMP
+merekrut	O
+Data	B-ROLE
+Governance	I-ROLE
+Architect	I-ROLE
+berpengalaman	O
+Data	B-SKILL
+Catalog	I-SKILL
+
+Grab	B-COMP
+•	O
+Data	B-ROLE
+Governance	I-ROLE
+Architect	I-ROLE
+•	O
+Data	B-SKILL
+Catalog	I-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Teknik	I-EDU
+Nuklir	I-EDU
+mempelajari	O
+Distributed	B-SKILL
+Systems	I-SKILL
+
+S1	B-EDU
+Teknik	I-EDU
+Nuklir	I-EDU
+•	O
+Distributed	B-SKILL
+Systems	I-SKILL
+
+Oracle	B-CERT
+Database	I-CERT
+Course	I-CERT
+diperoleh	O
+oleh	O
+Backend	B-ROLE
+Systems	I-ROLE
+Engineer	I-ROLE
+
+Oracle	B-CERT
+Database	I-CERT
+Course	I-CERT
+•	O
+Backend	B-ROLE
+Systems	I-ROLE
+Engineer	I-ROLE
+
+Cloud	B-ROLE
+Monitoring	I-ROLE
+Specialist	I-ROLE
+di	O
+Xendit	B-COMP
+menggunakan	O
+Prometheus	B-SKILL
+Stack	I-SKILL
+
+Cloud	B-ROLE
+Monitoring	I-ROLE
+Specialist	I-ROLE
+•	O
+Xendit	B-COMP
+•	O
+Prometheus	B-SKILL
+Stack	I-SKILL
+
+Mahasiswa	O
+Universitas	B-EDU
+Sam	Ratulangi	I-EDU
+menguasai	O
+Object	B-SKILL
+Detection	I-SKILL
+
+Universitas	B-EDU
+•	O
+Object	B-SKILL
+Detection	I-SKILL
+
+IBM	B-CERT
+Artificial	I-CERT
+Intelligence	I-CERT
+diselesaikan	O
+oleh	O
+mahasiswa	O
+S1	B-EDU
+Teknologi	I-EDU
+Informasi	I-EDU
+
+IBM	B-CERT
+Artificial	I-CERT
+Intelligence	I-CERT
+•	O
+S1	B-EDU
+Teknologi	I-EDU
+Informasi	I-EDU
+
+Shopee	B-COMP
+mengembangkan	O
+layanan	O
+bersama	O
+Backend	B-ROLE
+Distributed	I-ROLE
+Architect	I-ROLE
+
+Shopee	B-COMP
+•	O
+Backend	B-ROLE
+Distributed	I-ROLE
+Architect	I-ROLE
+
+Mahasiswa	O
+Universitas	B-EDU
+Nusa	I-EDU
+Cendana	I-EDU
+mempelajari	O
+Cloud	B-SKILL
+Security	I-SKILL
+
+Universitas	B-EDU
+Nusa	I-EDU
+Cendana	I-EDU
+•	O
+Cloud	B-SKILL
+Security	I-SKILL
+
+Google	B-CERT
+Project	I-CERT
+Planning	I-CERT
+membantu	O
+Business	B-ROLE
+Strategy	I-ROLE
+Analyst	I-ROLE
+
+Google	B-CERT
+Project	I-CERT
+Planning	I-CERT
+•	O
+Business	B-ROLE
+Strategy	I-ROLE
+Analyst	I-ROLE
+
+Bank	B-COMP
+Mandiri	I-COMP
+memerlukan	O
+Cyber	B-ROLE
+Incident	I-ROLE
+Manager	I-ROLE
+dengan	O
+keahlian	O
+Risk	B-SKILL
+Assessment	I-SKILL
+
+Bank	B-COMP
+Mandiri	I-COMP
+•	O
+Cyber	B-ROLE
+Incident	I-ROLE
+Manager	I-ROLE
+•	O
+Risk	B-SKILL
+Assessment	I-SKILL
+
+Mahasiswa	O
+S1	B-EDU
+Matematika	I-EDU
+Terapan	I-EDU
+tertarik	O
+pada	O
+Predictive	B-SKILL
+Analytics	I-SKILL
+
+S1	B-EDU
+Matematika	I-EDU
+Terapan	I-EDU
+•	O
+Predictive	B-SKILL
+Analytics	I-SKILL
+
+Microsoft	B-CERT
+Azure	I-CERT
+Security	I-CERT
+diperoleh	O
+oleh	O
+Cloud	B-ROLE
+Infrastructure	I-ROLE
+Engineer	I-ROLE
+
+Microsoft	B-CERT
+Azure	I-CERT
+Security	I-CERT
+•	O
+Cloud	B-ROLE
+Infrastructure	I-ROLE
+Engineer	I-ROLE
+
+Ruangguru	B-COMP
+mengembangkan	O
+produk	O
+menggunakan	O
+Frontend	B-ROLE
+Interactive	I-ROLE
+Architect	I-ROLE
+
+Ruangguru	B-COMP
+•	O
+Frontend	B-ROLE
+Interactive	I-ROLE
+Architect	I-ROLE
+
+Mahasiswa	O
+Universitas	B-EDU
+Riau	I-EDU
+aktif	O
+mempelajari	O
+Event	B-SKILL
+Streaming	I-SKILL
+
+Universitas	B-EDU
+Riau	I-EDU
+•	O
+Event	B-SKILL
+Streaming	I-SKILL
+
+AWS	B-CERT
+Cloud	I-CERT
+Migration	I-CERT
+diselesaikan	O
+oleh	O
+Cloud	B-ROLE
+Operations	I-ROLE
+Consultant	I-ROLE
+
+AWS	B-CERT
+Cloud	I-CERT
+Migration	I-CERT
+•	O
+Cloud	B-ROLE
+Operations	I-ROLE
+Consultant	I-ROLE
+
+DeepMind	B-COMP
+merekrut	O
+AI	B-ROLE
+Prompt	I-ROLE
+Researcher	I-ROLE
+yang	O
+menguasai	O
+Prompt	B-SKILL
+Engineering	I-SKILL
+
+DeepMind	B-COMP
+•	O
+AI	B-ROLE
+Prompt	I-ROLE
+Researcher	I-ROLE
+•	O
+Prompt	B-SKILL
+Engineering	I-SKILL
+
+Mahasiswa	O
+Institut	B-EDU
+Teknologi	I-EDU
+Batam	I-EDU
+mempelajari	O
+Feature	B-SKILL
+Engineering	I-SKILL
+
+Institut	B-EDU
+Teknologi	I-EDU
+Batam	I-EDU
+•	O
+Feature	B-SKILL
+Engineering	I-SKILL
