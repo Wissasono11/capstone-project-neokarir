@@ -1,9 +1,10 @@
-from fastapi import FastAPI
-from app.schemas import UserProfilePayload, ProfileScorePayload, SkillGapPayload
+from fastapi import FastAPI, HTTPException
+from app.schemas import UserProfilePayload, ProfileScorePayload, SkillGapPayload, ForecastReq
 from app.services.recommendation import get_full_recommendation
 from app.services.scoring import calculate_profile_score
-from app.services.skill_gap import calculate_radar_data, generate_recommended_actions
+from app.services.skill_gap import calculate_complete_skill_gap, uuid_to_csv_id
 from app.services.roadmap import get_job_specific_roadmap
+from app.services.timeseries.predict import forecast as run_forecast, DOMAINS
 
 app = FastAPI(title="NeoKarir - AI Recommendation API")
 
@@ -26,34 +27,58 @@ def fetch_profile_score(payload: ProfileScorePayload):
 
 @app.post("/api/profile/skill-gap")
 def fetch_skill_gap(payload: SkillGapPayload):
-    radar_chart_data = calculate_radar_data(
+    result = calculate_complete_skill_gap(
         target_domain=payload.target_domain,
         target_role=payload.target_role,
-        user_skills=payload.owned_skills
+        owned_skills=payload.owned_skills,
+        user_experience=payload.user_experience,
+        user_education=payload.user_education,
+        current_role=payload.current_role
     )
-    
-    if not radar_chart_data:
-        return {"status": "error", "message": "Data role belum tersedia untuk dikalkulasi."}
-    
-    gap_results = {item["category"]: item["gap"] for item in radar_chart_data}
-    recommended_actions = generate_recommended_actions(gap_results)
-    
     return {
         "status": "success",
-        "data": {
-            "radar_chart_data": radar_chart_data,
-            "recommended_actions": recommended_actions
-        }
+        "data": result
     }
 
 @app.get("/api/roadmap/job-sync/{job_id}")
 def fetch_roadmap_sync(job_id: str):
-    result = get_job_specific_roadmap(job_id)
+    csv_job_id = uuid_to_csv_id(job_id)
+    result = get_job_specific_roadmap(csv_job_id)
     
-    if not result:
-        return {"status": "error", "message": "ID Lowongan tidak ditemukan."}
+    if not result or (isinstance(result, dict) and result.get("status") == "error"):
+        return {"status": "error", "message": f"ID Lowongan '{job_id}' tidak ditemukan."}
         
     return {
         "status": "success",
         "data": result
     }
+
+@app.get("/api/trend/domains")
+def get_trend_domains():
+    return {
+        "status": "success",
+        "domains": DOMAINS,
+        "total": len(DOMAINS)
+    }
+
+@app.post("/api/trend/forecast")
+def fetch_trend_forecast(payload: ForecastReq):
+    try:
+        history_list = None
+        if payload.history is not None:
+            history_list = [item.dict() for item in payload.history]
+        
+        result = run_forecast(
+            history=history_list,
+            n_months=payload.n_months,
+            domain=payload.domain
+        )
+        return {
+            "status": "success",
+            "n_months": payload.n_months,
+            **result
+        }
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
