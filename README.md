@@ -23,21 +23,11 @@ Repositori ini berisi layanan AI (Microservice) untuk aplikasi NeoKarir. Branch 
   * `scoring.py`: Menghitung persentase kecocokan (*Job Match Score*) antara profil kandidat dengan kriteria lowongan.
   * `skill_gap.py`: Menganalisis *missing skills* dan menghasilkan data untuk grafik radar (*Radar Chart*).
   * `roadmap.py`: Menghasilkan rekomendasi alur belajar (*Learning Roadmap*) per lowongan.
-  * **`timeseries/`**: Modul peramalan tren lowongan kerja IT menggunakan Deep Learning.
-    * `predict.py`: Logika utama pemanggilan model, preprocessing data input, dan penanganan peramalan tren.
-    * `test_run.py`: Script pengujian internal untuk validasi lokal fungsi forecasting.
-    * **`model/`**: Tempat penyimpanan aset model AI dan basis data tren:
-      * `domain_scalers.pkl`: Berkas serializer data untuk normalisasi fitur kuantitatif rumpun pekerjaan.
-      * `it_trend_model.keras`: Berkas model neural network (Deep Learning) untuk peramalan time series.
-      * `market_trend_smooth.csv`: Database historis tren pergerakan lowongan kerja IT di Indonesia.
-      * `model_metadata.json`: Metadata konfigurasi parameter dan arsitektur pendukung model.
 
-* **`data/`**: Direktori penyimpanan dataset utama aplikasi.
-  * `master_job_catalog.csv`: Database utama katalog kriteria pekerjaan.
-  * `dummy_user_profiles.csv`: Data testing dummy untuk profil pengguna.
-  * `roadmap_new.json`: Template data untuk visualisasi *learning roadmap*.
-
-* **`notebooks/`**: Tempat dokumentasi riset eksperimen model AI (`IT_Job_Trend_v12_FINAL.ipynb`).
+* **`data/`**: Direktori penyimpanan dataset.
+  * `master_job_catalog.csv`: Database utama katalog pekerjaan.
+  * `dummy_user_profiles.csv`: Data testing profil user.
+  * `roadmap_new.json`: Template data untuk *learning roadmap*.
 
 ---
 
