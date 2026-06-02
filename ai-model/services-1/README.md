@@ -95,6 +95,25 @@ uvicorn app.main:app --reload --port 8000
 - API docs tersedia di `http://localhost:8000/docs`.
 - Health endpoint: `GET /health`.
 
+## Deploy ke Hugging Face Spaces
+
+Gunakan `Docker Space` dan pastikan file `Dockerfile` di folder ini ikut ter-upload.
+
+Env var yang perlu ditambahkan di Space Settings:
+
+```env
+GROQ_API_KEY=...
+DATABASE_URL=...
+SUPABASE_URL=...
+SUPABASE_KEY=...
+```
+
+Endpoint yang bisa dipakai setelah build selesai:
+
+- `/`
+- `/health`
+- `/docs`
+
 -----
 
 ## Lokasi model & artifacts

@@ -54,3 +54,15 @@ uvicorn app.main:app --reload
 
 3. **Akses Dokumentasi Swagger UI:**
 http://localhost:8000/docs
+
+## Deploy ke Hugging Face Spaces
+
+Gunakan `Docker Space` dan pastikan file `Dockerfile` di folder ini ikut ter-upload.
+
+Langkah singkat:
+
+1. Buat Space baru.
+2. Pilih template `Docker`.
+3. Upload isi folder `services-2`.
+4. Pastikan model `app/services/timeseries/model/it_trend_model.keras` ikut terikut di repo Space.
+5. Tunggu build selesai dan cek endpoint `/`.
