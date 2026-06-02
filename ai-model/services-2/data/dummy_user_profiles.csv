@@ -1,0 +1,1001 @@
+user_id,target_domain,target_role,owned_skills,user_experience,user_education
+U-0001,Cloud & DevOps,DevOps Engineer,"[""Docker"", ""Ansible"", ""Linux"", ""Prometheus""]",> 3 Tahun,S2/S3
+U-0002,Cloud & DevOps,DevOps Engineer,"[""Prometheus"", ""GitLab CI""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0003,Data Science & AI,Data Scientist,"[""R"", ""Python"", ""Matplotlib"", ""Jupyter""]",< 1 Tahun,S1/D4
+U-0004,Web Development,Backend Engineer,"[""Python"", ""NodeJS"", ""Express"", ""MySQL""]",1 - 3 Tahun,S1/D4
+U-0005,Mobile Development,Flutter Engineer,"[""Hive"", ""Provider"", ""Firebase"", ""BLoC""]",> 3 Tahun,S2/S3
+U-0006,Mobile Development,iOS Developer,"[""Git"", ""Firebase"", ""Swift""]",< 1 Tahun,S1/D4
+U-0007,Cyber Security,Security Analyst,"[""SIEM"", ""Threat Intelligence"", ""Incident Response""]",> 3 Tahun,S2/S3
+U-0008,Mobile Development,Flutter Engineer,"[""Hive"", ""Firebase"", ""BLoC"", ""GetX""]",Belum ada pengalaman,S1/D4
+U-0009,Web Development,Backend Engineer,"[""PHP"", ""Laravel"", ""Git"", ""Express""]",< 1 Tahun,D3
+U-0010,Mobile Development,iOS Developer,"[""Objective-C"", ""Git"", ""Xcode""]",Belum ada pengalaman,D3
+U-0011,Quality Assurance (QA) & Testing,Manual QA,"[""Regression Testing"", ""SQL""]",> 3 Tahun,S1/D4
+U-0012,Cloud & DevOps,Cloud Engineer,"[""Python"", ""AWS"", ""GCP""]",> 3 Tahun,S1/D4
+U-0013,Data Science & AI,AI Engineer,"[""Python"", ""HuggingFace""]",1 - 3 Tahun,D3
+U-0014,Data Science & AI,AI Engineer,"[""LangChain""]",Belum ada pengalaman,S1/D4
+U-0015,UI/UX Design,UI Designer,"[""Color Theory"", ""Wireframing"", ""Figma"", ""Design System"", ""Prototyping""]",Belum ada pengalaman,D3
+U-0016,Mobile Development,Flutter Engineer,"[""Flutter"", ""Provider"", ""GetX"", ""Hive"", ""Git""]",> 3 Tahun,S2/S3
+U-0017,Quality Assurance (QA) & Testing,SDET,"[""Selenium"", ""API Testing"", ""Performance Testing"", ""Java""]",1 - 3 Tahun,D3
+U-0018,Data Science & AI,Machine Learning Engineer,"[""Kubernetes"", ""MLflow"", ""Python"", ""PyTorch""]",1 - 3 Tahun,D3
+U-0019,Cyber Security,Penetration Tester,"[""Nmap"", ""OWASP"", ""Networking""]",Belum ada pengalaman,S1/D4
+U-0020,Cyber Security,DevSecOps,"[""SAST"", ""DAST"", ""Docker"", ""CI/CD"", ""Python"", ""Terraform""]",Belum ada pengalaman,D3
+U-0021,UI/UX Design,UX Researcher,"[""Usability Testing""]",1 - 3 Tahun,S1/D4
+U-0022,Data Science & AI,Data Analyst,"[""SQL"", ""Pandas""]",< 1 Tahun,S1/D4
+U-0023,Cloud & DevOps,DevOps Engineer,"[""Docker"", ""Python"", ""GitLab CI"", ""Linux"", ""Jenkins""]",< 1 Tahun,D3
+U-0024,Data Science & AI,Data Analyst,"[""Data Visualization"", ""Git"", ""Statistics"", ""Tableau"", ""Power BI""]",> 3 Tahun,S2/S3
+U-0025,Mobile Development,Flutter Engineer,"[""Dart"", ""Git"", ""Flutter""]",> 3 Tahun,S2/S3
+U-0026,UI/UX Design,Product Designer,"[""Wireframing"", ""Design System"", ""Figma"", ""User Research"", ""Miro"", ""Prototyping""]",1 - 3 Tahun,S2/S3
+U-0027,Cloud & DevOps,DevOps Engineer,"[""Prometheus"", ""Terraform"", ""Kubernetes"", ""Git"", ""GitLab CI"", ""Python""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0028,Quality Assurance (QA) & Testing,Manual QA,"[""Regression Testing"", ""Test Case Writing""]",1 - 3 Tahun,S2/S3
+U-0029,Cloud & DevOps,DevOps Engineer,"[""Git"", ""Terraform"", ""Jenkins"", ""GitLab CI"", ""Linux"", ""Ansible""]",1 - 3 Tahun,S2/S3
+U-0030,Data Science & AI,Data Analyst,"[""Excel"", ""Python"", ""NumPy"", ""Git""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0031,Data Science & AI,Data Analyst,"[""SQL"", ""Statistics"", ""Git""]",> 3 Tahun,S1/D4
+U-0032,Mobile Development,Android Developer,"[""REST API"", ""Room DB"", ""Firebase"", ""Android SDK""]",> 3 Tahun,S1/D4
+U-0033,Cyber Security,Penetration Tester,"[""Networking"", ""OWASP""]",< 1 Tahun,D3
+U-0034,UI/UX Design,UX Researcher,"[""Survey Design""]",Belum ada pengalaman,D3
+U-0035,Data Science & AI,Data Scientist,"[""Git"", ""Jupyter"", ""Python"", ""Matplotlib""]",> 3 Tahun,S2/S3
+U-0036,Quality Assurance (QA) & Testing,Automation QA,"[""CI/CD"", ""Git"", ""Selenium"", ""Playwright"", ""TestNG"", ""Python""]",> 3 Tahun,S2/S3
+U-0037,Cloud & DevOps,DevOps Engineer,"[""Terraform"", ""Kubernetes"", ""Python"", ""GitLab CI"", ""Linux"", ""Jenkins""]",1 - 3 Tahun,D3
+U-0038,Cloud & DevOps,SRE,"[""Incident Management""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0039,UI/UX Design,UI Designer,"[""Color Theory"", ""Adobe XD"", ""Prototyping"", ""Design System""]",Belum ada pengalaman,S1/D4
+U-0040,Cyber Security,DevSecOps,"[""Python""]",1 - 3 Tahun,S1/D4
+U-0041,Cloud & DevOps,SRE,"[""Terraform"", ""Prometheus"", ""Git"", ""CI/CD"", ""Python"", ""Docker""]",1 - 3 Tahun,S2/S3
+U-0042,Cloud & DevOps,DevOps Engineer,"[""GitLab CI"", ""Prometheus"", ""Docker"", ""Linux""]",< 1 Tahun,D3
+U-0043,UI/UX Design,UX Researcher,"[""User Interview"", ""Usability Testing"", ""Data Analysis"", ""Miro""]",> 3 Tahun,S1/D4
+U-0044,Data Science & AI,Data Analyst,"[""Git"", ""Python"", ""Pandas"", ""Data Visualization"", ""Statistics"", ""Power BI""]",Belum ada pengalaman,D3
+U-0045,Cloud & DevOps,SRE,"[""Incident Management"", ""Terraform"", ""Docker"", ""Python"", ""CI/CD""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0046,Web Development,Backend Engineer,"[""Git"", ""REST API"", ""NodeJS"", ""Express""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0047,Cloud & DevOps,Cloud Engineer,"[""Python"", ""Azure""]",< 1 Tahun,S1/D4
+U-0048,Cloud & DevOps,SRE,"[""Grafana"", ""Python""]",> 3 Tahun,S2/S3
+U-0049,Cloud & DevOps,DevOps Engineer,"[""GitLab CI""]",1 - 3 Tahun,D3
+U-0050,Cyber Security,Security Analyst,"[""Incident Response"", ""Linux"", ""Threat Intelligence""]",< 1 Tahun,D3
+U-0051,Mobile Development,iOS Developer,"[""Git"", ""Swift"", ""REST API"", ""SwiftUI"", ""Firebase"", ""Objective-C""]",Belum ada pengalaman,D3
+U-0052,Quality Assurance (QA) & Testing,SDET,"[""Java"", ""Performance Testing""]",1 - 3 Tahun,S1/D4
+U-0053,UI/UX Design,UI Designer,"[""Sketch"", ""Typography"", ""Color Theory"", ""Figma"", ""Prototyping"", ""Adobe XD""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0054,Cloud & DevOps,SRE,"[""Grafana"", ""Incident Management"", ""Python"", ""Linux"", ""Prometheus"", ""Terraform""]",Belum ada pengalaman,S1/D4
+U-0055,Mobile Development,Flutter Engineer,"[""REST API"", ""Dart"", ""Flutter"", ""Firebase"", ""Provider""]",1 - 3 Tahun,S1/D4
+U-0056,Web Development,Fullstack Engineer,"[""CSS"", ""JavaScript"", ""ReactJS"", ""MySQL"", ""PostgreSQL"", ""HTML""]",< 1 Tahun,S1/D4
+U-0057,Cloud & DevOps,DevOps Engineer,"[""Ansible""]",> 3 Tahun,S1/D4
+U-0058,UI/UX Design,UI Designer,"[""Typography"", ""Color Theory"", ""Design System"", ""Wireframing"", ""Illustrator""]",Belum ada pengalaman,D3
+U-0059,Data Science & AI,Machine Learning Engineer,"[""MLflow"", ""Docker"", ""SQL"", ""Kubernetes"", ""PyTorch"", ""Git""]",> 3 Tahun,S2/S3
+U-0060,Cloud & DevOps,DevOps Engineer,"[""GitLab CI""]",> 3 Tahun,S2/S3
+U-0061,Mobile Development,Android Developer,"[""Git""]",< 1 Tahun,D3
+U-0062,Cloud & DevOps,DevOps Engineer,"[""GitLab CI"", ""Python"", ""Git"", ""Linux""]",Belum ada pengalaman,S1/D4
+U-0063,Cloud & DevOps,DevOps Engineer,"[""Python"", ""Jenkins"", ""Prometheus""]",> 3 Tahun,S1/D4
+U-0064,Web Development,Fullstack Engineer,"[""Git"", ""ReactJS"", ""HTML"", ""JavaScript""]",Belum ada pengalaman,S1/D4
+U-0065,Cloud & DevOps,DevOps Engineer,"[""Terraform"", ""Jenkins"", ""GitLab CI"", ""Kubernetes"", ""Linux"", ""Prometheus""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0066,Quality Assurance (QA) & Testing,SDET,"[""Java"", ""Git"", ""Performance Testing""]",1 - 3 Tahun,S2/S3
+U-0067,Data Science & AI,AI Engineer,"[""Python"", ""Git"", ""OpenAI API"", ""LangChain""]",1 - 3 Tahun,S1/D4
+U-0068,Quality Assurance (QA) & Testing,Automation QA,"[""TestNG"", ""Postman"", ""Python"", ""Playwright"", ""Selenium"", ""Git""]",1 - 3 Tahun,S2/S3
+U-0069,Mobile Development,Flutter Engineer,"[""BLoC""]",1 - 3 Tahun,S2/S3
+U-0070,Cloud & DevOps,Cloud Engineer,"[""GCP"", ""Python"", ""AWS"", ""Azure""]",Belum ada pengalaman,D3
+U-0071,Data Science & AI,Data Analyst,"[""SQL"", ""NumPy"", ""Git"", ""Pandas"", ""Tableau""]",Belum ada pengalaman,D3
+U-0072,Quality Assurance (QA) & Testing,Automation QA,"[""Git"", ""Postman"", ""Selenium""]",1 - 3 Tahun,S2/S3
+U-0073,Data Science & AI,AI Engineer,"[""HuggingFace"", ""Python"", ""LangChain"", ""Vector DB""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0074,Cyber Security,Security Analyst,"[""Firewall"", ""Threat Intelligence"", ""Linux"", ""SIEM"", ""Log Analysis"", ""Incident Response""]",1 - 3 Tahun,S2/S3
+U-0075,Web Development,Fullstack Engineer,"[""REST API"", ""TypeScript"", ""PostgreSQL"", ""JavaScript"", ""HTML"", ""NodeJS""]",< 1 Tahun,S1/D4
+U-0076,Cyber Security,Security Analyst,"[""Log Analysis"", ""Linux"", ""Firewall"", ""Incident Response""]",> 3 Tahun,S1/D4
+U-0077,Web Development,Frontend Engineer,"[""Next.js"", ""ReactJS"", ""TypeScript""]",< 1 Tahun,D3
+U-0078,Data Science & AI,Data Scientist,"[""Git"", ""Scikit-Learn""]",1 - 3 Tahun,S2/S3
+U-0079,Cloud & DevOps,SRE,"[""Docker""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0080,Cyber Security,Security Analyst,"[""Firewall"", ""Linux"", ""Threat Intelligence"", ""Networking"", ""IDS/IPS""]",Belum ada pengalaman,SMA/SMK
+U-0081,Cyber Security,Security Analyst,"[""Log Analysis"", ""Python"", ""Threat Intelligence"", ""Incident Response"", ""Networking""]",1 - 3 Tahun,S1/D4
+U-0082,Web Development,Backend Engineer,"[""NodeJS"", ""REST API"", ""Python""]",< 1 Tahun,D3
+U-0083,Quality Assurance (QA) & Testing,Automation QA,"[""Git""]",1 - 3 Tahun,S1/D4
+U-0084,Mobile Development,iOS Developer,"[""Xcode"", ""REST API"", ""Git""]",Belum ada pengalaman,SMA/SMK
+U-0085,Cloud & DevOps,DevOps Engineer,"[""Python"", ""Jenkins""]",> 3 Tahun,S1/D4
+U-0086,Web Development,Fullstack Engineer,"[""MySQL"", ""PostgreSQL"", ""REST API"", ""Git"", ""NodeJS""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0087,Data Science & AI,AI Engineer,"[""Git"", ""Docker"", ""HuggingFace"", ""SQL"", ""Python"", ""LangChain""]",Belum ada pengalaman,SMA/SMK
+U-0088,Data Science & AI,Machine Learning Engineer,"[""PyTorch""]",1 - 3 Tahun,S1/D4
+U-0089,Web Development,Fullstack Engineer,"[""ReactJS"", ""NodeJS"", ""TypeScript"", ""Git"", ""Docker"", ""REST API""]",> 3 Tahun,S1/D4
+U-0090,Data Science & AI,Data Scientist,"[""Python"", ""TensorFlow"", ""Statistics"", ""Scikit-Learn"", ""R""]",Belum ada pengalaman,S1/D4
+U-0091,Mobile Development,iOS Developer,"[""Objective-C"", ""Firebase"", ""Git"", ""SwiftUI""]",1 - 3 Tahun,S2/S3
+U-0092,Quality Assurance (QA) & Testing,Manual QA,"[""Agile/Scrum"", ""Test Case Writing""]",Belum ada pengalaman,S1/D4
+U-0093,UI/UX Design,Product Designer,"[""Accessibility"", ""Adobe XD"", ""User Research"", ""Wireframing""]",< 1 Tahun,D3
+U-0094,Data Science & AI,Data Analyst,"[""Python"", ""Pandas"", ""Power BI""]",< 1 Tahun,S1/D4
+U-0095,Cyber Security,DevSecOps,"[""AWS"", ""Kubernetes"", ""SAST"", ""Docker""]",1 - 3 Tahun,S2/S3
+U-0096,Web Development,Frontend Engineer,"[""Bootstrap""]",> 3 Tahun,S1/D4
+U-0097,Web Development,Backend Engineer,"[""REST API"", ""Express""]",1 - 3 Tahun,D3
+U-0098,Web Development,Backend Engineer,"[""MySQL"", ""PostgreSQL""]",> 3 Tahun,S1/D4
+U-0099,UI/UX Design,UI Designer,"[""Typography""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0100,Web Development,Frontend Engineer,"[""Next.js"", ""Bootstrap"", ""Vue.js"", ""ReactJS"", ""JavaScript""]",< 1 Tahun,S1/D4
+U-0101,Quality Assurance (QA) & Testing,Automation QA,"[""Postman""]",Belum ada pengalaman,D3
+U-0102,Quality Assurance (QA) & Testing,Automation QA,"[""Java"", ""Jira"", ""Cypress"", ""Python"", ""Postman""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0103,UI/UX Design,UI Designer,"[""Illustrator""]",Belum ada pengalaman,SMA/SMK
+U-0104,Data Science & AI,Data Scientist,"[""SQL""]",> 3 Tahun,S2/S3
+U-0105,UI/UX Design,Product Designer,"[""Figma"", ""Miro"", ""Agile/Scrum""]",< 1 Tahun,D3
+U-0106,Mobile Development,Flutter Engineer,"[""Dart""]",1 - 3 Tahun,D3
+U-0107,Web Development,Backend Engineer,"[""PostgreSQL"", ""NodeJS"", ""Express"", ""PHP""]",Belum ada pengalaman,S1/D4
+U-0108,Mobile Development,Flutter Engineer,"[""Firebase"", ""Flutter"", ""BLoC"", ""REST API"", ""GetX""]",< 1 Tahun,D3
+U-0109,Quality Assurance (QA) & Testing,SDET,"[""Selenium"", ""JMeter"", ""Git"", ""Docker"", ""Java""]",1 - 3 Tahun,D3
+U-0110,Web Development,Backend Engineer,"[""REST API"", ""Python""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0111,Data Science & AI,Data Analyst,"[""NumPy"", ""Tableau"", ""Python""]",Belum ada pengalaman,SMA/SMK
+U-0112,Quality Assurance (QA) & Testing,Manual QA,"[""Postman""]",1 - 3 Tahun,S2/S3
+U-0113,Mobile Development,Android Developer,"[""Java"", ""Jetpack Compose""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0114,Data Science & AI,Machine Learning Engineer,"[""Git"", ""SQL""]",Belum ada pengalaman,D3
+U-0115,Data Science & AI,Data Scientist,"[""Jupyter"", ""TensorFlow"", ""Pandas"", ""NumPy"", ""Matplotlib"", ""SQL""]",1 - 3 Tahun,D3
+U-0116,Data Science & AI,Machine Learning Engineer,"[""Git"", ""SQL""]",1 - 3 Tahun,S1/D4
+U-0117,Cloud & DevOps,DevOps Engineer,"[""Docker"", ""Jenkins"", ""Terraform"", ""Python""]",> 3 Tahun,S2/S3
+U-0118,Data Science & AI,Machine Learning Engineer,"[""Python"", ""Docker""]",< 1 Tahun,S1/D4
+U-0119,Quality Assurance (QA) & Testing,Automation QA,"[""Git"", ""Java"", ""TestNG"", ""Playwright"", ""Jira"", ""Postman""]",1 - 3 Tahun,D3
+U-0120,Cloud & DevOps,DevOps Engineer,"[""Ansible"", ""Linux""]",Belum ada pengalaman,S1/D4
+U-0121,UI/UX Design,UI Designer,"[""Illustrator"", ""Sketch"", ""Color Theory"", ""Prototyping""]",Belum ada pengalaman,S1/D4
+U-0122,Cyber Security,Security Analyst,"[""Python"", ""Firewall""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0123,Cyber Security,Security Analyst,"[""IDS/IPS""]",> 3 Tahun,S2/S3
+U-0124,Data Science & AI,Data Scientist,"[""Jupyter"", ""Pandas"", ""SQL"", ""TensorFlow""]",> 3 Tahun,S2/S3
+U-0125,Quality Assurance (QA) & Testing,Automation QA,"[""Playwright"", ""Java"", ""Jira"", ""Cypress""]",> 3 Tahun,S1/D4
+U-0126,Quality Assurance (QA) & Testing,SDET,"[""Git"", ""Performance Testing"", ""Appium"", ""Java"", ""Selenium""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0127,Quality Assurance (QA) & Testing,Automation QA,"[""Jira"", ""Python"", ""TestNG"", ""Selenium""]",1 - 3 Tahun,S1/D4
+U-0128,Web Development,Frontend Engineer,"[""TailwindCSS"", ""Next.js"", ""ReactJS"", ""Vue.js"", ""Bootstrap"", ""TypeScript""]",< 1 Tahun,S1/D4
+U-0129,Mobile Development,Android Developer,"[""Firebase"", ""Git"", ""Room DB"", ""Android SDK"", ""MVVM"", ""Jetpack Compose""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0130,Cloud & DevOps,Cloud Engineer,"[""GCP"", ""Linux"", ""Azure"", ""Python""]",> 3 Tahun,S1/D4
+U-0131,Cloud & DevOps,SRE,"[""Docker"", ""Terraform"", ""Git"", ""Prometheus"", ""CI/CD""]",Belum ada pengalaman,SMA/SMK
+U-0132,Cyber Security,DevSecOps,"[""SAST"", ""Linux"", ""Kubernetes"", ""Docker"", ""Python"", ""AWS""]",> 3 Tahun,S1/D4
+U-0133,Cyber Security,Penetration Tester,"[""Kali Linux"", ""OWASP"", ""Wireshark"", ""Burp Suite""]",Belum ada pengalaman,SMA/SMK
+U-0134,Mobile Development,Flutter Engineer,"[""Provider"", ""BLoC"", ""Git"", ""GetX"", ""Flutter""]",< 1 Tahun,S1/D4
+U-0135,UI/UX Design,UX Researcher,"[""Maze"", ""User Interview"", ""Survey Design"", ""Figma"", ""Usability Testing""]",> 3 Tahun,S1/D4
+U-0136,Cloud & DevOps,DevOps Engineer,"[""Linux"", ""Jenkins"", ""Ansible"", ""Python""]",1 - 3 Tahun,D3
+U-0137,UI/UX Design,Product Designer,"[""Wireframing"", ""Agile/Scrum"", ""Adobe XD"", ""Miro"", ""Accessibility"", ""User Research""]",> 3 Tahun,S1/D4
+U-0138,Quality Assurance (QA) & Testing,Manual QA,"[""Bug Reporting"", ""Postman"", ""API Testing"", ""SQL"", ""Jira""]",Belum ada pengalaman,D3
+U-0139,Cyber Security,DevSecOps,"[""Python"", ""Kubernetes"", ""Git""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0140,Cyber Security,DevSecOps,"[""DAST"", ""Linux"", ""Kubernetes"", ""Git""]",> 3 Tahun,S2/S3
+U-0141,UI/UX Design,UI Designer,"[""Color Theory"", ""Wireframing"", ""Adobe XD"", ""Prototyping""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0142,Web Development,Frontend Engineer,"[""Next.js""]",Belum ada pengalaman,D3
+U-0143,Mobile Development,Flutter Engineer,"[""Dart""]",> 3 Tahun,S1/D4
+U-0144,Cloud & DevOps,SRE,"[""Git"", ""Kubernetes"", ""Docker""]",< 1 Tahun,D3
+U-0145,Data Science & AI,Machine Learning Engineer,"[""Scikit-Learn"", ""Pandas"", ""SQL""]",> 3 Tahun,S1/D4
+U-0146,UI/UX Design,UX Researcher,"[""User Interview"", ""Miro"", ""Figma"", ""Survey Design"", ""Personas""]",1 - 3 Tahun,D3
+U-0147,UI/UX Design,UI Designer,"[""Illustrator""]",> 3 Tahun,S1/D4
+U-0148,Web Development,Frontend Engineer,"[""Bootstrap"", ""CSS"", ""Git""]",> 3 Tahun,S1/D4
+U-0149,Mobile Development,Flutter Engineer,"[""Dart"", ""Flutter"", ""BLoC"", ""Firebase"", ""Hive"", ""Provider""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0150,Cloud & DevOps,DevOps Engineer,"[""Kubernetes"", ""Linux"", ""Docker"", ""Ansible""]",Belum ada pengalaman,SMA/SMK
+U-0151,Data Science & AI,Machine Learning Engineer,"[""TensorFlow"", ""Scikit-Learn""]",1 - 3 Tahun,S2/S3
+U-0152,UI/UX Design,UX Researcher,"[""Data Analysis"", ""Miro"", ""User Interview""]",Belum ada pengalaman,D3
+U-0153,Mobile Development,Android Developer,"[""Git""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0154,Cloud & DevOps,SRE,"[""CI/CD""]",Belum ada pengalaman,D3
+U-0155,Cloud & DevOps,DevOps Engineer,"[""Kubernetes""]",1 - 3 Tahun,S1/D4
+U-0156,Web Development,Fullstack Engineer,"[""Docker""]",Belum ada pengalaman,D3
+U-0157,Data Science & AI,Data Analyst,"[""Power BI"", ""Python"", ""Tableau"", ""Data Visualization"", ""Excel""]",Belum ada pengalaman,D3
+U-0158,Cloud & DevOps,SRE,"[""Docker"", ""Python"", ""Git"", ""Kubernetes"", ""CI/CD"", ""Incident Management""]",> 3 Tahun,S2/S3
+U-0159,Mobile Development,Android Developer,"[""Java"", ""Jetpack Compose"", ""MVVM"", ""Git""]",1 - 3 Tahun,S1/D4
+U-0160,Cyber Security,Security Analyst,"[""Firewall"", ""Log Analysis"", ""Incident Response"", ""IDS/IPS""]",Belum ada pengalaman,SMA/SMK
+U-0161,UI/UX Design,UX Researcher,"[""User Interview"", ""Journey Mapping"", ""Figma""]",1 - 3 Tahun,D3
+U-0162,Data Science & AI,Data Scientist,"[""Pandas""]",1 - 3 Tahun,D3
+U-0163,Web Development,Fullstack Engineer,"[""CSS"", ""MySQL""]",< 1 Tahun,S1/D4
+U-0164,Web Development,Backend Engineer,"[""Docker"", ""MySQL"", ""Python"", ""Git"", ""Express""]",> 3 Tahun,S2/S3
+U-0165,Quality Assurance (QA) & Testing,Automation QA,"[""Python"", ""Playwright"", ""Jira""]",> 3 Tahun,S2/S3
+U-0166,Web Development,Frontend Engineer,"[""Vue.js"", ""TypeScript""]",> 3 Tahun,S1/D4
+U-0167,UI/UX Design,UX Researcher,"[""Data Analysis"", ""Miro"", ""Survey Design"", ""Journey Mapping"", ""Usability Testing""]",> 3 Tahun,S2/S3
+U-0168,Cloud & DevOps,DevOps Engineer,"[""Git"", ""GitLab CI"", ""Docker"", ""Python"", ""Jenkins""]",Belum ada pengalaman,S1/D4
+U-0169,Cyber Security,Security Analyst,"[""Linux"", ""Firewall"", ""Networking""]",1 - 3 Tahun,S2/S3
+U-0170,Mobile Development,Android Developer,"[""MVVM"", ""Java""]",> 3 Tahun,S1/D4
+U-0171,Cyber Security,Security Analyst,"[""Python"", ""Linux""]",1 - 3 Tahun,D3
+U-0172,Mobile Development,iOS Developer,"[""Git""]",Belum ada pengalaman,SMA/SMK
+U-0173,Web Development,Backend Engineer,"[""Laravel"", ""Express"", ""Django"", ""NodeJS"", ""MySQL"", ""Git""]",> 3 Tahun,S1/D4
+U-0174,Mobile Development,Android Developer,"[""Room DB"", ""MVVM"", ""Git"", ""Kotlin"", ""REST API"", ""Firebase""]",> 3 Tahun,S2/S3
+U-0175,Cloud & DevOps,SRE,"[""Python""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0176,Data Science & AI,Data Scientist,"[""Statistics""]",> 3 Tahun,S1/D4
+U-0177,Data Science & AI,Data Analyst,"[""Pandas""]",< 1 Tahun,D3
+U-0178,Data Science & AI,Data Scientist,"[""SQL"", ""Git"", ""Jupyter"", ""Matplotlib"", ""Statistics""]",Belum ada pengalaman,S1/D4
+U-0179,Cyber Security,Security Analyst,"[""Threat Intelligence"", ""Firewall""]",1 - 3 Tahun,S2/S3
+U-0180,Cloud & DevOps,SRE,"[""Kubernetes"", ""Git"", ""Python""]",Belum ada pengalaman,SMA/SMK
+U-0181,UI/UX Design,Product Designer,"[""Adobe XD"", ""Prototyping"", ""Accessibility""]",1 - 3 Tahun,D3
+U-0182,UI/UX Design,UI Designer,"[""Sketch"", ""Figma""]",1 - 3 Tahun,D3
+U-0183,Mobile Development,iOS Developer,"[""Xcode"", ""CoreData""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0184,Mobile Development,Android Developer,"[""REST API"", ""MVVM"", ""Firebase"", ""Kotlin"", ""Git"", ""Jetpack Compose""]",< 1 Tahun,D3
+U-0185,Data Science & AI,Data Analyst,"[""Python""]",1 - 3 Tahun,D3
+U-0186,Cloud & DevOps,DevOps Engineer,"[""Ansible"", ""GitLab CI"", ""Terraform"", ""Docker"", ""Python"", ""Jenkins""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0187,Quality Assurance (QA) & Testing,Manual QA,"[""SQL"", ""Jira"", ""Postman"", ""API Testing"", ""Agile/Scrum"", ""Bug Reporting""]",1 - 3 Tahun,S2/S3
+U-0188,UI/UX Design,UI Designer,"[""Figma"", ""Prototyping"", ""Color Theory"", ""Sketch"", ""Design System""]",< 1 Tahun,D3
+U-0189,Cyber Security,Penetration Tester,"[""OWASP"", ""Kali Linux"", ""Wireshark""]",< 1 Tahun,S1/D4
+U-0190,Cloud & DevOps,SRE,"[""Prometheus""]",Belum ada pengalaman,D3
+U-0191,Quality Assurance (QA) & Testing,SDET,"[""CI/CD"", ""API Testing"", ""Appium"", ""Docker"", ""Performance Testing""]",> 3 Tahun,S1/D4
+U-0192,Mobile Development,iOS Developer,"[""Firebase"", ""CoreData"", ""SwiftUI"", ""Xcode"", ""UIKit""]",1 - 3 Tahun,S2/S3
+U-0193,Quality Assurance (QA) & Testing,Manual QA,"[""SQL"", ""Bug Reporting"", ""API Testing"", ""Test Case Writing"", ""Postman""]",> 3 Tahun,S1/D4
+U-0194,UI/UX Design,UX Researcher,"[""Usability Testing"", ""Journey Mapping"", ""Figma""]",> 3 Tahun,S1/D4
+U-0195,UI/UX Design,UI Designer,"[""Sketch"", ""Illustrator"", ""Wireframing"", ""Adobe XD""]",< 1 Tahun,S1/D4
+U-0196,Quality Assurance (QA) & Testing,Automation QA,"[""Git"", ""Selenium"", ""Cypress""]",> 3 Tahun,S2/S3
+U-0197,Data Science & AI,AI Engineer,"[""PyTorch"", ""OpenAI API"", ""Docker"", ""FastAPI""]",Belum ada pengalaman,S1/D4
+U-0198,Cloud & DevOps,SRE,"[""Prometheus""]",1 - 3 Tahun,D3
+U-0199,UI/UX Design,UI Designer,"[""Design System"", ""Wireframing"", ""Typography"", ""Sketch"", ""Illustrator""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0200,Cloud & DevOps,DevOps Engineer,"[""Terraform"", ""Git"", ""Python""]",> 3 Tahun,S1/D4
+U-0201,Mobile Development,Android Developer,"[""Firebase"", ""Android SDK"", ""Java"", ""REST API"", ""Git""]",1 - 3 Tahun,D3
+U-0202,Data Science & AI,Machine Learning Engineer,"[""Python"", ""Kubernetes"", ""MLflow"", ""Git"", ""Scikit-Learn""]",< 1 Tahun,S1/D4
+U-0203,Web Development,Fullstack Engineer,"[""MySQL"", ""ReactJS"", ""PostgreSQL""]",Belum ada pengalaman,S1/D4
+U-0204,Cloud & DevOps,DevOps Engineer,"[""Python"", ""Terraform"", ""Docker""]",> 3 Tahun,S1/D4
+U-0205,Quality Assurance (QA) & Testing,Automation QA,"[""Postman"", ""Selenium"", ""Python"", ""Git"", ""Cypress""]",1 - 3 Tahun,S1/D4
+U-0206,Web Development,Frontend Engineer,"[""ReactJS"", ""JavaScript""]",1 - 3 Tahun,S2/S3
+U-0207,Cloud & DevOps,DevOps Engineer,"[""Jenkins"", ""GitLab CI"", ""Kubernetes""]",1 - 3 Tahun,S2/S3
+U-0208,Cloud & DevOps,Cloud Engineer,"[""Linux"", ""Terraform"", ""AWS"", ""Azure"", ""Python""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0209,Cyber Security,Security Analyst,"[""Log Analysis"", ""Incident Response""]",< 1 Tahun,D3
+U-0210,Cyber Security,Security Analyst,"[""Networking"", ""Threat Intelligence""]",Belum ada pengalaman,S1/D4
+U-0211,Web Development,Backend Engineer,"[""MongoDB"", ""Python"", ""Express"", ""PHP""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0212,Data Science & AI,AI Engineer,"[""Vector DB"", ""OpenAI API"", ""Git"", ""Docker""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0213,Data Science & AI,Data Scientist,"[""Python"", ""Scikit-Learn"", ""R""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0214,Data Science & AI,Data Analyst,"[""Statistics"", ""Pandas"", ""Python""]",< 1 Tahun,D3
+U-0215,Web Development,Backend Engineer,"[""Docker""]",Belum ada pengalaman,SMA/SMK
+U-0216,Cloud & DevOps,Cloud Engineer,"[""Terraform"", ""Git"", ""Kubernetes"", ""Docker"", ""GCP"", ""CI/CD""]",> 3 Tahun,S1/D4
+U-0217,Cloud & DevOps,Cloud Engineer,"[""AWS""]",Belum ada pengalaman,D3
+U-0218,UI/UX Design,Product Designer,"[""Miro"", ""Agile/Scrum"", ""Figma"", ""Design System"", ""Prototyping"", ""User Research""]",1 - 3 Tahun,S1/D4
+U-0219,UI/UX Design,Product Designer,"[""User Research"", ""Adobe XD"", ""Figma"", ""Accessibility"", ""Wireframing"", ""Miro""]",1 - 3 Tahun,D3
+U-0220,UI/UX Design,UX Researcher,"[""Usability Testing"", ""Maze"", ""Figma"", ""Data Analysis"", ""Personas""]",< 1 Tahun,D3
+U-0221,UI/UX Design,UI Designer,"[""Illustrator""]",> 3 Tahun,S2/S3
+U-0222,Quality Assurance (QA) & Testing,SDET,"[""API Testing""]",1 - 3 Tahun,S1/D4
+U-0223,Mobile Development,iOS Developer,"[""UIKit"", ""SwiftUI"", ""Git"", ""Swift"", ""Firebase"", ""Xcode""]",1 - 3 Tahun,D3
+U-0224,UI/UX Design,Product Designer,"[""Prototyping"", ""Accessibility"", ""Miro"", ""Design System"", ""Agile/Scrum"", ""User Research""]",> 3 Tahun,S2/S3
+U-0225,Mobile Development,Android Developer,"[""Android SDK"", ""MVVM"", ""REST API""]",> 3 Tahun,S1/D4
+U-0226,Data Science & AI,Data Analyst,"[""Tableau"", ""Statistics"", ""SQL"", ""NumPy"", ""Pandas""]",1 - 3 Tahun,S1/D4
+U-0227,Cloud & DevOps,Cloud Engineer,"[""GCP"", ""AWS"", ""Azure"", ""Git""]",< 1 Tahun,D3
+U-0228,UI/UX Design,UI Designer,"[""Typography"", ""Color Theory"", ""Figma"", ""Wireframing""]",> 3 Tahun,S2/S3
+U-0229,Data Science & AI,Machine Learning Engineer,"[""PyTorch"", ""Kubernetes""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0230,Cyber Security,Penetration Tester,"[""Wireshark"", ""Networking"", ""Kali Linux"", ""Burp Suite"", ""Python""]",1 - 3 Tahun,S2/S3
+U-0231,Cloud & DevOps,DevOps Engineer,"[""GitLab CI"", ""Python"", ""Kubernetes"", ""Docker""]",1 - 3 Tahun,D3
+U-0232,Cloud & DevOps,DevOps Engineer,"[""Docker"", ""Git""]",Belum ada pengalaman,D3
+U-0233,Cyber Security,Security Analyst,"[""Threat Intelligence"", ""Networking""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0234,UI/UX Design,UI Designer,"[""Prototyping"", ""Design System""]",> 3 Tahun,S2/S3
+U-0235,Cloud & DevOps,SRE,"[""Incident Management"", ""Terraform"", ""Git"", ""Python"", ""Docker"", ""Linux""]",> 3 Tahun,S2/S3
+U-0236,Web Development,Backend Engineer,"[""MongoDB"", ""Django"", ""PostgreSQL"", ""MySQL"", ""PHP"", ""Laravel""]",Belum ada pengalaman,S1/D4
+U-0237,Data Science & AI,Data Scientist,"[""R""]",Belum ada pengalaman,S1/D4
+U-0238,UI/UX Design,UI Designer,"[""Sketch"", ""Prototyping"", ""Color Theory"", ""Wireframing""]",> 3 Tahun,S2/S3
+U-0239,Data Science & AI,AI Engineer,"[""OpenAI API"", ""FastAPI"", ""PyTorch"", ""Docker""]",< 1 Tahun,S1/D4
+U-0240,Data Science & AI,Machine Learning Engineer,"[""Docker"", ""Scikit-Learn"", ""Git""]",> 3 Tahun,S2/S3
+U-0241,UI/UX Design,UX Researcher,"[""Journey Mapping"", ""Survey Design"", ""Maze""]",1 - 3 Tahun,S2/S3
+U-0242,Cyber Security,DevSecOps,"[""Git"", ""AWS"", ""CI/CD""]",< 1 Tahun,S1/D4
+U-0243,Quality Assurance (QA) & Testing,SDET,"[""Performance Testing"", ""Java"", ""Python""]",1 - 3 Tahun,S1/D4
+U-0244,UI/UX Design,UI Designer,"[""Figma"", ""Illustrator"", ""Design System""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0245,Cyber Security,Security Analyst,"[""Threat Intelligence"", ""Python"", ""Linux"", ""SIEM""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0246,Web Development,Backend Engineer,"[""PostgreSQL"", ""MySQL""]",> 3 Tahun,S1/D4
+U-0247,Cloud & DevOps,Cloud Engineer,"[""Kubernetes"", ""AWS"", ""Python"", ""Docker"", ""GCP"", ""Azure""]",1 - 3 Tahun,D3
+U-0248,Web Development,Frontend Engineer,"[""CSS"", ""TypeScript"", ""Next.js"", ""TailwindCSS"", ""Vue.js""]",1 - 3 Tahun,D3
+U-0249,Data Science & AI,Data Scientist,"[""TensorFlow"", ""Statistics""]",> 3 Tahun,S1/D4
+U-0250,Mobile Development,iOS Developer,"[""Git"", ""Xcode"", ""CoreData"", ""Swift""]",1 - 3 Tahun,S2/S3
+U-0251,UI/UX Design,UI Designer,"[""Figma"", ""Wireframing"", ""Adobe XD"", ""Sketch""]",< 1 Tahun,D3
+U-0252,Mobile Development,iOS Developer,"[""Xcode"", ""SwiftUI"", ""Objective-C"", ""Git"", ""REST API""]",Belum ada pengalaman,S1/D4
+U-0253,Mobile Development,Android Developer,"[""Git"", ""MVVM"", ""Jetpack Compose"", ""REST API"", ""Room DB"", ""Kotlin""]",> 3 Tahun,S1/D4
+U-0254,Cyber Security,DevSecOps,"[""CI/CD"", ""Python""]",> 3 Tahun,S1/D4
+U-0255,Web Development,Frontend Engineer,"[""JavaScript""]",< 1 Tahun,D3
+U-0256,Quality Assurance (QA) & Testing,Manual QA,"[""SQL"", ""API Testing"", ""Jira"", ""Bug Reporting"", ""Postman"", ""Regression Testing""]",< 1 Tahun,D3
+U-0257,Quality Assurance (QA) & Testing,Manual QA,"[""API Testing"", ""Agile/Scrum"", ""SQL"", ""Postman""]",Belum ada pengalaman,D3
+U-0258,UI/UX Design,Product Designer,"[""Agile/Scrum"", ""Adobe XD"", ""Miro"", ""Accessibility"", ""Figma""]",< 1 Tahun,S1/D4
+U-0259,Web Development,Backend Engineer,"[""Docker"", ""Laravel"", ""REST API"", ""Git"", ""MySQL"", ""MongoDB""]",< 1 Tahun,D3
+U-0260,Cloud & DevOps,DevOps Engineer,"[""Terraform"", ""Docker"", ""Kubernetes"", ""Linux""]",< 1 Tahun,D3
+U-0261,Mobile Development,Flutter Engineer,"[""Dart"", ""REST API"", ""Firebase""]",Belum ada pengalaman,SMA/SMK
+U-0262,Web Development,Frontend Engineer,"[""TypeScript"", ""Next.js"", ""CSS""]",> 3 Tahun,S2/S3
+U-0263,Quality Assurance (QA) & Testing,SDET,"[""Python"", ""Git"", ""JMeter"", ""Java"", ""API Testing"", ""Performance Testing""]",Belum ada pengalaman,S1/D4
+U-0264,Mobile Development,Flutter Engineer,"[""Flutter""]",1 - 3 Tahun,D3
+U-0265,Mobile Development,Android Developer,"[""REST API""]",> 3 Tahun,S2/S3
+U-0266,Cloud & DevOps,DevOps Engineer,"[""GitLab CI""]",1 - 3 Tahun,D3
+U-0267,Cloud & DevOps,SRE,"[""Docker"", ""Python"", ""Grafana"", ""CI/CD"", ""Prometheus"", ""Terraform""]",1 - 3 Tahun,S1/D4
+U-0268,Cloud & DevOps,Cloud Engineer,"[""AWS"", ""Git""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0269,Cloud & DevOps,DevOps Engineer,"[""Terraform"", ""Python"", ""Kubernetes"", ""GitLab CI""]",> 3 Tahun,S2/S3
+U-0270,Web Development,Frontend Engineer,"[""HTML"", ""JavaScript"", ""TailwindCSS"", ""Next.js"", ""Vue.js""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0271,Cloud & DevOps,SRE,"[""Incident Management"", ""Grafana"", ""CI/CD"", ""Linux"", ""Kubernetes"", ""Git""]",Belum ada pengalaman,SMA/SMK
+U-0272,Mobile Development,Flutter Engineer,"[""Provider"", ""Hive"", ""Flutter"", ""BLoC""]",> 3 Tahun,S2/S3
+U-0273,Cyber Security,Security Analyst,"[""Threat Intelligence"", ""Firewall"", ""Python"", ""Log Analysis"", ""Linux""]",> 3 Tahun,S1/D4
+U-0274,Cyber Security,Penetration Tester,"[""Wireshark"", ""Kali Linux"", ""Networking"", ""Metasploit"", ""Burp Suite"", ""Nmap""]",< 1 Tahun,S1/D4
+U-0275,Mobile Development,Flutter Engineer,"[""Dart"", ""GetX"", ""REST API"", ""Firebase"", ""Provider""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0276,Mobile Development,Android Developer,"[""Jetpack Compose"", ""Room DB"", ""Firebase""]",< 1 Tahun,S1/D4
+U-0277,Data Science & AI,AI Engineer,"[""LangChain"", ""PyTorch"", ""Git"", ""Docker""]",> 3 Tahun,S2/S3
+U-0278,Cloud & DevOps,Cloud Engineer,"[""Kubernetes""]",1 - 3 Tahun,S1/D4
+U-0279,Cyber Security,DevSecOps,"[""Git"", ""SAST"", ""Docker"", ""AWS""]",< 1 Tahun,D3
+U-0280,Data Science & AI,Machine Learning Engineer,"[""PyTorch"", ""Pandas""]",< 1 Tahun,S1/D4
+U-0281,Quality Assurance (QA) & Testing,Automation QA,"[""Jira"", ""CI/CD"", ""Java"", ""Python""]",1 - 3 Tahun,D3
+U-0282,UI/UX Design,UX Researcher,"[""Figma"", ""Usability Testing"", ""Survey Design"", ""User Interview"", ""Miro"", ""Journey Mapping""]",1 - 3 Tahun,S1/D4
+U-0283,Web Development,Frontend Engineer,"[""Bootstrap""]",> 3 Tahun,S1/D4
+U-0284,Web Development,Fullstack Engineer,"[""Docker"", ""JavaScript"", ""HTML"", ""REST API"", ""PostgreSQL""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0285,Quality Assurance (QA) & Testing,SDET,"[""CI/CD"", ""JMeter""]",> 3 Tahun,S2/S3
+U-0286,UI/UX Design,UI Designer,"[""Color Theory""]",1 - 3 Tahun,D3
+U-0287,Mobile Development,Android Developer,"[""MVVM"", ""Git"", ""Java"", ""Kotlin"", ""Firebase"", ""REST API""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0288,Web Development,Frontend Engineer,"[""HTML""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0289,Quality Assurance (QA) & Testing,Automation QA,"[""Java"", ""TestNG""]",1 - 3 Tahun,S1/D4
+U-0290,Data Science & AI,Data Analyst,"[""Data Visualization"", ""Git"", ""Statistics""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0291,Web Development,Fullstack Engineer,"[""TypeScript"", ""Docker"", ""CSS"", ""PostgreSQL"", ""JavaScript""]",> 3 Tahun,S2/S3
+U-0292,Quality Assurance (QA) & Testing,Automation QA,"[""Git"", ""Postman"", ""TestNG"", ""Selenium""]",> 3 Tahun,S1/D4
+U-0293,Data Science & AI,Machine Learning Engineer,"[""Python"", ""Kubernetes"", ""Docker""]",< 1 Tahun,D3
+U-0294,Quality Assurance (QA) & Testing,Automation QA,"[""Postman"", ""Playwright""]",< 1 Tahun,S1/D4
+U-0295,Cloud & DevOps,Cloud Engineer,"[""Azure"", ""Git"", ""GCP"", ""Docker"", ""AWS"", ""CI/CD""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0296,UI/UX Design,UI Designer,"[""Figma"", ""Sketch"", ""Typography"", ""Prototyping""]",> 3 Tahun,S1/D4
+U-0297,Cyber Security,Penetration Tester,"[""Wireshark""]",> 3 Tahun,S1/D4
+U-0298,Web Development,Backend Engineer,"[""Git""]",Belum ada pengalaman,SMA/SMK
+U-0299,Web Development,Backend Engineer,"[""Python"", ""MySQL"", ""NodeJS"", ""REST API"", ""MongoDB"", ""Express""]",> 3 Tahun,S2/S3
+U-0300,Cloud & DevOps,SRE,"[""Grafana"", ""Python"", ""CI/CD"", ""Prometheus"", ""Incident Management"", ""Git""]",< 1 Tahun,D3
+U-0301,Mobile Development,iOS Developer,"[""CoreData"", ""SwiftUI"", ""Xcode"", ""Git"", ""Swift""]",< 1 Tahun,D3
+U-0302,Mobile Development,Flutter Engineer,"[""BLoC"", ""Dart"", ""Provider"", ""Firebase""]",> 3 Tahun,S1/D4
+U-0303,UI/UX Design,Product Designer,"[""Agile/Scrum"", ""User Research"", ""Miro"", ""Prototyping""]",< 1 Tahun,D3
+U-0304,Data Science & AI,Data Analyst,"[""Tableau"", ""NumPy"", ""Statistics"", ""Git""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0305,Data Science & AI,Machine Learning Engineer,"[""Git"", ""Docker"", ""MLflow"", ""SQL""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0306,Cyber Security,DevSecOps,"[""DAST"", ""Docker""]",Belum ada pengalaman,SMA/SMK
+U-0307,UI/UX Design,Product Designer,"[""Wireframing"", ""Figma"", ""User Research"", ""Design System"", ""Adobe XD"", ""Agile/Scrum""]",1 - 3 Tahun,S2/S3
+U-0308,UI/UX Design,UX Researcher,"[""Personas""]",Belum ada pengalaman,SMA/SMK
+U-0309,Cloud & DevOps,DevOps Engineer,"[""GitLab CI"", ""Jenkins"", ""Python""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0310,UI/UX Design,UI Designer,"[""Figma"", ""Wireframing"", ""Adobe XD"", ""Prototyping"", ""Typography"", ""Illustrator""]",> 3 Tahun,S1/D4
+U-0311,Quality Assurance (QA) & Testing,Manual QA,"[""Test Case Writing""]",Belum ada pengalaman,SMA/SMK
+U-0312,Cloud & DevOps,Cloud Engineer,"[""Git"", ""Terraform"", ""GCP"", ""Docker"", ""CI/CD""]",Belum ada pengalaman,SMA/SMK
+U-0313,Quality Assurance (QA) & Testing,Automation QA,"[""Selenium"", ""Python"", ""Java"", ""CI/CD"", ""Playwright""]",1 - 3 Tahun,D3
+U-0314,Mobile Development,Flutter Engineer,"[""Firebase"", ""Flutter"", ""Git"", ""GetX"", ""Dart""]",Belum ada pengalaman,S1/D4
+U-0315,UI/UX Design,UI Designer,"[""Typography"", ""Illustrator"", ""Wireframing"", ""Figma"", ""Adobe XD"", ""Color Theory""]",> 3 Tahun,S1/D4
+U-0316,Cloud & DevOps,SRE,"[""Incident Management""]",Belum ada pengalaman,D3
+U-0317,Data Science & AI,AI Engineer,"[""PyTorch"", ""FastAPI"", ""HuggingFace"", ""Docker"", ""OpenAI API""]",1 - 3 Tahun,S1/D4
+U-0318,Quality Assurance (QA) & Testing,Manual QA,"[""Postman"", ""Test Case Writing"", ""Regression Testing""]",Belum ada pengalaman,S1/D4
+U-0319,UI/UX Design,Product Designer,"[""Design System"", ""Figma""]",> 3 Tahun,S2/S3
+U-0320,Data Science & AI,AI Engineer,"[""SQL"", ""HuggingFace"", ""LangChain"", ""Python"", ""Vector DB""]",Belum ada pengalaman,S1/D4
+U-0321,Data Science & AI,AI Engineer,"[""OpenAI API"", ""Git"", ""Docker"", ""FastAPI"", ""LangChain""]",Belum ada pengalaman,SMA/SMK
+U-0322,Cyber Security,Security Analyst,"[""Incident Response"", ""Log Analysis"", ""IDS/IPS"", ""Firewall""]",> 3 Tahun,S2/S3
+U-0323,Quality Assurance (QA) & Testing,Manual QA,"[""Postman"", ""API Testing"", ""Bug Reporting"", ""Regression Testing"", ""Jira"", ""Test Case Writing""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0324,Quality Assurance (QA) & Testing,SDET,"[""CI/CD"", ""Docker""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0325,Data Science & AI,Data Scientist,"[""NumPy"", ""Git"", ""Statistics"", ""Python""]",< 1 Tahun,S1/D4
+U-0326,UI/UX Design,UX Researcher,"[""Journey Mapping""]",1 - 3 Tahun,D3
+U-0327,Data Science & AI,Data Analyst,"[""Power BI"", ""Excel"", ""Pandas"", ""Git""]",Belum ada pengalaman,D3
+U-0328,Mobile Development,iOS Developer,"[""Git"", ""CoreData"", ""SwiftUI"", ""Objective-C"", ""REST API""]",1 - 3 Tahun,S2/S3
+U-0329,Quality Assurance (QA) & Testing,Automation QA,"[""TestNG"", ""Selenium"", ""Java"", ""Jira""]",1 - 3 Tahun,S2/S3
+U-0330,Cloud & DevOps,Cloud Engineer,"[""AWS"", ""GCP"", ""Docker""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0331,Web Development,Backend Engineer,"[""PostgreSQL"", ""MongoDB"", ""REST API""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0332,Web Development,Frontend Engineer,"[""Vue.js"", ""Next.js"", ""Git"", ""Bootstrap"", ""HTML""]",> 3 Tahun,S1/D4
+U-0333,UI/UX Design,UI Designer,"[""Color Theory"", ""Illustrator"", ""Figma""]",Belum ada pengalaman,S1/D4
+U-0334,Quality Assurance (QA) & Testing,Manual QA,"[""Jira""]",1 - 3 Tahun,S1/D4
+U-0335,Cloud & DevOps,SRE,"[""Prometheus"", ""Incident Management"", ""CI/CD"", ""Python"", ""Grafana"", ""Git""]",> 3 Tahun,S1/D4
+U-0336,UI/UX Design,UI Designer,"[""Figma"", ""Prototyping"", ""Design System"", ""Adobe XD"", ""Color Theory"", ""Illustrator""]",Belum ada pengalaman,D3
+U-0337,Mobile Development,Flutter Engineer,"[""Dart""]",> 3 Tahun,S1/D4
+U-0338,Cyber Security,Security Analyst,"[""SIEM"", ""Linux""]",1 - 3 Tahun,D3
+U-0339,Data Science & AI,Data Scientist,"[""Scikit-Learn"", ""NumPy""]",< 1 Tahun,D3
+U-0340,UI/UX Design,Product Designer,"[""Agile/Scrum""]",< 1 Tahun,D3
+U-0341,Web Development,Backend Engineer,"[""Django"", ""NodeJS"", ""Python"", ""Laravel"", ""REST API"", ""Git""]",> 3 Tahun,S1/D4
+U-0342,Mobile Development,Flutter Engineer,"[""BLoC"", ""GetX"", ""Dart"", ""REST API"", ""Firebase""]",Belum ada pengalaman,S1/D4
+U-0343,Cyber Security,DevSecOps,"[""DAST""]",1 - 3 Tahun,S1/D4
+U-0344,UI/UX Design,Product Designer,"[""Agile/Scrum"", ""Adobe XD"", ""Wireframing""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0345,Cloud & DevOps,DevOps Engineer,"[""Ansible"", ""Terraform""]",1 - 3 Tahun,S1/D4
+U-0346,Data Science & AI,Machine Learning Engineer,"[""TensorFlow"", ""MLflow"", ""SQL""]",> 3 Tahun,S2/S3
+U-0347,Mobile Development,Flutter Engineer,"[""Git"", ""REST API""]",1 - 3 Tahun,S2/S3
+U-0348,UI/UX Design,UI Designer,"[""Sketch"", ""Illustrator"", ""Color Theory"", ""Adobe XD"", ""Wireframing"", ""Design System""]",< 1 Tahun,S1/D4
+U-0349,Cyber Security,Security Analyst,"[""Python"", ""Firewall"", ""Log Analysis"", ""SIEM"", ""Incident Response""]",> 3 Tahun,S2/S3
+U-0350,Cloud & DevOps,DevOps Engineer,"[""Prometheus""]",1 - 3 Tahun,D3
+U-0351,Data Science & AI,AI Engineer,"[""SQL"", ""OpenAI API"", ""HuggingFace"", ""LangChain"", ""PyTorch""]",> 3 Tahun,S2/S3
+U-0352,Quality Assurance (QA) & Testing,SDET,"[""Performance Testing""]",Belum ada pengalaman,S1/D4
+U-0353,Mobile Development,Android Developer,"[""Kotlin"", ""Android SDK"", ""Firebase""]",1 - 3 Tahun,S1/D4
+U-0354,Cyber Security,Penetration Tester,"[""Kali Linux"", ""Bash"", ""Python"", ""Burp Suite"", ""Networking"", ""Wireshark""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0355,Web Development,Fullstack Engineer,"[""Docker"", ""ReactJS"", ""REST API"", ""JavaScript""]",1 - 3 Tahun,S1/D4
+U-0356,UI/UX Design,UX Researcher,"[""Figma"", ""Maze"", ""Miro"", ""Data Analysis"", ""Personas"", ""Survey Design""]",< 1 Tahun,S1/D4
+U-0357,Cloud & DevOps,DevOps Engineer,"[""Ansible""]",Belum ada pengalaman,D3
+U-0358,UI/UX Design,Product Designer,"[""Figma"", ""User Research"", ""Wireframing"", ""Accessibility"", ""Prototyping"", ""Miro""]",1 - 3 Tahun,D3
+U-0359,Mobile Development,Android Developer,"[""Android SDK""]",> 3 Tahun,S2/S3
+U-0360,Quality Assurance (QA) & Testing,SDET,"[""Appium"", ""JMeter"", ""CI/CD"", ""API Testing"", ""Selenium"", ""Java""]",Belum ada pengalaman,SMA/SMK
+U-0361,Web Development,Frontend Engineer,"[""Vue.js"", ""HTML""]",1 - 3 Tahun,D3
+U-0362,Cyber Security,Security Analyst,"[""Incident Response"", ""IDS/IPS""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0363,Cyber Security,DevSecOps,"[""CI/CD"", ""Terraform"", ""Kubernetes"", ""Python""]",Belum ada pengalaman,S1/D4
+U-0364,Cyber Security,Penetration Tester,"[""Python"", ""Wireshark"", ""Networking"", ""Nmap"", ""OWASP""]",Belum ada pengalaman,S1/D4
+U-0365,UI/UX Design,UX Researcher,"[""User Interview""]",< 1 Tahun,S1/D4
+U-0366,Web Development,Frontend Engineer,"[""TypeScript"", ""Vue.js"", ""Bootstrap"", ""JavaScript""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0367,Cyber Security,DevSecOps,"[""AWS""]",< 1 Tahun,S1/D4
+U-0368,Data Science & AI,Data Analyst,"[""Data Visualization"", ""Excel"", ""Statistics"", ""Git""]",1 - 3 Tahun,S1/D4
+U-0369,Web Development,Frontend Engineer,"[""Vue.js""]",> 3 Tahun,S2/S3
+U-0370,Cyber Security,DevSecOps,"[""CI/CD"", ""AWS"", ""DAST"", ""Docker"", ""Kubernetes"", ""SAST""]",Belum ada pengalaman,S1/D4
+U-0371,Cloud & DevOps,Cloud Engineer,"[""Python"", ""Linux"", ""Azure"", ""AWS"", ""Docker""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0372,Cloud & DevOps,Cloud Engineer,"[""Git""]",> 3 Tahun,S1/D4
+U-0373,Web Development,Frontend Engineer,"[""Git"", ""Vue.js"", ""CSS"", ""ReactJS"", ""Bootstrap""]",> 3 Tahun,S1/D4
+U-0374,Mobile Development,iOS Developer,"[""Firebase""]",< 1 Tahun,D3
+U-0375,UI/UX Design,Product Designer,"[""Agile/Scrum"", ""Adobe XD"", ""Prototyping"", ""Miro"", ""Figma"", ""Accessibility""]",< 1 Tahun,S1/D4
+U-0376,Quality Assurance (QA) & Testing,Manual QA,"[""Test Case Writing"", ""Jira"", ""SQL"", ""Regression Testing"", ""API Testing""]",1 - 3 Tahun,S2/S3
+U-0377,Data Science & AI,Data Analyst,"[""Pandas"", ""Excel""]",> 3 Tahun,S2/S3
+U-0378,Mobile Development,Android Developer,"[""Android SDK"", ""Room DB"", ""Git"", ""REST API"", ""Java"", ""Kotlin""]",< 1 Tahun,S1/D4
+U-0379,Data Science & AI,AI Engineer,"[""FastAPI"", ""Git"", ""Docker""]",> 3 Tahun,S1/D4
+U-0380,Cloud & DevOps,SRE,"[""Docker""]",1 - 3 Tahun,S1/D4
+U-0381,Cloud & DevOps,Cloud Engineer,"[""Docker"", ""Git"", ""Terraform"", ""AWS"", ""CI/CD"", ""GCP""]",1 - 3 Tahun,D3
+U-0382,Cyber Security,DevSecOps,"[""SAST"", ""Kubernetes"", ""Docker""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0383,Cloud & DevOps,DevOps Engineer,"[""Kubernetes"", ""Git"", ""Ansible"", ""Docker""]",> 3 Tahun,S1/D4
+U-0384,UI/UX Design,Product Designer,"[""Adobe XD""]",< 1 Tahun,S1/D4
+U-0385,Quality Assurance (QA) & Testing,Automation QA,"[""Git""]",< 1 Tahun,D3
+U-0386,Cloud & DevOps,Cloud Engineer,"[""Azure"", ""GCP"", ""AWS"", ""Kubernetes""]",> 3 Tahun,S1/D4
+U-0387,Quality Assurance (QA) & Testing,SDET,"[""Selenium"", ""Java""]",< 1 Tahun,S1/D4
+U-0388,Cloud & DevOps,Cloud Engineer,"[""Python"", ""Terraform"", ""Git""]",> 3 Tahun,S2/S3
+U-0389,Web Development,Frontend Engineer,"[""JavaScript"", ""Bootstrap"", ""TailwindCSS""]",> 3 Tahun,S1/D4
+U-0390,Cyber Security,DevSecOps,"[""Terraform"", ""Kubernetes"", ""Git""]",< 1 Tahun,D3
+U-0391,Mobile Development,iOS Developer,"[""Swift"", ""CoreData"", ""REST API""]",< 1 Tahun,D3
+U-0392,Data Science & AI,AI Engineer,"[""SQL"", ""OpenAI API"", ""Git"", ""HuggingFace"", ""Docker"", ""Python""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0393,Mobile Development,Flutter Engineer,"[""Flutter"", ""Firebase"", ""Git""]",1 - 3 Tahun,S2/S3
+U-0394,Cyber Security,Security Analyst,"[""SIEM"", ""Firewall"", ""Python"", ""Threat Intelligence""]",1 - 3 Tahun,D3
+U-0395,Cloud & DevOps,SRE,"[""Python"", ""Terraform""]",> 3 Tahun,S2/S3
+U-0396,Mobile Development,Flutter Engineer,"[""Hive""]",< 1 Tahun,D3
+U-0397,Quality Assurance (QA) & Testing,Automation QA,"[""CI/CD"", ""Cypress"", ""Selenium"", ""Git"", ""Jira""]",< 1 Tahun,S1/D4
+U-0398,Data Science & AI,Data Analyst,"[""Pandas""]",Belum ada pengalaman,D3
+U-0399,Data Science & AI,Machine Learning Engineer,"[""Python"", ""TensorFlow"", ""MLflow"", ""Git""]",< 1 Tahun,D3
+U-0400,Web Development,Frontend Engineer,"[""Bootstrap"", ""JavaScript"", ""Vue.js"", ""Next.js"", ""CSS""]",< 1 Tahun,D3
+U-0401,Quality Assurance (QA) & Testing,SDET,"[""Appium"", ""Java"", ""Docker"", ""API Testing"", ""Python"", ""JMeter""]",< 1 Tahun,S1/D4
+U-0402,Quality Assurance (QA) & Testing,Manual QA,"[""Bug Reporting"", ""Agile/Scrum""]",> 3 Tahun,S1/D4
+U-0403,UI/UX Design,UX Researcher,"[""Figma"", ""Survey Design"", ""Personas"", ""Miro"", ""Journey Mapping""]",1 - 3 Tahun,S2/S3
+U-0404,Cyber Security,Security Analyst,"[""Networking"", ""SIEM"", ""Incident Response"", ""Linux""]",1 - 3 Tahun,D3
+U-0405,Web Development,Backend Engineer,"[""Git"", ""Express"", ""NodeJS"", ""PostgreSQL"", ""REST API"", ""Django""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0406,Data Science & AI,Machine Learning Engineer,"[""Docker"", ""Python"", ""Kubernetes"", ""Git"", ""TensorFlow""]",< 1 Tahun,S1/D4
+U-0407,Web Development,Fullstack Engineer,"[""CSS"", ""REST API"", ""TypeScript""]",1 - 3 Tahun,S2/S3
+U-0408,Mobile Development,iOS Developer,"[""Firebase"", ""REST API"", ""UIKit""]",> 3 Tahun,S1/D4
+U-0409,Cloud & DevOps,DevOps Engineer,"[""Ansible"", ""Linux"", ""Kubernetes""]",< 1 Tahun,S1/D4
+U-0410,Cyber Security,Security Analyst,"[""Firewall""]",> 3 Tahun,S2/S3
+U-0411,UI/UX Design,Product Designer,"[""Accessibility""]",> 3 Tahun,S1/D4
+U-0412,Quality Assurance (QA) & Testing,Automation QA,"[""Jira"", ""Playwright""]",> 3 Tahun,S1/D4
+U-0413,Data Science & AI,AI Engineer,"[""Git"", ""SQL"", ""OpenAI API"", ""Python""]",1 - 3 Tahun,S1/D4
+U-0414,Cyber Security,Penetration Tester,"[""Burp Suite"", ""Python"", ""Metasploit"", ""Nmap""]",> 3 Tahun,S2/S3
+U-0415,Quality Assurance (QA) & Testing,Manual QA,"[""Jira"", ""Bug Reporting""]",1 - 3 Tahun,S2/S3
+U-0416,Cyber Security,Penetration Tester,"[""Metasploit"", ""Nmap"", ""Python""]",< 1 Tahun,S1/D4
+U-0417,Cyber Security,Penetration Tester,"[""Python"", ""Kali Linux"", ""Networking"", ""Wireshark"", ""OWASP"", ""Metasploit""]",> 3 Tahun,S2/S3
+U-0418,Quality Assurance (QA) & Testing,Manual QA,"[""SQL"", ""Bug Reporting"", ""Agile/Scrum"", ""Test Case Writing"", ""Jira"", ""API Testing""]",1 - 3 Tahun,S2/S3
+U-0419,Data Science & AI,Data Analyst,"[""NumPy"", ""Statistics"", ""Git"", ""SQL"", ""Excel""]",1 - 3 Tahun,S1/D4
+U-0420,Web Development,Backend Engineer,"[""PHP"", ""MySQL"", ""MongoDB"", ""Docker""]",> 3 Tahun,S1/D4
+U-0421,Data Science & AI,AI Engineer,"[""SQL"", ""OpenAI API"", ""Python"", ""Git"", ""LangChain""]",< 1 Tahun,S1/D4
+U-0422,UI/UX Design,Product Designer,"[""Design System"", ""Agile/Scrum"", ""Miro"", ""Prototyping"", ""Figma"", ""Wireframing""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0423,Data Science & AI,Data Analyst,"[""Tableau"", ""Data Visualization"", ""Python"", ""Excel"", ""Git"", ""Power BI""]",< 1 Tahun,S1/D4
+U-0424,Web Development,Frontend Engineer,"[""HTML"", ""Next.js"", ""JavaScript""]",Belum ada pengalaman,SMA/SMK
+U-0425,Cloud & DevOps,DevOps Engineer,"[""Jenkins"", ""Prometheus""]",< 1 Tahun,S1/D4
+U-0426,Cyber Security,Penetration Tester,"[""Python"", ""Kali Linux"", ""OWASP"", ""Metasploit"", ""Nmap""]",> 3 Tahun,S2/S3
+U-0427,UI/UX Design,UI Designer,"[""Sketch"", ""Typography"", ""Design System"", ""Illustrator""]",1 - 3 Tahun,S2/S3
+U-0428,Cyber Security,Security Analyst,"[""Incident Response"", ""SIEM"", ""Networking"", ""Log Analysis"", ""Python""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0429,Web Development,Frontend Engineer,"[""Bootstrap"", ""Next.js"", ""Vue.js""]",> 3 Tahun,S2/S3
+U-0430,Cloud & DevOps,SRE,"[""Incident Management""]",Belum ada pengalaman,SMA/SMK
+U-0431,Cyber Security,Penetration Tester,"[""Python"", ""Wireshark"", ""Bash"", ""Burp Suite""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0432,Data Science & AI,Data Analyst,"[""Git"", ""Data Visualization""]",1 - 3 Tahun,S1/D4
+U-0433,Cyber Security,Penetration Tester,"[""Nmap"", ""Burp Suite"", ""Python"", ""Metasploit"", ""Networking"", ""Bash""]",< 1 Tahun,S1/D4
+U-0434,Cloud & DevOps,SRE,"[""Docker""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0435,Quality Assurance (QA) & Testing,SDET,"[""JMeter"", ""Python"", ""Docker"", ""API Testing"", ""Java"", ""Git""]",Belum ada pengalaman,D3
+U-0436,UI/UX Design,UI Designer,"[""Adobe XD"", ""Illustrator"", ""Wireframing"", ""Prototyping""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0437,UI/UX Design,UI Designer,"[""Illustrator""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0438,Data Science & AI,AI Engineer,"[""OpenAI API""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0439,Cloud & DevOps,SRE,"[""Python"", ""Kubernetes"", ""Incident Management""]",1 - 3 Tahun,S2/S3
+U-0440,Cloud & DevOps,Cloud Engineer,"[""Python"", ""Azure""]",1 - 3 Tahun,S2/S3
+U-0441,Mobile Development,iOS Developer,"[""Firebase"", ""SwiftUI"", ""Xcode"", ""CoreData"", ""Git""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0442,Cloud & DevOps,SRE,"[""Docker"", ""Prometheus"", ""CI/CD"", ""Terraform"", ""Incident Management""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0443,UI/UX Design,UI Designer,"[""Sketch"", ""Color Theory""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0444,Quality Assurance (QA) & Testing,Automation QA,"[""Jira""]",< 1 Tahun,S1/D4
+U-0445,Cloud & DevOps,Cloud Engineer,"[""Docker"", ""Python"", ""Linux"", ""GCP"", ""AWS"", ""CI/CD""]",< 1 Tahun,S1/D4
+U-0446,Quality Assurance (QA) & Testing,Manual QA,"[""Regression Testing""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0447,Cloud & DevOps,DevOps Engineer,"[""Terraform"", ""Kubernetes"", ""GitLab CI""]",1 - 3 Tahun,S1/D4
+U-0448,Data Science & AI,Data Analyst,"[""NumPy"", ""Excel"", ""Python""]",< 1 Tahun,D3
+U-0449,Quality Assurance (QA) & Testing,Automation QA,"[""Postman"", ""CI/CD"", ""Playwright"", ""Jira"", ""TestNG""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0450,UI/UX Design,Product Designer,"[""Miro"", ""Adobe XD"", ""Prototyping""]",1 - 3 Tahun,S2/S3
+U-0451,Web Development,Fullstack Engineer,"[""TypeScript"", ""REST API"", ""JavaScript"", ""CSS"", ""ReactJS"", ""PostgreSQL""]",< 1 Tahun,S1/D4
+U-0452,UI/UX Design,UI Designer,"[""Illustrator"", ""Adobe XD"", ""Figma"", ""Typography""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0453,Cyber Security,Penetration Tester,"[""OWASP"", ""Kali Linux"", ""Python"", ""Wireshark""]",< 1 Tahun,D3
+U-0454,Cyber Security,DevSecOps,"[""DAST"", ""Docker""]",< 1 Tahun,S1/D4
+U-0455,Data Science & AI,Data Scientist,"[""SQL"", ""TensorFlow"", ""R"", ""Scikit-Learn"", ""NumPy"", ""Python""]",> 3 Tahun,S1/D4
+U-0456,Data Science & AI,Data Scientist,"[""Pandas"", ""TensorFlow"", ""Python"", ""R""]",Belum ada pengalaman,S1/D4
+U-0457,Mobile Development,iOS Developer,"[""UIKit"", ""CoreData""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0458,UI/UX Design,UI Designer,"[""Design System"", ""Wireframing""]",1 - 3 Tahun,D3
+U-0459,UI/UX Design,Product Designer,"[""Adobe XD"", ""Agile/Scrum"", ""Wireframing""]",Belum ada pengalaman,SMA/SMK
+U-0460,UI/UX Design,Product Designer,"[""Agile/Scrum"", ""Prototyping"", ""Wireframing"", ""Design System"", ""Accessibility""]",Belum ada pengalaman,S1/D4
+U-0461,Web Development,Backend Engineer,"[""PHP"", ""Django"", ""REST API"", ""MongoDB""]",Belum ada pengalaman,D3
+U-0462,Cyber Security,Penetration Tester,"[""Metasploit"", ""Networking"", ""OWASP""]",1 - 3 Tahun,D3
+U-0463,UI/UX Design,Product Designer,"[""Figma"", ""Wireframing"", ""Design System"", ""Accessibility"", ""Miro""]",Belum ada pengalaman,D3
+U-0464,Mobile Development,iOS Developer,"[""UIKit"", ""Xcode"", ""Firebase""]",< 1 Tahun,D3
+U-0465,UI/UX Design,UI Designer,"[""Typography"", ""Illustrator""]",> 3 Tahun,S2/S3
+U-0466,Cloud & DevOps,SRE,"[""Git"", ""Prometheus"", ""Incident Management"", ""Python""]",1 - 3 Tahun,D3
+U-0467,Data Science & AI,AI Engineer,"[""Vector DB""]",1 - 3 Tahun,D3
+U-0468,Quality Assurance (QA) & Testing,Manual QA,"[""Postman"", ""SQL"", ""Agile/Scrum"", ""Test Case Writing"", ""Bug Reporting"", ""API Testing""]",< 1 Tahun,S1/D4
+U-0469,UI/UX Design,Product Designer,"[""User Research"", ""Figma""]",> 3 Tahun,S2/S3
+U-0470,UI/UX Design,UI Designer,"[""Wireframing"", ""Design System"", ""Color Theory"", ""Adobe XD"", ""Sketch""]",1 - 3 Tahun,S2/S3
+U-0471,Cloud & DevOps,SRE,"[""Grafana"", ""Git"", ""Python"", ""Docker"", ""Incident Management""]",1 - 3 Tahun,D3
+U-0472,UI/UX Design,Product Designer,"[""Agile/Scrum"", ""User Research"", ""Miro"", ""Figma""]",> 3 Tahun,S2/S3
+U-0473,Quality Assurance (QA) & Testing,Automation QA,"[""TestNG"", ""Java""]",< 1 Tahun,S1/D4
+U-0474,Cloud & DevOps,Cloud Engineer,"[""Kubernetes"", ""Git"", ""AWS"", ""Terraform"", ""Azure""]",< 1 Tahun,S1/D4
+U-0475,Quality Assurance (QA) & Testing,Manual QA,"[""Agile/Scrum"", ""Bug Reporting"", ""SQL"", ""API Testing"", ""Jira""]",1 - 3 Tahun,S1/D4
+U-0476,Quality Assurance (QA) & Testing,SDET,"[""Appium""]",> 3 Tahun,S2/S3
+U-0477,Mobile Development,iOS Developer,"[""Firebase"", ""Objective-C""]",> 3 Tahun,S2/S3
+U-0478,Mobile Development,Android Developer,"[""MVVM"", ""Java"", ""Git""]",< 1 Tahun,D3
+U-0479,Web Development,Fullstack Engineer,"[""MySQL"", ""NodeJS"", ""JavaScript"", ""Docker"", ""CSS""]",1 - 3 Tahun,S1/D4
+U-0480,UI/UX Design,Product Designer,"[""Agile/Scrum"", ""Accessibility"", ""User Research"", ""Design System"", ""Miro""]",> 3 Tahun,S2/S3
+U-0481,Cyber Security,Penetration Tester,"[""Burp Suite"", ""OWASP"", ""Wireshark"", ""Nmap""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0482,Cloud & DevOps,Cloud Engineer,"[""Docker""]",> 3 Tahun,S1/D4
+U-0483,Web Development,Frontend Engineer,"[""Bootstrap"", ""TypeScript""]",> 3 Tahun,S1/D4
+U-0484,Mobile Development,iOS Developer,"[""Firebase"", ""REST API"", ""SwiftUI"", ""CoreData""]",1 - 3 Tahun,D3
+U-0485,UI/UX Design,UX Researcher,"[""Data Analysis""]",> 3 Tahun,S1/D4
+U-0486,UI/UX Design,UI Designer,"[""Typography"", ""Design System"", ""Prototyping"", ""Color Theory""]",< 1 Tahun,D3
+U-0487,Mobile Development,Flutter Engineer,"[""GetX"", ""Provider""]",1 - 3 Tahun,D3
+U-0488,Mobile Development,iOS Developer,"[""Firebase""]",> 3 Tahun,S2/S3
+U-0489,Quality Assurance (QA) & Testing,SDET,"[""Appium"", ""CI/CD"", ""Performance Testing"", ""Selenium"", ""Python""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0490,UI/UX Design,UX Researcher,"[""Data Analysis"", ""Journey Mapping""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0491,Quality Assurance (QA) & Testing,SDET,"[""JMeter"", ""Selenium"", ""Performance Testing"", ""Docker"", ""Appium""]",Belum ada pengalaman,S1/D4
+U-0492,Web Development,Frontend Engineer,"[""HTML"", ""ReactJS"", ""Vue.js""]",> 3 Tahun,S2/S3
+U-0493,UI/UX Design,UI Designer,"[""Design System"", ""Adobe XD"", ""Sketch"", ""Wireframing""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0494,UI/UX Design,UX Researcher,"[""Maze"", ""Journey Mapping"", ""Survey Design"", ""Miro"", ""Figma""]",> 3 Tahun,S1/D4
+U-0495,Mobile Development,Flutter Engineer,"[""REST API"", ""Flutter"", ""GetX""]",Belum ada pengalaman,SMA/SMK
+U-0496,Quality Assurance (QA) & Testing,Manual QA,"[""API Testing"", ""SQL""]",> 3 Tahun,S2/S3
+U-0497,Web Development,Fullstack Engineer,"[""ReactJS"", ""HTML"", ""NodeJS"", ""MySQL"", ""CSS"", ""Docker""]",> 3 Tahun,S2/S3
+U-0498,Mobile Development,Flutter Engineer,"[""BLoC"", ""Flutter"", ""Dart"", ""REST API""]",1 - 3 Tahun,S1/D4
+U-0499,Data Science & AI,Data Analyst,"[""NumPy"", ""Excel""]",1 - 3 Tahun,S1/D4
+U-0500,UI/UX Design,UX Researcher,"[""Miro"", ""Journey Mapping""]",> 3 Tahun,S1/D4
+U-0501,Data Science & AI,Data Analyst,"[""SQL"", ""Tableau"", ""Excel"", ""Git"", ""Statistics""]",> 3 Tahun,S2/S3
+U-0502,Web Development,Backend Engineer,"[""Git"", ""NodeJS"", ""PostgreSQL"", ""Django"", ""Express"", ""MongoDB""]",1 - 3 Tahun,S1/D4
+U-0503,Quality Assurance (QA) & Testing,Automation QA,"[""Git"", ""Postman"", ""Python"", ""Playwright""]",> 3 Tahun,S1/D4
+U-0504,Cyber Security,Penetration Tester,"[""OWASP"", ""Wireshark"", ""Bash"", ""Kali Linux""]",> 3 Tahun,S2/S3
+U-0505,Mobile Development,iOS Developer,"[""UIKit"", ""CoreData"", ""Firebase""]",< 1 Tahun,S1/D4
+U-0506,Quality Assurance (QA) & Testing,SDET,"[""Performance Testing"", ""Selenium"", ""JMeter"", ""Docker"", ""Java"", ""Appium""]",> 3 Tahun,S2/S3
+U-0507,Quality Assurance (QA) & Testing,Manual QA,"[""API Testing"", ""Postman""]",> 3 Tahun,S2/S3
+U-0508,Cloud & DevOps,DevOps Engineer,"[""Docker"", ""Terraform"", ""Jenkins""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0509,Cyber Security,Security Analyst,"[""Log Analysis"", ""IDS/IPS"", ""Incident Response""]",> 3 Tahun,S2/S3
+U-0510,Data Science & AI,Machine Learning Engineer,"[""TensorFlow""]",1 - 3 Tahun,S1/D4
+U-0511,Quality Assurance (QA) & Testing,Manual QA,"[""Postman"", ""Test Case Writing"", ""SQL"", ""Agile/Scrum"", ""Regression Testing"", ""API Testing""]",Belum ada pengalaman,S1/D4
+U-0512,UI/UX Design,UI Designer,"[""Sketch"", ""Illustrator"", ""Prototyping"", ""Color Theory""]",< 1 Tahun,D3
+U-0513,UI/UX Design,UX Researcher,"[""Miro"", ""Personas"", ""User Interview"", ""Data Analysis"", ""Usability Testing"", ""Maze""]",1 - 3 Tahun,D3
+U-0514,Mobile Development,Android Developer,"[""Android SDK"", ""Git""]",> 3 Tahun,S1/D4
+U-0515,UI/UX Design,Product Designer,"[""Figma"", ""Accessibility"", ""Wireframing"", ""Design System"", ""Adobe XD"", ""User Research""]",Belum ada pengalaman,SMA/SMK
+U-0516,UI/UX Design,UI Designer,"[""Sketch"", ""Illustrator"", ""Figma""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0517,Quality Assurance (QA) & Testing,Automation QA,"[""Cypress""]",Belum ada pengalaman,S1/D4
+U-0518,Cloud & DevOps,Cloud Engineer,"[""Python"", ""Docker"", ""Linux"", ""Terraform"", ""AWS"", ""Azure""]",1 - 3 Tahun,S1/D4
+U-0519,Cyber Security,Security Analyst,"[""Threat Intelligence""]",> 3 Tahun,S2/S3
+U-0520,UI/UX Design,UI Designer,"[""Typography"", ""Illustrator"", ""Wireframing""]",> 3 Tahun,S1/D4
+U-0521,UI/UX Design,Product Designer,"[""Miro""]",< 1 Tahun,S1/D4
+U-0522,Cyber Security,Security Analyst,"[""Python"", ""SIEM"", ""IDS/IPS"", ""Threat Intelligence"", ""Linux""]",Belum ada pengalaman,S1/D4
+U-0523,UI/UX Design,UI Designer,"[""Wireframing"", ""Color Theory"", ""Figma"", ""Sketch"", ""Adobe XD"", ""Design System""]",> 3 Tahun,S2/S3
+U-0524,Mobile Development,Android Developer,"[""Firebase"", ""MVVM"", ""REST API""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0525,Cloud & DevOps,DevOps Engineer,"[""Jenkins"", ""Kubernetes""]",1 - 3 Tahun,D3
+U-0526,Mobile Development,Android Developer,"[""Java"", ""Git""]",> 3 Tahun,S1/D4
+U-0527,Mobile Development,iOS Developer,"[""Git"", ""SwiftUI"", ""Objective-C""]",Belum ada pengalaman,S1/D4
+U-0528,Cyber Security,DevSecOps,"[""Python"", ""Terraform"", ""CI/CD"", ""Linux"", ""SAST"", ""AWS""]",1 - 3 Tahun,D3
+U-0529,Web Development,Frontend Engineer,"[""Git"", ""TypeScript"", ""Bootstrap""]",Belum ada pengalaman,SMA/SMK
+U-0530,UI/UX Design,Product Designer,"[""Design System"", ""Adobe XD""]",< 1 Tahun,S1/D4
+U-0531,Web Development,Fullstack Engineer,"[""REST API"", ""PostgreSQL"", ""TypeScript"", ""NodeJS"", ""Git"", ""ReactJS""]",> 3 Tahun,S2/S3
+U-0532,Web Development,Frontend Engineer,"[""ReactJS""]",1 - 3 Tahun,D3
+U-0533,Cloud & DevOps,SRE,"[""Kubernetes"", ""Prometheus""]",1 - 3 Tahun,S2/S3
+U-0534,Mobile Development,Android Developer,"[""Git"", ""REST API"", ""Firebase""]",Belum ada pengalaman,S1/D4
+U-0535,Data Science & AI,Machine Learning Engineer,"[""PyTorch"", ""TensorFlow"", ""Pandas"", ""MLflow"", ""SQL"", ""Kubernetes""]",1 - 3 Tahun,S2/S3
+U-0536,Quality Assurance (QA) & Testing,SDET,"[""JMeter""]",1 - 3 Tahun,S2/S3
+U-0537,UI/UX Design,UI Designer,"[""Color Theory"", ""Illustrator""]",1 - 3 Tahun,S1/D4
+U-0538,Quality Assurance (QA) & Testing,SDET,"[""Docker""]",> 3 Tahun,S2/S3
+U-0539,Quality Assurance (QA) & Testing,SDET,"[""Appium"", ""Git""]",< 1 Tahun,D3
+U-0540,Cloud & DevOps,Cloud Engineer,"[""CI/CD"", ""GCP"", ""AWS""]",Belum ada pengalaman,D3
+U-0541,Cloud & DevOps,Cloud Engineer,"[""Linux"", ""Terraform"", ""Docker""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0542,Cloud & DevOps,Cloud Engineer,"[""Azure"", ""GCP"", ""Kubernetes""]",> 3 Tahun,S1/D4
+U-0543,Quality Assurance (QA) & Testing,Manual QA,"[""Bug Reporting"", ""API Testing"", ""Test Case Writing"", ""SQL"", ""Jira""]",< 1 Tahun,S1/D4
+U-0544,Data Science & AI,Machine Learning Engineer,"[""TensorFlow""]",1 - 3 Tahun,S2/S3
+U-0545,Cyber Security,Penetration Tester,"[""Python"", ""Burp Suite""]",1 - 3 Tahun,S2/S3
+U-0546,Mobile Development,iOS Developer,"[""Swift"", ""Objective-C""]",1 - 3 Tahun,D3
+U-0547,Web Development,Frontend Engineer,"[""TypeScript""]",1 - 3 Tahun,D3
+U-0548,Cyber Security,Security Analyst,"[""Log Analysis"", ""Threat Intelligence"", ""SIEM"", ""IDS/IPS"", ""Firewall""]",1 - 3 Tahun,S2/S3
+U-0549,Cloud & DevOps,DevOps Engineer,"[""Ansible"", ""Git"", ""Python"", ""GitLab CI"", ""Prometheus"", ""Linux""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0550,Quality Assurance (QA) & Testing,Automation QA,"[""TestNG"", ""Cypress"", ""Python""]",Belum ada pengalaman,D3
+U-0551,Cyber Security,DevSecOps,"[""DAST"", ""Terraform"", ""CI/CD"", ""Docker"", ""SAST""]",1 - 3 Tahun,S2/S3
+U-0552,Web Development,Fullstack Engineer,"[""CSS"", ""HTML"", ""PostgreSQL"", ""REST API"", ""MySQL"", ""Git""]",> 3 Tahun,S2/S3
+U-0553,UI/UX Design,Product Designer,"[""Figma""]",Belum ada pengalaman,D3
+U-0554,Data Science & AI,Machine Learning Engineer,"[""TensorFlow"", ""SQL""]",< 1 Tahun,S1/D4
+U-0555,Quality Assurance (QA) & Testing,SDET,"[""Selenium"", ""Java""]",> 3 Tahun,S2/S3
+U-0556,UI/UX Design,UX Researcher,"[""Journey Mapping"", ""Data Analysis""]",< 1 Tahun,D3
+U-0557,Cloud & DevOps,Cloud Engineer,"[""Docker"", ""Python"", ""GCP"", ""Kubernetes"", ""AWS"", ""Linux""]",1 - 3 Tahun,S2/S3
+U-0558,Data Science & AI,Data Scientist,"[""Git"", ""Pandas"", ""Statistics"", ""SQL"", ""NumPy"", ""R""]",> 3 Tahun,S1/D4
+U-0559,UI/UX Design,UI Designer,"[""Prototyping"", ""Figma""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0560,Quality Assurance (QA) & Testing,Automation QA,"[""Playwright"", ""Git"", ""Python"", ""CI/CD"", ""Cypress""]",> 3 Tahun,S1/D4
+U-0561,Data Science & AI,Machine Learning Engineer,"[""MLflow""]",1 - 3 Tahun,D3
+U-0562,UI/UX Design,UI Designer,"[""Color Theory"", ""Figma"", ""Sketch""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0563,Cloud & DevOps,DevOps Engineer,"[""Linux""]",Belum ada pengalaman,S1/D4
+U-0564,Cloud & DevOps,Cloud Engineer,"[""Azure"", ""Docker""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0565,Quality Assurance (QA) & Testing,Automation QA,"[""Git"", ""TestNG"", ""Jira""]",> 3 Tahun,S2/S3
+U-0566,Web Development,Fullstack Engineer,"[""HTML"", ""NodeJS"", ""CSS"", ""MySQL"", ""ReactJS""]",> 3 Tahun,S2/S3
+U-0567,Data Science & AI,Data Analyst,"[""NumPy""]",1 - 3 Tahun,S2/S3
+U-0568,Quality Assurance (QA) & Testing,Automation QA,"[""Python"", ""Java"", ""Git"", ""TestNG""]",> 3 Tahun,S2/S3
+U-0569,Mobile Development,iOS Developer,"[""SwiftUI"", ""Objective-C"", ""Git"", ""CoreData"", ""Swift"", ""Firebase""]",< 1 Tahun,D3
+U-0570,Quality Assurance (QA) & Testing,SDET,"[""Java""]",Belum ada pengalaman,D3
+U-0571,Cloud & DevOps,DevOps Engineer,"[""Terraform""]",> 3 Tahun,S2/S3
+U-0572,UI/UX Design,UX Researcher,"[""Figma""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0573,Web Development,Frontend Engineer,"[""CSS"", ""TypeScript"", ""Vue.js""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0574,Data Science & AI,Machine Learning Engineer,"[""TensorFlow"", ""Kubernetes"", ""MLflow""]",> 3 Tahun,S1/D4
+U-0575,Mobile Development,Android Developer,"[""MVVM"", ""Android SDK"", ""Firebase""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0576,Mobile Development,Android Developer,"[""Git"", ""MVVM"", ""Java"", ""REST API"", ""Kotlin"", ""Android SDK""]",< 1 Tahun,D3
+U-0577,UI/UX Design,Product Designer,"[""Adobe XD"", ""Figma"", ""Agile/Scrum"", ""User Research""]",1 - 3 Tahun,S2/S3
+U-0578,Quality Assurance (QA) & Testing,SDET,"[""Git"", ""Docker"", ""Performance Testing"", ""Appium""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0579,Data Science & AI,Machine Learning Engineer,"[""Git"", ""PyTorch"", ""Kubernetes"", ""MLflow"", ""TensorFlow"", ""SQL""]",Belum ada pengalaman,SMA/SMK
+U-0580,Cloud & DevOps,Cloud Engineer,"[""Terraform"", ""Kubernetes""]",< 1 Tahun,D3
+U-0581,Cyber Security,DevSecOps,"[""Terraform"", ""AWS"", ""DAST"", ""Git"", ""SAST""]",> 3 Tahun,S2/S3
+U-0582,UI/UX Design,UX Researcher,"[""Figma"", ""Journey Mapping"", ""Usability Testing"", ""Survey Design"", ""Miro""]",< 1 Tahun,S1/D4
+U-0583,Mobile Development,Flutter Engineer,"[""GetX"", ""BLoC"", ""Firebase""]",< 1 Tahun,D3
+U-0584,Data Science & AI,Machine Learning Engineer,"[""Scikit-Learn"", ""TensorFlow"", ""Pandas"", ""PyTorch"", ""SQL"", ""Docker""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0585,UI/UX Design,Product Designer,"[""User Research"", ""Adobe XD"", ""Wireframing"", ""Figma""]",Belum ada pengalaman,S1/D4
+U-0586,Cloud & DevOps,DevOps Engineer,"[""Jenkins"", ""Linux"", ""Python"", ""Git"", ""Docker"", ""Ansible""]",> 3 Tahun,S2/S3
+U-0587,Mobile Development,iOS Developer,"[""UIKit"", ""REST API""]",1 - 3 Tahun,S1/D4
+U-0588,Web Development,Backend Engineer,"[""MySQL"", ""Laravel"", ""Express"", ""Git"", ""PostgreSQL"", ""Docker""]",> 3 Tahun,S1/D4
+U-0589,UI/UX Design,UI Designer,"[""Wireframing""]",1 - 3 Tahun,S2/S3
+U-0590,Cloud & DevOps,Cloud Engineer,"[""GCP""]",> 3 Tahun,S1/D4
+U-0591,Quality Assurance (QA) & Testing,Manual QA,"[""Agile/Scrum""]",> 3 Tahun,S1/D4
+U-0592,Data Science & AI,Machine Learning Engineer,"[""PyTorch"", ""Git""]",1 - 3 Tahun,S2/S3
+U-0593,Quality Assurance (QA) & Testing,SDET,"[""API Testing"", ""Selenium""]",> 3 Tahun,S2/S3
+U-0594,Cyber Security,DevSecOps,"[""Git""]",1 - 3 Tahun,S1/D4
+U-0595,UI/UX Design,Product Designer,"[""Prototyping""]",Belum ada pengalaman,S1/D4
+U-0596,Web Development,Frontend Engineer,"[""TypeScript"", ""Bootstrap""]",Belum ada pengalaman,SMA/SMK
+U-0597,Quality Assurance (QA) & Testing,Automation QA,"[""Git"", ""Java""]",1 - 3 Tahun,S2/S3
+U-0598,Cyber Security,Security Analyst,"[""Incident Response"", ""Log Analysis"", ""Networking"", ""Linux"", ""Python"", ""IDS/IPS""]",> 3 Tahun,S1/D4
+U-0599,Mobile Development,Android Developer,"[""Android SDK"", ""Git"", ""Kotlin"", ""Firebase"", ""Jetpack Compose""]",> 3 Tahun,S2/S3
+U-0600,UI/UX Design,UX Researcher,"[""Usability Testing"", ""Survey Design"", ""User Interview"", ""Figma"", ""Data Analysis"", ""Journey Mapping""]",> 3 Tahun,S2/S3
+U-0601,Cloud & DevOps,SRE,"[""Docker""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0602,Cloud & DevOps,DevOps Engineer,"[""Python"", ""Jenkins"", ""Ansible"", ""Git""]",Belum ada pengalaman,D3
+U-0603,Web Development,Backend Engineer,"[""Git"", ""Docker"", ""Django""]",< 1 Tahun,D3
+U-0604,UI/UX Design,UX Researcher,"[""Personas"", ""Data Analysis"", ""Miro"", ""User Interview""]",Belum ada pengalaman,D3
+U-0605,Cyber Security,Penetration Tester,"[""Metasploit"", ""Python"", ""Bash"", ""Networking""]",> 3 Tahun,S2/S3
+U-0606,UI/UX Design,Product Designer,"[""User Research"", ""Agile/Scrum"", ""Figma""]",> 3 Tahun,S1/D4
+U-0607,Quality Assurance (QA) & Testing,Automation QA,"[""Cypress"", ""Jira"", ""CI/CD""]",> 3 Tahun,S2/S3
+U-0608,Mobile Development,iOS Developer,"[""Xcode""]",1 - 3 Tahun,S1/D4
+U-0609,Web Development,Backend Engineer,"[""Python"", ""PHP"", ""Django"", ""Express"", ""MySQL""]",1 - 3 Tahun,S2/S3
+U-0610,Cloud & DevOps,Cloud Engineer,"[""Terraform"", ""CI/CD"", ""Kubernetes"", ""Python"", ""Docker""]",> 3 Tahun,S2/S3
+U-0611,Cyber Security,Security Analyst,"[""Python"", ""Linux"", ""Incident Response"", ""Networking""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0612,Web Development,Backend Engineer,"[""Laravel"", ""REST API"", ""Git""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0613,Quality Assurance (QA) & Testing,Automation QA,"[""Postman"", ""CI/CD""]",> 3 Tahun,S2/S3
+U-0614,Web Development,Backend Engineer,"[""REST API"", ""Python"", ""Docker"", ""NodeJS""]",1 - 3 Tahun,S2/S3
+U-0615,Quality Assurance (QA) & Testing,Manual QA,"[""Regression Testing"", ""Agile/Scrum"", ""Bug Reporting"", ""Jira""]",Belum ada pengalaman,S1/D4
+U-0616,Data Science & AI,Machine Learning Engineer,"[""Pandas"", ""Kubernetes"", ""TensorFlow"", ""Python"", ""Docker""]",Belum ada pengalaman,SMA/SMK
+U-0617,Web Development,Backend Engineer,"[""Laravel"", ""PostgreSQL"", ""Docker"", ""Django"", ""Git"", ""REST API""]",1 - 3 Tahun,D3
+U-0618,UI/UX Design,UI Designer,"[""Design System"", ""Typography"", ""Adobe XD"", ""Illustrator"", ""Prototyping"", ""Color Theory""]",> 3 Tahun,S2/S3
+U-0619,Cyber Security,Security Analyst,"[""Firewall""]",1 - 3 Tahun,S1/D4
+U-0620,UI/UX Design,Product Designer,"[""Adobe XD"", ""User Research"", ""Figma"", ""Design System"", ""Accessibility"", ""Wireframing""]",1 - 3 Tahun,S1/D4
+U-0621,Data Science & AI,Machine Learning Engineer,"[""Scikit-Learn"", ""PyTorch""]",1 - 3 Tahun,S1/D4
+U-0622,Mobile Development,Flutter Engineer,"[""GetX""]",> 3 Tahun,S2/S3
+U-0623,Quality Assurance (QA) & Testing,Automation QA,"[""CI/CD"", ""Cypress"", ""Postman""]",> 3 Tahun,S1/D4
+U-0624,Data Science & AI,Machine Learning Engineer,"[""TensorFlow"", ""Scikit-Learn"", ""SQL"", ""Kubernetes"", ""Pandas"", ""Docker""]",1 - 3 Tahun,S1/D4
+U-0625,Web Development,Backend Engineer,"[""PostgreSQL""]",Belum ada pengalaman,S1/D4
+U-0626,Cyber Security,DevSecOps,"[""Kubernetes"", ""DAST"", ""Linux"", ""Terraform""]",> 3 Tahun,S1/D4
+U-0627,Mobile Development,Android Developer,"[""REST API"", ""Room DB"", ""Firebase"", ""Android SDK"", ""Kotlin""]",< 1 Tahun,S1/D4
+U-0628,Mobile Development,iOS Developer,"[""REST API"", ""Swift"", ""Git"", ""SwiftUI"", ""CoreData"", ""Objective-C""]",> 3 Tahun,S1/D4
+U-0629,Web Development,Frontend Engineer,"[""Vue.js"", ""HTML"", ""Bootstrap"", ""Next.js""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0630,UI/UX Design,UI Designer,"[""Typography"", ""Design System"", ""Color Theory"", ""Figma""]",> 3 Tahun,S2/S3
+U-0631,UI/UX Design,Product Designer,"[""Accessibility"", ""Miro""]",1 - 3 Tahun,S2/S3
+U-0632,Web Development,Backend Engineer,"[""Python"", ""Express"", ""PHP"", ""Django"", ""MySQL"", ""MongoDB""]",> 3 Tahun,S1/D4
+U-0633,Mobile Development,Android Developer,"[""MVVM"", ""Jetpack Compose"", ""Android SDK"", ""REST API""]",1 - 3 Tahun,S2/S3
+U-0634,Cloud & DevOps,SRE,"[""Kubernetes"", ""CI/CD"", ""Git"", ""Grafana""]",< 1 Tahun,D3
+U-0635,Cloud & DevOps,SRE,"[""Python"", ""Docker""]",< 1 Tahun,D3
+U-0636,Quality Assurance (QA) & Testing,Automation QA,"[""Java""]",Belum ada pengalaman,SMA/SMK
+U-0637,Mobile Development,Android Developer,"[""MVVM""]",1 - 3 Tahun,D3
+U-0638,Cyber Security,DevSecOps,"[""Git"", ""SAST"", ""AWS""]",> 3 Tahun,S1/D4
+U-0639,Mobile Development,iOS Developer,"[""REST API"", ""Git"", ""CoreData"", ""Swift"", ""Xcode"", ""Firebase""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0640,Quality Assurance (QA) & Testing,SDET,"[""Python""]",> 3 Tahun,S1/D4
+U-0641,Quality Assurance (QA) & Testing,Automation QA,"[""Postman"", ""Playwright"", ""Python"", ""Java"", ""Selenium"", ""TestNG""]",< 1 Tahun,S1/D4
+U-0642,Data Science & AI,AI Engineer,"[""Git"", ""HuggingFace""]",Belum ada pengalaman,D3
+U-0643,Cloud & DevOps,SRE,"[""Terraform"", ""Docker"", ""Incident Management"", ""Git""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0644,Data Science & AI,Data Scientist,"[""R"", ""TensorFlow""]",< 1 Tahun,S1/D4
+U-0645,Quality Assurance (QA) & Testing,Manual QA,"[""Bug Reporting"", ""Test Case Writing"", ""SQL"", ""Postman""]",< 1 Tahun,S1/D4
+U-0646,Quality Assurance (QA) & Testing,SDET,"[""Docker"", ""Performance Testing"", ""CI/CD""]",1 - 3 Tahun,S2/S3
+U-0647,UI/UX Design,UX Researcher,"[""Personas"", ""Maze"", ""User Interview"", ""Usability Testing""]",1 - 3 Tahun,S1/D4
+U-0648,Mobile Development,Android Developer,"[""Room DB""]",Belum ada pengalaman,S1/D4
+U-0649,Web Development,Frontend Engineer,"[""TailwindCSS"", ""ReactJS"", ""HTML"", ""Vue.js""]",1 - 3 Tahun,D3
+U-0650,Web Development,Frontend Engineer,"[""Bootstrap"", ""CSS"", ""ReactJS"", ""TailwindCSS"", ""Vue.js""]",> 3 Tahun,S2/S3
+U-0651,Quality Assurance (QA) & Testing,Manual QA,"[""SQL"", ""Regression Testing"", ""Postman"", ""Test Case Writing"", ""Jira""]",> 3 Tahun,S1/D4
+U-0652,Data Science & AI,Data Analyst,"[""Power BI""]",< 1 Tahun,D3
+U-0653,Data Science & AI,Machine Learning Engineer,"[""Python"", ""TensorFlow"", ""Git""]",< 1 Tahun,S1/D4
+U-0654,Data Science & AI,Data Scientist,"[""Python"", ""Scikit-Learn"", ""Git"", ""Statistics""]",> 3 Tahun,S2/S3
+U-0655,Cyber Security,Security Analyst,"[""SIEM""]",> 3 Tahun,S2/S3
+U-0656,Cyber Security,Penetration Tester,"[""Python"", ""OWASP"", ""Bash"", ""Burp Suite"", ""Metasploit""]",1 - 3 Tahun,D3
+U-0657,Cyber Security,Security Analyst,"[""Incident Response"", ""Log Analysis"", ""Python"", ""Firewall"", ""Threat Intelligence"", ""SIEM""]",> 3 Tahun,S1/D4
+U-0658,Web Development,Backend Engineer,"[""MongoDB"", ""Git"", ""MySQL"", ""Docker"", ""NodeJS""]",1 - 3 Tahun,D3
+U-0659,Cloud & DevOps,DevOps Engineer,"[""GitLab CI"", ""Docker"", ""Git"", ""Linux"", ""Ansible""]",< 1 Tahun,S1/D4
+U-0660,Quality Assurance (QA) & Testing,Automation QA,"[""Playwright"", ""Postman"", ""TestNG"", ""Git"", ""Java"", ""Jira""]",1 - 3 Tahun,D3
+U-0661,Cloud & DevOps,SRE,"[""Terraform""]",Belum ada pengalaman,S1/D4
+U-0662,UI/UX Design,Product Designer,"[""Figma"", ""Agile/Scrum""]",1 - 3 Tahun,S2/S3
+U-0663,Web Development,Fullstack Engineer,"[""Docker"", ""HTML"", ""ReactJS"", ""NodeJS"", ""CSS"", ""JavaScript""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0664,UI/UX Design,UI Designer,"[""Color Theory""]",Belum ada pengalaman,S1/D4
+U-0665,Cloud & DevOps,SRE,"[""Grafana""]",> 3 Tahun,S1/D4
+U-0666,Cloud & DevOps,DevOps Engineer,"[""Docker"", ""Python"", ""Terraform"", ""Kubernetes""]",Belum ada pengalaman,S1/D4
+U-0667,Data Science & AI,Data Analyst,"[""Excel"", ""NumPy"", ""Tableau"", ""Statistics"", ""Data Visualization""]",< 1 Tahun,S1/D4
+U-0668,Quality Assurance (QA) & Testing,Manual QA,"[""Jira"", ""Test Case Writing""]",> 3 Tahun,S1/D4
+U-0669,Cloud & DevOps,SRE,"[""CI/CD"", ""Linux"", ""Python"", ""Git"", ""Kubernetes""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0670,Data Science & AI,Data Scientist,"[""Matplotlib"", ""Scikit-Learn"", ""Git""]",1 - 3 Tahun,D3
+U-0671,UI/UX Design,Product Designer,"[""Prototyping"", ""Figma"", ""Design System"", ""Wireframing"", ""Agile/Scrum"", ""Accessibility""]",1 - 3 Tahun,D3
+U-0672,Cyber Security,Security Analyst,"[""IDS/IPS"", ""Linux"", ""Threat Intelligence""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0673,UI/UX Design,UX Researcher,"[""Figma""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0674,Web Development,Backend Engineer,"[""Express""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0675,Data Science & AI,Data Scientist,"[""Jupyter""]",1 - 3 Tahun,S1/D4
+U-0676,Cloud & DevOps,SRE,"[""CI/CD"", ""Kubernetes"", ""Grafana"", ""Prometheus"", ""Python""]",> 3 Tahun,S1/D4
+U-0677,Cyber Security,Security Analyst,"[""Incident Response""]",Belum ada pengalaman,D3
+U-0678,Web Development,Backend Engineer,"[""MongoDB"", ""PostgreSQL"", ""NodeJS"", ""Laravel""]",Belum ada pengalaman,D3
+U-0679,Mobile Development,Flutter Engineer,"[""Flutter"", ""GetX"", ""Hive"", ""REST API""]",1 - 3 Tahun,S2/S3
+U-0680,Quality Assurance (QA) & Testing,Manual QA,"[""Agile/Scrum"", ""Bug Reporting"", ""Regression Testing"", ""Postman"", ""SQL"", ""Jira""]",1 - 3 Tahun,D3
+U-0681,Quality Assurance (QA) & Testing,SDET,"[""Docker"", ""CI/CD"", ""Git"", ""JMeter""]",> 3 Tahun,S1/D4
+U-0682,Web Development,Backend Engineer,"[""Django"", ""Laravel"", ""PHP""]",> 3 Tahun,S1/D4
+U-0683,Quality Assurance (QA) & Testing,Manual QA,"[""API Testing"", ""Regression Testing"", ""Bug Reporting"", ""Test Case Writing"", ""Agile/Scrum"", ""SQL""]",< 1 Tahun,S1/D4
+U-0684,Cloud & DevOps,DevOps Engineer,"[""Python"", ""Ansible"", ""Git"", ""Jenkins"", ""Linux"", ""Docker""]",Belum ada pengalaman,S1/D4
+U-0685,Cloud & DevOps,DevOps Engineer,"[""Docker"", ""Terraform"", ""Python"", ""Ansible"", ""Kubernetes""]",Belum ada pengalaman,SMA/SMK
+U-0686,Mobile Development,iOS Developer,"[""Firebase""]",1 - 3 Tahun,D3
+U-0687,Cyber Security,Penetration Tester,"[""Wireshark"", ""Metasploit"", ""Nmap"", ""Python""]",> 3 Tahun,S1/D4
+U-0688,Web Development,Frontend Engineer,"[""TailwindCSS""]",> 3 Tahun,S2/S3
+U-0689,Mobile Development,iOS Developer,"[""UIKit"", ""Firebase"", ""SwiftUI""]",1 - 3 Tahun,S1/D4
+U-0690,Data Science & AI,AI Engineer,"[""LangChain"", ""Docker""]",< 1 Tahun,S1/D4
+U-0691,Cloud & DevOps,DevOps Engineer,"[""Docker"", ""GitLab CI"", ""Git""]",1 - 3 Tahun,S2/S3
+U-0692,Cyber Security,DevSecOps,"[""AWS"", ""Docker"", ""Git""]",> 3 Tahun,S1/D4
+U-0693,Quality Assurance (QA) & Testing,SDET,"[""Docker"", ""Java"", ""Appium"", ""API Testing"", ""Git"", ""CI/CD""]",> 3 Tahun,S1/D4
+U-0694,Cloud & DevOps,DevOps Engineer,"[""Python"", ""Git"", ""Ansible"", ""GitLab CI""]",Belum ada pengalaman,D3
+U-0695,Cloud & DevOps,SRE,"[""Prometheus"", ""Terraform"", ""Grafana"", ""CI/CD""]",> 3 Tahun,S1/D4
+U-0696,UI/UX Design,UX Researcher,"[""User Interview""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0697,Quality Assurance (QA) & Testing,Manual QA,"[""Bug Reporting"", ""API Testing"", ""SQL""]",> 3 Tahun,S1/D4
+U-0698,Data Science & AI,Data Analyst,"[""Statistics"", ""Tableau"", ""Power BI"", ""SQL""]",< 1 Tahun,D3
+U-0699,Data Science & AI,Data Scientist,"[""SQL""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0700,Cloud & DevOps,Cloud Engineer,"[""Docker"", ""Linux"", ""AWS""]",> 3 Tahun,S1/D4
+U-0701,Quality Assurance (QA) & Testing,Automation QA,"[""TestNG"", ""Java"", ""Selenium"", ""CI/CD"", ""Jira""]",1 - 3 Tahun,S2/S3
+U-0702,Data Science & AI,Data Scientist,"[""Statistics"", ""Matplotlib"", ""NumPy""]",1 - 3 Tahun,D3
+U-0703,Cloud & DevOps,DevOps Engineer,"[""Jenkins""]",1 - 3 Tahun,D3
+U-0704,Cyber Security,DevSecOps,"[""Docker""]",> 3 Tahun,S2/S3
+U-0705,Mobile Development,Flutter Engineer,"[""GetX"", ""Git"", ""BLoC"", ""REST API"", ""Firebase""]",< 1 Tahun,D3
+U-0706,Web Development,Fullstack Engineer,"[""Git"", ""HTML"", ""NodeJS"", ""JavaScript"", ""Docker"", ""PostgreSQL""]",1 - 3 Tahun,D3
+U-0707,Cloud & DevOps,Cloud Engineer,"[""Terraform"", ""Python"", ""Linux""]",1 - 3 Tahun,D3
+U-0708,Mobile Development,iOS Developer,"[""Git""]",> 3 Tahun,S2/S3
+U-0709,Cloud & DevOps,DevOps Engineer,"[""Jenkins""]",Belum ada pengalaman,D3
+U-0710,UI/UX Design,Product Designer,"[""Wireframing"", ""Prototyping""]",< 1 Tahun,D3
+U-0711,Cyber Security,Penetration Tester,"[""Wireshark""]",> 3 Tahun,S2/S3
+U-0712,Data Science & AI,Data Scientist,"[""Statistics"", ""Jupyter"", ""Matplotlib"", ""Git"", ""R""]",> 3 Tahun,S1/D4
+U-0713,Quality Assurance (QA) & Testing,SDET,"[""API Testing""]",< 1 Tahun,S1/D4
+U-0714,Cloud & DevOps,DevOps Engineer,"[""Jenkins"", ""Kubernetes"", ""Python"", ""Ansible""]",> 3 Tahun,S2/S3
+U-0715,Mobile Development,Android Developer,"[""Kotlin"", ""Jetpack Compose"", ""Java"", ""Git""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0716,Web Development,Frontend Engineer,"[""CSS"", ""HTML"", ""JavaScript""]",> 3 Tahun,S2/S3
+U-0717,Mobile Development,Flutter Engineer,"[""Firebase""]",Belum ada pengalaman,D3
+U-0718,UI/UX Design,UI Designer,"[""Figma"", ""Adobe XD"", ""Sketch"", ""Wireframing"", ""Prototyping"", ""Design System""]",1 - 3 Tahun,S1/D4
+U-0719,Web Development,Backend Engineer,"[""MongoDB"", ""PostgreSQL"", ""REST API""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0720,Quality Assurance (QA) & Testing,SDET,"[""Python""]",1 - 3 Tahun,S1/D4
+U-0721,Cyber Security,Penetration Tester,"[""Wireshark"", ""Kali Linux"", ""Nmap"", ""OWASP""]",1 - 3 Tahun,D3
+U-0722,Cyber Security,DevSecOps,"[""Git"", ""Linux"", ""DAST"", ""CI/CD"", ""Kubernetes"", ""Docker""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0723,Cyber Security,Penetration Tester,"[""Bash"", ""Wireshark"", ""Networking"", ""OWASP""]",< 1 Tahun,D3
+U-0724,Web Development,Fullstack Engineer,"[""Git"", ""Docker"", ""JavaScript""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0725,Cloud & DevOps,Cloud Engineer,"[""CI/CD"", ""AWS"", ""Linux"", ""Git""]",Belum ada pengalaman,S1/D4
+U-0726,Mobile Development,iOS Developer,"[""Xcode"", ""SwiftUI"", ""Objective-C"", ""Git"", ""Firebase""]",Belum ada pengalaman,S1/D4
+U-0727,UI/UX Design,Product Designer,"[""Miro"", ""Prototyping"", ""User Research"", ""Accessibility"", ""Design System""]",Belum ada pengalaman,SMA/SMK
+U-0728,Mobile Development,Android Developer,"[""Java"", ""Git"", ""Jetpack Compose"", ""Firebase"", ""MVVM"", ""Room DB""]",Belum ada pengalaman,D3
+U-0729,Mobile Development,Android Developer,"[""Android SDK"", ""Kotlin"", ""MVVM"", ""Firebase"", ""Java""]",1 - 3 Tahun,D3
+U-0730,Data Science & AI,Data Scientist,"[""SQL"", ""Jupyter"", ""Statistics"", ""Python"", ""NumPy"", ""Git""]",< 1 Tahun,S1/D4
+U-0731,Cloud & DevOps,DevOps Engineer,"[""Jenkins"", ""Kubernetes"", ""Ansible"", ""Terraform"", ""Python""]",1 - 3 Tahun,S1/D4
+U-0732,Quality Assurance (QA) & Testing,Manual QA,"[""Regression Testing""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0733,UI/UX Design,UX Researcher,"[""Miro""]",< 1 Tahun,D3
+U-0734,Quality Assurance (QA) & Testing,Automation QA,"[""Git"", ""TestNG"", ""Cypress""]",1 - 3 Tahun,D3
+U-0735,Mobile Development,Flutter Engineer,"[""REST API"", ""Provider"", ""Dart"", ""Hive""]",< 1 Tahun,S1/D4
+U-0736,Cloud & DevOps,Cloud Engineer,"[""CI/CD"", ""Terraform"", ""GCP"", ""Python"", ""Azure""]",> 3 Tahun,S2/S3
+U-0737,Data Science & AI,AI Engineer,"[""Git"", ""Vector DB"", ""LangChain"", ""Docker"", ""SQL"", ""FastAPI""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0738,Mobile Development,Android Developer,"[""REST API"", ""Firebase"", ""MVVM"", ""Jetpack Compose"", ""Git"", ""Room DB""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0739,Quality Assurance (QA) & Testing,Automation QA,"[""Git"", ""Cypress"", ""Playwright""]",> 3 Tahun,S2/S3
+U-0740,Data Science & AI,Data Analyst,"[""Git"", ""Python""]",< 1 Tahun,S1/D4
+U-0741,Cloud & DevOps,SRE,"[""Python""]",< 1 Tahun,S1/D4
+U-0742,Cyber Security,DevSecOps,"[""Docker"", ""Git"", ""Python"", ""DAST""]",1 - 3 Tahun,D3
+U-0743,Cloud & DevOps,Cloud Engineer,"[""Kubernetes"", ""Python"", ""Terraform"", ""CI/CD""]",> 3 Tahun,S1/D4
+U-0744,Mobile Development,Android Developer,"[""Git"", ""Android SDK"", ""Java"", ""MVVM""]",1 - 3 Tahun,S2/S3
+U-0745,Data Science & AI,Data Analyst,"[""NumPy"", ""Excel""]",Belum ada pengalaman,SMA/SMK
+U-0746,UI/UX Design,UX Researcher,"[""Figma"", ""User Interview"", ""Personas"", ""Usability Testing"", ""Survey Design"", ""Maze""]",< 1 Tahun,D3
+U-0747,UI/UX Design,UI Designer,"[""Prototyping"", ""Color Theory"", ""Wireframing"", ""Typography""]",Belum ada pengalaman,S1/D4
+U-0748,Cyber Security,Security Analyst,"[""SIEM"", ""Threat Intelligence"", ""Python"", ""Incident Response""]",1 - 3 Tahun,D3
+U-0749,Cloud & DevOps,Cloud Engineer,"[""Kubernetes"", ""CI/CD""]",1 - 3 Tahun,S1/D4
+U-0750,Quality Assurance (QA) & Testing,Automation QA,"[""Python"", ""CI/CD""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0751,Quality Assurance (QA) & Testing,Automation QA,"[""Postman"", ""Jira"", ""Git"", ""CI/CD"", ""Java""]",Belum ada pengalaman,S1/D4
+U-0752,Data Science & AI,Data Analyst,"[""Tableau"", ""NumPy""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0753,Mobile Development,iOS Developer,"[""SwiftUI"", ""REST API"", ""Xcode"", ""Swift"", ""Firebase"", ""Objective-C""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0754,Cloud & DevOps,Cloud Engineer,"[""AWS"", ""Git"", ""Linux"", ""Azure"", ""Terraform""]",> 3 Tahun,S1/D4
+U-0755,Quality Assurance (QA) & Testing,SDET,"[""API Testing"", ""Selenium"", ""CI/CD""]",> 3 Tahun,S1/D4
+U-0756,Quality Assurance (QA) & Testing,SDET,"[""Performance Testing"", ""JMeter"", ""API Testing"", ""Git"", ""Python"", ""Selenium""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0757,Data Science & AI,Data Analyst,"[""Git"", ""Data Visualization"", ""Tableau"", ""Pandas""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0758,Cyber Security,Security Analyst,"[""Firewall"", ""Threat Intelligence"", ""Networking""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0759,Cloud & DevOps,DevOps Engineer,"[""Docker"", ""Terraform"", ""Ansible"", ""Linux"", ""Kubernetes""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0760,Mobile Development,Android Developer,"[""MVVM"", ""Jetpack Compose"", ""Android SDK"", ""Room DB"", ""Java""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0761,Web Development,Frontend Engineer,"[""HTML"", ""TailwindCSS""]",< 1 Tahun,S1/D4
+U-0762,Mobile Development,Android Developer,"[""Jetpack Compose"", ""Kotlin"", ""Java"", ""Git"", ""Room DB"", ""Android SDK""]",Belum ada pengalaman,D3
+U-0763,Data Science & AI,Machine Learning Engineer,"[""MLflow"", ""Python"", ""Docker"", ""TensorFlow""]",> 3 Tahun,S1/D4
+U-0764,Web Development,Frontend Engineer,"[""Vue.js"", ""HTML""]",1 - 3 Tahun,D3
+U-0765,Cyber Security,Penetration Tester,"[""Python"", ""Networking""]",1 - 3 Tahun,D3
+U-0766,Quality Assurance (QA) & Testing,Manual QA,"[""Bug Reporting"", ""Jira"", ""Regression Testing"", ""Agile/Scrum""]",> 3 Tahun,S1/D4
+U-0767,Quality Assurance (QA) & Testing,SDET,"[""Python"", ""API Testing"", ""Selenium""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0768,Quality Assurance (QA) & Testing,SDET,"[""API Testing"", ""Performance Testing"", ""Docker"", ""Selenium"", ""Python"", ""Git""]",< 1 Tahun,S1/D4
+U-0769,Quality Assurance (QA) & Testing,Automation QA,"[""Python""]",1 - 3 Tahun,D3
+U-0770,Cloud & DevOps,Cloud Engineer,"[""CI/CD"", ""GCP"", ""Git"", ""Linux""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0771,Mobile Development,Android Developer,"[""Jetpack Compose"", ""Firebase"", ""MVVM""]",1 - 3 Tahun,D3
+U-0772,Cloud & DevOps,SRE,"[""Docker"", ""Linux"", ""CI/CD"", ""Terraform""]",1 - 3 Tahun,S1/D4
+U-0773,Cyber Security,Penetration Tester,"[""Nmap"", ""Python"", ""Burp Suite"", ""Metasploit""]",< 1 Tahun,S1/D4
+U-0774,Cyber Security,Penetration Tester,"[""Nmap""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0775,Data Science & AI,Data Analyst,"[""Statistics"", ""Pandas"", ""NumPy"", ""SQL"", ""Tableau"", ""Data Visualization""]",Belum ada pengalaman,SMA/SMK
+U-0776,Cyber Security,Security Analyst,"[""Python""]",Belum ada pengalaman,S1/D4
+U-0777,Data Science & AI,Data Analyst,"[""Git"", ""Statistics"", ""NumPy""]",1 - 3 Tahun,S2/S3
+U-0778,UI/UX Design,UX Researcher,"[""Survey Design"", ""Data Analysis"", ""Figma"", ""Usability Testing"", ""User Interview""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0779,Cyber Security,Penetration Tester,"[""Kali Linux"", ""Bash"", ""OWASP"", ""Nmap"", ""Wireshark""]",1 - 3 Tahun,S1/D4
+U-0780,UI/UX Design,UI Designer,"[""Wireframing""]",< 1 Tahun,S1/D4
+U-0781,Quality Assurance (QA) & Testing,SDET,"[""Git"", ""JMeter"", ""Java"", ""API Testing"", ""Docker""]",< 1 Tahun,D3
+U-0782,Mobile Development,iOS Developer,"[""Objective-C"", ""REST API"", ""CoreData"", ""UIKit"", ""Firebase"", ""Swift""]",> 3 Tahun,S2/S3
+U-0783,UI/UX Design,Product Designer,"[""Miro"", ""Prototyping"", ""User Research"", ""Accessibility"", ""Wireframing"", ""Design System""]",Belum ada pengalaman,S1/D4
+U-0784,UI/UX Design,UI Designer,"[""Illustrator"", ""Sketch"", ""Wireframing"", ""Design System"", ""Typography"", ""Adobe XD""]",> 3 Tahun,S2/S3
+U-0785,Data Science & AI,Data Analyst,"[""Data Visualization""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0786,Cyber Security,Penetration Tester,"[""Bash""]",Belum ada pengalaman,S1/D4
+U-0787,Cyber Security,Penetration Tester,"[""Python"", ""OWASP"", ""Burp Suite"", ""Networking"", ""Bash"", ""Wireshark""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0788,Cloud & DevOps,Cloud Engineer,"[""AWS"", ""CI/CD"", ""Terraform"", ""Git"", ""Python"", ""Docker""]",> 3 Tahun,S2/S3
+U-0789,Web Development,Fullstack Engineer,"[""MySQL"", ""NodeJS"", ""Git""]",< 1 Tahun,S1/D4
+U-0790,Cyber Security,Penetration Tester,"[""Nmap"", ""OWASP"", ""Networking""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0791,Cyber Security,DevSecOps,"[""AWS"", ""Linux"", ""Terraform"", ""Docker"", ""DAST""]",1 - 3 Tahun,S1/D4
+U-0792,Web Development,Frontend Engineer,"[""TypeScript"", ""Vue.js"", ""Next.js"", ""HTML""]",1 - 3 Tahun,S2/S3
+U-0793,Cloud & DevOps,DevOps Engineer,"[""GitLab CI"", ""Terraform"", ""Git"", ""Linux""]",Belum ada pengalaman,SMA/SMK
+U-0794,UI/UX Design,Product Designer,"[""Design System"", ""Wireframing"", ""Figma"", ""Miro""]",Belum ada pengalaman,D3
+U-0795,Mobile Development,Flutter Engineer,"[""Provider"", ""GetX"", ""Hive""]",< 1 Tahun,D3
+U-0796,Quality Assurance (QA) & Testing,Automation QA,"[""Git"", ""Jira"", ""Java"", ""Selenium"", ""Playwright"", ""Cypress""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0797,Cyber Security,DevSecOps,"[""Linux"", ""Kubernetes"", ""CI/CD"", ""AWS"", ""SAST""]",Belum ada pengalaman,S1/D4
+U-0798,Mobile Development,Flutter Engineer,"[""Firebase"", ""Flutter"", ""Provider"", ""BLoC""]",< 1 Tahun,S1/D4
+U-0799,UI/UX Design,UI Designer,"[""Sketch"", ""Design System""]",1 - 3 Tahun,S1/D4
+U-0800,Web Development,Fullstack Engineer,"[""MySQL""]",1 - 3 Tahun,S2/S3
+U-0801,Web Development,Fullstack Engineer,"[""HTML"", ""TypeScript"", ""Git"", ""ReactJS"", ""NodeJS"", ""Docker""]",> 3 Tahun,S2/S3
+U-0802,Data Science & AI,AI Engineer,"[""HuggingFace"", ""Docker""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0803,Data Science & AI,Data Analyst,"[""Power BI"", ""Excel""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0804,Web Development,Frontend Engineer,"[""Git""]",Belum ada pengalaman,S1/D4
+U-0805,Data Science & AI,Machine Learning Engineer,"[""Kubernetes"", ""MLflow""]",< 1 Tahun,D3
+U-0806,Cyber Security,DevSecOps,"[""DAST"", ""Kubernetes"", ""Linux"", ""Git"", ""AWS"", ""SAST""]",1 - 3 Tahun,S1/D4
+U-0807,Cyber Security,Security Analyst,"[""Threat Intelligence"", ""Incident Response""]",< 1 Tahun,S1/D4
+U-0808,Web Development,Fullstack Engineer,"[""PostgreSQL"", ""JavaScript"", ""TypeScript"", ""MySQL"", ""CSS""]",> 3 Tahun,S2/S3
+U-0809,UI/UX Design,UX Researcher,"[""Figma""]",< 1 Tahun,D3
+U-0810,Data Science & AI,Data Analyst,"[""Excel"", ""Power BI""]",Belum ada pengalaman,S1/D4
+U-0811,Cyber Security,DevSecOps,"[""Linux"", ""Kubernetes"", ""CI/CD"", ""Git""]",Belum ada pengalaman,S1/D4
+U-0812,Cloud & DevOps,SRE,"[""Kubernetes"", ""Python"", ""Docker"", ""Incident Management"", ""Linux"", ""CI/CD""]",Belum ada pengalaman,S1/D4
+U-0813,Web Development,Backend Engineer,"[""MySQL"", ""NodeJS"", ""MongoDB"", ""Express""]",< 1 Tahun,D3
+U-0814,Cloud & DevOps,Cloud Engineer,"[""CI/CD"", ""Git"", ""Docker"", ""Linux""]",1 - 3 Tahun,S1/D4
+U-0815,UI/UX Design,Product Designer,"[""Accessibility""]",> 3 Tahun,S1/D4
+U-0816,Cyber Security,Penetration Tester,"[""Networking"", ""OWASP"", ""Python""]",1 - 3 Tahun,S2/S3
+U-0817,Quality Assurance (QA) & Testing,Automation QA,"[""TestNG"", ""Python"", ""Selenium""]",< 1 Tahun,D3
+U-0818,Quality Assurance (QA) & Testing,Automation QA,"[""CI/CD"", ""Python"", ""TestNG"", ""Git"", ""Postman"", ""Java""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0819,Web Development,Frontend Engineer,"[""ReactJS"", ""TailwindCSS"", ""CSS"", ""JavaScript""]",1 - 3 Tahun,D3
+U-0820,Data Science & AI,Data Analyst,"[""Statistics""]",Belum ada pengalaman,D3
+U-0821,Cyber Security,DevSecOps,"[""Git"", ""Kubernetes"", ""DAST"", ""AWS""]",Belum ada pengalaman,D3
+U-0822,UI/UX Design,Product Designer,"[""Figma"", ""Agile/Scrum"", ""Accessibility"", ""Adobe XD""]",1 - 3 Tahun,S1/D4
+U-0823,Quality Assurance (QA) & Testing,Manual QA,"[""Bug Reporting"", ""Regression Testing"", ""Test Case Writing"", ""SQL"", ""API Testing""]",1 - 3 Tahun,S1/D4
+U-0824,UI/UX Design,Product Designer,"[""Wireframing"", ""User Research"", ""Miro"", ""Design System"", ""Agile/Scrum""]",< 1 Tahun,S1/D4
+U-0825,Web Development,Frontend Engineer,"[""TypeScript"", ""CSS""]",1 - 3 Tahun,D3
+U-0826,Data Science & AI,Data Analyst,"[""SQL"", ""Git"", ""Statistics"", ""Tableau"", ""Python""]",1 - 3 Tahun,D3
+U-0827,UI/UX Design,Product Designer,"[""Wireframing"", ""Miro""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0828,Quality Assurance (QA) & Testing,SDET,"[""Python"", ""API Testing"", ""Git"", ""Appium"", ""JMeter"", ""CI/CD""]",1 - 3 Tahun,S1/D4
+U-0829,Web Development,Fullstack Engineer,"[""NodeJS"", ""HTML"", ""PostgreSQL"", ""Docker"", ""TypeScript"", ""JavaScript""]",> 3 Tahun,S1/D4
+U-0830,Web Development,Frontend Engineer,"[""CSS"", ""TypeScript""]",1 - 3 Tahun,S1/D4
+U-0831,Mobile Development,iOS Developer,"[""Xcode"", ""CoreData"", ""SwiftUI"", ""Git""]",> 3 Tahun,S2/S3
+U-0832,Quality Assurance (QA) & Testing,Manual QA,"[""SQL"", ""Test Case Writing"", ""Bug Reporting"", ""Agile/Scrum""]",> 3 Tahun,S2/S3
+U-0833,Mobile Development,Flutter Engineer,"[""Hive"", ""BLoC"", ""Flutter"", ""Git"", ""Dart"", ""GetX""]",Belum ada pengalaman,D3
+U-0834,Cyber Security,DevSecOps,"[""DAST"", ""Kubernetes"", ""CI/CD"", ""AWS"", ""Terraform""]",> 3 Tahun,S2/S3
+U-0835,Web Development,Frontend Engineer,"[""HTML"", ""ReactJS"", ""JavaScript"", ""Bootstrap""]",> 3 Tahun,S2/S3
+U-0836,Data Science & AI,Data Analyst,"[""Statistics"", ""Python"", ""Pandas"", ""Excel"", ""NumPy"", ""SQL""]",Belum ada pengalaman,SMA/SMK
+U-0837,Web Development,Frontend Engineer,"[""Git"", ""Next.js"", ""Vue.js"", ""JavaScript"", ""ReactJS""]",Belum ada pengalaman,D3
+U-0838,Mobile Development,Android Developer,"[""Kotlin"", ""Git"", ""Android SDK"", ""Room DB""]",Belum ada pengalaman,S1/D4
+U-0839,Cyber Security,Security Analyst,"[""Linux"", ""Incident Response"", ""IDS/IPS"", ""Networking"", ""Threat Intelligence""]",> 3 Tahun,S2/S3
+U-0840,Cloud & DevOps,DevOps Engineer,"[""Kubernetes"", ""Python"", ""Docker"", ""Ansible"", ""Git""]",> 3 Tahun,S1/D4
+U-0841,Web Development,Frontend Engineer,"[""TailwindCSS"", ""HTML"", ""CSS"", ""ReactJS""]",> 3 Tahun,S1/D4
+U-0842,UI/UX Design,UX Researcher,"[""Miro"", ""Maze"", ""Journey Mapping""]",< 1 Tahun,D3
+U-0843,Cyber Security,DevSecOps,"[""Kubernetes""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0844,Web Development,Fullstack Engineer,"[""PostgreSQL"", ""HTML"", ""TypeScript"", ""NodeJS"", ""Docker"", ""Git""]",< 1 Tahun,D3
+U-0845,Mobile Development,iOS Developer,"[""Objective-C"", ""Firebase"", ""Xcode""]",> 3 Tahun,S2/S3
+U-0846,Mobile Development,Android Developer,"[""Jetpack Compose"", ""Firebase""]",> 3 Tahun,S2/S3
+U-0847,Mobile Development,Android Developer,"[""Java"", ""MVVM""]",Belum ada pengalaman,D3
+U-0848,UI/UX Design,UI Designer,"[""Wireframing"", ""Figma"", ""Illustrator""]",Belum ada pengalaman,S1/D4
+U-0849,Cloud & DevOps,SRE,"[""Git"", ""Prometheus"", ""Terraform"", ""Linux"", ""Grafana""]",1 - 3 Tahun,D3
+U-0850,UI/UX Design,UX Researcher,"[""User Interview"", ""Survey Design"", ""Personas"", ""Maze"", ""Data Analysis"", ""Figma""]",> 3 Tahun,S1/D4
+U-0851,Cloud & DevOps,DevOps Engineer,"[""Jenkins"", ""Terraform"", ""Python"", ""Ansible""]",< 1 Tahun,D3
+U-0852,Quality Assurance (QA) & Testing,SDET,"[""Performance Testing"", ""Git"", ""Docker"", ""CI/CD"", ""Selenium""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0853,Data Science & AI,AI Engineer,"[""Docker"", ""SQL"", ""Git"", ""FastAPI"", ""Python"", ""LangChain""]",Belum ada pengalaman,D3
+U-0854,Mobile Development,Flutter Engineer,"[""Dart"", ""BLoC""]",> 3 Tahun,S2/S3
+U-0855,Web Development,Backend Engineer,"[""PHP""]",1 - 3 Tahun,S2/S3
+U-0856,UI/UX Design,UI Designer,"[""Wireframing"", ""Sketch"", ""Color Theory"", ""Design System""]",< 1 Tahun,D3
+U-0857,UI/UX Design,UI Designer,"[""Prototyping"", ""Sketch"", ""Figma"", ""Wireframing""]",< 1 Tahun,S1/D4
+U-0858,Quality Assurance (QA) & Testing,Automation QA,"[""TestNG"", ""Postman"", ""Java"", ""CI/CD""]",> 3 Tahun,S1/D4
+U-0859,Web Development,Backend Engineer,"[""Docker"", ""Git"", ""PHP"", ""REST API"", ""PostgreSQL"", ""NodeJS""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0860,UI/UX Design,UI Designer,"[""Prototyping"", ""Typography"", ""Sketch""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0861,Cyber Security,DevSecOps,"[""CI/CD"", ""Terraform"", ""Python"", ""Kubernetes"", ""DAST""]",Belum ada pengalaman,S1/D4
+U-0862,Web Development,Fullstack Engineer,"[""PostgreSQL"", ""HTML""]",Belum ada pengalaman,SMA/SMK
+U-0863,UI/UX Design,UI Designer,"[""Figma""]",Belum ada pengalaman,S1/D4
+U-0864,Cyber Security,Penetration Tester,"[""Burp Suite"", ""OWASP"", ""Bash"", ""Metasploit""]",1 - 3 Tahun,S1/D4
+U-0865,Quality Assurance (QA) & Testing,SDET,"[""Git"", ""Java"", ""Selenium"", ""Python"", ""JMeter""]",Belum ada pengalaman,SMA/SMK
+U-0866,UI/UX Design,Product Designer,"[""Accessibility"", ""Wireframing"", ""Miro"", ""Prototyping"", ""User Research""]",1 - 3 Tahun,S2/S3
+U-0867,Cyber Security,DevSecOps,"[""Docker"", ""Python"", ""AWS"", ""SAST"", ""Kubernetes""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0868,Data Science & AI,Data Analyst,"[""Power BI""]",1 - 3 Tahun,S2/S3
+U-0869,Web Development,Backend Engineer,"[""PostgreSQL"", ""Docker"", ""Django"", ""MySQL"", ""PHP"", ""Python""]",> 3 Tahun,S1/D4
+U-0870,Cloud & DevOps,Cloud Engineer,"[""GCP"", ""CI/CD""]",< 1 Tahun,D3
+U-0871,Web Development,Backend Engineer,"[""Express"", ""MongoDB""]",> 3 Tahun,S2/S3
+U-0872,Web Development,Backend Engineer,"[""Express"", ""Docker"", ""Django"", ""NodeJS""]",< 1 Tahun,D3
+U-0873,Cyber Security,Security Analyst,"[""Linux""]",< 1 Tahun,S1/D4
+U-0874,Cloud & DevOps,Cloud Engineer,"[""Git"", ""GCP"", ""Linux""]",> 3 Tahun,S2/S3
+U-0875,Mobile Development,Android Developer,"[""Android SDK"", ""Jetpack Compose""]",Belum ada pengalaman,D3
+U-0876,UI/UX Design,UI Designer,"[""Prototyping"", ""Color Theory"", ""Sketch""]",> 3 Tahun,S2/S3
+U-0877,Web Development,Frontend Engineer,"[""Git"", ""ReactJS"", ""TailwindCSS"", ""TypeScript""]",1 - 3 Tahun,S2/S3
+U-0878,Quality Assurance (QA) & Testing,SDET,"[""Performance Testing"", ""Selenium"", ""Git"", ""CI/CD"", ""Java""]",> 3 Tahun,S2/S3
+U-0879,Mobile Development,iOS Developer,"[""CoreData"", ""UIKit"", ""REST API"", ""Objective-C"", ""SwiftUI"", ""Git""]",Belum ada pengalaman,SMA/SMK
+U-0880,Web Development,Backend Engineer,"[""Django"", ""NodeJS""]",> 3 Tahun,S2/S3
+U-0881,Web Development,Fullstack Engineer,"[""Git"", ""HTML"", ""MySQL"", ""Docker"", ""ReactJS"", ""TypeScript""]",1 - 3 Tahun,S1/D4
+U-0882,UI/UX Design,UX Researcher,"[""Figma"", ""Journey Mapping"", ""Personas"", ""User Interview"", ""Maze""]",> 3 Tahun,S1/D4
+U-0883,Data Science & AI,Machine Learning Engineer,"[""TensorFlow"", ""PyTorch"", ""Python"", ""Docker"", ""SQL""]",1 - 3 Tahun,S1/D4
+U-0884,Data Science & AI,AI Engineer,"[""PyTorch"", ""Docker""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0885,Cyber Security,Security Analyst,"[""SIEM"", ""Firewall"", ""Log Analysis"", ""Linux"", ""Networking"", ""IDS/IPS""]",Belum ada pengalaman,SMA/SMK
+U-0886,Data Science & AI,Machine Learning Engineer,"[""Kubernetes"", ""Pandas"", ""Git""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0887,Cyber Security,DevSecOps,"[""Git"", ""Terraform""]",> 3 Tahun,S2/S3
+U-0888,Quality Assurance (QA) & Testing,Automation QA,"[""Jira""]",< 1 Tahun,S1/D4
+U-0889,UI/UX Design,UX Researcher,"[""User Interview"", ""Data Analysis"", ""Figma""]",> 3 Tahun,S1/D4
+U-0890,Cyber Security,Security Analyst,"[""Firewall""]",> 3 Tahun,S1/D4
+U-0891,Mobile Development,iOS Developer,"[""Git"", ""REST API"", ""Swift"", ""CoreData"", ""Objective-C"", ""Xcode""]",1 - 3 Tahun,S2/S3
+U-0892,Quality Assurance (QA) & Testing,Manual QA,"[""Postman"", ""Test Case Writing""]",Belum ada pengalaman,SMA/SMK
+U-0893,Mobile Development,iOS Developer,"[""Swift"", ""Xcode""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0894,Mobile Development,Flutter Engineer,"[""Firebase"", ""BLoC"", ""Dart"", ""Provider"", ""Flutter""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0895,UI/UX Design,Product Designer,"[""Accessibility"", ""Design System"", ""Figma"", ""Prototyping"", ""Adobe XD""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0896,Cyber Security,Security Analyst,"[""Threat Intelligence"", ""Python"", ""Log Analysis""]",< 1 Tahun,D3
+U-0897,Cyber Security,Penetration Tester,"[""Burp Suite""]",> 3 Tahun,S1/D4
+U-0898,Cloud & DevOps,DevOps Engineer,"[""Prometheus"", ""Python""]",1 - 3 Tahun,S2/S3
+U-0899,Web Development,Backend Engineer,"[""Git"", ""Python"", ""PostgreSQL"", ""MySQL"", ""Django"", ""PHP""]",> 3 Tahun,S2/S3
+U-0900,Web Development,Frontend Engineer,"[""Vue.js"", ""Git"", ""Bootstrap"", ""HTML"", ""TailwindCSS""]",Belum ada pengalaman,SMA/SMK
+U-0901,Mobile Development,Android Developer,"[""Room DB""]",Belum ada pengalaman,S1/D4
+U-0902,UI/UX Design,Product Designer,"[""Wireframing"", ""Accessibility"", ""Design System""]",< 1 Tahun,D3
+U-0903,UI/UX Design,UI Designer,"[""Wireframing""]",> 3 Tahun,S1/D4
+U-0904,Cyber Security,Penetration Tester,"[""Python"", ""Wireshark""]",Belum ada pengalaman,D3
+U-0905,UI/UX Design,Product Designer,"[""Design System"", ""Figma"", ""Miro"", ""Prototyping"", ""Wireframing""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0906,Mobile Development,Android Developer,"[""REST API"", ""Jetpack Compose"", ""Firebase"", ""Kotlin""]",> 3 Tahun,S1/D4
+U-0907,Quality Assurance (QA) & Testing,SDET,"[""JMeter""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0908,UI/UX Design,UX Researcher,"[""User Interview"", ""Journey Mapping""]",> 3 Tahun,S2/S3
+U-0909,Quality Assurance (QA) & Testing,SDET,"[""API Testing"", ""Python"", ""Appium"", ""Java""]",Belum ada pengalaman,S1/D4
+U-0910,Mobile Development,iOS Developer,"[""Objective-C"", ""Swift"", ""SwiftUI""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0911,Cyber Security,Security Analyst,"[""Incident Response"", ""SIEM"", ""Threat Intelligence"", ""Python"", ""IDS/IPS""]",1 - 3 Tahun,S1/D4
+U-0912,Quality Assurance (QA) & Testing,SDET,"[""Git"", ""Python"", ""Java""]",1 - 3 Tahun,S2/S3
+U-0913,UI/UX Design,UI Designer,"[""Illustrator"", ""Design System"", ""Adobe XD"", ""Typography""]",> 3 Tahun,S1/D4
+U-0914,Cloud & DevOps,Cloud Engineer,"[""Azure"", ""Docker"", ""GCP"", ""AWS"", ""Git""]",Belum ada pengalaman,S1/D4
+U-0915,Quality Assurance (QA) & Testing,Manual QA,"[""Regression Testing"", ""SQL"", ""API Testing"", ""Postman"", ""Test Case Writing"", ""Jira""]",< 1 Tahun,D3
+U-0916,Mobile Development,Android Developer,"[""REST API"", ""Room DB"", ""Java"", ""MVVM"", ""Git"", ""Firebase""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0917,Quality Assurance (QA) & Testing,SDET,"[""Performance Testing""]",< 1 Tahun,S1/D4
+U-0918,UI/UX Design,UX Researcher,"[""Miro"", ""Maze"", ""Usability Testing"", ""Journey Mapping"", ""Figma"", ""Personas""]",> 3 Tahun,S2/S3
+U-0919,Data Science & AI,Machine Learning Engineer,"[""Scikit-Learn"", ""Docker"", ""Python"", ""SQL"", ""Pandas"", ""Git""]",Belum ada pengalaman,S1/D4
+U-0920,Quality Assurance (QA) & Testing,Manual QA,"[""Agile/Scrum"", ""SQL"", ""API Testing""]",> 3 Tahun,S1/D4
+U-0921,Cyber Security,Security Analyst,"[""Threat Intelligence"", ""Networking"", ""Firewall"", ""SIEM"", ""Log Analysis"", ""Python""]",> 3 Tahun,S2/S3
+U-0922,Cloud & DevOps,SRE,"[""Grafana""]",Belum ada pengalaman,S1/D4
+U-0923,Mobile Development,Flutter Engineer,"[""Flutter"", ""BLoC"", ""Hive"", ""Git"", ""REST API""]",Belum ada pengalaman,S1/D4
+U-0924,Quality Assurance (QA) & Testing,Manual QA,"[""Postman"", ""Jira""]",1 - 3 Tahun,S2/S3
+U-0925,Quality Assurance (QA) & Testing,Automation QA,"[""Playwright"", ""Python"", ""Selenium"", ""CI/CD"", ""Jira"", ""Postman""]",> 3 Tahun,S2/S3
+U-0926,Mobile Development,iOS Developer,"[""Objective-C"", ""CoreData"", ""Firebase"", ""Git""]",> 3 Tahun,S1/D4
+U-0927,Web Development,Fullstack Engineer,"[""MySQL"", ""Docker"", ""PostgreSQL""]",< 1 Tahun,S1/D4
+U-0928,Quality Assurance (QA) & Testing,Automation QA,"[""Cypress"", ""Jira"", ""Postman""]",Belum ada pengalaman,S1/D4
+U-0929,Cloud & DevOps,SRE,"[""Kubernetes"", ""Docker"", ""Linux"", ""CI/CD""]",< 1 Tahun,D3
+U-0930,Web Development,Frontend Engineer,"[""Next.js"", ""Bootstrap""]",> 3 Tahun,S1/D4
+U-0931,Web Development,Fullstack Engineer,"[""NodeJS"", ""Docker""]",> 3 Tahun,S1/D4
+U-0932,Data Science & AI,Data Scientist,"[""Git""]",> 3 Tahun,S2/S3
+U-0933,Cyber Security,Penetration Tester,"[""Burp Suite"", ""Python"", ""Wireshark"", ""Metasploit"", ""Nmap"", ""OWASP""]",< 1 Tahun,S1/D4
+U-0934,Web Development,Fullstack Engineer,"[""PostgreSQL"", ""HTML"", ""ReactJS""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0935,UI/UX Design,UX Researcher,"[""Data Analysis"", ""Personas"", ""Journey Mapping"", ""User Interview"", ""Miro"", ""Usability Testing""]",> 3 Tahun,S1/D4
+U-0936,Cloud & DevOps,DevOps Engineer,"[""Git"", ""Python""]",> 3 Tahun,S1/D4
+U-0937,Web Development,Fullstack Engineer,"[""HTML"", ""REST API"", ""Docker"", ""ReactJS"", ""Git""]",1 - 3 Tahun,S2/S3
+U-0938,Cloud & DevOps,SRE,"[""Python"", ""Git"", ""Linux"", ""Grafana"", ""CI/CD"", ""Prometheus""]",1 - 3 Tahun,S1/D4
+U-0939,Web Development,Frontend Engineer,"[""Next.js"", ""JavaScript"", ""Git"", ""CSS""]",> 3 Tahun,S2/S3
+U-0940,Mobile Development,Flutter Engineer,"[""Git"", ""BLoC""]",1 - 3 Tahun,S2/S3
+U-0941,Web Development,Fullstack Engineer,"[""HTML"", ""NodeJS"", ""ReactJS"", ""MySQL""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0942,Cloud & DevOps,DevOps Engineer,"[""Git"", ""Docker"", ""Python"", ""Linux"", ""Terraform"", ""Ansible""]",> 3 Tahun,S2/S3
+U-0943,Cloud & DevOps,DevOps Engineer,"[""Prometheus"", ""GitLab CI"", ""Python"", ""Jenkins""]",> 3 Tahun,S1/D4
+U-0944,Cyber Security,Security Analyst,"[""IDS/IPS"", ""Firewall"", ""Networking"", ""Python"", ""SIEM""]",> 3 Tahun,S1/D4
+U-0945,Web Development,Backend Engineer,"[""Docker"", ""Express"", ""PostgreSQL"", ""REST API"", ""MySQL"", ""NodeJS""]",< 1 Tahun,S1/D4
+U-0946,UI/UX Design,UI Designer,"[""Figma"", ""Typography"", ""Design System"", ""Illustrator"", ""Adobe XD"", ""Wireframing""]",< 1 Tahun,D3
+U-0947,Data Science & AI,Data Scientist,"[""Matplotlib"", ""Pandas"", ""TensorFlow"", ""Python"", ""R"", ""NumPy""]",> 3 Tahun,S2/S3
+U-0948,Data Science & AI,Machine Learning Engineer,"[""Python"", ""PyTorch"", ""Scikit-Learn"", ""Kubernetes"", ""TensorFlow"", ""Pandas""]",1 - 3 Tahun,D3
+U-0949,Data Science & AI,AI Engineer,"[""FastAPI"", ""Vector DB""]",Belum ada pengalaman,S1/D4
+U-0950,Cloud & DevOps,DevOps Engineer,"[""Terraform"", ""Docker""]",< 1 Tahun,D3
+U-0951,Data Science & AI,Data Scientist,"[""Statistics"", ""Git"", ""R""]",1 - 3 Tahun,S1/D4
+U-0952,Quality Assurance (QA) & Testing,SDET,"[""Python"", ""Appium"", ""Performance Testing""]",1 - 3 Tahun,S1/D4
+U-0953,Mobile Development,Flutter Engineer,"[""Flutter"", ""Firebase"", ""Hive"", ""Provider""]",> 3 Tahun,S1/D4
+U-0954,Cyber Security,Security Analyst,"[""Firewall""]",> 3 Tahun,S2/S3
+U-0955,Mobile Development,iOS Developer,"[""UIKit"", ""Git"", ""REST API"", ""SwiftUI"", ""Swift""]",< 1 Tahun,D3
+U-0956,Cloud & DevOps,SRE,"[""Git"", ""Docker""]",< 1 Tahun,S1/D4
+U-0957,UI/UX Design,Product Designer,"[""Agile/Scrum""]",1 - 3 Tahun,D3
+U-0958,Cyber Security,DevSecOps,"[""Kubernetes"", ""CI/CD"", ""Python"", ""AWS""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0959,UI/UX Design,UI Designer,"[""Figma"", ""Sketch"", ""Wireframing"", ""Prototyping"", ""Typography"", ""Illustrator""]",1 - 3 Tahun,D3
+U-0960,UI/UX Design,UI Designer,"[""Sketch"", ""Color Theory"", ""Prototyping""]",1 - 3 Tahun,S2/S3
+U-0961,Mobile Development,Android Developer,"[""Git"", ""Jetpack Compose""]",1 - 3 Tahun,S1/D4
+U-0962,Web Development,Backend Engineer,"[""PostgreSQL"", ""MongoDB"", ""REST API"", ""Laravel""]",< 1 Tahun,D3
+U-0963,UI/UX Design,UI Designer,"[""Illustrator"", ""Wireframing"", ""Design System"", ""Sketch""]",Belum ada pengalaman,S1/D4
+U-0964,UI/UX Design,UX Researcher,"[""Figma""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0965,UI/UX Design,UI Designer,"[""Illustrator"", ""Prototyping"", ""Wireframing"", ""Design System""]",Belum ada pengalaman,D3
+U-0966,UI/UX Design,UI Designer,"[""Figma"", ""Typography""]",1 - 3 Tahun,S1/D4
+U-0967,UI/UX Design,UI Designer,"[""Adobe XD"", ""Typography"", ""Illustrator"", ""Design System""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0968,UI/UX Design,UX Researcher,"[""User Interview""]",1 - 3 Tahun,S2/S3
+U-0969,Web Development,Frontend Engineer,"[""HTML""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0970,Quality Assurance (QA) & Testing,Manual QA,"[""SQL"", ""API Testing"", ""Test Case Writing""]",> 3 Tahun,S2/S3
+U-0971,Cloud & DevOps,DevOps Engineer,"[""Kubernetes"", ""Linux""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0972,Web Development,Fullstack Engineer,"[""ReactJS"", ""REST API"", ""TypeScript"", ""CSS"", ""MySQL"", ""NodeJS""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0973,Cyber Security,DevSecOps,"[""CI/CD"", ""Kubernetes"", ""Docker"", ""AWS"", ""Git""]",< 1 Tahun,D3
+U-0974,Cyber Security,Penetration Tester,"[""Networking"", ""Nmap""]",Belum ada pengalaman,SMA/SMK
+U-0975,Cloud & DevOps,Cloud Engineer,"[""CI/CD"", ""Terraform""]",> 3 Tahun,S2/S3
+U-0976,UI/UX Design,UX Researcher,"[""Survey Design"", ""Figma""]",1 - 3 Tahun,S1/D4
+U-0977,Cloud & DevOps,SRE,"[""CI/CD"", ""Incident Management"", ""Git""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0978,Data Science & AI,Data Analyst,"[""Excel"", ""Tableau"", ""Statistics"", ""Pandas""]",Belum ada pengalaman,SMA/SMK
+U-0979,Data Science & AI,AI Engineer,"[""SQL"", ""Python"", ""HuggingFace"", ""LangChain"", ""OpenAI API""]",> 3 Tahun,S2/S3
+U-0980,Cloud & DevOps,SRE,"[""Prometheus"", ""Python"", ""CI/CD""]",> 3 Tahun,S1/D4
+U-0981,Quality Assurance (QA) & Testing,SDET,"[""Python"", ""Docker"", ""API Testing"", ""Appium""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0982,UI/UX Design,UX Researcher,"[""Usability Testing"", ""Personas"", ""Maze""]",< 1 Tahun,S1/D4
+U-0983,Cloud & DevOps,DevOps Engineer,"[""Terraform"", ""Python"", ""Prometheus"", ""Git"", ""Linux"", ""Jenkins""]",Belum ada pengalaman,Bootcamp/Sertifikasi
+U-0984,Web Development,Fullstack Engineer,"[""TypeScript"", ""NodeJS"", ""PostgreSQL"", ""MySQL"", ""ReactJS"", ""Git""]",> 3 Tahun,S1/D4
+U-0985,Cyber Security,Penetration Tester,"[""Bash"", ""OWASP""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0986,Mobile Development,Android Developer,"[""Room DB"", ""Kotlin"", ""Git"", ""Firebase""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0987,Quality Assurance (QA) & Testing,Manual QA,"[""Bug Reporting"", ""Agile/Scrum"", ""Regression Testing"", ""Postman""]",1 - 3 Tahun,D3
+U-0988,Cyber Security,Penetration Tester,"[""Wireshark""]",< 1 Tahun,S1/D4
+U-0989,Web Development,Fullstack Engineer,"[""PostgreSQL"", ""HTML"", ""MySQL"", ""REST API"", ""Git""]",> 3 Tahun,S1/D4
+U-0990,Quality Assurance (QA) & Testing,Manual QA,"[""Regression Testing""]",> 3 Tahun,S2/S3
+U-0991,Cyber Security,DevSecOps,"[""Kubernetes"", ""CI/CD"", ""Linux""]",< 1 Tahun,D3
+U-0992,Data Science & AI,Machine Learning Engineer,"[""Git"", ""Docker""]",< 1 Tahun,S1/D4
+U-0993,UI/UX Design,Product Designer,"[""Prototyping"", ""Agile/Scrum"", ""Adobe XD""]",Belum ada pengalaman,SMA/SMK
+U-0994,Cloud & DevOps,SRE,"[""Git""]",1 - 3 Tahun,S2/S3
+U-0995,Web Development,Fullstack Engineer,"[""HTML"", ""CSS"", ""Docker"", ""REST API""]",> 3 Tahun,S2/S3
+U-0996,Quality Assurance (QA) & Testing,Manual QA,"[""Jira"", ""Test Case Writing"", ""Postman""]",> 3 Tahun,S1/D4
+U-0997,UI/UX Design,UI Designer,"[""Design System"", ""Figma"", ""Prototyping"", ""Adobe XD""]",< 1 Tahun,S1/D4
+U-0998,Cloud & DevOps,SRE,"[""CI/CD"", ""Terraform"", ""Git""]",< 1 Tahun,Bootcamp/Sertifikasi
+U-0999,Mobile Development,iOS Developer,"[""Swift""]",1 - 3 Tahun,D3
+U-1000,Web Development,Frontend Engineer,"[""HTML"", ""Git"", ""TailwindCSS"", ""Bootstrap"", ""Next.js""]",> 3 Tahun,S2/S3
