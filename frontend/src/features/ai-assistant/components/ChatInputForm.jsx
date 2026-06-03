@@ -7,7 +7,8 @@ import { useLanguage } from '../../../contexts/LanguageContext';
 const ChatInputForm = ({
   sendMessage,
   enhancePrompt,
-  setIsHistoryOpen
+  setIsHistoryOpen,
+  activeSessionId
 }) => {
   const { t } = useLanguage();
   const {
@@ -22,31 +23,34 @@ const ChatInputForm = ({
     handleSelectSuggestion
   } = useChatInput(sendMessage, enhancePrompt, setIsHistoryOpen);
 
+  const hasNoSession = !activeSessionId;
+
   return (
     <div className="border-t border-slate-200/70 p-4 bg-white">
       {/* Suggestion Chips */}
-      <ChatSuggestions onSelectSuggestion={handleSelectSuggestion} />
+      {!hasNoSession && <ChatSuggestions onSelectSuggestion={handleSelectSuggestion} />}
 
       {/* Input Form (Unified Pill Shape Bar) */}
-      <form onSubmit={handleSend} className="relative flex items-center gap-2 border border-slate-200/80 rounded-2xl bg-slate-50/50 p-1.5 focus-within:border-primary focus-within:bg-white focus-within:ring-2 focus-within:ring-primary/10 transition-all duration-200 shadow-xs">
+      <form onSubmit={handleSend} className={`relative flex items-center gap-2 border border-slate-200/80 rounded-2xl bg-slate-50/50 p-1.5 focus-within:border-primary focus-within:bg-white focus-within:ring-2 focus-within:ring-primary/10 transition-all duration-200 shadow-xs ${hasNoSession ? 'opacity-60 cursor-not-allowed' : ''}`}>
         <input
           type="text"
           value={inputText}
           onChange={(e) => setInputText(e.target.value)}
           onKeyDown={handleKeyPress}
-          placeholder={t.aiAssistant.placeholder}
-          className="flex-1 min-w-0 py-2.5 pl-4 pr-12 bg-transparent text-body-sm font-semibold text-primary-text placeholder-secondary-text/70 outline-none"
+          placeholder={hasNoSession ? 'Silakan buat obrolan baru untuk mengirim pesan...' : t.aiAssistant.placeholder}
+          disabled={hasNoSession}
+          className={`flex-1 min-w-0 py-2.5 pl-4 pr-12 bg-transparent text-body-sm font-semibold text-primary-text placeholder-secondary-text/70 outline-none ${hasNoSession ? 'cursor-not-allowed' : ''}`}
         />
 
         {/* Enhance Prompt Button (Skill: enhance-prompt) */}
         <button
           type="button"
           onClick={handleEnhance}
-          disabled={!inputText.trim()}
+          disabled={hasNoSession || !inputText.trim()}
           onMouseEnter={() => setShowEnhanceTooltip(true)}
           onMouseLeave={() => setShowEnhanceTooltip(false)}
           className={`p-2 rounded-xl transition-all duration-200 cursor-pointer ${
-            inputText.trim()
+            !hasNoSession && inputText.trim()
               ? 'text-primary hover:bg-primary-light hover:text-primary'
               : 'text-secondary-text/30 cursor-not-allowed'
           } ${enhancedSuccessfully ? 'scale-110 text-emerald-500 hover:text-emerald-500 bg-emerald-50' : ''}`}
@@ -66,9 +70,9 @@ const ChatInputForm = ({
         {/* Send Button */}
         <button
           type="submit"
-          disabled={!inputText.trim()}
+          disabled={hasNoSession || !inputText.trim()}
           className={`w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-200 cursor-pointer ${
-            inputText.trim()
+            !hasNoSession && inputText.trim()
               ? 'bg-primary text-white hover:bg-indigo-700 active:scale-95 shadow-sm'
               : 'bg-slate-100 text-secondary-text/30 cursor-not-allowed'
           }`}

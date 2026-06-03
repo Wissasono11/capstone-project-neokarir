@@ -51,4 +51,20 @@ export const aiAssistantService = {
       chat: updatedChat
     };
   },
+
+  deleteSession: async (chatId) => {
+    if (USE_MOCK) {
+      return { success: true };
+    }
+    const response = await api.delete(`/chat/${chatId}`);
+    return response.data?.success || true;
+  },
+
+  updateSession: async (chatId, payload) => {
+    if (USE_MOCK) {
+      return { success: true };
+    }
+    const response = await api.patch(`/chat/${chatId}`, payload);
+    return response.data?.chat || null;
+  },
 };

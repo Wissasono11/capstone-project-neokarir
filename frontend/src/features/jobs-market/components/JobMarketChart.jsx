@@ -92,7 +92,7 @@ const JobMarketChart = ({ predictions, selectedDomain, loading }) => {
     return (
       <div className="bg-pure-surface rounded-[24px] border border-border shadow-sm p-6 h-[460px] flex items-center justify-center">
         <p className="text-body-sm font-semibold text-secondary-text">
-          {t.jobsMarket.noDataAvailable}
+          {t.jobsMarket?.noDataAvailable || 'No data available to visualize.'}
         </p>
       </div>
     );
@@ -112,7 +112,7 @@ const JobMarketChart = ({ predictions, selectedDomain, loading }) => {
       .sort((a, b) => b['Estimasi Demand'] - a['Estimasi Demand']); // Sort for neat bar ranking
   } else {
     chartData = predictions.map((pred, index) => ({
-      name: t.jobsMarket.monthPlus(index + 1),
+      name: typeof t.jobsMarket?.monthPlus === 'function' ? t.jobsMarket.monthPlus(index + 1) : `Month +${index + 1}`,
       'Estimasi Demand': pred[selectedDomain] || 0
     }));
   }
@@ -122,13 +122,13 @@ const JobMarketChart = ({ predictions, selectedDomain, loading }) => {
       <div>
         <h3 className="text-body-lg font-bold text-primary-text mb-1">
           {isComparisonMode 
-            ? t.jobsMarket.comparisonTitle 
-            : t.jobsMarket.projectionTitle(selectedDomain)}
+            ? (t.jobsMarket?.comparisonTitle || 'Comparison') 
+            : (typeof t.jobsMarket?.projectionTitle === 'function' ? t.jobsMarket.projectionTitle(selectedDomain) : `Demand Trend Projection: ${selectedDomain}`)}
         </h3>
         <p className="text-caption font-medium text-secondary-text">
           {isComparisonMode 
-            ? t.jobsMarket.comparisonDesc
-            : t.jobsMarket.projectionDesc(selectedDomain)}
+            ? (t.jobsMarket?.comparisonDesc || 'Comparison Description')
+            : (typeof t.jobsMarket?.projectionDesc === 'function' ? t.jobsMarket.projectionDesc(selectedDomain) : `Showing the estimated growth of ${selectedDomain} job vacancies`)}
         </p>
       </div>
 
@@ -161,7 +161,7 @@ const JobMarketChart = ({ predictions, selectedDomain, loading }) => {
                   axisLine={false}
                   width={110}
                 />
-                <Tooltip content={<CustomTooltip vacanciesUnit={t.jobsMarket.vacanciesUnit} />} cursor={{ fill: '#F8FAFC', radius: 4 }} />
+                <Tooltip content={<CustomTooltip vacanciesUnit={t.jobsMarket?.vacanciesUnit || 'vacancies'} />} cursor={{ fill: '#F8FAFC', radius: 4 }} />
                 <Legend 
                   verticalAlign="top" 
                   height={32} 
@@ -171,7 +171,7 @@ const JobMarketChart = ({ predictions, selectedDomain, loading }) => {
                 />
                 <Bar 
                   dataKey="Estimasi Demand" 
-                  name={t.jobsMarket.estDemand}
+                  name={t.jobsMarket?.estDemand || 'Estimated Demand'}
                   radius={[0, 4, 4, 0]} 
                   barSize={16}
                 >
@@ -207,7 +207,7 @@ const JobMarketChart = ({ predictions, selectedDomain, loading }) => {
                   tickLine={false}
                   axisLine={false}
                 />
-                <Tooltip content={<CustomTooltip vacanciesUnit={t.jobsMarket.vacanciesUnit} />} cursor={{ fill: '#F8FAFC', radius: 8 }} />
+                <Tooltip content={<CustomTooltip vacanciesUnit={t.jobsMarket?.vacanciesUnit || 'vacancies'} />} cursor={{ fill: '#F8FAFC', radius: 8 }} />
                 <Legend 
                   verticalAlign="top" 
                   height={36} 
@@ -217,7 +217,7 @@ const JobMarketChart = ({ predictions, selectedDomain, loading }) => {
                 />
                 <Bar 
                   dataKey="Estimasi Demand" 
-                  name={t.jobsMarket.estDemand}
+                  name={t.jobsMarket?.estDemand || 'Estimated Demand'}
                   radius={[8, 8, 0, 0]} 
                   barSize={32}
                 >
@@ -255,7 +255,7 @@ const JobMarketChart = ({ predictions, selectedDomain, loading }) => {
                 tickLine={false}
                 axisLine={false}
               />
-              <Tooltip content={<CustomTooltip vacanciesUnit={t.jobsMarket.vacanciesUnit} />} />
+              <Tooltip content={<CustomTooltip vacanciesUnit={t.jobsMarket?.vacanciesUnit || 'vacancies'} />} />
               <Legend 
                 verticalAlign="top" 
                 height={36} 
@@ -266,7 +266,7 @@ const JobMarketChart = ({ predictions, selectedDomain, loading }) => {
               <Area 
                 type="monotone" 
                 dataKey="Estimasi Demand" 
-                name={t.jobsMarket.estDemand}
+                name={t.jobsMarket?.estDemand || 'Estimated Demand'}
                 stroke="#4F46E5" 
                 strokeWidth={3} 
                 fillOpacity={1} 

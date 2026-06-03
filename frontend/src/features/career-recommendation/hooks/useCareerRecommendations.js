@@ -37,8 +37,29 @@ export const useCareerRecommendations = () => {
     }
   }, [user]);
 
+  // Dynamically calculate match score for each recommendation based on course completions
+  const recommendationsWithDynamicScore = recommendations.map(rec => {
+    const roadmap = rec.learning_roadmap || rec.courses || [];
+    const total = roadmap.length;
+    if (total === 0) return rec;
+
+    const completed = roadmap.filter(c => {
+      const cId = c.id || ((c.skill || '') + '_' + (c.judul || '')).replace(/[^a-zA-Z0-9]/g, '_').toLowerCase();
+      return completedCourses.includes(cId);
+    }).length;
+    const baseScore = Number(rec.matchScore || rec.score || 0);
+    const remainingGap = 100 - baseScore;
+    const completionPct = completed / total;
+    const dynamicScore = Math.min(100, Math.round(baseScore + (remainingGap * completionPct)));
+
+    return {
+      ...rec,
+      matchScore: dynamicScore
+    };
+  });
+
   // 3. Filter recommendations based on search query, domain, and match filter
-  const filteredRecommendations = recommendations.filter(rec => {
+  const filteredRecommendations = recommendationsWithDynamicScore.filter(rec => {
     // Search query match (job title or company or skill)
     const matchesSearch = searchQuery === '' || 
       rec.job_title.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -65,10 +86,10 @@ export const useCareerRecommendations = () => {
   const sortedRecommendations = [...filteredRecommendations].sort((a, b) => b.matchScore - a.matchScore);
 
   // Find active job detail
-  const activeJob = recommendations.find(rec => rec.job_id === activeJobId) || null;
+  const activeJob = recommendationsWithDynamicScore.find(rec => rec.job_id === activeJobId) || null;
 
   // Domain categories list for filters
-  const domains = ['All', ...new Set(recommendations.map(job => job.job_domain).filter(Boolean))];
+  const domains = ['All', ...new Set(recommendationsWithDynamicScore.map(job => job.job_domain).filter(Boolean))];
 
   // Calculate overall readiness (average of top 3 recommended match scores)
   const topThreeScores = sortedRecommendations.slice(0, 3).map(r => r.matchScore);

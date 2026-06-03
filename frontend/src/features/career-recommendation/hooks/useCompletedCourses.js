@@ -1,38 +1,39 @@
-import { useState, useEffect } from 'react';
-import { careerService } from '../api/careerService';
+import { useAuth } from '../../../contexts/AuthContext';
 import { useToast } from '../../../contexts/ToastContext';
 
 export const useCompletedCourses = (userEmail) => {
-  const [completedCourses, setCompletedCourses] = useState([]);
+  const { user, updateProfile } = useAuth();
   const { success: toastSuccess, error: toastError } = useToast();
 
-  // Load completed courses on mount/email change
-  useEffect(() => {
-    const fetchCourses = async () => {
-      if (userEmail) {
-        try {
-          const list = await careerService.getCompletedCourses(userEmail);
-          setCompletedCourses(list);
-        } catch (e) {
-          console.error("Error loading completed courses", e);
-        }
-      } else {
-        setCompletedCourses([]);
-      }
-    };
-    
-    fetchCourses();
-  }, [userEmail]);
+  const completedCourses = user?.profile_data?.completed_courses || [];
 
-  // Save completed courses via service when changed
+  // Save completed courses via profile service when changed
   const toggleCourse = async (courseId) => {
-    if (!userEmail) return;
+    if (!user) return;
     
     const wasCompleted = completedCourses.includes(courseId);
+    let updated;
+    if (wasCompleted) {
+      updated = completedCourses.filter((id) => id !== courseId);
+    } else {
+      updated = [...completedCourses, courseId];
+    }
     
     try {
-      const updated = await careerService.toggleCourse(userEmail, courseId);
-      setCompletedCourses(updated);
+      const { profileService } = await import('../../profile-settings/api/profileService');
+      await profileService.updateProfile({
+        profile_data: {
+          completed_courses: updated
+        }
+      });
+      
+      // Update global context state
+      updateProfile({
+        profile_data: {
+          ...(user.profile_data || {}),
+          completed_courses: updated
+        }
+      });
       
       if (!wasCompleted) {
         toastSuccess('Selamat! Anda telah menandai modul ini sebagai selesai.');

@@ -121,20 +121,20 @@ const JobMarketOverview = ({ predictions, selectedDomain, topDomain, generatedAt
             <Sparkles className="w-6 h-6 text-primary" />
           </div>
           <span className="text-caption text-secondary-text font-medium bg-canvas-white px-2.5 py-1 rounded-full border border-border/40">
-            {t.jobsMarket.maxEstimation}
+            {t.jobsMarket?.maxEstimation || 'Largest Estimate'}
           </span>
         </div>
         <div>
           <h4 className="text-body-sm font-semibold text-secondary-text mb-1 uppercase tracking-wider">
-            {selectedDomain === 'all' ? t.jobsMarket.topTrending : t.jobsMarket.lastMonthEstimation}
+            {selectedDomain === 'all' ? (t.jobsMarket?.topTrending || 'Top Trending') : (t.jobsMarket?.lastMonthEstimation || 'Last Month Estimation')}
           </h4>
           <h2 className="text-title font-bold text-primary-text mb-2 truncate">
             {stats.topDemandDomain}
           </h2>
           <p className="text-caption font-medium text-secondary-text flex items-center gap-1.5 flex-wrap">
             <TrendingUp className="w-3.5 h-3.5 text-emerald-500" />
-            <span className="text-emerald-600 font-bold">{t.jobsMarket.activeVacancies(stats.topDemandValue)}</span>
-            <span>{t.jobsMarket.jobEstimateSuffix}</span>
+            <span className="text-emerald-600 font-bold">{typeof t.jobsMarket?.activeVacancies === 'function' ? t.jobsMarket.activeVacancies(stats.topDemandValue) : `${stats.topDemandValue} vacancies`}</span>
+            <span>{t.jobsMarket?.jobEstimateSuffix || 'estimated job demands.'}</span>
           </p>
         </div>
       </motion.div>
@@ -149,18 +149,18 @@ const JobMarketOverview = ({ predictions, selectedDomain, topDomain, generatedAt
             <BarChart2 className="w-6 h-6 text-emerald-600" />
           </div>
           <span className="text-caption text-emerald-700 font-semibold bg-emerald-50/60 px-2.5 py-1 rounded-full border border-emerald-100">
-            {t.jobsMarket.positivePrediction}
+            {t.jobsMarket?.positivePrediction || 'Positive Prediction'}
           </span>
         </div>
         <div>
           <h4 className="text-body-sm font-semibold text-secondary-text mb-1 uppercase tracking-wider">
-            {selectedDomain === 'all' ? t.jobsMarket.averageGrowth : t.jobsMarket.growthTitle(predictions.length)}
+            {selectedDomain === 'all' ? (t.jobsMarket?.averageGrowth || 'Average Growth') : (typeof t.jobsMarket?.growthTitle === 'function' ? t.jobsMarket.growthTitle(predictions.length) : `Growth (${predictions.length} Months)`)}
           </h4>
           <h2 className="text-title font-bold text-primary-text mb-2">
             {stats.averageGrowth}
           </h2>
           <p className="text-caption font-medium text-secondary-text flex items-center gap-1">
-            {t.jobsMarket.growthFooter}
+            {t.jobsMarket?.growthFooter || 'Projections show an upward accumulating trend.'}
           </p>
         </div>
       </motion.div>
@@ -175,12 +175,12 @@ const JobMarketOverview = ({ predictions, selectedDomain, topDomain, generatedAt
             <CalendarDays className="w-6 h-6 text-slate-600" />
           </div>
           <span className="text-caption text-secondary-text font-medium bg-canvas-white px-2.5 py-1 rounded-full border border-border/40">
-            {t.jobsMarket.dataSource}
+            {t.jobsMarket?.dataSource || 'AI Data Source'}
           </span>
         </div>
         <div>
           <h4 className="text-body-sm font-semibold text-secondary-text mb-1 uppercase tracking-wider">
-            {t.jobsMarket.lastUpdated}
+            {t.jobsMarket?.lastUpdated || 'Last Updated'}
           </h4>
           <h2 className="text-body font-bold text-primary-text mb-2 line-clamp-1">
             {formattedDate(generatedAt)}
@@ -189,8 +189,8 @@ const JobMarketOverview = ({ predictions, selectedDomain, topDomain, generatedAt
             <Info className="w-3.5 h-3.5 text-indigo-500 shrink-0" />
             <span>
               {isSimulated 
-                ? t.jobsMarket.simulatedDataDesc
-                : t.jobsMarket.realtimeDataDesc}
+                ? (t.jobsMarket?.simulatedDataDesc || 'Simulated Mode')
+                : (t.jobsMarket?.realtimeDataDesc || 'Realtime Mode')}
             </span>
           </div>
         </div>

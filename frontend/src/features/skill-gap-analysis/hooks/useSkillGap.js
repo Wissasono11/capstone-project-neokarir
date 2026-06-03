@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useCareerRecommendations } from '../../career-recommendation/hooks/useCareerRecommendations';
 import { useSkillGapMetrics } from './useSkillGapMetrics';
 import { useSkillGapRecommendations } from './useSkillGapRecommendations';
+import { getSkillCategory } from '../data/skillTaxonomy';
 
 export const useSkillGap = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -76,18 +77,56 @@ export const useSkillGap = () => {
   // 2. Calculate recommendations (actions, cards, path)
   const { recommendedActions: defaultActions, missingSkillCards: defaultMissingSkillCards, learningPath: defaultLearningPath } = useSkillGapRecommendations(resolvedTargetJob, ownedSkills, rawRadarData);
 
-  // 3. Transform & Override radar chart data (Support dual series: A (current) and B (required))
-  const finalRawRadarData = rawRadarData || defaultRadarData;
-  const radarData = Array.isArray(finalRawRadarData) 
-    ? finalRawRadarData.map(item => ({
-        subject: item.category || item.subject,
-        A: item.current !== undefined ? item.current : (item.A !== undefined ? item.A : 50),
-        B: item.required !== undefined ? item.required : (item.B !== undefined ? item.B : 85),
-        fullMark: 100
-      }))
-    : defaultRadarData;
+  // 3. Normalize learning path and ensure IDs are set
+  const rawLearningPath = skillGapData?.learning_roadmap || defaultLearningPath || [];
+  const learningPath = rawLearningPath.map(course => {
+    const stableId = course.id || ((course.skill || '') + '_' + (course.judul || '')).replace(/[^a-zA-Z0-9]/g, '_').toLowerCase();
+    return {
+      ...course,
+      id: stableId
+    };
+  });
 
-  // 4. Normalize recommended actions to array
+  // Helper to match courses for a radar subject
+  const getCoursesForRadarSubject = (subject, path, domainName) => {
+    const normSubject = subject.toLowerCase().trim();
+    return path.filter(course => {
+      const courseSkill = (course.skill || '').toLowerCase().trim();
+      if (courseSkill === normSubject) return true;
+      
+      const courseCategory = getSkillCategory(domainName, course.skill).toLowerCase().trim();
+      if (courseCategory === normSubject) return true;
+      
+      return false;
+    });
+  };
+
+  // 4. Transform & Override radar chart data (Support dual series: A (current) and B (required))
+  const finalRawRadarData = rawRadarData || defaultRadarData;
+  const domainName = resolvedTargetJob?.job_domain || resolvedTargetJob?.job_title || 'General';
+  const radarData = (Array.isArray(finalRawRadarData) ? finalRawRadarData : defaultRadarData).map(item => {
+    const subject = item.category || item.subject || '';
+    const baseA = item.current !== undefined ? item.current : (item.A !== undefined ? item.A : 50);
+    const B = item.required !== undefined ? item.required : (item.B !== undefined ? item.B : 85);
+    
+    // Scale A based on completed courses matching this subject/category
+    const matchingCourses = getCoursesForRadarSubject(subject, learningPath, domainName);
+    let A = baseA;
+    if (matchingCourses.length > 0) {
+      const completed = matchingCourses.filter(c => completedCourses.includes(c.id)).length;
+      const remaining = 100 - baseA;
+      A = Math.min(100, Math.round(baseA + (remaining * (completed / matchingCourses.length))));
+    }
+    
+    return {
+      subject,
+      A,
+      B,
+      fullMark: 100
+    };
+  });
+
+  // 5. Normalize recommended actions to array
   const rawActions = skillGapData?.analysis_result?.recommended_actions || defaultActions;
   const normalizeActions = (actionsInput) => {
     if (!actionsInput) return [];
@@ -120,7 +159,8 @@ export const useSkillGap = () => {
   };
   const recommendedActions = normalizeActions(rawActions);
     
-  const heroData = skillGapData?.analysis_result ? {
+  // 6. Calculate Dynamic Hero Data
+  const baseHeroData = skillGapData?.analysis_result ? {
     overallReadiness: skillGapData.analysis_result.readiness_score || skillGapData.match_score || 0,
     targetRole: skillGapData.analysis_result.target_role || skillGapData.target_role,
     targetDomain: skillGapData.analysis_result.target_domain || skillGapData.target_domain,
@@ -140,7 +180,43 @@ export const useSkillGap = () => {
     readinessLevel: skillGapData.analysis_result.readiness_level || 'Perlu Persiapan'
   } : defaultHeroData;
 
-  const skillBreakdown = skillGapData?.analysis_result?.skill_breakdown || defaultSkillBreakdown;
+  const baseScore = baseHeroData?.overallReadiness || 0;
+  const remainingGap = 100 - baseScore;
+  const completedCoursesCount = learningPath.filter(c => completedCourses.includes(c.id)).length;
+  const dynamicReadinessScore = learningPath.length > 0 
+    ? Math.min(100, Math.round(baseScore + (remainingGap * (completedCoursesCount / learningPath.length))))
+    : baseScore;
+
+  const heroData = baseHeroData ? {
+    ...baseHeroData,
+    overallReadiness: dynamicReadinessScore,
+    readinessLevel: dynamicReadinessScore >= 90 ? "Siap Kerja" : dynamicReadinessScore >= 70 ? "Hampir Siap" : "Perlu Persiapan"
+  } : null;
+
+  // 7. Calculate Dynamic Skill Breakdown
+  const rawSkillBreakdown = skillGapData?.analysis_result?.skill_breakdown || defaultSkillBreakdown || [];
+  const skillBreakdown = rawSkillBreakdown.map(item => {
+    const skillName = item.skill || item.name || '';
+    const baseCurrent = item.current !== undefined ? item.current : 50;
+    const required = item.required !== undefined ? item.required : 85;
+    
+    const matchingCourses = learningPath.filter(course => (course.skill || '').toLowerCase().trim() === skillName.toLowerCase().trim());
+    let current = baseCurrent;
+    if (matchingCourses.length > 0) {
+      const completed = matchingCourses.filter(c => completedCourses.includes(c.id)).length;
+      const remaining = 100 - baseCurrent;
+      current = Math.min(100, Math.round(baseCurrent + (remaining * (completed / matchingCourses.length))));
+    }
+    
+    const gap = current - required;
+    return {
+      skill: skillName,
+      current,
+      required,
+      gap,
+      trend: gap >= 0 ? "up" : "down"
+    };
+  });
 
   const missingSkillCards = skillGapData?.analysis_result?.detailed_skills_to_learn
     ? skillGapData.analysis_result.detailed_skills_to_learn.map(item => ({
@@ -154,9 +230,6 @@ export const useSkillGap = () => {
         waktuBelajar: item.waktuBelajar || '4 - 6 Minggu'
       }))
     : defaultMissingSkillCards;
-
-  // 5. Use learning path from AI-2 (via backend) with fallback to default recommendation learning path
-  const learningPath = skillGapData?.learning_roadmap || defaultLearningPath;
 
   const isOverallLoading = isLoading || isRecommendationsLoading;
 
