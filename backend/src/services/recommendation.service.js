@@ -19,15 +19,14 @@ const generate = async (userId, accessToken) => {
 		throw err;
 	}
 
-	const ownedSkills = profile.profile_data?.owned_skills || 
-		(profile.skills_summary ? profile.skills_summary.split(',').map(s => s.trim()).filter(Boolean) : []);
+	const ownedSkills = await getEffectiveOwnedSkills(profile, accessToken);
 	
 	const userExperience = profile.profile_data?.user_experience || 'Belum ada pengalaman';
 	const userEducation = profile.profile_data?.user_education || 'Tidak Disebutkan';
 
 	const payload = {
-		target_domain: profile.target_domain || '',
-		target_role: profile.target_role || '',
+		target_domain: profile.target_domain || profile.profile_data?.target_domain || '',
+		target_role: profile.target_role || profile.profile_data?.target_role || '',
 		owned_skills: ownedSkills,
 		user_experience: userExperience,
 		user_education: userEducation,
@@ -112,7 +111,7 @@ const getRoadmap = async (jobId) => {
 			if (Array.isArray(level.items)) {
 				level.items.forEach((item, idx) => {
 					flatCourses.push({
-						id: `${level.level_key}-${idx}`,
+						id: `${jobId}-${level.level_key}-${idx}`,
 						skill: item.skill,
 						judul: item.judul_materi,
 						platform: item.provider,
@@ -129,8 +128,49 @@ const getRoadmap = async (jobId) => {
 	return { courses: flatCourses, raw_roadmap: aiResult.data };
 };
 
+const getEffectiveOwnedSkills = async (profile, accessToken) => {
+	const ownedSkills = profile.profile_data?.owned_skills || 
+		(profile.skills_summary ? profile.skills_summary.split(',').map(s => s.trim()).filter(Boolean) : []);
+
+	const completedCourseIds = profile.profile_data?.completed_courses || [];
+	if (completedCourseIds.length === 0) {
+		return ownedSkills;
+	}
+
+	const supabase = getSupabaseClient(accessToken);
+	const { data: recommendations } = await supabase
+		.from('recommendations')
+		.select('metadata')
+		.eq('user_id', profile.user_id);
+
+	const completedSkills = [];
+	if (recommendations && recommendations.length > 0) {
+		recommendations.forEach(rec => {
+			const courses = rec.metadata?.courses || [];
+			courses.forEach(course => {
+				const cId = course.id || ((course.skill || '') + '_' + (course.judul || '')).replace(/[^a-zA-Z0-9]/g, '_').toLowerCase();
+				if (completedCourseIds.includes(cId)) {
+					completedSkills.push(course.skill);
+				}
+			});
+		});
+	}
+
+	const allOwnedSkillsSet = new Set([
+		...ownedSkills.map(s => s.toLowerCase().trim()),
+		...completedSkills.map(s => s.toLowerCase().trim())
+	]);
+
+	return Array.from(allOwnedSkillsSet).map(s => {
+		const original = ownedSkills.find(os => os.toLowerCase().trim() === s) ||
+		                 completedSkills.find(cs => cs.toLowerCase().trim() === s);
+		return original;
+	});
+};
+
 module.exports = {
 	listByUserId,
 	generate,
 	getRoadmap,
+	getEffectiveOwnedSkills,
 };
