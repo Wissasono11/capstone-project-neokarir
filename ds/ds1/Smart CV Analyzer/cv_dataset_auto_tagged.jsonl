@@ -1,0 +1,980 @@
+{"tokens": ["Data", "engineer", "yang", "berpengalaman", "dalam", "membangun", "dan", "mengelola", "pipeline", "data", "skala", "besar"], "ner_tags": ["B-ROLE", "I-ROLE", "O", "O", "O", "O", "O", "O", "O", "B-ROLE", "O", "O"]}
+{"tokens": ["bekerja", "dengan", "berbagai", "teknologi", "big", "data", "untuk", "memproses", "data", "streaming", "dan", "batch"], "ner_tags": ["O", "O", "O", "O", "O", "B-ROLE", "O", "O", "B-ROLE", "O", "O", "O"]}
+{"tokens": ["dalam", "merancang", "arsitektur", "data", "warehouse", "yang", "efisien"], "ner_tags": ["O", "O", "O", "B-ROLE", "O", "O", "O"]}
+{"tokens": ["Docker", "dbt", "Apache", "Spark", "ETL", "BigQuery", "Python", "GCP", "Kubernetes", "Redshift", "Data", "Pipeline"], "ner_tags": ["B-SKILL", "I-SKILL", "I-SKILL", "I-SKILL", "I-SKILL", "I-SKILL", "I-SKILL", "I-SKILL", "I-SKILL", "I-SKILL", "B-ROLE", "O"]}
+{"tokens": ["Data", "Engineer", "-", "Xendit"], "ner_tags": ["B-ROLE", "I-ROLE", "O", "B-COMP"]}
+{"tokens": ["Mengimplementasikan", "solusi", "keamanan", "yang", "berhasil", "mencegah", "3", "potensi", "breach", "keamanan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "dashboard", "analytics", "yang", "digunakan", "oleh", "lebih", "dari", "200", "pengguna", "internal"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengurangi", "response", "time", "API", "sebesar", "40", "%", "melalui", "optimasi", "query", "dan", "caching"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Data", "Engineer", "-", "PT", "Kredivo"], "ner_tags": ["B-ROLE", "I-ROLE", "O", "O", "B-COMP"]}
+{"tokens": ["Merancang", "sistem", "monitoring", "real", "-", "time", "yang", "memantau", "lebih", "dari", "50", "microservices"], "ner_tags": ["O", "B-EDU", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengimplementasikan", "solusi", "keamanan", "yang", "berhasil", "mencegah", "3", "potensi", "breach", "keamanan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "model", "rekomendasi", "yang", "meningkatkan", "CTR", "sebesar", "25", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Associate", "Data", "Engineer", "-", "PT", "Moladin"], "ner_tags": ["B-ROLE", "I-ROLE", "I-ROLE", "O", "O", "O"]}
+{"tokens": ["Memimpin", "migrasi", "sistem", "monolitik", "ke", "arsitektur", "microservices", "untuk", "3", "layanan", "utama"], "ner_tags": ["O", "O", "B-EDU", "O", "O", "O", "O", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Mengintegrasikan", "sistem", "pembayaran", "dengan", "4", "payment", "gateway", "berbeda"], "ner_tags": ["O", "B-EDU", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Meningkatkan", "code", "coverage", "dari", "30", "%", "menjadi", "85", "%", "dengan", "automation", "testing"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["S1", "Teknik", "Informatika", "-", "Universitas", "Telkom"], "ner_tags": ["B-EDU", "I-EDU", "I-EDU", "O", "B-EDU", "O"]}
+{"tokens": ["2020", "-", "2023", "|", "IPK", ":", "3", ".", "71"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["HashiCorp", "Terraform", "Associate"], "ner_tags": ["O", "O", "B-ROLE"]}
+{"tokens": ["Fotografi", "dan", "videografi", "Bermain", "musik", "(", "gitar", "dan", "piano", ")", "Membaca", "buku", "teknologi", "dan", "pengembangan", "diri"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Data", "engineer", "yang", "berpengalaman", "dalam", "membangun", "dan", "mengelola", "pipeline", "data", "skala", "besar"], "ner_tags": ["B-ROLE", "I-ROLE", "O", "O", "O", "O", "O", "O", "O", "B-ROLE", "O", "O"]}
+{"tokens": ["bekerja", "dengan", "berbagai", "teknologi", "big", "data", "untuk", "memproses", "data", "streaming", "dan", "batch"], "ner_tags": ["O", "O", "O", "O", "O", "B-ROLE", "O", "O", "B-ROLE", "O", "O", "O"]}
+{"tokens": ["dalam", "merancang", "arsitektur", "data", "warehouse", "yang", "efisien"], "ner_tags": ["O", "O", "O", "B-ROLE", "O", "O", "O"]}
+{"tokens": ["ETL", "Hadoop", "PostgreSQL", "GCP", "Airflow", "Apache", "Spark", "Python", "Data", "Pipeline", "BigQuery", "Apache", "Kafka"], "ner_tags": ["B-SKILL", "O", "O", "B-SKILL", "O", "B-SKILL", "I-SKILL", "I-SKILL", "B-ROLE", "O", "B-SKILL", "I-SKILL", "O"]}
+{"tokens": ["Data", "Engineer", "-", "PT", "XL", "Axiata"], "ner_tags": ["B-ROLE", "I-ROLE", "O", "O", "O", "O"]}
+{"tokens": ["Membangun", "pipeline", "CI", "/", "CD", "yang", "mengurangi", "deployment", "time", "dari", "2", "jam", "menjadi", "15", "menit"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O", "O"]}
+{"tokens": ["Mempercepat", "training", "model", "ML", "sebesar", "60", "%", "dengan", "optimasi", "GPU", "pipeline"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengimplementasikan", "solusi", "keamanan", "yang", "berhasil", "mencegah", "3", "potensi", "breach", "keamanan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Junior", "Data", "Engineer", "-", "Akulaku"], "ner_tags": ["O", "B-ROLE", "I-ROLE", "O", "O"]}
+{"tokens": ["Membangun", "fitur", "checkout", "yang", "meningkatkan", "konversi", "sebesar", "18", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mempercepat", "training", "model", "ML", "sebesar", "60", "%", "dengan", "optimasi", "GPU", "pipeline"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "model", "rekomendasi", "yang", "meningkatkan", "CTR", "sebesar", "25", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Data", "Engineer", "Intern", "-", "Amartha"], "ner_tags": ["B-ROLE", "I-ROLE", "I-ROLE", "O", "O"]}
+{"tokens": ["Mengembangkan", "model", "rekomendasi", "yang", "meningkatkan", "CTR", "sebesar", "25", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Berkontribusi", "pada", "open", "-", "source", "project", "dengan", "lebih", "dari", "200", "GitHub", "stars"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Meningkatkan", "code", "coverage", "dari", "30", "%", "menjadi", "85", "%", "dengan", "automation", "testing"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["S1", "Teknik", "Komputer", "-", "Institut", "Teknologi", "Bandung"], "ner_tags": ["B-EDU", "I-EDU", "O", "O", "B-EDU", "O", "O"]}
+{"tokens": ["2013", "-", "2017", "|", "IPK", ":", "3", ".", "34"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Scrum", "Master", "Certified", "(", "SMC", ")"], "ner_tags": ["O", "O", "B-CERT", "O", "O", "O"]}
+{"tokens": ["Meta", "Frontend", "Developer", "Certificate"], "ner_tags": ["O", "O", "B-ROLE", "O"]}
+{"tokens": ["Fotografi", "dan", "videografi", "Membaca", "buku", "teknologi", "dan", "pengembangan", "diri", "Menulis", "artikel", "teknis", "di", "Medium"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Data", "scientist", "dengan", "keahlian", "dalam", "mengolah", "data", "berskala", "besar", "dan", "membangun", "model", "prediktif"], "ner_tags": ["B-ROLE", "I-ROLE", "O", "O", "O", "O", "B-ROLE", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Berpengalaman", "dalam", "seluruh", "siklus", "data", "science", "mulai", "dari", "eksplorasi", "data", "hingga", "deployment", "model"], "ner_tags": ["O", "O", "O", "O", "B-ROLE", "O", "O", "O", "O", "B-ROLE", "O", "O", "O"]}
+{"tokens": ["mengkomunikasikan", "insight", "data", "kepada", "stakeholder", "non", "-", "teknis"], "ner_tags": ["O", "O", "B-ROLE", "O", "O", "O", "O", "O"]}
+{"tokens": ["Tableau", "NumPy", "Pandas", "Computer", "Vision", "NLP", "Machine", "Learning", "TensorFlow", "SQL", "R", "PyTorch"], "ner_tags": ["B-SKILL", "I-SKILL", "O", "O", "O", "B-SKILL", "I-SKILL", "I-SKILL", "I-SKILL", "I-SKILL", "O", "B-SKILL"]}
+{"tokens": ["Data", "Scientist", "-", "PT", "Bukalapak"], "ner_tags": ["B-ROLE", "I-ROLE", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "dashboard", "analytics", "yang", "digunakan", "oleh", "lebih", "dari", "200", "pengguna", "internal"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengurangi", "response", "time", "API", "sebesar", "40", "%", "melalui", "optimasi", "query", "dan", "caching"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Memimpin", "migrasi", "sistem", "monolitik", "ke", "arsitektur", "microservices", "untuk", "3", "layanan", "utama"], "ner_tags": ["O", "O", "B-EDU", "O", "O", "O", "O", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Data", "Scientist", "Intern", "-", "SeaBank"], "ner_tags": ["B-ROLE", "I-ROLE", "I-ROLE", "O", "O"]}
+{"tokens": ["Mengembangkan", "dashboard", "analytics", "yang", "digunakan", "oleh", "lebih", "dari", "200", "pengguna", "internal"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mempercepat", "training", "model", "ML", "sebesar", "60", "%", "dengan", "optimasi", "GPU", "pipeline"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Meningkatkan", "code", "coverage", "dari", "30", "%", "menjadi", "85", "%", "dengan", "automation", "testing"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["S1", "Rekayasa", "Perangkat", "Lunak", "-", "Universitas", "Telkom"], "ner_tags": ["B-EDU", "O", "O", "O", "O", "B-EDU", "O"]}
+{"tokens": ["2018", "-", "2022", "|", "IPK", ":", "3", ".", "41"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Microsoft", "Certified", "Azure", "Developer"], "ner_tags": ["O", "B-CERT", "O", "B-ROLE"]}
+{"tokens": ["Dicoding", "-", "Belajar", "Machine", "Learning", "untuk", "Pemula"], "ner_tags": ["B-CERT", "O", "O", "B-SKILL", "I-SKILL", "O", "O"]}
+{"tokens": ["Mengajar", "coding", "kepada", "anak", "-", "anak", "sekolah", "Mengikuti", "meetup", "dan", "komunitas", "teknologi", "lokal", "Bermain", "musik", "(", "gitar"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Data", "engineer", "yang", "berpengalaman", "dalam", "membangun", "dan", "mengelola", "pipeline", "data", "skala", "besar"], "ner_tags": ["B-ROLE", "I-ROLE", "O", "O", "O", "O", "O", "O", "O", "B-ROLE", "O", "O"]}
+{"tokens": ["bekerja", "dengan", "berbagai", "teknologi", "big", "data", "untuk", "memproses", "data", "streaming", "dan", "batch"], "ner_tags": ["O", "O", "O", "O", "O", "B-ROLE", "O", "O", "B-ROLE", "O", "O", "O"]}
+{"tokens": ["dalam", "merancang", "arsitektur", "data", "warehouse", "yang", "efisien"], "ner_tags": ["O", "O", "O", "B-ROLE", "O", "O", "O"]}
+{"tokens": ["PostgreSQL", "Apache", "Spark", "SQL", "BigQuery", "Apache", "Kafka", "Redshift", "Python", "Kubernetes", "ETL", "Hadoop"], "ner_tags": ["O", "B-SKILL", "I-SKILL", "I-SKILL", "I-SKILL", "I-SKILL", "O", "B-SKILL", "I-SKILL", "I-SKILL", "I-SKILL", "O"]}
+{"tokens": ["Data", "Engineer", "-", "PT", "Gojek", "Indonesia"], "ner_tags": ["B-ROLE", "I-ROLE", "O", "O", "B-COMP", "B-EDU"]}
+{"tokens": ["Membangun", "fitur", "checkout", "yang", "meningkatkan", "konversi", "sebesar", "18", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Merancang", "sistem", "monitoring", "real", "-", "time", "yang", "memantau", "lebih", "dari", "50", "microservices"], "ner_tags": ["O", "B-EDU", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Berkontribusi", "pada", "open", "-", "source", "project", "dengan", "lebih", "dari", "200", "GitHub", "stars"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Associate", "Data", "Engineer", "-", "Traveloka"], "ner_tags": ["B-ROLE", "I-ROLE", "I-ROLE", "O", "O"]}
+{"tokens": ["Mengintegrasikan", "sistem", "pembayaran", "dengan", "4", "payment", "gateway", "berbeda"], "ner_tags": ["O", "B-EDU", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Memimpin", "tim", "5", "developer", "dalam", "menyelesaikan", "proyek", "senilai", "Rp", "2", "miliar"], "ner_tags": ["O", "O", "B-EXP", "B-ROLE", "O", "O", "O", "O", "O", "B-EXP", "O"]}
+{"tokens": ["Mengembangkan", "dashboard", "analytics", "yang", "digunakan", "oleh", "lebih", "dari", "200", "pengguna", "internal"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["S1", "Sistem", "Informasi", "-", "Universitas", "Telkom"], "ner_tags": ["B-EDU", "I-EDU", "I-EDU", "O", "B-EDU", "O"]}
+{"tokens": ["2016", "-", "2019", "|", "IPK", ":", "3", ".", "23"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Scrum", "Master", "Certified", "(", "SMC", ")"], "ner_tags": ["O", "O", "B-CERT", "O", "O", "O"]}
+{"tokens": ["AWS", "Certified", "Solutions", "Architect"], "ner_tags": ["O", "B-CERT", "O", "O"]}
+{"tokens": ["Menulis", "artikel", "teknis", "di", "Medium", "Berkontribusi", "pada", "proyek", "open", "-", "source", "Game", "development", "sebagai", "side", "project"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mobile", "Developer", "(", "Android", "/", "iOS", ")"], "ner_tags": ["O", "B-ROLE", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mobile", "developer", "yang", "berpengalaman", "dalam", "membangun", "aplikasi", "native", "dan", "cross", "-", "platform", "untuk", "Android", "dan"], "ner_tags": ["O", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Memiliki", "rekam", "jejak", "dalam", "mengembangkan", "aplikasi", "dengan", "pengguna", "aktif", "jutaan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Fokus", "pada", "performa"], "ner_tags": ["O", "O", "O"]}
+{"tokens": ["aplikasi", "dan", "pengalaman", "pengguna", "yang", "optimal"], "ner_tags": ["O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Flutter", "React", "Native", "REST", "API", "Git", "iOS", "SDK", "Dart", "SQLite", "SwiftUI", "Android", "SDK", "Play", "Store"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mobile", "Developer", "(", "Android", "/", "iOS", ")", "-", "PT", "Gojek", "Indonesia"], "ner_tags": ["O", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "B-COMP", "B-EDU"]}
+{"tokens": ["Membangun", "fitur", "checkout", "yang", "meningkatkan", "konversi", "sebesar", "18", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Meraih", "juara", "2", "Hackathon", "Nasional", "kategori", "AI", "Innovation"], "ner_tags": ["O", "O", "B-EXP", "B-CERT", "O", "O", "O", "O"]}
+{"tokens": ["Membangun", "pipeline", "CI", "/", "CD", "yang", "mengurangi", "deployment", "time", "dari", "2", "jam", "menjadi", "15", "menit"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O", "O"]}
+{"tokens": ["Junior", "Mobile", "Developer", "(", "Android", "/", "iOS", ")", "-", "PT", "Telkom", "Indonesia"], "ner_tags": ["O", "O", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "O", "B-EDU"]}
+{"tokens": ["Memimpin", "migrasi", "sistem", "monolitik", "ke", "arsitektur", "microservices", "untuk", "3", "layanan", "utama"], "ner_tags": ["O", "O", "B-EDU", "O", "O", "O", "O", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Mengurangi", "bug", "production", "sebesar", "50", "%", "melalui", "implementasi", "CI", "/", "CD", "yang", "ketat"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mempercepat", "training", "model", "ML", "sebesar", "60", "%", "dengan", "optimasi", "GPU", "pipeline"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["S1", "Teknik", "Elektro", "-", "Universitas", "Padjadjaran"], "ner_tags": ["B-EDU", "I-EDU", "O", "O", "B-EDU", "O"]}
+{"tokens": ["2019", "-", "2023", "|", "IPK", ":", "3", ".", "20"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Scrum", "Master", "Certified", "(", "SMC", ")"], "ner_tags": ["O", "O", "B-CERT", "O", "O", "O"]}
+{"tokens": ["Berkontribusi", "pada", "proyek", "open", "-", "source", "Membaca", "buku", "teknologi", "dan", "pengembangan", "diri", "Fotografi", "dan", "videografi"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["QA", "engineer", "yang", "berpengalaman", "dalam", "memastikan", "kualitas", "perangkat", "lunak", "melalui", "pendekatan", "pengujian"], "ner_tags": ["O", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Terbiasa", "membangun", "framework", "automation", "testing", "yang", "efisien"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["mendalam", "tentang", "proses", "SDLC", "dan", "metodologi", "Agile"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["CI", "/", "CD", "JIRA", "Performance", "Testing", "Agile", "REST", "API", "Manual", "Testing", "Python", "TestNG", "Selenium", "Scrum"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "B-SKILL", "O", "O", "O"]}
+{"tokens": ["QA", "Engineer", "-", "SeaBank"], "ner_tags": ["O", "B-ROLE", "O", "O"]}
+{"tokens": ["Memimpin", "migrasi", "sistem", "monolitik", "ke", "arsitektur", "microservices", "untuk", "3", "layanan", "utama"], "ner_tags": ["O", "O", "B-EDU", "O", "O", "O", "O", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Mengurangi", "response", "time", "API", "sebesar", "40", "%", "melalui", "optimasi", "query", "dan", "caching"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Meningkatkan", "code", "coverage", "dari", "30", "%", "menjadi", "85", "%", "dengan", "automation", "testing"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Junior", "QA", "Engineer", "-", "PT", "Indosat", "Ooredoo"], "ner_tags": ["O", "O", "B-ROLE", "O", "O", "O", "O"]}
+{"tokens": ["Membangun", "pipeline", "CI", "/", "CD", "yang", "mengurangi", "deployment", "time", "dari", "2", "jam", "menjadi", "15", "menit"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O", "O"]}
+{"tokens": ["Mengintegrasikan", "sistem", "pembayaran", "dengan", "4", "payment", "gateway", "berbeda"], "ner_tags": ["O", "B-EDU", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Memimpin", "tim", "5", "developer", "dalam", "menyelesaikan", "proyek", "senilai", "Rp", "2", "miliar"], "ner_tags": ["O", "O", "B-EXP", "B-ROLE", "O", "O", "O", "O", "O", "B-EXP", "O"]}
+{"tokens": ["S1", "Data", "Science", "-", "Universitas", "Mercu", "Buana"], "ner_tags": ["B-EDU", "B-ROLE", "O", "O", "B-EDU", "O", "O"]}
+{"tokens": ["2017", "-", "2021", "|", "IPK", ":", "3", ".", "45"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Dicoding", "-", "Belajar", "Machine", "Learning", "untuk", "Pemula"], "ner_tags": ["B-CERT", "O", "O", "B-SKILL", "I-SKILL", "O", "O"]}
+{"tokens": ["Microsoft", "Certified", "Azure", "Developer"], "ner_tags": ["O", "B-CERT", "O", "B-ROLE"]}
+{"tokens": ["Mengikuti", "kompetisi", "competitive", "programming", "Bermain", "musik", "(", "gitar", "dan", "piano", ")", "Mengikuti", "meetup", "dan", "komunitas"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Frontend", "developer", "yang", "passionate", "dalam", "membangun", "antarmuka", "pengguna", "yang", "responsif", "dan", "intuitif"], "ner_tags": ["O", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Berpengalaman", "dalam", "mengembangkan", "aplikasi", "web", "modern", "menggunakan", "framework", "JavaScript", "terkini"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Memiliki", "kepedulian", "tinggi", "terhadap", "performa", "dan", "pengalaman", "pengguna"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["REST", "API", "Git", "TypeScript", "Angular", "CSS", "Tailwind", "Next", ".", "js", "Figma", "Webpack", "Redux"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Frontend", "Developer", "-", "PT", "Pertamina"], "ner_tags": ["O", "B-ROLE", "O", "O", "O"]}
+{"tokens": ["Mengurangi", "bug", "production", "sebesar", "50", "%", "melalui", "implementasi", "CI", "/", "CD", "yang", "ketat"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengintegrasikan", "sistem", "pembayaran", "dengan", "4", "payment", "gateway", "berbeda"], "ner_tags": ["O", "B-EDU", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "dashboard", "analytics", "yang", "digunakan", "oleh", "lebih", "dari", "200", "pengguna", "internal"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Frontend", "Developer", "-", "Akulaku"], "ner_tags": ["O", "B-ROLE", "O", "O"]}
+{"tokens": ["Mengembangkan", "model", "rekomendasi", "yang", "meningkatkan", "CTR", "sebesar", "25", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Membangun", "pipeline", "CI", "/", "CD", "yang", "mengurangi", "deployment", "time", "dari", "2", "jam", "menjadi", "15", "menit"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O", "O"]}
+{"tokens": ["Mengimplementasikan", "solusi", "keamanan", "yang", "berhasil", "mencegah", "3", "potensi", "breach", "keamanan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Junior", "Frontend", "Developer", "-", "PT", "Tokopedia"], "ner_tags": ["O", "O", "B-ROLE", "O", "O", "B-COMP"]}
+{"tokens": ["Mengurangi", "bug", "production", "sebesar", "50", "%", "melalui", "implementasi", "CI", "/", "CD", "yang", "ketat"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Merancang", "sistem", "monitoring", "real", "-", "time", "yang", "memantau", "lebih", "dari", "50", "microservices"], "ner_tags": ["O", "B-EDU", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengurangi", "response", "time", "API", "sebesar", "40", "%", "melalui", "optimasi", "query", "dan", "caching"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["S1", "Ilmu", "Komputer", "-", "Universitas", "Indonesia"], "ner_tags": ["B-EDU", "O", "O", "O", "B-EDU", "I-EDU"]}
+{"tokens": ["2018", "-", "2021", "|", "IPK", ":", "3", ".", "94"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Coursera", "-", "Deep", "Learning", "Specialization"], "ner_tags": ["B-CERT", "O", "O", "B-SKILL", "O"]}
+{"tokens": ["Game", "development", "sebagai", "side", "project", "Mengajar", "coding", "kepada", "anak", "-", "anak", "sekolah", "Mengikuti", "kompetisi", "competitive"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Cloud", "engineer", "dengan", "spesialisasi", "dalam", "perancangan", "dan", "pengelolaan", "infrastruktur", "cloud", "yang", "skalabel"], "ner_tags": ["B-CERT", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "B-CERT", "O", "O"]}
+{"tokens": ["Berpengalaman", "dalam", "migrasi", "sistem", "on", "-", "premise", "ke", "cloud", "dan", "optimasi", "biaya", "infrastruktur"], "ner_tags": ["O", "O", "O", "B-EDU", "O", "O", "O", "O", "B-CERT", "O", "O", "O", "O"]}
+{"tokens": ["cloud", "dari", "AWS", "dan", "Google", "Cloud", "Platform"], "ner_tags": ["B-CERT", "O", "O", "O", "B-CERT", "I-CERT", "O"]}
+{"tokens": ["Azure", "VPC", "Terraform", "RDS", "S3", "AWS", "Load", "Balancer", "Linux", "Docker", "Kubernetes"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "B-SKILL", "I-SKILL"]}
+{"tokens": ["Cloud", "Engineer", "-", "Astra", "International"], "ner_tags": ["B-CERT", "B-ROLE", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "model", "rekomendasi", "yang", "meningkatkan", "CTR", "sebesar", "25", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mempercepat", "training", "model", "ML", "sebesar", "60", "%", "dengan", "optimasi", "GPU", "pipeline"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Memimpin", "tim", "5", "developer", "dalam", "menyelesaikan", "proyek", "senilai", "Rp", "2", "miliar"], "ner_tags": ["O", "O", "B-EXP", "B-ROLE", "O", "O", "O", "O", "O", "B-EXP", "O"]}
+{"tokens": ["Associate", "Cloud", "Engineer", "-", "Blibli", ".", "com"], "ner_tags": ["B-ROLE", "B-CERT", "B-ROLE", "O", "O", "O", "O"]}
+{"tokens": ["Mengintegrasikan", "sistem", "pembayaran", "dengan", "4", "payment", "gateway", "berbeda"], "ner_tags": ["O", "B-EDU", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "dashboard", "analytics", "yang", "digunakan", "oleh", "lebih", "dari", "200", "pengguna", "internal"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Memimpin", "migrasi", "sistem", "monolitik", "ke", "arsitektur", "microservices", "untuk", "3", "layanan", "utama"], "ner_tags": ["O", "O", "B-EDU", "O", "O", "O", "O", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Junior", "Cloud", "Engineer", "-", "Blibli", ".", "com"], "ner_tags": ["O", "B-CERT", "B-ROLE", "O", "O", "O", "O"]}
+{"tokens": ["Memimpin", "migrasi", "sistem", "monolitik", "ke", "arsitektur", "microservices", "untuk", "3", "layanan", "utama"], "ner_tags": ["O", "O", "B-EDU", "O", "O", "O", "O", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Meraih", "juara", "2", "Hackathon", "Nasional", "kategori", "AI", "Innovation"], "ner_tags": ["O", "O", "B-EXP", "B-CERT", "O", "O", "O", "O"]}
+{"tokens": ["Membangun", "pipeline", "CI", "/", "CD", "yang", "mengurangi", "deployment", "time", "dari", "2", "jam", "menjadi", "15", "menit"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O", "O"]}
+{"tokens": ["S1", "Teknik", "Elektro", "-", "Universitas", "Gunadarma"], "ner_tags": ["B-EDU", "I-EDU", "O", "O", "B-EDU", "O"]}
+{"tokens": ["2016", "-", "2019", "|", "IPK", ":", "3", ".", "67"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["PMP", "-", "Project", "Management", "Professional"], "ner_tags": ["O", "O", "O", "O", "O"]}
+{"tokens": ["Microsoft", "Certified", "Azure", "Developer"], "ner_tags": ["O", "B-CERT", "O", "B-ROLE"]}
+{"tokens": ["Certified", "Ethical", "Hacker", "(", "CEH", ")"], "ner_tags": ["B-CERT", "O", "O", "O", "O", "O"]}
+{"tokens": ["Berkontribusi", "pada", "proyek", "open", "-", "source", "Menulis", "artikel", "teknis", "di", "Medium", "Fotografi", "dan", "videografi"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Data", "engineer", "yang", "berpengalaman", "dalam", "membangun", "dan", "mengelola", "pipeline", "data", "skala", "besar"], "ner_tags": ["B-ROLE", "I-ROLE", "O", "O", "O", "O", "O", "O", "O", "B-ROLE", "O", "O"]}
+{"tokens": ["bekerja", "dengan", "berbagai", "teknologi", "big", "data", "untuk", "memproses", "data", "streaming", "dan", "batch"], "ner_tags": ["O", "O", "O", "O", "O", "B-ROLE", "O", "O", "B-ROLE", "O", "O", "O"]}
+{"tokens": ["dalam", "merancang", "arsitektur", "data", "warehouse", "yang", "efisien"], "ner_tags": ["O", "O", "O", "B-ROLE", "O", "O", "O"]}
+{"tokens": ["Apache", "Spark", "Apache", "Kafka", "SQL", "GCP", "Docker", "dbt", "Hadoop", "Kubernetes", "ETL", "Redshift"], "ner_tags": ["B-SKILL", "I-SKILL", "I-SKILL", "O", "B-SKILL", "I-SKILL", "I-SKILL", "I-SKILL", "O", "B-SKILL", "I-SKILL", "I-SKILL"]}
+{"tokens": ["Data", "Engineer", "-", "SeaBank"], "ner_tags": ["B-ROLE", "I-ROLE", "O", "O"]}
+{"tokens": ["Meningkatkan", "code", "coverage", "dari", "30", "%", "menjadi", "85", "%", "dengan", "automation", "testing"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Memimpin", "tim", "5", "developer", "dalam", "menyelesaikan", "proyek", "senilai", "Rp", "2", "miliar"], "ner_tags": ["O", "O", "B-EXP", "B-ROLE", "O", "O", "O", "O", "O", "B-EXP", "O"]}
+{"tokens": ["Mengimplementasikan", "solusi", "keamanan", "yang", "berhasil", "mencegah", "3", "potensi", "breach", "keamanan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Associate", "Data", "Engineer", "-", "PT", "Gojek", "Indonesia"], "ner_tags": ["B-ROLE", "I-ROLE", "I-ROLE", "O", "O", "B-COMP", "B-EDU"]}
+{"tokens": ["Mengembangkan", "dashboard", "analytics", "yang", "digunakan", "oleh", "lebih", "dari", "200", "pengguna", "internal"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "model", "rekomendasi", "yang", "meningkatkan", "CTR", "sebesar", "25", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mempercepat", "training", "model", "ML", "sebesar", "60", "%", "dengan", "optimasi", "GPU", "pipeline"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Data", "Engineer", "-", "Dana", "Indonesia"], "ner_tags": ["B-ROLE", "I-ROLE", "O", "O", "B-EDU"]}
+{"tokens": ["Meraih", "juara", "2", "Hackathon", "Nasional", "kategori", "AI", "Innovation"], "ner_tags": ["O", "O", "B-EXP", "B-CERT", "O", "O", "O", "O"]}
+{"tokens": ["Mengurangi", "bug", "production", "sebesar", "50", "%", "melalui", "implementasi", "CI", "/", "CD", "yang", "ketat"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Meningkatkan", "code", "coverage", "dari", "30", "%", "menjadi", "85", "%", "dengan", "automation", "testing"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["S1", "Teknik", "Elektro", "-", "Institut", "Teknologi", "Sepuluh", "Nopember"], "ner_tags": ["B-EDU", "I-EDU", "O", "O", "B-EDU", "O", "O", "O"]}
+{"tokens": ["2015", "-", "2019", "|", "IPK", ":", "3", ".", "53"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["AWS", "Certified", "Solutions", "Architect"], "ner_tags": ["O", "B-CERT", "O", "O"]}
+{"tokens": ["Google", "Cloud", "Professional", "Data", "Engineer"], "ner_tags": ["B-CERT", "I-CERT", "O", "B-ROLE", "I-ROLE"]}
+{"tokens": ["Dicoding", "-", "Belajar", "Machine", "Learning", "untuk", "Pemula"], "ner_tags": ["B-CERT", "O", "O", "B-SKILL", "I-SKILL", "O", "O"]}
+{"tokens": ["Mengikuti", "kompetisi", "competitive", "programming", "Game", "development", "sebagai", "side", "project", "Membaca", "buku", "teknologi", "dan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["DevOps", "engineer", "yang", "berpengalaman", "dalam", "otomasi", "infrastruktur", "dan", "pengelolaan", "platform", "cloud"], "ner_tags": ["O", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "O", "B-CERT"]}
+{"tokens": ["membangun", "pipeline", "CI", "/", "CD", "yang", "efisien", "dan", "reliable"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Memiliki", "pemahaman", "kuat", "tentang", "keamanan", "infrastruktur"], "ner_tags": ["O", "O", "O", "O", "O", "O"]}
+{"tokens": ["dan", "monitoring", "sistem", "skala", "enterprise"], "ner_tags": ["O", "O", "B-EDU", "O", "O"]}
+{"tokens": ["Git", "Prometheus", "AWS", "Terraform", "Docker", "Python", "GCP", "Bash", "Ansible", "Kubernetes"], "ner_tags": ["O", "O", "O", "O", "B-SKILL", "I-SKILL", "I-SKILL", "O", "O", "B-SKILL"]}
+{"tokens": ["DevOps", "Engineer", "-", "Dana", "Indonesia"], "ner_tags": ["O", "B-ROLE", "O", "O", "B-EDU"]}
+{"tokens": ["Mengurangi", "bug", "production", "sebesar", "50", "%", "melalui", "implementasi", "CI", "/", "CD", "yang", "ketat"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Merancang", "sistem", "monitoring", "real", "-", "time", "yang", "memantau", "lebih", "dari", "50", "microservices"], "ner_tags": ["O", "B-EDU", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "dashboard", "analytics", "yang", "digunakan", "oleh", "lebih", "dari", "200", "pengguna", "internal"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["DevOps", "Engineer", "Intern", "-", "Sayurbox"], "ner_tags": ["O", "B-ROLE", "I-ROLE", "O", "O"]}
+{"tokens": ["Mengimplementasikan", "solusi", "keamanan", "yang", "berhasil", "mencegah", "3", "potensi", "breach", "keamanan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "model", "rekomendasi", "yang", "meningkatkan", "CTR", "sebesar", "25", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "dashboard", "analytics", "yang", "digunakan", "oleh", "lebih", "dari", "200", "pengguna", "internal"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["S1", "Ilmu", "Komputer", "-", "Universitas", "Padjadjaran"], "ner_tags": ["B-EDU", "O", "O", "O", "B-EDU", "O"]}
+{"tokens": ["2015", "-", "2018", "|", "IPK", ":", "3", ".", "93"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Certified", "Kubernetes", "Administrator", "(", "CKA", ")"], "ner_tags": ["B-CERT", "B-SKILL", "O", "O", "O", "O"]}
+{"tokens": ["ISTQB", "Certified", "Tester"], "ner_tags": ["O", "B-CERT", "O"]}
+{"tokens": ["Membaca", "buku", "teknologi", "dan", "pengembangan", "diri", "Mengikuti", "meetup", "dan", "komunitas", "teknologi", "lokal", "Menulis", "artikel"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["teknis", "di", "Medium"], "ner_tags": ["O", "O", "O"]}
+{"tokens": ["Data", "engineer", "yang", "berpengalaman", "dalam", "membangun", "dan", "mengelola", "pipeline", "data", "skala", "besar"], "ner_tags": ["B-ROLE", "I-ROLE", "O", "O", "O", "O", "O", "O", "O", "B-ROLE", "O", "O"]}
+{"tokens": ["bekerja", "dengan", "berbagai", "teknologi", "big", "data", "untuk", "memproses", "data", "streaming", "dan", "batch"], "ner_tags": ["O", "O", "O", "O", "O", "B-ROLE", "O", "O", "B-ROLE", "O", "O", "O"]}
+{"tokens": ["dalam", "merancang", "arsitektur", "data", "warehouse", "yang", "efisien"], "ner_tags": ["O", "O", "O", "B-ROLE", "O", "O", "O"]}
+{"tokens": ["Airflow", "BigQuery", "PostgreSQL", "SQL", "Apache", "Spark", "Docker", "Kubernetes", "Hadoop", "dbt", "ETL"], "ner_tags": ["O", "B-SKILL", "O", "B-SKILL", "I-SKILL", "I-SKILL", "I-SKILL", "I-SKILL", "O", "B-SKILL", "I-SKILL"]}
+{"tokens": ["Data", "Engineer", "-", "Flip", ".", "id"], "ner_tags": ["B-ROLE", "I-ROLE", "O", "O", "O", "O"]}
+{"tokens": ["Meningkatkan", "code", "coverage", "dari", "30", "%", "menjadi", "85", "%", "dengan", "automation", "testing"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Merancang", "sistem", "monitoring", "real", "-", "time", "yang", "memantau", "lebih", "dari", "50", "microservices"], "ner_tags": ["O", "B-EDU", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengurangi", "bug", "production", "sebesar", "50", "%", "melalui", "implementasi", "CI", "/", "CD", "yang", "ketat"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Junior", "Data", "Engineer", "-", "PT", "Pertamina"], "ner_tags": ["O", "B-ROLE", "I-ROLE", "O", "O", "O"]}
+{"tokens": ["Meningkatkan", "code", "coverage", "dari", "30", "%", "menjadi", "85", "%", "dengan", "automation", "testing"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Membangun", "fitur", "checkout", "yang", "meningkatkan", "konversi", "sebesar", "18", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Membangun", "pipeline", "CI", "/", "CD", "yang", "mengurangi", "deployment", "time", "dari", "2", "jam", "menjadi", "15", "menit"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O", "O"]}
+{"tokens": ["Data", "Engineer", "-", "PT", "Tokopedia"], "ner_tags": ["B-ROLE", "I-ROLE", "O", "O", "B-COMP"]}
+{"tokens": ["Mengurangi", "response", "time", "API", "sebesar", "40", "%", "melalui", "optimasi", "query", "dan", "caching"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Meraih", "juara", "2", "Hackathon", "Nasional", "kategori", "AI", "Innovation"], "ner_tags": ["O", "O", "B-EXP", "B-CERT", "O", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "dashboard", "analytics", "yang", "digunakan", "oleh", "lebih", "dari", "200", "pengguna", "internal"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["S1", "Teknik", "Informatika", "-", "Universitas", "Diponegoro"], "ner_tags": ["B-EDU", "I-EDU", "I-EDU", "O", "B-EDU", "O"]}
+{"tokens": ["2013", "-", "2017", "|", "IPK", ":", "3", ".", "25"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Certified", "Ethical", "Hacker", "(", "CEH", ")"], "ner_tags": ["B-CERT", "O", "O", "O", "O", "O"]}
+{"tokens": ["Coursera", "-", "Deep", "Learning", "Specialization"], "ner_tags": ["B-CERT", "O", "O", "B-SKILL", "O"]}
+{"tokens": ["Berkontribusi", "pada", "proyek", "open", "-", "source", "Fotografi", "dan", "videografi", "Game", "development", "sebagai", "side", "project"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["DevOps", "engineer", "yang", "berpengalaman", "dalam", "otomasi", "infrastruktur", "dan", "pengelolaan", "platform", "cloud"], "ner_tags": ["O", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "O", "B-CERT"]}
+{"tokens": ["membangun", "pipeline", "CI", "/", "CD", "yang", "efisien", "dan", "reliable"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Memiliki", "pemahaman", "kuat", "tentang", "keamanan", "infrastruktur"], "ner_tags": ["O", "O", "O", "O", "O", "O"]}
+{"tokens": ["dan", "monitoring", "sistem", "skala", "enterprise"], "ner_tags": ["O", "O", "B-EDU", "O", "O"]}
+{"tokens": ["Ansible", "Bash", "Kubernetes", "CI", "/", "CD", "Azure", "Docker", "Git", "Grafana", "Terraform", "Jenkins"], "ner_tags": ["O", "O", "B-SKILL", "O", "O", "O", "O", "B-SKILL", "O", "O", "O", "O"]}
+{"tokens": ["DevOps", "Engineer", "-", "Flip", ".", "id"], "ner_tags": ["O", "B-ROLE", "O", "O", "O", "O"]}
+{"tokens": ["Mempercepat", "training", "model", "ML", "sebesar", "60", "%", "dengan", "optimasi", "GPU", "pipeline"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Merancang", "sistem", "monitoring", "real", "-", "time", "yang", "memantau", "lebih", "dari", "50", "microservices"], "ner_tags": ["O", "B-EDU", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Berkontribusi", "pada", "open", "-", "source", "project", "dengan", "lebih", "dari", "200", "GitHub", "stars"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["DevOps", "Engineer", "Intern", "-", "Blibli", ".", "com"], "ner_tags": ["O", "B-ROLE", "I-ROLE", "O", "O", "O", "O"]}
+{"tokens": ["Meraih", "juara", "2", "Hackathon", "Nasional", "kategori", "AI", "Innovation"], "ner_tags": ["O", "O", "B-EXP", "B-CERT", "O", "O", "O", "O"]}
+{"tokens": ["Berkontribusi", "pada", "open", "-", "source", "project", "dengan", "lebih", "dari", "200", "GitHub", "stars"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "dashboard", "analytics", "yang", "digunakan", "oleh", "lebih", "dari", "200", "pengguna", "internal"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["S1", "Rekayasa", "Perangkat", "Lunak", "-", "Universitas", "Gadjah", "Mada"], "ner_tags": ["B-EDU", "O", "O", "O", "O", "B-EDU", "O", "O"]}
+{"tokens": ["2018", "-", "2021", "|", "IPK", ":", "3", ".", "36"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Certified", "Ethical", "Hacker", "(", "CEH", ")"], "ner_tags": ["B-CERT", "O", "O", "O", "O", "O"]}
+{"tokens": ["Meta", "Frontend", "Developer", "Certificate"], "ner_tags": ["O", "O", "B-ROLE", "O"]}
+{"tokens": ["Google", "Cloud", "Professional", "Data", "Engineer"], "ner_tags": ["B-CERT", "I-CERT", "O", "B-ROLE", "I-ROLE"]}
+{"tokens": ["Bermain", "musik", "(", "gitar", "dan", "piano", ")", "Game", "development", "sebagai", "side", "project", "Fotografi", "dan", "videografi"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Backend", "developer", "berpengalaman", "dalam", "membangun", "layanan", "RESTful", "API", "yang", "skalabel", "dan", "handal"], "ner_tags": ["O", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["bekerja", "dalam", "lingkungan", "microservices", "dengan", "pendekatan", "cloud", "-", "native"], "ner_tags": ["O", "O", "O", "O", "O", "O", "B-CERT", "O", "O"]}
+{"tokens": ["Memiliki", "pemahaman", "mendalam"], "ner_tags": ["O", "O", "O"]}
+{"tokens": ["tentang", "optimasi", "database", "dan", "desain", "sistem", "terdistribusi"], "ner_tags": ["O", "O", "O", "O", "O", "B-EDU", "O"]}
+{"tokens": ["Python", "Node", ".", "js", "Docker", "REST", "API", "Java", "Linux", "Redis", "CI", "/", "CD", "MySQL", "Kubernetes"], "ner_tags": ["B-SKILL", "O", "O", "O", "B-SKILL", "O", "O", "O", "O", "O", "O", "O", "O", "O", "B-SKILL"]}
+{"tokens": ["Backend", "Developer", "-", "PT", "Telkom", "Indonesia"], "ner_tags": ["O", "B-ROLE", "O", "O", "O", "B-EDU"]}
+{"tokens": ["Mengembangkan", "model", "rekomendasi", "yang", "meningkatkan", "CTR", "sebesar", "25", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "dashboard", "analytics", "yang", "digunakan", "oleh", "lebih", "dari", "200", "pengguna", "internal"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengurangi", "bug", "production", "sebesar", "50", "%", "melalui", "implementasi", "CI", "/", "CD", "yang", "ketat"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Junior", "Backend", "Developer", "-", "Blibli", ".", "com"], "ner_tags": ["O", "O", "B-ROLE", "O", "O", "O", "O"]}
+{"tokens": ["Meraih", "juara", "2", "Hackathon", "Nasional", "kategori", "AI", "Innovation"], "ner_tags": ["O", "O", "B-EXP", "B-CERT", "O", "O", "O", "O"]}
+{"tokens": ["Membangun", "pipeline", "CI", "/", "CD", "yang", "mengurangi", "deployment", "time", "dari", "2", "jam", "menjadi", "15", "menit"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O", "O"]}
+{"tokens": ["Memimpin", "migrasi", "sistem", "monolitik", "ke", "arsitektur", "microservices", "untuk", "3", "layanan", "utama"], "ner_tags": ["O", "O", "B-EDU", "O", "O", "O", "O", "O", "B-EXP", "O", "O"]}
+{"tokens": ["S1", "Matematika", "Komputasi", "-", "Universitas", "Padjadjaran"], "ner_tags": ["B-EDU", "O", "O", "O", "B-EDU", "O"]}
+{"tokens": ["2018", "-", "2021", "|", "IPK", ":", "3", ".", "23"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Oracle", "Certified", "Professional", "Java"], "ner_tags": ["O", "B-CERT", "O", "O"]}
+{"tokens": ["Docker", "Certified", "Associate"], "ner_tags": ["B-SKILL", "B-CERT", "B-ROLE"]}
+{"tokens": ["Mengikuti", "meetup", "dan", "komunitas", "teknologi", "lokal", "Game", "development", "sebagai", "side", "project", "Fotografi", "dan", "videografi"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Fullstack", "developer", "dengan", "kemampuan", "mengembangkan", "aplikasi", "web", "dari", "sisi", "frontend", "hingga", "backend"], "ner_tags": ["O", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Berpengalaman", "dalam", "membangun", "produk", "digital", "yang", "scalable", "menggunakan", "teknologi", "modern"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["secara", "mandiri", "maupun", "dalam", "tim", "lintas", "fungsi"], "ner_tags": ["O", "B-COMP", "O", "O", "O", "O", "O"]}
+{"tokens": ["Tailwind", "Express", ".", "js", "GraphQL", "Next", ".", "js", "Docker", "PostgreSQL", "AWS", "CI", "/", "CD", "Git", "Node", ".", "js"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "B-SKILL", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Fullstack", "Developer", "-", "PT", "Bukalapak"], "ner_tags": ["O", "B-ROLE", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "model", "rekomendasi", "yang", "meningkatkan", "CTR", "sebesar", "25", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengintegrasikan", "sistem", "pembayaran", "dengan", "4", "payment", "gateway", "berbeda"], "ner_tags": ["O", "B-EDU", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Membangun", "pipeline", "CI", "/", "CD", "yang", "mengurangi", "deployment", "time", "dari", "2", "jam", "menjadi", "15", "menit"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O", "O"]}
+{"tokens": ["Fullstack", "Developer", "Intern", "-", "PT", "Kredivo"], "ner_tags": ["O", "B-ROLE", "I-ROLE", "O", "O", "B-COMP"]}
+{"tokens": ["Mengurangi", "bug", "production", "sebesar", "50", "%", "melalui", "implementasi", "CI", "/", "CD", "yang", "ketat"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Membangun", "pipeline", "CI", "/", "CD", "yang", "mengurangi", "deployment", "time", "dari", "2", "jam", "menjadi", "15", "menit"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O", "O"]}
+{"tokens": ["Memimpin", "migrasi", "sistem", "monolitik", "ke", "arsitektur", "microservices", "untuk", "3", "layanan", "utama"], "ner_tags": ["O", "O", "B-EDU", "O", "O", "O", "O", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Associate", "Fullstack", "Developer", "-", "PT", "Pertamina"], "ner_tags": ["B-ROLE", "O", "B-ROLE", "O", "O", "O"]}
+{"tokens": ["Meraih", "juara", "2", "Hackathon", "Nasional", "kategori", "AI", "Innovation"], "ner_tags": ["O", "O", "B-EXP", "B-CERT", "O", "O", "O", "O"]}
+{"tokens": ["Berkontribusi", "pada", "open", "-", "source", "project", "dengan", "lebih", "dari", "200", "GitHub", "stars"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Meningkatkan", "code", "coverage", "dari", "30", "%", "menjadi", "85", "%", "dengan", "automation", "testing"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["S1", "Matematika", "Komputasi", "-", "Universitas", "Brawijaya"], "ner_tags": ["B-EDU", "O", "O", "O", "B-EDU", "O"]}
+{"tokens": ["2013", "-", "2017", "|", "IPK", ":", "3", ".", "30"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Hiking", "dan", "kegiatan", "alam", "terbuka", "Mengajar", "coding", "kepada", "anak", "-", "anak", "sekolah", "Membaca", "buku", "teknologi", "dan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Cloud", "engineer", "dengan", "spesialisasi", "dalam", "perancangan", "dan", "pengelolaan", "infrastruktur", "cloud", "yang", "skalabel"], "ner_tags": ["B-CERT", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "B-CERT", "O", "O"]}
+{"tokens": ["Berpengalaman", "dalam", "migrasi", "sistem", "on", "-", "premise", "ke", "cloud", "dan", "optimasi", "biaya", "infrastruktur"], "ner_tags": ["O", "O", "O", "B-EDU", "O", "O", "O", "O", "B-CERT", "O", "O", "O", "O"]}
+{"tokens": ["cloud", "dari", "AWS", "dan", "Google", "Cloud", "Platform"], "ner_tags": ["B-CERT", "O", "O", "O", "B-CERT", "I-CERT", "O"]}
+{"tokens": ["CloudFormation", "S3", "RDS", "Load", "Balancer", "VPC", "Terraform", "Python", "IAM", "GCP", "EC2"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "B-SKILL", "O", "B-SKILL", "O"]}
+{"tokens": ["Cloud", "Engineer", "-", "Kargo", "Technologies"], "ner_tags": ["B-CERT", "B-ROLE", "O", "O", "O"]}
+{"tokens": ["Berkontribusi", "pada", "open", "-", "source", "project", "dengan", "lebih", "dari", "200", "GitHub", "stars"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "model", "rekomendasi", "yang", "meningkatkan", "CTR", "sebesar", "25", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Membangun", "fitur", "checkout", "yang", "meningkatkan", "konversi", "sebesar", "18", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Cloud", "Engineer", "-", "PT", "Gojek", "Indonesia"], "ner_tags": ["B-CERT", "B-ROLE", "O", "O", "B-COMP", "B-EDU"]}
+{"tokens": ["Membangun", "fitur", "checkout", "yang", "meningkatkan", "konversi", "sebesar", "18", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengintegrasikan", "sistem", "pembayaran", "dengan", "4", "payment", "gateway", "berbeda"], "ner_tags": ["O", "B-EDU", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Mempercepat", "training", "model", "ML", "sebesar", "60", "%", "dengan", "optimasi", "GPU", "pipeline"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Cloud", "Engineer", "-", "PT", "Bukalapak"], "ner_tags": ["B-CERT", "B-ROLE", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "model", "rekomendasi", "yang", "meningkatkan", "CTR", "sebesar", "25", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Memimpin", "tim", "5", "developer", "dalam", "menyelesaikan", "proyek", "senilai", "Rp", "2", "miliar"], "ner_tags": ["O", "O", "B-EXP", "B-ROLE", "O", "O", "O", "O", "O", "B-EXP", "O"]}
+{"tokens": ["Berkontribusi", "pada", "open", "-", "source", "project", "dengan", "lebih", "dari", "200", "GitHub", "stars"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["S1", "Teknik", "Informatika", "-", "Binus", "University"], "ner_tags": ["B-EDU", "I-EDU", "I-EDU", "O", "O", "O"]}
+{"tokens": ["2018", "-", "2022", "|", "IPK", ":", "3", ".", "67"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Google", "Cloud", "Professional", "Data", "Engineer"], "ner_tags": ["B-CERT", "I-CERT", "O", "B-ROLE", "I-ROLE"]}
+{"tokens": ["Bermain", "musik", "(", "gitar", "dan", "piano", ")", "Hiking", "dan", "kegiatan", "alam", "terbuka", "Fotografi", "dan", "videografi"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["AI", "/", "ML", "engineer", "yang", "berfokus", "pada", "pengembangan", "dan", "deployment", "solusi", "kecerdasan", "buatan", "di", "lingkungan"], "ner_tags": ["O", "O", "O", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Berpengalaman", "dalam", "fine", "-", "tuning", "model", "bahasa", "besar", "dan", "pengembangan", "pipeline", "machine", "learning"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "B-SKILL", "I-SKILL"]}
+{"tokens": ["Memiliki", "passion", "dalam", "penelitian", "dan", "penerapan", "AI", "terkini"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["LangChain", "TensorFlow", "MLflow", "Python", "Docker", "SQL", "NLP", "Keras", "FastAPI", "Kubernetes"], "ner_tags": ["O", "B-SKILL", "O", "B-SKILL", "I-SKILL", "I-SKILL", "I-SKILL", "O", "O", "B-SKILL"]}
+{"tokens": ["AI", "/", "ML", "Engineer", "-", "PT", "Telkom", "Indonesia"], "ner_tags": ["O", "O", "O", "B-ROLE", "O", "O", "O", "B-EDU"]}
+{"tokens": ["Mengembangkan", "model", "rekomendasi", "yang", "meningkatkan", "CTR", "sebesar", "25", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Berkontribusi", "pada", "open", "-", "source", "project", "dengan", "lebih", "dari", "200", "GitHub", "stars"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mempercepat", "training", "model", "ML", "sebesar", "60", "%", "dengan", "optimasi", "GPU", "pipeline"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["AI", "/", "ML", "Engineer", "Intern", "-", "Xendit"], "ner_tags": ["O", "O", "O", "B-ROLE", "I-ROLE", "O", "B-COMP"]}
+{"tokens": ["Berkontribusi", "pada", "open", "-", "source", "project", "dengan", "lebih", "dari", "200", "GitHub", "stars"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengurangi", "bug", "production", "sebesar", "50", "%", "melalui", "implementasi", "CI", "/", "CD", "yang", "ketat"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengimplementasikan", "solusi", "keamanan", "yang", "berhasil", "mencegah", "3", "potensi", "breach", "keamanan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["S1", "Teknik", "Informatika", "-", "Universitas", "Amikom", "Yogyakarta"], "ner_tags": ["B-EDU", "I-EDU", "I-EDU", "O", "B-EDU", "O", "O"]}
+{"tokens": ["2012", "-", "2015", "|", "IPK", ":", "3", ".", "27"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Certified", "Ethical", "Hacker", "(", "CEH", ")"], "ner_tags": ["B-CERT", "O", "O", "O", "O", "O"]}
+{"tokens": ["TensorFlow", "Developer", "Certificate"], "ner_tags": ["B-SKILL", "B-ROLE", "O"]}
+{"tokens": ["Mengajar", "coding", "kepada", "anak", "-", "anak", "sekolah", "Berkontribusi", "pada", "proyek", "open", "-", "source", "Mengikuti", "kompetisi", "competitive"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Frontend", "developer", "yang", "passionate", "dalam", "membangun", "antarmuka", "pengguna", "yang", "responsif", "dan", "intuitif"], "ner_tags": ["O", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Berpengalaman", "dalam", "mengembangkan", "aplikasi", "web", "modern", "menggunakan", "framework", "JavaScript", "terkini"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Memiliki", "kepedulian", "tinggi", "terhadap", "performa", "dan", "pengalaman", "pengguna"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Next", ".", "js", "Jest", "Webpack", "TypeScript", "Vue", ".", "js", "JavaScript", "Git", "React", "Angular", "REST", "API"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Frontend", "Developer", "-", "PT", "Pertamina"], "ner_tags": ["O", "B-ROLE", "O", "O", "O"]}
+{"tokens": ["Merancang", "sistem", "monitoring", "real", "-", "time", "yang", "memantau", "lebih", "dari", "50", "microservices"], "ner_tags": ["O", "B-EDU", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mempercepat", "training", "model", "ML", "sebesar", "60", "%", "dengan", "optimasi", "GPU", "pipeline"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Berkontribusi", "pada", "open", "-", "source", "project", "dengan", "lebih", "dari", "200", "GitHub", "stars"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Frontend", "Developer", "-", "OVO"], "ner_tags": ["O", "B-ROLE", "O", "O"]}
+{"tokens": ["Mengembangkan", "model", "rekomendasi", "yang", "meningkatkan", "CTR", "sebesar", "25", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengurangi", "bug", "production", "sebesar", "50", "%", "melalui", "implementasi", "CI", "/", "CD", "yang", "ketat"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Meraih", "juara", "2", "Hackathon", "Nasional", "kategori", "AI", "Innovation"], "ner_tags": ["O", "O", "B-EXP", "B-CERT", "O", "O", "O", "O"]}
+{"tokens": ["Frontend", "Developer", "-", "Grab", "Indonesia"], "ner_tags": ["O", "B-ROLE", "O", "B-COMP", "B-EDU"]}
+{"tokens": ["Berkontribusi", "pada", "open", "-", "source", "project", "dengan", "lebih", "dari", "200", "GitHub", "stars"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Meningkatkan", "code", "coverage", "dari", "30", "%", "menjadi", "85", "%", "dengan", "automation", "testing"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengurangi", "bug", "production", "sebesar", "50", "%", "melalui", "implementasi", "CI", "/", "CD", "yang", "ketat"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["S1", "Teknik", "Elektro", "-", "Universitas", "Padjadjaran"], "ner_tags": ["B-EDU", "I-EDU", "O", "O", "B-EDU", "O"]}
+{"tokens": ["2013", "-", "2017", "|", "IPK", ":", "3", ".", "11"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["PMP", "-", "Project", "Management", "Professional"], "ner_tags": ["O", "O", "O", "O", "O"]}
+{"tokens": ["Certified", "Ethical", "Hacker", "(", "CEH", ")"], "ner_tags": ["B-CERT", "O", "O", "O", "O", "O"]}
+{"tokens": ["ISTQB", "Certified", "Tester"], "ner_tags": ["O", "B-CERT", "O"]}
+{"tokens": ["Menulis", "artikel", "teknis", "di", "Medium", "Berkontribusi", "pada", "proyek", "open", "-", "source", "Bermain", "musik", "(", "gitar", "dan", "piano", ")"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["DevOps", "engineer", "yang", "berpengalaman", "dalam", "otomasi", "infrastruktur", "dan", "pengelolaan", "platform", "cloud"], "ner_tags": ["O", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "O", "B-CERT"]}
+{"tokens": ["membangun", "pipeline", "CI", "/", "CD", "yang", "efisien", "dan", "reliable"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Memiliki", "pemahaman", "kuat", "tentang", "keamanan", "infrastruktur"], "ner_tags": ["O", "O", "O", "O", "O", "O"]}
+{"tokens": ["dan", "monitoring", "sistem", "skala", "enterprise"], "ner_tags": ["O", "O", "B-EDU", "O", "O"]}
+{"tokens": ["Azure", "Jenkins", "Docker", "Terraform", "Kubernetes", "Bash", "Python", "CI", "/", "CD", "Grafana", "AWS"], "ner_tags": ["O", "O", "B-SKILL", "O", "B-SKILL", "O", "B-SKILL", "O", "O", "O", "O", "O"]}
+{"tokens": ["DevOps", "Engineer", "-", "PT", "Kredivo"], "ner_tags": ["O", "B-ROLE", "O", "O", "B-COMP"]}
+{"tokens": ["Berkontribusi", "pada", "open", "-", "source", "project", "dengan", "lebih", "dari", "200", "GitHub", "stars"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mempercepat", "training", "model", "ML", "sebesar", "60", "%", "dengan", "optimasi", "GPU", "pipeline"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengurangi", "bug", "production", "sebesar", "50", "%", "melalui", "implementasi", "CI", "/", "CD", "yang", "ketat"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Junior", "DevOps", "Engineer", "-", "Blibli", ".", "com"], "ner_tags": ["O", "O", "B-ROLE", "O", "O", "O", "O"]}
+{"tokens": ["Memimpin", "migrasi", "sistem", "monolitik", "ke", "arsitektur", "microservices", "untuk", "3", "layanan", "utama"], "ner_tags": ["O", "O", "B-EDU", "O", "O", "O", "O", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Mengimplementasikan", "solusi", "keamanan", "yang", "berhasil", "mencegah", "3", "potensi", "breach", "keamanan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Membangun", "pipeline", "CI", "/", "CD", "yang", "mengurangi", "deployment", "time", "dari", "2", "jam", "menjadi", "15", "menit"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O", "O"]}
+{"tokens": ["DevOps", "Engineer", "Intern", "-", "PT", "Kredivo"], "ner_tags": ["O", "B-ROLE", "I-ROLE", "O", "O", "B-COMP"]}
+{"tokens": ["Mengimplementasikan", "solusi", "keamanan", "yang", "berhasil", "mencegah", "3", "potensi", "breach", "keamanan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Mempercepat", "training", "model", "ML", "sebesar", "60", "%", "dengan", "optimasi", "GPU", "pipeline"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Membangun", "fitur", "checkout", "yang", "meningkatkan", "konversi", "sebesar", "18", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["S1", "Teknik", "Komputer", "-", "Universitas", "Telkom"], "ner_tags": ["B-EDU", "I-EDU", "O", "O", "B-EDU", "O"]}
+{"tokens": ["2013", "-", "2016", "|", "IPK", ":", "3", ".", "71"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Coursera", "-", "Deep", "Learning", "Specialization"], "ner_tags": ["B-CERT", "O", "O", "B-SKILL", "O"]}
+{"tokens": ["PMP", "-", "Project", "Management", "Professional"], "ner_tags": ["O", "O", "O", "O", "O"]}
+{"tokens": ["Game", "development", "sebagai", "side", "project", "Fotografi", "dan", "videografi", "Hiking", "dan", "kegiatan", "alam", "terbuka"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Data", "scientist", "dengan", "keahlian", "dalam", "mengolah", "data", "berskala", "besar", "dan", "membangun", "model", "prediktif"], "ner_tags": ["B-ROLE", "I-ROLE", "O", "O", "O", "O", "B-ROLE", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Berpengalaman", "dalam", "seluruh", "siklus", "data", "science", "mulai", "dari", "eksplorasi", "data", "hingga", "deployment", "model"], "ner_tags": ["O", "O", "O", "O", "B-ROLE", "O", "O", "O", "O", "B-ROLE", "O", "O", "O"]}
+{"tokens": ["mengkomunikasikan", "insight", "data", "kepada", "stakeholder", "non", "-", "teknis"], "ner_tags": ["O", "O", "B-ROLE", "O", "O", "O", "O", "O"]}
+{"tokens": ["R", "Power", "BI", "Deep", "Learning", "PyTorch", "Computer", "Vision", "Scikit", "-", "learn", "Machine", "Learning", "Statistics", "Tableau", "NLP"], "ner_tags": ["O", "B-SKILL", "I-SKILL", "O", "B-SKILL", "I-SKILL", "O", "O", "O", "O", "O", "B-SKILL", "I-SKILL", "O", "B-SKILL", "I-SKILL"]}
+{"tokens": ["Data", "Scientist", "-", "PT", "XL", "Axiata"], "ner_tags": ["B-ROLE", "I-ROLE", "O", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "model", "rekomendasi", "yang", "meningkatkan", "CTR", "sebesar", "25", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengimplementasikan", "solusi", "keamanan", "yang", "berhasil", "mencegah", "3", "potensi", "breach", "keamanan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Mengurangi", "response", "time", "API", "sebesar", "40", "%", "melalui", "optimasi", "query", "dan", "caching"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Data", "Scientist", "Intern", "-", "PT", "Midtrans"], "ner_tags": ["B-ROLE", "I-ROLE", "I-ROLE", "O", "O", "O"]}
+{"tokens": ["Mengimplementasikan", "solusi", "keamanan", "yang", "berhasil", "mencegah", "3", "potensi", "breach", "keamanan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Mengurangi", "response", "time", "API", "sebesar", "40", "%", "melalui", "optimasi", "query", "dan", "caching"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Memimpin", "tim", "5", "developer", "dalam", "menyelesaikan", "proyek", "senilai", "Rp", "2", "miliar"], "ner_tags": ["O", "O", "B-EXP", "B-ROLE", "O", "O", "O", "O", "O", "B-EXP", "O"]}
+{"tokens": ["S1", "Rekayasa", "Perangkat", "Lunak", "-", "Binus", "University"], "ner_tags": ["B-EDU", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["2020", "-", "2024", "|", "IPK", ":", "3", ".", "93"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["TensorFlow", "Developer", "Certificate"], "ner_tags": ["B-SKILL", "B-ROLE", "O"]}
+{"tokens": ["HashiCorp", "Terraform", "Associate"], "ner_tags": ["O", "O", "B-ROLE"]}
+{"tokens": ["Microsoft", "Certified", "Azure", "Developer"], "ner_tags": ["O", "B-CERT", "O", "B-ROLE"]}
+{"tokens": ["Mengikuti", "meetup", "dan", "komunitas", "teknologi", "lokal", "Berkontribusi", "pada", "proyek", "open", "-", "source", "Membaca", "buku", "teknologi", "dan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["AI", "/", "ML", "engineer", "yang", "berfokus", "pada", "pengembangan", "dan", "deployment", "solusi", "kecerdasan", "buatan", "di", "lingkungan"], "ner_tags": ["O", "O", "O", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Berpengalaman", "dalam", "fine", "-", "tuning", "model", "bahasa", "besar", "dan", "pengembangan", "pipeline", "machine", "learning"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "B-SKILL", "I-SKILL"]}
+{"tokens": ["Memiliki", "passion", "dalam", "penelitian", "dan", "penerapan", "AI", "terkini"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["LangChain", "MLflow", "TensorFlow", "Hugging", "Face", "Computer", "Vision", "GCP", "SQL", "Python", "Docker", "FastAPI"], "ner_tags": ["O", "O", "B-SKILL", "O", "O", "O", "O", "B-SKILL", "I-SKILL", "I-SKILL", "I-SKILL", "O"]}
+{"tokens": ["AI", "/", "ML", "Engineer", "-", "Sayurbox"], "ner_tags": ["O", "O", "O", "B-ROLE", "O", "O"]}
+{"tokens": ["Membangun", "fitur", "checkout", "yang", "meningkatkan", "konversi", "sebesar", "18", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Membangun", "pipeline", "CI", "/", "CD", "yang", "mengurangi", "deployment", "time", "dari", "2", "jam", "menjadi", "15", "menit"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "dashboard", "analytics", "yang", "digunakan", "oleh", "lebih", "dari", "200", "pengguna", "internal"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["AI", "/", "ML", "Engineer", "-", "Astra", "International"], "ner_tags": ["O", "O", "O", "B-ROLE", "O", "O", "O"]}
+{"tokens": ["Mengintegrasikan", "sistem", "pembayaran", "dengan", "4", "payment", "gateway", "berbeda"], "ner_tags": ["O", "B-EDU", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Berkontribusi", "pada", "open", "-", "source", "project", "dengan", "lebih", "dari", "200", "GitHub", "stars"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengimplementasikan", "solusi", "keamanan", "yang", "berhasil", "mencegah", "3", "potensi", "breach", "keamanan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Associate", "AI", "/", "ML", "Engineer", "-", "PT", "Pertamina"], "ner_tags": ["B-ROLE", "O", "O", "O", "B-ROLE", "O", "O", "O"]}
+{"tokens": ["Membangun", "fitur", "checkout", "yang", "meningkatkan", "konversi", "sebesar", "18", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengintegrasikan", "sistem", "pembayaran", "dengan", "4", "payment", "gateway", "berbeda"], "ner_tags": ["O", "B-EDU", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Mengurangi", "response", "time", "API", "sebesar", "40", "%", "melalui", "optimasi", "query", "dan", "caching"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["S1", "Rekayasa", "Perangkat", "Lunak", "-", "Universitas", "Amikom", "Yogyakarta"], "ner_tags": ["B-EDU", "O", "O", "O", "O", "B-EDU", "O", "O"]}
+{"tokens": ["2013", "-", "2016", "|", "IPK", ":", "3", ".", "20"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Certified", "Kubernetes", "Administrator", "(", "CKA", ")"], "ner_tags": ["B-CERT", "B-SKILL", "O", "O", "O", "O"]}
+{"tokens": ["Docker", "Certified", "Associate"], "ner_tags": ["B-SKILL", "B-CERT", "B-ROLE"]}
+{"tokens": ["Coursera", "-", "Deep", "Learning", "Specialization"], "ner_tags": ["B-CERT", "O", "O", "B-SKILL", "O"]}
+{"tokens": ["Menulis", "artikel", "teknis", "di", "Medium", "Bermain", "musik", "(", "gitar", "dan", "piano", ")", "Berkontribusi", "pada", "proyek", "open", "-", "source"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Cyber", "Security", "Engineer"], "ner_tags": ["O", "O", "B-ROLE"]}
+{"tokens": ["Cyber", "security", "engineer", "dengan", "pengalaman", "dalam", "identifikasi", "dan", "mitigasi", "ancaman", "keamanan", "siber"], "ner_tags": ["O", "O", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["melakukan", "penetration", "testing", "dan", "vulnerability", "assessment", "pada", "aplikasi", "web", "dan", "infrastruktur", "jaringan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["pemahaman", "mendalam", "tentang", "standar", "keamanan", "internasional"], "ner_tags": ["O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Wireshark", "Burp", "Suite", "Vulnerability", "Assessment", "Linux", "Penetration", "Testing", "Firewall", "Incident", "Response", "OWASP"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Cyber", "Security", "Engineer", "-", "Grab", "Indonesia"], "ner_tags": ["O", "O", "B-ROLE", "O", "B-COMP", "B-EDU"]}
+{"tokens": ["Memimpin", "tim", "5", "developer", "dalam", "menyelesaikan", "proyek", "senilai", "Rp", "2", "miliar"], "ner_tags": ["O", "O", "B-EXP", "B-ROLE", "O", "O", "O", "O", "O", "B-EXP", "O"]}
+{"tokens": ["Mengembangkan", "model", "rekomendasi", "yang", "meningkatkan", "CTR", "sebesar", "25", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Memimpin", "migrasi", "sistem", "monolitik", "ke", "arsitektur", "microservices", "untuk", "3", "layanan", "utama"], "ner_tags": ["O", "O", "B-EDU", "O", "O", "O", "O", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Associate", "Cyber", "Security", "Engineer", "-", "Dana", "Indonesia"], "ner_tags": ["B-ROLE", "O", "O", "B-ROLE", "O", "O", "B-EDU"]}
+{"tokens": ["Membangun", "fitur", "checkout", "yang", "meningkatkan", "konversi", "sebesar", "18", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengurangi", "bug", "production", "sebesar", "50", "%", "melalui", "implementasi", "CI", "/", "CD", "yang", "ketat"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengintegrasikan", "sistem", "pembayaran", "dengan", "4", "payment", "gateway", "berbeda"], "ner_tags": ["O", "B-EDU", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["S1", "Teknik", "Komputer", "-", "Institut", "Teknologi", "Bandung"], "ner_tags": ["B-EDU", "I-EDU", "O", "O", "B-EDU", "O", "O"]}
+{"tokens": ["2016", "-", "2019", "|", "IPK", ":", "3", ".", "46"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Dicoding", "-", "Belajar", "Machine", "Learning", "untuk", "Pemula"], "ner_tags": ["B-CERT", "O", "O", "B-SKILL", "I-SKILL", "O", "O"]}
+{"tokens": ["Google", "Cloud", "Professional", "Data", "Engineer"], "ner_tags": ["B-CERT", "I-CERT", "O", "B-ROLE", "I-ROLE"]}
+{"tokens": ["Mengikuti", "meetup", "dan", "komunitas", "teknologi", "lokal", "Bermain", "musik", "(", "gitar", "dan", "piano", ")", "Hiking", "dan", "kegiatan", "alam", "terbuka"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Cloud", "engineer", "dengan", "spesialisasi", "dalam", "perancangan", "dan", "pengelolaan", "infrastruktur", "cloud", "yang", "skalabel"], "ner_tags": ["B-CERT", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "B-CERT", "O", "O"]}
+{"tokens": ["Berpengalaman", "dalam", "migrasi", "sistem", "on", "-", "premise", "ke", "cloud", "dan", "optimasi", "biaya", "infrastruktur"], "ner_tags": ["O", "O", "O", "B-EDU", "O", "O", "O", "O", "B-CERT", "O", "O", "O", "O"]}
+{"tokens": ["cloud", "dari", "AWS", "dan", "Google", "Cloud", "Platform"], "ner_tags": ["B-CERT", "O", "O", "O", "B-CERT", "I-CERT", "O"]}
+{"tokens": ["S3", "Docker", "VPC", "Kubernetes", "AWS", "Azure", "Terraform", "IAM", "Linux", "RDS"], "ner_tags": ["O", "B-SKILL", "O", "B-SKILL", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Cloud", "Engineer", "-", "Xendit"], "ner_tags": ["B-CERT", "B-ROLE", "O", "B-COMP"]}
+{"tokens": ["Meningkatkan", "code", "coverage", "dari", "30", "%", "menjadi", "85", "%", "dengan", "automation", "testing"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mempercepat", "training", "model", "ML", "sebesar", "60", "%", "dengan", "optimasi", "GPU", "pipeline"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Berkontribusi", "pada", "open", "-", "source", "project", "dengan", "lebih", "dari", "200", "GitHub", "stars"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Associate", "Cloud", "Engineer", "-", "Tiket", ".", "com"], "ner_tags": ["B-ROLE", "B-CERT", "B-ROLE", "O", "O", "O", "O"]}
+{"tokens": ["Meningkatkan", "code", "coverage", "dari", "30", "%", "menjadi", "85", "%", "dengan", "automation", "testing"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Merancang", "sistem", "monitoring", "real", "-", "time", "yang", "memantau", "lebih", "dari", "50", "microservices"], "ner_tags": ["O", "B-EDU", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Memimpin", "tim", "5", "developer", "dalam", "menyelesaikan", "proyek", "senilai", "Rp", "2", "miliar"], "ner_tags": ["O", "O", "B-EXP", "B-ROLE", "O", "O", "O", "O", "O", "B-EXP", "O"]}
+{"tokens": ["Cloud", "Engineer", "Intern", "-", "Traveloka"], "ner_tags": ["B-CERT", "B-ROLE", "I-ROLE", "O", "O"]}
+{"tokens": ["Merancang", "sistem", "monitoring", "real", "-", "time", "yang", "memantau", "lebih", "dari", "50", "microservices"], "ner_tags": ["O", "B-EDU", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Meningkatkan", "code", "coverage", "dari", "30", "%", "menjadi", "85", "%", "dengan", "automation", "testing"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengurangi", "bug", "production", "sebesar", "50", "%", "melalui", "implementasi", "CI", "/", "CD", "yang", "ketat"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["S1", "Teknik", "Informatika", "-", "Universitas", "Brawijaya"], "ner_tags": ["B-EDU", "I-EDU", "I-EDU", "O", "B-EDU", "O"]}
+{"tokens": ["2014", "-", "2018", "|", "IPK", ":", "3", ".", "54"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["TensorFlow", "Developer", "Certificate"], "ner_tags": ["B-SKILL", "B-ROLE", "O"]}
+{"tokens": ["Meta", "Frontend", "Developer", "Certificate"], "ner_tags": ["O", "O", "B-ROLE", "O"]}
+{"tokens": ["Hiking", "dan", "kegiatan", "alam", "terbuka", "Game", "development", "sebagai", "side", "project", "Membaca", "buku", "teknologi", "dan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mobile", "Developer", "(", "Android", "/", "iOS", ")"], "ner_tags": ["O", "B-ROLE", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mobile", "developer", "yang", "berpengalaman", "dalam", "membangun", "aplikasi", "native", "dan", "cross", "-", "platform", "untuk", "Android", "dan"], "ner_tags": ["O", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Memiliki", "rekam", "jejak", "dalam", "mengembangkan", "aplikasi", "dengan", "pengguna", "aktif", "jutaan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Fokus", "pada", "performa"], "ner_tags": ["O", "O", "O"]}
+{"tokens": ["aplikasi", "dan", "pengalaman", "pengguna", "yang", "optimal"], "ner_tags": ["O", "O", "O", "O", "O", "O"]}
+{"tokens": ["CI", "/", "CD", "Kotlin", "Jetpack", "Compose", "REST", "API", "Firebase", "iOS", "SDK", "Play", "Store", "Dart", "React", "Native", "Flutter"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mobile", "Developer", "(", "Android", "/", "iOS", ")", "-", "PT", "Kredivo"], "ner_tags": ["O", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "B-COMP"]}
+{"tokens": ["Berkontribusi", "pada", "open", "-", "source", "project", "dengan", "lebih", "dari", "200", "GitHub", "stars"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Memimpin", "migrasi", "sistem", "monolitik", "ke", "arsitektur", "microservices", "untuk", "3", "layanan", "utama"], "ner_tags": ["O", "O", "B-EDU", "O", "O", "O", "O", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Mengurangi", "response", "time", "API", "sebesar", "40", "%", "melalui", "optimasi", "query", "dan", "caching"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mobile", "Developer", "(", "Android", "/", "iOS", ")", "Intern", "-", "Flip", ".", "id"], "ner_tags": ["O", "B-ROLE", "O", "O", "O", "O", "O", "B-ROLE", "O", "O", "O", "O"]}
+{"tokens": ["Mengurangi", "bug", "production", "sebesar", "50", "%", "melalui", "implementasi", "CI", "/", "CD", "yang", "ketat"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "model", "rekomendasi", "yang", "meningkatkan", "CTR", "sebesar", "25", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengimplementasikan", "solusi", "keamanan", "yang", "berhasil", "mencegah", "3", "potensi", "breach", "keamanan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["S1", "Matematika", "Komputasi", "-", "Universitas", "Gunadarma"], "ner_tags": ["B-EDU", "O", "O", "O", "B-EDU", "O"]}
+{"tokens": ["2019", "-", "2022", "|", "IPK", ":", "3", ".", "27"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["AWS", "Certified", "Solutions", "Architect"], "ner_tags": ["O", "B-CERT", "O", "O"]}
+{"tokens": ["PMP", "-", "Project", "Management", "Professional"], "ner_tags": ["O", "O", "O", "O", "O"]}
+{"tokens": ["Berkontribusi", "pada", "proyek", "open", "-", "source", "Menulis", "artikel", "teknis", "di", "Medium", "Mengajar", "coding", "kepada", "anak", "-", "anak", "sekolah"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Cloud", "engineer", "dengan", "spesialisasi", "dalam", "perancangan", "dan", "pengelolaan", "infrastruktur", "cloud", "yang", "skalabel"], "ner_tags": ["B-CERT", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "B-CERT", "O", "O"]}
+{"tokens": ["Berpengalaman", "dalam", "migrasi", "sistem", "on", "-", "premise", "ke", "cloud", "dan", "optimasi", "biaya", "infrastruktur"], "ner_tags": ["O", "O", "O", "B-EDU", "O", "O", "O", "O", "B-CERT", "O", "O", "O", "O"]}
+{"tokens": ["cloud", "dari", "AWS", "dan", "Google", "Cloud", "Platform"], "ner_tags": ["B-CERT", "O", "O", "O", "B-CERT", "I-CERT", "O"]}
+{"tokens": ["RDS", "Python", "Load", "Balancer", "Terraform", "EC2", "CloudFormation", "GCP", "Linux", "Azure", "Kubernetes"], "ner_tags": ["O", "B-SKILL", "O", "O", "O", "O", "O", "B-SKILL", "O", "O", "B-SKILL"]}
+{"tokens": ["Cloud", "Engineer", "-", "Grab", "Indonesia"], "ner_tags": ["B-CERT", "B-ROLE", "O", "B-COMP", "B-EDU"]}
+{"tokens": ["Memimpin", "tim", "5", "developer", "dalam", "menyelesaikan", "proyek", "senilai", "Rp", "2", "miliar"], "ner_tags": ["O", "O", "B-EXP", "B-ROLE", "O", "O", "O", "O", "O", "B-EXP", "O"]}
+{"tokens": ["Mengurangi", "response", "time", "API", "sebesar", "40", "%", "melalui", "optimasi", "query", "dan", "caching"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengimplementasikan", "solusi", "keamanan", "yang", "berhasil", "mencegah", "3", "potensi", "breach", "keamanan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Cloud", "Engineer", "-", "Shopee", "Indonesia"], "ner_tags": ["B-CERT", "B-ROLE", "O", "B-COMP", "B-EDU"]}
+{"tokens": ["Memimpin", "tim", "5", "developer", "dalam", "menyelesaikan", "proyek", "senilai", "Rp", "2", "miliar"], "ner_tags": ["O", "O", "B-EXP", "B-ROLE", "O", "O", "O", "O", "O", "B-EXP", "O"]}
+{"tokens": ["Mengembangkan", "model", "rekomendasi", "yang", "meningkatkan", "CTR", "sebesar", "25", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Berkontribusi", "pada", "open", "-", "source", "project", "dengan", "lebih", "dari", "200", "GitHub", "stars"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Associate", "Cloud", "Engineer", "-", "Tiket", ".", "com"], "ner_tags": ["B-ROLE", "B-CERT", "B-ROLE", "O", "O", "O", "O"]}
+{"tokens": ["Merancang", "sistem", "monitoring", "real", "-", "time", "yang", "memantau", "lebih", "dari", "50", "microservices"], "ner_tags": ["O", "B-EDU", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Meraih", "juara", "2", "Hackathon", "Nasional", "kategori", "AI", "Innovation"], "ner_tags": ["O", "O", "B-EXP", "B-CERT", "O", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "dashboard", "analytics", "yang", "digunakan", "oleh", "lebih", "dari", "200", "pengguna", "internal"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["S1", "Ilmu", "Komputer", "-", "Universitas", "Telkom"], "ner_tags": ["B-EDU", "O", "O", "O", "B-EDU", "O"]}
+{"tokens": ["2013", "-", "2017", "|", "IPK", ":", "3", ".", "76"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Docker", "Certified", "Associate"], "ner_tags": ["B-SKILL", "B-CERT", "B-ROLE"]}
+{"tokens": ["Scrum", "Master", "Certified", "(", "SMC", ")"], "ner_tags": ["O", "O", "B-CERT", "O", "O", "O"]}
+{"tokens": ["Certified", "Ethical", "Hacker", "(", "CEH", ")"], "ner_tags": ["B-CERT", "O", "O", "O", "O", "O"]}
+{"tokens": ["Menulis", "artikel", "teknis", "di", "Medium", "Mengajar", "coding", "kepada", "anak", "-", "anak", "sekolah", "Hiking", "dan", "kegiatan", "alam", "terbuka"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Cloud", "engineer", "dengan", "spesialisasi", "dalam", "perancangan", "dan", "pengelolaan", "infrastruktur", "cloud", "yang", "skalabel"], "ner_tags": ["B-CERT", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "B-CERT", "O", "O"]}
+{"tokens": ["Berpengalaman", "dalam", "migrasi", "sistem", "on", "-", "premise", "ke", "cloud", "dan", "optimasi", "biaya", "infrastruktur"], "ner_tags": ["O", "O", "O", "B-EDU", "O", "O", "O", "O", "B-CERT", "O", "O", "O", "O"]}
+{"tokens": ["cloud", "dari", "AWS", "dan", "Google", "Cloud", "Platform"], "ner_tags": ["B-CERT", "O", "O", "O", "B-CERT", "I-CERT", "O"]}
+{"tokens": ["IAM", "EC2", "Load", "Balancer", "GCP", "Python", "AWS", "S3", "Docker", "Linux", "VPC"], "ner_tags": ["O", "O", "O", "O", "B-SKILL", "I-SKILL", "O", "O", "B-SKILL", "O", "O"]}
+{"tokens": ["Cloud", "Engineer", "-", "OVO"], "ner_tags": ["B-CERT", "B-ROLE", "O", "O"]}
+{"tokens": ["Memimpin", "migrasi", "sistem", "monolitik", "ke", "arsitektur", "microservices", "untuk", "3", "layanan", "utama"], "ner_tags": ["O", "O", "B-EDU", "O", "O", "O", "O", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Berkontribusi", "pada", "open", "-", "source", "project", "dengan", "lebih", "dari", "200", "GitHub", "stars"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "dashboard", "analytics", "yang", "digunakan", "oleh", "lebih", "dari", "200", "pengguna", "internal"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Cloud", "Engineer", "-", "PT", "Indosat", "Ooredoo"], "ner_tags": ["B-CERT", "B-ROLE", "O", "O", "O", "O"]}
+{"tokens": ["Mempercepat", "training", "model", "ML", "sebesar", "60", "%", "dengan", "optimasi", "GPU", "pipeline"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Memimpin", "migrasi", "sistem", "monolitik", "ke", "arsitektur", "microservices", "untuk", "3", "layanan", "utama"], "ner_tags": ["O", "O", "B-EDU", "O", "O", "O", "O", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Merancang", "sistem", "monitoring", "real", "-", "time", "yang", "memantau", "lebih", "dari", "50", "microservices"], "ner_tags": ["O", "B-EDU", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["S1", "Sistem", "Informasi", "-", "Binus", "University"], "ner_tags": ["B-EDU", "I-EDU", "I-EDU", "O", "O", "O"]}
+{"tokens": ["2020", "-", "2024", "|", "IPK", ":", "3", ".", "11"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Docker", "Certified", "Associate"], "ner_tags": ["B-SKILL", "B-CERT", "B-ROLE"]}
+{"tokens": ["Certified", "Ethical", "Hacker", "(", "CEH", ")"], "ner_tags": ["B-CERT", "O", "O", "O", "O", "O"]}
+{"tokens": ["Meta", "Frontend", "Developer", "Certificate"], "ner_tags": ["O", "O", "B-ROLE", "O"]}
+{"tokens": ["Mengikuti", "meetup", "dan", "komunitas", "teknologi", "lokal", "Game", "development", "sebagai", "side", "project", "Membaca", "buku", "teknologi"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["dan", "pengembangan", "diri"], "ner_tags": ["O", "O", "O"]}
+{"tokens": ["Cloud", "engineer", "dengan", "spesialisasi", "dalam", "perancangan", "dan", "pengelolaan", "infrastruktur", "cloud", "yang", "skalabel"], "ner_tags": ["B-CERT", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "B-CERT", "O", "O"]}
+{"tokens": ["Berpengalaman", "dalam", "migrasi", "sistem", "on", "-", "premise", "ke", "cloud", "dan", "optimasi", "biaya", "infrastruktur"], "ner_tags": ["O", "O", "O", "B-EDU", "O", "O", "O", "O", "B-CERT", "O", "O", "O", "O"]}
+{"tokens": ["cloud", "dari", "AWS", "dan", "Google", "Cloud", "Platform"], "ner_tags": ["B-CERT", "O", "O", "O", "B-CERT", "I-CERT", "O"]}
+{"tokens": ["Azure", "EC2", "IAM", "S3", "Load", "Balancer", "Python", "GCP", "Kubernetes", "AWS", "Linux"], "ner_tags": ["O", "O", "O", "O", "O", "O", "B-SKILL", "I-SKILL", "I-SKILL", "O", "O"]}
+{"tokens": ["Cloud", "Engineer", "-", "PT", "Pertamina"], "ner_tags": ["B-CERT", "B-ROLE", "O", "O", "O"]}
+{"tokens": ["Membangun", "fitur", "checkout", "yang", "meningkatkan", "konversi", "sebesar", "18", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mempercepat", "training", "model", "ML", "sebesar", "60", "%", "dengan", "optimasi", "GPU", "pipeline"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "dashboard", "analytics", "yang", "digunakan", "oleh", "lebih", "dari", "200", "pengguna", "internal"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Cloud", "Engineer", "Intern", "-", "Dana", "Indonesia"], "ner_tags": ["B-CERT", "B-ROLE", "I-ROLE", "O", "O", "B-EDU"]}
+{"tokens": ["Memimpin", "migrasi", "sistem", "monolitik", "ke", "arsitektur", "microservices", "untuk", "3", "layanan", "utama"], "ner_tags": ["O", "O", "B-EDU", "O", "O", "O", "O", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Membangun", "fitur", "checkout", "yang", "meningkatkan", "konversi", "sebesar", "18", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Meningkatkan", "code", "coverage", "dari", "30", "%", "menjadi", "85", "%", "dengan", "automation", "testing"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["S1", "Teknik", "Informatika", "-", "Universitas", "Diponegoro"], "ner_tags": ["B-EDU", "I-EDU", "I-EDU", "O", "B-EDU", "O"]}
+{"tokens": ["2016", "-", "2020", "|", "IPK", ":", "3", ".", "42"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Scrum", "Master", "Certified", "(", "SMC", ")"], "ner_tags": ["O", "O", "B-CERT", "O", "O", "O"]}
+{"tokens": ["Coursera", "-", "Deep", "Learning", "Specialization"], "ner_tags": ["B-CERT", "O", "O", "B-SKILL", "O"]}
+{"tokens": ["TensorFlow", "Developer", "Certificate"], "ner_tags": ["B-SKILL", "B-ROLE", "O"]}
+{"tokens": ["Mengikuti", "kompetisi", "competitive", "programming", "Menulis", "artikel", "teknis", "di", "Medium", "Mengikuti", "meetup", "dan", "komunitas"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Frontend", "developer", "yang", "passionate", "dalam", "membangun", "antarmuka", "pengguna", "yang", "responsif", "dan", "intuitif"], "ner_tags": ["O", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Berpengalaman", "dalam", "mengembangkan", "aplikasi", "web", "modern", "menggunakan", "framework", "JavaScript", "terkini"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Memiliki", "kepedulian", "tinggi", "terhadap", "performa", "dan", "pengalaman", "pengguna"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Tailwind", "HTML", "Next", ".", "js", "JavaScript", "Webpack", "CSS", "Jest", "REST", "API", "Git", "Angular"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Frontend", "Developer", "-", "PT", "Kredivo"], "ner_tags": ["O", "B-ROLE", "O", "O", "B-COMP"]}
+{"tokens": ["Mengimplementasikan", "solusi", "keamanan", "yang", "berhasil", "mencegah", "3", "potensi", "breach", "keamanan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Mengurangi", "response", "time", "API", "sebesar", "40", "%", "melalui", "optimasi", "query", "dan", "caching"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mempercepat", "training", "model", "ML", "sebesar", "60", "%", "dengan", "optimasi", "GPU", "pipeline"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Junior", "Frontend", "Developer", "-", "Grab", "Indonesia"], "ner_tags": ["O", "O", "B-ROLE", "O", "B-COMP", "B-EDU"]}
+{"tokens": ["Membangun", "fitur", "checkout", "yang", "meningkatkan", "konversi", "sebesar", "18", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Memimpin", "tim", "5", "developer", "dalam", "menyelesaikan", "proyek", "senilai", "Rp", "2", "miliar"], "ner_tags": ["O", "O", "B-EXP", "B-ROLE", "O", "O", "O", "O", "O", "B-EXP", "O"]}
+{"tokens": ["Mempercepat", "training", "model", "ML", "sebesar", "60", "%", "dengan", "optimasi", "GPU", "pipeline"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Frontend", "Developer", "-", "PT", "Tokopedia"], "ner_tags": ["O", "B-ROLE", "O", "O", "B-COMP"]}
+{"tokens": ["Memimpin", "tim", "5", "developer", "dalam", "menyelesaikan", "proyek", "senilai", "Rp", "2", "miliar"], "ner_tags": ["O", "O", "B-EXP", "B-ROLE", "O", "O", "O", "O", "O", "B-EXP", "O"]}
+{"tokens": ["Mengimplementasikan", "solusi", "keamanan", "yang", "berhasil", "mencegah", "3", "potensi", "breach", "keamanan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "dashboard", "analytics", "yang", "digunakan", "oleh", "lebih", "dari", "200", "pengguna", "internal"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["S1", "Data", "Science", "-", "Institut", "Teknologi", "Sepuluh", "Nopember"], "ner_tags": ["B-EDU", "B-ROLE", "O", "O", "B-EDU", "O", "O", "O"]}
+{"tokens": ["2019", "-", "2022", "|", "IPK", ":", "3", ".", "30"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["HashiCorp", "Terraform", "Associate"], "ner_tags": ["O", "O", "B-ROLE"]}
+{"tokens": ["Menulis", "artikel", "teknis", "di", "Medium", "Mengajar", "coding", "kepada", "anak", "-", "anak", "sekolah", "Bermain", "musik", "(", "gitar", "dan", "piano", ")"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Backend", "developer", "berpengalaman", "dalam", "membangun", "layanan", "RESTful", "API", "yang", "skalabel", "dan", "handal"], "ner_tags": ["O", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["bekerja", "dalam", "lingkungan", "microservices", "dengan", "pendekatan", "cloud", "-", "native"], "ner_tags": ["O", "O", "O", "O", "O", "O", "B-CERT", "O", "O"]}
+{"tokens": ["Memiliki", "pemahaman", "mendalam"], "ner_tags": ["O", "O", "O"]}
+{"tokens": ["tentang", "optimasi", "database", "dan", "desain", "sistem", "terdistribusi"], "ner_tags": ["O", "O", "O", "O", "O", "B-EDU", "O"]}
+{"tokens": ["REST", "API", "MySQL", "Git", "Go", "Java", "PostgreSQL", "CI", "/", "CD", "Redis", "Microservices", "Docker"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "B-SKILL"]}
+{"tokens": ["Backend", "Developer", "-", "Amartha"], "ner_tags": ["O", "B-ROLE", "O", "O"]}
+{"tokens": ["Memimpin", "tim", "5", "developer", "dalam", "menyelesaikan", "proyek", "senilai", "Rp", "2", "miliar"], "ner_tags": ["O", "O", "B-EXP", "B-ROLE", "O", "O", "O", "O", "O", "B-EXP", "O"]}
+{"tokens": ["Merancang", "sistem", "monitoring", "real", "-", "time", "yang", "memantau", "lebih", "dari", "50", "microservices"], "ner_tags": ["O", "B-EDU", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "dashboard", "analytics", "yang", "digunakan", "oleh", "lebih", "dari", "200", "pengguna", "internal"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Junior", "Backend", "Developer", "-", "Blibli", ".", "com"], "ner_tags": ["O", "O", "B-ROLE", "O", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "model", "rekomendasi", "yang", "meningkatkan", "CTR", "sebesar", "25", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "dashboard", "analytics", "yang", "digunakan", "oleh", "lebih", "dari", "200", "pengguna", "internal"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Membangun", "pipeline", "CI", "/", "CD", "yang", "mengurangi", "deployment", "time", "dari", "2", "jam", "menjadi", "15", "menit"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O", "O"]}
+{"tokens": ["Backend", "Developer", "-", "Amartha"], "ner_tags": ["O", "B-ROLE", "O", "O"]}
+{"tokens": ["Memimpin", "tim", "5", "developer", "dalam", "menyelesaikan", "proyek", "senilai", "Rp", "2", "miliar"], "ner_tags": ["O", "O", "B-EXP", "B-ROLE", "O", "O", "O", "O", "O", "B-EXP", "O"]}
+{"tokens": ["Mengembangkan", "dashboard", "analytics", "yang", "digunakan", "oleh", "lebih", "dari", "200", "pengguna", "internal"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Meraih", "juara", "2", "Hackathon", "Nasional", "kategori", "AI", "Innovation"], "ner_tags": ["O", "O", "B-EXP", "B-CERT", "O", "O", "O", "O"]}
+{"tokens": ["S1", "Teknik", "Elektro", "-", "Universitas", "Gadjah", "Mada"], "ner_tags": ["B-EDU", "I-EDU", "O", "O", "B-EDU", "O", "O"]}
+{"tokens": ["2020", "-", "2024", "|", "IPK", ":", "3", ".", "81"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Microsoft", "Certified", "Azure", "Developer"], "ner_tags": ["O", "B-CERT", "O", "B-ROLE"]}
+{"tokens": ["Docker", "Certified", "Associate"], "ner_tags": ["B-SKILL", "B-CERT", "B-ROLE"]}
+{"tokens": ["Hiking", "dan", "kegiatan", "alam", "terbuka", "Membaca", "buku", "teknologi", "dan", "pengembangan", "diri", "Bermain", "musik", "(", "gitar", "dan", "piano", ")"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Frontend", "developer", "yang", "passionate", "dalam", "membangun", "antarmuka", "pengguna", "yang", "responsif", "dan", "intuitif"], "ner_tags": ["O", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Berpengalaman", "dalam", "mengembangkan", "aplikasi", "web", "modern", "menggunakan", "framework", "JavaScript", "terkini"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Memiliki", "kepedulian", "tinggi", "terhadap", "performa", "dan", "pengalaman", "pengguna"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Webpack", "TypeScript", "Tailwind", "React", "Next", ".", "js", "Redux", "HTML", "Figma", "REST", "API", "Jest"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Frontend", "Developer", "-", "Tiket", ".", "com"], "ner_tags": ["O", "B-ROLE", "O", "O", "O", "O"]}
+{"tokens": ["Memimpin", "migrasi", "sistem", "monolitik", "ke", "arsitektur", "microservices", "untuk", "3", "layanan", "utama"], "ner_tags": ["O", "O", "B-EDU", "O", "O", "O", "O", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Mengintegrasikan", "sistem", "pembayaran", "dengan", "4", "payment", "gateway", "berbeda"], "ner_tags": ["O", "B-EDU", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Membangun", "pipeline", "CI", "/", "CD", "yang", "mengurangi", "deployment", "time", "dari", "2", "jam", "menjadi", "15", "menit"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O", "O"]}
+{"tokens": ["Frontend", "Developer", "-", "OVO"], "ner_tags": ["O", "B-ROLE", "O", "O"]}
+{"tokens": ["Berkontribusi", "pada", "open", "-", "source", "project", "dengan", "lebih", "dari", "200", "GitHub", "stars"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Merancang", "sistem", "monitoring", "real", "-", "time", "yang", "memantau", "lebih", "dari", "50", "microservices"], "ner_tags": ["O", "B-EDU", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mempercepat", "training", "model", "ML", "sebesar", "60", "%", "dengan", "optimasi", "GPU", "pipeline"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["S1", "Matematika", "Komputasi", "-", "Universitas", "Mercu", "Buana"], "ner_tags": ["B-EDU", "O", "O", "O", "B-EDU", "O", "O"]}
+{"tokens": ["2016", "-", "2020", "|", "IPK", ":", "3", ".", "20"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["ISTQB", "Certified", "Tester"], "ner_tags": ["O", "B-CERT", "O"]}
+{"tokens": ["TensorFlow", "Developer", "Certificate"], "ner_tags": ["B-SKILL", "B-ROLE", "O"]}
+{"tokens": ["HashiCorp", "Terraform", "Associate"], "ner_tags": ["O", "O", "B-ROLE"]}
+{"tokens": ["Mengikuti", "kompetisi", "competitive", "programming", "Hiking", "dan", "kegiatan", "alam", "terbuka", "Berkontribusi", "pada", "proyek"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Cyber", "Security", "Engineer"], "ner_tags": ["O", "O", "B-ROLE"]}
+{"tokens": ["Cyber", "security", "engineer", "dengan", "pengalaman", "dalam", "identifikasi", "dan", "mitigasi", "ancaman", "keamanan", "siber"], "ner_tags": ["O", "O", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["melakukan", "penetration", "testing", "dan", "vulnerability", "assessment", "pada", "aplikasi", "web", "dan", "infrastruktur", "jaringan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["pemahaman", "mendalam", "tentang", "standar", "keamanan", "internasional"], "ner_tags": ["O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Firewall", "SOC", "Python", "Ethical", "Hacking", "Nmap", "ISO", "27001", "OWASP", "Burp", "Suite", "Penetration", "Testing", "Incident"], "ner_tags": ["O", "O", "B-SKILL", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Cyber", "Security", "Engineer", "-", "Flip", ".", "id"], "ner_tags": ["O", "O", "B-ROLE", "O", "O", "O", "O"]}
+{"tokens": ["Mengurangi", "response", "time", "API", "sebesar", "40", "%", "melalui", "optimasi", "query", "dan", "caching"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengintegrasikan", "sistem", "pembayaran", "dengan", "4", "payment", "gateway", "berbeda"], "ner_tags": ["O", "B-EDU", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "dashboard", "analytics", "yang", "digunakan", "oleh", "lebih", "dari", "200", "pengguna", "internal"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Cyber", "Security", "Engineer", "Intern", "-", "PT", "Telkom", "Indonesia"], "ner_tags": ["O", "O", "B-ROLE", "I-ROLE", "O", "O", "O", "B-EDU"]}
+{"tokens": ["Mengembangkan", "dashboard", "analytics", "yang", "digunakan", "oleh", "lebih", "dari", "200", "pengguna", "internal"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Membangun", "fitur", "checkout", "yang", "meningkatkan", "konversi", "sebesar", "18", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Membangun", "pipeline", "CI", "/", "CD", "yang", "mengurangi", "deployment", "time", "dari", "2", "jam", "menjadi", "15", "menit"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O", "O"]}
+{"tokens": ["S1", "Teknik", "Komputer", "-", "Universitas", "Brawijaya"], "ner_tags": ["B-EDU", "I-EDU", "O", "O", "B-EDU", "O"]}
+{"tokens": ["2013", "-", "2017", "|", "IPK", ":", "3", ".", "18"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Mengajar", "coding", "kepada", "anak", "-", "anak", "sekolah", "Menulis", "artikel", "teknis", "di", "Medium", "Game", "development", "sebagai", "side", "project"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mobile", "Developer", "(", "Android", "/", "iOS", ")"], "ner_tags": ["O", "B-ROLE", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mobile", "developer", "yang", "berpengalaman", "dalam", "membangun", "aplikasi", "native", "dan", "cross", "-", "platform", "untuk", "Android", "dan"], "ner_tags": ["O", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Memiliki", "rekam", "jejak", "dalam", "mengembangkan", "aplikasi", "dengan", "pengguna", "aktif", "jutaan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Fokus", "pada", "performa"], "ner_tags": ["O", "O", "O"]}
+{"tokens": ["aplikasi", "dan", "pengalaman", "pengguna", "yang", "optimal"], "ner_tags": ["O", "O", "O", "O", "O", "O"]}
+{"tokens": ["React", "Native", "SQLite", "Flutter", "Swift", "Jetpack", "Compose", "Kotlin", "CI", "/", "CD", "Git", "REST", "API", "SwiftUI"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mobile", "Developer", "(", "Android", "/", "iOS", ")", "-", "Kudo", "(", "Grab", ")"], "ner_tags": ["O", "B-ROLE", "O", "O", "O", "O", "O", "O", "B-COMP", "O", "B-COMP", "O"]}
+{"tokens": ["Memimpin", "migrasi", "sistem", "monolitik", "ke", "arsitektur", "microservices", "untuk", "3", "layanan", "utama"], "ner_tags": ["O", "O", "B-EDU", "O", "O", "O", "O", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Mengurangi", "bug", "production", "sebesar", "50", "%", "melalui", "implementasi", "CI", "/", "CD", "yang", "ketat"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengintegrasikan", "sistem", "pembayaran", "dengan", "4", "payment", "gateway", "berbeda"], "ner_tags": ["O", "B-EDU", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Associate", "Mobile", "Developer", "(", "Android", "/", "iOS", ")", "-", "Blibli", ".", "com"], "ner_tags": ["B-ROLE", "O", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Meraih", "juara", "2", "Hackathon", "Nasional", "kategori", "AI", "Innovation"], "ner_tags": ["O", "O", "B-EXP", "B-CERT", "O", "O", "O", "O"]}
+{"tokens": ["Membangun", "fitur", "checkout", "yang", "meningkatkan", "konversi", "sebesar", "18", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Memimpin", "migrasi", "sistem", "monolitik", "ke", "arsitektur", "microservices", "untuk", "3", "layanan", "utama"], "ner_tags": ["O", "O", "B-EDU", "O", "O", "O", "O", "O", "B-EXP", "O", "O"]}
+{"tokens": ["S1", "Teknik", "Elektro", "-", "Universitas", "Gunadarma"], "ner_tags": ["B-EDU", "I-EDU", "O", "O", "B-EDU", "O"]}
+{"tokens": ["2012", "-", "2015", "|", "IPK", ":", "3", ".", "33"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Scrum", "Master", "Certified", "(", "SMC", ")"], "ner_tags": ["O", "O", "B-CERT", "O", "O", "O"]}
+{"tokens": ["TensorFlow", "Developer", "Certificate"], "ner_tags": ["B-SKILL", "B-ROLE", "O"]}
+{"tokens": ["Membaca", "buku", "teknologi", "dan", "pengembangan", "diri", "Game", "development", "sebagai", "side", "project", "Bermain", "musik", "(", "gitar", "dan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Cyber", "Security", "Engineer"], "ner_tags": ["O", "O", "B-ROLE"]}
+{"tokens": ["Cyber", "security", "engineer", "dengan", "pengalaman", "dalam", "identifikasi", "dan", "mitigasi", "ancaman", "keamanan", "siber"], "ner_tags": ["O", "O", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["melakukan", "penetration", "testing", "dan", "vulnerability", "assessment", "pada", "aplikasi", "web", "dan", "infrastruktur", "jaringan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["pemahaman", "mendalam", "tentang", "standar", "keamanan", "internasional"], "ner_tags": ["O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Wireshark", "Vulnerability", "Assessment", "Ethical", "Hacking", "ISO", "27001", "Python", "Burp", "Suite", "SIEM", "Incident", "Response"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "B-SKILL", "O", "O", "O", "O", "O"]}
+{"tokens": ["Cyber", "Security", "Engineer", "-", "Traveloka"], "ner_tags": ["O", "O", "B-ROLE", "O", "O"]}
+{"tokens": ["Memimpin", "tim", "5", "developer", "dalam", "menyelesaikan", "proyek", "senilai", "Rp", "2", "miliar"], "ner_tags": ["O", "O", "B-EXP", "B-ROLE", "O", "O", "O", "O", "O", "B-EXP", "O"]}
+{"tokens": ["Mempercepat", "training", "model", "ML", "sebesar", "60", "%", "dengan", "optimasi", "GPU", "pipeline"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengintegrasikan", "sistem", "pembayaran", "dengan", "4", "payment", "gateway", "berbeda"], "ner_tags": ["O", "B-EDU", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Cyber", "Security", "Engineer", "Intern", "-", "Amartha"], "ner_tags": ["O", "O", "B-ROLE", "I-ROLE", "O", "O"]}
+{"tokens": ["Meningkatkan", "code", "coverage", "dari", "30", "%", "menjadi", "85", "%", "dengan", "automation", "testing"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Berkontribusi", "pada", "open", "-", "source", "project", "dengan", "lebih", "dari", "200", "GitHub", "stars"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Membangun", "pipeline", "CI", "/", "CD", "yang", "mengurangi", "deployment", "time", "dari", "2", "jam", "menjadi", "15", "menit"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O", "O"]}
+{"tokens": ["Cyber", "Security", "Engineer", "-", "PT", "Indosat", "Ooredoo"], "ner_tags": ["O", "O", "B-ROLE", "O", "O", "O", "O"]}
+{"tokens": ["Meningkatkan", "code", "coverage", "dari", "30", "%", "menjadi", "85", "%", "dengan", "automation", "testing"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengintegrasikan", "sistem", "pembayaran", "dengan", "4", "payment", "gateway", "berbeda"], "ner_tags": ["O", "B-EDU", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Mengurangi", "bug", "production", "sebesar", "50", "%", "melalui", "implementasi", "CI", "/", "CD", "yang", "ketat"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["S1", "Teknik", "Elektro", "-", "Universitas", "Gunadarma"], "ner_tags": ["B-EDU", "I-EDU", "O", "O", "B-EDU", "O"]}
+{"tokens": ["2018", "-", "2022", "|", "IPK", ":", "3", ".", "49"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Meta", "Frontend", "Developer", "Certificate"], "ner_tags": ["O", "O", "B-ROLE", "O"]}
+{"tokens": ["Hiking", "dan", "kegiatan", "alam", "terbuka", "Fotografi", "dan", "videografi", "Bermain", "musik", "(", "gitar", "dan", "piano", ")"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Frontend", "developer", "yang", "passionate", "dalam", "membangun", "antarmuka", "pengguna", "yang", "responsif", "dan", "intuitif"], "ner_tags": ["O", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Berpengalaman", "dalam", "mengembangkan", "aplikasi", "web", "modern", "menggunakan", "framework", "JavaScript", "terkini"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Memiliki", "kepedulian", "tinggi", "terhadap", "performa", "dan", "pengalaman", "pengguna"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Jest", "REST", "API", "HTML", "Angular", "Redux", "React", "Webpack", "Git", "Tailwind", "Next", ".", "js"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Frontend", "Developer", "-", "Xendit"], "ner_tags": ["O", "B-ROLE", "O", "B-COMP"]}
+{"tokens": ["Meraih", "juara", "2", "Hackathon", "Nasional", "kategori", "AI", "Innovation"], "ner_tags": ["O", "O", "B-EXP", "B-CERT", "O", "O", "O", "O"]}
+{"tokens": ["Membangun", "pipeline", "CI", "/", "CD", "yang", "mengurangi", "deployment", "time", "dari", "2", "jam", "menjadi", "15", "menit"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "model", "rekomendasi", "yang", "meningkatkan", "CTR", "sebesar", "25", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Frontend", "Developer", "Intern", "-", "Tiket", ".", "com"], "ner_tags": ["O", "B-ROLE", "I-ROLE", "O", "O", "O", "O"]}
+{"tokens": ["Memimpin", "tim", "5", "developer", "dalam", "menyelesaikan", "proyek", "senilai", "Rp", "2", "miliar"], "ner_tags": ["O", "O", "B-EXP", "B-ROLE", "O", "O", "O", "O", "O", "B-EXP", "O"]}
+{"tokens": ["Memimpin", "migrasi", "sistem", "monolitik", "ke", "arsitektur", "microservices", "untuk", "3", "layanan", "utama"], "ner_tags": ["O", "O", "B-EDU", "O", "O", "O", "O", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Merancang", "sistem", "monitoring", "real", "-", "time", "yang", "memantau", "lebih", "dari", "50", "microservices"], "ner_tags": ["O", "B-EDU", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Junior", "Frontend", "Developer", "-", "PT", "XL", "Axiata"], "ner_tags": ["O", "O", "B-ROLE", "O", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "dashboard", "analytics", "yang", "digunakan", "oleh", "lebih", "dari", "200", "pengguna", "internal"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengimplementasikan", "solusi", "keamanan", "yang", "berhasil", "mencegah", "3", "potensi", "breach", "keamanan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Membangun", "fitur", "checkout", "yang", "meningkatkan", "konversi", "sebesar", "18", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["S1", "Teknik", "Elektro", "-", "Universitas", "Padjadjaran"], "ner_tags": ["B-EDU", "I-EDU", "O", "O", "B-EDU", "O"]}
+{"tokens": ["2018", "-", "2021", "|", "IPK", ":", "3", ".", "92"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["ISTQB", "Certified", "Tester"], "ner_tags": ["O", "B-CERT", "O"]}
+{"tokens": ["Game", "development", "sebagai", "side", "project", "Mengajar", "coding", "kepada", "anak", "-", "anak", "sekolah", "Membaca", "buku", "teknologi", "dan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["DevOps", "engineer", "yang", "berpengalaman", "dalam", "otomasi", "infrastruktur", "dan", "pengelolaan", "platform", "cloud"], "ner_tags": ["O", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "O", "B-CERT"]}
+{"tokens": ["membangun", "pipeline", "CI", "/", "CD", "yang", "efisien", "dan", "reliable"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Memiliki", "pemahaman", "kuat", "tentang", "keamanan", "infrastruktur"], "ner_tags": ["O", "O", "O", "O", "O", "O"]}
+{"tokens": ["dan", "monitoring", "sistem", "skala", "enterprise"], "ner_tags": ["O", "O", "B-EDU", "O", "O"]}
+{"tokens": ["Terraform", "AWS", "Azure", "Prometheus", "Linux", "Ansible", "GCP", "Bash", "Git", "Python"], "ner_tags": ["O", "O", "O", "O", "O", "O", "B-SKILL", "O", "O", "B-SKILL"]}
+{"tokens": ["DevOps", "Engineer", "-", "PT", "XL", "Axiata"], "ner_tags": ["O", "B-ROLE", "O", "O", "O", "O"]}
+{"tokens": ["Mengimplementasikan", "solusi", "keamanan", "yang", "berhasil", "mencegah", "3", "potensi", "breach", "keamanan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Mengurangi", "bug", "production", "sebesar", "50", "%", "melalui", "implementasi", "CI", "/", "CD", "yang", "ketat"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Merancang", "sistem", "monitoring", "real", "-", "time", "yang", "memantau", "lebih", "dari", "50", "microservices"], "ner_tags": ["O", "B-EDU", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Junior", "DevOps", "Engineer", "-", "Flip", ".", "id"], "ner_tags": ["O", "O", "B-ROLE", "O", "O", "O", "O"]}
+{"tokens": ["Mengintegrasikan", "sistem", "pembayaran", "dengan", "4", "payment", "gateway", "berbeda"], "ner_tags": ["O", "B-EDU", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Mengurangi", "response", "time", "API", "sebesar", "40", "%", "melalui", "optimasi", "query", "dan", "caching"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "model", "rekomendasi", "yang", "meningkatkan", "CTR", "sebesar", "25", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Junior", "DevOps", "Engineer", "-", "PT", "Moladin"], "ner_tags": ["O", "O", "B-ROLE", "O", "O", "O"]}
+{"tokens": ["Mempercepat", "training", "model", "ML", "sebesar", "60", "%", "dengan", "optimasi", "GPU", "pipeline"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Memimpin", "migrasi", "sistem", "monolitik", "ke", "arsitektur", "microservices", "untuk", "3", "layanan", "utama"], "ner_tags": ["O", "O", "B-EDU", "O", "O", "O", "O", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Mengimplementasikan", "solusi", "keamanan", "yang", "berhasil", "mencegah", "3", "potensi", "breach", "keamanan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["S1", "Sistem", "Informasi", "-", "Universitas", "Indonesia"], "ner_tags": ["B-EDU", "I-EDU", "I-EDU", "O", "B-EDU", "I-EDU"]}
+{"tokens": ["2020", "-", "2023", "|", "IPK", ":", "3", ".", "42"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["ISTQB", "Certified", "Tester"], "ner_tags": ["O", "B-CERT", "O"]}
+{"tokens": ["Scrum", "Master", "Certified", "(", "SMC", ")"], "ner_tags": ["O", "O", "B-CERT", "O", "O", "O"]}
+{"tokens": ["Mengajar", "coding", "kepada", "anak", "-", "anak", "sekolah", "Mengikuti", "meetup", "dan", "komunitas", "teknologi", "lokal", "Hiking", "dan", "kegiatan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Data", "engineer", "yang", "berpengalaman", "dalam", "membangun", "dan", "mengelola", "pipeline", "data", "skala", "besar"], "ner_tags": ["B-ROLE", "I-ROLE", "O", "O", "O", "O", "O", "O", "O", "B-ROLE", "O", "O"]}
+{"tokens": ["bekerja", "dengan", "berbagai", "teknologi", "big", "data", "untuk", "memproses", "data", "streaming", "dan", "batch"], "ner_tags": ["O", "O", "O", "O", "O", "B-ROLE", "O", "O", "B-ROLE", "O", "O", "O"]}
+{"tokens": ["dalam", "merancang", "arsitektur", "data", "warehouse", "yang", "efisien"], "ner_tags": ["O", "O", "O", "B-ROLE", "O", "O", "O"]}
+{"tokens": ["Data", "Pipeline", "ETL", "Redshift", "dbt", "GCP", "SQL", "Python", "Airflow", "Kubernetes", "Hadoop"], "ner_tags": ["B-ROLE", "O", "B-SKILL", "I-SKILL", "I-SKILL", "I-SKILL", "I-SKILL", "I-SKILL", "O", "B-SKILL", "O"]}
+{"tokens": ["Data", "Engineer", "-", "PT", "Indosat", "Ooredoo"], "ner_tags": ["B-ROLE", "I-ROLE", "O", "O", "O", "O"]}
+{"tokens": ["Memimpin", "migrasi", "sistem", "monolitik", "ke", "arsitektur", "microservices", "untuk", "3", "layanan", "utama"], "ner_tags": ["O", "O", "B-EDU", "O", "O", "O", "O", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Mengurangi", "response", "time", "API", "sebesar", "40", "%", "melalui", "optimasi", "query", "dan", "caching"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Berkontribusi", "pada", "open", "-", "source", "project", "dengan", "lebih", "dari", "200", "GitHub", "stars"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Data", "Engineer", "Intern", "-", "PT", "Pertamina"], "ner_tags": ["B-ROLE", "I-ROLE", "I-ROLE", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "model", "rekomendasi", "yang", "meningkatkan", "CTR", "sebesar", "25", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Meningkatkan", "code", "coverage", "dari", "30", "%", "menjadi", "85", "%", "dengan", "automation", "testing"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Meraih", "juara", "2", "Hackathon", "Nasional", "kategori", "AI", "Innovation"], "ner_tags": ["O", "O", "B-EXP", "B-CERT", "O", "O", "O", "O"]}
+{"tokens": ["S1", "Teknik", "Informatika", "-", "Universitas", "Indonesia"], "ner_tags": ["B-EDU", "I-EDU", "I-EDU", "O", "B-EDU", "I-EDU"]}
+{"tokens": ["2015", "-", "2019", "|", "IPK", ":", "3", ".", "90"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Scrum", "Master", "Certified", "(", "SMC", ")"], "ner_tags": ["O", "O", "B-CERT", "O", "O", "O"]}
+{"tokens": ["PMP", "-", "Project", "Management", "Professional"], "ner_tags": ["O", "O", "O", "O", "O"]}
+{"tokens": ["Dicoding", "-", "Belajar", "Machine", "Learning", "untuk", "Pemula"], "ner_tags": ["B-CERT", "O", "O", "B-SKILL", "I-SKILL", "O", "O"]}
+{"tokens": ["Fotografi", "dan", "videografi", "Berkontribusi", "pada", "proyek", "open", "-", "source", "Hiking", "dan", "kegiatan", "alam", "terbuka"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["UI", "/", "UX", "designer", "yang", "berdedikasi", "dalam", "menciptakan", "pengalaman", "digital", "yang", "bermakna", "dan", "berpusat", "pada"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Berpengalaman", "dalam", "design", "thinking", "dan", "user", "-", "centered", "design"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mampu", "berkolaborasi", "dengan", "tim"], "ner_tags": ["O", "O", "O", "O"]}
+{"tokens": ["engineering", "untuk", "menghasilkan", "produk", "yang", "fungsional", "dan", "estetis"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Design", "System", "Information", "Architecture", "Wireframing", "InVision", "User", "Research", "Adobe", "XD", "Adobe", "Illustrator"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Figma", "Sketch", "Agile"], "ner_tags": ["O", "O", "O"]}
+{"tokens": ["UI", "/", "UX", "Designer", "-", "Xendit"], "ner_tags": ["O", "O", "O", "O", "O", "B-COMP"]}
+{"tokens": ["Meningkatkan", "code", "coverage", "dari", "30", "%", "menjadi", "85", "%", "dengan", "automation", "testing"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Meraih", "juara", "2", "Hackathon", "Nasional", "kategori", "AI", "Innovation"], "ner_tags": ["O", "O", "B-EXP", "B-CERT", "O", "O", "O", "O"]}
+{"tokens": ["Memimpin", "migrasi", "sistem", "monolitik", "ke", "arsitektur", "microservices", "untuk", "3", "layanan", "utama"], "ner_tags": ["O", "O", "B-EDU", "O", "O", "O", "O", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Associate", "UI", "/", "UX", "Designer", "-", "Waresix"], "ner_tags": ["B-ROLE", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengurangi", "bug", "production", "sebesar", "50", "%", "melalui", "implementasi", "CI", "/", "CD", "yang", "ketat"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Merancang", "sistem", "monitoring", "real", "-", "time", "yang", "memantau", "lebih", "dari", "50", "microservices"], "ner_tags": ["O", "B-EDU", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Membangun", "pipeline", "CI", "/", "CD", "yang", "mengurangi", "deployment", "time", "dari", "2", "jam", "menjadi", "15", "menit"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O", "O"]}
+{"tokens": ["S1", "Matematika", "Komputasi", "-", "Universitas", "Amikom", "Yogyakarta"], "ner_tags": ["B-EDU", "O", "O", "O", "B-EDU", "O", "O"]}
+{"tokens": ["2017", "-", "2020", "|", "IPK", ":", "3", ".", "47"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Certified", "Ethical", "Hacker", "(", "CEH", ")"], "ner_tags": ["B-CERT", "O", "O", "O", "O", "O"]}
+{"tokens": ["Google", "Cloud", "Professional", "Data", "Engineer"], "ner_tags": ["B-CERT", "I-CERT", "O", "B-ROLE", "I-ROLE"]}
+{"tokens": ["Game", "development", "sebagai", "side", "project", "Berkontribusi", "pada", "proyek", "open", "-", "source", "Menulis", "artikel", "teknis", "di", "Medium"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["AI", "/", "ML", "engineer", "yang", "berfokus", "pada", "pengembangan", "dan", "deployment", "solusi", "kecerdasan", "buatan", "di", "lingkungan"], "ner_tags": ["O", "O", "O", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Berpengalaman", "dalam", "fine", "-", "tuning", "model", "bahasa", "besar", "dan", "pengembangan", "pipeline", "machine", "learning"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "B-SKILL", "I-SKILL"]}
+{"tokens": ["Memiliki", "passion", "dalam", "penelitian", "dan", "penerapan", "AI", "terkini"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Keras", "PyTorch", "Kubernetes", "LangChain", "FastAPI", "TensorFlow", "SQL", "MLflow", "GCP", "Scikit", "-", "learn"], "ner_tags": ["O", "B-SKILL", "I-SKILL", "O", "O", "B-SKILL", "I-SKILL", "O", "B-SKILL", "O", "O", "O"]}
+{"tokens": ["AI", "/", "ML", "Engineer", "-", "SeaBank"], "ner_tags": ["O", "O", "O", "B-ROLE", "O", "O"]}
+{"tokens": ["Mengimplementasikan", "solusi", "keamanan", "yang", "berhasil", "mencegah", "3", "potensi", "breach", "keamanan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "dashboard", "analytics", "yang", "digunakan", "oleh", "lebih", "dari", "200", "pengguna", "internal"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengintegrasikan", "sistem", "pembayaran", "dengan", "4", "payment", "gateway", "berbeda"], "ner_tags": ["O", "B-EDU", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Associate", "AI", "/", "ML", "Engineer", "-", "PT", "Tokopedia"], "ner_tags": ["B-ROLE", "O", "O", "O", "B-ROLE", "O", "O", "B-COMP"]}
+{"tokens": ["Meraih", "juara", "2", "Hackathon", "Nasional", "kategori", "AI", "Innovation"], "ner_tags": ["O", "O", "B-EXP", "B-CERT", "O", "O", "O", "O"]}
+{"tokens": ["Memimpin", "migrasi", "sistem", "monolitik", "ke", "arsitektur", "microservices", "untuk", "3", "layanan", "utama"], "ner_tags": ["O", "O", "B-EDU", "O", "O", "O", "O", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Mengimplementasikan", "solusi", "keamanan", "yang", "berhasil", "mencegah", "3", "potensi", "breach", "keamanan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["S1", "Matematika", "Komputasi", "-", "Universitas", "Amikom", "Yogyakarta"], "ner_tags": ["B-EDU", "O", "O", "O", "B-EDU", "O", "O"]}
+{"tokens": ["2017", "-", "2021", "|", "IPK", ":", "3", ".", "23"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Dicoding", "-", "Belajar", "Machine", "Learning", "untuk", "Pemula"], "ner_tags": ["B-CERT", "O", "O", "B-SKILL", "I-SKILL", "O", "O"]}
+{"tokens": ["AWS", "Certified", "Solutions", "Architect"], "ner_tags": ["O", "B-CERT", "O", "O"]}
+{"tokens": ["Membaca", "buku", "teknologi", "dan", "pengembangan", "diri", "Fotografi", "dan", "videografi", "Bermain", "musik", "(", "gitar", "dan", "piano", ")"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Cyber", "Security", "Engineer"], "ner_tags": ["O", "O", "B-ROLE"]}
+{"tokens": ["Cyber", "security", "engineer", "dengan", "pengalaman", "dalam", "identifikasi", "dan", "mitigasi", "ancaman", "keamanan", "siber"], "ner_tags": ["O", "O", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["melakukan", "penetration", "testing", "dan", "vulnerability", "assessment", "pada", "aplikasi", "web", "dan", "infrastruktur", "jaringan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["pemahaman", "mendalam", "tentang", "standar", "keamanan", "internasional"], "ner_tags": ["O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Incident", "Response", "ISO", "27001", "Burp", "Suite", "Nmap", "Firewall", "Python", "Vulnerability", "Assessment", "SIEM", "Penetration"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "B-SKILL", "O", "O", "O", "O"]}
+{"tokens": ["Cyber", "Security", "Engineer", "-", "Kudo", "(", "Grab", ")"], "ner_tags": ["O", "O", "B-ROLE", "O", "B-COMP", "O", "B-COMP", "O"]}
+{"tokens": ["Membangun", "fitur", "checkout", "yang", "meningkatkan", "konversi", "sebesar", "18", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "model", "rekomendasi", "yang", "meningkatkan", "CTR", "sebesar", "25", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Merancang", "sistem", "monitoring", "real", "-", "time", "yang", "memantau", "lebih", "dari", "50", "microservices"], "ner_tags": ["O", "B-EDU", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Cyber", "Security", "Engineer", "-", "Shopee", "Indonesia"], "ner_tags": ["O", "O", "B-ROLE", "O", "B-COMP", "B-EDU"]}
+{"tokens": ["Meningkatkan", "code", "coverage", "dari", "30", "%", "menjadi", "85", "%", "dengan", "automation", "testing"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "dashboard", "analytics", "yang", "digunakan", "oleh", "lebih", "dari", "200", "pengguna", "internal"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Merancang", "sistem", "monitoring", "real", "-", "time", "yang", "memantau", "lebih", "dari", "50", "microservices"], "ner_tags": ["O", "B-EDU", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Junior", "Cyber", "Security", "Engineer", "-", "Flip", ".", "id"], "ner_tags": ["O", "O", "O", "B-ROLE", "O", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "dashboard", "analytics", "yang", "digunakan", "oleh", "lebih", "dari", "200", "pengguna", "internal"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mempercepat", "training", "model", "ML", "sebesar", "60", "%", "dengan", "optimasi", "GPU", "pipeline"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Memimpin", "tim", "5", "developer", "dalam", "menyelesaikan", "proyek", "senilai", "Rp", "2", "miliar"], "ner_tags": ["O", "O", "B-EXP", "B-ROLE", "O", "O", "O", "O", "O", "B-EXP", "O"]}
+{"tokens": ["S1", "Teknik", "Elektro", "-", "Institut", "Teknologi", "Bandung"], "ner_tags": ["B-EDU", "I-EDU", "O", "O", "B-EDU", "O", "O"]}
+{"tokens": ["2013", "-", "2016", "|", "IPK", ":", "3", ".", "13"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Microsoft", "Certified", "Azure", "Developer"], "ner_tags": ["O", "B-CERT", "O", "B-ROLE"]}
+{"tokens": ["Certified", "Ethical", "Hacker", "(", "CEH", ")"], "ner_tags": ["B-CERT", "O", "O", "O", "O", "O"]}
+{"tokens": ["Berkontribusi", "pada", "proyek", "open", "-", "source", "Game", "development", "sebagai", "side", "project", "Hiking", "dan", "kegiatan", "alam", "terbuka"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["DevOps", "engineer", "yang", "berpengalaman", "dalam", "otomasi", "infrastruktur", "dan", "pengelolaan", "platform", "cloud"], "ner_tags": ["O", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "O", "B-CERT"]}
+{"tokens": ["membangun", "pipeline", "CI", "/", "CD", "yang", "efisien", "dan", "reliable"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Memiliki", "pemahaman", "kuat", "tentang", "keamanan", "infrastruktur"], "ner_tags": ["O", "O", "O", "O", "O", "O"]}
+{"tokens": ["dan", "monitoring", "sistem", "skala", "enterprise"], "ner_tags": ["O", "O", "B-EDU", "O", "O"]}
+{"tokens": ["Kubernetes", "Python", "Bash", "Grafana", "Ansible", "Azure", "GCP", "Git", "Jenkins", "Docker"], "ner_tags": ["B-SKILL", "I-SKILL", "O", "O", "O", "O", "B-SKILL", "O", "O", "B-SKILL"]}
+{"tokens": ["DevOps", "Engineer", "-", "PT", "Gojek", "Indonesia"], "ner_tags": ["O", "B-ROLE", "O", "O", "B-COMP", "B-EDU"]}
+{"tokens": ["Merancang", "sistem", "monitoring", "real", "-", "time", "yang", "memantau", "lebih", "dari", "50", "microservices"], "ner_tags": ["O", "B-EDU", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengimplementasikan", "solusi", "keamanan", "yang", "berhasil", "mencegah", "3", "potensi", "breach", "keamanan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "model", "rekomendasi", "yang", "meningkatkan", "CTR", "sebesar", "25", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["DevOps", "Engineer", "-", "PT", "Indosat", "Ooredoo"], "ner_tags": ["O", "B-ROLE", "O", "O", "O", "O"]}
+{"tokens": ["Membangun", "pipeline", "CI", "/", "CD", "yang", "mengurangi", "deployment", "time", "dari", "2", "jam", "menjadi", "15", "menit"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O", "O"]}
+{"tokens": ["Mengintegrasikan", "sistem", "pembayaran", "dengan", "4", "payment", "gateway", "berbeda"], "ner_tags": ["O", "B-EDU", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "model", "rekomendasi", "yang", "meningkatkan", "CTR", "sebesar", "25", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Associate", "DevOps", "Engineer", "-", "PT", "Bukalapak"], "ner_tags": ["B-ROLE", "O", "B-ROLE", "O", "O", "O"]}
+{"tokens": ["Memimpin", "tim", "5", "developer", "dalam", "menyelesaikan", "proyek", "senilai", "Rp", "2", "miliar"], "ner_tags": ["O", "O", "B-EXP", "B-ROLE", "O", "O", "O", "O", "O", "B-EXP", "O"]}
+{"tokens": ["Mengembangkan", "dashboard", "analytics", "yang", "digunakan", "oleh", "lebih", "dari", "200", "pengguna", "internal"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Memimpin", "migrasi", "sistem", "monolitik", "ke", "arsitektur", "microservices", "untuk", "3", "layanan", "utama"], "ner_tags": ["O", "O", "B-EDU", "O", "O", "O", "O", "O", "B-EXP", "O", "O"]}
+{"tokens": ["S1", "Teknik", "Elektro", "-", "Universitas", "Mercu", "Buana"], "ner_tags": ["B-EDU", "I-EDU", "O", "O", "B-EDU", "O", "O"]}
+{"tokens": ["2014", "-", "2017", "|", "IPK", ":", "3", ".", "65"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Google", "Cloud", "Professional", "Data", "Engineer"], "ner_tags": ["B-CERT", "I-CERT", "O", "B-ROLE", "I-ROLE"]}
+{"tokens": ["Meta", "Frontend", "Developer", "Certificate"], "ner_tags": ["O", "O", "B-ROLE", "O"]}
+{"tokens": ["Certified", "Ethical", "Hacker", "(", "CEH", ")"], "ner_tags": ["B-CERT", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengajar", "coding", "kepada", "anak", "-", "anak", "sekolah", "Mengikuti", "kompetisi", "competitive", "programming", "Hiking", "dan", "kegiatan", "alam"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["DevOps", "engineer", "yang", "berpengalaman", "dalam", "otomasi", "infrastruktur", "dan", "pengelolaan", "platform", "cloud"], "ner_tags": ["O", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "O", "B-CERT"]}
+{"tokens": ["membangun", "pipeline", "CI", "/", "CD", "yang", "efisien", "dan", "reliable"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Memiliki", "pemahaman", "kuat", "tentang", "keamanan", "infrastruktur"], "ner_tags": ["O", "O", "O", "O", "O", "O"]}
+{"tokens": ["dan", "monitoring", "sistem", "skala", "enterprise"], "ner_tags": ["O", "O", "B-EDU", "O", "O"]}
+{"tokens": ["Python", "Bash", "Docker", "Jenkins", "Linux", "Kubernetes", "Grafana", "Prometheus", "Git", "GCP"], "ner_tags": ["B-SKILL", "O", "B-SKILL", "O", "O", "B-SKILL", "O", "O", "O", "B-SKILL"]}
+{"tokens": ["DevOps", "Engineer", "-", "PT", "Moladin"], "ner_tags": ["O", "B-ROLE", "O", "O", "O"]}
+{"tokens": ["Meningkatkan", "code", "coverage", "dari", "30", "%", "menjadi", "85", "%", "dengan", "automation", "testing"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Meraih", "juara", "2", "Hackathon", "Nasional", "kategori", "AI", "Innovation"], "ner_tags": ["O", "O", "B-EXP", "B-CERT", "O", "O", "O", "O"]}
+{"tokens": ["Memimpin", "tim", "5", "developer", "dalam", "menyelesaikan", "proyek", "senilai", "Rp", "2", "miliar"], "ner_tags": ["O", "O", "B-EXP", "B-ROLE", "O", "O", "O", "O", "O", "B-EXP", "O"]}
+{"tokens": ["DevOps", "Engineer", "Intern", "-", "Dana", "Indonesia"], "ner_tags": ["O", "B-ROLE", "I-ROLE", "O", "O", "B-EDU"]}
+{"tokens": ["Mengembangkan", "dashboard", "analytics", "yang", "digunakan", "oleh", "lebih", "dari", "200", "pengguna", "internal"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Membangun", "fitur", "checkout", "yang", "meningkatkan", "konversi", "sebesar", "18", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "model", "rekomendasi", "yang", "meningkatkan", "CTR", "sebesar", "25", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["DevOps", "Engineer", "-", "PT", "Tokopedia"], "ner_tags": ["O", "B-ROLE", "O", "O", "B-COMP"]}
+{"tokens": ["Memimpin", "tim", "5", "developer", "dalam", "menyelesaikan", "proyek", "senilai", "Rp", "2", "miliar"], "ner_tags": ["O", "O", "B-EXP", "B-ROLE", "O", "O", "O", "O", "O", "B-EXP", "O"]}
+{"tokens": ["Merancang", "sistem", "monitoring", "real", "-", "time", "yang", "memantau", "lebih", "dari", "50", "microservices"], "ner_tags": ["O", "B-EDU", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Meraih", "juara", "2", "Hackathon", "Nasional", "kategori", "AI", "Innovation"], "ner_tags": ["O", "O", "B-EXP", "B-CERT", "O", "O", "O", "O"]}
+{"tokens": ["S1", "Matematika", "Komputasi", "-", "Universitas", "Brawijaya"], "ner_tags": ["B-EDU", "O", "O", "O", "B-EDU", "O"]}
+{"tokens": ["2015", "-", "2019", "|", "IPK", ":", "3", ".", "68"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Certified", "Kubernetes", "Administrator", "(", "CKA", ")"], "ner_tags": ["B-CERT", "B-SKILL", "O", "O", "O", "O"]}
+{"tokens": ["Bermain", "musik", "(", "gitar", "dan", "piano", ")", "Berkontribusi", "pada", "proyek", "open", "-", "source", "Mengikuti", "kompetisi", "competitive"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["DevOps", "engineer", "yang", "berpengalaman", "dalam", "otomasi", "infrastruktur", "dan", "pengelolaan", "platform", "cloud"], "ner_tags": ["O", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "O", "B-CERT"]}
+{"tokens": ["membangun", "pipeline", "CI", "/", "CD", "yang", "efisien", "dan", "reliable"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Memiliki", "pemahaman", "kuat", "tentang", "keamanan", "infrastruktur"], "ner_tags": ["O", "O", "O", "O", "O", "O"]}
+{"tokens": ["dan", "monitoring", "sistem", "skala", "enterprise"], "ner_tags": ["O", "O", "B-EDU", "O", "O"]}
+{"tokens": ["Git", "AWS", "Ansible", "Grafana", "Prometheus", "CI", "/", "CD", "Terraform", "Docker", "Jenkins", "Bash"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "B-SKILL", "O", "O"]}
+{"tokens": ["DevOps", "Engineer", "-", "PT", "Tokopedia"], "ner_tags": ["O", "B-ROLE", "O", "O", "B-COMP"]}
+{"tokens": ["Mengimplementasikan", "solusi", "keamanan", "yang", "berhasil", "mencegah", "3", "potensi", "breach", "keamanan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Memimpin", "tim", "5", "developer", "dalam", "menyelesaikan", "proyek", "senilai", "Rp", "2", "miliar"], "ner_tags": ["O", "O", "B-EXP", "B-ROLE", "O", "O", "O", "O", "O", "B-EXP", "O"]}
+{"tokens": ["Berkontribusi", "pada", "open", "-", "source", "project", "dengan", "lebih", "dari", "200", "GitHub", "stars"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["DevOps", "Engineer", "Intern", "-", "Kargo", "Technologies"], "ner_tags": ["O", "B-ROLE", "I-ROLE", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "dashboard", "analytics", "yang", "digunakan", "oleh", "lebih", "dari", "200", "pengguna", "internal"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengurangi", "bug", "production", "sebesar", "50", "%", "melalui", "implementasi", "CI", "/", "CD", "yang", "ketat"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Berkontribusi", "pada", "open", "-", "source", "project", "dengan", "lebih", "dari", "200", "GitHub", "stars"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Junior", "DevOps", "Engineer", "-", "Flip", ".", "id"], "ner_tags": ["O", "O", "B-ROLE", "O", "O", "O", "O"]}
+{"tokens": ["Mengintegrasikan", "sistem", "pembayaran", "dengan", "4", "payment", "gateway", "berbeda"], "ner_tags": ["O", "B-EDU", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Memimpin", "migrasi", "sistem", "monolitik", "ke", "arsitektur", "microservices", "untuk", "3", "layanan", "utama"], "ner_tags": ["O", "O", "B-EDU", "O", "O", "O", "O", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Mengurangi", "response", "time", "API", "sebesar", "40", "%", "melalui", "optimasi", "query", "dan", "caching"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["S1", "Teknik", "Komputer", "-", "Universitas", "Diponegoro"], "ner_tags": ["B-EDU", "I-EDU", "O", "O", "B-EDU", "O"]}
+{"tokens": ["2012", "-", "2016", "|", "IPK", ":", "3", ".", "89"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["ISTQB", "Certified", "Tester"], "ner_tags": ["O", "B-CERT", "O"]}
+{"tokens": ["Mengikuti", "kompetisi", "competitive", "programming", "Game", "development", "sebagai", "side", "project", "Hiking", "dan", "kegiatan", "alam"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Cloud", "engineer", "dengan", "spesialisasi", "dalam", "perancangan", "dan", "pengelolaan", "infrastruktur", "cloud", "yang", "skalabel"], "ner_tags": ["B-CERT", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "B-CERT", "O", "O"]}
+{"tokens": ["Berpengalaman", "dalam", "migrasi", "sistem", "on", "-", "premise", "ke", "cloud", "dan", "optimasi", "biaya", "infrastruktur"], "ner_tags": ["O", "O", "O", "B-EDU", "O", "O", "O", "O", "B-CERT", "O", "O", "O", "O"]}
+{"tokens": ["cloud", "dari", "AWS", "dan", "Google", "Cloud", "Platform"], "ner_tags": ["B-CERT", "O", "O", "O", "B-CERT", "I-CERT", "O"]}
+{"tokens": ["IAM", "EC2", "VPC", "Python", "Azure", "Load", "Balancer", "S3", "AWS", "Docker", "Kubernetes"], "ner_tags": ["O", "O", "O", "B-SKILL", "O", "O", "O", "O", "O", "B-SKILL", "I-SKILL"]}
+{"tokens": ["Cloud", "Engineer", "-", "PT", "Pertamina"], "ner_tags": ["B-CERT", "B-ROLE", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "model", "rekomendasi", "yang", "meningkatkan", "CTR", "sebesar", "25", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mempercepat", "training", "model", "ML", "sebesar", "60", "%", "dengan", "optimasi", "GPU", "pipeline"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Memimpin", "tim", "5", "developer", "dalam", "menyelesaikan", "proyek", "senilai", "Rp", "2", "miliar"], "ner_tags": ["O", "O", "B-EXP", "B-ROLE", "O", "O", "O", "O", "O", "B-EXP", "O"]}
+{"tokens": ["Associate", "Cloud", "Engineer", "-", "Kudo", "(", "Grab", ")"], "ner_tags": ["B-ROLE", "B-CERT", "B-ROLE", "O", "B-COMP", "O", "B-COMP", "O"]}
+{"tokens": ["Memimpin", "migrasi", "sistem", "monolitik", "ke", "arsitektur", "microservices", "untuk", "3", "layanan", "utama"], "ner_tags": ["O", "O", "B-EDU", "O", "O", "O", "O", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Meraih", "juara", "2", "Hackathon", "Nasional", "kategori", "AI", "Innovation"], "ner_tags": ["O", "O", "B-EXP", "B-CERT", "O", "O", "O", "O"]}
+{"tokens": ["Memimpin", "tim", "5", "developer", "dalam", "menyelesaikan", "proyek", "senilai", "Rp", "2", "miliar"], "ner_tags": ["O", "O", "B-EXP", "B-ROLE", "O", "O", "O", "O", "O", "B-EXP", "O"]}
+{"tokens": ["Junior", "Cloud", "Engineer", "-", "Sayurbox"], "ner_tags": ["O", "B-CERT", "B-ROLE", "O", "O"]}
+{"tokens": ["Meningkatkan", "code", "coverage", "dari", "30", "%", "menjadi", "85", "%", "dengan", "automation", "testing"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Memimpin", "tim", "5", "developer", "dalam", "menyelesaikan", "proyek", "senilai", "Rp", "2", "miliar"], "ner_tags": ["O", "O", "B-EXP", "B-ROLE", "O", "O", "O", "O", "O", "B-EXP", "O"]}
+{"tokens": ["Berkontribusi", "pada", "open", "-", "source", "project", "dengan", "lebih", "dari", "200", "GitHub", "stars"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["S1", "Teknik", "Komputer", "-", "Universitas", "Gunadarma"], "ner_tags": ["B-EDU", "I-EDU", "O", "O", "B-EDU", "O"]}
+{"tokens": ["2014", "-", "2018", "|", "IPK", ":", "3", ".", "46"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Docker", "Certified", "Associate"], "ner_tags": ["B-SKILL", "B-CERT", "B-ROLE"]}
+{"tokens": ["Fotografi", "dan", "videografi", "Bermain", "musik", "(", "gitar", "dan", "piano", ")", "Membaca", "buku", "teknologi", "dan", "pengembangan", "diri"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Fullstack", "developer", "dengan", "kemampuan", "mengembangkan", "aplikasi", "web", "dari", "sisi", "frontend", "hingga", "backend"], "ner_tags": ["O", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Berpengalaman", "dalam", "membangun", "produk", "digital", "yang", "scalable", "menggunakan", "teknologi", "modern"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["secara", "mandiri", "maupun", "dalam", "tim", "lintas", "fungsi"], "ner_tags": ["O", "B-COMP", "O", "O", "O", "O", "O"]}
+{"tokens": ["React", "Git", "MongoDB", "Express", ".", "js", "AWS", "TypeScript", "GraphQL", "Next", ".", "js", "Tailwind", "Node", ".", "js"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Fullstack", "Developer", "-", "PT", "Tokopedia"], "ner_tags": ["O", "B-ROLE", "O", "O", "B-COMP"]}
+{"tokens": ["Merancang", "sistem", "monitoring", "real", "-", "time", "yang", "memantau", "lebih", "dari", "50", "microservices"], "ner_tags": ["O", "B-EDU", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengimplementasikan", "solusi", "keamanan", "yang", "berhasil", "mencegah", "3", "potensi", "breach", "keamanan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Meraih", "juara", "2", "Hackathon", "Nasional", "kategori", "AI", "Innovation"], "ner_tags": ["O", "O", "B-EXP", "B-CERT", "O", "O", "O", "O"]}
+{"tokens": ["Fullstack", "Developer", "-", "Kargo", "Technologies"], "ner_tags": ["O", "B-ROLE", "O", "O", "O"]}
+{"tokens": ["Mengimplementasikan", "solusi", "keamanan", "yang", "berhasil", "mencegah", "3", "potensi", "breach", "keamanan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Mengurangi", "response", "time", "API", "sebesar", "40", "%", "melalui", "optimasi", "query", "dan", "caching"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "dashboard", "analytics", "yang", "digunakan", "oleh", "lebih", "dari", "200", "pengguna", "internal"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["S1", "Ilmu", "Komputer", "-", "Universitas", "Amikom", "Yogyakarta"], "ner_tags": ["B-EDU", "O", "O", "O", "B-EDU", "O", "O"]}
+{"tokens": ["2013", "-", "2017", "|", "IPK", ":", "3", ".", "13"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Oracle", "Certified", "Professional", "Java"], "ner_tags": ["O", "B-CERT", "O", "O"]}
+{"tokens": ["Certified", "Ethical", "Hacker", "(", "CEH", ")"], "ner_tags": ["B-CERT", "O", "O", "O", "O", "O"]}
+{"tokens": ["Membaca", "buku", "teknologi", "dan", "pengembangan", "diri", "Fotografi", "dan", "videografi", "Bermain", "musik", "(", "gitar", "dan", "piano", ")"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Fullstack", "developer", "dengan", "kemampuan", "mengembangkan", "aplikasi", "web", "dari", "sisi", "frontend", "hingga", "backend"], "ner_tags": ["O", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Berpengalaman", "dalam", "membangun", "produk", "digital", "yang", "scalable", "menggunakan", "teknologi", "modern"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["secara", "mandiri", "maupun", "dalam", "tim", "lintas", "fungsi"], "ner_tags": ["O", "B-COMP", "O", "O", "O", "O", "O"]}
+{"tokens": ["GraphQL", "Tailwind", "CI", "/", "CD", "Git", "MongoDB", "Docker", "Node", ".", "js", "REST", "API", "React", "PostgreSQL"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "B-SKILL", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Fullstack", "Developer", "-", "Shopee", "Indonesia"], "ner_tags": ["O", "B-ROLE", "O", "B-COMP", "B-EDU"]}
+{"tokens": ["Mengimplementasikan", "solusi", "keamanan", "yang", "berhasil", "mencegah", "3", "potensi", "breach", "keamanan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Berkontribusi", "pada", "open", "-", "source", "project", "dengan", "lebih", "dari", "200", "GitHub", "stars"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Membangun", "fitur", "checkout", "yang", "meningkatkan", "konversi", "sebesar", "18", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Fullstack", "Developer", "Intern", "-", "PT", "Pertamina"], "ner_tags": ["O", "B-ROLE", "I-ROLE", "O", "O", "O"]}
+{"tokens": ["Mengurangi", "bug", "production", "sebesar", "50", "%", "melalui", "implementasi", "CI", "/", "CD", "yang", "ketat"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Berkontribusi", "pada", "open", "-", "source", "project", "dengan", "lebih", "dari", "200", "GitHub", "stars"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Merancang", "sistem", "monitoring", "real", "-", "time", "yang", "memantau", "lebih", "dari", "50", "microservices"], "ner_tags": ["O", "B-EDU", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["S1", "Ilmu", "Komputer", "-", "Universitas", "Gunadarma"], "ner_tags": ["B-EDU", "O", "O", "O", "B-EDU", "O"]}
+{"tokens": ["2020", "-", "2024", "|", "IPK", ":", "3", ".", "37"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Google", "Cloud", "Professional", "Data", "Engineer"], "ner_tags": ["B-CERT", "I-CERT", "O", "B-ROLE", "I-ROLE"]}
+{"tokens": ["HashiCorp", "Terraform", "Associate"], "ner_tags": ["O", "O", "B-ROLE"]}
+{"tokens": ["Fotografi", "dan", "videografi", "Hiking", "dan", "kegiatan", "alam", "terbuka", "Bermain", "musik", "(", "gitar", "dan", "piano", ")"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Backend", "developer", "berpengalaman", "dalam", "membangun", "layanan", "RESTful", "API", "yang", "skalabel", "dan", "handal"], "ner_tags": ["O", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["bekerja", "dalam", "lingkungan", "microservices", "dengan", "pendekatan", "cloud", "-", "native"], "ner_tags": ["O", "O", "O", "O", "O", "O", "B-CERT", "O", "O"]}
+{"tokens": ["Memiliki", "pemahaman", "mendalam"], "ner_tags": ["O", "O", "O"]}
+{"tokens": ["tentang", "optimasi", "database", "dan", "desain", "sistem", "terdistribusi"], "ner_tags": ["O", "O", "O", "O", "O", "B-EDU", "O"]}
+{"tokens": ["Go", "CI", "/", "CD", "REST", "API", "Microservices", "Docker", "Python", "Spring", "Boot", "Java", "Git", "MySQL"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "B-SKILL", "I-SKILL", "O", "O", "O", "O", "O"]}
+{"tokens": ["Backend", "Developer", "-", "Blibli", ".", "com"], "ner_tags": ["O", "B-ROLE", "O", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "dashboard", "analytics", "yang", "digunakan", "oleh", "lebih", "dari", "200", "pengguna", "internal"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Memimpin", "migrasi", "sistem", "monolitik", "ke", "arsitektur", "microservices", "untuk", "3", "layanan", "utama"], "ner_tags": ["O", "O", "B-EDU", "O", "O", "O", "O", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Membangun", "fitur", "checkout", "yang", "meningkatkan", "konversi", "sebesar", "18", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Associate", "Backend", "Developer", "-", "Kudo", "(", "Grab", ")"], "ner_tags": ["B-ROLE", "O", "B-ROLE", "O", "B-COMP", "O", "B-COMP", "O"]}
+{"tokens": ["Meningkatkan", "code", "coverage", "dari", "30", "%", "menjadi", "85", "%", "dengan", "automation", "testing"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Merancang", "sistem", "monitoring", "real", "-", "time", "yang", "memantau", "lebih", "dari", "50", "microservices"], "ner_tags": ["O", "B-EDU", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mempercepat", "training", "model", "ML", "sebesar", "60", "%", "dengan", "optimasi", "GPU", "pipeline"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Junior", "Backend", "Developer", "-", "PT", "Telkom", "Indonesia"], "ner_tags": ["O", "O", "B-ROLE", "O", "O", "O", "B-EDU"]}
+{"tokens": ["Mengurangi", "response", "time", "API", "sebesar", "40", "%", "melalui", "optimasi", "query", "dan", "caching"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengurangi", "bug", "production", "sebesar", "50", "%", "melalui", "implementasi", "CI", "/", "CD", "yang", "ketat"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "model", "rekomendasi", "yang", "meningkatkan", "CTR", "sebesar", "25", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["S1", "Teknik", "Elektro", "-", "Universitas", "Diponegoro"], "ner_tags": ["B-EDU", "I-EDU", "O", "O", "B-EDU", "O"]}
+{"tokens": ["2018", "-", "2021", "|", "IPK", ":", "3", ".", "61"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Docker", "Certified", "Associate"], "ner_tags": ["B-SKILL", "B-CERT", "B-ROLE"]}
+{"tokens": ["Dicoding", "-", "Belajar", "Machine", "Learning", "untuk", "Pemula"], "ner_tags": ["B-CERT", "O", "O", "B-SKILL", "I-SKILL", "O", "O"]}
+{"tokens": ["Game", "development", "sebagai", "side", "project", "Berkontribusi", "pada", "proyek", "open", "-", "source", "Bermain", "musik", "(", "gitar", "dan", "piano", ")"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Fullstack", "developer", "dengan", "kemampuan", "mengembangkan", "aplikasi", "web", "dari", "sisi", "frontend", "hingga", "backend"], "ner_tags": ["O", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Berpengalaman", "dalam", "membangun", "produk", "digital", "yang", "scalable", "menggunakan", "teknologi", "modern"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["secara", "mandiri", "maupun", "dalam", "tim", "lintas", "fungsi"], "ner_tags": ["O", "B-COMP", "O", "O", "O", "O", "O"]}
+{"tokens": ["Express", ".", "js", "Node", ".", "js", "GraphQL", "TypeScript", "Next", ".", "js", "CI", "/", "CD", "Git", "MongoDB", "AWS", "React"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Fullstack", "Developer", "-", "PT", "Telkom", "Indonesia"], "ner_tags": ["O", "B-ROLE", "O", "O", "O", "B-EDU"]}
+{"tokens": ["Memimpin", "migrasi", "sistem", "monolitik", "ke", "arsitektur", "microservices", "untuk", "3", "layanan", "utama"], "ner_tags": ["O", "O", "B-EDU", "O", "O", "O", "O", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Membangun", "pipeline", "CI", "/", "CD", "yang", "mengurangi", "deployment", "time", "dari", "2", "jam", "menjadi", "15", "menit"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "dashboard", "analytics", "yang", "digunakan", "oleh", "lebih", "dari", "200", "pengguna", "internal"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Fullstack", "Developer", "-", "PT", "Telkom", "Indonesia"], "ner_tags": ["O", "B-ROLE", "O", "O", "O", "B-EDU"]}
+{"tokens": ["Mengurangi", "response", "time", "API", "sebesar", "40", "%", "melalui", "optimasi", "query", "dan", "caching"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Merancang", "sistem", "monitoring", "real", "-", "time", "yang", "memantau", "lebih", "dari", "50", "microservices"], "ner_tags": ["O", "B-EDU", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Meraih", "juara", "2", "Hackathon", "Nasional", "kategori", "AI", "Innovation"], "ner_tags": ["O", "O", "B-EXP", "B-CERT", "O", "O", "O", "O"]}
+{"tokens": ["S1", "Rekayasa", "Perangkat", "Lunak", "-", "Universitas", "Telkom"], "ner_tags": ["B-EDU", "O", "O", "O", "O", "B-EDU", "O"]}
+{"tokens": ["2016", "-", "2019", "|", "IPK", ":", "3", ".", "71"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["HashiCorp", "Terraform", "Associate"], "ner_tags": ["O", "O", "B-ROLE"]}
+{"tokens": ["Scrum", "Master", "Certified", "(", "SMC", ")"], "ner_tags": ["O", "O", "B-CERT", "O", "O", "O"]}
+{"tokens": ["Docker", "Certified", "Associate"], "ner_tags": ["B-SKILL", "B-CERT", "B-ROLE"]}
+{"tokens": ["Game", "development", "sebagai", "side", "project", "Mengikuti", "kompetisi", "competitive", "programming", "Berkontribusi", "pada", "proyek"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["UI", "/", "UX", "designer", "yang", "berdedikasi", "dalam", "menciptakan", "pengalaman", "digital", "yang", "bermakna", "dan", "berpusat", "pada"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Berpengalaman", "dalam", "design", "thinking", "dan", "user", "-", "centered", "design"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mampu", "berkolaborasi", "dengan", "tim"], "ner_tags": ["O", "O", "O", "O"]}
+{"tokens": ["engineering", "untuk", "menghasilkan", "produk", "yang", "fungsional", "dan", "estetis"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Adobe", "XD", "Sketch", "Usability", "Testing", "Wireframing", "InVision", "HTML", "Agile", "A", "/", "B", "Testing", "Information", "Architecture"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["UI", "/", "UX", "Designer", "-", "OVO"], "ner_tags": ["O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengimplementasikan", "solusi", "keamanan", "yang", "berhasil", "mencegah", "3", "potensi", "breach", "keamanan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "model", "rekomendasi", "yang", "meningkatkan", "CTR", "sebesar", "25", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Memimpin", "tim", "5", "developer", "dalam", "menyelesaikan", "proyek", "senilai", "Rp", "2", "miliar"], "ner_tags": ["O", "O", "B-EXP", "B-ROLE", "O", "O", "O", "O", "O", "B-EXP", "O"]}
+{"tokens": ["UI", "/", "UX", "Designer", "Intern", "-", "PT", "Kredivo"], "ner_tags": ["O", "O", "O", "O", "B-ROLE", "O", "O", "B-COMP"]}
+{"tokens": ["Merancang", "sistem", "monitoring", "real", "-", "time", "yang", "memantau", "lebih", "dari", "50", "microservices"], "ner_tags": ["O", "B-EDU", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Meraih", "juara", "2", "Hackathon", "Nasional", "kategori", "AI", "Innovation"], "ner_tags": ["O", "O", "B-EXP", "B-CERT", "O", "O", "O", "O"]}
+{"tokens": ["Mengimplementasikan", "solusi", "keamanan", "yang", "berhasil", "mencegah", "3", "potensi", "breach", "keamanan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["S1", "Ilmu", "Komputer", "-", "Universitas", "Mercu", "Buana"], "ner_tags": ["B-EDU", "O", "O", "O", "B-EDU", "O", "O"]}
+{"tokens": ["2014", "-", "2018", "|", "IPK", ":", "3", ".", "53"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["PMP", "-", "Project", "Management", "Professional"], "ner_tags": ["O", "O", "O", "O", "O"]}
+{"tokens": ["Menulis", "artikel", "teknis", "di", "Medium", "Game", "development", "sebagai", "side", "project", "Bermain", "musik", "(", "gitar", "dan", "piano", ")"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["UI", "/", "UX", "designer", "yang", "berdedikasi", "dalam", "menciptakan", "pengalaman", "digital", "yang", "bermakna", "dan", "berpusat", "pada"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Berpengalaman", "dalam", "design", "thinking", "dan", "user", "-", "centered", "design"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mampu", "berkolaborasi", "dengan", "tim"], "ner_tags": ["O", "O", "O", "O"]}
+{"tokens": ["engineering", "untuk", "menghasilkan", "produk", "yang", "fungsional", "dan", "estetis"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Agile", "Sketch", "Adobe", "Illustrator", "Wireframing", "InVision", "Information", "Architecture", "Usability", "Testing", "Figma", "Design"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["UI", "/", "UX", "Designer", "-", "PT", "Gojek", "Indonesia"], "ner_tags": ["O", "O", "O", "O", "O", "O", "B-COMP", "B-EDU"]}
+{"tokens": ["Berkontribusi", "pada", "open", "-", "source", "project", "dengan", "lebih", "dari", "200", "GitHub", "stars"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mempercepat", "training", "model", "ML", "sebesar", "60", "%", "dengan", "optimasi", "GPU", "pipeline"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Meraih", "juara", "2", "Hackathon", "Nasional", "kategori", "AI", "Innovation"], "ner_tags": ["O", "O", "B-EXP", "B-CERT", "O", "O", "O", "O"]}
+{"tokens": ["Associate", "UI", "/", "UX", "Designer", "-", "SeaBank"], "ner_tags": ["B-ROLE", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Berkontribusi", "pada", "open", "-", "source", "project", "dengan", "lebih", "dari", "200", "GitHub", "stars"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Membangun", "pipeline", "CI", "/", "CD", "yang", "mengurangi", "deployment", "time", "dari", "2", "jam", "menjadi", "15", "menit"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O", "O"]}
+{"tokens": ["Mengembangkan", "dashboard", "analytics", "yang", "digunakan", "oleh", "lebih", "dari", "200", "pengguna", "internal"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Associate", "UI", "/", "UX", "Designer", "-", "Astra", "International"], "ner_tags": ["B-ROLE", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Berkontribusi", "pada", "open", "-", "source", "project", "dengan", "lebih", "dari", "200", "GitHub", "stars"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Memimpin", "migrasi", "sistem", "monolitik", "ke", "arsitektur", "microservices", "untuk", "3", "layanan", "utama"], "ner_tags": ["O", "O", "B-EDU", "O", "O", "O", "O", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Mengurangi", "bug", "production", "sebesar", "50", "%", "melalui", "implementasi", "CI", "/", "CD", "yang", "ketat"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["S1", "Teknik", "Informatika", "-", "Institut", "Teknologi", "Bandung"], "ner_tags": ["B-EDU", "I-EDU", "I-EDU", "O", "B-EDU", "O", "O"]}
+{"tokens": ["2016", "-", "2019", "|", "IPK", ":", "3", ".", "75"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Certified", "Ethical", "Hacker", "(", "CEH", ")"], "ner_tags": ["B-CERT", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengikuti", "meetup", "dan", "komunitas", "teknologi", "lokal", "Hiking", "dan", "kegiatan", "alam", "terbuka", "Mengajar", "coding", "kepada"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["QA", "engineer", "yang", "berpengalaman", "dalam", "memastikan", "kualitas", "perangkat", "lunak", "melalui", "pendekatan", "pengujian"], "ner_tags": ["O", "B-ROLE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Terbiasa", "membangun", "framework", "automation", "testing", "yang", "efisien"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["mendalam", "tentang", "proses", "SDLC", "dan", "metodologi", "Agile"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Performance", "Testing", "Java", "Python", "Postman", "CI", "/", "CD", "Scrum", "JIRA", "Cypress", "Manual", "Testing", "Agile"], "ner_tags": ["O", "O", "O", "B-SKILL", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["QA", "Engineer", "-", "Astra", "International"], "ner_tags": ["O", "B-ROLE", "O", "O", "O"]}
+{"tokens": ["Memimpin", "tim", "5", "developer", "dalam", "menyelesaikan", "proyek", "senilai", "Rp", "2", "miliar"], "ner_tags": ["O", "O", "B-EXP", "B-ROLE", "O", "O", "O", "O", "O", "B-EXP", "O"]}
+{"tokens": ["Membangun", "fitur", "checkout", "yang", "meningkatkan", "konversi", "sebesar", "18", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Meningkatkan", "code", "coverage", "dari", "30", "%", "menjadi", "85", "%", "dengan", "automation", "testing"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["QA", "Engineer", "Intern", "-", "Waresix"], "ner_tags": ["O", "B-ROLE", "I-ROLE", "O", "O"]}
+{"tokens": ["Memimpin", "tim", "5", "developer", "dalam", "menyelesaikan", "proyek", "senilai", "Rp", "2", "miliar"], "ner_tags": ["O", "O", "B-EXP", "B-ROLE", "O", "O", "O", "O", "O", "B-EXP", "O"]}
+{"tokens": ["Merancang", "sistem", "monitoring", "real", "-", "time", "yang", "memantau", "lebih", "dari", "50", "microservices"], "ner_tags": ["O", "B-EDU", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Membangun", "fitur", "checkout", "yang", "meningkatkan", "konversi", "sebesar", "18", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["S1", "Sistem", "Informasi", "-", "Binus", "University"], "ner_tags": ["B-EDU", "I-EDU", "I-EDU", "O", "O", "O"]}
+{"tokens": ["2016", "-", "2020", "|", "IPK", ":", "3", ".", "31"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Meta", "Frontend", "Developer", "Certificate"], "ner_tags": ["O", "O", "B-ROLE", "O"]}
+{"tokens": ["Certified", "Kubernetes", "Administrator", "(", "CKA", ")"], "ner_tags": ["B-CERT", "B-SKILL", "O", "O", "O", "O"]}
+{"tokens": ["Docker", "Certified", "Associate"], "ner_tags": ["B-SKILL", "B-CERT", "B-ROLE"]}
+{"tokens": ["Mengikuti", "kompetisi", "competitive", "programming", "Mengikuti", "meetup", "dan", "komunitas", "teknologi", "lokal", "Game", "development"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["sebagai", "side", "project"], "ner_tags": ["O", "O", "O"]}
+{"tokens": ["Data", "scientist", "dengan", "keahlian", "dalam", "mengolah", "data", "berskala", "besar", "dan", "membangun", "model", "prediktif"], "ner_tags": ["B-ROLE", "I-ROLE", "O", "O", "O", "O", "B-ROLE", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Berpengalaman", "dalam", "seluruh", "siklus", "data", "science", "mulai", "dari", "eksplorasi", "data", "hingga", "deployment", "model"], "ner_tags": ["O", "O", "O", "O", "B-ROLE", "O", "O", "O", "O", "B-ROLE", "O", "O", "O"]}
+{"tokens": ["mengkomunikasikan", "insight", "data", "kepada", "stakeholder", "non", "-", "teknis"], "ner_tags": ["O", "O", "B-ROLE", "O", "O", "O", "O", "O"]}
+{"tokens": ["Deep", "Learning", "SQL", "PyTorch", "Python", "Power", "BI", "TensorFlow", "NumPy", "Scikit", "-", "learn", "Machine", "Learning", "NLP"], "ner_tags": ["O", "B-SKILL", "I-SKILL", "I-SKILL", "I-SKILL", "I-SKILL", "I-SKILL", "I-SKILL", "I-SKILL", "O", "O", "O", "B-SKILL", "I-SKILL", "I-SKILL"]}
+{"tokens": ["Data", "Scientist", "-", "PT", "Tokopedia"], "ner_tags": ["B-ROLE", "I-ROLE", "O", "O", "B-COMP"]}
+{"tokens": ["Meningkatkan", "code", "coverage", "dari", "30", "%", "menjadi", "85", "%", "dengan", "automation", "testing"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Mengurangi", "response", "time", "API", "sebesar", "40", "%", "melalui", "optimasi", "query", "dan", "caching"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Membangun", "fitur", "checkout", "yang", "meningkatkan", "konversi", "sebesar", "18", "%"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Associate", "Data", "Scientist", "-", "PT", "Bank", "Central", "Asia"], "ner_tags": ["B-ROLE", "I-ROLE", "I-ROLE", "O", "O", "O", "O", "O"]}
+{"tokens": ["Meraih", "juara", "2", "Hackathon", "Nasional", "kategori", "AI", "Innovation"], "ner_tags": ["O", "O", "B-EXP", "B-CERT", "O", "O", "O", "O"]}
+{"tokens": ["Mengimplementasikan", "solusi", "keamanan", "yang", "berhasil", "mencegah", "3", "potensi", "breach", "keamanan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["Memimpin", "migrasi", "sistem", "monolitik", "ke", "arsitektur", "microservices", "untuk", "3", "layanan", "utama"], "ner_tags": ["O", "O", "B-EDU", "O", "O", "O", "O", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Data", "Scientist", "-", "Kudo", "(", "Grab", ")"], "ner_tags": ["B-ROLE", "I-ROLE", "O", "B-COMP", "O", "B-COMP", "O"]}
+{"tokens": ["Mengembangkan", "dashboard", "analytics", "yang", "digunakan", "oleh", "lebih", "dari", "200", "pengguna", "internal"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
+{"tokens": ["Meraih", "juara", "2", "Hackathon", "Nasional", "kategori", "AI", "Innovation"], "ner_tags": ["O", "O", "B-EXP", "B-CERT", "O", "O", "O", "O"]}
+{"tokens": ["Mengimplementasikan", "solusi", "keamanan", "yang", "berhasil", "mencegah", "3", "potensi", "breach", "keamanan"], "ner_tags": ["O", "O", "O", "O", "O", "O", "B-EXP", "O", "O", "O"]}
+{"tokens": ["S1", "Sistem", "Informasi", "-", "Universitas", "Indonesia"], "ner_tags": ["B-EDU", "I-EDU", "I-EDU", "O", "B-EDU", "I-EDU"]}
+{"tokens": ["2018", "-", "2021", "|", "IPK", ":", "3", ".", "85"], "ner_tags": ["B-EXP", "O", "B-EXP", "O", "B-EDU", "O", "B-EXP", "O", "O"]}
+{"tokens": ["Certified", "Kubernetes", "Administrator", "(", "CKA", ")"], "ner_tags": ["B-CERT", "B-SKILL", "O", "O", "O", "O"]}
+{"tokens": ["Microsoft", "Certified", "Azure", "Developer"], "ner_tags": ["O", "B-CERT", "O", "B-ROLE"]}
+{"tokens": ["Google", "Cloud", "Professional", "Data", "Engineer"], "ner_tags": ["B-CERT", "I-CERT", "O", "B-ROLE", "I-ROLE"]}
+{"tokens": ["Hiking", "dan", "kegiatan", "alam", "terbuka", "Fotografi", "dan", "videografi", "Game", "development", "sebagai", "side", "project"], "ner_tags": ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]}
