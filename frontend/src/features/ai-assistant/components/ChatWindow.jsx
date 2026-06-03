@@ -39,10 +39,19 @@ const ChatWindow = () => {
     scrollToBottom();
   }, [messages, isTyping]);
 
-  // Filter sessions list based on search query
-  const filteredSessions = sessions.filter(session => 
-    session.title.toLowerCase().includes(searchSessionQuery.toLowerCase())
-  );
+  // Filter sessions list based on search query and interaction status
+  const filteredSessions = sessions.filter(session => {
+    const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+    const isLocal = !uuidRegex.test(session.id);
+    const hasUserMessage = session.messages && session.messages.some(m => m.sender === 'user');
+    
+    // If it's a local placeholder and the user hasn't sent any messages, hide it from history
+    if (isLocal && !hasUserMessage) {
+      return false;
+    }
+    
+    return session.title.toLowerCase().includes(searchSessionQuery.toLowerCase());
+  });
 
   const activeSession = sessions.find(s => s.id === activeSessionId);
 

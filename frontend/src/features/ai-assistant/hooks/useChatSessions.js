@@ -27,18 +27,23 @@ export const useChatSessions = (user) => {
       try {
         const { aiAssistantService } = await import('../api/aiAssistantService');
         const apiSessions = await aiAssistantService.listSessions();
-        if (apiSessions && apiSessions.length > 0) {
-          const formatted = apiSessions.map(s => ({
-            id: s.id,
-            title: s.title || 'Obrolan',
-            messages: s.messages || [],
-            createdAt: s.created_at ? new Date(s.created_at).getTime() : Date.now()
-          }));
-          setSessions(formatted);
-          setActiveSessionId(formatted[0].id);
-          localStorage.setItem('neokarir_chat_sessions', JSON.stringify(formatted));
-          localStorage.setItem('neokarir_active_session_id', formatted[0].id);
-          return;
+        if (apiSessions) {
+          if (apiSessions.length > 0) {
+            const formatted = apiSessions.map(s => ({
+              id: s.id,
+              title: s.title || 'Obrolan',
+              messages: s.messages || [],
+              createdAt: s.created_at ? new Date(s.created_at).getTime() : Date.now()
+            }));
+            setSessions(formatted);
+            setActiveSessionId(formatted[0].id);
+            localStorage.setItem('neokarir_chat_sessions', JSON.stringify(formatted));
+            localStorage.setItem('neokarir_active_session_id', formatted[0].id);
+            return;
+          } else {
+            setupInitialDefaultSession(name);
+            return;
+          }
         }
       } catch (err) {
         console.warn("Failed to fetch API sessions, falling back to local.", err);
@@ -69,23 +74,7 @@ export const useChatSessions = (user) => {
     fetchSessions();
   }, [user]);
 
-  const setupInitialDefaultSession = async (name) => {
-    try {
-      const { aiAssistantService } = await import('../api/aiAssistantService');
-      const newSess = await aiAssistantService.createSession({ title: 'Obrolan Baru' });
-      if (newSess) {
-        const defaultId = newSess.id;
-        const initialSession = createDefaultSessionObj(defaultId, name);
-        setSessions([initialSession]);
-        setActiveSessionId(defaultId);
-        localStorage.setItem('neokarir_chat_sessions', JSON.stringify([initialSession]));
-        localStorage.setItem('neokarir_active_session_id', defaultId);
-        return;
-      }
-    } catch (e) {
-      console.warn("Failed to create session on API", e);
-    }
-    
+  const setupInitialDefaultSession = (name) => {
     const defaultId = `session-${Date.now()}`;
     const initialSession = createDefaultSessionObj(defaultId, name);
     setSessions([initialSession]);
@@ -101,16 +90,9 @@ export const useChatSessions = (user) => {
   };
 
   // Create a new empty chat session
-  const createNewSession = useCallback(async () => {
+  const createNewSession = useCallback(() => {
     const name = user?.name?.split(' ')[0] || 'Franz';
-    let newId = `session-${Date.now()}`;
-    
-    try {
-      const { aiAssistantService } = await import('../api/aiAssistantService');
-      const newSess = await aiAssistantService.createSession({ title: 'Obrolan Baru' });
-      if (newSess) newId = newSess.id;
-    } catch (e) {}
-    
+    const newId = `session-${Date.now()}`;
     const newSession = createDefaultSessionObj(newId, name);
     
     const updated = [newSession, ...sessions];
@@ -132,7 +114,7 @@ export const useChatSessions = (user) => {
       e.preventDefault();
     }
     
-    const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+    const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
     if (uuidRegex.test(id)) {
       try {
         const { aiAssistantService } = await import('../api/aiAssistantService');
@@ -170,7 +152,7 @@ export const useChatSessions = (user) => {
           newTitle = textForAutoRename.length > 28 ? textForAutoRename.substring(0, 25) + '...' : textForAutoRename;
           newTitle = newTitle.charAt(0).toUpperCase() + newTitle.slice(1);
           
-          const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+          const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
           if (uuidRegex.test(sessionId)) {
              import('../api/aiAssistantService').then(({ aiAssistantService }) => {
                aiAssistantService.renameSession(sessionId, newTitle).catch(e => console.error("Auto-rename failed", e));
@@ -200,7 +182,7 @@ export const useChatSessions = (user) => {
   const renameSession = useCallback(async (id, newTitle) => {
     if (!newTitle.trim()) return;
     
-    const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+    const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
     if (uuidRegex.test(id)) {
       try {
         const { aiAssistantService } = await import('../api/aiAssistantService');
