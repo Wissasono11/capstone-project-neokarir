@@ -9,7 +9,29 @@ export const careerService = {
   getRecommendations: async () => {
     if (USE_MOCK) {
       await new Promise((resolve) => setTimeout(resolve, 500));
-      return MASTER_JOBS;
+      return MASTER_JOBS.map(job => {
+        const reqSkills = job.required_skills || [];
+        const userSkills = ['ReactJS', 'JavaScript', 'HTML', 'CSS']; // Default mock user skills
+        const matchedSkills = reqSkills.filter(s => userSkills.includes(s));
+        const missingSkills = reqSkills.filter(s => !userSkills.includes(s));
+        const matchScore = reqSkills.length > 0 
+          ? Math.round((matchedSkills.length / reqSkills.length) * 100)
+          : 70;
+          
+        return {
+          ...job,
+          matchScore: matchScore,
+          matchedSkills: matchedSkills,
+          matched_skills: matchedSkills,
+          missing_skills: missingSkills,
+          missingSkills: missingSkills,
+          matchBreakdown: {
+            skills: matchScore,
+            experience: 80,
+            education: 90
+          }
+        };
+      });
     }
 
     try {

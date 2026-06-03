@@ -3,7 +3,7 @@ import { useState, useRef } from 'react';
 export const useCVUploadZone = (cvFile, setCvFile) => {
   const fileInputRef = useRef(null);
   const [isDragging, setIsDragging] = useState(false);
-  const [uploadProgress, setUploadProgress] = useState(0);
+  const [uploadProgress, setUploadProgress] = useState(cvFile ? 100 : 0);
 
   const handleDragOver = (e) => {
     e.preventDefault();
