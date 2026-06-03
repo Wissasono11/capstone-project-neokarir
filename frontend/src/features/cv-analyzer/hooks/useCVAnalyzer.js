@@ -11,30 +11,7 @@ export const useCVAnalyzer = () => {
   const [results, setResults] = useState(null);
   const { success: toastSuccess, error: toastError } = useToast();
 
-  // Fetch latest CV analysis on mount
-  useEffect(() => {
-    const loadLatest = async () => {
-      try {
-        setStatus('processing');
-        setCurrentStep(4);
-        const response = await cvAnalyzerService.getLatestAnalysis();
-        
-        if (response && (response.results || (response.cv && response.cv.cv_data && response.cv.cv_data.atsScore))) {
-          const resultsData = response.results || response.cv.cv_data;
-          setResults(resultsData);
-          if (response.cv && response.cv.file_name) {
-            setFile({ name: response.cv.file_name });
-          }
-          setStatus('done');
-        } else {
-          setStatus('idle');
-        }
-      } catch (err) {
-        setStatus('idle');
-      }
-    };
-    loadLatest();
-  }, []);
+
 
   const uploadCV = useCallback(async (selectedFile) => {
     if (!selectedFile) return;

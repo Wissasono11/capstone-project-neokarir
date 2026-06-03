@@ -1,9 +1,18 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 export const useCVUploadZone = (cvFile, setCvFile) => {
   const fileInputRef = useRef(null);
   const [isDragging, setIsDragging] = useState(false);
-  const [uploadProgress, setUploadProgress] = useState(0);
+  const [uploadProgress, setUploadProgress] = useState(cvFile ? 100 : 0);
+
+  // Sync upload progress when cvFile is cleared or set externally
+  useEffect(() => {
+    if (!cvFile) {
+      setUploadProgress(0);
+    } else if (uploadProgress === 0) {
+      setUploadProgress(100);
+    }
+  }, [cvFile]);
 
   const handleDragOver = (e) => {
     e.preventDefault();
