@@ -1,15 +1,16 @@
 import { useState, useEffect } from 'react';
 import { useAuth } from '../../../contexts/AuthContext';
-import { MASTER_JOBS } from '../data/recommendationData';
 import { useCompletedCourses } from './useCompletedCourses';
+import { useCareerMatchCalculator } from './useCareerMatchCalculator';
 
 export const useCareerRecommendations = () => {
-  const { user } = useAuth();
+  const { user: authUser } = useAuth();
   
-  const [recommendations, setRecommendations] = useState([]);
+  const [rawRecommendations, setRawRecommendations] = useState([]);
+  const [fullProfileUser, setFullProfileUser] = useState(null);
   
   // 1. Manage checklist courses via custom hook
-  const { completedCourses, toggleCourse } = useCompletedCourses(user?.email);
+  const { completedCourses, toggleCourse } = useCompletedCourses(authUser?.email);
 
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedDomain, setSelectedDomain] = useState('All');
@@ -17,53 +18,55 @@ export const useCareerRecommendations = () => {
   const [activeJobId, setActiveJobId] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
 
-  // Fetch recommendations from API
+  // Fetch recommendations and profile from API
   useEffect(() => {
-    const fetchRecs = async () => {
+    const fetchData = async () => {
       setIsLoading(true);
       try {
         const { careerService } = await import('../api/careerService');
-        const data = await careerService.getRecommendations();
-        setRecommendations(data || []);
+        const { profileService } = await import('../../profile-settings/api/profileService');
+        
+        const [recsData, profileRes] = await Promise.all([
+          careerService.getRecommendations(),
+          profileService.getMyProfile().catch(() => null)
+        ]);
+        
+        setRawRecommendations(recsData || []);
+        
+        if (profileRes?.data?.profile) {
+          const profile = profileRes.data.profile;
+          setFullProfileUser({
+            ...authUser,
+            education: profile.education_level || authUser?.education,
+            experience: profile.profile_data?.user_experience || authUser?.experience,
+            domain: profile.target_domain || profile.profile_data?.target_domain || authUser?.domain,
+            skills: profile.profile_data?.owned_skills || authUser?.skills || [],
+            profile_data: profile.profile_data
+          });
+        } else {
+          setFullProfileUser(authUser);
+        }
       } catch (error) {
-        console.error("Failed to load recommendations", error);
+        console.error("Failed to load recommendations and profile", error);
       } finally {
         setIsLoading(false);
       }
     };
     
-    if (user) {
-      fetchRecs();
+    if (authUser) {
+      fetchData();
     }
-  }, [user]);
+  }, [authUser]);
 
-  // Dynamically calculate match score for each recommendation based on course completions
-  const recommendationsWithDynamicScore = recommendations.map(rec => {
-    const roadmap = rec.learning_roadmap || rec.courses || [];
-    const total = roadmap.length;
-    if (total === 0) return rec;
-
-    const completed = roadmap.filter(c => {
-      const cId = c.id || ((c.skill || '') + '_' + (c.judul || '')).replace(/[^a-zA-Z0-9]/g, '_').toLowerCase();
-      return completedCourses.includes(cId);
-    }).length;
-    const baseScore = Number(rec.matchScore || rec.score || 0);
-    const remainingGap = 100 - baseScore;
-    const completionPct = completed / total;
-    const dynamicScore = Math.min(100, Math.round(baseScore + (remainingGap * completionPct)));
-
-    return {
-      ...rec,
-      matchScore: dynamicScore
-    };
-  });
+  // 2. Dynamically calculate match score based on completed courses
+  const { recommendations } = useCareerMatchCalculator(fullProfileUser || authUser, completedCourses, rawRecommendations);
 
   // 3. Filter recommendations based on search query, domain, and match filter
-  const filteredRecommendations = recommendationsWithDynamicScore.filter(rec => {
+  const filteredRecommendations = recommendations.filter(rec => {
     // Search query match (job title or company or skill)
     const matchesSearch = searchQuery === '' || 
-      rec.job_title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      rec.company.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      rec.job_title?.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      rec.company?.toLowerCase().includes(searchQuery.toLowerCase()) ||
       (Array.isArray(rec.required_skills) && rec.required_skills.some(skill => skill.toLowerCase().includes(searchQuery.toLowerCase())));
 
     // Domain filter
@@ -86,10 +89,10 @@ export const useCareerRecommendations = () => {
   const sortedRecommendations = [...filteredRecommendations].sort((a, b) => b.matchScore - a.matchScore);
 
   // Find active job detail
-  const activeJob = recommendationsWithDynamicScore.find(rec => rec.job_id === activeJobId) || null;
+  const activeJob = sortedRecommendations.find(rec => rec.job_id === activeJobId) || null;
 
   // Domain categories list for filters
-  const domains = ['All', ...new Set(recommendationsWithDynamicScore.map(job => job.job_domain).filter(Boolean))];
+  const domains = ['All', ...new Set(recommendations.map(job => job.job_domain).filter(Boolean))];
 
   // Calculate overall readiness (average of top 3 recommended match scores)
   const topThreeScores = sortedRecommendations.slice(0, 3).map(r => r.matchScore);
@@ -113,6 +116,6 @@ export const useCareerRecommendations = () => {
     setSelectedMatchFilter,
     domains,
     overallReadiness,
-    user
+    user: fullProfileUser || authUser
   };
 };

@@ -24,10 +24,10 @@ const JobMarketInsights = ({ selectedDomain, predictions }) => {
       <div className="bg-pure-surface rounded-[24px] border border-border shadow-sm p-6 space-y-6">
         <div>
           <h3 className="text-body-lg font-bold text-primary-text mb-1">
-            {t.jobsMarket?.rankingTitle || 'IT Job Domain Demand Ranking'}
+            {t.jobsMarket.rankingTitle}
           </h3>
           <p className="text-caption font-medium text-secondary-text">
-            {t.jobsMarket?.rankingDesc || 'Ordering of IT expertise fields based on next month\'s active vacancy estimation.'}
+            {t.jobsMarket.rankingDesc}
           </p>
         </div>
 
@@ -40,12 +40,12 @@ const JobMarketInsights = ({ selectedDomain, predictions }) => {
                 </span>
                 <div>
                   <h4 className="text-body-sm font-bold text-primary-text">{dom.name}</h4>
-                  <p className="text-caption text-secondary-text">{t.jobsMarket?.growthRating || 'Growth Rating: '}<span className="font-semibold text-indigo-600">{dom.growth}</span></p>
+                  <p className="text-caption text-secondary-text">{t.jobsMarket.growthRating}<span className="font-semibold text-indigo-600">{dom.growth}</span></p>
                 </div>
               </div>
               <div className="text-right">
                 <span className="text-body-sm font-bold text-primary-text block">{Math.round(dom.value)}</span>
-                <span className="text-[10px] font-semibold text-secondary-text uppercase">{t.jobsMarket?.vacanciesUpperUnit || 'Vacancies'}</span>
+                <span className="text-[10px] font-semibold text-secondary-text uppercase">{t.jobsMarket.vacanciesUpperUnit}</span>
               </div>
             </div>
           ))}
@@ -72,10 +72,10 @@ const JobMarketInsights = ({ selectedDomain, predictions }) => {
         <div>
           <h3 className="text-body-lg font-bold text-primary-text mb-1 flex items-center gap-2">
             <TrendingUp className="w-5 h-5 text-indigo-600" />
-            <span>{typeof t.jobsMarket?.outlookTitle === 'function' ? t.jobsMarket.outlookTitle(selectedDomain) : `Job Market Outlook (${selectedDomain})`}</span>
+            <span>{t.jobsMarket.outlookTitle(selectedDomain)}</span>
           </h3>
           <p className="text-caption font-medium text-secondary-text">
-            {t.jobsMarket?.outlookDesc || 'Analysis of career growth prospects and challenges in the future.'}
+            {t.jobsMarket.outlookDesc}
           </p>
         </div>
 
@@ -86,7 +86,7 @@ const JobMarketInsights = ({ selectedDomain, predictions }) => {
         <div className="space-y-3">
           <h4 className="text-body-sm font-bold text-primary-text flex items-center gap-2">
             <Award className="w-4 h-4 text-indigo-600" />
-            <span>{t.jobsMarket?.rolesTitle || 'Most Demanded Job Roles:'}</span>
+            <span>{t.jobsMarket.rolesTitle}</span>
           </h4>
           <div className="flex flex-wrap gap-2">
             {insight.roles.map((role, idx) => (
@@ -106,10 +106,10 @@ const JobMarketInsights = ({ selectedDomain, predictions }) => {
         <div>
           <h3 className="text-body-lg font-bold text-primary-text mb-1 flex items-center gap-2">
             <CheckCircle className="w-5 h-5 text-emerald-600" />
-            <span>{t.jobsMarket?.skillsTitle || 'Core Supporting Skills'}</span>
+            <span>{t.jobsMarket.skillsTitle}</span>
           </h3>
           <p className="text-caption font-medium text-secondary-text">
-            {t.jobsMarket?.skillsDesc || 'Recommended competencies required to remain competitive.'}
+            {t.jobsMarket.skillsDesc}
           </p>
         </div>
 

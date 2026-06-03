@@ -6,8 +6,7 @@ const JobMatchScoreChart = ({ job }) => {
 
   if (!job) return null;
 
-  const matchScore = job.matchScore || 0;
-  const matchBreakdown = job.matchBreakdown || { skills: 0, experience: 0, education: 0 };
+  const { matchScore, matchBreakdown } = job;
 
   let strokeColor = '#4F46E5'; 
   let scoreClass = 'text-indigo-600';

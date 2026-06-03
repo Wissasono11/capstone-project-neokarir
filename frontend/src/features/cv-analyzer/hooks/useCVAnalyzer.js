@@ -9,13 +9,14 @@ export const useCVAnalyzer = () => {
   const [currentStep, setCurrentStep] = useState(0);
   const [error, setError] = useState(null);
   const [results, setResults] = useState(null);
-  const [isInitialLoading, setIsInitialLoading] = useState(true);
   const { success: toastSuccess, error: toastError } = useToast();
 
   // Fetch latest CV analysis on mount
   useEffect(() => {
     const loadLatest = async () => {
       try {
+        setStatus('processing');
+        setCurrentStep(4);
         const response = await cvAnalyzerService.getLatestAnalysis();
         
         if (response && (response.results || (response.cv && response.cv.cv_data && response.cv.cv_data.atsScore))) {
@@ -30,8 +31,6 @@ export const useCVAnalyzer = () => {
         }
       } catch (err) {
         setStatus('idle');
-      } finally {
-        setIsInitialLoading(false);
       }
     };
     loadLatest();
@@ -113,7 +112,6 @@ export const useCVAnalyzer = () => {
     error,
     results,
     uploadCV,
-    resetAnalysis,
-    isInitialLoading
+    resetAnalysis
   };
 };

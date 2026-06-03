@@ -12,7 +12,7 @@ const ProfileInsightsCard = ({ job }) => {
         {t.career.whyMatchDesc}
       </p>
       <div className="flex flex-wrap gap-1.5">
-        {(job.matchedSkills || []).map((skill, idx) => (
+        {job.matchedSkills.map((skill, idx) => (
           <span
             key={idx}
             className="px-2 py-0.5 rounded text-caption font-bold bg-emerald-50 border border-emerald-100 text-emerald-700"
@@ -20,7 +20,7 @@ const ProfileInsightsCard = ({ job }) => {
             ✓ {skill}
           </span>
         ))}
-        {(job.missingSkills || []).map((skill, idx) => (
+        {job.missingSkills.map((skill, idx) => (
           <span
             key={idx}
             className="px-2 py-0.5 rounded text-caption font-bold bg-slate-100 border border-slate-200 text-slate-500"

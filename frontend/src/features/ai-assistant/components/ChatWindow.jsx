@@ -47,7 +47,7 @@ const ChatWindow = () => {
   const activeSession = sessions.find(s => s.id === activeSessionId);
 
   return (
-    <div className="w-full relative bg-white border border-slate-200/80 rounded-2xl overflow-hidden flex h-[600px] md:h-[680px] shadow-sm">
+    <div className="w-full relative bg-white border border-slate-200/80 rounded-2xl overflow-hidden flex h-[calc(100vh-160px)] md:h-[calc(100vh-200px)] min-h-[600px] shadow-sm">
       
       {/* Collapsible Conversations Sub-Sidebar Panel */}
       <ConversationsSidebar
@@ -83,34 +83,14 @@ const ChatWindow = () => {
 
         {/* Chat Messages Scrolling Area */}
         <div className="flex-1 overflow-y-auto p-4 md:p-6 bg-[#F8FAFC]">
-          {!activeSessionId || sessions.length === 0 ? (
-            <div className="h-full flex flex-col items-center justify-center text-center p-6 space-y-4">
-              <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center text-primary">
-                <Bot className="w-8 h-8" />
-              </div>
-              <div>
-                <h3 className="text-body-lg font-bold text-slate-800">Mulai Obrolan Baru</h3>
-                <p className="text-body-sm font-medium text-slate-400 mt-1 max-w-sm">
-                  Belum ada percakapan aktif. Silakan klik tombol di bawah atau di sidebar untuk memulai percakapan baru dengan Neobots.
-                </p>
-              </div>
-              <button
-                onClick={createNewSession}
-                className="px-6 py-2.5 rounded-full bg-primary text-white font-bold text-body-sm hover:bg-primary-dark transition-all duration-200 shadow-sm active:scale-95 cursor-pointer"
-              >
-                Mulai Chat Baru
-              </button>
-            </div>
-          ) : (
-            messages.map((msg) => (
-              <MessageItem
-                key={msg.id}
-                sender={msg.sender}
-                text={msg.text}
-                timestamp={msg.timestamp}
-              />
-            ))
-          )}
+          {messages.map((msg) => (
+            <MessageItem
+              key={msg.id}
+              sender={msg.sender}
+              text={msg.text}
+              timestamp={msg.timestamp}
+            />
+          ))}
 
           {/* Typing Indicator */}
           {isTyping && (
@@ -138,7 +118,6 @@ const ChatWindow = () => {
           sendMessage={sendMessage}
           enhancePrompt={enhancePrompt}
           setIsHistoryOpen={setIsHistoryOpen}
-          activeSessionId={activeSessionId}
         />
       </div>
     </div>

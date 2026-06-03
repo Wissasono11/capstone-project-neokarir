@@ -31,8 +31,7 @@ const CVAnalyzerPage = () => {
     error, 
     results, 
     uploadCV, 
-    resetAnalysis,
-    isInitialLoading
+    resetAnalysis 
   } = useCVAnalyzer();
 
   const breadcrumbItems = [
@@ -43,7 +42,7 @@ const CVAnalyzerPage = () => {
     breadcrumbItems.push({ label: t.cvAnalyzer.resultsTitle });
   }
 
-  if (isLoading || isInitialLoading) {
+  if (isLoading) {
     return (
       <DashboardLayout>
         <div className="mb-6">

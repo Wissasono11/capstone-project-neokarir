@@ -63,7 +63,7 @@ const CVUploadZone = ({ cvFile, setCvFile }) => {
               <h4 className="font-semibold text-primary-text truncate pr-4">
                 {cvFile ? cvFile.name : 'Uploading...'}
               </h4>
-              {uploadProgress < 100 && !cvFile ? (
+              {uploadProgress < 100 ? (
                 <span className="text-sm font-medium text-primary shrink-0">{uploadProgress}%</span>
               ) : (
                 <button onClick={removeFile} className="text-secondary-text hover:text-error transition-colors shrink-0">
@@ -72,7 +72,7 @@ const CVUploadZone = ({ cvFile, setCvFile }) => {
               )}
             </div>
             
-            {uploadProgress < 100 && !cvFile ? (
+            {uploadProgress < 100 ? (
               <div className="w-full bg-border rounded-full h-1.5 mt-2">
                 <div 
                   className="bg-primary h-1.5 rounded-full transition-all duration-300"

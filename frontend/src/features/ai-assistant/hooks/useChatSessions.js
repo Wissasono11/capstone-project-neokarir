@@ -132,22 +132,25 @@ export const useChatSessions = (user) => {
       e.preventDefault();
     }
     
-    try {
-      const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
-      if (uuidRegex.test(id)) {
+    const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+    if (uuidRegex.test(id)) {
+      try {
         const { aiAssistantService } = await import('../api/aiAssistantService');
         await aiAssistantService.deleteSession(id);
+      } catch (err) {
+        console.error("Failed to delete session on server", err);
       }
-    } catch (err) {
-      console.warn("Failed to delete session on API", err);
     }
     
     const updated = sessions.filter(s => s.id !== id);
     
     if (updated.length === 0) {
-      saveAllSessions([]);
-      setActiveSessionId(null);
-      localStorage.setItem('neokarir_active_session_id', '');
+      const name = user?.name?.split(' ')[0] || 'Franz';
+      const defaultId = `session-${Date.now()}`;
+      const initialSession = createDefaultSessionObj(defaultId, name);
+      saveAllSessions([initialSession]);
+      setActiveSessionId(defaultId);
+      localStorage.setItem('neokarir_active_session_id', defaultId);
     } else {
       saveAllSessions(updated);
       if (activeSessionId === id) {
@@ -167,14 +170,11 @@ export const useChatSessions = (user) => {
           newTitle = textForAutoRename.length > 28 ? textForAutoRename.substring(0, 25) + '...' : textForAutoRename;
           newTitle = newTitle.charAt(0).toUpperCase() + newTitle.slice(1);
           
-          // Persist the auto-generated title to the database
           const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
           if (uuidRegex.test(sessionId)) {
-            import('../api/aiAssistantService').then(({ aiAssistantService }) => {
-              aiAssistantService.updateSession(sessionId, { title: newTitle }).catch(err => {
-                console.warn("Failed to auto-rename session on API", err);
-              });
-            });
+             import('../api/aiAssistantService').then(({ aiAssistantService }) => {
+               aiAssistantService.renameSession(sessionId, newTitle).catch(e => console.error("Auto-rename failed", e));
+             });
           }
         }
         return {
@@ -200,16 +200,16 @@ export const useChatSessions = (user) => {
   const renameSession = useCallback(async (id, newTitle) => {
     if (!newTitle.trim()) return;
     
-    try {
-      const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
-      if (uuidRegex.test(id)) {
+    const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+    if (uuidRegex.test(id)) {
+      try {
         const { aiAssistantService } = await import('../api/aiAssistantService');
-        await aiAssistantService.updateSession(id, { title: newTitle });
+        await aiAssistantService.renameSession(id, newTitle);
+      } catch (err) {
+        console.error("Failed to rename session on server", err);
       }
-    } catch (err) {
-      console.warn("Failed to rename session on API", err);
     }
-
+    
     const updated = sessions.map(session => {
       if (session.id === id) {
         return {

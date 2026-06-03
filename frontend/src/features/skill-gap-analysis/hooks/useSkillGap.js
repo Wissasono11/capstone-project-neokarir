@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { useCareerRecommendations } from '../../career-recommendation/hooks/useCareerRecommendations';
 import { useSkillGapMetrics } from './useSkillGapMetrics';
 import { useSkillGapRecommendations } from './useSkillGapRecommendations';
-import { getSkillCategory } from '../data/skillTaxonomy';
 
 export const useSkillGap = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -57,6 +56,7 @@ export const useSkillGap = () => {
   const resolvedTargetJob = (skillGapData ? {
     job_title: skillGapData.target_role,
     job_domain: skillGapData.target_domain,
+    job_id: skillGapData.job_id,
     matched_skills: skillGapData.matched_skills || [],
     missing_skills: skillGapData.missing_skills || [],
     required_skills: skillGapData.analysis_result?.required_skills || [
@@ -77,56 +77,48 @@ export const useSkillGap = () => {
   // 2. Calculate recommendations (actions, cards, path)
   const { recommendedActions: defaultActions, missingSkillCards: defaultMissingSkillCards, learningPath: defaultLearningPath } = useSkillGapRecommendations(resolvedTargetJob, ownedSkills, rawRadarData);
 
-  // 3. Normalize learning path and ensure IDs are set
-  const rawLearningPath = skillGapData?.learning_roadmap || defaultLearningPath || [];
-  const learningPath = rawLearningPath.map(course => {
-    const stableId = course.id || ((course.skill || '') + '_' + (course.judul || '')).replace(/[^a-zA-Z0-9]/g, '_').toLowerCase();
-    return {
-      ...course,
-      id: stableId
-    };
-  });
+  const normalizeCourseId = (value) => (value || '').toString().trim().toLowerCase();
+  const isCompletedCourse = (courseId, completedCourseIds = []) => {
+    const normalizedCourseId = normalizeCourseId(courseId);
+    if (!normalizedCourseId || !Array.isArray(completedCourseIds)) return false;
 
-  // Helper to match courses for a radar subject
-  const getCoursesForRadarSubject = (subject, path, domainName) => {
-    const normSubject = subject.toLowerCase().trim();
-    return path.filter(course => {
-      const courseSkill = (course.skill || '').toLowerCase().trim();
-      if (courseSkill === normSubject) return true;
-      
-      const courseCategory = getSkillCategory(domainName, course.skill).toLowerCase().trim();
-      if (courseCategory === normSubject) return true;
-      
-      return false;
+    return completedCourseIds.some((completedCourseId) => {
+      const normalizedCompletedCourseId = normalizeCourseId(completedCourseId);
+      return normalizedCompletedCourseId === normalizedCourseId
+        || normalizedCourseId.endsWith(`-${normalizedCompletedCourseId}`)
+        || normalizedCompletedCourseId.endsWith(`-${normalizedCourseId}`);
     });
   };
 
-  // 4. Transform & Override radar chart data (Support dual series: A (current) and B (required))
-  const finalRawRadarData = rawRadarData || defaultRadarData;
-  const domainName = resolvedTargetJob?.job_domain || resolvedTargetJob?.job_title || 'General';
-  const radarData = (Array.isArray(finalRawRadarData) ? finalRawRadarData : defaultRadarData).map(item => {
-    const subject = item.category || item.subject || '';
-    const baseA = item.current !== undefined ? item.current : (item.A !== undefined ? item.A : 50);
-    const B = item.required !== undefined ? item.required : (item.B !== undefined ? item.B : 85);
-    
-    // Scale A based on completed courses matching this subject/category
-    const matchingCourses = getCoursesForRadarSubject(subject, learningPath, domainName);
-    let A = baseA;
-    if (matchingCourses.length > 0) {
-      const completed = matchingCourses.filter(c => completedCourses.includes(c.id)).length;
-      const remaining = 100 - baseA;
-      A = Math.min(100, Math.round(baseA + (remaining * (completed / matchingCourses.length))));
+  const getRoadmapCompletionStats = (courses = [], completedCourseIds = []) => {
+    const total = Array.isArray(courses) ? courses.length : 0;
+    if (total === 0) {
+      return { completedCount: 0, totalCount: 0, completionPercentage: 0, bonusScore: 0 };
     }
-    
-    return {
-      subject,
-      A,
-      B,
-      fullMark: 100
-    };
-  });
 
-  // 5. Normalize recommended actions to array
+    const completedCount = courses.filter(course => isCompletedCourse(course.id, completedCourseIds)).length;
+    const completionPercentage = Math.round((completedCount / total) * 100);
+
+    return {
+      completedCount,
+      totalCount: total,
+      completionPercentage,
+      bonusScore: Math.round((completionPercentage / 100) * 20)
+    };
+  };
+
+  // 3. Transform & Override radar chart data (Support dual series: A (current) and B (required))
+  const finalRawRadarData = rawRadarData || defaultRadarData;
+  const radarData = Array.isArray(finalRawRadarData) 
+    ? finalRawRadarData.map(item => ({
+        subject: item.category || item.subject,
+        A: item.current !== undefined ? item.current : (item.A !== undefined ? item.A : 50),
+        B: item.required !== undefined ? item.required : (item.B !== undefined ? item.B : 85),
+        fullMark: 100
+      }))
+    : defaultRadarData;
+
+  // 4. Normalize recommended actions to array
   const rawActions = skillGapData?.analysis_result?.recommended_actions || defaultActions;
   const normalizeActions = (actionsInput) => {
     if (!actionsInput) return [];
@@ -159,64 +151,130 @@ export const useSkillGap = () => {
   };
   const recommendedActions = normalizeActions(rawActions);
     
-  // 6. Calculate Dynamic Hero Data
-  const baseHeroData = skillGapData?.analysis_result ? {
-    overallReadiness: skillGapData.analysis_result.readiness_score || skillGapData.match_score || 0,
-    targetRole: skillGapData.analysis_result.target_role || skillGapData.target_role,
-    targetDomain: skillGapData.analysis_result.target_domain || skillGapData.target_domain,
-    matchedSkillsCount: skillGapData.analysis_result.skill_match?.matched_count || 0,
-    totalRequiredSkills: skillGapData.analysis_result.skill_match?.total_count || 0,
-    missingSkillsCount: skillGapData.analysis_result.skill_match?.missing_count || 0,
-    experienceGap: {
-      current: skillGapData.analysis_result.experience_match?.current || 'Belum ada pengalaman',
-      required: skillGapData.analysis_result.experience_match?.required || 'Tidak Ditentukan',
-      hasGap: skillGapData.analysis_result.experience_match?.has_gap || false
-    },
-    educationMatch: {
-      current: skillGapData.analysis_result.education_match?.current || 'Tidak Ditentukan',
-      required: skillGapData.analysis_result.education_match?.required || 'Tidak Ditentukan',
-      hasGap: skillGapData.analysis_result.education_match?.has_gap || false
-    },
-    readinessLevel: skillGapData.analysis_result.readiness_level || 'Perlu Persiapan'
-  } : defaultHeroData;
+  const parseExperience = (expStr) => {
+    if (!expStr) return 0;
+    const str = expStr.toLowerCase();
+    if (str.includes('< 1') || str.includes('fresh')) return 0;
+    const match = str.match(/(\d+)/);
+    return match ? parseInt(match[1], 10) : 0;
+  };
 
-  const baseScore = baseHeroData?.overallReadiness || 0;
-  const remainingGap = 100 - baseScore;
-  const completedCoursesCount = learningPath.filter(c => completedCourses.includes(c.id)).length;
-  const dynamicReadinessScore = learningPath.length > 0 
-    ? Math.min(100, Math.round(baseScore + (remainingGap * (completedCoursesCount / learningPath.length))))
-    : baseScore;
+  const currentExpStr = skillGapData?.analysis_result?.experience_match?.current || user?.experience || 'Belum ada pengalaman';
+  const reqExpStr = skillGapData?.analysis_result?.experience_match?.required || 'Tidak Ditentukan';
+  
+  const currentExpYears = parseExperience(currentExpStr);
+  const reqExpYears = parseExperience(reqExpStr);
+  
+  // Exceeding or meeting requirements is NOT a gap
+  const expHasGap = currentExpYears < reqExpYears;
 
-  const heroData = baseHeroData ? {
-    ...baseHeroData,
-    overallReadiness: dynamicReadinessScore,
-    readinessLevel: dynamicReadinessScore >= 90 ? "Siap Kerja" : dynamicReadinessScore >= 70 ? "Hampir Siap" : "Perlu Persiapan"
-  } : null;
+  const currentEduStr = skillGapData?.analysis_result?.education_match?.current || 'Tidak Ditentukan';
+  const reqEduStr = skillGapData?.analysis_result?.education_match?.required || 'Tidak Ditentukan';
+  const eduHasGap = skillGapData?.analysis_result?.education_match?.has_gap || false; // Keep backend logic for education or override if needed
 
-  // 7. Calculate Dynamic Skill Breakdown
-  const rawSkillBreakdown = skillGapData?.analysis_result?.skill_breakdown || defaultSkillBreakdown || [];
-  const skillBreakdown = rawSkillBreakdown.map(item => {
-    const skillName = item.skill || item.name || '';
-    const baseCurrent = item.current !== undefined ? item.current : 50;
-    const required = item.required !== undefined ? item.required : 85;
-    
-    const matchingCourses = learningPath.filter(course => (course.skill || '').toLowerCase().trim() === skillName.toLowerCase().trim());
-    let current = baseCurrent;
-    if (matchingCourses.length > 0) {
-      const completed = matchingCourses.filter(c => completedCourses.includes(c.id)).length;
-      const remaining = 100 - baseCurrent;
-      current = Math.min(100, Math.round(baseCurrent + (remaining * (completed / matchingCourses.length))));
+  const matchedSkills = skillGapData?.analysis_result?.skill_match?.matched_count || 0;
+  const totalSkills = skillGapData?.analysis_result?.skill_match?.total_count || 1;
+  const skillRatio = totalSkills > 0 ? (matchedSkills / totalSkills) : 1;
+
+  // Recalculate a fairer match score that heavily rewards a good career (experience)
+  // Base skill = 50%, Experience = 30%, Education = 20%
+  let calculatedScore = skillRatio * 50;
+  
+  if (!expHasGap) {
+    // Reward for meeting or exceeding experience
+    calculatedScore += 30;
+    // Extra bonus if they have significantly more experience
+    if (currentExpYears > reqExpYears) {
+      calculatedScore += Math.min(10, (currentExpYears - reqExpYears) * 5); 
     }
-    
-    const gap = current - required;
+  } else {
+    // Partial score for experience if they have some
+    calculatedScore += (currentExpYears / (reqExpYears || 1)) * 30;
+  }
+
+  if (!eduHasGap) {
+    calculatedScore += 20;
+  }
+
+  const finalReadinessScore = Math.min(100, Math.round(calculatedScore));
+  const roadmapStats = getRoadmapCompletionStats(
+    resolvedTargetJob?.learning_roadmap || resolvedTargetJob?.courses || [],
+    completedCourses
+  );
+  const readinessWithRoadmap = Math.min(100, finalReadinessScore + roadmapStats.bonusScore);
+
+  const roadmapCourses = skillGapData?.learning_roadmap || defaultLearningPath;
+  const skillCompletionStats = Array.isArray(roadmapCourses)
+    ? roadmapCourses.reduce((acc, course) => {
+        const skillKey = (course.skill || '').toLowerCase().trim();
+        if (!skillKey) return acc;
+
+        if (!acc[skillKey]) {
+          acc[skillKey] = { total: 0, completed: 0 };
+        }
+
+        acc[skillKey].total += 1;
+        if (isCompletedCourse(course.id, completedCourses)) {
+          acc[skillKey].completed += 1;
+        }
+
+        return acc;
+      }, {})
+    : {};
+
+  let newlyClosedSkills = 0;
+  const adjustedSkillBreakdown = (skillGapData?.analysis_result?.skill_breakdown || defaultSkillBreakdown).map((item) => {
+    const skillKey = (item.skill || '').toLowerCase().trim();
+    const stats = skillCompletionStats[skillKey];
+
+    if (!stats || stats.total === 0) {
+      return item;
+    }
+
+    const completionRatio = stats.completed / stats.total;
+    const gapToClose = Math.max(0, (item.required || 0) - (item.current || 0));
+    const current = Math.min(100, Math.round((item.current || 0) + (gapToClose * completionRatio)));
+
+    if ((item.current || 0) < (item.required || 0) && current >= (item.required || 0)) {
+      newlyClosedSkills += 1;
+    }
+
     return {
-      skill: skillName,
+      ...item,
       current,
-      required,
-      gap,
-      trend: gap >= 0 ? "up" : "down"
+      gap: Math.round(current - (item.required || 0)),
+      trend: current >= item.required ? 'up' : 'down'
     };
   });
+
+  const matchedSkillsCountWithRoadmap = Math.min(
+    totalSkills,
+    matchedSkills + newlyClosedSkills
+  );
+  const missingSkillsCountWithRoadmap = Math.max(0, totalSkills - matchedSkillsCountWithRoadmap);
+
+  const heroData = skillGapData?.analysis_result ? {
+    overallReadiness: readinessWithRoadmap,
+    targetRole: skillGapData.analysis_result.target_role || skillGapData.target_role,
+    targetDomain: skillGapData.analysis_result.target_domain || skillGapData.target_domain,
+    matchedSkillsCount: matchedSkillsCountWithRoadmap,
+    totalRequiredSkills: totalSkills,
+    missingSkillsCount: missingSkillsCountWithRoadmap,
+    experienceGap: {
+      current: currentExpStr,
+      required: reqExpStr,
+      hasGap: expHasGap
+    },
+    educationMatch: {
+      current: currentEduStr,
+      required: reqEduStr,
+      hasGap: eduHasGap
+    },
+    roadmapProgress: roadmapStats,
+    readinessLevel: readinessWithRoadmap >= 80 ? 'Siap Kerja' : readinessWithRoadmap >= 60 ? 'Hampir Siap' : 'Perlu Persiapan'
+  } : defaultHeroData;
+
+  const skillBreakdown = adjustedSkillBreakdown;
 
   const missingSkillCards = skillGapData?.analysis_result?.detailed_skills_to_learn
     ? skillGapData.analysis_result.detailed_skills_to_learn.map(item => ({
@@ -230,6 +288,9 @@ export const useSkillGap = () => {
         waktuBelajar: item.waktuBelajar || '4 - 6 Minggu'
       }))
     : defaultMissingSkillCards;
+
+  // 5. Use learning path from AI-2 (via backend) with fallback to default recommendation learning path
+  const learningPath = skillGapData?.learning_roadmap || defaultLearningPath;
 
   const isOverallLoading = isLoading || isRecommendationsLoading;
 

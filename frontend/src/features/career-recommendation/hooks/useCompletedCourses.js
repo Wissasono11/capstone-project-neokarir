@@ -1,39 +1,51 @@
-import { useAuth } from '../../../contexts/AuthContext';
+import { useState, useEffect } from 'react';
+import { careerService } from '../api/careerService';
 import { useToast } from '../../../contexts/ToastContext';
 
 export const useCompletedCourses = (userEmail) => {
-  const { user, updateProfile } = useAuth();
+  const [completedCourses, setCompletedCourses] = useState([]);
   const { success: toastSuccess, error: toastError } = useToast();
 
-  const completedCourses = user?.profile_data?.completed_courses || [];
+  const normalizeCourseId = (value) => (value || '').toString().trim().toLowerCase();
+  const isCompletedCourse = (courseId, completedCourseIds = []) => {
+    const normalizedCourseId = normalizeCourseId(courseId);
+    if (!normalizedCourseId || !Array.isArray(completedCourseIds)) return false;
 
-  // Save completed courses via profile service when changed
-  const toggleCourse = async (courseId) => {
-    if (!user) return;
+    return completedCourseIds.some((completedCourseId) => {
+      const normalizedCompletedCourseId = normalizeCourseId(completedCourseId);
+      return normalizedCompletedCourseId === normalizedCourseId
+        || normalizedCourseId.endsWith(`-${normalizedCompletedCourseId}`)
+        || normalizedCompletedCourseId.endsWith(`-${normalizedCourseId}`);
+    });
+  };
+
+  // Load completed courses on mount/email change
+  useEffect(() => {
+    const fetchCourses = async () => {
+      if (userEmail) {
+        try {
+          const list = await careerService.getCompletedCourses(userEmail);
+          setCompletedCourses(list);
+        } catch (e) {
+          console.error("Error loading completed courses", e);
+        }
+      } else {
+        setCompletedCourses([]);
+      }
+    };
     
-    const wasCompleted = completedCourses.includes(courseId);
-    let updated;
-    if (wasCompleted) {
-      updated = completedCourses.filter((id) => id !== courseId);
-    } else {
-      updated = [...completedCourses, courseId];
-    }
+    fetchCourses();
+  }, [userEmail]);
+
+  // Save completed courses via service when changed
+  const toggleCourse = async (courseId) => {
+    if (!userEmail) return;
+    
+    const wasCompleted = isCompletedCourse(courseId, completedCourses);
     
     try {
-      const { profileService } = await import('../../profile-settings/api/profileService');
-      await profileService.updateProfile({
-        profile_data: {
-          completed_courses: updated
-        }
-      });
-      
-      // Update global context state
-      updateProfile({
-        profile_data: {
-          ...(user.profile_data || {}),
-          completed_courses: updated
-        }
-      });
+      const updated = await careerService.toggleCourse(userEmail, courseId);
+      setCompletedCourses(updated);
       
       if (!wasCompleted) {
         toastSuccess('Selamat! Anda telah menandai modul ini sebagai selesai.');

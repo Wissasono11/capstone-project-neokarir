@@ -47,12 +47,14 @@ const JobMarketOverview = ({ predictions, selectedDomain, topDomain, generatedAt
         }
       });
 
-      const avgGrowth = count > 0 ? `${(totalGrowthPercent / count).toFixed(1)}%` : '0%';
+      const rawGrowth = count > 0 ? (totalGrowthPercent / count) : 0;
+      const avgGrowth = `${rawGrowth > 0 ? '+' : ''}${rawGrowth.toFixed(1)}%`;
 
       return {
         topDemandDomain: maxDom,
         topDemandValue: Math.round(maxVal),
         averageGrowth: avgGrowth,
+        rawGrowth: rawGrowth,
         totalDemand: Math.round(total)
       };
     } else {
@@ -64,13 +66,15 @@ const JobMarketOverview = ({ predictions, selectedDomain, topDomain, generatedAt
       return {
         topDemandDomain: selectedDomain,
         topDemandValue: Math.round(valEnd),
-        averageGrowth: `${growth.toFixed(1)}%`,
+        averageGrowth: `${growth > 0 ? '+' : ''}${growth.toFixed(1)}%`,
+        rawGrowth: growth,
         totalDemand: Math.round(valStart)
       };
     }
   };
 
   const stats = getStats();
+  const isPositiveGrowth = stats.rawGrowth >= 0;
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -121,20 +125,20 @@ const JobMarketOverview = ({ predictions, selectedDomain, topDomain, generatedAt
             <Sparkles className="w-6 h-6 text-primary" />
           </div>
           <span className="text-caption text-secondary-text font-medium bg-canvas-white px-2.5 py-1 rounded-full border border-border/40">
-            {t.jobsMarket?.maxEstimation || 'Largest Estimate'}
+            {t.jobsMarket.maxEstimation}
           </span>
         </div>
         <div>
           <h4 className="text-body-sm font-semibold text-secondary-text mb-1 uppercase tracking-wider">
-            {selectedDomain === 'all' ? (t.jobsMarket?.topTrending || 'Top Trending') : (t.jobsMarket?.lastMonthEstimation || 'Last Month Estimation')}
+            {selectedDomain === 'all' ? t.jobsMarket.topTrending : t.jobsMarket.lastMonthEstimation}
           </h4>
           <h2 className="text-title font-bold text-primary-text mb-2 truncate">
             {stats.topDemandDomain}
           </h2>
           <p className="text-caption font-medium text-secondary-text flex items-center gap-1.5 flex-wrap">
             <TrendingUp className="w-3.5 h-3.5 text-emerald-500" />
-            <span className="text-emerald-600 font-bold">{typeof t.jobsMarket?.activeVacancies === 'function' ? t.jobsMarket.activeVacancies(stats.topDemandValue) : `${stats.topDemandValue} vacancies`}</span>
-            <span>{t.jobsMarket?.jobEstimateSuffix || 'estimated job demands.'}</span>
+            <span className="text-emerald-600 font-bold">{t.jobsMarket.activeVacancies(stats.topDemandValue)}</span>
+            <span>{t.jobsMarket.jobEstimateSuffix}</span>
           </p>
         </div>
       </motion.div>
@@ -145,22 +149,22 @@ const JobMarketOverview = ({ predictions, selectedDomain, topDomain, generatedAt
         className="bg-pure-surface rounded-[24px] border border-border shadow-sm p-6 relative overflow-hidden transition-all duration-300 hover:shadow-md"
       >
         <div className="flex justify-between items-start mb-4">
-          <div className="p-3 bg-emerald-50 text-success rounded-xl">
-            <BarChart2 className="w-6 h-6 text-emerald-600" />
+          <div className={`p-3 rounded-xl ${isPositiveGrowth ? 'bg-emerald-50 text-success' : 'bg-red-50 text-error'}`}>
+            <BarChart2 className={`w-6 h-6 ${isPositiveGrowth ? 'text-emerald-600' : 'text-red-600'}`} />
           </div>
-          <span className="text-caption text-emerald-700 font-semibold bg-emerald-50/60 px-2.5 py-1 rounded-full border border-emerald-100">
-            {t.jobsMarket?.positivePrediction || 'Positive Prediction'}
+          <span className={`text-caption font-semibold px-2.5 py-1 rounded-full border ${isPositiveGrowth ? 'text-emerald-700 bg-emerald-50/60 border-emerald-100' : 'text-red-700 bg-red-50/60 border-red-100'}`}>
+            {isPositiveGrowth ? t.jobsMarket.positivePrediction : (language === 'en' ? 'Negative Prediction' : 'Prediksi Menurun')}
           </span>
         </div>
         <div>
           <h4 className="text-body-sm font-semibold text-secondary-text mb-1 uppercase tracking-wider">
-            {selectedDomain === 'all' ? (t.jobsMarket?.averageGrowth || 'Average Growth') : (typeof t.jobsMarket?.growthTitle === 'function' ? t.jobsMarket.growthTitle(predictions.length) : `Growth (${predictions.length} Months)`)}
+            {selectedDomain === 'all' ? t.jobsMarket.averageGrowth : t.jobsMarket.growthTitle(predictions.length)}
           </h4>
-          <h2 className="text-title font-bold text-primary-text mb-2">
+          <h2 className={`text-title font-bold mb-2 ${isPositiveGrowth ? 'text-emerald-600' : 'text-red-600'}`}>
             {stats.averageGrowth}
           </h2>
           <p className="text-caption font-medium text-secondary-text flex items-center gap-1">
-            {t.jobsMarket?.growthFooter || 'Projections show an upward accumulating trend.'}
+            {isPositiveGrowth ? t.jobsMarket.growthFooter : (language === 'en' ? 'Projections show a downward trend in IT market demand.' : 'Proyeksi demand pasar kerja IT menunjukkan tren akumulasi menurun.')}
           </p>
         </div>
       </motion.div>
@@ -175,12 +179,12 @@ const JobMarketOverview = ({ predictions, selectedDomain, topDomain, generatedAt
             <CalendarDays className="w-6 h-6 text-slate-600" />
           </div>
           <span className="text-caption text-secondary-text font-medium bg-canvas-white px-2.5 py-1 rounded-full border border-border/40">
-            {t.jobsMarket?.dataSource || 'AI Data Source'}
+            {t.jobsMarket.dataSource}
           </span>
         </div>
         <div>
           <h4 className="text-body-sm font-semibold text-secondary-text mb-1 uppercase tracking-wider">
-            {t.jobsMarket?.lastUpdated || 'Last Updated'}
+            {t.jobsMarket.lastUpdated}
           </h4>
           <h2 className="text-body font-bold text-primary-text mb-2 line-clamp-1">
             {formattedDate(generatedAt)}
@@ -189,8 +193,8 @@ const JobMarketOverview = ({ predictions, selectedDomain, topDomain, generatedAt
             <Info className="w-3.5 h-3.5 text-indigo-500 shrink-0" />
             <span>
               {isSimulated 
-                ? (t.jobsMarket?.simulatedDataDesc || 'Simulated Mode')
-                : (t.jobsMarket?.realtimeDataDesc || 'Realtime Mode')}
+                ? t.jobsMarket.simulatedDataDesc
+                : t.jobsMarket.realtimeDataDesc}
             </span>
           </div>
         </div>
