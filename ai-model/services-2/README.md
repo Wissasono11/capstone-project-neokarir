@@ -1,4 +1,14 @@
+---
+title: neokarir-services-2
+emoji: 🚀
+colorFrom: indigo
+colorTo: purple
+sdk: docker
+pinned: false
+---
+
 # 🚀 NeoKarir - AI Recommendation & Scoring API
+
 
 Repositori ini berisi layanan AI (Microservice) untuk aplikasi NeoKarir. Branch ini secara khusus menangani logika sistem Rekomendasi Karir, Job Match Score, Skill Gap Analysis, dan Learning Roadmap menggunakan FastAPI dengan pendekatan Clean Architecture.
 

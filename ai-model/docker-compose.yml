@@ -1,0 +1,58 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: ankane/pgvector:latest
+    container_name: neokarir-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: neokarir_local
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - neokarir-network
+
+  services-1:
+    build:
+      context: ./services-1
+      dockerfile: Dockerfile
+    container_name: neokarir-services-1
+    ports:
+      - "7860:7860"
+    environment:
+      - DATABASE_URL=postgresql://postgres:password@postgres:5432/neokarir_local
+      - PORT=7860
+      - GROQ_API_KEY=${GROQ_API_KEY}
+      - SUPABASE_URL=${SUPABASE_URL}
+      - SUPABASE_KEY=${SUPABASE_KEY}
+      - SUPABASE_SERVICE_ROLE_KEY=${SUPABASE_SERVICE_ROLE_KEY}
+      - SUPABASE_ANON_KEY=${SUPABASE_ANON_KEY}
+    depends_on:
+      - postgres
+    networks:
+      - neokarir-network
+
+  services-2:
+    build:
+      context: ./services-2
+      dockerfile: Dockerfile
+    container_name: neokarir-services-2
+    ports:
+      - "7861:7860"
+    environment:
+      - DATABASE_URL=postgresql://postgres:password@postgres:5432/neokarir_local
+      - PORT=7860
+    depends_on:
+      - postgres
+    networks:
+      - neokarir-network
+
+volumes:
+  pgdata:
+
+networks:
+  neokarir-network:
+    driver: bridge

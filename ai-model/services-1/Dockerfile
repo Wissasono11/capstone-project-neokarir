@@ -3,9 +3,9 @@ FROM python:3.11-slim
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
     PIP_NO_CACHE_DIR=1 \
-    PORT=7860
-
-WORKDIR /app
+    PORT=7860 \
+    HF_HOME=/tmp/.cache/huggingface \
+    TRANSFORMERS_CACHE=/tmp/.cache/huggingface
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
@@ -15,10 +15,19 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libglib2.0-0 \
     && rm -rf /var/lib/apt/lists/*
 
-COPY requirements.txt ./
-RUN pip install --upgrade pip && pip install -r requirements.txt
+# Set up user with UID 1000 to meet Hugging Face Spaces requirements
+RUN useradd -m -u 1000 user
+ENV HOME=/home/user \
+    PATH=/home/user/.local/bin:$PATH
 
-COPY . .
+WORKDIR $HOME/app
+
+COPY requirements.txt ./
+RUN pip install --upgrade pip && pip install --no-cache-dir -r requirements.txt
+
+COPY --chown=user . $HOME/app
+
+USER user
 
 EXPOSE 7860
 

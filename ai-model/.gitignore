@@ -1,0 +1,12 @@
+# enviroment production
+.env
+venv
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Script Deploy to HFS
+deploy_spaces.py

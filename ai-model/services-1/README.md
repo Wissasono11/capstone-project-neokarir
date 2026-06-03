@@ -1,4 +1,14 @@
+---
+title: neokarir-services-1
+emoji: 🧠
+colorFrom: red
+colorTo: pink
+sdk: docker
+pinned: false
+---
+
 # NeoKarir Backend — Developer README
+
 
 Panduan lengkap untuk developer backend: instalasi, struktur proyek, cara menjalankan, dan panduan migrasi database dari lingkungan lokal ke Supabase (cukup ganti `DATABASE_URL`).
 
