@@ -1,0 +1,501 @@
+chat_text,intent
+kapan pemilu 2024?,out_of_context
+gimana tips biar lolos seleksi devsecops?,tanya_syarat_loker
+selamat pagi,salam_sapaan
+apakah kamu bisa bernyanyi?,out_of_context
+cara reset riwayat aplikasi gimana?,bantuan_fitur_aplikasi
+halo halo,salam_sapaan
+permisi,salam_sapaan
+kualifikasi utama devops engineer apa ya?,tanya_syarat_loker
+kalo mau switch career ke ai engineer belajarnya gimana?,tanya_roadmap
+cara menaikkan followers instagram,out_of_context
+apakah simpan lowongan bisa memberikan rekomendasi yang dipersonalisasi?,bantuan_fitur_aplikasi
+met pagi,salam_sapaan
+"min, ganti password saya hanya loading terus",bantuan_fitur_aplikasi
+terima kasih atas bantuannya,salam_sapaan
+apa aja ya skill wajib buat fullstack developer?,tanya_syarat_loker
+halo semuanya,salam_sapaan
+gimana cara filter di bandingkan skor?,bantuan_fitur_aplikasi
+baik min,salam_sapaan
+gimana tips biar lolos seleksi product designer?,tanya_syarat_loker
+belajar devsecops tuh mulai dari teori apa langsung praktek?,tanya_roadmap
+oke min,salam_sapaan
+gimana cara ekspor data dari profil?,bantuan_fitur_aplikasi
+halo,salam_sapaan
+apakah penetration tester harus menguasai banyak bahasa pemrograman?,tanya_syarat_loker
+minta link download film,out_of_context
+siapa nama pacar kamu?,out_of_context
+kalo mau daftar automation qa harus bisa apa aja?,tanya_syarat_loker
+wilujeng,salam_sapaan
+apa aja proyek yang harus dibuat saat belajar frontend developer?,tanya_roadmap
+Haii,salam_sapaan
+apa aja ya skill wajib buat sdet?,tanya_syarat_loker
+ui designer wajib paham rest api ya?,tanya_syarat_loker
+saat ini jam berapa di new york?,out_of_context
+apa postgresql itu wajib buat ios developer?,tanya_syarat_loker
+cara membandingkan dua upload cv sekaligus?,bantuan_fitur_aplikasi
+suwun ya,salam_sapaan
+"kalo udah tua, apa masih bisa belajar cloud engineer?",tanya_roadmap
+"min, pengalaman magang dihitung gak buat manual qa?",tanya_syarat_loker
+cara akses lihat lowongan dimana ya?,bantuan_fitur_aplikasi
+"kak, kalo otodidak belajar data scientist gimana caranya?",tanya_roadmap
+cara akses career recommendation dimana ya?,bantuan_fitur_aplikasi
+skor pertandingan tadi malam,out_of_context
+cara mengaktifkan career recommendation untuk pertama kali,bantuan_fitur_aplikasi
+cara akses skill gap analysis dimana ya?,bantuan_fitur_aplikasi
+security analyst tu harus jago postman gak sih?,tanya_syarat_loker
+apakah kucing bisa terbang?,out_of_context
+gimana caranya belajar ios developer secara sistematis?,tanya_roadmap
+apakah simpan lowongan bisa memberikan rekomendasi yang dipersonalisasi?,bantuan_fitur_aplikasi
+"kak, isi survei onboarding ini aman gak buat data pribadi?",bantuan_fitur_aplikasi
+"kalo mau belajar devsecops, skill apa yang harus dikuasai duluan?",tanya_roadmap
+jadwal bioskop hari ini,out_of_context
+apakah lulusan smk bisa jadi sre?,tanya_syarat_loker
+gimana cara pakai riwayat aplikasi?,bantuan_fitur_aplikasi
+apakah saya bisa pinjam uang?,out_of_context
+malam,salam_sapaan
+apa ada sertifikat yang wajib buat belajar ai engineer?,tanya_roadmap
+apakah kamu punya pacar?,out_of_context
+alur belajar ux researcher buat pemula,tanya_roadmap
+kenapa dashboard job market saya gak bisa dibuka?,bantuan_fitur_aplikasi
+apakah ada batasan umur buat jadi ml engineer?,tanya_syarat_loker
+gimana cara pakai career recommendation?,bantuan_fitur_aplikasi
+apakah saya bisa bertanya?,out_of_context
+apakah dashboard job market bisa digunakan offline?,bantuan_fitur_aplikasi
+"maaf ganggu, mau tanya",salam_sapaan
+cerita horor singkat,out_of_context
+"kalo mau belajar sre, skill apa yang harus dikuasai duluan?",tanya_roadmap
+apa vue itu wajib buat ml engineer?,tanya_syarat_loker
+apa bisa jadi data analyst tanpa gelar IT?,tanya_syarat_loker
+apa itu metaverse?,out_of_context
+tips merawat kulit wajah kering,out_of_context
+belajar flutter engineer dari pengalaman orang lain gimana?,tanya_roadmap
+done,salam_sapaan
+siang,salam_sapaan
+apa perbedaan dashboard job market versi free sama pro?,bantuan_fitur_aplikasi
+langkah awal belajar product designer tuh apa?,tanya_roadmap
+apa yang dimaksud dengan angka di radar chart?,bantuan_fitur_aplikasi
+apakah alien itu ada?,out_of_context
+bisa gak ganti pengaturan riwayat aplikasi?,bantuan_fitur_aplikasi
+apakah kamu manusia?,out_of_context
+thank you,salam_sapaan
+cv analyzer bisa dipake buat apa aja?,bantuan_fitur_aplikasi
+makasih ya,salam_sapaan
+"kalo mau devops engineer di perusahaan besar, apa syarat tambahannya?",tanya_syarat_loker
+kenapa ganti password gak muncul?,bantuan_fitur_aplikasi
+"menurutmu, automation qa perlu skill postman gak?",tanya_syarat_loker
+belajar devops engineer dari pengalaman orang lain gimana?,tanya_roadmap
+halo semuanya,salam_sapaan
+"mau tanya dong, buat melamar automation qa perlu pengalaman gak?",tanya_syarat_loker
+step by step belajar flutter engineer,tanya_roadmap
+kualifikasi utama flutter engineer apa ya?,tanya_syarat_loker
+suwun ya,salam_sapaan
+makasih kak,salam_sapaan
+haloo,salam_sapaan
+sip kak,salam_sapaan
+thanks,salam_sapaan
+"kak, kalo otodidak belajar frontend developer gimana caranya?",tanya_roadmap
+heyy,salam_sapaan
+apa syarat penting buat posisi penetration tester?,tanya_syarat_loker
+"min, kasih tau step-by-step jadi ml engineer",tanya_roadmap
+urutan belajar buat jadi manual qa gimana ya?,tanya_roadmap
+skill yang paling dicari buat ios developer apa sih?,tanya_syarat_loker
+saat ini jam berapa di new york?,out_of_context
+apakah saya bisa bertanya?,out_of_context
+gimana cara menghapus cache profil?,bantuan_fitur_aplikasi
+cara save hasil job match score gimana?,bantuan_fitur_aplikasi
+cara ngilangin error di pengaturan akun?,bantuan_fitur_aplikasi
+heyy,salam_sapaan
+pagi min,salam_sapaan
+rekomendasi film horor indonesia terbaru,out_of_context
+hatur nuhun,salam_sapaan
+mau jadi ui designer harus mulai dari mana?,tanya_roadmap
+apa ada mentor yang bisa bantu belajar frontend developer?,tanya_roadmap
+"min, simpan lowongan itu fungsinya buat apa?",bantuan_fitur_aplikasi
+apakah saya bisa bertanya?,out_of_context
+skill yang paling dicari buat backend developer apa sih?,tanya_syarat_loker
+bagaimana cara cepat belajar ux researcher?,tanya_roadmap
+cara reset upload cv gimana?,bantuan_fitur_aplikasi
+step by step belajar ai engineer,tanya_roadmap
+"min, ada saran tempat belajar data analyst?",tanya_roadmap
+gimana tips biar lolos seleksi product designer?,tanya_syarat_loker
+makasih bgt,salam_sapaan
+cara mengurus sim yang hilang,out_of_context
+"min, kasih tau step-by-step jadi frontend developer",tanya_roadmap
+apakah profil bisa menghapus data?,bantuan_fitur_aplikasi
+"belajar android developer dari buku atau video, mana yang lebih bagus?",tanya_roadmap
+terima kasih,salam_sapaan
+apa aja materi yang harus dipelajari buat sre?,tanya_roadmap
+"min, ada saran tempat belajar penetration tester?",tanya_roadmap
+apakah saya bisa bertanya?,out_of_context
+rekomendasi film horor indonesia terbaru,out_of_context
+urutan belajar fullstack developer yang bener apa aja?,tanya_roadmap
+cuaca besok hujan gak ya?,out_of_context
+"min, lihat lowongan saya hanya loading terus",bantuan_fitur_aplikasi
+apakah data di career recommendation tersimpan otomatis?,bantuan_fitur_aplikasi
+rekomendasi film horor indonesia terbaru,out_of_context
+apa devops engineer perlu skill manajemen juga?,tanya_syarat_loker
+"saya tidak bisa menemukan cv analyzer, ada di menu mana?",bantuan_fitur_aplikasi
+cara memperbaiki kulkas tidak dingin,out_of_context
+kenapa kucing saya muntah?,out_of_context
+cara merawat tanaman hias,out_of_context
+met malam,salam_sapaan
+Klo mau jadi security analyst hrs bisa jenkins gak?,tanya_syarat_loker
+aku bingung cara lihat job match score,bantuan_fitur_aplikasi
+siapa nama asli batman?,out_of_context
+apakah kamu manusia?,out_of_context
+apakah sdet harus punya github?,tanya_syarat_loker
+gimana cara mengatasi bosan?,out_of_context
+haloo,salam_sapaan
+"min, syarat jadi fullstack developer apa aja?",tanya_syarat_loker
+baik min,salam_sapaan
+assalamualaikum,salam_sapaan
+apakah lulusan smk bisa jadi devsecops?,tanya_syarat_loker
+apa security analyst perlu skill manajemen juga?,tanya_syarat_loker
+obat flu yang ampuh,out_of_context
+"kalo mau automation qa di perusahaan besar, apa syarat tambahannya?",tanya_syarat_loker
+ping,salam_sapaan
+fitur baca grafik ada tutorialnya gak?,bantuan_fitur_aplikasi
+selamat pagi,salam_sapaan
+aku lagi galau,out_of_context
+"kak, cv analyzer ini aman gak buat data pribadi?",bantuan_fitur_aplikasi
+apa aja materi yang harus dipelajari buat automation qa?,tanya_roadmap
+apa saja rintangan saat belajar backend developer?,tanya_roadmap
+alur belajar product designer buat pemula,tanya_roadmap
+apa ada sertifikat yang wajib buat belajar sre?,tanya_roadmap
+"min, pengen belajar cloud engineer tapi budget terbatas, gimana?",tanya_roadmap
+"kak, help! isi survei onboarding saya tiba-tiba hilang",bantuan_fitur_aplikasi
+lagu barat yang lagi hits apa?,out_of_context
+p,salam_sapaan
+sore kak,salam_sapaan
+malam gan,salam_sapaan
+"belajar sdet dari buku atau video, mana yang lebih bagus?",tanya_roadmap
+apa beda syarat ai engineer sama role lain?,tanya_syarat_loker
+belajar fullstack developer pake kursus online apa buku?,tanya_roadmap
+apakah lulusan smk bisa jadi security analyst?,tanya_syarat_loker
+baiklah,salam_sapaan
+apa aja tools yg harus dikuasai ml engineer?,tanya_syarat_loker
+"bg, rekomendasiin roadmap devsecops dong",tanya_roadmap
+apa itu metaverse?,out_of_context
+let's go,salam_sapaan
+apa yang dimaksud dengan angka di radar chart?,bantuan_fitur_aplikasi
+cerita horor singkat,out_of_context
+thx ya,salam_sapaan
+kalo mau flutter engineer harus bisa pandas dari sekarang?,tanya_syarat_loker
+kenapa langit warnanya biru?,out_of_context
+"sangat membantu, makasih",salam_sapaan
+gimana cara pakai radar chart?,bantuan_fitur_aplikasi
+apakah kamu bisa bernyanyi?,out_of_context
+apakah baca grafik bisa diakses gratis?,bantuan_fitur_aplikasi
+kualifikasi automation qa di perusahaan biasanya apa?,tanya_syarat_loker
+gimana caranya belajar android developer secara sistematis?,tanya_roadmap
+"bg, rekomendasiin roadmap ethical hacker dong",tanya_roadmap
+langkah awal belajar automation qa tuh apa?,tanya_roadmap
+"min, pengen belajar ios developer tapi budget terbatas, gimana?",tanya_roadmap
+"pengen bisa data scientist, tapi bingung mulai dari mana",tanya_roadmap
+apakah job match score bisa memberikan rekomendasi yang dipersonalisasi?,bantuan_fitur_aplikasi
+cara mengaktifkan lihat lowongan untuk pertama kali,bantuan_fitur_aplikasi
+belajar sdet tuh susah gak sih?,tanya_roadmap
+apa arti skor di pengaturan akun?,bantuan_fitur_aplikasi
+assalamualaikum,salam_sapaan
+hai kak,salam_sapaan
+lagu barat yang lagi hits apa?,out_of_context
+ready,salam_sapaan
+makasih ya,salam_sapaan
+gimana cara move on?,out_of_context
+gimana cara custom bandingkan skor?,bantuan_fitur_aplikasi
+apakah kamu bisa bernyanyi?,out_of_context
+kenapa kucing saya muntah?,out_of_context
+bisa gak ganti pengaturan upload cv?,bantuan_fitur_aplikasi
+selamat pagi,salam_sapaan
+thank you,salam_sapaan
+apa syarat penting buat posisi ui designer?,tanya_syarat_loker
+ok deh,salam_sapaan
+cara baca cv analyzer gimana sih?,bantuan_fitur_aplikasi
+gimana cara pakai simpan lowongan?,bantuan_fitur_aplikasi
+gimana cara upgrade upload cv?,bantuan_fitur_aplikasi
+"kalo mau belajar devsecops secara intensif, berapa jam sehari?",tanya_roadmap
+kapan pemilu 2024?,out_of_context
+"bro, jadi penetration tester perlu pengalaman berapa tahun?",tanya_syarat_loker
+roadmap belajar ethical hacker dong min,tanya_roadmap
+cara menaikkan followers instagram,out_of_context
+"kalo skill css masih pemula, boleh daftar manual qa?",tanya_syarat_loker
+apa ada mentor yang bisa bantu belajar ux researcher?,tanya_roadmap
+yuhuu,salam_sapaan
+selamat siang kak,salam_sapaan
+cerita horor singkat,out_of_context
+bagaimana cara menghubungkan radar chart dengan akun lain?,bantuan_fitur_aplikasi
+cara akses profil dimana ya?,bantuan_fitur_aplikasi
+"kalo skill python masih pemula, boleh daftar ml engineer?",tanya_syarat_loker
+apa yang dimaksud dengan angka di pengaturan akun?,bantuan_fitur_aplikasi
+hari ini cuacanya gimana?,out_of_context
+apa tensorflow itu wajib buat ui designer?,tanya_syarat_loker
+cara baca career recommendation gimana sih?,bantuan_fitur_aplikasi
+skill paling penting buat backend developer apa min?,tanya_syarat_loker
+kenapa job match score saya gak bisa dibuka?,bantuan_fitur_aplikasi
+"kak, share dong roadmap ethical hacker",tanya_roadmap
+kenapa langit warnanya biru?,out_of_context
+kalo mau switch career ke ml engineer belajarnya gimana?,tanya_roadmap
+heyy,salam_sapaan
+skill yang paling dicari buat flutter engineer apa sih?,tanya_syarat_loker
+apa wireshark itu wajib buat ethical hacker?,tanya_syarat_loker
+cara meningkatkan simpan lowongan gimana?,bantuan_fitur_aplikasi
+siap,salam_sapaan
+backend developer wajib paham kubernetes ya?,tanya_syarat_loker
+sip,salam_sapaan
+siapa ceo google?,out_of_context
+cerita horor singkat,out_of_context
+"kalo skill css masih pemula, boleh daftar flutter engineer?",tanya_syarat_loker
+di mana letak gunung everest?,out_of_context
+aku gak ngerti cara kerja riwayat aplikasi,bantuan_fitur_aplikasi
+apa aja ya skill wajib buat devsecops?,tanya_syarat_loker
+siapa artis favoritmu?,out_of_context
+kapan hari kemerdekaan indonesia?,out_of_context
+"selamat siang, terima kasih",salam_sapaan
+"min, kasih tau dong roadmap backend developer yang realistis",tanya_roadmap
+kapan pemilu 2024?,out_of_context
+apa aja tahapan belajar product designer?,tanya_roadmap
+apakah skill gap analysis support dark mode?,bantuan_fitur_aplikasi
+halo semuanya,salam_sapaan
+cara download video youtube,out_of_context
+"min, kasih tau step-by-step jadi fullstack developer",tanya_roadmap
+sip kak,salam_sapaan
+tahapan belajar ml engineer yang efektif,tanya_roadmap
+"min, share dong kualifikasi lengkap buat automation qa",tanya_syarat_loker
+"min, boleh minta uang?",out_of_context
+apakah bandingkan skor support dark mode?,bantuan_fitur_aplikasi
+rekomendasi film horor indonesia terbaru,out_of_context
+"min, kasih tau dong roadmap security analyst yang realistis",tanya_roadmap
+apa aja ya skill wajib buat ethical hacker?,tanya_syarat_loker
+"kak, tolong bikinin learning path ios developer",tanya_roadmap
+riwayat aplikasi bisa dipake buat apa aja?,bantuan_fitur_aplikasi
+"bro, jadi backend developer perlu pengalaman berapa tahun?",tanya_syarat_loker
+selamat sore,salam_sapaan
+minta tolong cara profil dong,bantuan_fitur_aplikasi
+hai min,salam_sapaan
+gimana cara ekspor data dari job match score?,bantuan_fitur_aplikasi
+rekomendasi channel youtube buat belajar sre,tanya_roadmap
+oke,salam_sapaan
+cara menginterpretasi hasil lihat lowongan?,bantuan_fitur_aplikasi
+langkah awal belajar automation qa tuh apa?,tanya_roadmap
+pagi,salam_sapaan
+apakah kamu manusia?,out_of_context
+"min, boleh minta daftar skill yang harus dipelajari buat ui designer?",tanya_syarat_loker
+cara membandingkan dua job match score sekaligus?,bantuan_fitur_aplikasi
+kalo dari jurusan non-IT bisa jadi ethical hacker gak?,tanya_syarat_loker
+rekomendasi film horor indonesia terbaru,out_of_context
+gimana caranya belajar android developer secara sistematis?,tanya_roadmap
+"min, kasih tau step-by-step jadi android developer",tanya_roadmap
+jadwal bioskop hari ini,out_of_context
+apa saja rintangan saat belajar security analyst?,tanya_roadmap
+bagaimana jika dashboard job market tidak sesuai harapan?,bantuan_fitur_aplikasi
+apakah lihat lowongan bisa dipakai oleh pemula?,bantuan_fitur_aplikasi
+hari ini cuacanya gimana?,out_of_context
+lagu barat yang lagi hits apa?,out_of_context
+fitur pengaturan akun ada tutorialnya gak?,bantuan_fitur_aplikasi
+siapa presiden indonesia sekarang?,out_of_context
+"saya tidak bisa menemukan profil, ada di menu mana?",bantuan_fitur_aplikasi
+mantap,salam_sapaan
+"mau tanya dong, buat melamar devops engineer perlu pengalaman gak?",tanya_syarat_loker
+belajar security analyst dari mana dulu ya?,tanya_roadmap
+automation qa wajib paham firewall ya?,tanya_syarat_loker
+alur belajar ai engineer buat pemula,tanya_roadmap
+bagaimana cara menghubungkan lihat lowongan dengan akun lain?,bantuan_fitur_aplikasi
+gimana cara daftar bpjs?,out_of_context
+panduan belajar sdet dari pemula sampai profesional,tanya_roadmap
+"kalo mau ux researcher di perusahaan besar, apa syarat tambahannya?",tanya_syarat_loker
+apakah bandingkan skor support dark mode?,bantuan_fitur_aplikasi
+assalamualaikum,salam_sapaan
+kalo dari jurusan non-IT bisa jadi data scientist gak?,tanya_syarat_loker
+halo,salam_sapaan
+apakah lulusan smk bisa jadi devsecops?,tanya_syarat_loker
+skill yang paling dicari buat ml engineer apa sih?,tanya_syarat_loker
+"pagi kak, terima kasih",salam_sapaan
+kualifikasi data analyst di perusahaan biasanya apa?,tanya_syarat_loker
+kalo mau flutter engineer harus belajar apa dulu?,tanya_syarat_loker
+makasih,salam_sapaan
+"min, ada saran tempat belajar backend developer?",tanya_roadmap
+apakah cv analyzer support dark mode?,bantuan_fitur_aplikasi
+"min, share dong kualifikasi lengkap buat backend developer",tanya_syarat_loker
+apa aja proyek yang harus dibuat saat belajar penetration tester?,tanya_roadmap
+kenapa kucing saya muntah?,out_of_context
+"kak, apa saja sertifikasi yang direkomendasikan untuk ios developer?",tanya_syarat_loker
+apa ada komunitas buat yang lagi belajar ml engineer?,tanya_roadmap
+hatur nuhun,salam_sapaan
+rekomendasi channel youtube buat belajar android developer,tanya_roadmap
+apa aja ya skill wajib buat ml engineer?,tanya_syarat_loker
+"kak, tolong bikinin learning path backend developer",tanya_roadmap
+"belajar sre dari buku atau video, mana yang lebih bagus?",tanya_roadmap
+"menurutmu, ios developer perlu skill power bi gak?",tanya_syarat_loker
+assalamualaikum,salam_sapaan
+halo semuanya,salam_sapaan
+assalamu'alaikum wr wb,salam_sapaan
+gimana cara custom dashboard job market?,bantuan_fitur_aplikasi
+apakah saya bisa bertanya?,out_of_context
+kenapa harus belajar matematika?,out_of_context
+syarat security analyst di startup sama corporate beda ya?,tanya_syarat_loker
+kenapa career recommendation saya gak bisa dibuka?,bantuan_fitur_aplikasi
+urutan belajar buat jadi backend developer gimana ya?,tanya_roadmap
+"min, ada saran tempat belajar frontend developer?",tanya_roadmap
+"kalo udah tua, apa masih bisa belajar data analyst?",tanya_roadmap
+"kak, kalo mau ui designer harus bisa tools apa?",tanya_syarat_loker
+belajar penetration tester pake kursus online apa buku?,tanya_roadmap
+pagi brow,salam_sapaan
+gimana cara mengatasi bosan?,out_of_context
+belajar security analyst dari mana dulu ya?,tanya_roadmap
+"min, kasih tau dong roadmap ml engineer yang realistis",tanya_roadmap
+apakah riwayat aplikasi bisa diakses gratis?,bantuan_fitur_aplikasi
+syarat devsecops di startup sama corporate beda ya?,tanya_syarat_loker
+siapa nama asli batman?,out_of_context
+cara membandingkan dua baca grafik sekaligus?,bantuan_fitur_aplikasi
+cara membandingkan dua riwayat aplikasi sekaligus?,bantuan_fitur_aplikasi
+skill apa aja yg dibutuhin buat backend developer?,tanya_syarat_loker
+bagaimana cara menghubungkan ganti password dengan akun lain?,bantuan_fitur_aplikasi
+tq,salam_sapaan
+ceritain dong soal perang dunia ke 2,out_of_context
+tahapan belajar frontend developer yang efektif,tanya_roadmap
+kalo mau jadi cloud engineer perlu kuliah IT gak?,tanya_syarat_loker
+mau jadi android developer harus mulai dari mana?,tanya_roadmap
+cara merawat tanaman hias,out_of_context
+apakah android developer harus menguasai banyak bahasa pemrograman?,tanya_syarat_loker
+gimana cara bandingin simpan lowongan?,bantuan_fitur_aplikasi
+terima kasih atas bantuannya,salam_sapaan
+"min, kasih tau dong roadmap ux researcher yang realistis",tanya_roadmap
+urutan belajar buat jadi ux researcher gimana ya?,tanya_roadmap
+cara mengaktifkan dashboard job market untuk pertama kali,bantuan_fitur_aplikasi
+makasih bgt,salam_sapaan
+notifikasi bisa dipake buat apa aja?,bantuan_fitur_aplikasi
+baik min,salam_sapaan
+gimana cara menghapus cache career recommendation?,bantuan_fitur_aplikasi
+cara memperbaiki kulkas tidak dingin,out_of_context
+makasih bgt,salam_sapaan
+siapa nama pacar kamu?,out_of_context
+apa aja ya skill wajib buat cloud engineer?,tanya_syarat_loker
+mau jadi data scientist harus mulai dari mana?,tanya_roadmap
+apa itu metaverse?,out_of_context
+kok ganti password error ya?,bantuan_fitur_aplikasi
+kenapa ayam menyeberang jalan?,out_of_context
+aku mau pesan tiket kereta,out_of_context
+gimana cara ekspor data dari pengaturan akun?,bantuan_fitur_aplikasi
+"bro, jadi devsecops perlu pengalaman berapa tahun?",tanya_syarat_loker
+bagaimana cara cepat belajar security analyst?,tanya_roadmap
+gimana cara custom notifikasi?,bantuan_fitur_aplikasi
+kualifikasi utama penetration tester apa ya?,tanya_syarat_loker
+gimana cara bandingin simpan lowongan?,bantuan_fitur_aplikasi
+makasih ya,salam_sapaan
+salam sejahtera,salam_sapaan
+apa syarat penting buat posisi cloud engineer?,tanya_syarat_loker
+cara meningkatkan baca grafik gimana?,bantuan_fitur_aplikasi
+bisa gak belajar android developer otodidak?,tanya_roadmap
+langkah awal belajar manual qa tuh apa?,tanya_roadmap
+siapa presiden indonesia sekarang?,out_of_context
+terima kasih,salam_sapaan
+apakah lulusan smk bisa jadi ui designer?,tanya_syarat_loker
+butuh sertifikat apa aja buat jadi frontend developer?,tanya_syarat_loker
+kok career recommendation error ya?,bantuan_fitur_aplikasi
+"bg, syarat minimal buat sre apa?",tanya_syarat_loker
+bisa gak belajar backend developer otodidak?,tanya_roadmap
+arigatou,salam_sapaan
+met siang,salam_sapaan
+kapan hari kemerdekaan indonesia?,out_of_context
+makasih penjelasannya,salam_sapaan
+apakah kamu manusia?,out_of_context
+gimana cara move on?,out_of_context
+"kak, butuh portfolio gak buat ai engineer?",tanya_syarat_loker
+siapa penemu lampu?,out_of_context
+selamat pagi,salam_sapaan
+thanks,salam_sapaan
+belajar ai engineer tuh mulai dari teori apa langsung praktek?,tanya_roadmap
+cara mengurus sim yang hilang,out_of_context
+kok profil error ya?,bantuan_fitur_aplikasi
+gimana tips biar lolos seleksi frontend developer?,tanya_syarat_loker
+kalo dari jurusan non-IT bisa jadi frontend developer gak?,tanya_syarat_loker
+"bg, syarat minimal buat product designer apa?",tanya_syarat_loker
+cara akses riwayat aplikasi dimana ya?,bantuan_fitur_aplikasi
+ok siap,salam_sapaan
+guide belajar fullstack developer buat pemula,tanya_roadmap
+cara mendapatkan notifikasi dari notifikasi?,bantuan_fitur_aplikasi
+minta tolong cara isi survei onboarding dong,bantuan_fitur_aplikasi
+gimana cara bandingin baca grafik?,bantuan_fitur_aplikasi
+makasih kak,salam_sapaan
+langkah awal belajar android developer tuh apa?,tanya_roadmap
+permisi,salam_sapaan
+panduan belajar ai engineer dari pemula sampai profesional,tanya_roadmap
+menu masakan sehari-hari agar tidak bosan,out_of_context
+tq,salam_sapaan
+tips merawat kulit wajah kering,out_of_context
+cara mengurus sim yang hilang,out_of_context
+fitur bandingkan skor ada tutorialnya gak?,bantuan_fitur_aplikasi
+apakah ethical hacker harus punya sertifikasi?,tanya_syarat_loker
+di mana beli sayur online terpercaya?,out_of_context
+siapa artis favoritmu?,out_of_context
+"min, ganti password kok lambat loadingnya?",bantuan_fitur_aplikasi
+kalo gak bisa firewall apa masih bisa jadi flutter engineer?,tanya_syarat_loker
+apa ada sertifikat yang wajib buat belajar penetration tester?,tanya_roadmap
+cara transfer pulsa,out_of_context
+security analyst tu harus jago postman gak sih?,tanya_syarat_loker
+okee,salam_sapaan
+ok siap,salam_sapaan
+kenapa langit warnanya biru?,out_of_context
+cara reset profil gimana?,bantuan_fitur_aplikasi
+ceritain dong soal perang dunia ke 2,out_of_context
+belajar ios developer tuh susah gak sih?,tanya_roadmap
+bagaimana cara cepat belajar penetration tester?,tanya_roadmap
+"kak, mau nanya syarat jadi sdet dong",tanya_syarat_loker
+"min, job match score itu fungsinya buat apa?",bantuan_fitur_aplikasi
+"kalo mau belajar ethical hacker secara intensif, berapa jam sehari?",tanya_roadmap
+cerita horor singkat,out_of_context
+thx ya,salam_sapaan
+cara mengurus sim yang hilang,out_of_context
+"kak, share dong roadmap product designer",tanya_roadmap
+"kalo mau belajar ml engineer, butuh berapa lama sampe bisa?",tanya_roadmap
+heyy,salam_sapaan
+simpan lowongan bisa dipake buat apa aja?,bantuan_fitur_aplikasi
+apakah ganti password bisa memberikan rekomendasi yang dipersonalisasi?,bantuan_fitur_aplikasi
+aku lagi galau,out_of_context
+aku mau pesan tiket kereta,out_of_context
+"kalo mau belajar sdet, skill apa yang harus dikuasai duluan?",tanya_roadmap
+kenapa harus belajar matematika?,out_of_context
+bisa gak belajar ml engineer otodidak?,tanya_roadmap
+kenapa tombol bandingkan skor gak berfungsi?,bantuan_fitur_aplikasi
+hari ini cuacanya gimana?,out_of_context
+ok boss,salam_sapaan
+gimana cara bandingin simpan lowongan?,bantuan_fitur_aplikasi
+"kalo skill metasploit masih pemula, boleh daftar ios developer?",tanya_syarat_loker
+gimana cara tetap motivasi saat belajar product designer?,tanya_roadmap
+"kak, flutter engineer wajib bisa burp suite gak?",tanya_syarat_loker
+langkah awal belajar sre tuh apa?,tanya_roadmap
+hei,salam_sapaan
+gimana tips biar lolos seleksi devops engineer?,tanya_syarat_loker
+"kak, butuh portfolio gak buat android developer?",tanya_syarat_loker
+"kak, kalo mau flutter engineer harus bisa tools apa?",tanya_syarat_loker
+tips merawat kulit wajah kering,out_of_context
+apa aja tools yg harus dikuasai android developer?,tanya_syarat_loker
+gimana cara upgrade baca grafik?,bantuan_fitur_aplikasi
+"bg, syarat minimal buat backend developer apa?",tanya_syarat_loker
+apakah flutter engineer harus menguasai banyak bahasa pemrograman?,tanya_syarat_loker
+urutan belajar buat jadi frontend developer gimana ya?,tanya_roadmap
+minta link download film,out_of_context
+"min, pengen belajar android developer tapi budget terbatas, gimana?",tanya_roadmap
+permisi,salam_sapaan
+cara mengaktifkan radar chart untuk pertama kali,bantuan_fitur_aplikasi
+"kak, kalo mau data scientist harus bisa tools apa?",tanya_syarat_loker
+butuh sertifikat apa aja buat jadi ethical hacker?,tanya_syarat_loker
+malam gan,salam_sapaan
+apakah kucing bisa terbang?,out_of_context
+apa bisa jadi ml engineer tanpa gelar IT?,tanya_syarat_loker
+"pengen jadi data analyst, tapi bingung harus bisa apa",tanya_syarat_loker
+apa figma itu wajib buat ml engineer?,tanya_syarat_loker
+gimana sih caranya belajar android developer dari nol?,tanya_roadmap
+"min, pengen belajar devsecops tapi budget terbatas, gimana?",tanya_roadmap
+"kak, mau nanya syarat jadi frontend developer dong",tanya_syarat_loker
+"menurutmu, ml engineer perlu skill firebase gak?",tanya_syarat_loker
+apakah ganti password butuh koneksi internet?,bantuan_fitur_aplikasi
+let's go,salam_sapaan
+urutan belajar ios developer yang bener apa aja?,tanya_roadmap
+done,salam_sapaan
+rekomendasi laptop untuk mahasiswa,out_of_context
+gimana cara ekspor data dari isi survei onboarding?,bantuan_fitur_aplikasi
+makasih ya,salam_sapaan
+apa aja tools yg harus dikuasai data scientist?,tanya_syarat_loker
+gimana cara custom profil?,bantuan_fitur_aplikasi
