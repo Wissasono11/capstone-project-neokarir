@@ -214,6 +214,7 @@ const en = {
     maxEstimation: "Largest Estimate",
     averageGrowth: "Average Growth",
     growthTitle: (n) => `Growth (${n} Months)`,
+    monthPlus: (n) => `Month +${n}`,
     positivePrediction: "Positive Prediction",
     activeVacancies: (val) => `${val} vacancies`,
     jobEstimateSuffix: "estimated job demands.",

@@ -214,6 +214,7 @@ const id = {
     maxEstimation: "Estimasi Terbesar",
     averageGrowth: "Rata-Rata Pertumbuhan",
     growthTitle: (n) => `Pertumbuhan (${n} Bulan)`,
+    monthPlus: (n) => `Bulan +${n}`,
     positivePrediction: "Prediksi Positif",
     activeVacancies: (val) => `${val} lowongan`,
     jobEstimateSuffix: "estimasi kebutuhan kerja.",
