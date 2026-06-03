@@ -1,0 +1,38 @@
+SUMBER URL: https://masoemuniversity.ac.id/artikel/kesalahan-cv-fresh-graduate-teknik-informatika-yang-paling-sering-bikin-langsung-ditolak-hrd/
+--------------------------------------------------
+
+Dalam persaingan industri teknologi tahun 2026, HRD dan user (Senior Developer/CTO) hanya menghabiskan waktu kurang dari 10 detik untuk memindai satu CV. Bagi lulusan S1 Teknik Informatika, kesalahan kecil dalam penyajian data teknis bisa berakibat fatal.
+Secara logis, CV Anda adalah “kode sumber” diri Anda. Jika ada bug di dalamnya, HRD tidak akan ragu untuk melakukan reject. Berikut adalah kesalahan yang paling sering terjadi dan cara memperbaikinya secara sistematis.
+1. Menggunakan Grafik Batang untuk Menilai Skill
+Banyak fresh graduate mencantumkan grafik persentase (misal: Java 80%, Python 90%).
+- Kesalahannya: Secara profesional, angka tersebut tidak memiliki tolok ukur yang jelas. 80% menurut siapa? Ini dianggap tidak jujur dan membingungkan sistem ATS (Applicant Tracking System).
+- Solusinya: Gunakan kategori tingkat kemahiran yang diakui, seperti Beginner, Intermediate, atau Advanced. Atau lebih baik lagi, sebutkan proyek nyata yang pernah dikerjakan menggunakan bahasa tersebut.
+2. Tidak Mencantumkan Link Portofolio (GitHub/Behance)
+Bagi HRD teknologi, melihat kode atau hasil desain Anda jauh lebih penting daripada membaca daftar mata kuliah.
+- Kesalahannya: Menulis “Mahir Web Development” tapi tidak menyertakan bukti nyata yang bisa diklik.
+- Solusinya: Pastikan tautan GitHub (untuk coding) atau Behance/Drive (untuk UI/UX) terlihat jelas. Pastikan repositori Anda rapi dan memiliki file
+README.md
+yang menjelaskan proyek tersebut secara inovatif.
+3. Penulisan Proyek yang Terlalu Singkat
+Banyak CV hanya menulis: “Membuat aplikasi e-commerce untuk tugas akhir.”
+- Kesalahannya: HRD tidak tahu peran Anda, teknologi (stack) yang digunakan, atau masalah apa yang Anda selesaikan.
+- Solusinya: Gunakan poin-poin yang sistematis. Contoh:
+- “Membangun aplikasi e-commerce menggunakan React.js dan Firebase.”
+- “Mengintegrasikan sistem pembayaran digital dan optimasi basis data SQL.”
+- “Berhasil memangkas waktu pemuatan halaman sebesar 15%.”
+4. Typo pada Istilah Teknis (Fatal Error)
+Ketelitian adalah aset utama seorang programmer atau analis sistem.
+- Kesalahannya: Salah menulis istilah teknis, seperti “Javascript” (seharusnya JavaScript), “Mysql” (seharusnya MySQL), atau “Phyton” (seharusnya Python).
+- Solusinya: Lakukan pemeriksaan ulang secara disiplin. Kesalahan penulisan istilah teknis menunjukkan bahwa Anda kurang teliti terhadap detail, sebuah sifat yang sangat dihindari di dunia teknik.
+5. Mengabaikan Pengalaman Organisasi yang Relevan
+Beberapa mahasiswa menganggap pengalaman di UKM tidak penting untuk CV teknis.
+- Kesalahannya: Menghapus pengalaman organisasi seperti Computer Club atau Protokoler.
+- Solusinya: Tetap cantumkan jika Anda memegang peran kepemimpinan. HRD mencari orang yang bisa bekerja dalam tim (team player). Pengalaman mengelola acara promosi atau menjadi pengurus organisasi membuktikan Anda memiliki soft skills yang suportif dan amanah.
+Tips CV yang “Lolos Sensor” HRD di Masoem University
+Di Fakultas Teknik Masoem University, mahasiswa didorong untuk memiliki karakter yang tangguh dan disiplin. Agar CV Anda menonjol:
+- Gunakan Format ATS-Friendly: Layout satu kolom, teks bersih, dan tanpa foto (kecuali diminta) agar mudah dibaca mesin.
+- Gunakan Kata Kunci (Keywords): Masukkan istilah yang ada di lowongan kerja ke dalam CV Anda secara logis.
+- Tonjolkan Sertifikasi: Jika Anda memiliki sertifikasi dari kursus online atau pelatihan di kampus, cantumkan sebagai bukti kompetensi tambahan.
+Siap Menjadi Ahli IT yang Kompeten
+Jangan biarkan impian karier Anda terhambat hanya karena format CV yang keliru. Dengan memperbaiki kesalahan-kesalahan di atas, Anda menunjukkan profesionalisme sebagai lulusan Teknik Informatika yang siap memberikan solusi digital secara inovatif dan jujur.
+Mari asah terus potensi teknis dan manajerial Anda di lingkungan kampus yang dinamis. Pastikan setiap langkah Anda di universitas terdokumentasi dengan baik dalam portofolio yang tangguh.

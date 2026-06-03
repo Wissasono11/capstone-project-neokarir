@@ -1,0 +1,104 @@
+SUMBER URL: https://www.revou.co/panduan-karir/tools-data-analytics
+--------------------------------------------------
+
+Penggunaan software atau tools data analytics menjadi kunci utama mempercepat dan meningkatkan efisiensi proses analisis data.
+Artinya, seorang data analyst membutuhkan tools untuk memberikan hasil pekerjaan terbaik dalam waktu sesingkat-singkatnya.
+Tentu mustahil jika data analyst untuk mengeksekusi algoritma, menyiapkan data, memprediksi berbasis data, visualisasi data, dan banyak lainnya secara manual.
+Itulah sebabnya kamu memerlukan tools yang dapat menunjang pekerjaanmu. Apa saja pilihan tools yang bisa digunakan? Artikel ini mengulas 10 tools data analytics yang paling sering digunakan sekaligus memberi contoh kasus penggunaanya.
+Cara Memilih Tools Data Analytics yang Tepat
+Memilih tools data analytics tidak bisa sembarangan. Kamu harus menentukan tools yang bisa memiliki dampak strategis bagi organisasi/perusahaan.
+Menggunakan tools yang tidak sesuai kebutuhan dapat menimbulkan kebingungan dan justru anggota tim lain tidak mendapatkan informasi yang mereka butuhkan. Di sisi lain, tools yang sesuai dengan kebutuhan bisnis dapat menghadirkan banyak wawasan baru tentang pelanggan, produk, sekaligus memandu pengambilan keputusan berbasis data.
+Untuk memilih tools data analytics yang tepat, setidaknya kamu perlu menjawab pertanyaan-pertanyaan berikut ini.
+Jenis data apa yang dimiliki oleh bisnis kamu? Apakah data tersebut memerlukan prosedur analisis tertentu seperti data modelling?
+Seberapa besar data yang ada di perusahaan? Apakah termasuk big data?
+Apakah kamu memerlukan jenis visualisasi tertentu seperti geographic heatmaps?
+Berapa anggaran yang disiapkan oleh perusahaan?
+Masalah apa yang perusahaan coba ingin selesaikan?
+Dengan menjawab pertanyaan-pertanyaan di atas, kamu bisa mulai memilih tools data analytics sesuai keperluan perusahaan.
+Tools Data Analytics Terbaik Pilihan Pemula sampai Expert
+Berikut adalah pilihan tools data analytics yang bisa digunakan pemula hingga expert.
+#1 Excel
+Excel adalah salah satu tools data analytics yang cocok digunakan pemula. Tool ini membantu membuat grafik/bagan dengan cepat dan mudah. Excel juga menawarkan berbagai jenis bagan, seperti clustered bar charts, scatterplots, bar charts, pie charts, radar charts, dan banyak lainnya.
+Fitur Excel lainnya yang paling umum adalah manipulasi data. Dengan menggunakan beragam fungsi dan rumus, kamu dapat melakukan hampir segala jenis manipulasi yang kamu butuhkan untuk data. Seperti misalnya, kamu bisa menambahkan angka-angka di setiap kolom secara otomatis.
+Saat mempelajari data analytics, mungkin masih sering muncul pertanyaan, “Apakah Excel saja cukup untuk menganalisis data?”
+Jawaban atas pertanyaan ini adalah tergantung seberapa besar data yang dimiliki perusahaan. Sayangnya, Excel tidak cocok digunakan untuk memanipulasi data yang lebih kompleks atau big data. Sebab, tool ini memiliki limit 1 juta baris. Selain itu, Excel juga bukan tool yang tepat untuk advanced statistical analysis.
+Tingkat keahlian: Pemula hingga menengah.
+Penggunaan ideal untuk: Menyimpan/mengedit data, analisis dasar, memanipulasi data, grafik/charts.
+Contoh kasus penggunaan
+Penggunaan tabel pivot: Kamu memiliki data penjualan toko pakaian dan ingin mengetahui baju apa yang paling sering dibeli di waktu yang berbeda setiap harinya. Dengan tabel pivot di Excel, kamu dapat dengan mudah menemukan jawabannya.
+#2 Tableau
+Tableau adalah tool terbaik untuk membuat grafik dengan visual menarik dan dashboard interaktif tanpa memerlukan coding. Keunggulan dari tool ini adalah bisa menyajikan data yang lebih mudah dipahami ke orang awam.
+Lebih dari itu, Tableau juga dapat digunakan untuk menganalisis data, meskipun tool ini tidak bisa merapikan data yang berantakan dan membutuhkan pembersihan menyeluruh. Contohnya, jika kamu memiliki data alamat dengan banyak format berbeda, disingkat atau tidak disingkat, Tableau tidak akan mampu menyelesaikannya.
+Tingkat keahlian: Pemula hingga menengah.
+Penggunaan ideal untuk: Membuat dashboard dan grafik interaktif, pembersihan basic data.
+Contoh kasus penggunaan
+Untuk presentasi: Seorang data analyst perlu mempresentasikan beberapa hasil penemuan data ke eksekutif. Visualisasi di ggplot atau matplotlib kurang menarik. Kamu perlu membuat laporan yang cantik dan interaktif agar mudah diakses oleh siapa saja. Tableau mampu melakukan ini dengan pendekatan sederhana.
+#3 Polymer Search
+Polymer Search adalah tool AI (Artificial Intelligence) tanpa code yang dirancang untuk menganalisis data penjualan dan pemasaran. Tool ini merupakan salah satu tool data analytics yang mudah dipelajari, bahkan lebih sederhana dari Excel.
+Hanya dengan mengunggah data ke tool tersebut, data kamu akan menjadi interactive web application dalam hitungan detik.
+Kelemahan terbesar dari Polymer Search adalah tool ini tidak bisa digunakan untuk big data karena fleksibilitasnya terbatas untuk analisis lebih lanjut. Misalnya, kamu tidak dapat melakukan analisis multivariate dengan Polymer dan jenis grafik/chartnya juga terbatas.
+Tingkat keahlian: Pemula.
+Penggunaan ideal untuk: Data marketing/penjualan/survei, business intelligence, presentasi data.
+Contoh kasus penggunaan
+Data penjualan/pemasaran: Kamu menjalankan iklan Facebook dan ingin menemukan top performing combinations. Polymer memiliki fitur Auto-Explainer yang secara otomatis bisa kamu dapatkan hasilnya.
+Apabila kamu ingin menemukan audiens yang tepat, kamu cukup memasukkan usia, lokasi, jenis kelamin, dan tipe device. Polymer akan menunjukkan kombinasi hasil yang berbeda dari performa terbaik hingga terburuk.
+#4 Akkio
+Akkio adalah tool AI-powered yang memungkinkan seseorang bisa menjadi data scientist tanpa pengalaman coding. Kamu cukup mengunggah dataset ke tool, pilih variabel yang ingin kamu prediksi, lalu Akkio akan membangun neural network di sekitar variabel itu.
+Uniknya, Akkio tidak hanya memprediksi hasil, melainkan juga menyajikan peringkat akurasi tentang seberapa akurat model tersebut sekaligus mengetahui false positives.
+Sederhananya, Akkio adalah tool non-teknis untuk menerapkan predictive analytics.
+Tingkat keahlian: Pemula.
+Penggunaan ideal untuk: Penjualan, pemasaran, predictive analytics.
+Contoh kasus penggunaan
+Kamu menjalankan toko di sebuah e-commerce dan mulai ingin menerapkan rekomendasi produk melalui e-mail newsletter. Dalam kasus ini, kamu merupakan seorang pemula di bidang data analytics.
+Akkio membantu kamu membuat model guna memprediksi apa saja yang kemungkinan besar akan dibeli pelanggan berdasarkan perilaku pembelian mereka sebelumnya.
+{{COMPONENT_IDENTIFIER}}
+#5 SQL
+SQL adalah bahasa pemrograman yang digunakan untuk query dan manipulasi data. Tool ini melakukan sebagian besar fitur yang ada di Excel, namun berkali-kali lebih efisien untuk digunakan big data.
+Jika di Excel kamu mengerjakannya berjam-jam, SQL dapat melakukannya dalam hitungan menit hingga detik. Tool ini memungkinkan kamu mengirim file besar dengan lebih mudah dibandingkan Excel.
+Meski demikian, SQL cenderung lebih rumit dipelajari daripada Excel dan kurang cocok digunakan untuk tugas-tugas data analyst yang sifatnya basic atau dasar.
+Tingkat keahlian: Menengah.
+Penggunaan ideal untuk: Membuat query dan memanipulasi big data.
+Contoh kasus penggunaan
+Menggabungkan kumpulan data: Katakanlah kamu memiliki 4 file spreadsheet dengan 12 kolom, lalu kamu ingin menggabungkan semuanya. Kamu tentu perlu menggabungkannya secara horizontal dalam data baru dengan 48 kolom. Melakukan ini dengan Excel akan sulit dan menyita waktu cukup lama. Itulah mengapa kamu membutuhkan SQL.
+Manipulasi big data: Kamu memiliki jutaan data komentar di Instagram dan perlu membersihkan sekaligus mengedit data ini. Dengan SQL, kamu bisa melakukan hampir semua jenis manipulasi data dengan kurang dari 15 baris code.
+#6 R
+R adalah tool yang digunakan untuk menangani big data. Keunggulan tool ini ada dalam prosedur analisis statistik, terutama exploratory data analysis (EDA). Statistik yang digunakan R sudah sangat canggih. Tak heran jika Facebook, Google, Bing, dan brand besar lainnya menggunakan R untuk memecahkan masalah yang kompleks.
+Tingkat keahlian: Mahir. Advanced atau mahir.
+Penggunaan ideal untuk: Machine learning, big data, advanced academic statistical analysis.
+Contoh kasus penggunaan
+Kamu bekerja di industri keuangan dan ingin memprediksikan pergerakan pasar sekaligus harga saham. R akan menyediakan fitur time-series statistical processes untuk membantunya.
+#7 SPSS
+Pada dasarnya, SPSS adalah tool point-and-click yang sering digunakan profesional pendidikan dan bidang ilmu sosial. Namun, tool ini juga bisa digunakan dalam pemerintahan, ritel, dan riset pasar.
+Keunggulan dari SPSS ini adalah kamu bisa menggunakan berbagai tes dan jenis regresi guna mengakomodasi semua jenis data atau skenario.
+Tingkat keahlian: Menengah.
+Penggunaan ideal untuk: ANOVA, cluster analysis, t-tests, MANOVA, linear & logistic regression, confidence intervals.
+Contoh kasus penggunaan
+Data sampel: Kamu bekerja di bidang medis dan perlu menguji apakah sebuah obat berpengaruh dalam meningkatkan skor tes. untuk pengambilan sampel, kamu harus memiliki kelompok kontrol dan kelompok eksperimen. T-test memungkinkan kamu mengetahui apakah kedua kelompok ini secara statistik berbeda satu sama lain berdasarkan p-value yang sudah ditetapkan.
+#8 Python
+Python adalah bahasa pemrograman high-level yang ditulis secara internal dalam C. Artinya, kamu tidak harus memikirkan tentang penggunaan memori atau RAM.
+Hal yang unik dari Python adalah tool ini bersifat open-source, kamu bisa menemukan “perpustakaan” tanpa harus melakukan coding sendiri. Meski demikian, Python ditujukan untuk pengguna yang sudah mahir. Sebab, dibutuhkan waktu lama untuk mempelajari tool ini sesuai tujuan perusahaan.
+Tingkat keahlian: Advanced atau mahir.
+Penggunaan ideal untuk: Otomatisasi, big data, machine learning, app deployment.
+Contoh kasus penggunaan
+Pembersihan data: kamu mendata akun Instagram perusahaan, termasuk jumlah like, comment, share, dan lainnya. Ternyata, kamu menyadari ada beberapa data yang hilang. Misalnya, tidak semua postingan memiliki jumlah like. Python membantu kamu memperbaiki masalah ini dengan mendeteksi tautan yang hilang terlebih dahulu.
+Otomatisasi: Setiap hari kamu mendapatkan 10 kumpulan data dari perusahaan untuk dianalisis. Perusahaan ingin melihat variabel tertentu dalam data, membuat grafik/charts, dan mengirimkannya ke e-mail tertentu. Dibandingkan Excel yang memakan waktu lebih lama untuk mengerjakannya, Python membuat kamu bisa mengotomatisasi proses ini.
+#9 Power BI
+Power BI memiliki kemampuan visualisasi data yang mirip dengan Tableau. Bedanya, tool ini lebih komprehensif dengan memiliki fitur manipulasi dan pembersihan data menggunakan bahasa DAX.
+Power BI juga terintegrasi dengan produk Microsoft, sehingga memudahkan pekerjaan kamu yang tersimpan di beberapa file tertentu.
+Tingkat keahlian: Pemula hingga menengah.
+Penggunaan ideal untuk: Membuat dashboard dan grafik interaktif, manipulasi data.
+Contoh kasus penggunaan
+Kamu perlu mengidentifikasi perputaran stok barang, rasio inventaris terhadap pembelian, stok apa saja yang bergerak lambat, dan laba atas investasi margin kotor. Melalui laporan terperinci yang dibuat oleh Power BI, kamu dapat dengan mudah mengidentifikasi berapa banyak stok yang tersedia untuk suatu produk.
+Dengan begitu, perusahaan bisa melakukan penyortiran stok yang diperlukan sesuai tanggal pembuatan dan kedaluwarsa, harga, sekaligus nomor batch.
+#10 ATLAS.ti
+ATLAS.ti adalah tool yang dirancang untuk menganalisis data kualitatif, seperti komentar di media sosial, survei terbuka, dan wawancara. Tool ini memungkinkan pengguna non-teknis untuk melakukan tugas-tugas kompleks, seperti sentiment analysis.
+Selain itu, ATLAS.ti juga mendukung pengunggahan video dan gambar.
+Fitur-fiturnya sendiri meliput word cloud, wordlist, sinonim, penyaringan dengan kata sifat, kata benda, dan konjungsi.
+Tingkat keahlian: Pemula hingga menengah.
+Penggunaan ideal untuk: Sentiment analysis, text mining.
+Contoh kasus penggunaan
+Eksperimen ilmu sosial: Kamu bekerja di bidang ilmu sosial dan melakukan eksperimen dengan cara meminta peserta menuliskan perasaannya setelah menonton video yang diberikan. Hal ini biasanya sulit dianalisis secara manual. Menggunakan ATLAS.ti kamu bisa membuat analisis multimodal menjadi lebih sederhana.
+Data tidak terstruktur: Kamu melakukan wawancara dan ingin mendapatkan informasi dari keseluruhan orang yang diwawancarai. Jika kamu tidak terbiasa menggunakan Python, ATLAS.ti bisa menjadi solusi yang lebih sederhana untuk mengumpulkan teks tanpa coding apa pun.
+Penutup
+Pemilihan tools data analytics yang tepat tergantung pada jenis data yang ingin kamu analisis, anggaran, dan tingkat keahlian. Tak ada salahnya kamu menggunakan kombinasi tool untuk menyelesaikan pekerjaan. Misalnya, menerapkan Excel, Python, dan Tableau secara bersamaan.
+Sebagian tools juga memiliki uji coba gratis, sehingga kamu bisa mencobanya terlebih dahulu untuk memastikan apakah tool tersebut tepat untukmu.

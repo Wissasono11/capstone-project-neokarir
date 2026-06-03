@@ -1,0 +1,52 @@
+SUMBER URL: https://www.dicoding.com/blog/tips-membuat-cv-programmer-yang-menarik/
+--------------------------------------------------
+
+Apa itu CV yang menarik? Apakah programmer juga perlu membuat CV yang menarik?
+Yap, betul! Programmer pun perlu membuat CV (Curriculum Vitae) yang menarik disebabkan ketatnya persaingan kerja di dunia pemrograman saat ini. Programmer menjadi salah satu pekerjaan paling banyak diminati dengan tawaran gaji yang sangat kompetitif. Bila kita tidak bisa mempersiapkannya dengan matang, kesempatan untuk dapat kerja atau bahkan lolos ke tahap wawancara akan semakin kecil.
+Nah, untuk meningkatkan peluang ini kamu bisa dengan membuat CV yang semenarik mungkin. Dalam artikel ini kita akan bahas, “Bagaimana sih, tips and trick membuat CV yang menarik ala programmer?”
+Yuk, simak artikel selengkapnya di bawah ini!
+Kenapa Harus Memiliki CV yang menarik?
+Dilansir dari Top Resume, recruiter rata-rata hanya punya waktu enam detik untuk melihat CV kamu sebelum memutuskan bahwa CV-mu sesuai dengan kebutuhan pekerjaan mereka atau tidak. Maka dari itu, langkah pertama untuk menjadi seorang programmer adalah membuat CV yang menarik dan efektif.
+Jadi, kamu perlu membuat CV-mu dalam satu atau maksimal dua halaman saja dengan ringkas, detail, dan juga ATS friendly (karena saat ini sudah banyak perusahaan yang memakainya).
+Pastikan juga ketika kamu menulis CV tidak ada informasi penting yang terlewatkan. Tulis dan highlight semua skill yang relevan dengan pekerjaan yang dilamar sehingga memudahkan recruiter untuk tahu bahwa kamu adalah orang yang tepat untuk masuk dalam tim mereka.
+Nah, maka dari itu, apa aja sih yang wajib dicantumkan dalam CV kamu? Mari kita lanjut ke bagian berikutnya untuk membahas semuanya.
+Hal-hal yang Wajib Ada di CV Programmer
+1. Cantumkan Informasi Data Diri dan Kontak
+Menuliskan informasi dasar mengenai dirimu pada bagian paling atas agar recruiter dapat mudah menghubungi atau mengecek media sosial dan juga portofoliomu. Pada bagian ini, kamu perlu mencantumkan nama lengkap, alamat email (yang profesional), nomor telepon, platform online yang relevan (seperti tautan ke profil LinkedIn atau GitHub kamu), dan lokasi (cukup nama kota dan negara saja).
+Pro tips: bagi programmer, tidak perlu mencantumkan foto dalam CV karena sistem ATS akan sulit men-screening detail yang non-teks, seperti gambar maupun grafis yang akhirnya berujung penolakan pada sistem mereka.
+Selain itu, penggunaan foto pada CV juga mungkin akan memicu diskriminasi maupun pengalihan perhatian recruiter dari informasi-informasi yang lebih penting dalam CV kita.
+2. Tuliskan Summary Dirimu dengan Objektif
+Bagian ini merupakan bagian kesan pertama recruiter ketika membaca CV-mu. Jadi, berikanlah kesan yang positif dan menarik sehingga recruiter ingin membaca CV hingga akhir.
+Pada bagian summary ini, kamu bisa mencantumkan skill, minat, pengalaman, dan target karier yang kamu punya sesuai dengan deskripsi karyawan yang dicari oleh perusahaan. Cukup tuliskan lima sampai enam kalimat saja atau tidak lebih dari 80 kata, juga dengan objektif dan singkat padat.
+Berikut adalah contoh summary CV programmer yang bisa kamu ikuti:
+“Seorang Web Developer dengan 4 tahun pengalaman, yang passionate dengan web accessibility dan responsive web design. Merancang dan mengembangkan aplikasi web https://dicoding.com serta meningkatkan efisiensinya sebesar 27%. Memanfaatkan JavaScript, HTML, dan CSS untuk membuat 50+ landing page yang responsive untuk klien dalam berbagai industri.”
+3. Tunjukan Pengalaman dan Pendidikan
+Setelah informasi di atas, hal penting selanjutnya yang perlu kamu cantumkan dalam CV programmer adalah pengalaman pekerjaan sebelumnya. Dari sekian banyak CV yang diterima perusahaan, recruiter akan menyaring kandidat yang potensial untuk tahap selanjutnya.
+Urutan penulisan pengalaman yang direkomendasikan pada CV kamu seperti berikut.
+- Posisi atau jabatan pekerjaan
+- Nama dan lokasi perusahaan
+- Masa bekerja
+- Deskripsi tanggung jawab dan pencapaian kerja
+Cantumkan pengalaman pekerjaanmu dari yang terbaru pada bagian paling atas. Masukkan deskripsi pekerjaan yang menyertakan pula hasil dari pekerjaan yang sudah kamu selesaikan. Kamu dapat menggunakan rumus “Action + problem/project = result” untuk memudahkan kamu mendeskripsikan pencapaianmu dalam bagian pengalaman kerja.
+Kemudian, jangan lupa gunakan action word atau keyword, seperti developed (mengembangkan), collaboration (berkolaborasi), conceptualized (membuat konsep), dan led (memimpin). Kata-kata tersebut dapat menarik perhatian recruiter ketika membaca CV-mu.
+Berikut adalah contoh pengalaman kerja CV programmer yang bisa kamu ikuti.
+Dalam bagian pendidikan, IPK itu opsional dicantumkannya karena tidak terlalu berpengaruh dibanding pengalaman kerja yang sudah kamu miliki bertahun-tahun.
+Lalu, bagaimana dengan kamu yang fresh graduate?
+Nah, berbeda dengan seseorang yang sudah berpengalaman, bagi fresh graduate bagian pendidikan ini menjadi sangat penting untuk menonjolkan skill programming-mu. Kamu bisa menunjukkannya dengan detail pendidikan yang sudah kamu tempuh dan sertakan juga mata kuliah yang berkaitan dengan lowongan kerja yang dilamar.
+Untuk IPK, sertakan juga bisa IPK-mu, dengan syarat IPK yang kamu cantumkan mampu bersaing dengan kandidat lain.Namun, jika IPK-mu di bawah 3.2, lebih baik tidak perlu disertakan ke dalam CV.
+Selain pendidikan formal, kamu juga bisa mencantumkan kursus/bootcamp coding yang pernah kamu ikuti atau bisa juga mencantumkan proyek programmer yang telah kamu buat sendiri.
+Nah, sebagai kandidat entry level, ada beberapa contoh pengalaman kerja atau proyek yang bisa kamu kerjakan untuk mengisi bagian pengalaman kerja di CV-mu, seperti berikut.
+- Membantu proyek bisnis temanmu
+Kamu bisa mulai dengan mencari kerabat atau teman terdekat yang mungkin membutuhkan skill programmer-mu. Contohnya, kamu bisa membantu bisnis kafe milik temanmu dengan bantu membuatkan website untuk sistem manajemen administrasi di kafenya.
+- Berkontribusi dalam proyek open-source
+Berkontribusi dalam proyek open-source membuat kita bisa belajar banyak hal seperti memperbaiki bug minor ataupun menulis dokumentasi di library GitHub. Selain itu juga, kontribusimu di GitHub ini bisa dilihat publik sehingga ini bisa jadi menambah portofoliomu.
+- Mengikuti Magang
+Saat ini banyak peluang magang bagi mahasiswa karena sekarang perguruan tinggi sudah mulai menyediakan program magang bagi mahasiswanya. Program magang ini sangat berharga karena bisa mengasah skill sekaligus menambah pengalaman di dunia kerja.
+4. Buat Daftar Skill dan Sertifikat yang Kamu Miliki
+Bagian terakhir dan tidak kalah penting adalah skill teknis kamu yang relevan dengan posisi yang akan dilamar. Di sini, kamu bisa masukkan bahasa pemrograman ataupun framework yang telah kamu kuasai dan minati dan juga paling relevan dengan posisi yang akan dilamar.
+Dilansir dari Enhancv, sebagai seorang programmer kamu bisa mencantumkan skill teknis, seperti bahasa pemrograman (JavaScript, HTML, CSS, dan Phyton), Framework (NodeJS, Flutter, Laravel), Database (SQL), dan skill yang relevan lainnya.
+Nah, akan menjadi nilai plus lagi di mata recruiter jika kamu memiliki sertifikat untuk skill, seperti Associate Android Developer dari Google,Certified Cloud Practitioner dari AWS, Open.js Node.js Application Developer dari OpenJS Foundation
+Namun, bagaimana sih mendapatkan sertifikat-sertifikat tersebut? Atau bagaimana jika kamu ingin mengejar sertifikasi tersebut, tetapi masih belum yakin di mana yang cocok?
+Tenang saja, tidak perlu khawatir, kamu dapat mengikuti program-program beasiswa Dicoding, seperti IDCamp X KADIN atau DBS Foundation Coding Camp 2023. Namun, kalau kamu masih bingung tentang alur belajar yang ingin kamu ikuti, kamu bisa ikut program pembelajaran langsung di Dicoding.
+Itulah hal-hal yang perlu kamu perhatikan untuk membuat CV programmer-mu lebih menarik dan dapat lolos ke tahapan interview selanjutnya. Ingat untuk tetap membuat CV-mu dengan informasi-informasi yang penting dan relevan, tidak perlu memasukkan semua pengalamanmu secara detail.
+Dengan meluangkan waktumu untuk memperbaiki CV-mu, kamu akan dapat kesempatan panggilan interview yang lebih besar. Selamat mencoba dan dapatkan pekerjaan programmer impianmu sekarang!

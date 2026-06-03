@@ -1,0 +1,242 @@
+SUMBER URL: https://id.jobstreet.com/id/career-advice/article/contoh-cv-ats-friendly-cara-membuat-template-gratis
+--------------------------------------------------
+
+Ringkasan:
+- CV ATS friendly membantu lamaranmu lolos seleksi awal sistem perekrutan otomatis, sehingga peluang dibaca HRD jadi jauh lebih besar.
+- Gunakan format sederhana, kata kunci relevan, dan font standar agar sistem mudah memindai isi CV tanpa menolak atau melewatkan datamu.
+- Cermati contoh dan template CV ATS sebagai panduan praktis untuk menulis CV profesional yang efisien, terbaca sistem, dan tetap menarik bagi HRD. Kuncinya, pastikan isinya relevan dan file tersimpan dalam format yang tepat.
+Membuat curriculum vitae (CV) yang menarik merupakan hal yang penting saat melamar pekerjaan. Tetapi, selain menarik ada syarat lain agar lamaranmu semakin dilirik oleh HRD. Salah satunya yakni memastikan riwayat hidupmu sudah memenuhi format CV ATS friendly.
+ATS atau Applicant Tracking System adalah sebuah sistem yang membantu perekrut untuk melakukan seleksi calon karyawan dengan praktis dan cepat.
+Faktanya, sebanyak 75% pelamar kerja didiskualifikasi hanya karena mereka tidak memenuhi standar CV ATS.
+Biar usahamu memoles CV tidak sia-sia, simak dahulu apa itu CV ATS friendly, cara membuat, dan contoh-contohnya berikut ini.
+Apa itu CV ATS Friendly?
+Saat ini ATS atau Applicant Tracking System menjadi andalan perusahaan untuk mengelola puluhan, atau bahkan ratusan dan ribuan, CV yang masuk.
+CV ATS adalah daftar riwayat hidup yang dibuat berdasarkan format ATS. Sebetulnya, format ini pun cukup sederhana.
+Jadi, ketika kamu mengirim lamaran online, ATS bertugas memindai CV-mu.
+Kemudian, informasi dasar dari CV tersebut akan diekstrak sesuai pengaturan tertentu. Misalnya, keterampilan yang dimiliki, latar belakang pendidikan, pengalaman kerja, dan jabatan terdahulu.
+Fungsi ATS sendiri yaitu mencatat, menyeleksi, merekap, dan memberi skor pada setiap CV yang masuk. Pemberian skor bertujuan untuk mengetahui mana CV yang sistem rekomendasikan.
+Ketika sebuah CV tidak mampu mencapai skor standar, secara otomatis sistem menolak CV itu.
+Maka, tugas kamu adalah membuat CV ATS. Dengan begitu, software dapat membaca dan menerimanya.
+Nah, selanjutnya sistem bisa merekomendasikan CV kamu sebagai salah satu kandidat yang sesuai kualifikasi posisi tertentu.
+Cara membuat CV ATS friendly sebenarnya mudah. Cukup bermodalkan aplikasi text editor seperti Words atau Google Docs. Beberapa ciri paling menonjol dari CV format ATS antara lain:
+- Tanpa header dan footer
+- Penulisan mulai dari data terbaru
+- Bullet points sederhana
+- Memakai jenis huruf umum, seperti Arial, Helvetica, dan Calibri
+- Penulisan heading singkat dan lugas
+- Tidak perlu memakai foto atau gambar.
+Kelebihan dan Pentingnya CV ATS Friendly
+Sebagai pelamar kerja, ketahuilah bahwa keberadaan ATS sebagai salah satu standar lamaran kerja.
+Kamu perlu menyusun strategi khusus agar sistem memberikan skor tinggi pada resume ATS milikmu. Untuk meyakinkanmu, ini sejumlah alasan mengapa kamu perlu menyiapkan CV ATS friendly:
+1. Banyak perusahaan memakai ATS 
+Membaca, menyortir, dan merekomendasikan kandidat dari ribuan CV jelas pekerjaan yang berat. Bahkan, tugas tersebut membuang tenaga dan waktu jika masih melakukannya secara manual.
+Nah, untuk itulah sistem ATS hadir untuk menyelesaikan pekerjaan ini. Applicant Tracking System menyelesaikan semuanya dalam waktu singkat. Mulai dari mengumpulkan, membaca, memindai, menyortir, hingga merekomendasikan kandidat.
+Alhasil, proses perekrutan berlangsung lebih sederhana dan ringkas.
+2. ATS berperan besar dalam tahap awal perekrutan 
+Saat memindai sebuah resume, ATS mencari informasi dasar. Sebut saja, detail kontak, pekerjaan terdahulu, gelar, sertifikasi, dan riwayat pendidikan.
+Tak hanya itu saja, sistem ini juga mencari kata kunci yang berkaitan langsung dengan lowongan kerja.
+Kombinasi format CV ATS dan kata kunci terkait posisi yang dilamar, tentu akan memperbesar peluang kamu lulus seleksi tahap pertama pada proses rekrutmen.
+Ketika aplikasi memindai CV yang memenuhi kualifikasi minimum suatu posisi, ATS akan memberi skor. Selanjutnya, muncul deretan nama kandidat yang paling sesuai kriteria dalam hitungan milidetik!
+3. Membuat CV lebih struktur dan mudah dibaca 
+CV berbasis ATS mengusung format yang lebih terstruktur. Alhasil, perekrut mudah membacanya.
+Saat memenuhi format ATS, CV-mu akan tampak simpel. Kamu cukup menuliskannya dari kiri ke kanan serta atas ke bawah. Data terbaru bisa kamu tempatkan paling atas. Secara tampilan, CV pun tampak lebih profesional.
+Memang tidak semua perusahaan menggunakan Applicant Tracking System. Tetapi, hampir semua perusahaan berskala besar menggunakan sistem satu ini.
+Alih-alih menampilkan daftar riwayat hidup yang penuh warna, perekrut lebih menyukai CV yang to-the-point. Maka dari itu, kamu perlu memahami cara membuat CV ringkas yang menarik.
+Cara Membuat CV ATS Friendly
+Secara visual, resume ATS memang tampak simpel. Hanya berupa tulisan, garis, dan bullet points jika perlu. Kamu juga tidak usah repot memilih desain paling keren atau memasang foto terbaik.
+Hal yang jauh lebih penting untuk memenuhi standar ATS adalah memastikan formatnya sudah sesuai.
+Namun, tak perlu khawatir, aplikasi ini hanyalah alat yang membantu perekrut menjalankan tugas hariannya.
+Sekarang kamu hanya perlu mencari strategi untuk menembus sistemnya. Mari simak panduan membuat CV ATS friendly yang bisa kamu coba berikut ini:
+1. Pelajari posisi yang akan dilamar 
+Sebelum menulis CV yang ATS friendly, pelajari dahulu posisi yang akan dilamar.
+Caranya, perhatikan kata kunci penting terkait tugas atau kualifikasi posisi tersebut. Jika perlu, sempatkan untuk melakukan riset posisi serupa di perusahaan lain.
+Hindari melamar semua posisi yang ada di perusahaan. Hal itu tentu hanya akan mengurangi poinmu di mata HRD. Kamu juga tampak tidak mempunyai keahlian spesifik pada satu pekerjaan.
+Selain mengurangi poinmu di mata HRD, kamu juga tampak tidak mempunyai keahlian spesifik pada satu pekerjaan.
+2. Gunakan template CV ATS friendly versi sederhana 
+Lupakan CV dengan format “unik” dan berdesain menarik. Ini saatnya kembali ke format standar dengan penamaan judul yang umum.
+Perhatikan pula penulisan kontak dan informasi penting dalam CV. Jangan tulis kontak sebagai header dan footer, maupun memasukkan tabel. Lalu, hindari penggunaan ikon atau badge saat membuat CV ATS, ya!
+Tips supaya lolos standar ATS adalah dengan memakai format dan tata letak seminimal mungkin. Justru versi minimal ini yang lebih sistematis dan rapi.
+3. Pilih kata kunci sesuai posisi yang dilamar 
+Nah, sistem ATS memanfaatkan teknologi kecerdasan buatan dengan mencocokkan kriteria semantik, pencarian cerdas, dan penguraian efektif.
+Biar lebih kebayang, ini tips singkat dari HR tentang cara menyesuaikan CV dengan tiap lowongan supaya lebih ATS-friendly.
+Cara Bikin CV ATS Friendly dengan Vina Muliana
+Perangkat lunak ini dapat menilai apakah CV melalui penulisan kata kunci sesuai pekerjaan. Penggunaan kata kunci yang sesuai akan membantu CV-mu mendapatkan skor tinggi.
+Coba baca ulang lowongan kerja dan tuliskan kualifikasi skills yang tercantum ke dalam CV-mu. Contoh, untuk posisi content writer, kamu bisa menuliskan skill SEO di dalamnya.
+Jangan lupa kamu juga menambahkan kepanjangan singkatan istilah tertentu dalam CV. Misalnya, search engine optimization untuk SEO.
+4. Susun judul setiap bagian dengan runtut 
+Gunakan heading untuk menuliskan judul tiap bagian CV. Tidak usah merangkai kata berbunga-bunga agar CV terkesan “indah”.
+Sebagai gantinya, tuliskan heading judul yang sederhana dan standar, berikut contohnya:
+- Gunakan kata “Profile” bukan About Me
+- Pilih “Contact” bukan How to Reach Me
+- Gunakan “Work Experience” bukan Where I Have Worked.  
+Utamakan juga pemakaian bahasa Inggris mengingat kebanyakan sistem ATS beroperasi dengan bahasa tersebut.
+5. Hanya menulis informasi yang relevan   
+Pengalaman kerjamu sebelumnya berbeda dengan pekerjaan yang akan dilamar? Jika ya, berhati-hatilah saat menuliskan informasi dalam CV.
+Kamu harus selektif memilah mana informasi yang sesuai dengan kriteria perekrut. Cukup tulis pengalaman kerja yang relevan.
+Selain itu, cek lagi apakah terdapat typo atau salah ketik. Kebanyakan CV yang gagal menembus Applicant Tracking System terjadi karena banyak salah ketik. Untuk itu, selalu periksa lagi apa yang kamu tulis sebelum mengirimkannya.
+6. Pakai font standar ATS 
+Sama seperti penulisan karya ilmiah, CV ATS friendly juga menggunakan beberapa jenis font web standar.
+Kalau kamu memakai font yang unik, sistem ini bisa jadi kesulitan membaca jenis font tersebut. Beberapa ATS ternama merekomendasikan 10 jenis font yang aman buat CV, yaitu:
+- Cambria
+- Helvetica
+- Calibri
+- Arial
+- Georgia
+- Garamond
+- Times New Roman
+- Tahoma
+- Verdana
+- Palatino.
+7. Simpan dengan tipe file yang tepat
+Tidak ada yang salah dengan kebiasaan menyimpan CV dalam bentuk PDF. Apalagi, PDF menjaga integritas dokumen dengan baik tanpa mengubah tampilan aslinya.
+Namun, tidak semua aplikasi bisa membaca file PDF. Maka, sebelum kamu upload CV saat melamar, teliti lagi tipe file yang harus diunggah.
+Jangan masukkan CV berformat gambar atau foto. Cukup unggah file berbentuk .doc atau .docx sehingga sistem bisa membacanya dengan baik.
+8. Tes seberapa ATS friendly CV-mu
+Perekrut tetap akan membaca sendiri CV yang masuk rekomendasi dari sistem ATS. Maka, kamu bisa melakukan tes seberapa ATS friendly CV milikmu.
+Kabar baiknya, beberapa platform menyediakan ATS online untuk mengecek kecocokan CV dengan kualifikasi pekerjaan yang kamu tuju.
+Selain menggunakan ATS, kamu juga bisa meminta masukan dari orang terdekat, sahabat, keluarga, atau mentor yang memang memahaminya.
+Baca Juga: 25+ Contoh Deskripsi Diri di CV yang Menarik
+Contoh dan Template CV ATS Friendly
+Lantas, apakah membuat CV ATS friendly itu sulit? Tidak sama sekali!
+Kamu cukup berpaku pada format standar dengan memperhatikan ciri-ciri CV ATS. Tujuannya, untuk meningkatkan peluang CV kamu lolos pemindaian sistem ATS pun bakal meningkat.
+Untuk mempermudah, contoh template CV ATS friendly Indonesia dan bahasa Inggris berikut bisa kamu jadikan panduan.
+1. Contoh CV ATS friendly fresh graduate
+FARA PRISKILA* 
+Jakarta*
+⁠fara.priskila@email.com*
+Profil 
+Lulusan Universitas Bunga Bangsa jurusan Teknik Industri dengan predikat cumlaude. Berpartisipasi aktif dalam kegiatan organisasi mahasiswa. Pernah magang sebagai sales engineer perusahaan otomotif dan menguasai bahasa Inggris. 
+Pengalaman Kerja dan Organisasi
+Sales Engineer Intern – PT Otomobil
+Januari–Mei 2021 
+- Membangun relasi dengan pelanggan lama dan baru
+- Meningkatkan target penjualan hingga 5%
+- Membantu tim merancang strategi penjualan
+Wakil Ketua Himpunan Mahasiswa Teknik Industri (HIMATEKIN) – Universitas Bunga Bangsa
+⁠Agustus 2019–Agustus 2020
+- Bertanggung jawab pada kegiatan orientasi mahasiswa baru
+- Bersama ketua berkoordinasi dengan para pemimpin divisi HIMATEKIN
+Riwayat Pendidikan
+Universitas Bunga Bangsa
+⁠Agustus 2017–Agustus 2021
+⁠Sarjana Teknik Industri 
+SMA Bina Karya
+Juli 2014–Juni 2017
+⁠Jurusan IPA 
+Keahlian
+- Manajemen proyek
+- Problem solving
+- Orientasi pada detail
+- Komunikasi efektif⁠
+Ket:
+⁠⁠*: tulis di tengah halaman
+GALIH WIJAYA* 
+Social Media Specialist*
+⁠Surabaya*
+⁠galih.wijaya@email.com*
+Profil
+Seorang social media specialist berpengalaman lebih dari 5 tahun. Menguasai pembuatan konten berbagai media sosial, seperti X, Instagram, Facebook, dan Tiktok. Berhasil meningkatkan engagement dan jumlah followers hingga 130% pada akun media sosial yang dipegang. 
+Pengalaman Kerja
+Social Media Specialist – PT Mustika Indah
+Mei 2018–sekarang
+- Menyusun dan mengembangkan perencanaan konten yang sejalan dengan identitas dan visi misi brand
+- Berkolaborasi dengan graphic designer dan copywriter
+- Bekerja sama dengan influencer untuk kampanye brand dan berhasil menambah jumlah followers media sosial hingga 10%
+- Menganalisis tren dan insight media sosial untuk membantu perencanaan konten berikutnya
+Riwayat Pendidikan 
+Universitas Merah Putih
+Agustus 2014 – Agustus 2018
+⁠S1 Ilmu Komunikasi IPK 3,77
+Keahlian
+- Social media management
+- Social media marketing
+- Creative writing
+- Copywriting
+- Content planning
+- Komunikasi efektif
+- Analisis media sosial
+Ket:
+⁠⁠*: tulis di tengah halaman
+FERNANDA ZULAIKHA* 
+⁠Content Creator*
+⁠Bandung*
+⁠fernanda.zul@email.com*
+Summary
+Content creator with 5+ years of experience and a strong foundation in SEO and SEM. Proven track record of improving website traffic and user engagement by decisively integrating technical talents with new content initiatives. Achieved a 40% organic traffic in a world of beauty brand.
+Work Experience
+Video Content Creator
+True Beauty Company ⁠August 2020–now
+- Created engaging video content for True Beauty’s YouTube channel, received 10,000 new subscribers
+- Developed influencer marketing campaigns, resulting in a 30% boost in brand awareness
+- Analyzed content performance data and used in strategies to optimize video engagement ⁠
+Content Writer
+ABC Digital Agency ⁠July 2018–July 2020
+- Implemented SEO best practices and conducted keyword research, resulting in higher search rankings
+- Created and managed an editorial calendar for the company blog to ensure constant content output 
+- Worked with the design team to generate eye-catching infographics and other visual content ⁠
+Education
+Suntech University 
+Skills
+- SEO
+- SEM
+- Creative writing
+- Copywriting
+- Content planning
+- Video editing
+- Social media management
+- Google Analytics
+Ket:
+⁠(⁠⁠)*: tulis di tengah halaman
+Tips Sukses Membuat CV ATS
+Saat ini banyak CV builder yang membantu kamu membuat CV ATS friendly.
+Namun, jangan serahkan 100% urusan pembuatan curriculum vitae pada aplikasi seperti itu. Lakukan tips berikut sebagai kunci sukses membuat CV ATS.
+1. Buat resume ATS kamu lolos screening
+Mulai dari memakai bahasa sederhana, pemilihan font umum dengan ukuran 11–12 poin untuk teks biasa, hingga format tanggal MM/YYYY.
+Jangan lupa untuk menggunakan format penulisan yang benar, seperti penggunaan huruf miring, tebal, garis bawah, dan poin dalam bentuk standar.
+2. Unggah dalam tipe file yang tepat 
+Format PDF memang menjamin format dan desain CV tetap utuh. Namun, beberapa sistem ATS bekerja cukup lama dan bisa jadi kesulitan membaca tipe file seperti itu.
+Alih-alih memindai teks, sistem membacanya sebagai satu gambar besar atau kadang kosong. Siapkan file .docx atau .doc pasti lebih aman.
+Untuk membuatnya, jamu bisa menggunakan Microsoft Word atau Google Docs agar ATS bisa dengan mudah memindainya.
+3. Sesuaikan kata kunci 
+Lagi dan lagi, kata kunci adalah elemen terpenting dalam membuat CV yang ATS friendly. Pelajari lagi posisi pekerjaan yang kamu lamar dan adopsi kata-kata kunci dalam deskripsi pekerjaannya.
+Masukkan kata kunci maksimal dua sampai tiga kali, plus satu penyebutan di pengalaman kerja. Manfaatkan bagian keahlian untuk memasukkan kata kunci sambil menonjolkan keterampilan kamu.
+4. Follow up lamaranmu
+Sudah mengajukan lamaran online? Pertimbangkan juga untuk kirim email langsung ke tim HRD. Kirimkan CV berisi penjelasan singkat mengapa kamu adalah kandidat tepat untuk posisi itu.
+Jangan takut menanyakan apakah mereka sudah menerima lamaranmu. Apalagi, jika kamu punya kontak di perusahaan tujuan, coba follow up segera.
+Asal tahu saja, kandidat yang direkomendasikan memiliki peluang dua kali lebih besar untuk sampai di tahap wawancara.
+Baca Juga: Perbedaan Gaji Kotor dan Bersih: Komponen Serta Cara Menghitung
+Kesimpulan
+Membuat CV ATS friendly tidak susah jika kamu paham betul karakteristik daftar riwayat hidup ini.
+Melalui CV yang ATS friendly, profil dan pengalaman kerja kamu bisa tersampaikan dengan tepat. Jadi, peluang lolos seleksi ke tahap berikutnya juga lebih besar.
+1. Apa itu CV format ATS?
+⁠CV format ATS merujuk pada Curriculum Vitae yang mudah dipindai. Riwayat hidup tersebut menggunakan format CV standar tanpa pengaturan spesifik. CV ATS template juga memuat kata kunci yang relevan dengan posisi yang dituju pelamar.
+2. Bagaimana cara membuat CV agar ATS friendly?
+Gunakan format Curriculum Vitae yang ditulis dari atas ke bawah, kiri ke kanan. Tampilkan bagian jelas untuk informasi kontak, profil, pengalaman kerja, pendidikan, dan keahlian kamu. Pilih format kronologi terbalik dengan menyebut pengalaman kerja terbaru agar lebih mudah terbaca.
+3. CV ATS friendly itu seperti apa?
+Untuk membuat CV ATS, selain menggunakan CV format ATS standar, kamu sebaiknya tidak mencantumkan beberapa hal di bawah ini:
+- Tabel dan kolom
+- Header dan footer
+- Jenis font yang fancy
+- Foto, grafik, dan logo
+- Ukuran font teks biasa lebih dari 12 poin dan judul lebih dari 16 poin.
+4. Apakah CV ATS harus memakai bahasa Inggris?
+Sebagian besar ATS (Applicant Tracking System) ternama menggunakan bahasa Inggris sebagai pengantar. Maka, jangan ragu untuk menggunakan contoh CV ATS bahasa Inggris yang tentunya bisa memperbesar peluangmu lulus ke seleksi tahap berikutnya.
+5. Apakah CV ATS perlu foto?
+Tidak perlu. Software ini tidak dapat membaca objek bergambar seperti foto, tabel, dan grafik lainnya.
+6. Bolehkah panjang CV ATS dua lembar?
+Panjang resume bukan isu utama. Namun, menuliskan informasi relevan terkait posisi dalam satu lembar jauh lebih baik. Ini bisa memberi CV-mu skor tinggi usai lolos pemindaian.
+7. Apa saja beda CV ATS dan CV biasa?
+CV ATS tampil dengan warna hitam putih. CV biasa masih menggunakan kombinasi warna tertentu agar lebih menarik. Secara umum bagian-bagiannya hampir serupa. Hanya saja CV biasa bisa diubah menjadi CV kreatif jika hendak melamar ke posisi kreatif yang butuh portofolio. Misalnya, desain grafis, animator, dan editor video.
+8. Apakah CV ATS boleh pakai bahasa Indonesia?
+Perhatikan lagi ketentuan khusus dalam lowongan kerja. Apabila tidak ada persyaratan spesifik terkait pemakaian bahasa, kamu dapat menulisnya dengan bahasa Indonesia.
+9. Kapan wajib memakai CV ATS?
+Kamu bisa memakai CV ATS-friendly template free saat hendak melamar di perusahaan besar. Bisa dipastikan jumlah pelamarnya menyentuh angka ribuan orang. CV ATS juga bisa kamu pakai melamar kerja di perusahaan yang memakai website karir sendiri. Biasanya, website karir menggunakan teknologi ATS untuk membantu seleksi ribuan pelamar.
+10. Apa saja kelebihan CV ATS?
+CV ATS friendly memiliki beberapa kelebihan, yaitu:
+- Memperbesar peluang lolos seleksi
+- Tampilan lebih rapi dan profesional
+- Membantu proses rekrutmen lebih efisien.
+11. Berapa margin CV ATS?
+Untuk meningkatkan keterbacaan, kamu bisa memakai margin masing-masing 1 inci di setiap sisi.
+12. Apakah CV ATS harus memakai ukuran A4?
+Ukuran A4 adalah ukuran standar curriculum vitae, baik versi ATS maupun versi kreatif. Usahakan agar seluruh informasi penting tentang dirimu muat dalam satu halaman A4. Selain itu, pemilihan ukuran A4 juga mendukung keterbacaan yang baik sehingga tampak lebih profesional.

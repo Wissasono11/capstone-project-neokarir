@@ -1,0 +1,74 @@
+SUMBER URL: https://www.nobelakademi.id/blog/roadmap-untuk-uiux-design-panduan-lengkap-untuk-pemula
+--------------------------------------------------
+
+Apa Itu UI/UX Design?
+Sebelum masuk ke roadmap, penting untuk memahami apa itu UI dan UX:
+- UI (User Interface) adalah tampilan visual dari sebuah aplikasi atau website, termasuk warna, tombol, ikon, dan layout.
+- UX (User Experience) adalah pengalaman pengguna saat menggunakan produk, mencakup kenyamanan, kemudahan navigasi, dan alur interaksi.
+Keduanya saling terkait dan bekerja sama agar produk digital menjadi menarik secara visual dan nyaman digunakan.
+Tahapan Belajar dalam Roadmap UI/UX Design
+1. Pahami Dasar UI/UX Design
+- Apa tujuan UI/UX?
+- Perbedaan UI dan UX.
+- Prinsip desain seperti konsistensi, hierarki visual, dan aksesibilitas.
+- Kenali tools dasar seperti:
+- Pen & kertas (untuk wireframe manual)
+- Figma, Adobe XD, Sketch (untuk desain digital)
+- Whimsical atau Miro (untuk user flow dan mind mapping)
+2. Pelajari Proses Desain UX
+UX Design fokus pada bagaimana pengguna berinteraksi. Pelajari:
+- User Research
+- Belajar melakukan wawancara pengguna, survei, dan pengamatan.
+- Persona Creation
+- Membuat representasi pengguna ideal berdasarkan riset.
+- User Flow & Journey Mapping
+- Menggambarkan langkah pengguna saat menggunakan aplikasi.
+- Wireframing
+- Membuat kerangka kasar tampilan aplikasi.
+- Prototyping
+- Membuat simulasi interaktif dari produk.
+- Testing & Iteration
+- Uji coba produk ke pengguna lalu lakukan perbaikan.
+3. Pelajari Desain UI
+UI Design fokus pada tampilan. Pelajari:
+- Prinsip Desain Visual
+- Warna, tipografi, ikonografi, kontras, dan spacing.
+- Design System & Style Guide
+- Komponen UI konsisten (tombol, form, dll).
+- Responsiveness
+- Pastikan desain nyaman di semua perangkat (desktop, tablet, mobile).
+- Tools: Figma, Sketch, Adobe XD.
+4. Kuasai Tools & Software
+Beberapa tools penting:
+FungsiToolsDesain UIFigma, Adobe XD, SketchPrototypingFigma, InVisionRiset UXGoogle Forms, Maze, DovetailKolaborasiFigJam, Miro
+5. Belajar dari Studi Kasus & Proyek
+- Buat studi kasus dari desain ulang aplikasi yang sudah ada.
+- Ikut tantangan desain seperti di UX Challenge atau Daily UI.
+- Bangun portofolio online di Behance, Dribbble, atau Notion.
+Jalur Karier UI/UX Designer
+- Intern / Junior Designer
+- Mid-Level Designer
+- Senior UX/UI Designer
+- Product Designer
+- UX Researcher / UX Writer / UI Engineer
+Setiap level membutuhkan pemahaman yang lebih dalam, termasuk soft skill seperti komunikasi dan pemikiran desain (design thinking).
+Sumber Belajar Rekomendasi
+- Website:
+- uxdesign.cc
+- NNGroup
+- [Nobelakademi.id, Coursera, Udemy, Dicoding (untuk kursus online)]
+- YouTube Channel:
+- AJ&Smart
+- Jesse Showalter
+- DesignCourse
+- Buku:
+- Don't Make Me Think - Steve Krug
+- The Design of Everyday Things - Don Norman
+- Lean UX - Jeff Gothelf
+Tips Sukses Menjadi UI/UX Designer
+- Selalu utamakan pengguna, bukan selera pribadi.
+- Sering-sering belajar dari produk digital populer (seperti Tokopedia, Gojek, Spotify).
+- Bangun portofolio dan terbuka terhadap kritik.
+- Gabung komunitas: UXiD, Figma Indonesia, Discord Design Communities.
+- Ikuti tren, tapi tetap fokus pada fungsi dan kebutuhan pengguna.
+UI/UX Design adalah bidang yang terus berkembang dan penuh peluang. Dengan roadmap yang jelas, kamu bisa mulai dari dasar, mempelajari proses desain, menguasai tools, dan membangun portofolio yang solid. Ingat, UI/UX bukan hanya soal desain yang cantik, tapi tentang menciptakan pengalaman terbaik bagi pengguna.

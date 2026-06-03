@@ -1,0 +1,49 @@
+SUMBER URL: https://www.dicoding.com/blog/cara-membangun-portofolio-dalam-bidang-it-untuk-fresh-graduate/
+--------------------------------------------------
+
+Salah satu hal yang penting dimiliki oleh lulusan baru adalah portofolio. Apalagi dalam bidang IT, portofolio ini menjadi bukti bahwa kamu sudah mampu bahkan mumpuni untuk mengerjakan tugas-tugas pada pekerjaan nantinya.
+Yuk, langsung saja kita simak artikel berikut.
+Apa Itu Portofolio?
+Jika kamu masih bingung mengenai kata “portofolio”, tidak ada salahnya untuk mencari tahu definisinya lebih dahulu. Menurut KBBI, portofolio dalam ragam pendidikan adalah “kumpulan pekerjaan peserta didik dengan maksud tertentu dan terpadu yang diseleksi menurut panduan-panduan yang ditentukan”.
+Singkatnya, portofolio adalah kumpulan hasil kerja seseorang yang dibuat untuk suatu atau beberapa tujuan dan sudah diseleksi berdasarkan kriteria tertentu.
+Beberapa orang mungkin salah kaprah bahwa portofolio hanya dibuat oleh seseorang yang sudah memiliki banyak pengalaman kerja. Nyatanya, fresh graduate atau lulusan baru juga dapat membuatnya berdasarkan pengalaman yang dimiliki saat kuliah, berorganisasi, mengikuti proyek terbuka, atau magang.
+Mengapa Portofolio Penting?
+Sudah disampaikan sebelumnya bahwa portofolio sangat penting secara sekilas, terutama bagi lulusan baru. Berikut adalah berbagai alasan pentingnya membuat portofolio.
+Ekspresi dan Pembuktian Diri
+Jadi, ada banyak cara untuk menunjukkan diri kita kepada dunia. Salah satunya adalah membuat portofolio. Dengan membuatnya, kamu bisa menampilkan kepribadianmu dalam bentuk visual ataupun tulisan. Tentu kamu sudah familier dengan elemen visual sebagai salah cara yang bisa dipakai untuk membuktikan diri.
+Jika ingin menunjukkan kepribadian yang ceria, kamu bisa menggunakan warna-warna cerah. Kalau ingin menunjukkan kepribadian yang straightforward dan fleksibel, kamu bisa menggunakan warna-warna netral dengan desain minimalis.
+Selain itu, ini sangat penting untuk menunjukkan kapasitas dalam menerapkan kemampuan yang dipunyai pada proyek nyata.
+Dokumentasi Karya dan Proyek
+Ini adalah ajang untuk mendokumentasikan karya dan proyek yang sudah dibuat. Ketika membuat dokumentasi, jelaskan latar belakang dan proses ketika mengerjakannya. Setelah itu, kamu bisa mengungkapkan dampak atau solusi yang dilakukan pada pemecahan masalah saat mengerjakan proyek tersebut.
+Dengan adanya dokumentasi karya dan proyek, kamu lebih bisa mengevaluasi diri harus berkembang ke arah mana dalam karier atau merefleksikan pekerjaan yang cocok untuk dirimu.
+Referensi untuk Para Rekruter
+Salah satu alasan paling penting adalah memberikan referensi untuk para rekruter. Dengan mengumpulkan proyek yang autentik, rekruter jadi bisa melihat dan mempertimbangkan jika kamu cocok pada suatu posisi tertentu.
+Selain itu, portofolio yang rapi, terstruktur, dan menonjolkan proses serta dampak keterlibatanmu pada sebuah proyek akan memberikan nilai tambah untuk rekruter.
+Cara Membangun Portofolio
+Kita sudah membahas berbagai alasan untukmu membuat portofolio. Lalu, bagaimana cara untuk membangunnya?
+Tentukan Tujuan
+Pertama kali tentu kamu harus memperjelas tujuanmu dalam membuat portofolio. Apakah saat ini hanya untuk mendokumentasikan proyek saja, melamar kerja, atau sekalian implementasi ilmu? Ini karena banyak developer atau programmer yang turut membuatnya dalam bentuk website.
+Kalau kamu membuat portofolio untuk praktik atau dokumentasi, ini membuat bisa lebih bebas untuk mengekspresikan diri. Namun, jika kamu membuatnya untuk melamar kerja, mungkin ada batasan-batasan, misal harus menunjukkan keterlibatan spesifik dalam bidang tertentu, menggunakan bahasa Inggris ketika melamar ke kantor di luar negeri, dan sebagainya.
+Kumpulkan Proyek-Proyek
+Ketika sudah menentukan tujuan, saatnya mengumpulkan proyek-proyek yang melibatkan kamu di dalamnya! Kalau kamu melampirkan proyek individu, tentunya tidak ada masalah untuk menampilkan data apa saja. Namun, ketika kamu berpartisipasi dalam sebuah tim, pastikan meminta izin kepada pihak lain yang juga terlibat pada proyek tersebut.
+Selain itu, saat mencantumkan proyek tim, kamu bisa meng-highlight pencapaian sebagai individual. Setelahnya, kamu juga bisa menggarisbawahi kerja sama dan kolaborasi dalam tim dengan memberi kredit pada teman satu tim.
+Lalu, hal yang kamu perlu perhatikan adalah saat menampilkan data pada proyek tertentu, misalnya batasan-batasan khusus agar tidak melanggar privasi data. Jika proyek yang kamu ikuti terbuka, mungkin tidak ada masalah khusus. Namun, saat kamu bekerja lepas atau magang, mungkin juga sebelumnya sudah ada perjanjian (non-disclosure agreement) perihal itu.
+Tulis dan Publikasikan
+Terakhir, ketika sudah biasa menulis kode, kamu juga harus terbiasa menulis cerita untuk membangun portofoliomu. Tuliskan latar belakang serta masalah yang harus dipecahkan, lanjut pada prosesnya, dan dampaknya. Kamu juga bisa menyertakan berbagai tantangan yang dihadapi serta cara mengatasinya.
+Tentunya ada banyak ragam bentuk atau platform untuk mempublikasikan portofolio meskipun banyak developer atau programmer membangun web khusus. Kamu juga bisa membuat file read.me di GitHub, menulis di Medium atau Substack, atau mendesain slide presentasi.
+Mungkin saja ada kekhawatiran tentang visual. Tidak apa-apa, tidak perlu terlalu estetik jika kamu tidak menekuni peran desainer. Asalkan rapi dan mudah terbaca serta terstruktur, portofoliomu tentu tetap akan terlihat bagus.
+Contoh yang Menarik
+Berikut adalah beberapa contoh yang menarik dan bisa menjadi inspirasi saat membuat portofolio.
+Naufaldi Rafif
+Dia adalah seorang front-end engineer di eFishery. Pengikutnya di X sudah lebih dari 14 ribu. Naufaldi pribadi melabeli dirinya sebagai seorang product engineer dan mentor.
+Ahmad Dzuizz Annajib
+Apakah kamu mengenal Ainun Najib, seorang ahli teknologi di Indonesia yang tweet-nya juga sering viral di X? Nah, dia juga berhasil memaparkan minat teknologi informasi kepada anaknya. Meskipun baru menginjak usia 15 tahun, portofolionya bisa, nih, menjadi inspirasi.
+Nurvita Monarizqa
+Salah satu perempuan yang aktif membagikan pengetahuan soal data science di X ini portofolionya cukup minimalis, tetapi rapi dan terstruktur. Saat ini, dia bekerja di Microsoft, lo. Keren, bukan?
+Imre Nagi
+Salah satu developer dari GoTo ini juga memiliki portofolio yang cukup simpel, tetapi bisa untuk dijadikan inspirasi. Pada situs pribadinya, ia juga banyak membagikan banyak tutorial.
+Teguh Aprianto
+Kamu yang aktif bermain X, apakah pernah membaca tweet viral tentang data leak? Nah, salah satu yang aktif membagikan hal tersebut adalah Teguh, seorang cybersecurity consultant. Pada situs web pribadinya, ia menyatakan bahwa situs tersebut adalah tempat untuknya mendokumentasikan opini serta hasil belajarnya. Walau sederhana, tapi bermakna!
+Oh iya, sebelum mengakhiri artikel ini, ada info, nih. Kalau belajar di Dicoding, setiap kelas diberikan submission yang dapat menjadi portofolio untukmu. Submission diberikan sesuai dengan real case study di industri. Sayang untuk dilewatkan, bukan? Langsung saja cek kelas-kelas yang ada di Dicoding, ya.
+Nah, itulah yang bisa kita bahas tentang portofolio untuk saat ini. Apakah kamu memiliki pertanyaan? Eh, nanti ketika sudah membuatnya, kamu juga bisa membagikannya pada kolom komentar, ya.
+Kami tunggu portofolio ciamikmu!

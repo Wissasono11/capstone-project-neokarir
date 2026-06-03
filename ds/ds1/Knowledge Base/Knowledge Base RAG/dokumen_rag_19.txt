@@ -1,0 +1,78 @@
+SUMBER URL: https://glints.com/id/lowongan/portofolio-programmer/
+--------------------------------------------------
+
+Agar Dilirik, Ikuti Panduan Menyusun Portofolio Programmer Berikut Ini
+Ditulis oleh : Chrissila Jessica
+Portofolio programmer merupakan sebuah pembuktian dari hasil kerja keras dan kemampuan para programmer.
+Bentuk portofolio ini bisa dibuat menjadi berbagai macam bentuk, misalnya lewat website atau juga berbentuk cetak fisik.
+Namun, portofolio tak selamanya dibuat untuk sebuah pembuktian ke perusahaan, lho! Banyak juga sekarang ini freelancer yang merancang portofolionya agar mendapatkan klien secara mandiri.
+Nah, sebenarnya, apa saja yang dapat dimasukkan ke dalam sebuah portfolio? Lalu, bagaimana cara membuatnya agar terlihat lebih menarik?
+Tenang, Glints sudah rangkum serba-serbinya untukmu, kok. Simak artikel di bawah ini untuk mengetahui selengkapnya!
+Isi Artikel
+Yang Harus Ada dalam Portofolio Programmer
+Menurut Springboard, ada tiga poin penting yang harus kamu masukkan di dalam portofoliomu, di antaranya adalah:
+1. About me
+Dalam membuat portofolio, pembaca ingin mengenal siapa pencipta dari karya-karya yang dihasilkan.
+Jangan lupa untuk memasukkan nama, foto, media sosial, bahkan tujuan apa saja yang ingin kamu capai dalam perkembangan kariermu.
+Kamu bisa mencontoh portofolio seorang programmer asal London yang bernama Pierre Nel. Ia menulis secara singkat namun tetap detail siapa dirinya dan apa yang dikerjakannya.
+Portofolio programmer yang ia buat bisa menjadi salah satu inspirasi untuk menemukan style apa yang terbaik untukmu.
+2. Proyek
+Dalam portofolio, hasil kerja merupakan hal yang paling mutlak untuk ditulis dan dijelaskan secara rinci. Kamu bisa membuatnya dalam bentuk link atau juga gallery gambar.
+Kamu misalnya bisa meniru Robby Leonardi seorang front-end developer sekaligus designer asal New York yang memiliki portfolio sangat unik.
+Ia menggabungkan unsur video game yang ringan untuk dijadikannya portofolio yang interaktif.
+3. Kontak
+Jangan lupa untuk mencantumkan kontak sedetail mungkin dalam portofoliomu. Tanpa adanya kontak, rekruter atau calon klien tak bisa menghubungi untuk menggunakan jasamu.
+Pada umumnya, kamu dapat mencantumkan nama email dan juga LinkedIn.
+Jika kamu ingin lebih detail, kamu juga bisa mencantumkan username media sosial untuk memberikan alternatif pilihan bagaimana klien akan menghubungimu.
+Ingat, username media sosial dan juga nama email harus tetap profesional dan relevan dengan pekerjaanmu. Gunakan nama lengkapmu saja untuk membuat email pekerjaan yang profesional.
+Yang Dilihat Rekruter dalam Portofolio Programmer
+Selain tiga elemen penting di atas, ada beberapa hal lagi yang dilihat oleh rekruter dalam portofolio, yaitu:
+1. Jangka waktu proyek
+Memiliki banyak proyek yang dikerjakan, memang bisa menjadi nilai plus tersendiri untukmu. Namun, rekruter juga melihat jangka waktu proyek yang kamu kerjakan.
+Jangan sampai kamu hanya mencantumkan portofolio yang sudah lama bahkan dari waktu kamu kuliah dan tidak ada yang baru.
+Oleh karena itu, belajarlah untuk mengelola proyek agar bisa dimasukkan ke dalam portofolio yang lebih singkat. Hal ini penting apalagi untuk para junior programmer.
+Dengan memasukkan proyek terbaru, rekruter akan melihat seberapa besar kemauan kandidat untuk belajar dan maju dalam karier sebagai programmer.
+2. Latar belakang pendidikan
+Tak hanya dari proyek yang kamu kerjakan, rekruter juga ingin melihat latar belakang pendidikanmu.
+Apakah kamu belajar secara otodidak? Apakah kamu mendapatkan popularitas di media online? Apakah kamu memiliki reputasi dan koneksi yang baik di sekolah?
+Semua latar belakang pendidikan yang relevan dengan informasi pekerjaan programmer, bisa kamu cantumkan di portofolio secara singkat dan jelas.
+3. Problem solving
+Menjadi programmer dan berurusan dengan coding memang dibutuhkan ketelitian yang luar biasa. Banyak masalah yang ditemukan di tengah jalan saat mengembangkan website.
+Nah, di portofolio kamu bisa menjelaskan sedikit permasalahan yang kamu hadapi saat mengerjakan sebuah proyek serta penyelesaiannya.
+Rekruter ingin mengetahui seberapa besar kemampuanmu dalam menyelesaikan masalah alias problem solving.
+Dengan begitu, perusahaan sudah bisa memberikan gambaran besar mengenai kandidat yang akan bergabung di perusahaannya.
+Kesalahan yang Harus Dihindari
+Ada kesalahan-kesalahan yang ternyata masih sering dilakukan para programmer dalam menyusun portofolio. Beberapa hal harus dihindari dalam penyusunan portofolio, yaitu:
+1. Kode yang dikerjakan orang lain
+Proyek yang kamu tampilkan di portofolio sudah seharusnya apa yang kamu kerjakan sendiri bukan hasil dari orang lain.
+Jangan sampai kamu tertangkap basah memajang hasil karya orang lain yang pada akhirnya berimbas pada perkembangan kariermu.
+Jika kamu memiliki proyek bersama, sebaiknya kamu meminta izin dengan anggota yang lain serta menjelaskan apa saja yang kamu kerjakan di dalamnya.
+2. Timeline proyek tak beraturan
+Proyek yang tak beraturan akan membuat programmer terlihat tak peduli dan tidak mau berusaha.
+Sekecil apa pun proyek yang kamu kerjakan, akan menunjukkan bagaimana progress-mu dalam menjadi seorang programmer.
+Timeline dalam proyek yang kamu tampilkan, jangan sampai terlihat hanya satu dalam setahun lalu proyek selanjutnya baru muncul setahun setelahnya.
+Ini sebuah kesalahan besar dan akan terlihat jika kamu tidak memiliki inisiatif.
+3. Deskripsi proyek yang buruk
+Bagaimana sih cara memberikan deskripsi yang baik pada sebuah proyek? Tentunya dijelaskan dengan rinci namun tetap padat.
+Jangan hanya memberikan nama proyek saja, tetapi berikan juga tanggal, tahun, nama proyek dan apa saja yang kamu kerjakan.
+Selain rekruter, klien juga ingin melihat sejelas-jelasnya apa yang kamu kerjakan. Posisikan dirimu sebagai orang awam sehingga penjelasan mudah dimengerti oleh semua orang.
+Contoh Portofolio Programmer
+Setelah melihat tips-tips di atas, jelas rasanya bahwa membuat portfolio programmer bukanlah suatu tugas yang mudah.
+Pasalnya, terdapat beberapa elemen yang perlu kamu cantumkan serta aspek-aspek yang wajib untuk dihindari.
+Belum lagi ketika sedang mencari template desainnya. Kamu harus menemukan desain serta layout yang dapat menyorotkan karya dengan baik.
+Nah, supaya proses rancangannya dapat berjalan dengan mulus, berikut adalah beberapa portofolio programmer yang dapat kamu jadikan sebagai inspirasi.
+1. Matt Farley
+Melansir Springboard, contoh portfolio programmer pertama yang dapat kamu jadikan contoh adalah milik Matt Farley.
+Matt Farley sendiri merupakan seorang desain UX/UI dan programmer ternama yang berasal dari Amerika Serikat.
+Tampilan portofolio miliknya cukup simpel dengan laman perkenalan diri yang singkat serta banyak ruang untuk contoh-contoh karyanya.
+Selain itu, portofolio Matt Farley juga dibentuk sebagai situs web yang sederhana. Desainnya ini bisa kamu jadikan inspirasi bila ingin membuat portofolio dalam rancangan yang serupa.
+2. Emily Ridge
+Berikutnya, kamu bisa jadikan portfolio programmer milik Emily Ridge sebagai inspirasi untuk rancanganmu sendiri.
+Serupa dengan milik Matt Farley, Emily Ridge membentuk portofolionya menjadi sebuah tampilan situs web.
+Perbedaannya adalah ia menyediakan banyak white space yang ditujukkan agar pembaca lebih nyaman saat melihat portofolio miliknya.
+Tak hanya itu, ia juga menempatkan berbagai elemen dan goresan warna putih sebagai warna utama dalam portofolionya. Desain yang cukup menarik bukan?
+3. Jonny MacEachern
+Portofolio programmer terakhir yang dapat kamu gunakan sebagai bahan inspirasi adalah milik Jonny MacEachern.
+Tak seperti yang lain, tampilan portofolio miliknya terlihat lebih profesional dan modern, di mana Jonny MacEachern menyediakan gambar 3D khusus contoh karyanya.
+Selain itu, ia juga menyediakan pemaparan singkat mengenai karya-karyanya sebelum pembaca dapat mengakses laman.
+Jonny MacEachern juga memberikan kategori terkait karya-karyanya. Hal ini akan memberikan kemudahan bagi pembaca saat mengakses karyanya.

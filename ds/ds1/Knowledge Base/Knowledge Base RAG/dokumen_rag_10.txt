@@ -1,0 +1,118 @@
+SUMBER URL: https://www.jagoanhosting.com/blog/web-framework/
+--------------------------------------------------
+
+Salah satu kunci untuk bisa mahir dalam coding adalah wajib menguasai teknis pengoperasian web framework. Sementara dalam hal ini, opsi framework yang tersedia begitu beranekaragam sehingga mungkin akan membingungkan buat kamu yang masih pemula.
+Mau Website Keren dengan Budget Terbatas?
+Nggak perlu modal besar buat punya website profesional. Hosting Murah Jagoan Hosting kasih kamu semua yang dibutuhkan. Cocok untuk pelajar, freelancer, UMKM, bahkan pemula sekalipun. Plus support nonstop 24 jam
+Rekomendasi Web Framework Terbaik
+Oleh karenanya mari berkenalan dengan beberapa framework berikut. Penjelasan akan dikategorikan dalam 2 bagian besar yaitu backend dan frontend sebagaimana yang dihimpun dari radixweb dan binmile.
+Rekomendasi Framework Back-end Terbaik
+1. ASP.NET Core
+Dalam kategori back end, perkenalkan yang pertama adalah web development framework dengan nama ASP.Net Core. Sebuah framework berbasis open source dan kompatibel untuk membuat website atau aplikasi dalam segala jenis platform.
+Kemampuan web framework untuk beradaptasi dengan segala jenis platform karena sistemnya yang berpondasikan pada implementasi dari server stack Microsoft.
+Fleksibilitas juga makin tampak dari kemampuannya mengakomodasi berbagai jenis bahasa pemrograman semacam C#, F#, Visual Basic, NodeJS, dan JavaScript.
+2. Django
+Django merupakan web framework yang berbasis open source pula dan hanya kompatibel dengan bahasa pemrograman python. Framework tersebut dalam cara kerjanya mengikuti pola arsitektur model–view–controller.
+Fokusnya pada pembangunan sistem yang bertumpu pada database pada website yang kompleks. Apabila kamu ingin mengusahakan website berperforma tinggi maka Django adalah solusinya.
+3. Laravel
+Bagi kamu yang tertarik memakai bahasa pemrograman PHP jika bertanya pada yang sudah berpengalaman, kemungkinan besar akan rekomendasikan laravel sebagai framework web terbaik .
+Dari segi fungsi, laravel web framework secara spesifik didesain untuk aplikasi dengan sistem symphony-based
+4. Ruby on Rails
+Framework ruby on rails dikenal sebagai kapabilitasnya untuk menjalankan fungsi full stack web framework (front end maupun back end) yang memberikan berbagai kemudahan. Fokusnya di sini memang untuk membangun aplikasi /website secara lebih sederhana daripada sebelumnya.
+Kemudahan ditunjukkan dengan framework ini yang menyediakan berbagai komponen infrastruktur yang lengkap. Dengan begitu kamu bisa hanya fokus pada apa saja yang penting dalam perangkaian coding.
+5. Express.js
+Express JS merupakan bagian dari Node.js web framework untuk yang digunakan pada backend. Ini adalah komponen backend MEAN stack bersama dengan frontend Angular JS dan basis data NoSQL. Selain itu, diakui pula sebagai salah satu kerangka kerja terbaik untuk mengembangkan aplikasi online.
+6. CakePHP
+Cake PHP adalah jenis web framework yang memfasilitasi perancangan kustomisasi website menjadi lebih sederhana. Caranya melalui penyediaan “kode scaffolding” sebagai titik bantuan untuk memulai tahap awal aplikasi/website dibuat.
+Selain itu sistem cake PHP dibuat berlandaskan arsitektur MVC dan di bawah naungan lisensi MIT.
+7. Flask
+Flask merupakan web framework yang beroperasi di server daripada di browser dari user. Pada perkembangannya semakin banyak fitur modern yang ditambahkan ke sini sehingga kini berkreasi dalam membuat suatu project dapat semakin mulus.
+Apalagi framework turut menambahkan bantuan untuk kamu menambahkan ekstensi fitur jika merasa yang sudah sistem sediakan masih kurang.
+8. Spring Boot
+Rekomendasi selanjutnya dalam framework pemrograman web, ada spring boot yang juga layak kamu pertimbangkan. Selain karena open source sehingga kamu bisa akses secara gratis, ia juga begitu mantap dipakai pada skala perusahaan.
+Alasannya karena spring boot mampu membangun sebuah aplikasi stand alone, siap produksi, dan bisa terintegrasi dengan website.
+Sebagai tambahan informasi framework berikut merupakan bagian dari ekosistem besar dari Spring yang biasanya dipakai untuk membuat aplikasi Java dalam Java Virtual Machine.
+9. Koa
+Sebagaimana express js, koa termasuk pula dalam bagian web framework Node JS untuk kebutuhan backend. Dengan demikian kualitasnya untuk pengembangan aplikasi juga tidak perlu kamu khawatirkan.
+Pertama karena ukuran framework yang minimalis sehingga tidak memakan banyak sumber daya penyimpanan. Kedua Koa juga open source sehingga dapat kamu akses secara cuma-cuma tanpa perlu keluar biaya sepeser pun. Ketiga karena fleksibilitasnya untuk bisa kamu jalankan dalam berbagai platform baik itu smartphone maupun PC.
+Dengan berlandaskan pada sistem fungsional yang asinkron, Koa menyingkirkan segala jenis call back dan mengefisienkan pengembangan penanganan error.
+Mantapnya lagi, turut menyediakan user dengan akses ke berbagai tutor cepat dalam teknik penulisan coding pada server dan bebas dari segala middleware.
+Rekomendasi Framework Front-end Terbaik
+1. React js
+Pengenalan
+Dari sejak perilisannya tanggal 29 Mei 2013 telah berkembang dengan cepat menjadi salah satu web framework untuk profesional yang populer. Posisi itu dicapai karena sudah user perusahaan maupun individual yang mengakui kapabilitas integrasinya yang begitu kuat dan komponen UI yang mudah dioperasikan.
+Kelebihan
+- Dokumentasi yang kaya akan fitur-fitur canggih berperforma tinggi seperti virtual Dom, server-side rendering, and automated UI testing.
+- Waktu peluncuran program yang lebih cepat tapi tidak sampai mengorbankan standar kualitas coding
+- Fleksibilitas yang tinggi untuk membentuk UI yang dinamis
+2. Angular
+Pengenalan
+Salah satu tips memilih web framework adalah kamu harus benar-benar memahami secara mendalam konten-konten di dalamnya. Terkait itu maka Angular adalah opsi yang sayang kalau kalau kamu lewatkan karena ia juga salah satu yang juga terbaik di kelasnya.
+Mengapa bisa sampai disebut “terbaik”? Simak detailnya pada bagian kolom kelebihan/
+Kelebihan
+- Memungkinkan developer untuk memperpanjang kosakata dari HTML serta membangun aplikasi yang kompleks
+- Menciptakan aplikasi RAD dengan kemampuan pengikatan data yang membuat perangkaian coding lebih cepat dan mudah.
+- Menjadi jembatan yang efektif antara kode buatanmu dengan bagian desain dalam rangka menaikkan kualitas teamwork. Dalam hal perannya adalah mengurangi kompleksitas kode mewujudkan manajemen project yang efisien dan menjamin aplikasi yang lebih mudah maintenance-nya.
+3. JQuery
+Pengenalan
+Tidak kalah dari web framework lainnya, jQuery pun ada di kategori yang secara luas diaplikasikan dalam pengembangan website secara fullstack. Dalam perilisannya sejak 2006, terus mengalami kemajuan sampai mencapai posisinya sebagai favorit dalam bidang programming.
+Kelebihan
+- Struktur yang intuitif dan syntax yang mudah dipakai
+- Membuat developer mampu mengembangkan UI yang kerumitannya tinggi tanpa perlu bergantung pada dokumentasi dari sumber luar.
+- Plugin yang lengkap untuk mengoptimalkan pengembangan program.
+4.Backbone.js
+Pengenalan
+Backbone pada umumnya difungsikan mendesain aplikasi halaman dan interface tunggal sehingga cukup banyak pula perusahaan yang memakainya. Ditunjang juga dengan fleksibilitas dan kecepatan kerjanya.
+Kelebihan
+- Menyediakan cara yang efisien menyajikan user interface yang interaktif sehingga cocok menjadi web framework untuk pemula.
+- Semua aspek full stack development bisa kamu tangani dengan memanfaatkan sinkronisasi JavaScript dengan perpustakaan, koleksi, model, dan API.
+5. Preact
+Pengenalan
+Preact dengan cepat menjadi salah satu kerangka kerja front-end populer yang banyak digunakan oleh perusahaan pengembangan-perusahaan yang kompeten
+Salah satu faktornya karena ukuran preact ramping hanya 3kb. Meskipun begitu tetap mampu menyediakan rangkaian fitur yang kuat yang memungkinkan pengembang untuk membuat aplikasi yang kompleks dan kaya fitur.
+Kelebihan
+- Ini memungkinkan pengembang untuk menggunakan kembali dan mencampur kode yang ada dengan dokumentasi komponen yang luas. Hal tersebut secara drastis mengurangi waktu pengembangan untuk proyek. Jadi bisa dikatakan web framework performance yang ada di dalamnya begitu berkualitas.
+- Pengembang juga mendapatkan akses ke alat pengembang yang memungkinkan mereka mengoptimalkan kode mereka dengan lebih efisien.
+- Integrasi mudah dengan perpustakaan front-end utama, termasuk React, sehingga kamu tidak perlu mengorbankan kinerja atau skalabilitas aplikasi kamu saat menggunakan framework ini.
+6. Foundation
+Pengenalan
+Foundation, buatan perusahaan Zurb, adalah salah satu kerangka kerja front-end terbaik yang banyak diandalkan oleh perusahaan pengembangan web. Web framework ini memungkinkan pengembang untuk membangun situs web dan aplikasi yang cepat, fleksibel, responsif dengan pengalaman user yang hebat.
+Kelebihan
+- Foundation dilengkapi dengan banyak tools canggih untuk menghasilkan desain yang menakjubkan. Masih ditambah dengan HTML dan CSS modern yang semantik tanpa perlu pengkodean tambahan.
+- Foundation menawarkan pengaturan yang mudah, struktur yang intuitif, dan banyak komponen ekstensi untuk membangun UI yang dinamis.
+- Developer dapat dengan mudah membuat situs web yang dirancang dengan indah serta solusi yang berkinerja tinggi. Kamu jadi tidak usah menghabiskan banyak waktu dan usaha untuk kustomisasi kode.
+7. Semantic-UI
+Pengenalan
+Semantic-UI adalah salah satu web framework front-end teratas yang disukai oleh banyak perusahaan pengembangan web. Dengan berbagai komponennya yang luas, kamu dapat dengan mudah menyesuaikan desain kamu untuk memenuhi hampir semua persyaratan.
+Kelebihan
+- Menawarkan kepada pengembang metode intuitif dan sederhana. Dengan begitu akan lebih cepat membangun UI khusus dengan menggunakan HTML, CSS, dan JavaScript.
+- Menyediakan opsi kustomisasi instan begitu kamu mulai menggunakannya. Hal yang memungkinkan user untuk membuat desain UI yang indah dan terperinci.
+- Mudah dipelajari, stabil, dan sangat andal.
+8. Ember JS
+Pengenalan
+Ember.js adalah framework JavaScript open source yang masuk pula dalam framework kerangka kerja front-end paling populer. Dengan basis pengguna yang besar, sangat membantu pembelajaran lewat bantuan dari komunitas online yang aktif yang menyediakan tutorial.
+Kelebihan
+- Membantu developer dengan cepat dan mudah membuat aplikasi satu halaman (SPA) interaktif serta antarmuka pengguna yang kompleks dengan fitur-fiturnya yang komprehensif.
+- Membantu developer membangun situs web dengan fitur asli, aplikasi dengan platform fungsionalitas yang intens, dan aplikasi yang memerlukan lingkungan seperti Python.
+- Menyediakan solusi yang lebih aman dari kesalahan dan menawarkan efisiensi maksimum serta kinerja tinggi.
+9. Svelte
+Pengenalan
+Svelte adalah salah satu pesaing teratas untuk kerangka kerja Frontend dan dengan cepat menjadi populer di kalangan perusahaan pengembangan web. Alasannya karena kemampuannya membuat halaman web interaktif.
+Svelte juga merupakan solusi yang sangat baik bagi perusahaan pengembangan web yang ingin mengoptimalkan kecepatan dan kinerja website mereka.
+Kelebihan
+- Mengambil pendekatan unik dibandingkan dengan kerangka kerja lainnya dengan menghindari manipulasi virtual DOM. Hal yang memungkinkan pengembang menulis kode yang sangat cepat dan dioptimalkan untuk kinerja.
+- Membantu menulis komponen yang ringkas dan singkat menggunakan bahasa populer — HTML, CSS, dan JavaScript.
+Jadi itulah tadi seputar web framework dari jenis front end maupun back end yang bisa kamu jadikan opsi pemrograman. Silakan riset lebih mendalam karena informasi yang ada di dalam artikel ini masih sangat umum.
+FAQ
+1. Mengapa saya harus menggunakan web framework?
+- Pengembangan Lebih Cepat: Framework menyediakan alat dan komponen yang mempercepat proses pengembangan.
+- Kode yang Terorganisir: Membantu menjaga kode tetap terstruktur dan mudah dipelihara.
+- Keamanan: Banyak framework dilengkapi dengan fitur keamanan bawaan untuk melindungi aplikasi dari serangan umum.
+- Skalabilitas: Memudahkan pengembangan aplikasi yang dapat tumbuh dan berkembang seiring waktu.
+- Komunitas dan Dukungan: Framework populer memiliki komunitas besar yang menyediakan dukungan dan sumber daya..
+2. Bagaimana cara memilih web framework yang tepat?
+- Kebutuhan Proyek: Pertimbangkan fitur yang kamu butuhkan dan jenis aplikasi yang akan dibangun.
+- Bahasa Pemrograman: Pilih framework yang sesuai dengan bahasa pemrograman yang kamu kuasai.
+- Skalabilitas: Pertimbangkan apakah framework dapat menangani pertumbuhan dan perubahan aplikasi di masa depan.
+- Komunitas dan Dukungan: Pilih framework dengan dukungan komunitas yang aktif dan dokumentasi yang baik.
+- Kemudahan penggunaan: Pertimbangkan tingkat kenyamanan kamu dengan framework tersebut dan seberapa cepat kamu bisa mempelajarinya.

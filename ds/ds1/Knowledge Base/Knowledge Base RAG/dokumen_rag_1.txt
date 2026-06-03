@@ -1,0 +1,46 @@
+SUMBER URL: https://www.revou.co/panduan-karir/front-end-developer-roadmap
+--------------------------------------------------
+
+Front end developer adalah developer yang fokusnya untuk mendesain dan mengembangkan tampilan awal aplikasi atau web tempat user berinteraksi.
+Dalam web development, front end developer memegang peranan penting untuk menghasilkan user interface dan pengalaman user yang menyenangkan.
+Jika kamu tertarik menjadi front end developer, artikel berikut membahas front end developer roadmap sebagai gambaran langkah-langkah yang nantinya akan kamu lalui.
+Apa Fokus Belajar Front End?
+Tanggung jawab seorang front end developer adalah bagaimana tampilan awal web atau aplikasi bisa terlihat menarik, interaktif bagi user, dan memiliki fungsi yang efisien.
+Untuk mencapai hal tersebut, front end developer bekerja sama dengan berbagai pihak, mulai dari back end developer, web designer, dan UX designer.
+Jadi pertama-tama, front end developer akan menerima desain dari web designer dan prototipe (replika produk yang dikerjakan) dari UX designer.
+Kemudian front end developer akan membagi desain tersebut ke bagian kecil dan melakukan coding agar desain, animasi, dan transisi yang ada pada desain tersebut bisa ditampilkan pada web dan aplikasi.
+Fundamental Front End Development
+Front end developer bekerja menggunakan berbagai alat, teknologi, dan bahasa termasuk:
+HTML: Bahasa markup standar yang digunakan untuk membuat struktur dan tata letak halaman web dan aplikasi.
+CSS: Menentukan bagaimana elemen seperti warna dan font yang tertulis oleh bahasa markup ditampilkan dalam web.
+JavaScript: Bahasa pemrograman yang memungkinkan pengembang menambahkan interaktivitas, animasi, dan elemen dinamis lainnya ke dalam web dan aplikasi.
+Framework: Membantu mengembangkan pola kode yang dibuat, sehingga proses pengembangan web atau aplikasi jadi lebih sederhana.
+Libraries: Library berisi kode yang sebelumnya dibuat dan bisa digunakan kembali untuk web development. Library yang biasa digunakan adalah jQuery, yang merupakan library JavaScript.
+Front end developer juga membutuhkan bantuan dari back end developer untuk memastikan komponen front-end dan back-end pada aplikasi atau web terintegrasi dengan baik.
+{{COMPONENT_IDENTIFIER}}
+Langkah-langkah Belajar Menjadi Front End Developer
+Menjadi seorang front end developer tentu membutuhkan pemahaman terkait bahasa pemrograman, coding, framework, dan lainnya.
+Namun, tidak mustahil bagi awam tanpa latar belakang programming untuk menjadi front end developer handal.
+Berikut ini 8 tahapan belajar front end developer yang bisa kamu ikuti:
+#1 Belajar HTML, CSS, dan JavaScript
+HTML, CSS, dan JavaScript adalah tiga bahasa pemrograman yang digunakan front end developer dan merupakan fondasi dari front-end.
+HTML, CSS, dan JavaScript tidak sulit dipelajari. Saat ini, ada banyak sumber online dan kursus yang fokusnya memperdalam ketiga bahasa tersebut.
+Pastikan untuk menguasai ketiga bahasa tersebut terlebih dahulu sebelum lanjut belajar skill front end developer lainnya.
+#2 Latihan coding
+Setelah mempelajari bahasa pemrograman, kamu bisa melanjutkan untuk latihan coding dengan bahasa tersebut.
+Lakukan latihan secara konsisten untuk membantumu lebih memahami konsep coding. Semakin sering berlatih, maka semakin baik hasilnya.
+#3 Belajar command line
+Front end developer harus memahami cara kerja command line atau baris perintah, yang fungsinya menampilkan file dan navigasi sistem file setelah web atau aplikasi menerima perintah tertentu dari user.
+Salah satu program yang umum digunakan adalah CLI (Command Line Interface) karena memiliki kinerja yang lebih baik dan lebih cepat.
+#4 Belajar version control
+Kode error sangat mudah terjadi jika ada kesalahan kecil dalam proses coding, dan inilah kegunaan dari version control.
+Version control membantu menemukan kesalahan pada kode, riwayat perubahan pengkodean dan informasi lain seperti siapa yang membuat perubahan tersebut.
+#5 Up to date dengan tren terbaru
+Front end developer bekerja dengan berbagai alat, teknologi, dan bahasa. Maka dari itu, kamu harus terus up to date dengan tren terbaru terkait front end development agar tak ketinggalan.
+Kamu bisa bergabung dengan komunitas front end developer, dan belajar secara aktif untuk meningkatkan skill front end development-mu.
+#6 Kuasai pemahaman terkait API
+Menurut IBM, API (Application Program Interfaces) adalah lapisan perantara antara dua aplikasi berbeda, yang berisikan seperangkat aturan mengenai bagaimana kedua aplikasi tersebut bisa berinteraksi.
+Front end developer harus memahami API dan cara kerjanya, karena API akan bertindak sebagai penghubung antara front end dengan logika back end dan database.
+#7 Pelajari JavaScript/CSS Libraries
+JavaScript dan CSS memiliki library berisi kode yang bisa digunakan kembali untuk web development. Disarankan untuk memahami library dengan baik agar kehadirannya berfungsi maksimal.
+#8 Pertimbangkan ikut kursus

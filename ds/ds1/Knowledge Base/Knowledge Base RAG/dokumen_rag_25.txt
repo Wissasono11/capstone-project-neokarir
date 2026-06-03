@@ -1,0 +1,62 @@
+SUMBER URL: https://talenthero.id/insight/tips-menghadapi-coding-test
+--------------------------------------------------
+
+Salah satu tahapan penting dalam Technical Assessment pada proses rekrutmen programmer yaitu tes coding, bukan?
+Tes ini berguna untuk mengevaluasi kemampuan teknis kandidat dalam memecahkan masalah, memahami dan menerapkan algoritma, serta menulis kode yang efisien dan terstruktur dengan baik.
+Adapun penilaian mencakup kemampuan analisis, kecepatan, dan ketepatan. Dengan demikian, tes coding membantu perusahaan memilih kandidat yang tidak hanya memiliki pengetahuan teoritis, tetapi juga keterampilan yang diperlukan untuk menyelesaikan pekerjaan.
+Pertanyaannya adalah bagaimana cara menghadapi coding test yang umumnya diberikan oleh perusahaan? Baca artikel ini, yuk.
+Kenapa Kamu Harus Melalui Tes Coding?
+Tes coding akan berguna bagi recruiter untuk memastikan bahwa kamu adalah talent yang memiliki keterampilan yang sesuai dengan kebutuhan posisi yang dibutuhkan.
+Lebih dari itu, coding test juga dapat melihat apakah kamu dapat bekerja di bawah tekanan, menyelesaikan tugas sesuai deadline, serta menunjukkan kreativitas kamu dalam menyelesaikan sebuah permasalahan.
+Dengan proses ini juga, kamu bisa menunjukkan kemampuan kamu dalam menulis code yang mudah dipahami dan clean.
+Jenis Soal Tes Coding
+Tes coding terdiri dari berbagai jenis soal yang berfungsi untuk mengevaluasi kemampuan pemrograman kamu. Berikut beberapa jenis soal yang umumnya akan kamu temui, sebagai berikut:
+1. Live Test Coding
+Dalam tes ini, kamu akan diminta untuk menyelesaikan berbagai persoalan pemrograman baik yang dilakukan secara offline maupun online di hadapan user dan pewawancara. 
+Live coding tes ini akan menilai keterampilan teknikal yang kamu miliki, kemampuan berpikir secara cepat, dan menguji kamu ketika bekerja dalam tekanan.
+Tidak hanya itu, kemampuan dalam debugging juga penting dalam tes ini, karena kamu harus dapat mengidentifikasi dan memperbaiki kesalahan dalam code dengan cepat.
+2. Multiple-Choice Test
+Multiple-choice test adalah bentuk tes yang lebih sederhana dibandingkan live test coding. Dalam tes ini, kamu akan diberikan beberapa pertanyaan dengan beberapa pilihan jawaban, kemudian kamu memilih mana jawaban yang benar.
+Terdapat beragam jenis pertanyaan yang ada pada tes ini, mulai dari pertanyaan bahasa pemrograman yang bersifat umum dan spesifik, algoritma, struktur data, dan lain sebagainya.
+Biasanya, tes ini dilakukan oleh perusahaan untuk menguji talent dalam jumlah yang banyak untuk mengetahui prinsip-prinsip dasar pemrograman dan kemampuan kamu dalam memilih solusi yang tepat berdasarkan pengetahuan yang kamu miliki. 
+3. Algorithm Test
+Contoh soal algorithm test
+Contoh Soal Algorithm Test (Array dengan perulangan For menggunakan bahasa pemrograman PHP)
+Tes ini akan memfokuskan talent untuk menjawab permasalahan pemrograman dengan menggunakan bahasa pemrograman dan algoritma, guna untuk menilai cara berpikir kamu dalam memecahan permasalahan menggunak kode.
+Jenis soal yang diberikan dapat berupa contoh atau deskripsi, untuk nantinya kamu selesaikan dengan membuat kode sesuai perintah.
+Contohnya, buatlah sebuah fungsi dengan mengurutkan angka dalam suatu array dari terbesar ke yang terkecil. Contoh: Array yang diberikan [4,2,3,5,1], maka hasilnya adalah [5,4,3,2,1].
+4. Technical Interview Test
+Hampir sama dengan live test coding yang dilakukan secara tatap muka dengan user maupun interviewer. Hanya saja perbedaannya, tes ini berupa pertanyaan technical layaknya interview biasa bersama recruiter. Tujuannya adalah untuk mengukur pengetahuan kamu dalam dunia pemrograman.
+Lalu, Bagaimana Cara Menghadapi Coding Test dengan Baik
+Menghadapi coding test akan menjadi tantangan tersendiri bagi kamu, meskipun sudah terbiasa melakukannya pasti rasa nervous akan tetap ada. Tapi jangan khawatir, dengan persiapan yang baik dan matang akan membantu kamu untuk menunjukkan kemampuan terbaik sehingga memperbesar peluang untuk diterima.
+1. Sebelum Tes
+Berikut adalah beberapa persiapan yang bisa kamu lakukan sebelum menghadapi wawancara:
+A. Kuasai konsep dasar
+Tips pertama yang perlu kamu ketahui adalah memahami konsep dasar pemrograman. Pastikan kamu menguasai struktur data dasar, struktur urut (sequence), struktur pemilihan (selection), dan struktur pengulangan (Repetition), variabel, loop, dan conditional statement.
+Memiliki pemahaman yang kuat tentang konsep dasar ini akan sangat membantu kamu untuk menyelesaikan soal lebih mudah.
+B. Pelajari bahasa pemrograman yang dikuasai
+Barangkali setiap perusahaan memiliki preferensi terhadap bahasa pemrograman tertentu. Namun, pastikan kamu menguasai bahasa pemrograman yang paling relevan dengan posisi yang kamu lamar, ya.
+Jika kamu melamar sebagai developer Java, cobalah untuk mempelajari sintaks, konsep dasar pemrograman berorientasi objek (OOP), memahami framework Java, dan bagaimana best practices dalam bahasa tersebut.
+C. Perbanyak latihan coding
+Latihan menjadi kunci dalam meningkatkan keterampilan coding. Saat ini, sudah banyak platform yang dapat kamu gunakan untuk berlatih soal-soal coding seperti LeetCode, HackerRank, atau Codecademy. 
+Dengan latihan yang konsisten akan membantu kamu mengenali pola-pola dalam soal coding dan tipe masalah yang nantinya kamu temui. Di samping itu juga, dapat meningkatkan kecepatan dan ketepatan dalam menyelesaikan soal.
+D. Review proyek sebelumnya
+Sebelum menjalani interview, tinjau kembali proyek-proyek yang pernah kamu kerjakan. Pastikan kamu dapat menjelaskan secara detail terkait proyek tersebut. apa tantangan yang kamu hadapi, dan bagaimana kamu menyelesaikannya.
+Dengan memahami proyek yang kamu kerjakan akan memberikan penilaian bahwa kamu benar-benar orang yang berpengalaman dibidang tersebut.
+2. Saat Tes
+Ketika menghadapi coding test, ada beberapa hal yang perlu diperhatikan untuk memastikan kamu dapat memberikan hasil yang terbaik.
+A. Fokus pada pertanyaan
+Coding test biasanya berupa pertanyaan atau instruksi, maka saat mengerjakannya tetaplah fokus pada pertanyaan-pertanyaan yang diajukan.
+Baca soal dengan cermat, dan pahami semua persyaratan sebelum mulai menjawabnya. Mulailah mengerjakan dari soal-soal yang kamu anggap mudah terlebih dahulu, dan dilanjutkan dengan soalnya yang sulit.
+B. Buatlah kode yang mudah dipahami
+Menulis kode yang mudah dimengerti akan membantu user dan pewawancara untuk memahami jawaban kamu. Gunakan nama variabel yang jelas dan dengan nama yang mudah diingat. 
+Tambahkan komentar pada bagian-bagian penting dari kode tersebut untuk menjelaskan apa yang sedang dilakukan dan buatlah struktur kode yang rapi.
+C. Uji selalu kode 
+Lakukan pengujian terhadap kode yang kamu buat agar memastikan tidak ada kesalahan dan kode berfungsi sesuai dengan yang diharapkan.
+Jika menemukan kesalahan, segera perbaiki dan lakukan pengujian kembali kode hingga berfungsi dengan baik.
+D. Tetap tenang
+Kondisi yang tenang dan tidak panik membuat kamu dapat berpikir jernih dan menyelesaikan tes dengan baik. Ambil napas dalam-dalam untuk menenangkan diri. Percayalah pada kemampuanmu sendiri dan ingat bahwa kamu telah mempersiapkan semuanya dengan baik.
+3. Setelah tes
+Sesudah kamu menjalani tes, jangan lupa untuk mengevaluasi diri agar mengetahui apa saja kekurangan yang bisa kamu perbaiki kedepannya. Identifikasi di area mana kamu merasa kurang yakin atau mengalami kesulitan, lalu buat rencana untuk memperbaiki kelemahan tersebut.
+Disamping itu, kamu bisa membuat strategi manajemen waktu yang baik dan mengatur bagaimana cara untuk tetap tenang saat mengerjakan tes di bawah tekanan.
+Nah, mengetahui bagaimana cara menghadapi coding test ini akan membuat kamu lebih siap untuk menjalankannya dan pastinya akan meningkatkan kesempatanmu untuk satu langkah lebih maju bekerja di perusahaan impian. 

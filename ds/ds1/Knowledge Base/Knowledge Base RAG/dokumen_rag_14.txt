@@ -1,0 +1,85 @@
+SUMBER URL: https://buildwithangga.com/tips/react-vue-atau-angular-panduan-memilih-framework-frontend-untuk-pemula
+--------------------------------------------------
+
+Pengantar
+Buat kamu yang baru mulai masuk dunia frontend development, pasti sering bingung harus belajar framework yang mana dulu: React, Vue, atau Angular. Semuanya keliatan keren, semuanya dipake perusahaan besar, dan semuanya punya komunitas yang aktif. Tapi tenang, artikel ini bakal bantu kamu paham perbedaan dan karakter masing-masing framework dengan bahasa santai dan gampang dicerna ala BWA. Jadi, kamu bisa milih framework pertama tanpa pusing berhari-hari.
+Apa Itu Framework Frontend?
+Framework frontend itu ibarat alat yang ngebantu kamu bikin UI lebih cepat, rapi, dan terstruktur. Dibanding ngerjain semuanya dari nol pake HTML, CSS, dan JavaScript mentah, framework kasih kamu pola kerja yang lebih efisien. Jadi kayak jalan tol untuk developer—lebih cepat sampai tujuan tanpa macet.
+React
+React adalah salah satu library frontend paling populer di dunia saat ini, dan alasan popularitasnya bukan cuma karena dibuat sama Meta, tapi juga karena caranya bekerja itu simpel, modern, dan gampang diadaptasi pemula. Banyak developer bilang React itu fleksibel banget sehingga kamu bisa bikin struktur project sesuai gaya kamu sendiri—dan ini bener! React itu kayak kotak LEGO besar yang bisa kamu rangkai sesuka hati, tinggal tambahin router, state management, UI library, dan lainnya sesuai kebutuhan.
+Kenapa React Populer?
+React itu library yang super fleksibel dan gampang banget dipelajari pemula. Banyak perusahaan besar kayak Facebook, Netflix, sampai Tokopedia pake React untuk aplikasi mereka.
+Cocok Buat Siapa?
+- Kamu yang suka belajar bertahap
+- Kamu yang lebih nyaman sama JavaScript murni
+- Kamu yang suka fleksibilitas tanpa aturan ketat
+Kelebihan
+- Mudah dipelajari pemula
+- Komunitas gede banget
+- Banyak lowongan kerja
+- Ekosistem library yang luas
+Kekurangan
+- Kadang terlalu bebas, bikin bingung pemula soal struktur folder
+- Harus milih sendiri tools pendukung (router, state management, dll)
+Vue
+Vue hadir sebagai framework yang berusaha ngambil hal-hal baik dari React dan Angular, tapi dibungkus dengan sintaks yang lebih sederhana dan ramah pemula. Banyak orang jatuh cinta pertama kali setelah coba Vue karena pendekatannya yang intuitif banget kamu tinggal buka file komponen dan langsung ngerti mana templatenya, mana stylenya, dan mana scriptnya.
+Vue juga terkenal dengan dokumentasinya yang super rapi dan mudah dicerna. Cocok buat kamu yang pengen belajar framework tanpa harus pusing duluan baca konsep rumit.
+Kenapa Banyak Pemula Suka Vue?
+Vue itu campuran enak antara kemudahan dan power. Dokumentasinya rapi dan mudah diikuti. Banyak yang bilang Vue itu framework yang "ramah pemula".
+Cocok Buat Siapa?
+- Kamu yang mau transisi dari HTML standar ke framework
+- Kamu yang suka struktur jelas dan clean
+- Kamu yang pengen belajar cepat tanpa ribet
+Kelebihan
+- Dokumentasi terbaik
+- Sintaks sederhana
+- Cepat dikuasai
+- Cocok untuk project kecil sampai besar
+Kekurangan
+- Market share tidak sebesar React
+- Di beberapa negara, peluang kerja lebih sedikit
+Angular
+Angular adalah framework paling "serius" dan paling lengkap di antara ketiganya. Angular ini cocok banget untuk project berskala besar yang butuh struktur kuat dan konsisten. Makanya banyak perusahaan enterprise suka banget sama Angular karena semuanya udah disiapin dari awal: routing, state, HTTP client, form handling, sampai build system.
+Kalau kamu tipe orang yang suka aturan jelas, struktur rapi, dan siap belajar TypeScript lebih dalam, Angular bakal terasa sangat powerful. Tapi kalau kamu pemula banget, siap-siap ya — belajarnya mungkin butuh waktu lebih lama dibanding React atau Vue.
+Framework yang Serius Buat Project Serius
+Angular itu framework lengkap yang dipake banyak perusahaan skala besar. Tapi karena fiturnya super lengkap, belajarnya juga lebih menantang.
+Cocok Buat Siapa?
+- Kamu yang suka aturan jelas
+- Kamu yang mau masuk ke perusahaan enterprise
+- Kamu yang siap belajar TypeScript lebih dalam
+Kelebihan
+- Paling lengkap: router, state, HTTP, semuanya built-in
+- Cocok untuk aplikasi skala besar
+- Arsitektur sangat terstruktur
+Kekurangan
+- Belajar awal paling sulit
+- Tidak cocok untuk project kecil
+Tabel Perbandingan React vs Vue vs Angular
+| Parameter | Angular | Vue | React |
+|---|---|---|---|
+| Tipe | Full Framework | Progressive Framework | Library |
+| Learning Curve | Sulit | Mudah | Sedang |
+| Performa | Cepat | Sangat Cepat | Cepat |
+| Bundle Size | ~500KB | ~80KB | ~120KB |
+| Arsitektur | MVC + TypeScript | Component-based | Component-based |
+| Data Binding | Two-way | Two-way | One-way |
+| Perusahaan | Community | Meta (Facebook) | |
+| Popularitas | Tinggi | Sedang–Tinggi | Sangat Tinggi |
+| Ekosistem | Lengkap Built-in | Modular | Sangat Luas |
+| Best For | Enterprise Apps | Prototyping Cepat | Fleksibilitas Maksimal |
+Dari perbandingan React, Vue, dan Angular, bisa dibilang ketiganya punya karakter yang berbeda sesuai kebutuhan proyek dan gaya belajar developer. Angular cocok untuk aplikasi besar dan kompleks karena fiturnya lengkap sejak awal, tapi learning curve‑nya paling tinggi. Vue jadi pilihan paling ramah pemula karena strukturnya sederhana, performanya cepat, dan sangat fleksibel untuk project kecil sampai menengah. Sementara React menawarkan fleksibilitas paling besar dengan ekosistem luas, cocok untuk berbagai skala aplikasi, dan didukung komunitas serta industri yang sangat kuat.
+Jadi, Harus Mulai dari Mana?
+| Framework | Tingkat Kemudahan | Fleksibilitas | Kebutuhan Industri | Cocok Untuk |
+|---|---|---|---|---|
+| React | 4 | 5 | 5 | Semua level |
+| Vue | 5 | 3 | 4 | Pemula & menengah |
+| Angular | 2 | 3 | 4 | Project besar |
+Terus, sebagai pemula kamu sebenarnya harus mulai dari mana? Simpelnya gini:
+- Kalau kamu mau cepat kerja → React
+- Kalau kamu mau belajar paling mulus → Vue
+- Kalau kamu mau masuk ke perusahaan enterprise → Angular
+Ga ada pilihan yang salah. Semua framework ini powerful. Yang penting kamu pilih satu, fokus 1–2 bulan, dan bikin project kecil.
+Penutup
+Frontend development itu dunia yang luas, tapi kamu ga perlu kuasai semuanya sekaligus. Framework hanyalah alat—yang paling penting adalah kamu nyaman dan bisa berkembang. Setelah baca panduan ini, semoga kamu bisa lebih yakin memulai perjalanan kamu di React, Vue, atau Angular.
+Terus belajar, terus coba, dan jangan takut salah. Coding itu proses!
+Created by Salman Rizky

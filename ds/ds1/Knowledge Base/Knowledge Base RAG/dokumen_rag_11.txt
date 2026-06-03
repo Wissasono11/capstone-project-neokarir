@@ -1,0 +1,56 @@
+SUMBER URL: https://glints.com/id/lowongan/jenis-bahasa-pemrograman/
+--------------------------------------------------
+
+Dibutuhkan Job Seeker di Dunia Kerja, Pelajari 7 Bahasa Pemrograman Ini
+Ditulis oleh : Benedictus Gemilang
+Dengan perkembangan teknologi yang melesat, rasanya kita perlu mengenal jenis bahasa pemrograman yang sedang populer saat ini.
+Rangkaian kata-kata tersebut berupa instruksi yang terdiri dari banyak baris kode agar bisa dimengerti oleh komputer.
+Seiring berkembangnya zaman, menguasai bahasa pemrograman sudah dianggap sebagai sebuah skill yang bisa memberikan fleksibilitas terhadap kariermu.
+Sebab, bahasa pemrograman telah menjadi penghubung bagi manusia dan mesin untuk berinteraksi, sesuai ujaran Rasmussen.
+Nah, oleh karena itu, wajib bagi para job seeker untuk mempelajari jenis-jenis bahasa pemrograman. Tanpa harus bercita-cita jadi programmer, berikut tujuh bahasa pemrograman yang perlu kamu pahami.
+1. Java
+Melansir laman Computer, Java adalah bahasa pemrograman yang dapat dijalankan melalui berbagai jenis platform, mulai dari komputer hingga smartphone.
+Jenis bahasa pemrograman ini dirintis oleh James Gosling ketika ia masih bekerja dengan Sun Microsystems. Inspirasi nama Java sendiri diraih Gosling saat ia sedang menyesap kopi murni yang digiling langsung dari pulau Jawa, Indonesia.
+Kini, Java telah menjadi bahasa pemrograman paling populer dan telah digunakan pada lebih dari 15 miliar perangkat di seluruh dunia.
+Tidak hanya itu, seluruh aplikasi berbasis Android juga menggunakan bahasa pemrograman Java beserta 90% dari perusahaan-perusahaan Fortune 500 untuk pengembangan sistem backend serta aplikasi desktop.
+2. C++
+Jenis bahasa pemrograman berikutnya adalah yang perlu kamu pahami adalah C++.
+C++ merupakan sebuah pembaharuan dari bahasa pemrograman C yang dikenal sebagai salah satu bahasa pemrograman tertua di dunia.
+Jika dibandingkan dengan C, perbedaan yang paling mencolok dari C++ terletak pada caranya menyelesaikan sebuah masalah.
+Menurut Hackr, pada bahasa pemrograman C, masalah diselesaikan dengan melakukan tahap prosedural, di mana kode akan dibagi pada sub-sub masalah yang lebih kecil.
+Sementara itu, penyelesaian masalah pada C++ lebih terpusat kepada obyek, sehingga tiap isu yang ditemukan akan dipilah ke dalam beberapa class.
+Karena kemampuan mutakhirnya tersebut, bahasa pemrograman yang dikembangkan oleh Bjarne Stroustrup ini banyak digunakan oleh perusahaan-perusahaan besar seperti Adobe dan Mozilla Firefox.
+3. Phyton
+Dengan beragam peran pentingnya dalam perkembangan data science, Python adalah salah satu jenis bahasa pemrograman yang wajib kamu pelajari.
+Simpel tetapi elegan, bahasa pemrograman Phyton sudah banyak diterapkan perusahaan, terutama untuk keperluan pengembangan AI atau artificial intelligence.
+Selain itu, melansir Code Academy, pustaka dokumentasi milik Python banyak membahas visualisasi data dalam jumlah besar menggunakan Matplotlib, Pandas, dan lainnya.
+Oleh karena itu, para praktisi dunia teknologi tak ragu untuk memprogram aplikasi desktop menggunakan bahasa pemrograman satu ini.
+Bahkan, karena kemampuan serta kompatibilitasnya yang mumpuni, perusahaan-perusahaan besar seperti Google, Yahoo!, Instagram, Pinterest, YouTube, hingga Reddit ikut menggunakan bahasa pemrograman Python pada software mereka.
+4. Ruby
+Dalam dunia web development, Ruby merupakan salah satu jenis bahasa pemrograman yang kerap dimanfaatkan developer.
+Namun, sekarang ini, Ruby dianggap sebagai bahasa pemrograman yang cocok untuk dipelajari para pemula.
+Mengapa demikian? Pasalnya, bahasa pemrograman tersebut memiliki salah satu komunitas pengguna dengan reputasi yang paling ramah dan membantu.
+Selain itu, sintaks di dalamnya juga sederhana dan cukup mudah untuk dipelajari bahkan oleh mereka yang benar-benar baru berkecimpung di dunia programming, sesuai ujaran Full Stack Academy.
+5. PHP
+Bagi kamu yang sedang mencari bahasa pemrograman untuk website development, PHP bisa menjadi salah satu opsi yang baik.
+Bahasa pemrograman yang dikembangkan oleh Rasmus Lerdrorf ini seringkali digunakan perusahaan sebagai bahasa komando dalam CMS (content management system) mereka.
+Salah satu pengguna PHP dengan operasi CMS paling terkenal adalah WordPress. Selain itu, beberapa situs web besar seperti Facebook, Wikipedia, dan Digg juga turut menggunakan PHP.
+Dengan server side scripting khusus untuk website serta integrasi database yang gampang dipahami, menurut Simpli Learn, tidak heran jika 80% dari 10 juta website di dunia menggunakan PHP
+6. Swift
+Apakah di lingkungan kerjamu banyak yang menggunakan sistem operasi iOS serta perangkat Apple? Jika ya, maka kamu perlu mengetahui seluk-beluk bahasa pemrograman Swift.
+Jenis bahasa pemrograman ini diluncurkan oleh Apple pada WWDC 2014. Komponen fondasi dari Swift terletak pada compiler LLVM dan Xcode.
+Berkaitan dengan Apple sebagai perusahaan induk dari Swift, bahasa pemrograman ini akan menjadi pilihan yang pas jika target audiens perusahaan tempat kamu bekerja adalah pengguna Apple.
+Selain produk-produk Apple, salah satu aplikasi terkenal yang menggunakan Swift adalah aplikasi fotografi VSCO Cam.
+7. JavaScript
+Tahukah kamu? Bahwa jenis bahasa pemrograman yang digunakan mesin penelusur seperti Internet Explore dan Opera adalah JavaScript?
+Ya, bahasa pemrograman satu ini memiliki sejumlah tools minimalis yang efektif untuk keperluan sehari-hari, terutama guna memeriksa hasil coding.
+Contoh tools yang termasuk dalam badan JavaScript adalah pengembangan markup languang HTML serta CSS.
+Dengan kemampuan kedua tools tersebut, JavaScript juga banyak digunakan untuk mobile app, game, hingga desktop app development, seperti kata laman Guru99.
+Itulah tujuh jenis bahasa pemrograman yang wajib untuk dipelajari para job seeker.
+Yang perlu kamu ingat adalah kemajuan teknologi telah mendorong kita untuk memahami dasar-dasar pemrograman.
+Tak sedikit jumlah perusahaan yang mencari kandidat dengan kemampuan teknis mumpuni.
+Oleh karena itu, dengan memahami bahasa pemrograman beserta jenis-jenisnya, perusahaan takkan ragu untuk menerimamu sebagai karyawan mereka.
+Kendati demikian, memahami bahasa pemrograman bukanlah satu-satunya skill teknis yang dibutuhkan job seeker.
+Masih banyak pengetahuan seputar dunia teknologi lainnya yang kamu butuhkan di era modern ini.
+Penasaran dengan informasi tersebut? Tenang saja, jawabannya ada di Glints ExpertClass.
+Dipandu oleh para profesional sektor teknologi, yuk, ikuti kelas kategori tech sekarang agar kamu bisa jadi pekerja yang andal!
