@@ -48,9 +48,14 @@ const callService = async (baseUrl, endpoint, payload = null, opts = {}) => {
 	const url = `${baseUrl}${endpoint}`;
 	const method = opts.method || (payload ? 'POST' : 'GET');
 
+	const headers = { 'Content-Type': 'application/json' };
+	if (env.AI_API_KEY) {
+		headers['Authorization'] = `Bearer ${env.AI_API_KEY}`;
+	}
+
 	const fetchOptions = {
 		method,
-		headers: { 'Content-Type': 'application/json' },
+		headers,
 	};
 
 	if (payload && method !== 'GET') {
@@ -98,9 +103,18 @@ const callServiceMultipart = async (baseUrl, endpoint, formData, opts = {}) => {
 
 	logger.info(`AI multipart request → POST ${url}`);
 
+	const headers = {};
+	if (env.AI_API_KEY) {
+		headers['Authorization'] = `Bearer ${env.AI_API_KEY}`;
+	}
+
 	const response = await fetchWithTimeout(
 		url,
-		{ method: 'POST', body: formData },
+		{ 
+			method: 'POST', 
+			headers,
+			body: formData 
+		},
 		opts.timeoutMs || DEFAULT_TIMEOUT_MS
 	);
 
