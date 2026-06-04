@@ -12,7 +12,7 @@ const sendContactSupport = async (contactData) => {
     throw new AppError(ERROR_CODES.SERVER_ERROR || 'SERVER_ERROR', 'Konfigurasi email server belum diatur.', 500);
   }
 
-  // Create transporter
+  const dns = require('dns');
   const transporter = nodemailer.createTransport({
     host: env.SMTP_HOST,
     port: parseInt(env.SMTP_PORT) || 587,
@@ -22,6 +22,9 @@ const sendContactSupport = async (contactData) => {
       pass: env.SMTP_PASS,
     },
     family: 4, // Force IPv4 to prevent ENETUNREACH on IPv6-disabled networks (like Railway)
+    lookup: (hostname, options, callback) => {
+      dns.lookup(hostname, { family: 4 }, callback);
+    },
     connectionTimeout: 5000, // 5 seconds
     greetingTimeout: 5000,    // 5 seconds
     socketTimeout: 5000,      // 5 seconds

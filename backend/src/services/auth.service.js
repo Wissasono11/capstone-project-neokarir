@@ -192,6 +192,7 @@ const forgotPassword = async (email) => {
 	// If SMTP is configured and we successfully generated a reset link
 	if (resetLink && env.SMTP_HOST && env.SMTP_USER && env.SMTP_PASS) {
 		const nodemailer = require('nodemailer');
+		const dns = require('dns');
 		const transporter = nodemailer.createTransport({
 			host: env.SMTP_HOST,
 			port: parseInt(env.SMTP_PORT) || 587,
@@ -201,6 +202,9 @@ const forgotPassword = async (email) => {
 				pass: env.SMTP_PASS,
 			},
 			family: 4, // Force IPv4 to prevent ENETUNREACH on IPv6-disabled networks (like Railway)
+			lookup: (hostname, options, callback) => {
+				dns.lookup(hostname, { family: 4 }, callback);
+			},
 			connectionTimeout: 5000, // 5 seconds
 			greetingTimeout: 5000,    // 5 seconds
 			socketTimeout: 5000,      // 5 seconds
