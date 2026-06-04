@@ -64,26 +64,42 @@ export const useCVAnalyzer = () => {
     setStatus('uploading');
     setCurrentStep(0);
 
+    let reachedStep = 0;
+
     try {
       const response = await cvAnalyzerService.uploadAndSmartAnalyze(selectedFile, (progress, statusMessage) => {
         // Map progress to steps
+        let step = 0;
         if (progress <= 20) {
           setStatus('uploading');
-          setCurrentStep(0);
+          step = 0;
         } else if (progress <= 40) {
           setStatus('processing');
-          setCurrentStep(1);
+          step = 1;
         } else if (progress <= 60) {
           setStatus('processing');
-          setCurrentStep(2);
+          step = 2;
         } else if (progress <= 80) {
           setStatus('processing');
-          setCurrentStep(3);
+          step = 3;
         } else {
           setStatus('processing');
-          setCurrentStep(4);
+          step = 4;
         }
+        reachedStep = Math.max(reachedStep, step);
+        setCurrentStep(reachedStep);
       });
+
+      // Slowly transition remaining steps to target step (4) to ensure a smooth, completed experience
+      const targetStep = 4;
+      while (reachedStep < targetStep) {
+        reachedStep += 1;
+        setCurrentStep(reachedStep);
+        await new Promise(resolve => setTimeout(resolve, 800));
+      }
+
+      // Brief delay to let the user see the final step completed checkmark
+      await new Promise(resolve => setTimeout(resolve, 600));
 
       setResults(response.results);
       setStatus('done');

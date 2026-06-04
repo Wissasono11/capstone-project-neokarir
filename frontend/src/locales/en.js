@@ -172,7 +172,7 @@ const en = {
     improvementTipsTitle: "Additional Improvement Recommendations",
     improvementTipsDesc: "Actionable steps to boost your CV passing score",
     nerTitle: "NER (Named Entity Recognition) Information Extraction",
-    nerDesc: "Our AI system successfully mapped your CV text into the following 13 BIO tag sequences:",
+    nerDesc: "Our AI system successfully mapped your CV text into the following {count} BIO tag sequences:",
     noDataFound: "No data found",
     entities: {
       skillsTitle: 'Skills Detected',

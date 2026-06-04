@@ -8,6 +8,10 @@ const CVExtractedEntities = ({ entities }) => {
 
   if (!entities) return null;
 
+  const totalTagsCount = Object.values(entities || {}).reduce((acc, curr) => {
+    return acc + (Array.isArray(curr) ? curr.length : 0);
+  }, 0);
+
   return (
     <div className="bg-white rounded-[32px] border border-border p-6 md:p-8 shadow-sm w-full mb-8">
       {/* Title */}
@@ -16,7 +20,7 @@ const CVExtractedEntities = ({ entities }) => {
           {t.cvAnalyzer.nerTitle}
         </h3>
         <p className="text-xs md:text-sm font-medium text-secondary-text">
-          {t.cvAnalyzer.nerDesc}
+          {t.cvAnalyzer.nerDesc.replace('{count}', totalTagsCount)}
         </p>
       </div>
 

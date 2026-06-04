@@ -172,7 +172,7 @@ const id = {
     improvementTipsTitle: "Rekomendasi Perbaikan Tambahan",
     improvementTipsDesc: "Tindakan nyata untuk mendongkrak skor kelolosan CV Anda",
     nerTitle: "Ekstraksi Informasi NER (Named Entity Recognition)",
-    nerDesc: "Sistem kecerdasan buatan kami berhasil memetakan teks CV Anda menjadi 13 tag sequence BIO berikut:",
+    nerDesc: "Sistem kecerdasan buatan kami berhasil memetakan teks CV Anda menjadi {count} tag sequence BIO berikut:",
     noDataFound: "Tidak ditemukan data",
     entities: {
       skillsTitle: 'Skills Detected',
