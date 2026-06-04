@@ -79,7 +79,8 @@ export const useProfileSettings = () => {
       setSaveSuccess(true);
       setTimeout(() => setSaveSuccess(false), 3000);
     } catch (err) {
-      toastError(err.message || (language === 'en' ? 'Failed to save changes. Please try again.' : 'Gagal menyimpan perubahan. Silakan coba kembali.'));
+      const errorMessage = err.response?.data?.message || err.message || (language === 'en' ? 'Failed to save changes. Please try again.' : 'Gagal menyimpan perubahan. Silakan coba kembali.');
+      toastError(errorMessage);
     } finally {
       setIsSaving(false);
     }
@@ -114,7 +115,8 @@ export const useProfileSettings = () => {
         logout();
       }, 500);
     } catch (err) {
-      toastError(err.message || (language === 'en' ? 'Failed to delete account. Please check your password.' : 'Gagal menghapus akun. Silakan periksa password Anda.'));
+      const errorMessage = err.response?.data?.message || err.message || (language === 'en' ? 'Failed to delete account. Please check your password.' : 'Gagal menghapus akun. Silakan periksa password Anda.');
+      toastError(errorMessage);
       throw err; // Re-throw so modal can stay open on error
     } finally {
       setIsDeletingAccount(false);

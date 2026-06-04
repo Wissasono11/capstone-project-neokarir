@@ -150,13 +150,8 @@ const changePassword = async (userId, email, currentPassword, newPassword, _acce
 		throw new AppError(ERROR_CODES.INVALID_INPUT, 'Password saat ini salah', 400);
 	}
 
-	const adminSupabase = getAdminSupabaseClient();
-	if (!adminSupabase) {
-		throw new AppError(ERROR_CODES.SERVER_ERROR || 'SERVER_ERROR', 'Tidak dapat mengubah kata sandi: Admin client tidak dikonfigurasi.', 500);
-	}
-
-	// Update password using the admin client for guaranteed execution
-	const { error: updateError } = await adminSupabase.auth.admin.updateUserById(userId, {
+	// Update password using the user's own authenticated client session
+	const { error: updateError } = await tempClient.auth.updateUser({
 		password: newPassword
 	});
 
