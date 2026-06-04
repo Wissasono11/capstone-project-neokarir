@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Target, RefreshCw, Loader2 } from 'lucide-react';
+import { Target, RefreshCw, Loader2, AlertTriangle } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 import DashboardLayout from '../layouts/DashboardLayout';
 import Breadcrumb from '../components/ui/Breadcrumb';
@@ -23,6 +24,7 @@ const SkillGapPage = () => {
   const { resetOnboarding } = useAuth();
   const { t } = useLanguage();
   const [isUpdatingStatus, setIsUpdatingStatus] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const { 
     isLoading, 
     heroData, 
@@ -112,7 +114,7 @@ const SkillGapPage = () => {
             
             <div className="flex items-center gap-3">
               <button 
-                onClick={handleStartReprocess}
+                onClick={() => setIsModalOpen(true)}
                 disabled={isUpdatingStatus}
                 className="px-4 py-2 bg-indigo-600 text-white rounded-lg font-medium text-body-sm hover:bg-indigo-700 transition-colors flex items-center gap-2"
               >
@@ -161,6 +163,65 @@ const SkillGapPage = () => {
 
         </div>
       )}
+
+      {/* Reprocess Confirmation Modal */}
+      <AnimatePresence>
+        {isModalOpen && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center px-4">
+            {/* Backdrop */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setIsModalOpen(false)}
+              className="absolute inset-0 bg-black/40 backdrop-blur-[2px]"
+            />
+            
+            {/* Modal Content */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: 20 }}
+              className="relative w-full max-w-md bg-white rounded-[24px] shadow-xl overflow-hidden p-6 z-10"
+            >
+              <div className="flex flex-col items-center text-center">
+                <div className="w-12 h-12 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center mb-4">
+                  <AlertTriangle size={24} />
+                </div>
+                <h3 className="text-xl font-bold text-slate-800 mb-2">
+                  {t.profile.reprocessModalTitle}
+                </h3>
+                <p className="text-body-sm text-slate-500 mb-6 leading-relaxed">
+                  {t.profile.reprocessModalDesc}
+                </p>
+                <div className="flex gap-3 w-full">
+                  <button
+                    onClick={() => setIsModalOpen(false)}
+                    className="flex-1 px-4 py-3 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold rounded-xl transition-colors text-body-sm"
+                    disabled={isUpdatingStatus}
+                  >
+                    {t.common.cancel}
+                  </button>
+                  <button
+                    onClick={handleStartReprocess}
+                    disabled={isUpdatingStatus}
+                    className="flex-1 px-4 py-3 bg-amber-600 hover:bg-amber-700 text-white font-bold rounded-xl transition-colors flex items-center justify-center text-body-sm"
+                  >
+                    {isUpdatingStatus ? (
+                      <>
+                        <Loader2 size={16} className="animate-spin mr-2" />
+                        {t.profile.reprocessing}
+                      </>
+                    ) : (
+                      t.profile.reprocessModalConfirm
+                    )}
+                  </button>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
     </DashboardLayout>
   );
 };
