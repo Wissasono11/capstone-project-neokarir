@@ -21,6 +21,7 @@ const sendContactSupport = async (contactData) => {
       user: env.SMTP_USER,
       pass: env.SMTP_PASS,
     },
+    family: 4, // Force IPv4 to prevent ENETUNREACH on IPv6-disabled networks (like Railway)
   });
 
   // Verify connection configuration
