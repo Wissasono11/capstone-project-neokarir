@@ -116,11 +116,20 @@ export const useCareerSkills = (initialUser) => {
 
   const handleReprocess = useCallback(async () => {
     setIsReprocessing(true);
-    await new Promise(resolve => setTimeout(resolve, 1500));
+    try {
+      // Set onboarding as not completed in backend database profile_data
+      await profileService.updateProfile({
+        profile_data: {
+          is_onboarding_completed: false
+        }
+      });
+    } catch (err) {
+      console.error("Failed to update reprocessing status in DB:", err);
+    }
     setIsReprocessing(false);
     setIsModalOpen(false);
     resetOnboarding();
-    navigate('/onboarding', { state: { fromSettings: true } });
+    navigate('/onboarding', { state: { reprocess: true, fromSettings: true } });
   }, [navigate, resetOnboarding]);
 
   const openModal = () => setIsModalOpen(true);

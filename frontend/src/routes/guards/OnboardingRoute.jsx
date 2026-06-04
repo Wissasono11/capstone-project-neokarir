@@ -4,7 +4,7 @@ import { useAuth } from '../../contexts/AuthContext';
 import LoadingSpinner from '../../components/ui/LoadingSpinner';
 
 const OnboardingRoute = () => {
-  const { isAuthenticated, isNewUser, loading } = useAuth();
+  const { isAuthenticated, isNewUser, loading, user } = useAuth();
   const location = useLocation();
 
   if (loading) {
@@ -15,10 +15,9 @@ const OnboardingRoute = () => {
     return <Navigate to="/login" replace />;
   }
 
-  if (!isNewUser) {
-    if (location.state?.reprocess) {
-      return <Outlet />;
-    }
+  const isReprocessing = user?.profile_data?.is_onboarding_completed === false || location.state?.reprocess;
+
+  if (!isNewUser && !isReprocessing) {
     return <Navigate to="/dashboard" replace />;
   }
 

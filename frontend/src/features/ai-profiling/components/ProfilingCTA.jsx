@@ -18,7 +18,7 @@ const ProfilingCTA = () => {
         <p className="text-secondary-text">Jelajahi dasbor personalisasi lengkap Anda untuk melihat wawasan terperinci dan pekerjaan yang cocok.</p>
       </div>
       
-      <Link to="/dashboard" onClick={() => completeOnboarding()}>
+      <Link to="/dashboard" state={{ fromOnboarding: true }} onClick={() => completeOnboarding()}>
         <Button className="bg-primary hover:bg-primary/90 text-white rounded-xl px-8 py-4 font-bold text-lg inline-flex items-center gap-2 group whitespace-nowrap">
           Eksplorasi Dashboard 🚀
         </Button>

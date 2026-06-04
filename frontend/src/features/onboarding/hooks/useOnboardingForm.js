@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { replace, useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../../../contexts/AuthContext';
 import { cvAnalyzerService } from '../../cv-analyzer/api/cvAnalyzerService';
@@ -37,7 +37,40 @@ export const useOnboardingForm = () => {
   const location = useLocation();
   const { error, success } = useToast();
   const hasCompletedOnce = localStorage.getItem('neokarir_has_completed_onboarding_once') === 'true';
-  const isOldUser = hasCompletedOnce || !!user?.target_role || !!user?.profile_data?.target_role;
+  const isReprocessingFlow = user?.profile_data?.has_completed_once === true || user?.profile_data?.is_onboarding_completed === false || location.state?.reprocess || location.state?.fromSettings || hasCompletedOnce;
+
+  // Pre-populate form if the user is reprocessing and has existing profile data
+  const [isPrepopulated, setIsPrepopulated] = useState(false);
+
+  useEffect(() => {
+    if (user && isReprocessingFlow && !isPrepopulated) {
+      const pData = user.profile_data || {};
+      if (pData.career_goal) setCareerGoal(pData.career_goal);
+      if (pData.input_method) setInputMethod(pData.input_method);
+      
+      const skillsArray = pData.owned_skills || (user.skills_summary ? user.skills_summary.split(',').map(s => s.trim()).filter(Boolean) : []);
+      
+      setManualData({
+        domain: pData.target_domain || user.target_domain || '',
+        role: pData.target_role || user.target_role || '',
+        techStack: skillsArray,
+        experience: pData.user_experience || user.experience || '',
+        education: pData.user_education || user.education || ''
+      });
+      
+      setCvData({
+        fullName: user.name || '',
+        targetDomain: pData.target_domain || user.target_domain || '',
+        targetRole: pData.target_role || user.target_role || '',
+        skills: skillsArray,
+        techStack: skillsArray,
+        experience: pData.user_experience || user.experience || '',
+        education: pData.user_education || user.education || ''
+      });
+
+      setIsPrepopulated(true);
+    }
+  }, [user, isReprocessingFlow, isPrepopulated]);
 
   const nextStep = async () => {
     if (currentStep === 2 && inputMethod === 'upload') {
@@ -134,11 +167,13 @@ export const useOnboardingForm = () => {
           user_education: education,
           target_domain: domain,
           target_role: targetRole,
-          status: 'Open to Work'
+          status: 'Open to Work',
+          has_completed_once: true,
+          is_onboarding_completed: true
         }
       };
       
-      if (isOldUser || location.state?.fromSettings) {
+      if (isReprocessingFlow) {
         // Update backend with the full profile
         await profileService.updateProfile(profileData);
         
@@ -170,7 +205,7 @@ export const useOnboardingForm = () => {
         }
         
         success("Profil berhasil disimpan!");
-        navigate('/dashboard', { replace: true });
+        navigate('/dashboard', { replace: true, state: { fromOnboarding: true } });
       } else {
         success("Profil berhasil disimpan!");
         navigate('/ai-career-profiling', { 

@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Target, RefreshCw } from 'lucide-react';
+import { Target, RefreshCw, Loader2 } from 'lucide-react';
 
 import DashboardLayout from '../layouts/DashboardLayout';
 import Breadcrumb from '../components/ui/Breadcrumb';
@@ -8,6 +8,7 @@ import SkillGapSkeleton from '../features/skill-gap-analysis/components/SkillGap
 import { useSkillGap } from '../features/skill-gap-analysis/hooks/useSkillGap';
 import { useAuth } from '../contexts/AuthContext';
 import { useLanguage } from '../contexts/LanguageContext';
+import { profileService } from '../features/profile-settings/api/profileService';
 
 // Components
 import SkillGapHero from '../features/skill-gap-analysis/components/SkillGapHero';
@@ -21,6 +22,7 @@ const SkillGapPage = () => {
   const navigate = useNavigate();
   const { resetOnboarding } = useAuth();
   const { t } = useLanguage();
+  const [isUpdatingStatus, setIsUpdatingStatus] = useState(false);
   const { 
     isLoading, 
     heroData, 
@@ -33,6 +35,22 @@ const SkillGapPage = () => {
     toggleCourse,
     ownedSkills
   } = useSkillGap();
+
+  const handleStartReprocess = async () => {
+    setIsUpdatingStatus(true);
+    try {
+      await profileService.updateProfile({
+        profile_data: {
+          is_onboarding_completed: false
+        }
+      });
+    } catch (err) {
+      console.error("Failed to update reprocessing status in DB:", err);
+    }
+    setIsUpdatingStatus(false);
+    resetOnboarding();
+    navigate('/onboarding', { state: { reprocess: true } });
+  };
 
   const breadcrumbItems = [
     { label: t.sidebar.skillGap, path: '/dashboard/skill-gap', icon: Target }
@@ -53,13 +71,15 @@ const SkillGapPage = () => {
             {t.skillGap.noAnalysisDesc}
           </p>
           <button 
-            onClick={() => {
-              resetOnboarding();
-              navigate('/onboarding');
-            }}
+            onClick={handleStartReprocess}
+            disabled={isUpdatingStatus}
             className="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-bold text-body-sm transition-all duration-300 hover:shadow-lg shadow-indigo-100 flex items-center gap-2"
           >
-            <RefreshCw className="w-4 h-4 animate-spin-slow" />
+            {isUpdatingStatus ? (
+              <Loader2 className="w-4 h-4 animate-spin" />
+            ) : (
+              <RefreshCw className="w-4 h-4 animate-spin-slow" />
+            )}
             {t.skillGap.startOnboarding}
           </button>
         </div>
@@ -92,13 +112,15 @@ const SkillGapPage = () => {
             
             <div className="flex items-center gap-3">
               <button 
-                onClick={() => {
-                  resetOnboarding();
-                  navigate('/onboarding');
-                }}
+                onClick={handleStartReprocess}
+                disabled={isUpdatingStatus}
                 className="px-4 py-2 bg-indigo-600 text-white rounded-lg font-medium text-body-sm hover:bg-indigo-700 transition-colors flex items-center gap-2"
               >
-                <RefreshCw className="w-4 h-4" />
+                {isUpdatingStatus ? (
+                  <Loader2 className="w-4 h-4 animate-spin" />
+                ) : (
+                  <RefreshCw className="w-4 h-4" />
+                )}
                 {t.skillGap.updateSkill}
               </button>
             </div>

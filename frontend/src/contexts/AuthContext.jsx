@@ -45,10 +45,15 @@ export const AuthProvider = ({ children }) => {
         setUser(mergedUser);
         localStorage.setItem('neokarir_user_profile', JSON.stringify(mergedUser));
         
-        if (profile.target_role) {
+        const hasCompletedOnboarding = profile.target_role && profile.profile_data?.is_onboarding_completed !== false;
+        
+        if (hasCompletedOnboarding) {
           setIsNewUser(false);
           localStorage.setItem('neokarir_onboarding_completed', 'true');
           localStorage.setItem('neokarir_has_completed_onboarding_once', 'true');
+        } else {
+          setIsNewUser(true);
+          localStorage.removeItem('neokarir_onboarding_completed');
         }
 
         return mergedUser;
