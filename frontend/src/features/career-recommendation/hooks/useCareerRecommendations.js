@@ -10,7 +10,7 @@ export const useCareerRecommendations = () => {
   const [fullProfileUser, setFullProfileUser] = useState(null);
   
   // 1. Manage checklist courses via custom hook
-  const { completedCourses, toggleCourse } = useCompletedCourses(authUser?.email);
+  const { completedCourses, toggleCourse, isLoading: completedLoading } = useCompletedCourses(authUser?.email);
 
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedDomain, setSelectedDomain] = useState('All');
@@ -100,8 +100,10 @@ export const useCareerRecommendations = () => {
     ? Math.round(topThreeScores.reduce((a, b) => a + b, 0) / topThreeScores.length)
     : 0;
 
+  const isOverallLoading = isLoading || completedLoading;
+
   return {
-    isLoading,
+    isLoading: isOverallLoading,
     recommendations: sortedRecommendations,
     activeJob,
     activeJobId,

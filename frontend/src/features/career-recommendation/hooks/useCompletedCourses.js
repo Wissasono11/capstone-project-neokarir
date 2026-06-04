@@ -4,6 +4,7 @@ import { useToast } from '../../../contexts/ToastContext';
 
 export const useCompletedCourses = (userEmail) => {
   const [completedCourses, setCompletedCourses] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
   const { success: toastSuccess, error: toastError } = useToast();
 
   const normalizeCourseId = (value) => (value || '').toString().trim().toLowerCase();
@@ -23,14 +24,18 @@ export const useCompletedCourses = (userEmail) => {
   useEffect(() => {
     const fetchCourses = async () => {
       if (userEmail) {
+        setIsLoading(true);
         try {
           const list = await careerService.getCompletedCourses(userEmail);
           setCompletedCourses(list);
         } catch (e) {
           console.error("Error loading completed courses", e);
+        } finally {
+          setIsLoading(false);
         }
       } else {
         setCompletedCourses([]);
+        setIsLoading(false);
       }
     };
     
@@ -59,6 +64,7 @@ export const useCompletedCourses = (userEmail) => {
 
   return {
     completedCourses,
-    toggleCourse
+    toggleCourse,
+    isLoading
   };
 };
