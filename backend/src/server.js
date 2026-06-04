@@ -1,3 +1,6 @@
+const dns = require('dns');
+dns.setDefaultResultOrder('ipv4first');
+
 const env = require('./config/env');
 const app = require('./app');
 const logger = require('./utils/logger');
