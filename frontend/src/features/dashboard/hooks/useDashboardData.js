@@ -14,9 +14,9 @@ export const useDashboardData = () => {
 
   const topRecommendations = useDashboardRecommendations();
   const { compatibilityScore: defaultCompatibility, matchedJob } = useDashboardCompatibility();
-  const dynamicTips = useDashboardTips(matchedJob);
   
-  const { radarData, heroData, isLoading: skillGapLoading } = useSkillGap();
+  const { radarData, heroData, isLoading: skillGapLoading, learningPath } = useSkillGap();
+  const dynamicTips = useDashboardTips(matchedJob, learningPath);
   
   const compatibilityScore = heroData?.overallReadiness || defaultCompatibility;
 
