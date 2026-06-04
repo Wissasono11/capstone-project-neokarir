@@ -331,7 +331,7 @@ const en = {
     skillsNeededCount: (needed) => `${needed} more skill${needed !== 1 ? 's' : ''} to learn`,
     minEducation: "Minimum Education",
     educationMatchSuccess: "Matches qualifications",
-    educationMatchGap: (current) => `Education gap: You are ${current}`,
+    educationMatchGap: (current) => current === 'Tidak Disebutkan' || current === 'Tidak Ditentukan' || current === 'Not Mentioned' ? 'Education not specified in profile' : `Education gap: Your level is ${current}`,
     workExperience: "Work Experience",
     experienceRequired: (required) => `Required: ${required}`,
     experienceMatchGap: (current) => `Experience gap: Your current experience is ${current}`,

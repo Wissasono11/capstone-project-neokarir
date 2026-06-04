@@ -331,7 +331,7 @@ const id = {
     skillsNeededCount: (needed) => `${needed} skill lagi perlu dipelajari`,
     minEducation: "Pendidikan Minimal",
     educationMatchSuccess: "Sesuai dengan kualifikasi",
-    educationMatchGap: (current) => `Gap pendidikan: Kamu ${current}`,
+    educationMatchGap: (current) => current === 'Tidak Disebutkan' || current === 'Tidak Ditentukan' ? 'Pendidikan belum diisi di profil' : `Gap pendidikan: Jenjang kamu ${current}`,
     workExperience: "Pengalaman Kerja",
     experienceRequired: (required) => `Dibutuhkan: ${required}`,
     experienceMatchGap: (current) => `Ada gap: Pengalaman kamu saat ini adalah ${current}`,
