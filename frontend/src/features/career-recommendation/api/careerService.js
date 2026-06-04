@@ -122,6 +122,9 @@ export const careerService = {
       const completedCourses = Array.isArray(profileData.completed_courses) ? profileData.completed_courses : [];
       const catalogCourseIds = flattenRecommendationCourses(recommendations);
       const { courses: canonicalCourses, changed } = canonicalizeCompletedCourses(completedCourses, catalogCourseIds);
+      
+      // Clean up localStorage entry if it exists to keep local storage clean
+      localStorage.removeItem(`completed_courses_${email}`);
 
       if (changed) {
         await api.put('/profile/me', {
@@ -134,8 +137,7 @@ export const careerService = {
       return canonicalCourses;
     } catch (e) {
       console.error("Failed to fetch completed courses from backend", e);
-      const stored = localStorage.getItem(`completed_courses_${email}`);
-      return stored ? JSON.parse(stored) : [];
+      return [];
     }
   },
 

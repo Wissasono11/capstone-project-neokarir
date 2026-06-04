@@ -50,7 +50,7 @@ export const AuthProvider = ({ children }) => {
         if (hasCompletedOnboarding) {
           setIsNewUser(false);
           localStorage.setItem('neokarir_onboarding_completed', 'true');
-          localStorage.setItem('neokarir_has_completed_onboarding_once', 'true');
+          localStorage.removeItem('neokarir_has_completed_onboarding_once');
         } else {
           setIsNewUser(true);
           localStorage.removeItem('neokarir_onboarding_completed');
@@ -99,7 +99,7 @@ export const AuthProvider = ({ children }) => {
           }
         }
         if (onboardingCompleted) {
-          localStorage.setItem('neokarir_has_completed_onboarding_once', 'true');
+          localStorage.removeItem('neokarir_has_completed_onboarding_once');
         }
       }
       setLoading(false);
@@ -146,7 +146,7 @@ export const AuthProvider = ({ children }) => {
     
     if (!isNew) {
       localStorage.setItem('neokarir_onboarding_completed', 'true');
-      localStorage.setItem('neokarir_has_completed_onboarding_once', 'true');
+      localStorage.removeItem('neokarir_has_completed_onboarding_once');
     }
   };
 
@@ -163,7 +163,7 @@ export const AuthProvider = ({ children }) => {
   const completeOnboarding = (profileData) => {
     setIsNewUser(false);
     localStorage.setItem('neokarir_onboarding_completed', 'true');
-    localStorage.setItem('neokarir_has_completed_onboarding_once', 'true');
+    localStorage.removeItem('neokarir_has_completed_onboarding_once');
     
     if (profileData) {
       const updatedUser = { ...user, ...profileData };

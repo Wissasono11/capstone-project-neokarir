@@ -36,8 +36,7 @@ export const useOnboardingForm = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const { error, success } = useToast();
-  const hasCompletedOnce = localStorage.getItem('neokarir_has_completed_onboarding_once') === 'true';
-  const isReprocessingFlow = user?.profile_data?.has_completed_once === true || user?.profile_data?.is_onboarding_completed === false || location.state?.reprocess || location.state?.fromSettings || hasCompletedOnce;
+  const isReprocessingFlow = user?.profile_data?.has_completed_once === true || user?.profile_data?.is_onboarding_completed === false || location.state?.reprocess || location.state?.fromSettings;
 
   // Pre-populate form if the user is reprocessing and has existing profile data
   const [isPrepopulated, setIsPrepopulated] = useState(false);
