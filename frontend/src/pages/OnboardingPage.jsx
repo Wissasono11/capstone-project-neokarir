@@ -1,4 +1,6 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
+import { useLanguage } from '../contexts/LanguageContext';
 import { Loader2, Sparkles } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useOnboardingForm } from '../features/onboarding/hooks/useOnboardingForm';
@@ -9,11 +11,15 @@ import StepDataCV from '../features/onboarding/components/StepDataCV';
 import StepSummary from '../features/onboarding/components/StepSummary';
 
 const OnboardingPage = () => {
+  const { t } = useLanguage();
   const onboardingState = useOnboardingForm();
   const { currentStep, isAnalyzing } = onboardingState;
 
   return (
     <OnboardingLayout currentStep={currentStep} totalSteps={3}>
+      <Helmet>
+        <title>{t.title?.onboarding ? `${t.title.onboarding} - NeoKarir` : 'NeoKarir'}</title>
+      </Helmet>
       <OnboardingStepIndicator currentStep={currentStep} />
       
       <div className="w-full relative min-h-[400px]">

@@ -1,5 +1,6 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import { Award } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 import { useLanguage } from '../contexts/LanguageContext';
 
 // Layout & UI
@@ -40,8 +41,15 @@ const CareerRecommendationDetailPage = () => {
     navigate('/dashboard/recommendations');
   };
 
+  const pageTitle = job 
+    ? `${job.job_title} | ${t.title?.recommendationDetail || 'Detail'}` 
+    : (t.title?.recommendationDetail || 'Detail');
+
   return (
     <DashboardLayout>
+      <Helmet>
+        <title>{pageTitle} - NeoKarir</title>
+      </Helmet>
       {/* Header Navigation */}
       <div className="flex flex-col gap-4 mb-6">
         <div className="flex items-center gap-3">

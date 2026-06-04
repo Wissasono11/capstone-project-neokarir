@@ -1,4 +1,6 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
+import { useLanguage } from '../contexts/LanguageContext';
 import DashboardLayout from '../layouts/DashboardLayout';
 import JobMarketHeader from '../features/jobs-market/components/JobMarketHeader';
 import JobMarketOverview from '../features/jobs-market/components/JobMarketOverview';
@@ -9,6 +11,7 @@ import JobsMarketSkeleton from '../features/jobs-market/components/JobsMarketSke
 import { useJobMarketForecast } from '../features/jobs-market/hooks/useJobMarketForecast';
 
 const JobsMarketPage = () => {
+  const { t } = useLanguage();
   const {
     domains,
     selectedDomain,
@@ -25,6 +28,9 @@ const JobsMarketPage = () => {
 
   return (
     <DashboardLayout>
+      <Helmet>
+        <title>{t.title?.jobsMarket ? `${t.title.jobsMarket} - NeoKarir` : 'NeoKarir'}</title>
+      </Helmet>
       {loading ? (
         <JobsMarketSkeleton />
       ) : (

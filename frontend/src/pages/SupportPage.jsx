@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { HelpCircle } from 'lucide-react';
 
 import DashboardLayout from '../layouts/DashboardLayout';
@@ -75,6 +76,9 @@ const SupportPage = () => {
 
   return (
     <DashboardLayout>
+      <Helmet>
+        <title>{t.title?.support ? `${t.title.support} - NeoKarir` : 'NeoKarir'}</title>
+      </Helmet>
       {/* Breadcrumb */}
       <div className="mb-6">
         <Breadcrumb items={breadcrumbItems} />

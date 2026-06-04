@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import DashboardLayout from '../layouts/DashboardLayout';
 import StatCard from '../features/dashboard/components/StatCard';
 import CurrentFocusCard from '../features/dashboard/components/CurrentFocusCard';
@@ -36,6 +37,9 @@ const DashboardPage = () => {
 
   return (
     <DashboardLayout>
+      <Helmet>
+        <title>{t.title?.dashboard ? `${t.title.dashboard} - NeoKarir` : 'NeoKarir'}</title>
+      </Helmet>
       {isLoading ? (
         <DashboardSkeleton />
       ) : (

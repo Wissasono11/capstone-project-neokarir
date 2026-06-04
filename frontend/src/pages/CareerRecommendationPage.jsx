@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { Award, AlertCircle } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 import { useLanguage } from '../contexts/LanguageContext';
 
 // Layout & UI
@@ -43,6 +44,9 @@ const CareerRecommendationPage = () => {
 
   return (
     <DashboardLayout>
+      <Helmet>
+        <title>{t.title?.recommendations ? `${t.title.recommendations} - NeoKarir` : 'NeoKarir'}</title>
+      </Helmet>
       {/* Breadcrumbs */}
       <div className="mb-6">
         <Breadcrumb items={breadcrumbItems} />

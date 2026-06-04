@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Target, RefreshCw, Loader2, AlertTriangle } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
 
 import DashboardLayout from '../layouts/DashboardLayout';
 import Breadcrumb from '../components/ui/Breadcrumb';
@@ -61,6 +62,9 @@ const SkillGapPage = () => {
   if (!isLoading && !heroData) {
     return (
       <DashboardLayout>
+        <Helmet>
+          <title>{t.title?.skillGap ? `${t.title.skillGap} - NeoKarir` : 'NeoKarir'}</title>
+        </Helmet>
         <div className="mb-6">
           <Breadcrumb items={breadcrumbItems} />
         </div>
@@ -91,6 +95,9 @@ const SkillGapPage = () => {
 
   return (
     <DashboardLayout>
+      <Helmet>
+        <title>{t.title?.skillGap ? `${t.title.skillGap} - NeoKarir` : 'NeoKarir'}</title>
+      </Helmet>
       {/* Navigation Breadcrumb */}
       <div className="mb-6">
         <Breadcrumb items={breadcrumbItems} />

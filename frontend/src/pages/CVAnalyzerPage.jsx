@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FileText } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 import DashboardLayout from '../layouts/DashboardLayout';
 import Breadcrumb from '../components/ui/Breadcrumb';
 import CVAnalyzerSkeleton from '../features/cv-analyzer/components/CVAnalyzerSkeleton';
@@ -38,6 +39,9 @@ const CVAnalyzerPage = () => {
   if (isInitialLoading) {
     return (
       <DashboardLayout>
+        <Helmet>
+          <title>{t.title?.cvAnalyzer ? `${t.title.cvAnalyzer} - NeoKarir` : 'NeoKarir'}</title>
+        </Helmet>
         <div className="mb-6">
           <Breadcrumb items={breadcrumbItems} />
         </div>
@@ -48,6 +52,9 @@ const CVAnalyzerPage = () => {
 
   return (
     <DashboardLayout>
+      <Helmet>
+        <title>{t.title?.cvAnalyzer ? `${t.title.cvAnalyzer} - NeoKarir` : 'NeoKarir'}</title>
+      </Helmet>
       <div className="mb-6">
         <Breadcrumb items={breadcrumbItems} />
       </div>

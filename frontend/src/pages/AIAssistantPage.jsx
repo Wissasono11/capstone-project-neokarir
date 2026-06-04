@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
+import { useLanguage } from '../contexts/LanguageContext';
 import DashboardLayout from '../layouts/DashboardLayout';
 import AIAssistantHero from '../features/ai-assistant/components/AIAssistantHero';
 import ChatWindow from '../features/ai-assistant/components/ChatWindow';
 import AIAssistantSkeleton from '../features/ai-assistant/components/AIAssistantSkeleton';
 
 const AIAssistantPage = () => {
+  const { t } = useLanguage();
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -16,6 +19,9 @@ const AIAssistantPage = () => {
 
   return (
     <DashboardLayout>
+      <Helmet>
+        <title>{t.title?.aiAssistant ? `${t.title.aiAssistant} - NeoKarir` : 'NeoKarir'}</title>
+      </Helmet>
       {isLoading ? (
         <AIAssistantSkeleton />
       ) : (

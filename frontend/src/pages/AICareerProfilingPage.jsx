@@ -1,4 +1,6 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
+import { useLanguage } from '../contexts/LanguageContext';
 import { motion } from 'framer-motion';
 import { BrainCircuit } from 'lucide-react';
 import { useAIProfiling } from '../features/ai-profiling/hooks/useAIProfiling';
@@ -10,11 +12,15 @@ import LearningPathSection from '../features/ai-profiling/components/LearningPat
 import ProfilingCTA from '../features/ai-profiling/components/ProfilingCTA';
 
 const AICareerProfilingPage = () => {
+  const { t } = useLanguage();
   const { isProcessing, progress, processingStatus, results } = useAIProfiling();
 
   if (isProcessing) {
     return (
       <div className="min-h-screen bg-canvas-white flex flex-col items-center justify-center p-4 relative overflow-hidden">
+        <Helmet>
+          <title>{t.title?.aiCareerProfiling ? `${t.title.aiCareerProfiling} - NeoKarir` : 'NeoKarir'}</title>
+        </Helmet>
         {/* Decorative background */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent-purple-light/30 rounded-full blur-3xl" />
 
@@ -62,6 +68,9 @@ const AICareerProfilingPage = () => {
 
   return (
     <div className="min-h-screen bg-canvas-white pb-24">
+      <Helmet>
+        <title>{t.title?.aiCareerProfiling ? `${t.title.aiCareerProfiling} - NeoKarir` : 'NeoKarir'}</title>
+      </Helmet>
       {/* Top Navigation Bar - Simple */}
       <nav className="w-full bg-white border-b border-border py-4 sticky top-0 z-50">
         <div className="max-w-[1280px] mx-auto px-6 flex items-center">

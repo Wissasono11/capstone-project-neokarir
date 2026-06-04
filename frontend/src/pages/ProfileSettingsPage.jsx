@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Settings } from 'lucide-react';
 import DashboardLayout from '../layouts/DashboardLayout';
 import Breadcrumb from '../components/ui/Breadcrumb';
@@ -119,6 +120,9 @@ const ProfileSettingsPage = () => {
 
   return (
     <DashboardLayout>
+      <Helmet>
+        <title>{t.title?.settings ? `${t.title.settings} - NeoKarir` : 'NeoKarir'}</title>
+      </Helmet>
       {/* Breadcrumb */}
       <Breadcrumb items={breadcrumbItems} className="mb-6" />
 
