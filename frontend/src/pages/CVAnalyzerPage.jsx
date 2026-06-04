@@ -13,15 +13,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 
 const CVAnalyzerPage = () => {
   const navigate = useNavigate();
-  const [isLoading, setIsLoading] = useState(true);
   const { t } = useLanguage();
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 600);
-    return () => clearTimeout(timer);
-  }, []);
 
   const { 
     file, 
@@ -31,7 +23,8 @@ const CVAnalyzerPage = () => {
     error, 
     results, 
     uploadCV, 
-    resetAnalysis 
+    resetAnalysis,
+    isInitialLoading
   } = useCVAnalyzer();
 
   const breadcrumbItems = [
@@ -42,7 +35,7 @@ const CVAnalyzerPage = () => {
     breadcrumbItems.push({ label: t.cvAnalyzer.resultsTitle });
   }
 
-  if (isLoading) {
+  if (isInitialLoading) {
     return (
       <DashboardLayout>
         <div className="mb-6">

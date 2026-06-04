@@ -9,9 +9,32 @@ export const useCVAnalyzer = () => {
   const [currentStep, setCurrentStep] = useState(0);
   const [error, setError] = useState(null);
   const [results, setResults] = useState(null);
+  const [isInitialLoading, setIsInitialLoading] = useState(true);
   const { success: toastSuccess, error: toastError } = useToast();
 
+  useEffect(() => {
+    const fetchLatestAnalysis = async () => {
+      try {
+        const response = await cvAnalyzerService.getLatestAnalysis();
+        if (response?.cv?.cv_data) {
+          const cvData = response.cv.cv_data;
+          if (cvData.atsScore !== undefined || cvData.summary || cvData.strengths?.length > 0) {
+            setResults(cvData);
+            setStatus('done');
+            if (response.cv.file_name) {
+              setFile({ name: response.cv.file_name });
+            }
+          }
+        }
+      } catch (err) {
+        console.warn("Failed to fetch latest CV analysis", err);
+      } finally {
+        setIsInitialLoading(false);
+      }
+    };
 
+    fetchLatestAnalysis();
+  }, []);
 
   const uploadCV = useCallback(async (selectedFile) => {
     if (!selectedFile) return;
@@ -89,6 +112,7 @@ export const useCVAnalyzer = () => {
     error,
     results,
     uploadCV,
-    resetAnalysis
+    resetAnalysis,
+    isInitialLoading
   };
 };
