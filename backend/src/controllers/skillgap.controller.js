@@ -11,7 +11,12 @@ const getMySkillGap = asyncHandler(async (req, res) => {
 	const jobId = req.query.jobId || null;
 	let result = await SkillgapService.getByUserId(req.user.id, req.accessToken, jobId);
 	
-	const hasValidAnalysis = result && result.analysis_result && Object.keys(result.analysis_result).length > 0;
+	const hasValidAnalysis = result && 
+		result.analysis_result && 
+		Object.keys(result.analysis_result).length > 0 &&
+		Array.isArray(result.matched_skills) &&
+		Array.isArray(result.missing_skills) &&
+		(result.matched_skills.length > 0 || result.missing_skills.length > 0);
 	
 	if (!hasValidAnalysis) {
 		// Trigger the first analysis automatically if no record exists or if it's an old empty record

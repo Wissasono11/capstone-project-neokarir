@@ -174,7 +174,7 @@ const analyze = async (userId, payload, accessToken) => {
 		match_score = Math.min(100, Math.round(match_score + roadmapProgress.bonusScore));
 	}
 
-	if (match_score === 0 && matched_skills.length === 0) {
+	if (matched_skills.length === 0 && missing_skills.length === 0) {
 		// Fallback to recommendation-matching logic if AI response doesn't provide them
 		let recommendations = await RecommendationRepository.listByUserId(userId, accessToken);
 		if (!recommendations || recommendations.length === 0) {
