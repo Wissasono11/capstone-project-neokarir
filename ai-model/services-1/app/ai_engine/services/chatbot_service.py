@@ -147,7 +147,7 @@ async def generate_chatbot_response(user_id: str, message: str) -> dict:
         user_data = await get_user_mock(user_id)
         job_data = await get_job_mock()
         match_result = calculate_single_job_match(user_data, job_data)
-        context_data = f"Fakta Sistem: Kecocokan {match_result['match_percentage']}%. Skill kurang: {', '.join(match_result['missing_skills'])}."
+        context_data = f"Fakta Sistem: Kecocokan {match_result['match_percentage']}%. Skill kurang: {', '.join(match_result['skill_match_details']['missing'])}."
 
     elif intent in ["tanya_roadmap_karir", "tanya_tips_rekrutmen"]:
         # Panggil fungsi RAG
