@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useCareerRecommendations } from '../../career-recommendation/hooks/useCareerRecommendations';
 import { useSkillGapMetrics } from './useSkillGapMetrics';
 import { useSkillGapRecommendations } from './useSkillGapRecommendations';
+import { getSkillCategory } from '../data/skillTaxonomy';
 
 export const useSkillGap = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -107,16 +108,8 @@ export const useSkillGap = () => {
     };
   };
 
-  // 3. Transform & Override radar chart data (Support dual series: A (current) and B (required))
+  // 3. Transform & Override radar chart data (Moved below adjustedSkillBreakdown to calculate dynamically)
   const finalRawRadarData = rawRadarData || defaultRadarData;
-  const radarData = Array.isArray(finalRawRadarData) 
-    ? finalRawRadarData.map(item => ({
-        subject: item.category || item.subject,
-        A: item.current !== undefined ? item.current : (item.A !== undefined ? item.A : 50),
-        B: item.required !== undefined ? item.required : (item.B !== undefined ? item.B : 85),
-        fullMark: 100
-      }))
-    : defaultRadarData;
 
   // 4. Normalize recommended actions to array
   const rawActions = skillGapData?.analysis_result?.recommended_actions || defaultActions;
@@ -246,6 +239,39 @@ export const useSkillGap = () => {
       trend: current >= item.required ? 'up' : 'down'
     };
   });
+
+  // 3. Dynamically map radar chart data based on adjustedSkillBreakdown (Support dual series: A (current) and B (required))
+  const radarData = Array.isArray(finalRawRadarData) 
+    ? finalRawRadarData.map(item => {
+        const subjectName = (item.category || item.subject || '').toLowerCase().trim();
+        
+        // 1. Try to match as a category
+        const skillsInCategory = adjustedSkillBreakdown.filter(skillItem => {
+          const skillCat = getSkillCategory(resolvedTargetJob?.job_domain || resolvedTargetJob?.job_title, skillItem.skill).toLowerCase().trim();
+          return skillCat === subjectName;
+        });
+
+        let currentVal = item.current !== undefined ? item.current : (item.A !== undefined ? item.A : 50);
+
+        if (skillsInCategory.length > 0) {
+          const sumCurrent = skillsInCategory.reduce((sum, s) => sum + s.current, 0);
+          currentVal = Math.round(sumCurrent / skillsInCategory.length);
+        } else {
+          // 2. Try to match as an individual skill name directly
+          const matchedSkill = adjustedSkillBreakdown.find(s => (s.skill || '').toLowerCase().trim() === subjectName);
+          if (matchedSkill) {
+            currentVal = matchedSkill.current;
+          }
+        }
+
+        return {
+          subject: item.category || item.subject,
+          A: currentVal,
+          B: item.required !== undefined ? item.required : (item.B !== undefined ? item.B : 85),
+          fullMark: 100
+        };
+      })
+    : defaultRadarData;
 
   const matchedSkillsCountWithRoadmap = Math.min(
     totalSkills,
