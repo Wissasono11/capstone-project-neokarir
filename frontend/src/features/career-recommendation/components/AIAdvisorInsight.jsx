@@ -1,6 +1,18 @@
+import React from 'react';
 import { BrainCircuit } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../../../contexts/LanguageContext';
+
+const renderInsightText = (text) => {
+  if (!text) return '';
+  const parts = text.split('*');
+  return parts.map((part, index) => {
+    if (index % 2 === 1) {
+      return <strong key={index} className="font-bold text-indigo-700">{part}</strong>;
+    }
+    return part;
+  });
+};
 
 const AIAdvisorInsight = ({ user }) => {
   const { t } = useLanguage();
@@ -20,11 +32,11 @@ const AIAdvisorInsight = ({ user }) => {
             {t.career.advisorInsightTitle}
           </h4>
           <p className="text-caption text-slate-600 font-medium leading-relaxed">
-            {t.career.advisorInsight(
+            {renderInsightText(t.career.advisorInsight(
               user?.education || 'S1/D4', 
               user?.experience || 'Fresh Graduate', 
               user?.domain || 'Software Development'
-            )}
+            ))}
           </p>
         </div>
       </div>
