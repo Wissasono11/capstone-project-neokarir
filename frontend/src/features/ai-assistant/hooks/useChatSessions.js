@@ -72,7 +72,7 @@ export const useChatSessions = (user) => {
     };
     
     fetchSessions();
-  }, [user]);
+  }, [user?.id, user?.name]);
 
   const setupInitialDefaultSession = (name) => {
     const defaultId = `session-${Date.now()}`;
@@ -95,11 +95,14 @@ export const useChatSessions = (user) => {
     const newId = `session-${Date.now()}`;
     const newSession = createDefaultSessionObj(newId, name);
     
-    const updated = [newSession, ...sessions];
-    saveAllSessions(updated);
+    setSessions(prevSessions => {
+      const updated = [newSession, ...prevSessions];
+      localStorage.setItem('neokarir_chat_sessions', JSON.stringify(updated));
+      return updated;
+    });
     setActiveSessionId(newId);
     localStorage.setItem('neokarir_active_session_id', newId);
-  }, [sessions, user]);
+  }, [user]);
 
   // Switch active session
   const selectSession = useCallback((id) => {
@@ -124,59 +127,70 @@ export const useChatSessions = (user) => {
       }
     }
     
-    const updated = sessions.filter(s => s.id !== id);
-    
-    if (updated.length === 0) {
-      const name = user?.name?.split(' ')[0] || 'Franz';
-      const defaultId = `session-${Date.now()}`;
-      const initialSession = createDefaultSessionObj(defaultId, name);
-      saveAllSessions([initialSession]);
-      setActiveSessionId(defaultId);
-      localStorage.setItem('neokarir_active_session_id', defaultId);
-    } else {
-      saveAllSessions(updated);
-      if (activeSessionId === id) {
-        const nextActiveId = updated[0].id;
-        setActiveSessionId(nextActiveId);
-        localStorage.setItem('neokarir_active_session_id', nextActiveId);
+    setSessions(prevSessions => {
+      const updated = prevSessions.filter(s => s.id !== id);
+      
+      if (updated.length === 0) {
+        const name = user?.name?.split(' ')[0] || 'Franz';
+        const defaultId = `session-${Date.now()}`;
+        const initialSession = createDefaultSessionObj(defaultId, name);
+        const finalSessions = [initialSession];
+        localStorage.setItem('neokarir_chat_sessions', JSON.stringify(finalSessions));
+        setActiveSessionId(defaultId);
+        localStorage.setItem('neokarir_active_session_id', defaultId);
+        return finalSessions;
+      } else {
+        localStorage.setItem('neokarir_chat_sessions', JSON.stringify(updated));
+        if (activeSessionId === id) {
+          const nextActiveId = updated[0].id;
+          setActiveSessionId(nextActiveId);
+          localStorage.setItem('neokarir_active_session_id', nextActiveId);
+        }
+        return updated;
       }
-    }
-  }, [sessions, activeSessionId, user]);
+    });
+  }, [activeSessionId, user]);
 
   // Update session messages (also handles auto-rename on first user query)
   const updateSessionMessages = useCallback((sessionId, newMessages, textForAutoRename) => {
-    const updated = sessions.map(session => {
-      if (session.id === sessionId) {
-        let newTitle = session.title;
-        if (textForAutoRename && session.title === 'Obrolan Baru') {
-          newTitle = textForAutoRename.length > 28 ? textForAutoRename.substring(0, 25) + '...' : textForAutoRename;
-          newTitle = newTitle.charAt(0).toUpperCase() + newTitle.slice(1);
-          
-          const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
-          if (uuidRegex.test(sessionId)) {
-             import('../api/aiAssistantService').then(({ aiAssistantService }) => {
-               aiAssistantService.renameSession(sessionId, newTitle).catch(e => console.error("Auto-rename failed", e));
-             });
+    setSessions(prevSessions => {
+      const updated = prevSessions.map(session => {
+        if (session.id === sessionId) {
+          let newTitle = session.title;
+          if (textForAutoRename && session.title === 'Obrolan Baru') {
+            newTitle = textForAutoRename.length > 28 ? textForAutoRename.substring(0, 25) + '...' : textForAutoRename;
+            newTitle = newTitle.charAt(0).toUpperCase() + newTitle.slice(1);
+            
+            const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+            if (uuidRegex.test(sessionId)) {
+               import('../api/aiAssistantService').then(({ aiAssistantService }) => {
+                 aiAssistantService.renameSession(sessionId, newTitle).catch(e => console.error("Auto-rename failed", e));
+               });
+            }
           }
+          return {
+            ...session,
+            title: newTitle,
+            messages: newMessages
+          };
         }
-        return {
-          ...session,
-          title: newTitle,
-          messages: newMessages
-        };
-      }
-      return session;
+        return session;
+      });
+      localStorage.setItem('neokarir_chat_sessions', JSON.stringify(updated));
+      return updated;
     });
-    saveAllSessions(updated);
-  }, [sessions]);
+  }, []);
 
   // Clear current active session (resets it)
   const clearSessionMessages = useCallback((sessionId) => {
     const name = user?.name?.split(' ')[0] || 'Franz';
     const resetSession = createDefaultSessionObj(sessionId, name);
-    const updated = sessions.map(s => s.id === sessionId ? resetSession : s);
-    saveAllSessions(updated);
-  }, [sessions, user]);
+    setSessions(prevSessions => {
+      const updated = prevSessions.map(s => s.id === sessionId ? resetSession : s);
+      localStorage.setItem('neokarir_chat_sessions', JSON.stringify(updated));
+      return updated;
+    });
+  }, [user]);
 
   // Rename a chat session
   const renameSession = useCallback(async (id, newTitle) => {
@@ -192,17 +206,20 @@ export const useChatSessions = (user) => {
       }
     }
     
-    const updated = sessions.map(session => {
-      if (session.id === id) {
-        return {
-          ...session,
-          title: newTitle
-        };
-      }
-      return session;
+    setSessions(prevSessions => {
+      const updated = prevSessions.map(session => {
+        if (session.id === id) {
+          return {
+            ...session,
+            title: newTitle
+          };
+        }
+        return session;
+      });
+      localStorage.setItem('neokarir_chat_sessions', JSON.stringify(updated));
+      return updated;
     });
-    saveAllSessions(updated);
-  }, [sessions]);
+  }, []);
 
   // Convert local/offline session ID to a real backend session UUID
   const convertLocalSessionToBackendSession = useCallback(async (localId, title) => {
@@ -210,17 +227,20 @@ export const useChatSessions = (user) => {
       const { aiAssistantService } = await import('../api/aiAssistantService');
       const newSess = await aiAssistantService.createSession({ title: title || 'Obrolan Baru' });
       if (newSess) {
-        const updated = sessions.map(s => {
-          if (s.id === localId) {
-            return {
-              ...s,
-              id: newSess.id,
-              title: newSess.title || s.title
-            };
-          }
-          return s;
+        setSessions(prevSessions => {
+          const updated = prevSessions.map(s => {
+            if (s.id === localId) {
+              return {
+                ...s,
+                id: newSess.id,
+                title: newSess.title || s.title
+              };
+            }
+            return s;
+          });
+          localStorage.setItem('neokarir_chat_sessions', JSON.stringify(updated));
+          return updated;
         });
-        saveAllSessions(updated);
         setActiveSessionId(newSess.id);
         localStorage.setItem('neokarir_active_session_id', newSess.id);
         return newSess.id;
@@ -229,7 +249,7 @@ export const useChatSessions = (user) => {
       console.warn("Failed to convert local session to API session", e);
     }
     return localId;
-  }, [sessions]);
+  }, []);
 
   const activeSession = sessions.find(s => s.id === activeSessionId) || null;
   const messages = activeSession ? activeSession.messages : [];

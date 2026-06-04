@@ -81,8 +81,9 @@ async def semantic_search_knowledge_base(query: str, top_k: int = 2) -> str:
     """Mencari teks relevan di pgvector."""
     query_vector = embedding_model.encode(query).tolist()
     
-    conn = await get_db_connection()
+    conn = None
     try:
+        conn = await get_db_connection()
         rows = await conn.fetch('''
             SELECT file_name, content 
             FROM knowledge_base 
@@ -91,7 +92,7 @@ async def semantic_search_knowledge_base(query: str, top_k: int = 2) -> str:
         ''', str(query_vector), top_k)
         
         if not rows:
-            return "Tidak ada referensi dokumen yang ditemukan."
+            return ""
             
         context_parts = [f"(Dari: {r['file_name']}) {r['content']}" for r in rows]
         return "\n\n".join(context_parts)
@@ -99,7 +100,11 @@ async def semantic_search_knowledge_base(query: str, top_k: int = 2) -> str:
         logger.error(f"DB Error: {e}")
         return ""
     finally:
-        await conn.close()
+        if conn is not None:
+            try:
+                await conn.close()
+            except Exception as close_err:
+                logger.error(f"Failed to close DB connection: {close_err}")
 
 # Mockup DB untuk data User (Nanti ganti dengan query DB aslimu)
 async def get_user_mock(user_id: str):
@@ -145,14 +150,17 @@ async def generate_chatbot_response(user_id: str, message: str) -> dict:
         context_data = f"Fakta Sistem: Kecocokan {match_result['match_percentage']}%. Skill kurang: {', '.join(match_result['missing_skills'])}."
 
     elif intent in ["tanya_roadmap_karir", "tanya_tips_rekrutmen"]:
-        system_prompt += " Jawab pertanyaan HANYA berdasarkan Fakta Referensi berikut."
         # Panggil fungsi RAG
         rag_context = await semantic_search_knowledge_base(message)
         
-        # SAFETY GUARD: Potong teks mentah maksimal 3000 karakter saja!
-        safe_context = rag_context[:3000] 
-        
-        context_data = f"Fakta Referensi:\n{safe_context}"
+        if rag_context:
+            system_prompt += " Jawab pertanyaan HANYA berdasarkan Fakta Referensi berikut."
+            # SAFETY GUARD: Potong teks mentah maksimal 3000 karakter saja!
+            safe_context = rag_context[:3000] 
+            context_data = f"Fakta Referensi:\n{safe_context}"
+        else:
+            system_prompt += " Jawab pertanyaan dengan pengetahuan umum karir IT terbaik yang kamu miliki secara ramah dan profesional."
+            context_data = ""
 
     # 3. Susun Prompt LLM
     final_prompt = system_prompt
