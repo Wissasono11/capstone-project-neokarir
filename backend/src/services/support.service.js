@@ -22,6 +22,9 @@ const sendContactSupport = async (contactData) => {
       pass: env.SMTP_PASS,
     },
     family: 4, // Force IPv4 to prevent ENETUNREACH on IPv6-disabled networks (like Railway)
+    connectionTimeout: 5000, // 5 seconds
+    greetingTimeout: 5000,    // 5 seconds
+    socketTimeout: 5000,      // 5 seconds
   });
 
   // Verify connection configuration
