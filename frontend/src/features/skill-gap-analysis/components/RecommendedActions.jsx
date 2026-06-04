@@ -4,35 +4,76 @@ import { useLanguage } from '../../../contexts/LanguageContext';
 
 const RecommendedActions = ({ actionsData }) => {
   const { t } = useLanguage();
+
+  const formatDescription = React.useCallback((type, desc) => {
+    if (!desc) return '';
+    
+    if (type === 'critical') {
+      if (desc === 'You have no critical skill gaps.') {
+        return t.skillGap.actionNoCritical || desc;
+      }
+      if (desc.startsWith('Focus on ') && desc.endsWith(' skills.')) {
+        const skills = desc.slice(9, -8);
+        return t.skillGap.actionFocusSkills ? t.skillGap.actionFocusSkills(skills) : desc;
+      }
+    }
+    
+    if (type === 'improvement') {
+      if (desc === 'All your core skills are solid.') {
+        return t.skillGap.actionSkillsSolid || desc;
+      }
+      if (desc.startsWith('Enhance ') && desc.endsWith(' expertise.')) {
+        const skills = desc.slice(8, -11);
+        return t.skillGap.actionEnhanceSkills ? t.skillGap.actionEnhanceSkills(skills) : desc;
+      }
+    }
+    
+    if (type === 'strength') {
+      if (desc === 'Keep learning to surpass industry standards.') {
+        return t.skillGap.actionNoStrength || desc;
+      }
+      if (desc.endsWith(' skills exceed requirements.')) {
+        const skills = desc.slice(0, -28);
+        return t.skillGap.actionExceedRequirements ? t.skillGap.actionExceedRequirements(skills) : desc;
+      }
+    }
+    
+    return desc;
+  }, [t]);
   
   const normalizedData = React.useMemo(() => {
     if (!actionsData) return [];
-    if (Array.isArray(actionsData)) return actionsData;
+    if (Array.isArray(actionsData)) {
+      return actionsData.map(act => ({
+        ...act,
+        description: formatDescription(act.type, act.description)
+      }));
+    }
 
     const actions = [];
     if (actionsData.critical_gap || actionsData.critical) {
       actions.push({
         type: 'critical',
         title: t.skillGap.criticalGap,
-        description: actionsData.critical_gap || actionsData.critical
+        description: formatDescription('critical', actionsData.critical_gap || actionsData.critical)
       });
     }
     if (actionsData.needs_improvement || actionsData.improvement || actionsData.improvements) {
       actions.push({
         type: 'improvement',
         title: t.skillGap.needsImprovement,
-        description: actionsData.needs_improvement || actionsData.improvements || actionsData.improvement
+        description: formatDescription('improvement', actionsData.needs_improvement || actionsData.improvements || actionsData.improvement)
       });
     }
     if (actionsData.strengths || actionsData.strength) {
       actions.push({
         type: 'strength',
         title: t.skillGap.strengthsTitle,
-        description: actionsData.strengths || actionsData.strength
+        description: formatDescription('strength', actionsData.strengths || actionsData.strength)
       });
     }
     return actions;
-  }, [actionsData, t]);
+  }, [actionsData, t, formatDescription]);
 
   const isEmpty = normalizedData.length === 0;
 
