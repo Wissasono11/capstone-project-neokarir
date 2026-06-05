@@ -13,6 +13,7 @@ const ForgotPasswordForm = () => {
     errors,
     isSubmitting,
     isSuccess,
+    cooldown,
     handleChange,
     handleSubmit,
     handleReset,
@@ -73,13 +74,19 @@ const ForgotPasswordForm = () => {
             className="text-xs text-secondary-text mt-1"
           >
             Tidak menerima email?{' '}
-            <button
-              type="button"
-              onClick={handleReset}
-              className="font-semibold text-primary hover:text-primary/80 transition-colors focus:outline-none cursor-pointer"
-            >
-              Kirim ulang
-            </button>
+            {cooldown > 0 ? (
+              <span className="font-semibold text-secondary-text">
+                Kirim ulang ({cooldown}s)
+              </span>
+            ) : (
+              <button
+                type="button"
+                onClick={handleReset}
+                className="font-semibold text-primary hover:text-primary/80 transition-colors focus:outline-none cursor-pointer"
+              >
+                Kirim ulang
+              </button>
+            )}
           </motion.p>
         </motion.div>
       ) : (
@@ -119,7 +126,7 @@ const ForgotPasswordForm = () => {
               type="submit" 
               variant="primary" 
               className="w-full py-3.5 text-body"
-              disabled={isSubmitting}
+              disabled={isSubmitting || cooldown > 0}
             >
               {isSubmitting ? (
                 <>
@@ -131,6 +138,8 @@ const ForgotPasswordForm = () => {
                   </motion.div>
                   Mengirim...
                 </>
+              ) : cooldown > 0 ? (
+                <>Tunggu {cooldown} detik</>
               ) : (
                 <>
                   <Send size={16} className="mr-2" />
