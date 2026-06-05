@@ -25,6 +25,10 @@ module.exports = {
   JWT_SECRET: process.env.JWT_SECRET || 'neokarir-secret-key',
   JWT_EXPIRE: process.env.JWT_EXPIRE || '24h',
 
+  // Redis Cache
+  REDIS_URL: process.env.UPSTASH_REDIS_REST_URL,
+  REDIS_TOKEN: process.env.UPSTASH_REDIS_REST_TOKEN,
+
   // Cors
   CORS_ORIGIN: process.env.CORS_ORIGIN || 'http://localhost:3001',
 

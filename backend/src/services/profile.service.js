@@ -1,8 +1,17 @@
 const ProfileRepository = require('../repositories/profile.repository');
 const AiService = require('./ai.service');
+const { cache, CACHE_TTL, CACHE_KEYS } = require('../utils/cacheManager');
 
 const getByUserId = async (userId, accessToken) => {
-	return ProfileRepository.getByUserId(userId, accessToken);
+	const cacheKey = CACHE_KEYS.profile(userId);
+	const cached = await cache.get(cacheKey);
+	if (cached) return cached;
+
+	const result = await ProfileRepository.getByUserId(userId, accessToken);
+	if (result) {
+		await cache.set(cacheKey, result, CACHE_TTL.PROFILE);
+	}
+	return result;
 };
 
 const { getSupabaseClient, getAdminSupabaseClient } = require('../config/database');
@@ -25,6 +34,9 @@ const upsertByUserId = async (userId, payload, accessToken) => {
 			console.warn('Failed to update Supabase Auth user:', authError.message);
 		}
 	}
+
+	// Invalidate profile cache before upsert
+	await cache.delete(CACHE_KEYS.profile(userId));
 
 	const savedProfile = await ProfileRepository.upsertByUserId(userId, payload, accessToken);
 

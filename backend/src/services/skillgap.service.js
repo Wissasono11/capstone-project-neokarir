@@ -3,6 +3,7 @@ const SkillgapRepository = require('../repositories/skillgap.repository');
 const RecommendationRepository = require('../repositories/recommendation.repository');
 const RecommendationService = require('./recommendation.service');
 const { callAI2 } = require('../utils/aiClient');
+const { cache, CACHE_TTL, CACHE_KEYS } = require('../utils/cacheManager');
 
 const normalizeCourseId = (value) => (value || '').toString().trim().toLowerCase();
 
@@ -54,6 +55,11 @@ const fetchLearningRoadmap = async (jobId) => {
 };
 
 const getByUserId = async (userId, accessToken, jobId = null) => {
+	// Check cache first
+	const cacheKey = CACHE_KEYS.skillGap(userId, jobId);
+	const cached = await cache.get(cacheKey);
+	if (cached) return cached;
+
 	const record = await SkillgapRepository.getByUserId(userId, accessToken, jobId);
 	if (!record) return null;
 
@@ -62,10 +68,14 @@ const getByUserId = async (userId, accessToken, jobId = null) => {
 		learningRoadmap = await fetchLearningRoadmap(record.job_id);
 	}
 
-	return {
+	const result = {
 		...record,
 		learning_roadmap: learningRoadmap
 	};
+
+	// Cache the result
+	await cache.set(cacheKey, result, CACHE_TTL.SKILL_GAP);
+	return result;
 };
 
 const analyze = async (userId, payload, accessToken) => {
@@ -252,10 +262,17 @@ const analyze = async (userId, payload, accessToken) => {
 
 	const savedRecord = await SkillgapRepository.upsertByUserId(userId, upsertPayload, accessToken, job_id);
 
-	return {
+	const finalResult = {
 		...savedRecord,
 		learning_roadmap: learningRoadmap
 	};
+
+	// Cache the fresh analysis result & invalidate old entries
+	await cache.invalidate(CACHE_KEYS.skillGap(userId, ''));
+	await cache.set(CACHE_KEYS.skillGap(userId, job_id), finalResult, CACHE_TTL.SKILL_GAP);
+	await cache.set(CACHE_KEYS.skillGap(userId, null), finalResult, CACHE_TTL.SKILL_GAP);
+
+	return finalResult;
 };
 
 module.exports = {

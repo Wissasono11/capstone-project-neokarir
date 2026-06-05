@@ -2,9 +2,18 @@ const ProfileRepository = require('../repositories/profile.repository');
 const RecommendationRepository = require('../repositories/recommendation.repository');
 const { callAI2 } = require('../utils/aiClient');
 const { getSupabaseClient } = require('../config/database');
+const { cache, CACHE_TTL, CACHE_KEYS } = require('../utils/cacheManager');
 
 const listByUserId = async (userId, accessToken) => {
-	return RecommendationRepository.listByUserId(userId, accessToken);
+	const cacheKey = CACHE_KEYS.recommendations(userId);
+	const cached = await cache.get(cacheKey);
+	if (cached) return cached;
+
+	const result = await RecommendationRepository.listByUserId(userId, accessToken);
+	if (result && result.length > 0) {
+		await cache.set(cacheKey, result, CACHE_TTL.RECOMMENDATIONS);
+	}
+	return result;
 };
 
 const isValidUuid = (uuid) => {
@@ -57,6 +66,7 @@ const generate = async (userId, accessToken) => {
 	}
 
 	// Clear old recommendations
+	await cache.invalidate(CACHE_KEYS.userPrefix(userId));
 	await RecommendationRepository.deleteByUserId(userId, accessToken);
 
 	const ownedSkillsSet = new Set(ownedSkills.map(s => s.toLowerCase()));
@@ -96,10 +106,19 @@ const generate = async (userId, accessToken) => {
 	}));
 
 	const saved = await RecommendationRepository.bulkCreate(records, accessToken);
+	// Cache the fresh recommendations
+	if (saved && saved.length > 0) {
+		await cache.set(CACHE_KEYS.recommendations(userId), saved, CACHE_TTL.RECOMMENDATIONS);
+	}
 	return saved;
 };
 
 const getRoadmap = async (jobId) => {
+	// Roadmap data is very stable — cache aggressively (6h)
+	const cacheKey = CACHE_KEYS.roadmap(jobId);
+	const cached = await cache.get(cacheKey);
+	if (cached) return cached;
+
 	const aiResult = await callAI2(`/api/roadmap/job-sync/${jobId}`, null, { method: 'GET' });
 	if (aiResult.status !== 'success') {
 		throw new Error('Failed to fetch roadmap from AI service');
@@ -125,7 +144,9 @@ const getRoadmap = async (jobId) => {
 		});
 	}
 
-	return { courses: flatCourses, raw_roadmap: aiResult.data };
+	const result = { courses: flatCourses, raw_roadmap: aiResult.data };
+	await cache.set(cacheKey, result, CACHE_TTL.ROADMAP);
+	return result;
 };
 
 const getEffectiveOwnedSkills = async (profile, accessToken) => {

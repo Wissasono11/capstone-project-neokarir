@@ -58,7 +58,9 @@ app.get(
 	'/api/v1/health/ai',
 	asyncHandler(async (req, res) => {
 		const status = await healthCheckAll();
-		return ApiResponse.success(res, status, 'AI Services Health Status');
+		const { cache } = require('./utils/cacheManager');
+		const cacheStats = await cache.stats();
+		return ApiResponse.success(res, { ...status, cache: cacheStats }, 'AI Services Health Status');
 	})
 );
 

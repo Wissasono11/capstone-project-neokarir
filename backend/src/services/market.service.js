@@ -1,6 +1,7 @@
 const MarketRepository = require('../repositories/market.repository');
 const JobRepository = require('../repositories/job.repository');
 const { getPrismaClient } = require('../config/prisma');
+const { cache, CACHE_TTL, CACHE_KEYS } = require('../utils/cacheManager');
 
 const list = async ({ limit, offset }) => {
 	return MarketRepository.list({ limit, offset });
@@ -137,6 +138,11 @@ const getTrendDomains = async () => {
 };
 
 const getTrendForecast = async (payload) => {
+	// Check cache first
+	const cacheKey = CACHE_KEYS.trendForecast(payload.domain, payload.n_months || 3);
+	const cached = await cache.get(cacheKey);
+	if (cached) return cached;
+
 	let trends = [];
 	try {
 		trends = await MarketRepository.getHistoricalTrends();
@@ -246,6 +252,11 @@ const getTrendForecast = async (payload) => {
 				}
 			}
 		}
+	}
+
+	// Cache the result
+	if (aiResult && aiResult.status === 'success') {
+		await cache.set(cacheKey, aiResult, CACHE_TTL.TREND_FORECAST);
 	}
 
 	return aiResult;
