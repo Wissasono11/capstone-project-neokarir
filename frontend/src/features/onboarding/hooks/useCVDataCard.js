@@ -1,9 +1,15 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export const useCVDataCard = (cvData, updateCvData) => {
   const [isEditing, setIsEditing] = useState(false);
   const [editedData, setEditedData] = useState(cvData);
   const [newSkill, setNewSkill] = useState('');
+  
+  useEffect(() => {
+    if (!isEditing) {
+      setEditedData(cvData);
+    }
+  }, [cvData, isEditing]);
 
   const handleToggleEdit = () => {
     if (isEditing) {

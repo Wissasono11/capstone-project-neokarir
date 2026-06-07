@@ -70,7 +70,9 @@ const CVDataCard = ({ cvData, updateCvData }) => {
                 className="w-full px-3 py-2 rounded-xl border border-border focus:border-primary focus:ring-2 focus:ring-primary/10 outline-none transition-all text-primary-text font-medium"
               />
             ) : (
-              <p className="text-primary-text font-semibold pl-6">{cvData.targetDomain}</p>
+              <p className={`font-semibold pl-6 ${cvData.targetDomain ? 'text-primary-text' : 'text-secondary-text italic'}`}>
+                {cvData.targetDomain || 'Belum terdeteksi — silakan edit manual'}
+              </p>
             )}
           </div>
           <div className="space-y-1.5">
@@ -86,7 +88,9 @@ const CVDataCard = ({ cvData, updateCvData }) => {
                 className="w-full px-3 py-2 rounded-xl border border-border focus:border-primary focus:ring-2 focus:ring-primary/10 outline-none transition-all text-primary-text font-medium"
               />
             ) : (
-              <p className="text-primary-text font-semibold pl-6">{cvData.targetRole}</p>
+              <p className={`font-semibold pl-6 ${cvData.targetRole ? 'text-primary-text' : 'text-secondary-text italic'}`}>
+                {cvData.targetRole || 'Belum terdeteksi — silakan edit manual'}
+              </p>
             )}
           </div>
         </div>
@@ -100,16 +104,19 @@ const CVDataCard = ({ cvData, updateCvData }) => {
             </div>
             {isEditing ? (
               <select
-                value={editedData.experience || EXPERIENCE_LEVELS[0]}
+                value={editedData.experience || ''}
                 onChange={(e) => setEditedData({ ...editedData, experience: e.target.value })}
                 className="w-full px-3 pr-10 py-2 rounded-xl border border-border focus:border-primary focus:ring-2 focus:ring-primary/10 outline-none transition-all text-primary-text font-medium bg-white truncate"
               >
+                {!editedData.experience && <option value="">-- Pilih Pengalaman --</option>}
                 {EXPERIENCE_LEVELS.map(level => (
                   <option key={level} value={level}>{level}</option>
                 ))}
               </select>
             ) : (
-              <p className="text-primary-text font-semibold pl-6">{cvData.experience || 'Belum ada (Fresh Graduate / Sedang belajar)'}</p>
+              <p className={`font-semibold pl-6 ${cvData.experience ? 'text-primary-text' : 'text-secondary-text italic'}`}>
+                {cvData.experience || 'Belum terdeteksi — silakan edit manual'}
+              </p>
             )}
           </div>
           <div className="space-y-1.5">
@@ -119,16 +126,19 @@ const CVDataCard = ({ cvData, updateCvData }) => {
             </div>
             {isEditing ? (
               <select
-                value={editedData.education || EDUCATION_LEVELS[2]}
+                value={editedData.education || ''}
                 onChange={(e) => setEditedData({ ...editedData, education: e.target.value })}
                 className="w-full px-3 pr-10 py-2 rounded-xl border border-border focus:border-primary focus:ring-2 focus:ring-primary/10 outline-none transition-all text-primary-text font-medium bg-white truncate"
               >
+                {!editedData.education && <option value="">-- Pilih Pendidikan --</option>}
                 {EDUCATION_LEVELS.map(level => (
                   <option key={level} value={level}>{level}</option>
                 ))}
               </select>
             ) : (
-              <p className="text-primary-text font-semibold pl-6">{cvData.education || 'S1'}</p>
+              <p className={`font-semibold pl-6 ${cvData.education ? 'text-primary-text' : 'text-secondary-text italic'}`}>
+                {cvData.education || 'Belum terdeteksi — silakan edit manual'}
+              </p>
             )}
           </div>
         </div>

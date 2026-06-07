@@ -4,6 +4,45 @@ import { useAuth } from '../../../contexts/AuthContext';
 import { cvAnalyzerService } from '../../cv-analyzer/api/cvAnalyzerService';
 import { profileService } from '../../profile-settings/api/profileService';
 import { useToast } from '../../../contexts/ToastContext';
+import { EXPERIENCE_LEVELS, EDUCATION_LEVELS } from '../data/onboardingData';
+
+const fuzzyMatchLevel = (raw, levels, keywordMap) => {
+  if (!raw) return '';
+  const lower = raw.toLowerCase().trim();
+
+  const exact = levels.find(l => l.toLowerCase() === lower);
+  if (exact) return exact;
+
+  for (const [index, keywords] of Object.entries(keywordMap)) {
+    if (keywords.some(kw => lower.includes(kw))) return levels[index] ?? '';
+  }
+
+  return levels.find(l =>
+    l.toLowerCase().includes(lower) || lower.includes(l.toLowerCase())
+  ) || raw;
+};
+
+const EXP_KEYWORDS = {
+  0: ['belum', 'fresh', 'sedang belajar'],
+  1: ['< 1', '<1', 'kurang dari 1', 'magang', 'internship'],
+  2: ['1-3', '1 - 3', 'junior'],
+  3: ['3', 'mid', 'senior', '> 5', '3-5'],
+};
+
+const EDU_KEYWORDS = {
+  3: ['s2', 's3', 'master', 'doktor'],
+  2: ['s1', 'sarjana', 'bachelor', 'd4'],
+  1: ['d3', 'diploma'],
+  0: ['sma', 'smk', 'smp', 'sekolah'],
+  4: ['sertifikasi', 'bootcamp', 'profesional'],
+};
+
+const normalizeExperience = (raw) => fuzzyMatchLevel(raw, EXPERIENCE_LEVELS, EXP_KEYWORDS);
+const normalizeEducation = (raw) => {
+  const lower = (raw || '').toLowerCase().trim();
+  if (['tidak', 'belum', '-'].some(kw => lower.includes(kw))) return '';
+  return fuzzyMatchLevel(raw, EDUCATION_LEVELS, EDU_KEYWORDS);
+};
 
 export const useOnboardingForm = () => {
   const [currentStep, setCurrentStep] = useState(1);
@@ -83,14 +122,24 @@ export const useOnboardingForm = () => {
         const data = response.data || response.results || response || {};
         const profileData = data.profile || data.profile_data || data || {};
         
+        // Debug: log AI response structure to help troubleshoot future issues
+        if (process.env.NODE_ENV === 'development') {
+          console.log('[CV Analysis] Raw response:', response);
+          console.log('[CV Analysis] Extracted profileData:', profileData);
+        }
+
+        // Robust field extraction with multiple fallback field names
+        const rawExperience = profileData.user_experience || profileData.experience || profileData.experience_level || data.user_experience || '';
+        const rawEducation = profileData.user_education || profileData.education || profileData.education_level || data.user_education || '';
+
         setCvData({
-          fullName: profileData.user_name || profileData.full_name || data.full_name || '',
-          targetDomain: profileData.target_domain || data.target_domain || '',
-          targetRole: profileData.target_role || data.target_role || '',
-          skills: profileData.owned_skills || [],
-          techStack: profileData.owned_skills || [],
-          experience: profileData.user_experience || '',
-          education: profileData.user_education || ''
+          fullName: profileData.user_name || profileData.full_name || profileData.name || data.full_name || data.user_name || '',
+          targetDomain: profileData.target_domain || profileData.domain || profileData.suggested_domain || data.target_domain || '',
+          targetRole: profileData.target_role || profileData.role || profileData.suggested_role || data.target_role || '',
+          skills: profileData.owned_skills || profileData.skills || data.owned_skills || [],
+          techStack: profileData.owned_skills || profileData.skills || data.owned_skills || [],
+          experience: normalizeExperience(rawExperience),
+          education: normalizeEducation(rawEducation),
         });
         setCurrentStep(prev => prev + 1);
       } catch (err) {
