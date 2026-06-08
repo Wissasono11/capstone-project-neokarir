@@ -92,7 +92,7 @@ export const useProfileSettings = () => {
       const response = await profileService.uploadAvatar(file);
       const responseData = response.data || response;
       if (responseData && responseData.avatar_url) {
-        await refreshUserProfile();
+        updateProfile({ avatar_url: responseData.avatar_url });
         toastSuccess(t.profile.avatarSaveSuccess);
       } else {
         throw new Error(language === 'en' ? 'Failed to get new profile picture URL.' : 'Gagal mendapatkan URL foto profil baru.');
@@ -102,7 +102,7 @@ export const useProfileSettings = () => {
     } finally {
       setIsUploadingAvatar(false);
     }
-  }, [refreshUserProfile, toastSuccess, toastError, t, language]);
+  }, [updateProfile, toastSuccess, toastError, t, language]);
 
   const [isDeletingAccount, setIsDeletingAccount] = useState(false);
 
