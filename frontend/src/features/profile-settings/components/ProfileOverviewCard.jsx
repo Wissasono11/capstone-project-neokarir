@@ -1,13 +1,16 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { Camera, Mail, BriefcaseBusiness } from 'lucide-react';
 import Card from '../../../components/ui/Card';
 import Button from '../../../components/ui/Button';
 import avatar from '../../../assets/images/avatar.png';
+import AvatarCropperModal from './AvatarCropperModal';
 import { useLanguage } from '../../../contexts/LanguageContext';
 
 const ProfileOverviewCard = ({ user, onEditProfile, onAvatarUpload, isUploadingAvatar }) => {
   const fileInputRef = useRef(null);
   const { t } = useLanguage();
+  const [isCropperOpen, setIsCropperOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
 
   const handleAvatarClick = () => {
     if (isUploadingAvatar) return;
@@ -16,8 +19,29 @@ const ProfileOverviewCard = ({ user, onEditProfile, onAvatarUpload, isUploadingA
 
   const handleFileChange = (e) => {
     const file = e.target.files?.[0];
-    if (file && onAvatarUpload) {
-      onAvatarUpload(file);
+    if (file) {
+      const url = URL.createObjectURL(file);
+      setSelectedImage(url);
+      setIsCropperOpen(true);
+    }
+    // Reset file input
+    if (e.target) {
+      e.target.value = '';
+    }
+  };
+
+  const handleCropComplete = (croppedFile) => {
+    if (onAvatarUpload) {
+      onAvatarUpload(croppedFile);
+    }
+    handleCloseCropper();
+  };
+
+  const handleCloseCropper = () => {
+    setIsCropperOpen(false);
+    if (selectedImage) {
+      URL.revokeObjectURL(selectedImage);
+      setSelectedImage(null);
     }
   };
 
@@ -106,6 +130,13 @@ const ProfileOverviewCard = ({ user, onEditProfile, onAvatarUpload, isUploadingA
           </div>
         </div>
       </div>
+
+      <AvatarCropperModal
+        isOpen={isCropperOpen}
+        onClose={handleCloseCropper}
+        imageSrc={selectedImage}
+        onCropComplete={handleCropComplete}
+      />
     </Card>
   );
 };
